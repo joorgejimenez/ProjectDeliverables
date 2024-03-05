@@ -7,3 +7,10 @@ Third you need to open Docker Desktop and run th grobid server with this 2 comma
                                                                                     docker run -t --rm -p 8070:8070 lfoppiano/grobid:0.7.2   
 And finally you need to run the client with this 2 commands: docker build -t grobid .   
                                                              docker run --rm -it grobid    
+
+
+
+              [![DOI](https://data.caltech.edu/badge/753741900.svg)](https://data.caltech.edu/badge/latestdoi/753741900)     
+              
+
+
