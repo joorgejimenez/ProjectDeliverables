@@ -10,7 +10,8 @@ And finally you need to run the client with this 2 commands: docker build -t gro
 
 
 
-              [![DOI](https://data.caltech.edu/badge/753741900.svg)](https://data.caltech.edu/badge/latestdoi/753741900)     
+             [![DOI](https://zenodo.org/badge/{753741900}.svg)](https://zenodo.org/badge/latestdoi/{753741900})  
+             
               
 
 
