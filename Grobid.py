@@ -58,6 +58,31 @@ def extract_links(xml_files_dir):
             links_per_article[filename] = [link.text for link in links if link.text]
     return links_per_article
 
+def check_files_created(output_dir):
+    if not os.listdir(output_dir):
+        print(f"No se encontraron archivos en {output_dir}. Verifica que GROBID esté procesando los documentos correctamente.")
+    else:
+        print(f"Se encontraron archivos en {output_dir}.")
+
+abstracts = extract_abstracts(output_dir)
+if abstracts:
+    print("Se extrajeron correctamente los resúmenes.")
+else:
+    print("No se encontraron resúmenes. Verifica los archivos XML y sus estructuras.")
+
+if abstracts:  # Asegurándonos de que hay textos de resúmenes para generar la nube de palabras
+    create_wordcloud(abstracts)
+else:
+    print("No hay textos de resúmenes para generar la nube de palabras.")
+
+figures_count = count_figures(output_dir)
+if figures_count:
+    print("Se contaron las figuras en los artículos.")
+    visualize_figures_count(figures_count)
+else:
+    print("No se encontraron figuras en los archivos.")
+
+
 if __name__ == "__main__":
     input_dir = "./input_pdfs"
     output_dir = "./resources/test_out/"
