@@ -40,6 +40,22 @@ To interact with the GROBID server, navigate to the directory of the cloned `gro
 ```bash
 docker build -t grobid .
 ```
+If in this point you get an error of this kind
+```bash
+ => ERROR [internal] load metadata for docker.io/library/alpine:latest                                                                                                                                   0.5s 
+------
+ > [internal] load metadata for docker.io/library/alpine:latest:
+------
+Dockerfile:2
+--------------------
+   1 |     # Usar una imagen base de Alpine Linux por ser ligera
+   2 | >>> FROM alpine:latest
+   3 |
+   4 |     # Instalar Python, Pip y dependencias necesarias para la compilación
+--------------------
+ERROR: failed to solve: alpine:latest: error getting credentials - err: exec: "docker-credential-desktop": executable file not found in %PATH%, out: ``
+```
+You may edit the `config.json` of your `.docker/` file directory and remove the `s` from `credsStore` to `credStore`
 
 After building the container, run it using:
 
