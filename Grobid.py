@@ -1,95 +1,84 @@
 import json
 import os
+import logging
 from grobid_client.grobid_client import GrobidClient
 from lxml import etree
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
+import re  # Importado para la limpieza de texto
 
-def process_documents(input_dir, output_dir):
-    client = GrobidClient(config_path="./config.json")
-    client.process("processFulltextDocument", input_dir, output=output_dir, consolidate_citations=True, tei_coordinates=True, force=True)
+# Configura el logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-def extract_abstracts(xml_files_dir):
-    abstract_texts = []
-    for filename in os.listdir(xml_files_dir):
-        if filename.endswith(".xml"):
-            path = os.path.join(xml_files_dir, filename)
-            tree = etree.parse(path)
-            namespaces = {'tei': 'http://www.tei-c.org/ns/1.0'}
-            abstract = tree.xpath('//tei:abstract/tei:p', namespaces=namespaces)
-            abstract_text = " ".join([p.text for p in abstract if p.text])
-            abstract_texts.append(abstract_text)
-    return abstract_texts
+def extract_info_from_tei(tei_file):
+    namespace = {'tei': 'http://www.tei-c.org/ns/1.0'}
+    tree = etree.parse(tei_file)
+    
+    # Ajustando la consulta XPath para coincidir con tu estructura de abstract
+    abstract_text = " ".join(tree.xpath('//tei:profileDesc/tei:abstract//tei:p/text()', namespaces=namespace))
+    
+    figures = tree.xpath('//tei:figure', namespaces=namespace)
+    num_figures = len(figures)
+    
+    links = tree.xpath('//tei:ptr/@target', namespaces=namespace)
 
-def create_wordcloud(texts):
-    full_text = " ".join(texts)
-    wordcloud = WordCloud(width=800, height=400).generate(full_text)
+    return abstract_text, num_figures, links
+
+
+def clean_text(text):
+    text = re.sub(r'[^A-Za-z\s]', '', text)  # Elimina caracteres especiales
+    text = re.sub(r'\s+', ' ', text).strip()  # Elimina espacios extra
+    return text
+
+def generate_wordcloud(text, output_filename):
+    cleaned_text = clean_text(text)  # Limpia el texto
+    if not cleaned_text:
+        logging.warning(f"No se puede generar una nube de palabras para {output_filename} porque el texto está vacío.")
+        return
+    
+    wordcloud = WordCloud(width=800, height=400, background_color='white').generate(cleaned_text)
     plt.figure(figsize=(10, 5))
     plt.imshow(wordcloud, interpolation='bilinear')
     plt.axis("off")
-    plt.show()
+    plt.savefig(output_filename)
+    plt.close()
 
-def count_figures(xml_files_dir):
-    figures_per_article = []
-    for filename in os.listdir(xml_files_dir):
-        if filename.endswith(".xml"):
-            path = os.path.join(xml_files_dir, filename)
-            tree = etree.parse(path)
-            figures = tree.xpath('//tei:figure', namespaces={'tei': 'http://www.tei-c.org/ns/1.0'})
-            figures_per_article.append((filename, len(figures)))
-    return figures_per_article
-
-def visualize_figures_count(figures_count):
-    articles = [item[0] for item in figures_count]
-    counts = [item[1] for item in figures_count]
-    plt.bar(articles, counts)
-    plt.xlabel('Articles')
-    plt.ylabel('Number of Figures')
-    plt.xticks(rotation=45)
-    plt.show()
-
-def extract_links(xml_files_dir):
-    links_per_article = {}
-    for filename in os.listdir(xml_files_dir):
-        if filename.endswith(".xml"):
-            path = os.path.join(xml_files_dir, filename)
-            tree = etree.parse(path)
-            links = tree.xpath('//tei:ref[@type="url"]', namespaces={'tei': 'http://www.tei-c.org/ns/1.0'})
-            links_per_article[filename] = [link.text for link in links if link.text]
-    return links_per_article
-
-def check_files_created(output_dir):
-    if not os.listdir(output_dir):
-        print(f"No se encontraron archivos en {output_dir}. Verifica que GROBID esté procesando los documentos correctamente.")
-    else:
-        print(f"Se encontraron archivos en {output_dir}.")
-
-abstracts = extract_abstracts(output_dir)
-if abstracts:
-    print("Se extrajeron correctamente los resúmenes.")
-else:
-    print("No se encontraron resúmenes. Verifica los archivos XML y sus estructuras.")
-
-if abstracts:  # Asegurándonos de que hay textos de resúmenes para generar la nube de palabras
-    create_wordcloud(abstracts)
-else:
-    print("No hay textos de resúmenes para generar la nube de palabras.")
-
-figures_count = count_figures(output_dir)
-if figures_count:
-    print("Se contaron las figuras en los artículos.")
-    visualize_figures_count(figures_count)
-else:
-    print("No se encontraron figuras en los archivos.")
-
+def process_documents(input_dir, output_dir):
+    logging.info("Iniciando el procesamiento de documentos...")
+    client = GrobidClient(config_path="./config.json")
+    try:
+        client.process("processFulltextDocument", input_dir, output=output_dir, consolidate_citations=True, tei_coordinates=True, force=True)
+        logging.info("Documentos procesados exitosamente.")
+    except Exception as e:
+        logging.error(f"Error al procesar documentos: {e}")
 
 if __name__ == "__main__":
     input_dir = "./input_pdfs"
     output_dir = "./resources/test_out/"
     process_documents(input_dir, output_dir)
-    abstracts = extract_abstracts(output_dir)
-    create_wordcloud(abstracts)
-    figures_count = count_figures(output_dir)
-    visualize_figures_count(figures_count)
-    links = extract_links(output_dir)
-    print(links)
+    
+    figures_per_article, all_links = [], []
+    for tei_file in os.listdir(output_dir):
+        if tei_file.endswith('.tei.xml'):
+            tei_path = os.path.join(output_dir, tei_file)
+            logging.info(f"Texto del abstract antes de la limpieza: '{tei_path}'")
+            abstract_text, num_figures, links = extract_info_from_tei(tei_path)
+            logging.info(f"Texto del abstract antes de la limpieza: '{abstract_text}'")
+            wc_output_filename = os.path.join(output_dir, f"{tei_file}_wordcloud.png")
+            generate_wordcloud(abstract_text, wc_output_filename)
+            figures_per_article.append(num_figures)
+            all_links.extend(links)
+    
+    # Visualización y almacenamiento de datos
+    plt.figure(figsize=(10, 5))
+    plt.bar(range(len(figures_per_article)), figures_per_article)
+    plt.xlabel('Artículos')
+    plt.ylabel('Número de figuras')
+    plt.title('Número de figuras por artículo')
+    plt.savefig(os.path.join(output_dir, "figures_per_article.png"))
+    plt.close()
+    
+    links_filename = os.path.join(output_dir, "extracted_links.txt")
+    with open(links_filename, "w") as f:
+        for link in all_links:
+            f.write(f"{link}\n")
