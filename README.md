@@ -10,8 +10,9 @@ Follow these steps to clone the necessary repository, set up the GROBID client, 
 
 First, clone the `grobid_client_python` repository by `kermitt2` into your local machine using the following command:
 
+```bash
 git clone https://github.com/kermitt2/grobid_client_python.git
-
+```
 
 ### 2. Edit the Configuration
 
@@ -21,6 +22,7 @@ Navigate into the cloned repository and edit the `config.json` file. You will ne
 {
   "grobid_server": "http://host.docker.internal:8070"
 }
+```
 
 ### 3. Setting up the GROBID Server with Docker
 
@@ -29,7 +31,7 @@ With Docker Desktop running, execute the following commands in your terminal to 
 ```bash
 docker pull lfoppiano/grobid:0.7.2
 docker run -t --rm -p 8070:8070 lfoppiano/grobid:0.7.2
-
+```
 
 ### 4. Build and Run the Client
 
@@ -37,10 +39,13 @@ To interact with the GROBID server, navigate to the directory of the cloned `gro
 
 ```bash
 docker build -t grobid .
+```
+
 After building the container, run it using:
 
+```bash
 docker run --rm -it grobid
-
+```
 
 ### 5. Citing This Repository
 
