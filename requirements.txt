@@ -2,3 +2,9 @@ requests
 lxml
 wordcloud
 matplotlib
+transformers==4.10.0
+# rdflib
+tensorflow==2.5.0
+sentence-transformers
+scikit-learn
+beautifulsoup4
