@@ -1,0 +1,1588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Data Valuation with Gradient Similarity</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2024-05-13">13 May 2024</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName coords="1,84.29,146.26,74.18,8.64"><forename type="first">Nathaniel</forename><forename type="middle">J</forename><surname>Evans</surname></persName>
+							<email>evansna@ohsu.edu</email>
+							<idno type="ORCID">0000-0003-2245-8904</idno>
+							<affiliation key="aff0">
+								<orgName type="department" key="dep1">Division of Bioinformatics and Computational Biomedicine</orgName>
+								<orgName type="department" key="dep2">Department of Medical Informatics &amp; Clinical Epidemiology</orgName>
+								<orgName type="institution">Oregon Health &amp; Science University</orgName>
+								<address>
+									<settlement>Portland</settlement>
+									<region>Oregon</region>
+									<country>United States of America</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,179.22,146.26,65.59,8.64"><forename type="first">Gordon</forename><forename type="middle">B</forename><surname>Mills</surname></persName>
+							<idno type="ORCID">0000-0002-0144-9614</idno>
+							<affiliation key="aff1">
+								<orgName type="department">Division of Oncological Sciences Knight Cancer Institute</orgName>
+								<orgName type="institution">Oregon Health &amp; Science University</orgName>
+								<address>
+									<postCode>97201</postCode>
+									<settlement>Portland</settlement>
+									<region>OR</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<orgName type="department">Knight Cancer Institute</orgName>
+								<orgName type="institution">Oregon Health &amp; Science University</orgName>
+								<address>
+									<settlement>Portland</settlement>
+									<region>Oregon</region>
+									<country>United States of America</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,270.05,146.26,58.44,8.64"><forename type="first">Guanming</forename><surname>Wu</surname></persName>
+							<idno type="ORCID">0000-0001-8196-1177</idno>
+							<affiliation key="aff0">
+								<orgName type="department" key="dep1">Division of Bioinformatics and Computational Biomedicine</orgName>
+								<orgName type="department" key="dep2">Department of Medical Informatics &amp; Clinical Epidemiology</orgName>
+								<orgName type="institution">Oregon Health &amp; Science University</orgName>
+								<address>
+									<settlement>Portland</settlement>
+									<region>Oregon</region>
+									<country>United States of America</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,339.80,146.26,45.11,8.64"><forename type="first">Xubo</forename><surname>Song</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department" key="dep1">Division of Bioinformatics and Computational Biomedicine</orgName>
+								<orgName type="department" key="dep2">Department of Medical Informatics &amp; Clinical Epidemiology</orgName>
+								<orgName type="institution">Oregon Health &amp; Science University</orgName>
+								<address>
+									<settlement>Portland</settlement>
+									<region>Oregon</region>
+									<country>United States of America</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<orgName type="department">Knight Cancer Institute</orgName>
+								<orgName type="institution">Oregon Health &amp; Science University</orgName>
+								<address>
+									<settlement>Portland</settlement>
+									<region>Oregon</region>
+									<country>United States of America</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,410.14,146.26,82.33,8.64"><forename type="first">Shannon</forename><surname>Mcweeney</surname></persName>
+							<idno type="ORCID">0000-0001-8333-6607</idno>
+							<affiliation key="aff0">
+								<orgName type="department" key="dep1">Division of Bioinformatics and Computational Biomedicine</orgName>
+								<orgName type="department" key="dep2">Department of Medical Informatics &amp; Clinical Epidemiology</orgName>
+								<orgName type="institution">Oregon Health &amp; Science University</orgName>
+								<address>
+									<settlement>Portland</settlement>
+									<region>Oregon</region>
+									<country>United States of America</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<orgName type="department">Knight Cancer Institute</orgName>
+								<orgName type="institution">Oregon Health &amp; Science University</orgName>
+								<address>
+									<settlement>Portland</settlement>
+									<region>Oregon</region>
+									<country>United States of America</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Data Valuation with Gradient Similarity</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2024-05-13">13 May 2024</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">2367FF5020E52A2D93C9D26491490D39</idno>
+					<idno type="arXiv">arXiv:2405.08217v1[cs.LG]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2024-05-18T21:25+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>High-quality data is crucial for accurate machine learning and actionable analytics, however, mislabeled or noisy data is a common problem in many domains. Distinguishing low-from high-quality data can be challenging, often requiring expert knowledge and considerable manual intervention. Data Valuation algorithms are a class of methods that seek to quantify the value of each sample in a dataset based on its contribution or importance to a given predictive task. These data values have shown an impressive ability to identify mislabeled observations, and filtering low-value data can boost machine learning performance. In this work, we present a simple alternative to existing methods, termed Data Valuation with Gradient Similarity (DVGS). This approach can be easily applied to any gradient descent learning algorithm, scales well to large datasets, and performs comparably or better than baseline valuation methods for tasks such as corrupted label discovery and noise quantification. We evaluate the DVGS method on tabular, image and RNA expression datasets to show the effectiveness of the method across domains. Our approach has the ability to rapidly and accurately identify low-quality data, which can reduce the need for expert knowledge and manual intervention in data cleaning tasks.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>1 Background</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.1">Introduction</head><p>Modern research and "big data" have led to remarkable discoveries and spurred many fields toward highthroughput data collection to capitalize on emerging methods in data science, machine learning, and artificial intelligence. Scientists involved in data collection go to great efforts to generate accurate and reproducible data, however, unavoidable measurement noise, batch effects, and natural stochasticity often lead to varying levels of data quality. Many foundational high-throughput datasets are affected by reproducibility and data quality issues, which often limit the actionable results of these resources <ref type="bibr" coords="1,72.00,645.58,10.79,8.64" target="#b0">[1,</ref><ref type="bibr" coords="1,85.28,645.58,7.47,8.64" target="#b1">2,</ref><ref type="bibr" coords="1,95.24,645.58,7.47,8.64" target="#b2">3,</ref><ref type="bibr" coords="1,105.21,645.58,7.19,8.64" target="#b3">4]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.1.1">Data Valuation</head><p>Data quality relates to the capacity of data to represent the underlying process. For example, the objective of photography is to gather information about a three-dimensional scene, while the purpose of measuring temperature is to reflect the kinetic energy of an object. Data quality issues can arise from many sources; for instance, chromatic aberration or lens imperfections in photography can distort images, creating inaccurate representations of a scene. Similarly, a miscalibrated thermometer might not measure temperature correctly. Data quality issues can be particularly problematic in machine learning <ref type="bibr" coords="1,507.30,555.74,10.74,8.64" target="#b4">[5,</ref><ref type="bibr" coords="1,520.55,555.74,7.45,8.64" target="#b5">6,</ref><ref type="bibr" coords="1,530.50,555.74,7.16,8.64" target="#b6">7]</ref>, as a small subset of inaccurate samples can significantly degrade modeling performance even if the majority of samples are high-quality. Curating high-quality datasets can be challenging and usually requires expert knowledge of both the data generation process and the underlying process being measured. A more automated approach to quantify data quality is a class of algorithms called data valuation, which assigns a numerical value to each sample in a dataset that characterizes its usefulness toward a predictive task. In the right context, data valuation can effectively capture many aspects of data quality. While there are a number of published data valuation algorithms, many of them follow a similar overarching approach, in which the user must define:</p><p>• Source dataset: The samples that will be valued.</p><p>Note that this is sometimes called the training dataset 1 .</p><p>• Target dataset: This dataset characterizes the task or goal of the data valuation, and the choice of alternative target datasets are liable to result in different data values. Note that this is sometimes called the validation dataset 2 .</p><p>• Learning algorithm: The choice of predictive model, e.g., Logistic regression, random forest, neural network, etc.</p><p>• Performance metric: The evaluation metric used to compare the learning algorithms predictions against the ground truth, e.g., Accuracy, area-under-the-receiver-operator-curve (for classification), mean-squared-error, r 2 (for regression), etc.</p><p>Provided these four user-defined elements, a Data Valuation algorithm then assigns a numerical value to each sample in the source dataset that quantifies the importance of a sample, or its contribution to the predictive performance of the learning algorithm as evaluated on the target dataset. This method can be used in a number of ways, such as:</p><p>• Model Enhancement: To improve the predictive performance of a model by filtering lowquality data or identifying mis-labeled samples.</p><p>• Attribution: To quantify data value for monetary recompense or to quantify fair contribution, i.e., credit.</p><p>• Domain Adaptation: To identify samples from an alternative domain that are relevant to a target task.</p><p>• Efficiency: Reduce the compute resources (runtime or memory) required to train machine learning models.</p><p>Existing methods for data valuation include Leave-One-Out (LOO) <ref type="bibr" coords="2,120.43,544.98,15.42,8.64" target="#b9">[10]</ref>, Data Shapley <ref type="bibr" coords="2,199.86,544.98,10.72,8.64" target="#b7">[8]</ref>, and Data Valuation using Reinforcement Learning (DVRL) <ref type="bibr" coords="2,230.38,555.89,10.51,8.64" target="#b8">[9]</ref>. Under some conditions, DVRL has been shown to out-perform both Data Shapley and LOO and has been applied to large datasets (more than 500k samples). In noisy or corrupted datasets, these methods can be used to significantly improve machine learning prediction performance by filtering low data values prior to model training. Additionally, 1 We use this naming convention to avoid confusion later since DVGS updates model parameters based on gradient from the "Target Dataset" rather than the "Source Dataset." The Data Shapley <ref type="bibr" coords="2,103.37,673.42,10.53,7.77" target="#b7">[8]</ref> and Data Valuation with Reinforcement Learning (DVRL) <ref type="bibr" coords="2,103.97,683.39,10.45,7.77" target="#b8">[9]</ref> would refer to this as the "Training" dataset. 2 The Data Shapley <ref type="bibr" coords="2,156.22,694.24,10.48,7.77" target="#b7">[8]</ref> and Data Valuation with Reinforcement Learning (DVRL) <ref type="bibr" coords="2,160.84,704.20,10.57,7.77" target="#b8">[9]</ref> would refer to this as the "Validation" dataset. data values were shown to effectively quantify data quality aspects such as the amount of noise in an image or incorrect class labels <ref type="bibr" coords="2,403.46,97.30,11.73,8.64" target="#b7">[8]</ref> (i.e., low values correlate with high-noise or mislabeled observations). As a demonstration of these methods, a recent paper used Data Shapley to value an x-ray image dataset for the prediction of pneumonia. By removing approximately 20% of their training data with the lowest data values, the authors were able to improve the test set prediction accuracy by more than 15%. Furthermore, when the authors inspected a subset of images with the lowest data values, they found it significantly enriched for mislabeled images <ref type="bibr" coords="2,495.66,195.48,15.27,8.64" target="#b10">[11]</ref>.</p><p>A key aspect of Data Shapley is the definition of equitable data conditions <ref type="bibr" coords="2,380.84,222.77,10.58,8.64" target="#b7">[8]</ref>, which we summarize as:</p><p>• Nullity: If a sample does not affect model performance, it should have a value of zero.</p><p>• Equivalency: Two samples with equal contribution should have equal values.</p><p>• Additivity: The sum of samples data values should be equal to the data value of the grouped samples.</p><p>While these conditions are convenient descriptors of data in many settings, they are not required for most of the pragmatic tasks of data valuation. Furthermore, Data Shapley is the only data valuation method to our knowledge with theoretical justifications fulfilling these conditions. Other methods, such as DVRL, perform comparably or better in many data valuation applications, such as corrupted label identification <ref type="bibr" coords="2,434.23,417.28,10.58,8.64" target="#b8">[9]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.2">Library of Integrated Network-Based Cellular Signatures</head><p>There are few, if any, datasets devoid of data quality issues, and addressing these challenges can improve the results of downstream analytics. A foundational dataset that has been highly impactful in modern research, especially in the cancer and drug-development domain, is the Library of Integrated Network-Based Cellular Signatures (LINCS) project. The LINCS program has generated high-dimension transcriptomic profiles (L1000 assay; 978 landmark genes) characterizing the effect of chemical and genetic perturbations across a range of cellular contexts, time points, and dosages <ref type="bibr" coords="2,461.03,582.61,15.42,8.64" target="#b11">[12]</ref>. This data has been used successfully in many applications; however, a continued challenge with high-throughput data pipelines is the identification of low-quality samples. In 2016, a systematic quality control analysis of LINCS L1000 data showed that differentially expressed genes (DEGs) inferred from the L1000 platform were often unreliable. For example, only 30% of DEGs overlapped between any two selected control viral vectors in short-hairpin RNA (shRNA) perturbations <ref type="bibr" coords="2,431.46,680.79,10.45,8.64" target="#b3">[4]</ref>. To address these issues, many researchers have proposed methods to improve the L1000 data analysis pipeline, including alternative approaches to peak deconvolution <ref type="bibr" coords="2,451.92,713.51,15.89,8.64" target="#b12">[13,</ref><ref type="bibr" coords="2,471.45,713.51,11.92,8.64" target="#b13">14]</ref>, and a novel method of aggregating bio-replicates in order to improve the noise-to-signal ratio <ref type="bibr" coords="3,169.13,86.39,15.77,8.64" target="#b14">[15,</ref><ref type="bibr" coords="3,187.39,86.39,11.83,8.64" target="#b15">16]</ref>.</p><p>A recent paper, which sought to use the LINCS L1000 dataset for the repurposing of COVID-19 drugs, proposed a simple but effective method of quantifying sample-level data quality by computing the average Pearson correlation (APC) between the replicates of a perturbation. Intuitively, if replicates are discordant, and therefore have low or negative pairwise correlations, then the resulting APC value is low; however, if the replicates are concordant and have high pairwise correlations, then the APC value is high. The authors went on to show that filtering L1000 data based on APC values could significantly improve the predictive accuracy of machine learning models <ref type="bibr" coords="3,278.06,222.77,15.21,8.64" target="#b16">[17]</ref>.</p><p>Improvement of data quality in large publicly available datasets, such as the LINCS project, has the potential to markedly improve the usefulness and impact of these datasets. In addition, effective data quality metrics could be used to inform the selection of new conditions that will be most beneficial to select prediction tasks or to avoid conditions that are unlikely to be useful.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.3">Related Work</head><p>Dataset Distillation is a related field, which attempts to distill knowledge from a large dataset into a small one by synthesizing a new dataset that is representative of the original dataset but much smaller <ref type="bibr" coords="3,210.25,391.67,15.89,8.64" target="#b17">[18,</ref><ref type="bibr" coords="3,228.77,391.67,11.92,8.64" target="#b18">19]</ref>. Adjacent to this domain is core-set or instance selection that focus on selecting a subset of a dataset that leads to comparable or better machine learning performance. In many pragmatic applications, data valuation can be seen as coreset or instance selection method; For instance, data valuation produces a ranked list of the samples in a given dataset, based on their value or usefulness towards a predictive task. A ranked list of observations can easily be treated as an instance selection problem by choice of a threshold. Selection of a data value threshold, either by post-hoc analysis or manual choice, reframes data valuation methods as a instance selection approach. Additionally, many of the evaluation techniques of common data valuation methods are analogous to instance selection (e.g., machine learning performance improvement goals). There is no analog for the equitable data value conditions described by Ghorbani et al. <ref type="bibr" coords="3,187.58,577.13,11.75,8.64" target="#b7">[8]</ref> in core-set or instance selection. Several notable methods of core-set or instance selection includes herding <ref type="bibr" coords="3,175.44,598.94,15.65,8.64" target="#b19">[20,</ref><ref type="bibr" coords="3,193.15,598.94,11.74,8.64" target="#b20">21]</ref>, distribution-matching <ref type="bibr" coords="3,72.00,609.85,15.85,8.64" target="#b21">[22,</ref><ref type="bibr" coords="3,90.33,609.85,13.33,8.64" target="#b22">23]</ref> and incremental-gradient matching approaches <ref type="bibr" coords="3,72.00,620.76,15.15,8.64" target="#b23">[24]</ref>. There have also been instance selection approaches for large language models, which require large amounts of data to train, and the choice of prompting can have drastic impacts on model performance <ref type="bibr" coords="3,227.22,653.49,15.77,8.64" target="#b24">[25,</ref><ref type="bibr" coords="3,245.48,653.49,11.83,8.64" target="#b25">26]</ref>.</p><p>Anomaly detection or outlier detection attempts to separate data instances that deviate from the majority of samples <ref type="bibr" coords="3,107.76,691.70,15.41,8.64" target="#b26">[27]</ref>. Data valuation, especially when used to identify corrupted labels or characterizing exogenous feature noise, can be examined from the lens of anomaly detection. For instance, the DVRL Estimator model tries to learn a joint probability distribution of exogenous and endogenous features that maximizes predictive performance of a given learning algorithm. If we make the assumption that identifying in-distribution training data will lead to test performance generalization, then DVRL can be thought of as a method for separating anomalous (out-of-distribution) from normal samples (in-distribution). There have been countless methods introduced for anomaly detection, however, of particular relevance to this paper is a gradient-based anomaly representation for autoencoders proposed by Kwon et. al, which defines an anomaly score based on both reconstruction error and the gradient. <ref type="bibr" coords="3,445.61,217.30,15.27,8.64" target="#b27">[28]</ref>.</p><p>There has also been significant research on how to train machine learning models in the presence of noisy or corrupted data. These methods range broadly and include meta learning, sample re-weighting schemes <ref type="bibr" coords="3,505.83,266.41,15.89,8.64" target="#b28">[29,</ref><ref type="bibr" coords="3,525.36,266.41,11.92,8.64" target="#b29">30]</ref>, noise-robust loss functions <ref type="bibr" coords="3,429.82,277.32,16.73,8.64" target="#b30">[31]</ref> and loss correction algorithms <ref type="bibr" coords="3,355.61,288.23,15.42,8.64" target="#b31">[32]</ref>. These methods predominately focus on training high-performing models without explicitly removing corrupted or spurious observations; however, several of these methods use re-weighting schemes that rely on interim observation-specific weights and could be considered analogous to data values.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.4">Contributions</head><p>Data valuation is an efficient and automated approach to characterizing sample informativeness, particularly in data cleaning tasks such as identifying incorrectly labeled or noisy samples. Existing data valuation methods, however, have limitations that hinder widespread application. Data Shapley does not scale well to large datasets and underperforms in certain tasks like corrupted label identification compared to DVRL. DVRL often exhibits high performance in data valuation applications, but is sensitive to hyperparameters, choice of dataset, and predictive model. It can be inconvenient and time consuming to tune the DVRL hyperparameters and is ineffective in some predictive tasks. Furthermore, while DVRL is significantly faster than Data Shapley, this method still requires sequential training of models to accurately estimate data values, which consumes significant computational resources.</p><p>In this paper, we introduce a novel data valuation method and compare it against baselines in two key tasks: 1) identifying corrupted labels and 2) identifying samples with high exogenous feature noise. We also explore the application of data valuation in unsupervised learning settings, which to our knowledge is the first method to evaluate this. Unsupervised data valuation is ideal for quantifying sample noise in biological data types such as 'omics sequencing data (RNA expression, DNA mutation, methylation, etc.). Finally, we apply our method to compute data values for the LINCS L1000 level 5 dataset, which contains more than 700,000 high-dimensional samples. Our method demonstrates performance comparable to that of Data Shapley <ref type="bibr" coords="4,170.08,75.48,11.75,8.64" target="#b7">[8]</ref> and DVRL <ref type="bibr" coords="4,232.58,75.48,11.75,8.64" target="#b8">[9]</ref> while being significantly more computationally efficient. The speed and scalability of our method make it applicable to large datasets, even with small compute budgets. Moreover, our method is robust to hyperparameters, making it userfriendly.</p><p>Although data quality metrics have been proposed for the LINCS L1000 dataset, such as the average Pearson correlation (APC) between replicates <ref type="bibr" coords="4,220.99,168.23,15.19,8.64" target="#b16">[17]</ref>, our data valuation results offer an alternative data quality metric. We show that filtering data based on our data values results in equivalent or higher-performing models than data filtering based on APC. Additionally, we show that our method is more effective in capturing high-valued samples than the APC metric, which could be used to inform future data acquisition decisions.</p><p>2 Proposed Methods</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1">Data Valuation with Gradient Similarity</head><p>We propose a method of Data Valuation with Gradient Similarity (DVGS), based on the premise that source samples with a loss surface similar to the target loss surface will be more useful to a shared predictive task than source samples with dissimilar loss surfaces. For instance, a training dataset loss surface with a similar shape and minima to the validation dataset loss surface is likely to positively contribute to the validation predictive task. This premise is visualized by a toy example in Figure <ref type="figure" coords="4,100.50,413.49,3.74,8.64" target="#fig_0">1</ref>. Analytically computing the loss criteria for all possible parameter values (i.e., the full loss surface) is intractable for most problems, and therefore a comprehensive comparison of loss surfaces is challenging. However, we can approximate the comparison of loss surfaces by comparing gradient similarities at select parameter values. Comparison of gradients is also advantageous as it factors out the absolute loss value.</p><p>Similarly to other data valuation methods, DVGS requires a target dataset that characterizes the desired predictive task. The target dataset may be of high quality, specific prediction domain, or a randomly sampled holdout set. Additionally, the user must define a differentiable predictive model that can be trained using stochastic gradient descent (SGD). The source dataset serves as input on which data valuation will occur, with the goal of characterizing useful or detrimental samples. To perform DVGS, we optimize model parameters using SGD on the target dataset and at each iteration compute the similarity of the target batch gradient to each source sample gradient. We posit that this approach will accurately estimate data values if the gradient similarities are measured in critical regions of the weight-space, such as regions commonly explored during optimization. This procedure is documented in Algorithm 1. We do not expect or justify that this approach satisfies the equitable data value conditions proposed by Ghorbani et al., however, we empirically demonstrate that this approach effectively characterizes data quality in many real-world prediction tasks while being simple, scalable, and easily extensible to a wide range of model architectures and predictive tasks.</p><p>Calculating the similarity between the gradients of the source samples and the target dataset requires a function that takes as input two high-dimensional gradient vectors and returns a single scalar characterizing similarity. Theoretically, any distance metric is applicable here, however, we chose to use cosine similarity because it produces easily interpreted values between [-1,1] and neglects vector magnitude. We were concerned that gradient magnitudes may vary between early-and late-stage training, and to avoid biasing data values by large gradient magnitudes, we rationalize that gradient magnitude should be ignored.</p><p>In for j = 0, 1, . . . , R do 4:</p><p>x j , y j ∼ B i 5:</p><p>ŷj ← f θ (x j ) ▷ predict outcome for target batch 6:</p><p>end for 7:</p><formula xml:id="formula_0" coords="5,76.98,185.51,463.02,23.97">∇L target i ← ∂ ∂θ ( 1 R R j=0 L(ŷ j , y j )) ▷ compute target batch gradient 8:</formula><p>for k = 0, 1, . . . , N source do 9:</p><p>x k , y k ∼ D s 10:</p><formula xml:id="formula_1" coords="5,121.23,222.56,50.61,9.65">ŷk ← f θ (x k )</formula><p>▷ predict outcome for source sample 11:</p><formula xml:id="formula_2" coords="5,118.82,232.93,112.28,13.47">∇L source k ← ∂ ∂θ (L(ŷ k , y k ))</formula><p>▷ compute the gradient for the source sample 12:</p><formula xml:id="formula_3" coords="5,118.82,245.57,118.13,13.73">ν i k ← C(∇L source k , ∇L target i</formula><p>) ▷ compute similarity of source sample gradient to the target batch gradient Intuitively, the choice of initialization weights is likely to produce different data values, especially if the target set has a complex multimodal loss surface. To prevent variance in DVGS data values due to weight initialization or stochastic mini-batch sampling, we add the option to run the DVGS algorithm multiple times, each with unique weight initialization and randomization seeds. Using this approach enables DVGS to explore multiple minima and compute similarity values on a wider range of parameter values. To aggregate a final data value, gradient similarities are averaged across all iterations and runs.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2">Time Complexity</head><p>In most applications, it is reasonable to assume that the target dataset is much smaller than the source dataset, and therefore most of the runtime is spent computing the source gradients. This can be partially mitigated by only computing gradient similarities every T iterations or by pretraining the model. We estimate 1 the computational complexity in big O notation:</p><formula xml:id="formula_4" coords="5,147.42,632.56,72.53,22.31">O( N iter N source T )</formula><p>We expect that the DVGS method will scale linearly with the number of source samples and training iterations. A particular advantage of the DVGS methods is that only a 1 See supplementary note 5.3 for experimental evaluation of time complexity. single model need be trained, whereas Data Shapley and DVRL require training many models sequentially. This time complexity makes it suitable for application to large datasets. Additionally, DVGS can be run in parallel and the results averaged to compute more accurate data values; Such an ensemble approach is ideal for large datasets and complex loss surfaces. In many tasks, such as image classification with convolutional neural networks, it can be advantageous to pretrain the convolutional layers prior to performing DVGS.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3">Data</head><p>In this paper, we apply our data valuation algorithm to four datasets under various conditions.</p><p>• The ADULT dataset, also known as the "census income" dataset, consists of 14 categorical or integer features representative of an adult individual and labeled based on whether they make more than 50k dollars per year <ref type="bibr" coords="5,477.00,570.40,15.27,8.64" target="#b33">[34]</ref>.</p><p>• The BLOG dataset consists of internet blog characteristics parsed from the raw HTML file and the output is the average number of comments received; We then binarize the endogenous variable with threshold of 0 <ref type="bibr" coords="5,486.17,629.01,15.27,8.64" target="#b34">[35]</ref>.</p><p>• The CIFAR10 dataset, which consists of tiny images labeled as one of 10 possible objects <ref type="bibr" coords="5,352.50,665.81,15.58,8.64" target="#b35">[36]</ref>; we transform the images into an informative feature representations using a pre-trained InceptionNet prior to data valuation <ref type="bibr" coords="5,497.51,687.63,15.27,8.64" target="#b36">[37]</ref>.</p><p>• The LINCS L1000 dataset measures RNA expression in cell lines some time after a chemical or genetic perturbation <ref type="bibr" coords="6,205.36,75.48,16.73,8.64" target="#b11">[12]</ref> We further break the LINCS L1000 into two data partitions: 1) all data and 2) high-APC (&gt;0.5) data (see supp. note 5.2).</p><p>We chose the first three datasets and pre-processing steps (ADULT, BLOG, and CIFAR10) to match the evaluations performed in previous work <ref type="bibr" coords="6,211.90,151.82,10.91,8.64" target="#b8">[9,</ref><ref type="bibr" coords="6,225.68,151.82,7.27,8.64" target="#b7">8]</ref>. Similarly, we try to match the respective dataset size (target, source, test) choices made in previous work to provide similar evaluations.</p><p>The LINCS L1000 is a widely used biological dataset that suffers from known data quality issues <ref type="bibr" coords="6,226.26,211.85,15.70,8.64" target="#b11">[12,</ref><ref type="bibr" coords="6,244.45,211.85,12.42,8.64" target="#b15">16,</ref><ref type="bibr" coords="6,259.36,211.85,12.42,8.64" target="#b13">14,</ref><ref type="bibr" coords="6,274.27,211.85,12.42,8.64" target="#b12">13,</ref><ref type="bibr" coords="6,289.18,211.85,7.44,8.64" target="#b0">1,</ref><ref type="bibr" coords="6,71.25,222.76,13.31,8.64" target="#b16">17]</ref> and removing inaccurate or noisy samples from this dataset could benefit the cancer drug response domain.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.4">Dataset Corruption</head><p>To simulate poor data quality, we artificially corrupt datasets in two ways:</p><p>• Label Corruption; Endogenous variable (y)</p><p>• Feature Corruption; Exogenous variable (x) Labels are corrupted by randomly relabeling a proportion of the source dataset class labels; for instance, an image of a "dog" might be re-labeled as "cat". The corrupted sample indices are then used as the ground truth of data quality and can be compared to data values. The expectation is that corrupted labels will have lower data values indicating that they are less valuable to model performance. To summarize the ability of data values to identify corrupted samples, we use the area under the receiver operator curve (AUROC) metric:</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>AU ROC(c, −ν)</head><p>Where c is the corrupted label mask (0 = uncorrupted; 1 = corrupted) and ν is the data values. Notably, we flip the data value sign as we expect large data values to indicate high quality data, and small data values to indicate low quality or mislabeled observations.</p><p>To explore the ability of data valuation to capture exogenous feature sample quality, we add Gaussian noise to each observation:</p><p>x * i,j = N (0, ϕ i ) + x i,j where x * i,j is feature j of the corrupted sample i, and ϕ i is an observation-specific noise rate sampled from a uniform distribution. Thus, samples with larger noise rates (ϕ i ), will have noise with greater variance. The primary evaluation task is to apply data valuation and compare the data values with the sample-specific noise rates. We expect that samples with large noise rates will have small data values, indicating that they are less valuable to model performance. To evaluate performance on this task, we use Spearman correlation <ref type="bibr" coords="6,237.24,713.51,15.12,8.64" target="#b37">[38]</ref>. Note that we change the sign of our data values as we expect that high data values should correlate with large noise rates: ρ = Spearman(ϕ, −ν) 3 Results</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1">Label Corruption</head><p>To evaluate the ability of data values to capture mislabeled samples, we artificially corrupt labels in three classification datasets: ADULT, BLOG, and CIFAR10. We compare DVGS to several baseline methods:</p><p>• Randomly assigned data values (null model) • Leave-out-out (LOO) <ref type="bibr" coords="6,440.67,243.03,16.60,8.64" target="#b9">[10]</ref> • Truncated Monte-Carlo Data Shapley (dshap)</p><p>[8] • Data Valuation with Reinforcement learning (DVRL) <ref type="bibr" coords="6,388.01,294.30,11.62,8.64" target="#b8">[9]</ref> The Leave-one-out and Data Shapley algorithms are only applied to the ADULT and BLOG datasets due to compute resource constraints.</p><p>In all three datasets, we corrupt 20% of the labels. For the ADULT and BLOG datasets we use 1000 source observations and 400 target observations. For the CIFAR10 dataset, we use 5000 source observations and 2000 target observations. We expect accurate data valuation to produce values such that corrupted samples data values will be smaller than uncorrupted samples, indicating that they are less valuable or useful toward our target predictive task. Additionally, we expect that filtering corrupted labels should improve model performance. In each experiment, we evaluate the ability of data values to 1) identify corrupted labels and 2) modify model performance as measured on a hold-out test set when we filter a proportion of the dataset. In this second task, we evaluate the performance changes when we filter high-values (expectation that performance will decrease) versus low-values (expectation that performance will improve or be unaffected).</p><p>For all three datasets, we use a 2-layer neural network as the learning algorithm and the area under the receiver operator curve (AUROC) as the performance metric <ref type="bibr" coords="6,522.81,577.13,15.15,8.64" target="#b38">[39]</ref>. Each experiment is run at least five times with randomly sampled data subsets and unique weight initialization. Experiments are repeated to ensure stable results across diverse subsets of data and weight initialization.</p><p>Figure <ref type="figure" coords="6,344.67,637.15,4.89,8.64">2</ref> compares the ability of five data valuation methods to identify corrupt labels. Figure <ref type="figure" coords="6,476.45,648.06,5.08,8.64">3</ref> compares the effects of filtering based on data values on performance. In all three datasets, DVGS performs comparably or better than baseline data valuation methods. DVGS performs particularly well on the CIFAR10 dataset, which may be due to the informative features extracted from a pretrained InceptionNet model <ref type="bibr" coords="6,398.53,713.51,15.27,8.64" target="#b36">[37]</ref>.  The predictive quality of the data values for the identification of corrupt labels is shown in Table <ref type="table" coords="7,254.74,634.11,3.81,8.64" target="#tab_1">1</ref>. DVGS data values are the most predictive of corrupted labels in all three datasets, as measured by the AUROC score. DVRL often performed comparably to DVGS, however, DVRL convergence was inconsistent and occasionally resulted in a suboptimal policy, as evidenced by the wide confidence intervals of DVRL in Figure <ref type="figure" coords="7,231.62,699.57,4.94,8.64">2</ref> and large standard deviations of CIFAR10 in Table <ref type="table" coords="7,229.96,710.48,3.81,8.64" target="#tab_1">1</ref>. Additionally, we note that DVGS underperforms compared to Data Shapley when characterizing high data value, as seen in relative performance trends when filtering high-value data in Figure <ref type="figure" coords="7,374.46,655.93,3.74,8.64">3</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2">Characterization of Sample Noise</head><p>In many domains, input features may be noisy due to measurement error, natural stochasticity, or batch effects, leading to inaccurate sample informativeness. To explore the ability of data valuation to quantify input feature noise, we artificially corrupt exogenous features as described in Section 2. For this task, we evaluate data valuation in supervised (ADULT, BLOG and CIFAR10) and unsupervised learning (CIFAR10 and LINCS) settings. In the supervised setting, we use architectures and hyper-parameters identical to those described in Section 3.1. In unsupervised settings, we use an autoencoder architecture <ref type="bibr" coords="8,122.66,173.66,15.88,8.64" target="#b39">[40,</ref><ref type="bibr" coords="8,141.23,173.66,13.35,8.64" target="#b40">41]</ref> to create a low-dimensional representation and optimize using reconstruction mean square error (MSE). We justify that noisy samples will be more difficult to reconstruct and are likely to be detrimental to the performance. For the unsupervised setting, we apply our methods to two datasets: the CIFAR10 dataset and a high-quality subset of the LINCS L1000 <ref type="foot" coords="8,242.16,237.44,3.49,6.05" target="#foot_0">2</ref> . The ability of the data values to characterize the exogenous feature noise rates is reported in Table <ref type="table" coords="8,197.18,260.93,3.77,8.64" target="#tab_2">2</ref>. Compared to baseline methods, DVGS produces data values that most strongly correlate<ref type="foot" coords="8,107.55,281.08,3.49,6.05" target="#foot_1">3</ref> with ground-truth noise rates. As in Section 3.1, we also evaluate the performance impact of filtering data based on data values, and these results are shown in Figure <ref type="figure" coords="8,99.77,315.48,3.66,8.64" target="#fig_3">4</ref>. We find that DVGS can most effectively characterize noise rates across all datasets. Additionally, when we compare model performance improvements when low value data are removed, as shown by the solid lines in Figure <ref type="figure" coords="8,87.01,359.11,3.68,8.64" target="#fig_3">4</ref>, we find that the performance of the DVGS method is comparable to or better than the baseline methods.</p><p>As observed in the results of the supervised setting, we find that Data Shapley outperforms DVGS in quantifying high-quality data, measured by model performance decrease when filtering high-value data in both the ADULT and BLOG datasets, shown in Figure <ref type="figure" coords="8,228.13,424.57,22.41,8.64" target="#fig_3">4 (a,b</ref>). In some of the learning tasks listed in Table <ref type="table" coords="8,218.22,435.48,5.08,8.64" target="#tab_2">2</ref> only one or none of the baseline methods are calculated due to compute limitations.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3">Computational Complexity</head><p>DVGS can be applied to large datasets and complex tasks with markedly lower computational costs than previous data valuation methods and enables application to new domains and data types. In Table <ref type="table" coords="8,203.86,534.58,3.67,8.64" target="#tab_3">3</ref>, we show the runtime of four data valuation algorithms. On average, DVGS is roughly five times faster than DVRL and more than 100 times faster than truncated Monte-Carlo (TMC) Data Shapley. Compared to DVRL and Data Shapley, which require sequential training of models on different subsets of data, the DVGS method requires training only one model. Furthermore, by computing the gradient similarities every T batches, the DVGS runtime can be reduced by a factor of T . In practice, we find that using values of T between 2 and 5 has a marginal impact on the performance of the data values used for corrupted label discovery. These experiments are described in more detail in Supplementary Section 5.3.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.4">Data Valuation of the LINCS dataset</head><p>In this section, we apply our DVGS method to quantify LINCS L1000 sample quality across all chemical perturbations. In each experiment, we randomly sampled a target and a test set (5000 observations each) in two conditions:</p><p>• Noisy Target set (high-APC). Target dataset sampled from all available observations. • Clean Target set (all-APC). Target dataset sampled from high-APC observations (APC &gt; 0.5).</p><p>In both configurations, we adjust the target set sampling probabilities so that the target set is balanced by perturbation type. The source set consists of all samples that are not in the target or test sets. See Supplementary 5.2 for more information on APC calculation.</p><p>Data valuation of LINCS could be done in a supervised or unsupervised setting, however, we chose to use an unsupervised prediction task for the following reasons:</p><p>• Simplicity: Encoding drug, cell line, concentration and measurement time requires additional overhead and may bias the results toward the encoding method chosen; e.g., encoded by drug targets, cell line expression, etc. • Imbalanced Dataset: drug perturbations and cell lines are not equally represented in the LINCS dataset, and this may cause bias toward the over represented drugs or cell lines. While this is a concern in an unsupervised setting, we rationalize that removing exogenous variables may help mitigate the issue. Additionally, to further mitigate this concern we select a target set with more balanced proportions of drug perturbations. • Noise Quantification: We consider measurement noise to be the primary data quality issue in the LINCS L1000 dataset and would like our data values to characterize sample noise rates. The results from Section 3 indicates that DVGS can effectively quantify sample noise using an unsupervised learning task.</p><p>For this task, we use an autoencoder with 2-layers in the encoder and decoder networks and 32 latent channels (embedding dimension). To avoid dependence on a specific target set, we ran the experiment several times (n ≥ 3) using different source, target, and test sets, as well as unique weight initializations. We compare the DVGS data values with the APC metric, proposed by Pham et al., to compare the generated data values to previous LINCS L1000 sample quality metrics. We evaluate    <ref type="figure" coords="9,146.41,526.75,5.00,8.64" target="#fig_5">5</ref> shows the performance comparison between the APC and DVGS data values. In the high-APC and all-APC conditions, we see that DVGS captures low data quality much better than the APC metric. In the all-APC condition, DVGS outperforms APC in capturing high-quality data, however, the DVGS data values and APC perform comparably in the high-APC condition. Additionally, we find that DVGS values and APC values correlate in the high-APC condition (Pearson Correlation ∼ 0.84) but not in the all-APC condition (Pearson Correlation ∼ -0.05). More specifically, in Figure <ref type="figure" coords="9,256.76,635.85,9.37,8.64" target="#fig_5">5c</ref> we see that high APC values are depleted for high data values, suggesting that DVGS data values in the all-APC condition may characterize a different aspect of data quality or usefulness than APC.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4">Discussion</head><p>In this work, we address scalability limitations of current data valuation methods by proposing a fast and robust method to estimate data values. We show that this method performs comparably or better than baseline methods in several tasks, including 1) identifying corrupted labels and 2) characterizing exogenous feature noise. Additionally, we have shown that our method works well to modify model performance when filtering data based on data values, and performs comparably or better than baselines when filtering low-value data. While Data Shapley and DVRL tend to lead to larger decreases in model performances when filtering high-value data, DVGS performs exceptionally well at identifying corrupted labels and noisy samples, especially in vision tasks using pretrained models. DVGS is also, on average, 100 times faster than Data Shapley (TMC) and 5 times faster than DVRL. This improvement in time complexity makes DVGS applicable to a wide range of datasets and domains. Additionally, in the reported experiments, DVGS was stable across hyperparameters (see Supplementary note 5.1), data par-tition, and weight initialization. These characteristics make DVGS convenient and robust for many applications in data cleaning and machine learning.</p><p>To show the value of our DVGS method in a real world scenario and to address data quality issues in a foundational dataset, we apply DVGS to the LINCS L1000 level 5 dataset that has more than 700k high-dimensional samples. We compare our method with a previous LINCS quality metric, the Average Pearson Correlation (APC), and show that our DVGS-produced data values are better able to modify model performance when filtering based on value. Interestingly, using a target dataset drawn randomly from the dataset (not necessarily high-quality) leads to data values that 1) do not correlate well with APC, and 2) significantly outperform APC as measured on a hold-out test set drawn from the full dataset.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1">Limitations and Future Directions</head><p>Similarly to DVRL, our DVGS method lack the equi- Through the lens of anomaly detection, DVGS can be viewed as a meta-learning algorithm that quantifies the similarity of the source samples to the target dataset and could potentially be used for anomaly detection. Additionally, this perspective may help explain why the DVGS method underperforms compared to baselines in identifying high-value data. For instance, if DVGS data values are considered a metric of similarity to the target set, then it may be that the most "similar" samples are not necessarily the most useful, whereas the most "dissimilar" data are likely erroneous or detrimental. It is therefore important that large data values be treated with caution. Additionally, it raises the question: how does DVGS handle redundant (or highly-similar) data in either the target or source datasets? Future work should address these concerns and characterize how redundancy can skew or alter DVGS data values.</p><p>While DVGS works remarkably well on the evaluations listed in this paper, we do recognize that it is rare for gradient-based learning algorithms to be trained on gradient from single samples (e.g., on-line learning) and that most optimization algorithms are trained using minibatches, thus implying that any sample's value or usefulness toward a predictive task cannot be considered independent of the other samples. Future work may wish to address this by looking at gradient similarity within mini-batches, or by selecting samples that align minibatch gradients to the target dataset. One can imagine bior multi-modal sample-gradients, all of which may align poorly to a target mini-batch gradient, but when source samples are averaged in a mini-batch may align far more closely.</p><p>5 Supplementary</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1">DVGS Robustness to Hyperparameters</head><p>To test the robustness of the DVGS method with respect to algorithm hyperparameters, we performed a grid search on the ADULT dataset with 20% corrupted endogenous labels. We record the ability of DVGS to identify the corrupted labels across all tested hyperparameters. Figure <ref type="figure" coords="14,72.00,174.17,5.08,8.64" target="#fig_6">6</ref> shows the cumulative distribution function (CDF) of the resulting AUROC values across all hyperparameters tested. Note that the AUROC metric characterizes the ability of data values to classify corrupted labels. We find that almost 85% of the tested hyperparameter configurations resulted in performances within 25% of the maximum performance, and more that 50% of the tested hyperparameters resulted in performance within 10% of the maximum performance, indicating that the DVGS method is robust to choice of hyperparameters. The hyperparameter grid search configurations are shown in Table <ref type="table" coords="14,96.07,294.17,3.74,8.64" target="#tab_5">4</ref>. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2">Average Pearson Correlation (APC) metric</head><p>We compute the previously proposed Average Pearson Correlation (APC) <ref type="bibr" coords="14,146.60,615.57,16.47,8.64" target="#b16">[17]</ref> of LINCS level 4 replicates using the procedure:</p><p>For a given level 5 LINCS sample:</p><p>• Identify the level 4 bio-replicate sample ids that were used to generate the level 5 aggregate sample.</p><p>• Load the level 4 sample ID expression profile into memory</p><p>• Filter to select only landmark genes (978) • Compute the average pairwise Pearson correlation of level 4 bio-replicates</p><p>As shown in Figure <ref type="figure" coords="14,398.46,122.65,3.81,8.64" target="#fig_7">7</ref>, the resulting APC distribution is skewed right, with the majority of samples having an APC less than 0.5, suggesting that most of the replicates are highly discordant. Notably, future work may wish to perform data valuation directly on the level 4 samples, which may enable researchers to "rescue" high-quality replicates, even if the replicates are highly discordant.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.3">Additional Runtime Experiments</head><p>In Figure <ref type="figure" coords="15,112.07,254.12,5.08,8.64" target="#fig_9">8</ref> we show the experimental results of DVGS as the number of source samples increases. As expected, DVGS scales linearly with the number of source samples, divided by the period of gradient computations (T ). In Figure <ref type="figure" coords="15,101.15,297.75,10.16,8.64" target="#fig_9">8b</ref> we show the ability of DVGS to classify corrupted labels, when we increase the value of T , as one would expect, the AUROC value decreases with larger T, however, the marginal decrease in performance may be worthwhile for the improvements in runtime, especially on large datasets. When applying our method to the LINCS dataset, we were able to run 500 epochs of DVGS on 710,216 source samples using a multilayer autoencoder neural network (Number parameters &gt; 650k) in roughly 8 hours on a Nvidia 3090 GPU.</p><p>The memory requirement of the DVGS method is in many ways comparable to classical SGD optimization problems; however, the computation of high-dimensional sample-wise gradients can increase the memory requirements. Therefore, as the number of model parameters increases, the memory footprint of the sample gradients will also increase. To mitigate this issue, we chose to compute sample gradients in mini-batches, which can be manually specified to fit a given task. Reducing the source batch size will therefore reduce the memory footprint, but lead to a small increase in computation time.</p><p>Additionally, the user can also choose to select a subset of all the model parameters to use for gradient computation, which will reduce memory overhead.  </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="4,316.63,258.87,224.85,8.12;4,316.63,269.18,223.37,7.77;4,316.63,279.14,224.94,7.77;4,316.63,289.11,224.94,7.77;4,316.63,299.07,223.37,7.77;4,316.63,309.03,224.49,7.77;4,316.31,319.00,223.69,7.77;4,316.63,328.96,223.37,7.77;4,316.63,338.92,223.37,7.77;4,316.63,348.88,223.37,7.77;4,316.63,358.85,223.37,7.77;4,316.63,368.81,224.86,7.77;4,316.63,378.77,223.37,7.77;4,316.41,388.45,225.16,8.06;4,316.35,398.41,223.64,8.06;4,316.63,408.66,216.98,7.77;4,316.63,72.00,223.37,179.11"><head>Figure 1 :</head><label>1</label><figDesc>Figure 1:We propose a method of data valuation that compares each source sample to the target samples by computing the similarity of gradients during stochastic gradient descent. In panel A, we depict a toy-example of a 1-d loss landscape. Sample 1 (red) is an accurately labeled (high-quality), whereas sample 2 (blue) is incorrectly labeled (low quality). In panel B, we plot the similarity of each source sample gradient compared to the target set gradient (black solid line in panel A). Panel C shows the marginal distribution of gradient similarities, which is averaged to obtain the final source sample data value. To make this process tractable, gradient similarities are computed over a limited number of model parameter values during traditional stochastic gradient descent. The computed gradients are visualized by dotted lines in panels A,B and C (w0, w1,...,w3). To choose the relevant values of θ, we use stochastic gradient descent (SGD), with gradients calculated from the target set.</figDesc><graphic coords="4,316.63,72.00,223.37,179.11" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="5,72.50,260.20,11.46,7.77;5,103.88,259.16,30.47,8.96;5,72.50,271.11,11.46,7.77;5,103.88,270.14,75.33,9.65;5,179.21,267.39,22.17,6.12;5,179.21,274.96,2.82,6.12;5,309.43,270.14,230.57,8.96;5,72.50,280.98,46.91,8.96;5,72.50,291.89,131.89,9.72;5,72.50,305.63,11.46,7.77;5,103.88,304.67,22.55,9.65;5,137.99,302.78,3.97,6.12;5,130.40,310.14,18.49,6.12;5,162.93,301.70,18.49,6.12;5,162.93,309.70,12.91,6.12;5,184.25,304.67,4.92,8.74;5,189.81,303.09,2.82,6.12;5,189.18,309.53,4.24,6.12;5,280.56,304.67,259.45,8.96;5,72.50,316.89,46.91,8.96;5,72.00,351.67,223.37,8.64;5,72.00,362.58,223.37,8.64;5,72.00,373.49,63.08,8.64"><head>θ</head><label></label><figDesc>i+1 ← θ i − α∇L target i ▷ update model parameters using the target batch gradient 15: end for 16: for k = 0, 1, . . . , N source do 17: ν k ← 1 Niter Niter i=0 ν i k ▷ compute the average gradient similarity for each source sample 18: end for should explore the comparison of within-class gradient similarities, which may mitigate this problem without class balancing.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="7,72.00,292.26,468.00,8.12;7,72.00,302.57,367.51,7.77;7,72.00,323.35,140.40,140.40"><head>Figure 2 :Figure 3 :</head><label>23</label><figDesc>Figure 2: Evaluation of respective data valuation methods ability to identify corrupted labels. The Gray dashed "random" are theoretical random performance, whereas blue/cyan "random" is empirically measured random values.</figDesc><graphic coords="7,72.00,323.35,140.40,140.40" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="9,72.00,236.10,468.00,8.12;9,71.70,246.41,404.15,7.77;9,72.00,72.00,140.40,140.40"><head>Figure 4 :</head><label>4</label><figDesc>Figure 4: The evaluation of respective data valuation methods ability to impact model performance when filtering either high value (dashed lines) or low values (solid lines). The y-axis measures the model performance using the AUROC metric.</figDesc><graphic coords="9,72.00,72.00,140.40,140.40" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4" coords="10,170.25,265.96,81.52,8.12;10,356.45,265.96,88.50,8.12;10,170.50,423.30,81.02,8.12;10,356.45,423.30,88.50,8.12"><head></head><label></label><figDesc>(a) All-APC target set. (b) High-APC target set. (c) All-APC target set. (d) High-APC target set.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5" coords="10,72.00,440.92,188.19,8.12;10,260.26,439.22,3.65,5.24;10,264.41,441.27,275.60,7.77;10,72.00,451.23,241.91,7.77;10,117.56,276.13,187.20,140.40"><head>Figure 5 :</head><label>5</label><figDesc>Figure 5: (a-b) The reconstruction performance (R 2 ) of autoencoders applied to the LINCS L1000 data when filtering low-and high-value data. (c-d) DVGS data values compared to APC values.</figDesc><graphic coords="10,117.56,276.13,187.20,140.40" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6" coords="14,72.00,488.95,223.37,8.12;14,72.00,498.98,223.37,8.06;14,72.00,508.94,223.37,8.06;14,72.00,519.19,223.37,7.77;14,72.00,529.15,224.49,7.77;14,72.00,539.11,224.86,7.77;14,72.00,549.08,161.94,7.77;14,72.00,313.66,223.38,167.53"><head>Figure 6 :</head><label>6</label><figDesc>Figure 6: The cumulative distribution function (CDF) of AU ROC(ci, −νi) across all tested hyperparameters, where νi are data values generated by DVGS and ci are the corrupted labels label. The red dashed line demarcates all AUROC values larger than this are within 10% of the max AUROC value (e.g., roughly 55% of all tested hyperparameters resulted in an AU-ROC value within 10% of the max AUROC).</figDesc><graphic coords="14,72.00,313.66,223.38,167.53" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7" coords="14,316.63,383.99,223.37,8.12;14,316.63,394.31,95.03,7.77;14,316.63,208.70,223.38,167.53"><head>Figure 7 :</head><label>7</label><figDesc>Figure 7: The Average Pearson Correlation (APC) distribution of level 5 LINCS samples.</figDesc><graphic coords="14,316.63,208.70,223.38,167.53" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8" coords="16,71.70,481.66,210.90,8.12;16,72.00,491.97,123.41,7.77;16,326.62,481.66,212.38,8.12;16,326.91,491.97,210.60,7.77"><head></head><label></label><figDesc>(a) DVGS runtime on the ADULT dataset when computing gradient similarities every T steps.(b) Ability of DVGS to identify corrupted labels, with different values of T (period of source gradient computations).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_9" coords="16,72.00,508.56,468.00,8.12;16,72.00,518.87,100.87,7.77;16,72.00,264.30,210.60,210.60"><head>Figure 8 :</head><label>8</label><figDesc>Figure 8: The scalability and performance of the DVGS method dependant on number of source samples and the period of source similarity computations (T).</figDesc><graphic coords="16,72.00,264.30,210.60,210.60" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" coords="4,316.63,615.33,225.02,106.82"><head></head><label></label><figDesc>Data Valuation with Gradient SimilarityRequire: Differentiable model (f θ ), learning rate (α), source dataset (D s ), target dataset (D t ), number of training iterations (N iter ), target batch size (R), loss criteria (L), and similarity criteria (C).</figDesc><table coords="4,316.63,615.33,223.37,52.27"><row><cell>2:</cell><cell>B i ∼ D t</cell><cell>▷ sample mini-batch from target set</cell></row><row><cell>3:</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>classification problems, each class is likely to induce</cell></row><row><cell></cell><cell></cell><cell>a distinct gradient, and therefore target sets with a class</cell></row><row><cell></cell><cell></cell><cell>imbalance are likely to introduce class-specific biases</cell></row><row><cell></cell><cell></cell><cell>to data values. For instance, in a binary classification</cell></row><row><cell></cell><cell></cell><cell>problem, if the target set has a majority of the positive</cell></row></table><note>class, then the source samples with the negative class may be particularly dissimilar, even if they are valuable to the optimization process. To avoid inadvertent bias of classbased data values, we suggest balancing class weights<ref type="bibr" coords="4,316.63,713.51,16.47,8.64" target="#b32">[33]</ref> when computing target gradients. Future approaches Algorithm 1 1: for i = 0, 1, . . . , N iter do</note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1" coords="7,71.70,519.33,468.29,78.29"><head>Table 1 :</head><label>1</label><figDesc>The</figDesc><table /><note>Area under the receiver operator curve (AUROC) scores if the data values are used to predict corrupted labels (score = AU ROC(noise_labels, −data_values)); mean ± std. DATASET DVGS DSHAP DVRL LOO RANDOM adult 0.896 ± 0.030 0.731 ± 0.049 0.887 ± 0.042 0.542 ± 0.056 0.503 ± 0.050 blog 0.750 ± 0.028 0.671 ± 0.021 0.697 ± 0.033 0.558 ± 0.063 0.509 ± 0.028 cifar10 0.954 ± 0.009 NA 0.835 ± 0.110 NA 0.499 ± 0.019</note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2" coords="9,71.70,267.98,468.30,104.43"><head>Table 2 :</head><label>2</label><figDesc>The Spearman correlation of predicted data values and artificial sample noise rates. The top performing method for each row is bolded; mean ± std. ± 0.061 0.130 ± 0.091 0.159 ± 0.074 0.022 ± 0.076 -0.007 ± 0.026 blog supervised 0.106 ± 0.077 0.086 ± 0.074 0.100 ± 0.344 0.045 ± 0.078 0.011 ± 0.</figDesc><table coords="9,78.80,296.75,454.41,75.66"><row><cell>Dataset</cell><cell>Learning</cell><cell>DVGS</cell><cell>DSHAP</cell><cell>DVRL</cell><cell>LOO</cell><cell>RANDOM</cell></row><row><cell>adult</cell><cell cols="6">supervised 0.225 054</cell></row><row><cell>cifar10</cell><cell cols="2">supervised 0.402 ± 0.081</cell><cell cols="2">NA 0.358 ± 0.103</cell><cell cols="2">NA 0.000 ± 0.018</cell></row><row><cell cols="3">cifar10 unsupervised 0.757 ± 0.131</cell><cell>NA</cell><cell>NA</cell><cell cols="2">NA 0.003 ± 0.014</cell></row><row><cell cols="3">lincs (APC&gt;0.5) unsupervised 0.505 ± 0.018</cell><cell>NA</cell><cell>NA</cell><cell>NA</cell><cell>NA</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3" coords="9,71.70,387.30,468.30,148.09"><head>Table 3 :</head><label>3</label><figDesc>Average runtime (in minutes) of 8 experiments. Experiments 1-3 were for label corruption; Experiments 4-6 were for noise characterization; Experiments 7 and 8 were unsupervised characterization of noise.</figDesc><table coords="9,71.75,416.11,370.25,119.28"><row><cell cols="7">method exp1 exp2 exp3 exp4 exp5 exp6 exp7 exp8</cell></row><row><cell cols="7">dshap 515.2 774.9 NaN 404.5 631.0 NaN NaN NaN</cell></row><row><cell>dvgs</cell><cell>1.3</cell><cell>1.2</cell><cell>5.3</cell><cell>1.4</cell><cell>1.3</cell><cell>5.1 154.0 41.7</cell></row><row><cell>dvrl</cell><cell>9.9</cell><cell cols="2">9.5 13.2</cell><cell>9.8</cell><cell cols="2">9.8 11.7 NaN NaN</cell></row><row><cell cols="7">loo 33.0 34.0 NaN 35.1 34.7 NaN NaN NaN</cell></row><row><cell cols="4">the performance of LINCS data values by their ability to</cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="4">modify model performance when filtering high-and low-</cell><cell></cell><cell></cell><cell></cell></row><row><cell>value data. Figure</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4" coords="10,316.63,713.51,224.62,8.64"><head></head><label></label><figDesc>table data value properties proposed byGhorbani et al.,   and therefore should not be interpreted in the same way; DVGS data values do not have a convenient interpretation like Data Shapley values. Rather, DVGS data values should be considered latent variables characterizing data usefulness, and we make no assumption about the linearity or magnitude of DVGS data values. These traits suggest that DVGS data values should be treated contextually as an ordered list of valuable samples. Pragmatically, ranked sample values meet the requirements of many of the evaluation techniques used by previous data valuation methods<ref type="bibr" coords="11,124.93,184.57,10.67,8.64" target="#b7">[8,</ref><ref type="bibr" coords="11,137.92,184.57,8.23,8.64" target="#b8">9]</ref> including identifying corrupted labels and noise quantification. Future directions may consider learning a task-specific function to estimate Data Shapley values from DVGS data values, which would allow users to interpret the DVGS data values in a way comparable to Data Shapley. This could be done by performing DVGS data valuation and calculating a limited number of Data Shapley values, which could then be used as a training set to infer Data Shapley values from DVGS values. Such an approach may help merge the scalability advantages of DVGS with the interpretability of Data Shapley.</figDesc><table /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5" coords="15,76.38,75.08,426.28,134.61"><head>Table 4 :</head><label>4</label><figDesc>The DVGS hyperparameter configurations tested in a grid search with 2 replicates per configuration.</figDesc><table coords="15,76.38,75.08,125.96,8.64"><row><cell>Hyperparameter</cell><cell>Values</cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="2" xml:id="foot_0">Observations with an average Pearson correlation between replicates greater than 0.5</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="3" xml:id="foot_1">More positive correlation is better performance; As described in Section 2, evaluation is performed by Spearman(ϕi, −νi), since low data values are expected to correlate with high noise rates.</note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgements</head><p>This work is supported by the National Library of Medicine (NLM) Training Grant (T15-LM07088).</p><p>The authors thank Dr. Yoon for input on DVRL implementation details and Dr. Ben Cordier for the many discussions about data valuation.</p></div>
+			</div>
+
+
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Code and Data Availability</head><p>The Adult, Blog and Cifar10 datasets can be accessed from the UCI machine learning repository <ref type="bibr" coords="11,497.95,110.77,15.42,8.64" target="#b33">[34]</ref>. The LINCS data can be accessed from the CLUE data library. All code used for production of the paper figures and the methods described can be found here https://github. com/nathanieljevans/DVGS. Further questions can be directed to Nathaniel Evans (evansna@ohsu.edu).</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="11,338.21,324.20,203.44,8.64;11,338.21,335.11,201.79,8.64;11,338.21,346.02,203.03,8.64;11,337.85,356.93,203.81,8.64;11,338.21,367.84,203.44,8.64;11,338.21,378.75,203.03,8.64;11,337.90,389.66,202.10,8.64;11,338.21,400.56,201.79,8.64;11,338.21,411.47,203.44,8.64;11,338.21,422.38,203.53,8.64;11,338.21,433.29,203.04,8.64;11,338.21,444.20,203.53,8.64;11,338.21,455.11,202.14,8.64;11,338.21,466.02,203.53,8.64;11,337.88,476.76,139.19,8.81" xml:id="b0">
+	<analytic>
+		<title level="a" type="main">A Multi-center Study on the Reproducibility of Drug-Response Assays in Mammalian Cell Lines</title>
+		<author>
+			<persName coords=""><forename type="first">Mario</forename><surname>Niepel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Marc</forename><surname>Hafner</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Caitlin</forename><forename type="middle">E</forename><surname>Mills</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Kartik</forename><surname>Subramanian</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Elizabeth</forename><forename type="middle">H</forename><surname>Williams</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Mirra</forename><surname>Chung</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Benjamin</forename><surname>Gaudio</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Anne</forename><forename type="middle">Marie</forename><surname>Barrette</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Alan</forename><forename type="middle">D</forename><surname>Stern</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Bin</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">James</forename><forename type="middle">E</forename><surname>Korkola</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Joe</forename><forename type="middle">W</forename><surname>Gray</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Marc</forename><forename type="middle">R</forename><surname>Birtwistle</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Laura</forename><forename type="middle">M</forename><surname>Heiser</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Peter</forename><forename type="middle">K</forename><surname>Sorger</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Caroline</forename><forename type="middle">E</forename><surname>Shamu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Gomathi</forename><surname>Jayaraman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Evren</forename><forename type="middle">U</forename><surname>Azeloglu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ravi</forename><surname>Iyengar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Eric</forename><forename type="middle">A</forename><surname>Sobie</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Gordon</forename><forename type="middle">B</forename><surname>Mills</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Tiera</forename><surname>Liby</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jacob</forename><forename type="middle">D</forename><surname>Jaffe</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Maria</forename><surname>Alimova</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Desiree</forename><surname>Davison</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xiaodong</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Todd</forename><forename type="middle">R</forename><surname>Golub</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Aravind</forename><surname>Subramanian</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Brandon</forename><surname>Shelley</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Clive</forename><forename type="middle">N</forename><surname>Svendsen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Avi</forename><surname>Ma’ayan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Mario</forename><surname>Medvedovic</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Heidi</forename><forename type="middle">S</forename><surname>Feiler</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Rebecca</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Kaylyn</forename><surname>Devlin</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.cels.2019.06.005</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cell Systems</title>
+		<title level="j" type="abbrev">Cell Systems</title>
+		<idno type="ISSN">2405-4712</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="35" to="48.e5" />
+			<date type="published" when="2019-07">2019</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,338.21,493.70,203.44,8.64;11,338.21,504.61,203.44,8.64;11,338.21,515.35,203.44,8.81" xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Raise standards for preclinical cancer research</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">Glenn</forename><surname>Begley</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Lee</forename><forename type="middle">M</forename><surname>Ellis</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/483531a</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<title level="j" type="abbrev">Nature</title>
+		<idno type="ISSN">0028-0836</idno>
+		<idno type="ISSNe">1476-4687</idno>
+		<imprint>
+			<biblScope unit="volume">483</biblScope>
+			<biblScope unit="issue">7391</biblScope>
+			<biblScope unit="page" from="531" to="533" />
+			<date type="published" when="2012-03-28">March 2012</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,338.21,532.29,201.79,8.64;11,337.85,543.20,202.50,8.64;11,338.21,553.94,201.79,8.81;11,337.90,564.85,178.63,8.81" xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Believe it or not: how much can we rely on published data on potential drug targets?</title>
+		<author>
+			<persName coords=""><forename type="first">Florian</forename><surname>Prinz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Thomas</forename><surname>Schlange</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Khusru</forename><surname>Asadullah</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/nrd3439-c1</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Reviews Drug Discovery</title>
+		<title level="j" type="abbrev">Nat Rev Drug Discov</title>
+		<idno type="ISSN">1474-1776</idno>
+		<idno type="ISSNe">1474-1784</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="712" to="712" />
+			<date type="published" when="2011-08-31">2011</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,338.21,581.79,203.44,8.64;11,337.96,592.70,144.44,8.64" xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Systematic Quality Control Analysis of LINCS Data</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Li</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/psp4.12107</idno>
+	</analytic>
+	<monogr>
+		<title level="j">CPT: Pharmacometrics &amp; Systems Pharmacology</title>
+		<title level="j" type="abbrev">CPT Pharmacom &amp; Syst Pharma</title>
+		<idno type="ISSN">2163-8306</idno>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="588" to="598" />
+			<date type="published" when="2016-10-31" />
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,338.21,609.47,201.79,8.64;11,337.63,620.38,202.37,8.64;11,338.21,631.12,201.79,8.81;11,338.21,642.03,203.04,8.58;11,337.46,653.11,96.58,8.64" xml:id="b4">
+	<analytic>
+		<title level="a" type="main">A Review of Data Quality Assessment Methods for Public Health Information Systems</title>
+		<author>
+			<persName coords=""><forename type="first">Hong</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">David</forename><surname>Hailey</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ning</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ping</forename><surname>Yu</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/ijerph110505170</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Environmental Research and Public Health</title>
+		<title level="j" type="abbrev">IJERPH</title>
+		<idno type="ISSNe">1660-4601</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="5170" to="5207" />
+			<date type="published" when="2014-05-14">2014</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,338.21,669.88,203.44,8.64;11,338.21,680.79,203.45,8.64;11,338.21,691.70,201.79,8.64;11,338.21,702.61,203.03,8.64;11,338.21,713.51,22.42,8.64" xml:id="b5">
+	<monogr>
+		<title level="m" type="main">Andrea Nathansen, Nele Noack, Hendrik Patzlaff, Felix Naumann, and Hazar Harmouch. The effects of data quality on machine learning performance</title>
+		<author>
+			<persName coords=""><forename type="first">Lukas</forename><surname>Budach</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Moritz</forename><surname>Feuerpfeil</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Nina</forename><surname>Ihde</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,93.58,75.48,201.79,8.64;12,93.58,86.39,201.79,8.64;12,93.58,97.13,114.57,8.81" xml:id="b6">
+	<analytic>
+		<title level="a" type="main">The Challenges of Data Quality and Data Quality Assessment in the Big Data Era</title>
+		<author>
+			<persName coords=""><forename type="first">Li</forename><surname>Cai</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yangyong</forename><surname>Zhu</surname></persName>
+		</author>
+		<idno type="DOI">10.5334/dsj-2015-002</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Data Science Journal</title>
+		<title level="j" type="abbrev">CODATA</title>
+		<idno type="ISSNe">1683-1470</idno>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">0</biblScope>
+			<biblScope unit="page">2</biblScope>
+			<date type="published" when="2015-05-22">2015</date>
+			<publisher>Ubiquity Press, Ltd.</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,93.58,112.43,203.18,8.64;12,93.58,123.34,195.37,8.64" xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Data Shapley Valuation for Efficient Batch Active Learning</title>
+		<author>
+			<persName coords=""><forename type="first">Amirata</forename><surname>Ghorbani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">James</forename><surname>Zou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andre</forename><surname>Esteva</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/ieeeconf56349.2022.10064696</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2022 56th Asilomar Conference on Signals, Systems, and Computers</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2022-10-31" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,93.58,138.48,203.53,8.64;12,93.58,149.38,203.45,8.64;12,93.58,160.29,93.60,8.64" xml:id="b8">
+	<monogr>
+		<title level="m" type="main">Data valuation using reinforcement learning</title>
+		<author>
+			<persName coords=""><forename type="first">Jinsung</forename><surname>Yoon</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Sercan</forename><forename type="middle">O</forename><surname>Arik</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Tomas</forename><surname>Pfister</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1909.11671</idno>
+		<imprint/>
+	</monogr>
+	<note type="report_type">Number</note>
+</biblStruct>
+
+<biblStruct coords="12,93.58,175.43,203.44,8.64;12,93.58,186.34,203.18,8.64;12,93.58,197.25,203.45,8.64;12,93.58,208.16,156.05,8.64" xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Detection of Influential Observation in Linear Regression</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Dennis</forename><surname>Cook</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">;</forename><surname>Taylor</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ltd</forename><surname>Francis</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/00401706.1977.10489493</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Technometrics</title>
+		<title level="j" type="abbrev">Technometrics</title>
+		<idno type="ISSN">0040-1706</idno>
+		<idno type="ISSNe">1537-2723</idno>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="15" to="18" />
+			<date type="published" when="1977-02" />
+			<publisher>Informa UK Limited</publisher>
+		</imprint>
+	</monogr>
+	<note>American Statistical Association</note>
+</biblStruct>
+
+<biblStruct coords="12,93.58,223.29,203.03,8.64;12,93.58,234.20,203.03,8.64;12,93.58,245.11,201.79,8.64;12,93.58,256.02,201.79,8.64;12,93.58,266.93,203.17,8.64;12,92.83,277.84,153.63,8.64" xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Data valuation for medical imaging using Shapley value and application to a large-scale chest X-ray dataset</title>
+		<author>
+			<persName coords=""><forename type="first">Siyi</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Amirata</forename><surname>Ghorbani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Rikiya</forename><surname>Yamashita</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Sameer</forename><surname>Rehman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jared</forename><forename type="middle">A</forename><surname>Dunnmon</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">James</forename><surname>Zou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Daniel</forename><forename type="middle">L</forename><surname>Rubin</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41598-021-87762-2</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Reports</title>
+		<title level="j" type="abbrev">Sci Rep</title>
+		<idno type="ISSNe">2045-2322</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">8366</biblScope>
+			<date type="published" when="2021-04-16" />
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,93.58,292.97,203.53,8.64;12,93.58,303.88,203.04,8.64;12,93.39,314.79,203.23,8.64;12,93.39,325.70,203.22,8.64;12,93.58,336.61,203.03,8.64;12,93.58,347.52,201.79,8.64;12,93.58,358.43,201.79,8.64;12,93.58,369.34,203.44,8.64;12,93.58,380.25,203.03,8.64;12,93.22,391.15,203.90,8.64;12,93.58,402.06,203.44,8.64;12,93.58,412.97,203.04,8.64;12,93.39,423.88,203.22,8.64;12,93.58,434.79,203.53,8.64;12,93.58,445.70,201.79,8.64;12,93.58,456.61,203.54,8.64;12,93.58,467.52,203.44,8.64;12,93.58,478.43,203.04,8.64;12,93.58,489.34,202.15,8.64;12,93.58,500.25,201.79,8.64;12,93.58,510.99,203.28,8.81;12,92.83,522.06,64.20,8.64" xml:id="b11">
+	<analytic>
+		<title level="a" type="main">A Next Generation Connectivity Map: L1000 Platform and the First 1,000,000 Profiles</title>
+		<author>
+			<persName coords=""><forename type="first">Aravind</forename><surname>Subramanian</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Rajiv</forename><surname>Narayan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Steven</forename><forename type="middle">M</forename><surname>Corsello</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">David</forename><forename type="middle">D</forename><surname>Peck</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ted</forename><forename type="middle">E</forename><surname>Natoli</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xiaodong</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Joshua</forename><surname>Gould</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">John</forename><forename type="middle">F</forename><surname>Davis</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Andrew</forename><forename type="middle">A</forename><surname>Tubelli</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jacob</forename><forename type="middle">K</forename><surname>Asiedu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">David</forename><forename type="middle">L</forename><surname>Lahr</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jodi</forename><forename type="middle">E</forename><surname>Hirschman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Zihan</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Melanie</forename><forename type="middle">K</forename><surname>Donahue</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Bina</forename><surname>Julian</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Mariya</forename><surname>Khan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">David</forename><surname>Wadden</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ian</forename><forename type="middle">C</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Daniel</forename><surname>Lam</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Arthur</forename><surname>Liberzon</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Courtney</forename><surname>Toder</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Mukta</forename><surname>Bagul</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Marek</forename><surname>Orzechowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Oana</forename><forename type="middle">M</forename><surname>Enache</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Federica</forename><surname>Piccioni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sarah</forename><forename type="middle">A</forename><surname>Johnson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicholas</forename><forename type="middle">J</forename><surname>Lyons</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alice</forename><forename type="middle">H</forename><surname>Berger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alykhan</forename><forename type="middle">F</forename><surname>Shamji</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Angela</forename><forename type="middle">N</forename><surname>Brooks</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anita</forename><surname>Vrcic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Corey</forename><surname>Flynn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jacqueline</forename><surname>Rosains</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">Y</forename><surname>Takeda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roger</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Desiree</forename><surname>Davison</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Justin</forename><surname>Lamb</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Kristin</forename><surname>Ardlie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Larson</forename><surname>Hogstrom</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peyton</forename><surname>Greenside</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nathanael</forename><forename type="middle">S</forename><surname>Gray</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><forename type="middle">A</forename><surname>Clemons</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Serena</forename><surname>Silver</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaoyun</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wen-Ning</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Willis</forename><surname>Read-Button</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaohua</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephen</forename><forename type="middle">J</forename><surname>Haggarty</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lucienne</forename><forename type="middle">V</forename><surname>Ronco</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jesse</forename><forename type="middle">S</forename><surname>Boehm</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stuart</forename><forename type="middle">L</forename><surname>Schreiber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">G</forename><surname>Doench</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joshua</forename><forename type="middle">A</forename><surname>Bittker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">E</forename><surname>Root</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bang</forename><surname>Wong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Todd</forename><forename type="middle">R</forename><surname>Golub</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.cell.2017.10.049</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cell</title>
+		<title level="j" type="abbrev">Cell</title>
+		<idno type="ISSN">0092-8674</idno>
+		<imprint>
+			<biblScope unit="volume">171</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1437" to="1452.e17" />
+			<date type="published" when="2017-11">2017</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note>A next generation connectivity map: L1000 platform and the first 1,000,000 profiles</note>
+</biblStruct>
+
+<biblStruct coords="12,93.58,537.20,203.53,8.64;12,93.22,548.11,203.80,8.64;12,93.58,558.85,203.45,8.81;12,93.58,569.76,125.08,8.81" xml:id="b12">
+	<analytic>
+		<title level="a" type="main">A Bayesian approach to accurate and robust signature detection on LINCS L1000 data</title>
+		<author>
+			<persName coords=""><forename type="first">Yue</forename><surname>Qiu</surname></persName>
+			<idno type="ORCID">0000-0001-9692-1290</idno>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Tianhuan</forename><surname>Lu</surname></persName>
+			<idno type="ORCID">0000-0003-1040-2639</idno>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Hansaim</forename><surname>Lim</surname></persName>
+			<idno type="ORCID">0000-0002-8420-4750</idno>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Lei</forename><surname>Xie</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/bioinformatics/btaa064</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Bioinformatics</title>
+		<idno type="ISSN">1367-4803</idno>
+		<idno type="ISSNe">1367-4811</idno>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="2787" to="2795" />
+			<date type="published" when="2020-01-31" />
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,93.58,585.06,201.96,8.64;12,93.58,595.97,201.79,8.64;12,93.58,606.71,147.76,8.81" xml:id="b13">
+	<analytic>
+		<title level="a" type="main">l1kdeconv: an R package for peak calling analysis with LINCS L1000 data</title>
+		<author>
+			<persName><forename type="first">Zhao</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jin</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peng</forename><surname>Yu</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/s12859-017-1767-9</idno>
+	</analytic>
+	<monogr>
+		<title level="j">BMC Bioinformatics</title>
+		<title level="j" type="abbrev">BMC Bioinformatics</title>
+		<idno type="ISSNe">1471-2105</idno>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">18</biblScope>
+			<date type="published" when="2017-07-27">2017</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,93.58,622.02,203.03,8.64;12,93.00,632.92,202.36,8.64;12,93.58,643.83,203.44,8.64;12,93.58,654.74,201.79,8.64;12,93.58,665.48,153.85,8.81" xml:id="b14">
+	<analytic>
+		<title level="a" type="main">The characteristic direction: a geometrical approach to identify differentially expressed genes</title>
+		<author>
+			<persName coords=""><forename type="first">Neil</forename><forename type="middle">R</forename><surname>Clark</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Kevin</forename><forename type="middle">S</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Axel</forename><forename type="middle">S</forename><surname>Feldmann</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yan</forename><surname>Kou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Edward</forename><forename type="middle">Y</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Qiaonan</forename><surname>Duan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Avi</forename><surname>Ma’ayan</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/1471-2105-15-79</idno>
+	</analytic>
+	<monogr>
+		<title level="j">BMC Bioinformatics</title>
+		<title level="j" type="abbrev">BMC Bioinformatics</title>
+		<idno type="ISSNe">1471-2105</idno>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">15</biblScope>
+			<date type="published" when="2014-03-21">2014</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,93.58,680.79,203.03,8.64;12,93.58,691.70,203.53,8.64;12,93.58,702.61,201.79,8.64;12,93.58,713.51,203.04,8.64;12,338.02,75.48,201.98,8.64;12,337.85,86.39,203.80,8.64;12,338.21,97.13,201.79,8.81;12,337.90,108.04,138.55,8.81" xml:id="b15">
+	<analytic>
+		<author>
+			<persName coords=""><surname>Qiaonan Duan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="middle">Patrick</forename><surname>St</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Neil</forename><forename type="middle">R</forename><surname>Reid</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Zichen</forename><surname>Clark</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Nicolas</forename><forename type="middle">F</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Andrew</forename><forename type="middle">D</forename><surname>Fernandez</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ben</forename><surname>Rouillard</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Sarah</forename><forename type="middle">R</forename><surname>Readhead</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Rachel</forename><surname>Tritsch</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Marc</forename><surname>Hodos</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Mario</forename><surname>Hafner</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Peter</forename><forename type="middle">K</forename><surname>Niepel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Joel</forename><forename type="middle">T</forename><surname>Sorger</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Sina</forename><surname>Dudley</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Bavari</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Rekha Panchal, and Avi Ma&apos;ayan. L1000cds2: Lincs l1000 characteristic direction signatures search engine</title>
+				<imprint>
+			<date type="published" when="2016">2016</date>
+			<biblScope unit="volume">2</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,338.21,122.88,201.79,8.64;12,337.85,133.79,202.39,8.64;12,338.21,144.70,201.79,8.64;12,338.21,155.61,203.44,8.64;12,337.46,166.51,202.53,8.64;12,338.21,177.42,146.16,8.64" xml:id="b16">
+	<analytic>
+		<title level="a" type="main">A deep learning framework for high-throughput mechanism-driven phenotype compound screening and its application to COVID-19 drug repurposing</title>
+		<author>
+			<persName coords=""><forename type="first">Thai-Hoang</forename><surname>Pham</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yue</forename><surname>Qiu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jucheng</forename><surname>Zeng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Lei</forename><surname>Xie</surname></persName>
+			<idno type="ORCID">0000-0001-9051-2111</idno>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ping</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0000-0002-4601-0779</idno>
+		</author>
+		<idno type="DOI">10.1038/s42256-020-00285-9</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Machine Intelligence</title>
+		<title level="j" type="abbrev">Nat Mach Intell</title>
+		<idno type="ISSNe">2522-5839</idno>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="247" to="257" />
+			<date type="published" when="2021-02-01" />
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,338.21,192.10,203.03,8.64;12,338.21,203.01,187.85,8.64" xml:id="b17">
+	<analytic>
+		<title/>
+		<author>
+			<persName coords=""><forename type="first">Tongzhou</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jun-Yan</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Antonio</forename><surname>Torralba</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Alexei</forename><forename type="middle">A</forename><surname>Efros</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Dataset distillation</title>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,338.21,217.68,203.53,8.64;12,338.21,228.59,203.54,8.64" xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Dataset Distillation: A Comprehensive Review</title>
+		<author>
+			<persName coords=""><forename type="first">Ruonan</forename><surname>Yu</surname></persName>
+			<idno type="ORCID">0009-0008-4809-7119</idno>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Songhua</forename><surname>Liu</surname></persName>
+			<idno type="ORCID">0000-0003-1033-5122</idno>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xinchao</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0003-0057-1404</idno>
+		</author>
+		<idno type="DOI">10.1109/tpami.2023.3323376</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Pattern Analysis and Machine Intelligence</title>
+		<title level="j" type="abbrev">IEEE Trans. Pattern Anal. Mach. Intell.</title>
+		<idno type="ISSN">0162-8828</idno>
+		<idno type="ISSNe">1939-3539</idno>
+		<imprint>
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="150" to="170" />
+			<date type="published" when="2023">2023</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,338.21,243.26,203.53,8.64;12,338.21,254.00,201.79,8.81;12,337.88,264.91,202.12,8.81;12,337.46,275.99,204.19,8.64;12,338.21,286.90,124.43,8.64" xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Herding dynamical weights to learn</title>
+		<author>
+			<persName coords=""><forename type="first">Max</forename><surname>Welling</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/1553374.1553517</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 26th Annual International Conference on Machine Learning</title>
+				<meeting>the 26th Annual International Conference on Machine Learning<address><addrLine>New York, NY, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2009-06-14">2009</date>
+			<biblScope unit="page" from="1121" to="1128" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,338.21,301.58,203.45,8.64;12,338.21,312.48,141.57,8.64" xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Herding for Structured Prediction</title>
+		<author>
+			<persName coords=""><forename type="first">Yutian</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><forename type="middle">E</forename><surname>Gelfand</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Max</forename><surname>Welling</surname></persName>
+		</author>
+		<idno type="DOI">10.7551/mitpress/9969.003.0010</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Advanced Structured Prediction</title>
+				<imprint>
+			<publisher>The MIT Press</publisher>
+			<date type="published" when="2012">2012</date>
+			<biblScope unit="page" from="187" to="212" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,338.21,327.16,203.53,8.64;12,338.21,338.07,201.79,8.64;12,338.21,348.98,203.03,8.64;12,337.90,359.72,202.10,8.58;12,338.21,370.63,201.79,8.81;12,337.79,381.54,203.46,8.81;12,338.21,392.61,128.13,8.64" xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Scalable k -Means Clustering via Lightweight Coresets</title>
+		<author>
+			<persName coords=""><forename type="first">Olivier</forename><surname>Bachem</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Mario</forename><surname>Lucic</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Andreas</forename><surname>Krause</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3219819.3219973</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery &amp; Data Mining</title>
+				<editor>
+			<persName><forename type="first">Francis</forename><surname>Bach</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">David</forename><surname>Blei</surname></persName>
+		</editor>
+		<meeting>the 24th ACM SIGKDD International Conference on Knowledge Discovery &amp; Data Mining<address><addrLine>Lille, France</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2015-07">Jul 2015</date>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="page" from="7" to="09" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,338.21,407.29,201.79,8.64;12,338.21,418.20,201.79,8.64;12,338.21,429.11,203.03,8.64;12,338.21,439.85,201.79,8.81;12,338.21,450.75,203.45,8.81;12,338.21,461.83,154.95,8.64" xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Scalable training of mixture models via coresets</title>
+		<author>
+			<persName coords=""><forename type="first">Dan</forename><surname>Feldman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Matthew</forename><surname>Faulkner</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Andreas</forename><surname>Krause</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems</title>
+				<editor>
+			<persName><forename type="first">J</forename><surname>Shawe-Taylor</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">R</forename><surname>Zemel</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">P</forename><surname>Bartlett</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">F</forename><surname>Pereira</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">K</forename><forename type="middle">Q</forename><surname>Weinberger</surname></persName>
+		</editor>
+		<imprint>
+			<publisher>Curran Associates, Inc</publisher>
+			<date type="published" when="2011">2011</date>
+			<biblScope unit="volume">24</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,338.21,476.51,201.79,8.64;12,338.21,487.42,201.79,8.64;12,338.21,498.33,128.66,8.64" xml:id="b23">
+	<monogr>
+		<title level="m" type="main">Coresets for data-efficient training of machine learning models</title>
+		<author>
+			<persName coords=""><forename type="first">Baharan</forename><surname>Mirzasoleiman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jeff</forename><surname>Bilmes</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jure</forename><surname>Leskovec</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,338.21,513.00,203.03,8.64;12,338.21,523.91,203.03,8.64;12,338.21,534.82,201.79,8.64;12,338.21,545.73,201.79,8.64;12,338.21,556.64,66.13,8.64" xml:id="b24">
+	<monogr>
+		<title level="m" type="main">Dynamic prompt learning via policy gradient for semi-structured mathematical reasoning</title>
+		<author>
+			<persName coords=""><forename type="first">Pan</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Liang</forename><surname>Qiu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Kai-Wei</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ying</forename><forename type="middle">Nian</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Song-Chun</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Tanmay</forename><surname>Rajpurohit</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Peter</forename><surname>Clark</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ashwin</forename><surname>Kalyan</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,338.21,571.31,203.04,8.64;12,338.21,582.22,203.44,8.64;12,338.21,593.13,147.21,8.64" xml:id="b25">
+	<monogr>
+		<title level="m" type="main">Data selection for language models via importance resampling</title>
+		<author>
+			<persName coords=""><forename type="first">Sang</forename><surname>Michael Xie</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Shibani</forename><surname>Santurkar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Tengyu</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Percy</forename><surname>Liang</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,338.21,607.80,201.79,8.64;12,337.85,618.71,202.50,8.64;12,338.21,629.45,203.03,8.81;12,338.21,640.53,40.40,8.64" xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Deep Learning for Anomaly Detection</title>
+		<author>
+			<persName coords=""><forename type="first">Guansong</forename><surname>Pang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Chunhua</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Longbing</forename><surname>Cao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anton</forename><forename type="middle">Van Den</forename><surname>Hengel</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3439950</idno>
+	</analytic>
+	<monogr>
+		<title level="j">ACM Computing Surveys</title>
+		<title level="j" type="abbrev">ACM Comput. Surv.</title>
+		<idno type="ISSN">0360-0300</idno>
+		<idno type="ISSNe">1557-7341</idno>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="1" to="38" />
+			<date type="published" when="2021-03-05">mar 2021</date>
+			<publisher>Association for Computing Machinery (ACM)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,338.21,655.20,201.79,8.64;12,337.90,666.11,203.76,8.64;12,338.21,677.02,200.05,8.64" xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Backpropagated Gradient Representations for Anomaly Detection</title>
+		<author>
+			<persName coords=""><forename type="first">Gukyeong</forename><surname>Kwon</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Mohit</forename><surname>Prabhushankar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Dogancan</forename><surname>Temel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ghassan</forename><surname>Alregib</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-030-58589-1_13</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Computer Vision – ECCV 2020</title>
+				<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="page" from="206" to="226" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,338.21,691.70,201.79,8.64;12,338.21,702.61,201.79,8.64;12,338.21,713.51,81.34,8.64" xml:id="b28">
+	<monogr>
+		<title level="m" type="main">Learning to reweight examples for robust deep learning</title>
+		<author>
+			<persName coords=""><forename type="first">Mengye</forename><surname>Ren</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Wenyuan</forename><surname>Zeng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Bin</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Raquel</forename><surname>Urtasun</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,93.58,75.48,203.44,8.64;13,93.39,86.39,203.63,8.64;13,93.58,97.30,201.79,8.64;13,93.58,108.20,92.40,8.64" xml:id="b29">
+	<monogr>
+		<title level="m" type="main">Mentornet: Learning datadriven curriculum for very deep neural networks on corrupted labels</title>
+		<author>
+			<persName coords=""><forename type="first">Lu</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Zhengyuan</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Thomas</forename><surname>Leung</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Li-Jia</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Li</forename><surname>Fei-Fei</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,93.58,123.10,201.79,8.64;13,93.58,134.01,201.79,8.64;13,93.22,144.75,192.60,8.81" xml:id="b30">
+	<monogr>
+		<title level="m" type="main">Generalized cross entropy loss for training deep neural networks with noisy labels</title>
+		<author>
+			<persName coords=""><forename type="first">Zhilu</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Rory</forename><surname>Mert</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Sabuncu</surname></persName>
+		</author>
+		<idno>ArXiv, abs/1805.07836</idno>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,93.58,159.81,203.03,8.64;13,93.58,170.72,201.79,8.64;13,93.58,181.46,203.04,8.81;13,93.58,192.54,90.77,8.64" xml:id="b31">
+	<monogr>
+		<title level="m" type="main">Using trusted data to train deep networks on labels corrupted by severe noise</title>
+		<author>
+			<persName coords=""><forename type="first">Dan</forename><surname>Hendrycks</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Mantas</forename><surname>Mazeika</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Duncan</forename><surname>Wilson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Kevin</forename><surname>Gimpel</surname></persName>
+		</author>
+		<idno>ArXiv, abs/1802.05300</idno>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,93.58,207.43,201.79,8.64;13,93.58,218.34,52.56,8.64" xml:id="b32">
+	<monogr>
+		<title level="m" type="main">Logistic regression in rare events data 1</title>
+		<author>
+			<persName coords=""><forename type="first">Langche</forename><surname>Zeng</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,93.58,233.24,203.45,8.64;13,93.58,244.14,17.89,8.64" xml:id="b33">
+	<monogr>
+		<title level="m" type="main">Table 3: Health datasets from UCI machine learning repository.</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Dua</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Graff</surname></persName>
+		</author>
+		<idno type="DOI">10.7717/peerj-cs.1806/table-3</idno>
+		<imprint>
+			<date>null</date>
+			<publisher>PeerJ</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,93.58,259.04,201.79,8.64;13,92.97,269.78,204.05,8.58;13,93.58,280.69,57.28,8.81" xml:id="b34">
+	<analytic>
+		<title level="a" type="main">86th Annual Conference of the German Society of Mammalogy (Deutsche Gesellschaft für Säugetierkunde e.V.) Frankfurt a.M., 4th–8th September 2012</title>
+		<author>
+			<persName coords=""><forename type="first">Krisztián</forename><surname>Búza</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.mambio.2012.07.005</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Mammalian Biology</title>
+		<title level="j" type="abbrev">Mammalian Biology</title>
+		<idno type="ISSN">1616-5047</idno>
+		<imprint>
+			<biblScope unit="volume">77</biblScope>
+			<biblScope unit="page" from="1" to="25" />
+			<date type="published" when="2012-09">2012</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,93.58,295.75,203.44,8.64;13,93.58,306.66,173.34,8.64" xml:id="b35">
+	<monogr>
+		<title level="m" type="main">Learning multiple layers of features from tiny images</title>
+		<author>
+			<persName coords=""><forename type="first">Alex</forename><surname>Krizhevsky</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2009">2009</date>
+			<biblScope unit="page" from="32" to="33" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,93.58,321.55,201.79,8.64;13,93.58,332.46,203.44,8.64;13,93.58,343.37,203.45,8.64;13,93.58,354.28,195.71,8.64" xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Going deeper with convolutions</title>
+		<author>
+			<persName coords=""><forename type="first">Christian</forename><surname>Szegedy</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Wei Liu</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Yangqing Jia</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Pierre</forename><surname>Sermanet</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Scott</forename><surname>Reed</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Dragomir</forename><surname>Anguelov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dumitru</forename><surname>Erhan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vincent</forename><surname>Vanhoucke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Rabinovich</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2015.7298594</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2015 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,93.58,369.18,203.44,8.64;13,93.58,380.08,203.53,8.64;13,93.02,390.82,203.84,8.81;13,93.33,401.90,37.36,8.64" xml:id="b37">
+	<analytic>
+		<title level="a" type="main">The Proof and Measurement of Association between Two Things</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Spearman</surname></persName>
+		</author>
+		<idno type="DOI">10.2307/1422689</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The American Journal of Psychology</title>
+		<title level="j" type="abbrev">The American Journal of Psychology</title>
+		<idno type="ISSN">0002-9556</idno>
+		<imprint>
+			<biblScope unit="volume">100</biblScope>
+			<biblScope unit="issue">3/4</biblScope>
+			<biblScope unit="page">441</biblScope>
+			<date type="published" when="1987">1987</date>
+			<publisher>University of Illinois Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,93.58,416.80,203.44,8.64;13,93.58,427.71,201.79,8.64;13,93.58,438.45,203.03,8.81;13,92.83,449.52,22.42,8.64" xml:id="b38">
+	<analytic>
+		<title level="a" type="main">The meaning and use of the area under a receiver operating characteristic (roc) curve</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>James</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Barbara</forename><forename type="middle">J</forename><surname>Hanley</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Mcneil</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Radiology</title>
+		<imprint>
+			<biblScope unit="volume">143</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="29" to="36" />
+			<date type="published" when="1982">1982</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,93.58,464.42,203.53,8.64;13,93.30,475.16,203.72,8.58;13,93.58,486.07,118.98,8.81" xml:id="b39">
+	<analytic>
+		<title level="a" type="main">(1986) D. E. Rumelhart, G. E. Hinton, and R. J. Williams, &quot;Learning internal representations by error propagation,&quot; Parallel Distributed Processing: Explorations in the Microstructures of Cognition, Vol. I, D. E. Rumelhart and J. L. McClelland (Eds.) Cambridge, MA: MIT Press, pp. 318-362</title>
+		<author>
+			<persName coords=""><forename type="first">David</forename><forename type="middle">E</forename><surname>Rumelhart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Geoffrey</forename><forename type="middle">E</forename><surname>Hinton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ronald</forename><forename type="middle">J</forename><surname>Williams</surname></persName>
+		</author>
+		<idno type="DOI">10.7551/mitpress/4943.003.0128</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Neurocomputing, Volume 1</title>
+				<imprint>
+			<publisher>The MIT Press</publisher>
+			<date type="published" when="1987">1987</date>
+			<biblScope unit="page" from="675" to="695" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,93.58,501.13,203.04,8.64;13,93.58,512.04,201.79,8.64;13,93.58,522.95,201.79,8.64;13,93.58,533.69,201.79,8.81;13,93.22,544.60,202.15,8.81;13,93.27,555.51,202.10,8.81;13,93.58,566.59,203.53,8.64;13,93.58,577.49,29.62,8.64" xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Autoencoders, unsupervised learning, and deep architectures</title>
+		<author>
+			<persName coords=""><forename type="first">Pierre</forename><surname>Baldi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of ICML Workshop on Unsupervised and Transfer Learning</title>
+				<editor>
+			<persName><forename type="first">Isabelle</forename><surname>Guyon</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Gideon</forename><surname>Dror</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Vincent</forename><surname>Lemaire</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Graham</forename><surname>Taylor</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Daniel</forename><surname>Silver</surname></persName>
+		</editor>
+		<meeting>ICML Workshop on Unsupervised and Transfer Learning<address><addrLine>Bellevue, Washington, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>PMLR</publisher>
+			<date type="published" when="2012-07-02">02 Jul 2012</date>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="page" from="37" to="49" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

@@ -1,0 +1,1075 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Autonomous Sparse Mean-CVaR Portfolio Optimization</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2024-05-13">13 May 2024</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,172.76,143.78,42.54,8.96"><forename type="first">Yizun</forename><surname>Lin</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department" key="dep1">Department of Mathematics</orgName>
+								<orgName type="department" key="dep2">College of Information Science and Technology</orgName>
+								<orgName type="institution">Jinan University</orgName>
+								<address>
+									<settlement>Guangzhou</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,227.09,143.78,62.55,8.96"><forename type="first">Yangyu</forename><surname>Zhang</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="institution" key="instit1">Jinan University-University of Birmingham Joint Institute</orgName>
+								<orgName type="institution" key="instit2">Jinan University</orgName>
+								<address>
+									<settlement>Guangzhou</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,301.42,143.78,65.05,8.96"><forename type="first">Zhao-Rong</forename><surname>Lai</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department" key="dep1">Department of Mathematics</orgName>
+								<orgName type="department" key="dep2">College of Information Science and Technology</orgName>
+								<orgName type="institution">Jinan University</orgName>
+								<address>
+									<settlement>Guangzhou</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,378.26,143.78,39.58,8.96"><forename type="first">Cheng</forename><surname>Li</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department" key="dep1">Department of Mathematics</orgName>
+								<orgName type="department" key="dep2">College of Information Science and Technology</orgName>
+								<orgName type="institution">Jinan University</orgName>
+								<address>
+									<settlement>Guangzhou</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Autonomous Sparse Mean-CVaR Portfolio Optimization</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2024-05-13">13 May 2024</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">381DD1399FA2A1005F9609368549D397</idno>
+					<idno type="arXiv">arXiv:2405.08047v1[math.OC]</idno>
+					<note type="submission">This is a preprint version of an accepted paper for ICML 2024. Contents may be changed in its final version.</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2024-05-18T21:25+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>The ℓ 0 -constrained mean-CVaR model poses a significant challenge due to its NP-hard nature, typically tackled through combinatorial methods characterized by high computational demands. From a markedly different perspective, we propose an innovative autonomous sparse mean-CVaR portfolio model, capable of approximating the original ℓ 0 -constrained mean-CVaR model with arbitrary accuracy. The core idea is to convert the ℓ 0 constraint into an indicator function and subsequently handle it through a tailed approximation. We then propose a proximal alternating linearized minimization algorithm, coupled with a nested fixed-point proximity algorithm (both convergent), to iteratively solve the model. Autonomy in sparsity refers to retaining a significant portion of assets within the selected asset pool during adjustments in pool size. Consequently, our framework offers a theoretically guaranteed approximation of the ℓ 0 -constrained mean-CVaR model, improving computational efficiency while providing a robust asset selection scheme.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="17" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>Value-at-risk <ref type="bibr" coords="1,107.91,517.87,69.95,8.64">(VaR, Jorion 1997</ref>) is a widely-used downsiderisk metric in finance that assesses the extreme percentage loss in a disadvantageous situation. Since it fails to satisfy the subadditivity property <ref type="bibr" coords="1,181.97,553.73,84.76,8.64" target="#b1">(Artzner et al., 1999)</ref>, it is improved to its tail statistic named conditional value-atrisk (CVaR, <ref type="bibr" coords="1,105.43,577.64,117.17,8.64" target="#b30">Rockafellar &amp; Uryasev 2000)</ref>. CVaR not only has the good theoretical property of coherence <ref type="bibr" coords="1,255.19,589.60,34.42,8.64;1,55.44,601.55,47.25,8.64" target="#b1">(Artzner et al., 1999;</ref><ref type="bibr" coords="1,105.17,601.55,92.91,8.64" target="#b15">Gotoh &amp; Takeda, 2011)</ref>, but also accords with dual stochastic dominance <ref type="bibr" coords="1,411.49,178.75,127.49,8.64" target="#b29">(Ogryczak &amp; Ruszczyński, 2002)</ref>. Moreover, CVaR is more tractable than VaR from the perspective of optimization. It can serve as the risk metric in Markowitz's mean-risk criterion <ref type="bibr" coords="1,439.18,214.62,75.28,8.64" target="#b27">(Markowitz, 1952)</ref> which balances the expected return and the risk of a portfolio. The original mean-CVaR model with linear constraints can be efficiently solved by linear programming <ref type="bibr" coords="1,480.17,250.48,62.05,8.64;1,307.44,262.44,59.37,8.64" target="#b30">(Rockafellar &amp; Uryasev, 2000)</ref>.</p><p>In practical portfolio optimization (PO), it is desirable to constrain the scale of selected assets while keeping an appropriate investing performance, in order to reduce transaction cost and managerial burden. This can be done via the managerial approach, such as the endowment model <ref type="bibr" coords="1,518.67,328.19,19.54,8.64;1,307.44,340.15,74.99,8.64" target="#b12">(Dimmock et al., 2023)</ref>, market crashes <ref type="bibr" coords="1,455.87,340.15,86.81,8.64;1,307.44,352.10,21.87,8.64" target="#b25">(Liu &amp; Loewenstein, 2013)</ref>, and the revenue-driven resource allocation <ref type="bibr" coords="1,516.60,352.10,24.84,8.64;1,307.44,364.06,46.39,8.64" target="#b8">(Chao et al., 2009)</ref>. However, these methods still demand professional knowledge in management and finance. Recently, the arising development in machine learning methods for management science provides an alternative way for PO. For example, <ref type="bibr" coords="1,363.86,411.88,71.57,8.64" target="#b3">(Ban et al., 2018)</ref> propose the performancebased regularization with a data-driven strategy to improve the out-of-sample performance in PO. <ref type="bibr" coords="1,461.48,435.79,80.63,8.64" target="#b7">(Brodie et al., 2009)</ref> adopt the ℓ 1 regularization to construct a sparse and stable Markowitz portfolio (SSMP). <ref type="bibr" coords="1,431.57,459.70,69.43,8.64" target="#b20">(Lai et al., 2018)</ref> and <ref type="bibr" coords="1,521.68,459.70,19.75,8.64;1,307.44,471.65,48.54,8.64" target="#b26">(Luo et al., 2020)</ref> propose short-term sparse portfolio optimization models with ℓ 1 and ℓ 0 regularizations, respectively. <ref type="bibr" coords="1,525.18,483.61,16.27,8.64;1,307.44,495.56,49.02,8.64" target="#b21">(Lai et al., 2020)</ref> propose a sparse structure for the covariance estimation based on the spectral decomposition. Among all the sparsity approaches, the ℓ 0 constraint can exactly control the number of selected assets. However, the ℓ 0 constraint generally leads to an NP-hard problem that has a very high computational complexity. A general approach to exactly solve the ℓ 0 -constrained problems is the combinatorial approach, such as the mixed-integer optimization <ref type="bibr" coords="1,361.40,597.18,115.83,8.64" target="#b16">(Günlük &amp; Linderoth, 2010)</ref> and the branchand-bound procedure <ref type="bibr" coords="1,396.92,609.14,96.21,8.64" target="#b18">(Kobayashi et al., 2021)</ref>. For example, <ref type="bibr" coords="1,325.63,621.09,139.92,8.64" target="#b4">(Bertsimas &amp; Cory-Wright, 2022)</ref> propose a cuttingplane approach with some heuristics to exactly solve an ℓ 0 -constrained mean-variance model, which saves some computational time according to the experimental results. <ref type="bibr" coords="1,307.11,668.91,97.67,8.64" target="#b18">(Kobayashi et al., 2021)</ref> further adopt this approach to exactly solve an ℓ 0 -constrained mean-CVaR model. It is essentially a branch-and-bound algorithm: for each visit of a node (a combinatorial case), it conducts one ordinary mean-CVaR optimization. Since its experimental results show that the number of visited nodes ranges from about 1,300 to more than 77,000, the computational complexity is still high in practical portfolio management. Moreover, <ref type="bibr" coords="2,243.04,106.40,46.41,8.64;2,55.44,118.36,48.01,8.64" target="#b18">(Kobayashi et al., 2021)</ref> requires the commercial optimizer Gurobi 1 to deploy this cutting-plane approach. We try to run the program, but it prompts an error that the models are too large in our experiments. In summary, the existing exactly-solving approaches have high computational complexity and rely on the external commercial optimizer, thus economic and practical approaches still need to be developed.</p><p>Instead of exactly solving the ℓ 0 -constrained mean-CVaR model, we propose an autonomous sparse mean-CVaR (ASMCVaR) PO model that can approximate it to arbitrary accuracy. The core idea is to convert the ℓ 0 constraint into an indicator function and approximate it to arbitrary accuracy through a tailed approximation approach (Definition 3.1). By this way, we can replace the nonconvex and complex geometric structure of ℓ 0 constraint by a simple and more tractable tailed approximation. To solve the ASMC-VaR model, we develop a Proximal Alternating Linearized Minimization Algorithm (PALM) with a nested Fixed-Point Proximity Algorithm (FPPA) that can handle all the constraints and guarantee convergence. It saves much computational complexity and keeps a certain accuracy at the same time. ASMCVaR can keep a large proportion of assets in the selected asset pool when adjusting the pool size, which reduces managerial burden and delivers convenience. Our main contributions can be summarized as follows.</p><p>1. We propose an ASMCVaR model and prove that it can approximate the ℓ 0 -constrained mean-CVaR model to arbitrary accuracy based on item 2. 2. We propose a tailed approximation for the indicator function of the ℓ 0 constraint. We also find that this approximation can be arbitrarily accurate as the positive approximation parameter tends to 0. See Definition 3.1 and Figure <ref type="figure" coords="2,120.75,512.88,4.98,8.64" target="#fig_1">1</ref> for more detail. 3. We propose a convergent PALM algorithm with a nested FPPA to iteratively solve ASMCVaR. It does not require any external or commercial optimizers. 4. ASMCVaR can keep a large proportion of assets in the selected asset pool when adjusting the pool size, thus the selected assets are stable. It is beneficial to practical portfolio management when the manager needs to adjust the asset pool size.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Preliminaries and Related Works</head><p>We present some preliminaries on CVaR, and then introduce some approximate or exact solutions to the ℓ 0 -constrained mean-CVaR model.</p><p>1 https://www.gurobi.com/</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.">VaR and CVaR</head><p>VaR measures the percentage loss of portfolio return in a bad scenario and with a certain confidence level c:</p><formula xml:id="formula_0" coords="2,370.99,118.66,106.91,9.65">Pr{VaR ⩽ −r s } = 1 − c,</formula><p>where Pr{•} denotes the probability of an event and r s denotes the rate of return of a portfolio (representing some kind of investing strategy). Specifically, if VaR(c = 95%) = 0.1, then this investing strategy may suffer a loss greater than 10% with a probability of 5%.</p><p>CVaR further averages the values greater than the VaR at a given confidence level c:</p><formula xml:id="formula_1" coords="2,319.98,230.94,208.93,22.31">CVaR := min τ ∈R τ + 1 1 − c E (max{−r s − τ, 0}) ,</formula><p>where E(•) denotes the expectation of a random variable.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.">Original Mean-CVaR Model</head><p>In a real-world investing environment, the CVaR can be formulated as a linear program. Let R :=</p><formula xml:id="formula_2" coords="2,307.44,315.65,234.00,22.83">[r ⊤ 1 ; • • • ; r ⊤ T ] ∈ R T ×N</formula><p>be the sample return matrix of N assets and T observations gathered from a financial market. Accordingly, a portfolio (investing strategy) can be seen as an N -dimensional vector w. Then the sample returns of this portfolio are {r ⊤ t w} T t=1 . Using the sample average estimator for CVaR yields</p><formula xml:id="formula_3" coords="2,322.22,405.70,219.88,38.21">min w∈R N , τ ∈R, z∈R T τ + 1 (1 − c)T 1 ⊤ T z (1) s.t. z ⩾ −Rw − τ 1 T , z ⩾ 0 T ,<label>(2)</label></formula><formula xml:id="formula_4" coords="2,324.71,448.71,217.39,27.56">w ∈ ∆ := w ∈ R N : w ⩾ 0 N , w ⊤ 1 N = 1 , (3) (w ⊤ μ = ρ),<label>(4)</label></formula><p>where z is the auxiliary variable to deal with the positive part in the expectation. 1 T or 0 T is a vector of 1 or 0 with dimensionality shown in the subscript, respectively. The inequality for vectors dominates each dimension. In (2), inequality constraints for z can be used instead of equality constraints because z is greater than 0 T and the objective is a minimization.</p><p>(3) is the simplex constraint that consists of the no-short-selling constraint and the self-financing constraint, respectively. Such constraints ensure feasibility of the portfolio in real-world investment. ( <ref type="formula" coords="2,435.64,593.06,3.87,8.64" target="#formula_4">4</ref>) is an optional constraint for the expected portfolio return, where μ = 1 T R ⊤ 1 T is the sample asset return vector. (1)∼(4) constitute the original mean-CVaR model <ref type="bibr" coords="2,387.41,628.92,124.02,8.64" target="#b30">(Rockafellar &amp; Uryasev, 2000)</ref>. Since all the constraints are convex and linear, this model can be efficiently solved by the simplex method.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3.">Mean-CVaR Model with ℓ 1 Regularization</head><p>A widely adopted approach for sparsity is to impose ℓ 1 regularization. This method is favored for its compatibil-ity with widely recognized solving techniques, such as the linear programming, the Lasso <ref type="bibr" coords="3,183.29,82.49,73.72,8.64" target="#b33">(Tibshirani, 1996)</ref> and the LARS <ref type="bibr" coords="3,82.57,94.45,73.79,8.64" target="#b13">(Efron et al., 2004)</ref> algorithms. <ref type="bibr" coords="3,205.74,94.45,84.37,8.64" target="#b9">(Cheng &amp; Gao, 2015)</ref> propose a mean-CVaR model with a re-weighted ℓ 1 regularization as follows:</p><formula xml:id="formula_5" coords="3,63.03,132.66,227.08,38.80">min w∈R N ,τ ∈R,z∈R T τ + 1 (1 − c)T 1 ⊤ T z + λ ⊤ w s.t. z⩾ −Rw−τ 1 T , z ⩾ 0 T , w ∈ ∆, (w ⊤ μ = ρ),<label>(5)</label></formula><p>where λ ∈ {x ∈ R N : x ⩾ 0 N } is the weight vector for the ℓ 1 regularization. Since w ⩾ 0 N , the re-weighted ℓ 1 regularization in ( <ref type="formula" coords="3,140.56,204.78,3.87,8.64" target="#formula_5">5</ref>) can be simplified:</p><formula xml:id="formula_6" coords="3,65.96,201.50,223.48,27.87">N i=1 λ i |w i | = N i=1 λ i w i = λ ⊤ w.</formula><p>This formulation can also be efficiently solved by linear programming. In each outeriteration, the algorithm updates λ by some rules regarding w, for example,</p><formula xml:id="formula_7" coords="3,123.68,251.87,89.87,13.15">λ k+1 i = 1/(|w k i | + ϵ).</formula><p>Then in the inneriteration, ( <ref type="formula" coords="3,96.46,266.36,3.87,8.64" target="#formula_5">5</ref>) is solved with fixed λ k+1 to obtain w k+1 . This approach enjoys a low computational cost, but it cannot exactly control the number of selected assets. One can just empirically tune λ to get a rough number of selected assets. Besides, it is also intractable to assess the accuracy of approximation of ℓ 1 regularization to the ℓ 0 constraint.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.4.">ℓ 0 -constrained Mean-CVaR Model</head><p>To impose exact sparsity on the portfolio, the ℓ 0 constraint should be used:</p><formula xml:id="formula_8" coords="3,62.25,396.16,227.86,53.74">min w∈R N , τ ∈R, z∈R T τ + 1 (1 − c)T 1 ⊤ T z (6) s.t. z ⩾ −Rw − τ 1 T , z ⩾ 0 T , w ∈ ∆, (w ⊤ μ = ρ), ∥w∥ 0 ⩽ m, (<label>7</label></formula><formula xml:id="formula_9" coords="3,286.24,440.57,3.87,8.64">)</formula><p>where ∆ is defined in (3), and ∥w∥ 0 represents the number of nonzero components in w. The ℓ 0 constraint in ( <ref type="formula" coords="3,271.73,470.26,3.87,8.64" target="#formula_8">7</ref>) is also called the m-sparse constraint, since m controls the number of selected assets. The above ℓ 0 -constrained mean-CVaR problem is NP-hard. To solve it by the combinatorial approach, <ref type="bibr" coords="3,98.24,518.08,98.70,8.64" target="#b18">(Kobayashi et al., 2021)</ref> introduce an auxiliary variable y ∈ Z m N := {y ∈ {0, 1} N :</p><formula xml:id="formula_10" coords="3,55.44,528.14,234.67,39.09">1 ⊤ N y ⩽ m}, then (7) is equivalent to the logical constraint y ∈ Z m N , y i = 0 ⇒ w i = 0.<label>(8)</label></formula><p>Let Y := diag(y) be the diagonalized matrix for y. Then model ( <ref type="formula" coords="3,88.36,583.83,3.87,8.64">6</ref>) can be reformulated as a bilevel optimization problem (upper-level) min</p><formula xml:id="formula_11" coords="3,132.02,613.21,158.09,16.55">y∈Z m N f (y),<label>(9)</label></formula><p>(lower-level)</p><formula xml:id="formula_12" coords="3,59.03,650.62,231.08,63.01">f (y) = min w∈R N ,τ ∈R,z∈R T 1 2γ w ⊤ w+τ + 1 (1−c)T 1 ⊤ T z (10) s.t. z⩾ −RY w−τ 1 T , z⩾0 T , Y w∈∆, (w ⊤ Y μ=ρ),<label>(11)</label></formula><p>where the logical constraint ( <ref type="formula" coords="3,424.86,70.54,3.87,8.64" target="#formula_10">8</ref>) is embedded in Y w. Note that w = Y w after minimization (10), thus (Y w) ⊤ Y w is replaced by w ⊤ w <ref type="bibr" coords="3,384.35,94.45,137.33,8.64" target="#b4">(Bertsimas &amp; Cory-Wright, 2022)</ref>. As γ → +∞, this bilevel optimization can approximate the ℓ 0constrained mean-CVaR optimization to arbitrary accuracy.</p><p>In the upper-level optimization, <ref type="bibr" coords="3,441.86,136.29,100.25,8.64" target="#b18">(Kobayashi et al., 2021)</ref> solve the following problem</p><formula xml:id="formula_13" coords="3,325.57,161.80,216.54,19.09">min (y,θ)∈Z m N ×R θ s.t. (y, θ) ∈ F k ⊆ Z m N × R (12)</formula><p>to obtain the node (y k , θ k ) of the k-th visit, where F k denotes the k-th feasible region for (y, θ). θ indicates any possible value for f (y) in the current iteration, and its infimum provides a lower bound for f (y). To initialize, one can just solve a continuously-relaxed and lower-bounded version of ( <ref type="formula" coords="3,353.85,247.65,4.43,8.64">6</ref>)∼( <ref type="formula" coords="3,371.56,247.65,4.43,8.64" target="#formula_8">7</ref>) to obtain θ 1 for all y ∈ Z m N and pick up any y 1 ∈ Z m N . In the lower-level optimization, (10)∼( <ref type="formula" coords="3,528.46,259.60,9.10,8.64" target="#formula_12">11</ref>) is a convex quadratic optimization for which efficient algorithms exist. If it is infeasible, then F k+1 is obtained by removing (y k , θ k ) from F k ; or else it can be solved to obtain <ref type="formula" coords="3,529.66,323.36,8.30,8.64">13</ref>) provides new lower bounds for all the unvisited cases y ∈ Z m N , where g y k is a subgradient of f at y k . Intersecting (13) and F k yields F k+1 . Either feasible or infeasible, the lower-level optimization narrows down the searching region from F k to F k+1 . Then in the next visit (iteration), ( <ref type="formula" coords="3,311.26,399.08,8.30,8.64">12</ref>) is solved in F k+1 . During this procedure, LB k := θ k serves as the current uniform lower bound for all the unvisited cases, while U B k := min 1⩽j⩽k f (y j ) serves as the current uniform upper bound for all the visited cases. If (U B k − LB k &lt; ϵ) for a sufficiently small positive ϵ, then {y j : 1 ⩽ j ⩽ k, f (y j ) = U B k } can be considered as the ϵ-optimal solution set. In fact, this is a branch-and-bound strategy.</p><formula xml:id="formula_14" coords="3,318.33,305.53,220.57,28.60">f (y k ). Since f (y) is convex in y ∈ [0, 1] N , the set {(y, θ) ∈ Z m N × R : θ ⩾ f (y k ) + g ⊤ y k (y − y k )} (</formula><p>Though the above bilevel optimization takes the exact solving objective as the initial intention, it involves two approximations: one is the term 1 2γ w ⊤ w in (10), the other is the ϵ optimality of the gap (U B k − LB k ). Moreover, this branch-and-bound approach may visit tens of thousands of combinatorial cases to achieve satisfactory optimality. In addition, external commercial optimizers are also required to deploy the whole algorithm. The program is unable to run in our experiments because the models are too large. To develop economic and practical methods, we propose to approximate the ℓ 0 -constrained mean-CVaR model from a very different perspective based on a tailed approximation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Autonomous Sparse Mean-CVaR Portfolio Optimization</head><p>In this section, we propose an Autonomous Sparse Mean-CVaR (ASMCVaR) model and develop a Proximal Alter-nating Linearized Minimization (PALM) algorithm to solve this model.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.">Autonomous Sparse Mean-CVaR Model</head><p>Before introducing the ASMCVaR model, we revise the ℓ 0 -constrained Mean-CVaR model and reformulate it as a nonconvex three-term optimization model. Note that there is an equality constraint w ⊤ µ = ρ in the Mean-CVaR model (6). In general, the expected return level ρ is generally set to a positive number. However, this constraint is not always feasible not only in reality but also in theory. The satisfaction of a tight equality constraint for the return level in PO with an ever-changing financial market is difficult. To avoid this problem, we use a regularization term (w ⊤ μ − ρ) 2 in the objective function instead of using the equality constraint. In this way, the portfolio return w ⊤ μ is balanced between the expected level ρ and the risk metric CVaR. Then the revised ℓ 0 -constrained Mean-CVaR model is given by</p><formula xml:id="formula_15" coords="4,56.54,296.22,233.57,51.42">min w∈R N , τ ∈R, z∈R T τ + 1 (1 − c)T 1 ⊤ T z + λ(w ⊤ µ − ρ) 2 s.t. z ⩾ −Rw − τ 1 T , z ⩾ 0 T , w ∈ ∆, ∥w∥ 0 ⩽ m.<label>(14)</label></formula><p>For notation simplicity, we define</p><formula xml:id="formula_16" coords="4,55.19,360.04,234.25,20.69">N 1 := N + 1 + T , N 2 := 2T + N + 2.</formula><p>We then rewrite model ( <ref type="formula" coords="4,202.35,372.32,8.30,8.64" target="#formula_15">14</ref>) as a more compact form. To this end, we let</p><formula xml:id="formula_17" coords="4,60.75,382.38,229.36,41.44">v := (w ⊤ , τ, z ⊤ ) ⊤ ∈ R N1 , h 1 := 0 ⊤ N , 1, 1 (1−c)T 1 ⊤ T ⊤ , h 2 := µ ⊤ , 0 ⊤ 1+T ⊤ ,<label>(15)</label></formula><formula xml:id="formula_18" coords="4,89.07,436.36,166.73,39.25">Q := R 1 T I T 0 T ×N 0 T I T ∈ R 2T ×N1 , I := I N 0 N ×(T +1) ∈ R N ×N1 ,</formula><p>and define</p><formula xml:id="formula_19" coords="4,89.86,509.61,196.10,87.18">Q :=     Q I N 0 N ×(T +1) 1 ⊤ N 0 ⊤ T +1 −1 ⊤ N 0 ⊤ T +1     ∈ R N2×N1 , q :=   0 2T +N 1 −1   ∈ R N2 . (<label>16</label></formula><formula xml:id="formula_20" coords="4,285.96,576.51,4.15,8.64">)</formula><p>Then model ( <ref type="formula" coords="4,111.29,613.26,8.30,8.64" target="#formula_15">14</ref>) can be rewritten as the following model with respect to (w.r.t.) v:</p><formula xml:id="formula_21" coords="4,109.34,638.92,180.77,33.74">min v∈R N 1 h ⊤ 1 v + λ(h ⊤ 2 v − ρ) 2 s.t. Qv ⩾ q, ∥ Ĩv∥ 0 ⩽ m.<label>(17)</label></formula><p>Model ( <ref type="formula" coords="4,89.45,684.66,8.30,8.64" target="#formula_21">17</ref>) comprises two constraints. In fact, it can be reformulated as an equivalent three-term unconstrained minimization model. For this purpose, we define two indicator functions</p><formula xml:id="formula_22" coords="4,354.70,89.55,138.29,57.20">ι q (u) := 0, if u ⩾ q; +∞, otherwise, ι m (w) := 0, if ∥w∥ 0 ⩽ m; +∞, otherwise,</formula><p>for u ∈ R N2 and w ∈ R N , respectively; and define</p><formula xml:id="formula_23" coords="4,339.27,177.19,198.69,12.69">f (v) := h ⊤ 1 v + λ(h ⊤ 2 v − ρ) 2 , v ∈ R N1 . (<label>18</label></formula><formula xml:id="formula_24" coords="4,537.96,179.58,4.15,8.64">)</formula><p>Then model ( <ref type="formula" coords="4,361.64,199.15,8.30,8.64" target="#formula_21">17</ref>) is equivalent to the following model:</p><formula xml:id="formula_25" coords="4,323.10,221.03,214.86,15.50">min v∈R N 1 Φ(v) := f (v) + ι q (Qv) + ι m ( Iv) . (<label>19</label></formula><formula xml:id="formula_26" coords="4,537.96,221.38,4.15,8.64">)</formula><p>Directly solving model ( <ref type="formula" coords="4,404.50,251.59,8.30,8.64" target="#formula_25">19</ref>) is very tough due to the nondifferentiability of ι q and the nonconvexity of ι m . Instead, we introduce a surrogate model of model ( <ref type="formula" coords="4,494.11,275.50,8.30,8.64" target="#formula_25">19</ref>) and develop an efficient algorithm to solve the surrogate model.</p><p>To this end, we introduce a function to approximate the exact m-sparse function ι m . For vector</p><formula xml:id="formula_27" coords="4,307.44,309.47,235.66,58.35">w ∈ R N , let {j 1 , j 2 , . . .,j N } be any rearrangement of {1, 2, • • • , N } such that |w j1 | ⩾ |w j2 | ⩾ • • • ⩾ |w j N |. Then we call {j 1 , j 2 , • • • , j m } an m-largest absolute value (m-LAV) in- dex set of w.</formula><p>Note that the m-LAV index sets of w may not be unique since the components of w may not be distinct. Throughout this paper, for w ∈ R N , we denote by J m w an m-LAV index set of w. By smoothing the giant leap of ι m between ∥w∥ 0 ⩽ m and ∥w∥ 0 &gt; m, we construct the following tailed approximation. Definition 3.1 (Tailed Approximation of ℓ 0 Constraint). The tailed approximation for the m-sparse indicator function is defined by</p><formula xml:id="formula_28" coords="4,321.84,475.18,216.12,36.68">ιm,γ (w) =    0, if ∥w∥ 0 ⩽ m; 1 2γ j∈N N \J m w w 2 j , if ∥w∥ 0 &gt; m. (<label>20</label></formula><formula xml:id="formula_29" coords="4,537.96,489.51,4.15,8.64">)</formula><p>where γ &gt; 0 is the approximation parameter.</p><p>When ∥w∥ 0 &gt; m, the tail term </p><formula xml:id="formula_30" coords="4,307.44,539.58,234.00,66.11">1 2γ j∈N N \J m w w 2 j &gt; 0, then 1 2γ j∈N N \J m w w 2 j ↗ +∞ as γ ↘ 0. Hence for any fixed w, either ιm,γ (w) = ι m (w) (∥w∥ 0 ⩽ m) or ιm,γ (w) ↗ ι m (w) as γ ↘ 0 (∥w∥ 0 &gt; m).</formula><formula xml:id="formula_31" coords="4,319.33,648.12,218.63,15.50">min v∈R N 1 Ψ(v) := f (v) + ι q (Qv) + ιm,γ ( Iv) . (<label>21</label></formula><formula xml:id="formula_32" coords="4,537.96,648.47,4.15,8.64">)</formula><p>We then establish the relationship between the solutions of model ( <ref type="formula" coords="4,338.54,684.66,8.30,8.64" target="#formula_25">19</ref>) and the ASMCVaR model. For this purpose, we need the following technical lemma, whose proof is given in Supplementary A.1.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>5-LAV Index Set</head><p>Tail= Lemma 3.2. Let v * be a solution of model ( <ref type="formula" coords="5,230.99,315.19,8.30,8.64" target="#formula_31">21</ref>) and w * := Ĩv * . Then there exists a constant L &gt; 0 such that</p><formula xml:id="formula_33" coords="5,99.66,343.59,190.44,13.14">w * j ⩽ 2 Lγ, for all j ∈ N N \J m w * .<label>(22)</label></formula><p>The following theorem indicates that the optimal value of f in ( <ref type="formula" coords="5,78.22,380.30,8.30,8.64" target="#formula_31">21</ref>) can approximate that in ( <ref type="formula" coords="5,193.05,380.30,8.30,8.64" target="#formula_25">19</ref>) to arbitrary accuracy by letting γ ↘ 0. Theorem 3.3. Let v * and v * * be solutions of models ( <ref type="formula" coords="5,277.66,407.46,8.30,8.64" target="#formula_31">21</ref>) and (19), respectively. Then there exists a constant L &gt; 0 such that</p><formula xml:id="formula_34" coords="5,106.91,447.58,179.05,11.81">0 ⩽ f (v * * ) − f (v * ) ⩽ 2 L3 γ. (<label>23</label></formula><formula xml:id="formula_35" coords="5,285.96,450.41,4.15,8.64">)</formula><p>The proof is given in Supplementary A.2. To solve model ( <ref type="formula" coords="5,58.94,484.29,7.66,8.64" target="#formula_31">21</ref>), we further rewrite it as an optimization model w.r.t. two variables v and y as follows:</p><formula xml:id="formula_36" coords="5,57.49,515.96,232.62,26.44">min v∈R N 1 , y∈R N {G(v, y) := H(v, y) + ι q (Qv) + ι m (y)} ,<label>(24)</label></formula><p>where</p><formula xml:id="formula_37" coords="5,74.70,557.05,211.26,22.52">H(v, y) := f (v) + 1 2γ Iv − y 2 2 , γ &gt; 0. (<label>25</label></formula><formula xml:id="formula_38" coords="5,285.96,564.33,4.15,8.64">)</formula><p>This model can be directly solved by the proximal alternating linearized minimization algorithm <ref type="bibr" coords="5,206.71,596.83,83.56,8.64" target="#b2">(Attouch et al., 2013;</ref><ref type="bibr" coords="5,55.44,608.78,70.73,8.64" target="#b6">Bolte et al., 2014)</ref>. We shall then prove the equivalence of the solutions of models ( <ref type="formula" coords="5,154.17,620.74,8.30,8.64" target="#formula_31">21</ref>) and (24). To this end, we need the following two lemmas. We let</p><formula xml:id="formula_39" coords="5,106.26,646.24,183.85,11.72">Ω m := {w ∈ R N : ∥w∥ 0 ⩽ m},<label>(26)</label></formula><p>and define the thresholding operator S m w.r.t. the m largest components by</p><formula xml:id="formula_40" coords="5,96.96,692.42,193.14,26.54">[S m (w)] j := w j , if j ∈ J m w ; 0, if j ∈ N N \J m w ,<label>(27)</label></formula><p>for w ∈ R N . Note that S m (w) may not be unique and it depends on a corresponding m-LAV index set of w. Throughout this paper, the equality x = S m (w) represents x ∈ S m (w).</p><p>Lemma 3.4. If a pair (v * , y * ) is a solution of model (24), then y * = S m ( Iv * ).</p><p>Lemma 3.5. Let G be defined in (24</p><formula xml:id="formula_41" coords="5,307.44,151.00,234.00,38.76">), v ∈ R N1 . If ỹ = S m ( Iv), then G(v, ỹ) ⩽ G(v, y), ∀y ∈ R N . (<label>28</label></formula><formula xml:id="formula_42" coords="5,537.96,180.79,4.15,8.64">)</formula><p>The proof of Lemma 3.4 and Lemma 3.5 are given in Supplementary A.3 and A.4, respectively. According to these two lemmas, we have the following theorem, whose proof is provided in Supplementary A.5.</p><p>Theorem 3.6. Let functions Ψ and G be defined by ( <ref type="formula" coords="5,529.66,255.21,8.30,8.64" target="#formula_31">21</ref>) and (24), respectively. Then</p><formula xml:id="formula_43" coords="5,327.61,280.71,210.35,11.72">Ψ(v) = G(v, y), ∀v ∈ R N1 , y = S m ( Iv). (<label>29</label></formula><formula xml:id="formula_44" coords="5,537.96,283.10,4.15,8.64">)</formula><p>Moreover, a pair (v * , y * ) is a solution of model (24) if and only if v * is a solution of model ( <ref type="formula" coords="5,440.65,312.27,8.30,8.64" target="#formula_31">21</ref>) and y * = S m ( Iv * ).</p><p>We remark that the original model ( <ref type="formula" coords="5,445.63,334.88,8.30,8.64" target="#formula_25">19</ref>) presents a three-term single-variable optimization problem (w.r.t. v), comprising a convex and differentiable term f , a convex but nondifferentiable term ι q • Q, and a nonconvex and nondifferentiable term ι m • Ĩ. This model cannot be directly tackled using the PALM algorithm. Resolving such multi-term nondifferentiable optimization models typically necessitates the introduction of proximity operators through subdifferential. When dealing with the summation of two functions φ 1 and φ 2 , where at least one function is differentiable, the additivity property of subdifferential (∂) holds:</p><formula xml:id="formula_45" coords="5,348.16,471.15,152.57,9.65">∂(φ 1 + φ 2 )(x) = ∂φ 1 (x) + ∂φ 2 (x).</formula><p>If φ 1 and φ 2 are both nondifferentiable, this property may not hold. The absence of additivity in subdifferential complicates the design of proximity algorithms to solve the original model. Theoretical proof of convergence becomes exceedingly challenging under such circumstances.</p><p>The proposed relaxation technique precisely aims to convert the original model into a three-term dual-variable optimization model (w.r.t. v and y) in the form of ( <ref type="formula" coords="5,497.05,577.07,7.66,8.64" target="#formula_36">24</ref>), which can be solved via the PALM algorithm. The advantage of such a format lies in its ability to decompose the model into two separate optimization problems, each concerning variables v and y respectively. Moreover, due to the differentiability of H, the subdifferentials corresponding to these two problems exhibit additivity, thus greatly facilitating the theoretical convergence analysis of the PALM algorithm. Furthermore, we demonstrate, through Theorems 3.3 and 3.6, the equivalence of solutions in both formats in the sense of approximation, thereby ensuring the effectiveness of utilizing the PALM algorithm to solve the model.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.">Proximal Alternating Linearized Minimization</head><p>In this subsection. We employ the Proximal Alternating Linearized Minimization (PALM) algorithm to solve model ( <ref type="formula" coords="6,58.93,113.10,7.63,8.64" target="#formula_36">24</ref>). We verify in the following proposition that the partial gradients ∇ v H(v, y) and ∇ y H(v, y) of function H defined by ( <ref type="formula" coords="6,94.07,137.01,8.30,8.64" target="#formula_37">25</ref>) are both globally Lipschitz continuous, which is required for the convergence of PALM <ref type="bibr" coords="6,216.03,148.97,70.96,8.64" target="#b6">(Bolte et al., 2014)</ref>.</p><p>Proposition 3.7. Let function H be defined by (25). Then there exist positive real numbers L 1 and L 2 such that</p><formula xml:id="formula_46" coords="6,70.42,197.97,204.04,57.53">∥∇ v H(v 1 , y) − ∇ v H(v 2 , y)∥ 2 ⩽ L 1 ∥v 1 − v 2 ∥ 2 , ∀v 1 , v 2 ∈ R N1 , ∀y ∈ R N ; ∥∇ y H(v, y 1 ) − ∇ y H(v, y 2 )∥ 2 ⩽ L 2 ∥y 1 − y 2 ∥ 2 , ∀y 1 , y 2 ∈ R N , ∀v ∈ R N1 .</formula><p>The proof is given in Supplementary A.6. For function ψ : R n → (−∞, +∞], we recall that the proximity operator of ψ at x ∈ R n is defined by</p><formula xml:id="formula_47" coords="6,77.45,312.16,189.97,23.30">prox ψ (x) := arg min u∈R n 1 2 ∥u − x∥ 2 2 + ψ(u) .</formula><p>Then the iterative scheme of PALM to solve model ( <ref type="formula" coords="6,260.99,340.92,8.30,8.64" target="#formula_36">24</ref>) can be given by</p><formula xml:id="formula_48" coords="6,83.70,368.72,174.34,25.67">v k+1 = prox ιq•Q v k − β 1 ∇ v H(v k , y k ) , y k+1 = S m y k − β 2 ∇ y H(v k+1 , y k ) ,</formula><p>where β 1 and β 2 are two introduced step-size parameters.</p><p>As shown in <ref type="bibr" coords="6,112.81,413.76,79.29,8.64" target="#b6">(Bolte et al., 2014)</ref>, to guarantee the convergence of PALM, it suffices to let β 1 ∈ 0, 1</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>L1</head><p>and</p><formula xml:id="formula_49" coords="6,55.44,445.10,226.14,13.47">β 2 ∈ 0, 1 L2 , where L 1 := 2λ∥h 2 ∥ 2 2 + 1 γ and L 2 := 1 γ .</formula><p>To implement the PALM algorithm, we need the closed form of prox ιq•Q , which requires solving the following minimization problem:</p><formula xml:id="formula_50" coords="6,100.44,505.98,189.66,24.14">arg min u∈R N 1 1 2 ∥u − v∥ 2 2 + ι q (Qu) ,<label>(30)</label></formula><p>for a given v ∈ R N1 . However, obtaining the closed-form solution of prox </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Experimental Results</head><p>We To assess the effectiveness of the proposed ASMCVaR, we take 9 state-of-the-art PO methods as well as 1 baseline into comparison. They are SSMP <ref type="bibr" coords="6,428.87,560.05,81.04,8.64" target="#b7">(Brodie et al., 2009)</ref>, SSPO <ref type="bibr" coords="6,307.11,572.01,63.29,8.64" target="#b20">(Lai et al., 2018)</ref>, SPOLC <ref type="bibr" coords="6,409.70,572.01,63.29,8.64" target="#b21">(Lai et al., 2020)</ref>, S1, S2, S3 <ref type="bibr" coords="6,522.46,572.01,18.98,8.64;6,307.44,583.96,46.58,8.64" target="#b26">(Luo et al., 2020)</ref>, Mean-CVaR <ref type="bibr" coords="6,414.17,583.96,124.14,8.64" target="#b30">(Rockafellar &amp; Uryasev, 2000)</ref>, Mean-CVaR-ℓ 1 <ref type="bibr" coords="6,370.44,595.92,83.10,8.64" target="#b9">(Cheng &amp; Gao, 2015)</ref>, MT-CVaR <ref type="bibr" coords="6,502.75,595.92,39.94,8.64;6,307.44,607.87,21.02,8.64" target="#b22">(Lai et al., 2022)</ref>, and the 1/N strategy <ref type="bibr" coords="6,415.23,607.87,119.55,8.64">(baseline, DeMiguel et al. 2009</ref>).</p><p>We also try to run the cutting plane approach <ref type="bibr" coords="6,494.95,619.83,46.49,8.64;6,307.44,631.78,49.19,8.64" target="#b18">(Kobayashi et al., 2021)</ref> for Mean-CVaR-ℓ 0 but the program prompts an error that the models are too large in our experiments.</p><p>There are 3 slightly different versions in <ref type="bibr" coords="6,470.33,655.69,68.14,8.64" target="#b26">(Luo et al., 2020)</ref>: S1 is deterministic but S2 and S3 are randomized. Thus we average the results of 10 times for S2 and S3. The parameters for these competitors are set according to their original papers, while those for ASMCVaR will be set in Section 4.1.</p><p>We adopt the standard moving-window trading scheme in the literature <ref type="bibr" coords="7,111.66,124.34,57.17,8.64" target="#b10">(Cover, 1991;</ref><ref type="bibr" coords="7,172.39,124.34,62.61,8.64" target="#b23">Li et al., 2016;</ref><ref type="bibr" coords="7,238.56,124.34,52.13,8.64;7,55.44,136.29,23.71,8.64" target="#b19">Lai &amp; Yang, 2023)</ref> to assess the investing performance of different methods. Assume we observe T trading periods for N assets in a financial market. Without loss of generality, we can assume the initial wealth S (0) = 1 and the cumulative wealth (CW) S (t) at time t increases (or decreases) with a factor:</p><formula xml:id="formula_51" coords="7,162.73,194.17,124.75,10.31">S (t) = S (t−1) • ((x (t) ) ⊤ ŵ(t) )</formula><p>, where x (t) := r t + 1 N denotes the price relative vector at time t and ŵ(t) denotes the portfolio for a strategy built on the time window [t − T : t − 1]. At the beginning where there may be insufficient observations for some strategies, the 1/N strategy can be temporally used. This procedure goes on to the end and forms a backtest CW sequence {S (t) } T t=0 that can be used in the assessment. We set for all the methods T = 60 as a conventional setting for the time window size in the literature <ref type="bibr" coords="7,265.73,303.66,23.71,8.64;7,55.05,315.62,55.57,8.64" target="#b14">(Goto &amp; Xu, 2015;</ref><ref type="bibr" coords="7,115.39,315.62,68.37,8.64" target="#b0">Ao et al., 2019)</ref>. All the data sets and codes of this section are accessible via the link: https: //github.com/linyizun2024/ASMCVaR/tree/ main/Codes_for_Experiments_in_Paper.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1.">Parameter Setting and Autonomous Sparsity</head><p>The model parameters in ( <ref type="formula" coords="7,164.56,395.27,8.30,8.64" target="#formula_31">21</ref>) are set as follows: the confidence level is set as a conventional one c = 0.99. The expected return level is empirically set as ρ = 0.02 based on observations from real-world financial markets. The approximation parameter is set as γ = 10 −5 , which indicates a tight approximation of ℓ 0 constraint. The mixing parameter is set as</p><formula xml:id="formula_52" coords="7,78.44,477.36,186.80,58.52">λ = √ T h 1 [(N + 2) : (N + 1 + T )] ⊤ (1 T /T ) (h 2 [1 : N ] ⊤ (1 N /N ) − ρ) 2 = 1 (1 − c) √ T (r − ρ) 2 ,</formula><p>where h 1 [(N + 2) : (N + 1 + T )] and h 2 [1 : N ] denote the last T indices of h 1 and the first N indices of h 2 , respectively. r is the mean return of the entries of R. This setting of λ is a quotient between the CVaR term and the return term in (18) with equal weights 1 T /T and 1 N /N . As for the number of selected assets m, we assess 3 different sparsities: m 1 = 10, m 2 = 15, and m 3 = 20.</p><p>The algorithm parameters can be conveniently set based on the convergence criteria. For FPPA, we set θ = 1.99/∥ Q∥ 2 2 . Its maximum iteration and relative difference tolerance are set as M axIter 1 = 200 and tol 1 = 0.001. For PALM, the learning rates are set as β 1 = 0.99 L1 and β 2 = 0.99 L2 , respectively. Its maximum iteration and relative difference tolerance are set as M axIter 2 = 10 4 and tol 2 = 10 −4 .</p><p>We further investigate the sparsity parameter m and find that the support sets of two different sparsities overlap with a large proportion. To be specific, ASMCVaR produces a portfolio ŵ(t,j) for each sparsity m j and each trade time t. The overlapped proportion can be computed by</p><formula xml:id="formula_53" coords="7,317.24,133.89,214.40,22.63">p (t) j := |supp( ŵ(t,j) ) ∩ supp( ŵ(t,j+1) )| |supp( ŵ(t,j) )| , j = 1, 2.</formula><p>The sample means pj and the sample standard deviations (STD) σ(p j ) of {p (t) j } T t=1 on the benchmark data sets are presented in Table <ref type="table" coords="7,381.08,188.57,3.66,8.64" target="#tab_2">2</ref>. More than 89% assets overlap on average between two different sparsities. We call this property autonomous sparsity since a large proportion of assets can remain in the selected asset pool when the portfolio manager adjusts the pool size. It helps to save transaction costs and reduce the managerial burden. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2.">Cumulative Wealth</head><p>The CW sequence {S (t) } T t=0 represents the investing gain of a method along with time. The final CWs of different methods on 6 benchmark data sets are provided in Table <ref type="table" coords="7,535.65,433.66,3.77,8.64" target="#tab_4">4</ref>. ASMCVaR with any of the 3 sparsity settings outperforms all the other competitors on all 6 data sets. For example, the final CW of ASMCVaR is about 10 times those of Mean-CVaR and Mean-CVaR-ℓ 1 on FF100. Figure <ref type="figure" coords="7,492.93,481.48,5.08,8.64">2</ref> in Supplementary A.9 shows the CW plots of different methods on the benchmark data sets. The CW sequences of ASMCVaR (m = 10, red color) are steadily over others on most trade times. Besides, ASMCVaR has increasing trends in the long run, indicating that it is growing in wealth during the backtests.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3.">α Factor</head><p>According to the Capital Asset Pricing Model (CAPM, Sharpe 1964), a portfolio cannot exclude the influence from the underlying financial market. To derive a pure excess return to the market, the α factor is proposed <ref type="bibr" coords="7,482.72,632.86,59.39,8.64" target="#b24">(Lintner, 1965)</ref> and becomes a popular score for the relative performance to the market. Let r s and r m denote the returns for a nontrivial strategy and the Market strategy, respectively. The portfolio return r s can be decomposed into the market return component r m and the α factor: β and α can be computed by the linear regression:</p><formula xml:id="formula_54" coords="7,377.58,708.26,93.72,9.65">E (r s ) = βE (r m ) + α.</formula><formula xml:id="formula_55" coords="8,105.46,489.31,135.38,23.22">β = ĉ (r s , r m ) σ2 (r m ) , α = rs − βr m ,</formula><p>where ĉ(•, •) and σ2 (•) are the sample covariance and variance, respectively. rs denotes the sample mean, which can be computed by rs = 1</p><formula xml:id="formula_56" coords="8,174.59,540.85,50.59,15.12">T T t=1 r (t)</formula><p>s , where r</p><formula xml:id="formula_57" coords="8,54.28,540.85,235.17,26.71">(t) s = (x (t) ) ⊤ ŵ(t)</formula><p>s − 1 and ŵ(t) s is the portfolio of this nontrivial strategy at time t. rm can be computed likewise. We adopt the uniform-buy-and-hold strategy <ref type="bibr" coords="8,217.42,583.05,61.35,8.64" target="#b23">(Li et al., 2016)</ref> as the conventional representative of the market return. To test whether α &gt; 0 is statistically significant, the right-tailed t-test can also be implemented.</p><p>Table <ref type="table" coords="8,78.96,636.84,4.88,8.64" target="#tab_3">3</ref> shows the α factors with p-values of t-tests of different methods. ASMCVaR(m = 10) achieves the highest αs among all the compared methods on all 6 data sets. Moreover, ASMCVaR(m = 10) achieves positive αs at the significance level of 1% in all the cases, since all the p-values are smaller than 1%. Hence ASMCVaR obtains positive excess returns to the market with high statistical significance.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.4.">Sharpe Ratio</head><p>Since an investor usually has to take a higher risk to obtain a higher return in financial markets, it is necessary to develop risk-adjusted returns to evaluate this balancing performance. The Sharpe ratio (SR, <ref type="bibr" coords="8,400.23,304.34,50.21,8.64" target="#b32">Sharpe 1966</ref>) is such a metric that takes the ratio between return and risk of a strategy:</p><formula xml:id="formula_58" coords="8,392.76,328.92,63.36,23.22">SR = rs − r f σ (r s ) ,</formula><p>where the risk-free return is set as r f = 0 in this paper. The (monthly) SRs for different methods on the 6 data sets are shown in Table <ref type="table" coords="8,373.16,380.99,3.81,8.64" target="#tab_5">5</ref>. ASMCVaR with m = 10, m = 15 or m = 20 achieves the highest SRs among all the competitors on all the data sets. For example, the SRs of ASMCVaR are about 45.7% higher than those of Mean-CVaR and Mean-CVaR-ℓ 1 on FF25EU. These results indicate that ASMCVaR performs well in balancing return and risk. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.5.">Transaction Cost</head><p>The transaction cost with portfolio change is inevitable in practical portfolio management. We adopt the proportional transaction cost model <ref type="bibr" coords="8,401.23,696.62,89.02,8.64" target="#b5">(Blum &amp; Kalai, 1999;</ref><ref type="bibr" coords="8,492.72,696.62,49.97,8.64;8,307.44,708.58,23.13,8.64" target="#b19">Lai &amp; Yang, 2023)</ref> to compute the CW at the beginning of the t-th trade time:</p><formula xml:id="formula_59" coords="9,55.44,91.18,243.02,60.16">S (T ) =S (0) T t=1 (x (t) ) ⊤ ŵ(t) 1− ν 2 N i=1 ŵ(t) i − w(t−1) i , w(t−1) i = ŵ(t−1) i • x (t−1) i (x (t−1) ) ⊤ ŵ(t−1) ,</formula><p>where w(t−1) i denotes the evolved portfolio weight of the i-th asset at the end of the (t−1)-th trade time, and w(0) can be initialized as 0 N . ν is the bidirectional transaction cost rate, which is examined in the range [0, 0.5%]. When the cost rates of buying and selling are the same, changing the evolved portfolio w(t−1) to the next portfolio w(t) yields a proportional transaction cost of</p><formula xml:id="formula_60" coords="9,183.92,238.92,98.67,14.56">ν 2 N i=1 ŵ(t) i − w(t−1) i .</formula><p>When ν changes from 0 to 0.5%, the final CWs for different methods are plotted in Figure <ref type="figure" coords="9,182.81,272.09,5.08,8.64">3</ref> of Supplementary A.10. ASMCVaR outperforms all the other competitors on all the data sets with all ν, showing a good performance against the transaction cost. Note that the 1/N strategy is well known for its little turnover rate mechanism, but ASMCVaR still has an advantage over 1/N, especially with low and medium cost rates. Moreover, if a mutual fund has sufficient capital, then the transaction cost rate ν can be negotiated to be low. Hence ASMCVaR is effective in practical portfolio management with transaction cost.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Conclusion</head><p>We develop an autonomous sparse mean-CVaR (ASMC-VaR) model for portfolio optimization. It aims to optimize a mean-CVaR objective function under the ℓ 0 and the simplex constraints for exact and feasible asset selection. It is an NP-hard problem and the existing combinatorial approach requires a high computational cost. From a markedly different perspective, we propose to convert the ℓ 0 constraint into an indicator function and handle it with a tailed approximation. By this way, ASMCVaR can approximate the ℓ 0 -constrained mean-CVaR model to arbitrary accuracy. We also develop a proximal alternating linearized minimization algorithm, coupled with a nested fixed-point proximity algorithm (both convergent) to iteratively solve ASMCVaR. It has a good property of autonomous sparsity because a large proportion of assets can remain in the selected asset pool when adjusting the pool size. Experimental results show that ASMCVaR achieves state-of-the-art performance in several common evaluating metrics of investing performance and risk control.</p><p>A direct impact of ASMCVaR is to provide a novel tailed approximation approach to the long-standing NP-hard ℓ 0constrained problem. It can be conveniently transferred to other related ℓ 0 -constrained problems via similar establishment. Further improvements on ASMCVaR may lie in accelerating the solving algorithm with momentum methods, generalizing the objective function to a broader class of functions, or considering more constraints with practical sense.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A. Supplementary Materials</head><p>A.1. Proof of Lemma 3.2</p><p>Proof. For the case ∥w * ∥ 0 ⩽ m, it is obvious that (22) holds, since w * j = 0 for all j ∈ N N \J m w * . We then consider the case ∥w * ∥ 0 &gt; m. In this case, we construct an approximation ṽ := ( w⊤ , τ , z⊤ ) ⊤ ∈ R N1 of v * := ((w * ) ⊤ , τ * , (z * ) ⊤ ) ⊤ such that it satisfies the constraints of (17), that is, the constraints of ( <ref type="formula" coords="11,341.87,133.92,7.66,8.64" target="#formula_15">14</ref>). Note that v * satisfies that Qv * ⩾ q. We let wj = w * j for j ∈ J m w * \{j 1 }, wj = 0 for j ∈ N N \J m w * and wj1 = w * j1 +</p><p>j∈N N \J m w * w * j . Then w ∈ ∆ and ∥ w∥ 0 ⩽ m. For z and τ , we define δ := max</p><formula xml:id="formula_61" coords="11,153.09,165.57,193.65,18.97">j∈N N \J m w * {w * j } and ζ := max i∈N T ,j∈N N {|r i,j − r i,j1</formula><p>|}, where r i,j is the (i, j)th component of matrix R in model ( <ref type="formula" coords="11,109.19,186.00,7.66,8.64" target="#formula_31">21</ref>), and then let z = z * , τ = τ * + δζ. It is obvious that z ⩾ 0 T since z * ⩾ 0 T . To show that Qṽ ⩾ q, it remains to be shown that j1) , where r (j) is the jth column of R. From the definitions of δ and ζ,</p><formula xml:id="formula_62" coords="11,55.44,209.45,486.67,36.00">τ 1 T ⩾ − z − R w. (31) Note that Rw * − R w = j∈N N \J m w * w * j r (j) − r (</formula><formula xml:id="formula_63" coords="11,55.08,246.79,487.03,34.51">we have that τ 1 T ⩾ τ * 1 T + j∈N N \J m w * w * j r (j) − r (j1) = τ * 1 T + Rw * − R w.<label>(32)</label></formula><p>Then (31) follows from (32) and the fact τ * 1 T ⩾ −z * − Rw * . Now we know that ιm,γ ( w) = 0 and ι q (Qṽ) = 0. Hence</p><formula xml:id="formula_64" coords="11,269.80,322.99,272.31,8.96">Ψ(ṽ) = f (ṽ).<label>(33)</label></formula><p>The fact w * ∈ ∆ gives that ∥w * ∥ 2 ⩽ ∥w * ∥ 1 = 1, where ∥ • ∥ 2 and ∥ • ∥ 1 denote the ℓ 2 and ℓ 1 norms, respectively. Similarly, we also have ∥ w∥ 2 ⩽ 1. In addition,</p><formula xml:id="formula_65" coords="11,132.15,370.32,332.08,38.80">∥w * − w∥ 2 2 =   j∈N N \J m w * w * j   2 + j∈N N \J m w * (w * j ) 2 ⩽ [(N − m) 2 + (N − m)]δ 2</formula><p>Then it follows from the definition of function f in (18) that</p><formula xml:id="formula_66" coords="11,168.28,433.53,373.83,59.58">|f (v * ) − f (ṽ)| = |(τ * − τ ) + λ(µ ⊤ w * − ρ) 2 − λ(µ ⊤ w − ρ) 2 | ⩽ δζ + λ|µ ⊤ (w * + w) − 2ρ)| • |µ ⊤ (w * − w)| ⩽ δζ + λ (2∥µ∥ 2 + 2ρ) ∥µ∥ 2 ∥w * − w∥ 2 ⩽ Lδ ⩽ L,<label>(34)</label></formula><p>where</p><formula xml:id="formula_67" coords="11,182.58,511.91,359.53,13.14">L := ζ + 2λ [(N − m) 2 + (N − m)] ∥µ∥ 2 2 + ρ∥µ∥ 2 .<label>(35)</label></formula><p>This together with (33) and the fact Ψ(v * ) ⩽ Ψ(ṽ) yields that</p><formula xml:id="formula_68" coords="11,158.83,547.01,279.22,22.31">f (v * ) + L ⩾ f (ṽ) ⩾ Ψ(v * ) = f (v * ) + ιm,γ (w * ) ⩾ f (v * ) + 1 2γ δ 2 .</formula><p>Thus δ ⩽ 2 Lγ, which implies the desired result.</p><p>A.2. Proof of Theorem 3.3</p><p>Proof. For the case ∥ Ĩv * ∥ 0 ⩽ m, since ιm,γ ( Iv * ) = ι m ( Iv * * ) = 0 and ι q (Qv * ) = ι q (Qv * * ) = 0, it is obvious that f (v * ) = f (v * * ), and hence (23) holds. For the case ∥ Ĩv * ∥ 0 &gt; m, we define ṽ as an approximation of v * , following the same definition as in the proof of Lemma 3.2. Then Qṽ ⩾ q and ∥ Ĩ ṽ∥ 0 ⩽ m. Further, f (v * * ) ⩽ f (ṽ). By Lemma 3.2 and the inequality (34) in its proof, we know that |f (v * ) − f (ṽ)| ⩽ Lδ ⩽ 2 L3 γ, where L is defined by ( <ref type="formula" coords="11,511.51,669.67,8.30,8.64" target="#formula_67">35</ref>) and δ := max</p><formula xml:id="formula_69" coords="11,76.30,681.14,461.66,36.41">j∈N N \J m w * {w * j }. Thus f (v * * ) ⩽ f (ṽ) ⩽ f (v * ) + 2 L3 γ. (<label>36</label></formula><formula xml:id="formula_70" coords="11,537.96,708.58,4.15,8.64">)</formula><p>The prerequisite v * and v * * are solutions of models ( <ref type="formula" coords="12,278.04,70.54,8.30,8.64" target="#formula_31">21</ref>) and ( <ref type="formula" coords="12,315.55,70.54,8.30,8.64" target="#formula_25">19</ref>) gives that Ψ(v * ) ⩽ Ψ(v * * ) and</p><formula xml:id="formula_71" coords="12,55.44,68.64,487.74,36.21">Ψ(v * * ) = f (v * * ). Hence f (v * ) ⩽ Ψ(v * ) ⩽ f (v * * ).<label>(37)</label></formula><p>Now ( <ref type="formula" coords="12,81.20,115.24,8.30,8.64" target="#formula_34">23</ref>) can be obtained by ( <ref type="formula" coords="12,177.76,115.24,8.30,8.64" target="#formula_69">36</ref>) and ( <ref type="formula" coords="12,213.72,115.24,8.30,8.64" target="#formula_71">37</ref>) directly. This completes the proof.</p><p>A.3. Proof of Lemma 3.4</p><p>Proof. Since (v * , y * ) is a solution of model ( <ref type="formula" coords="12,238.53,159.02,7.64,8.64" target="#formula_36">24</ref>), we have that ∥y * ∥ 0 ⩽ m and</p><formula xml:id="formula_72" coords="12,228.46,179.50,309.50,11.37">G(v * , y * ) ⩽ G(v * , y), ∀y ∈ R N . (<label>38</label></formula><formula xml:id="formula_73" coords="12,537.96,181.90,4.15,8.64">)</formula><p>Subtracting f (v * ) + ι q (Qv * ) on both sides of (38) yields that</p><formula xml:id="formula_74" coords="12,164.54,225.63,373.42,22.31">1 2γ ∥ Iv * − y * ∥ 2 2 + ι m (y * ) ⩽ 1 2γ ∥ Iv * − y∥ 2 2 + ι m (y), ∀y ∈ R N . (<label>39</label></formula><formula xml:id="formula_75" coords="12,537.96,232.69,4.15,8.64">)</formula><p>Let w * := Ĩv * . Then (39) implies that</p><formula xml:id="formula_76" coords="12,219.31,283.05,322.80,12.69">∥w * − y * ∥ 2 2 ⩽ ∥w * − y∥ 2 2 , ∀y ∈ Ω m .<label>(40)</label></formula><p>We consider two cases for w * . If w * ∈ Ω m , (40) implies that y * = w * , that is, y * = S m (w * ).</p><p>We then consider the case w * / ∈ Ω m . In this case, we have ∥y * ∥ 0 = m. Suppose not, then ∥y * ∥ 0 &lt; m. Since w * / ∈ Ω m , we know that w * has at least m + 1 nonzero components. Hence there exists some j ′ ∈ N N such that y * j ′ = 0 and w * j ′ ̸ = 0. By letting y ∈ Ω m such that</p><formula xml:id="formula_77" coords="12,213.94,361.15,328.17,12.69">y j ′ = w * j ′ and y j = y * j for j ∈ N N \{j ′ },<label>(41)</label></formula><formula xml:id="formula_78" coords="12,55.44,382.90,486.67,23.69">then ∥w * − y * ∥ 2 − ∥w * − y∥ 2 = (w * j ′ − y * j ′ ) 2 &gt; 0,<label>(42)</label></formula><p>which contradicts (40). Thus ∥y * ∥ 0 = m. Note that the components in w * may not be distinct. We let J 1 , J 2 , J 3 ⊂ N N be three (i) We first prove that y * j = w * j for all j ∈ J 1 if J 1 ̸ = ∅. To this end, we show that y * j ̸ = 0 for all j ∈ J 1 . Assume that there exists some j ′ ∈ J 1 such that y * j ′ = 0. Since ∥y * ∥ 0 = m, there must be some j ′′ ∈ N N \J 1 such that y * j ′′ ̸ = 0. Note that |w * j ′ | &gt; |w * j ′′ |. By letting y ∈ Ω m such that y j ′ = w * j ′ , y j ′′ = 0 and y j = y * j for j ∈ N N \{j ′ , j ′′ },</p><formula xml:id="formula_79" coords="12,55.44,505.39,486.67,46.56">then ∥w * − y * ∥ 2 2 − ∥w * − y∥ 2 2 = (w * j ′ ) 2 + (w * j ′′ − y * j ′′ ) 2 − (w * j ′′ ) 2 &gt; 0,<label>(43)</label></formula><p>which contradicts (40). Hence y * j ̸ = 0 for all j ∈ J 1 . Now we are able to prove by contradiction that y * j = w * j for all j ∈ J 1 . Assume that there exists j ′ ∈ J 1 such that y * j ̸ = w * j ′ . Since y * j ′ ̸ = 0, letting y ∈ R N be given by ( <ref type="formula" coords="12,452.28,574.34,7.66,8.64" target="#formula_77">41</ref>), then y ∈ Ω m and (42) holds, which contradicts (40). Hence y * j = w * j for all j ∈ J 1 . (ii) We next prove that y * j = 0 for all j ∈ J 3 if J 3 ̸ = ∅. Otherwise, there exists j ′′ ∈ J 3 such that y * j ′′ ̸ = 0. Note that the number of elements in J 1 ∪ J 2 = N N \J 3 is greater than or equal to m. To guarantee that ∥y * ∥ 0 = m, there must be some j ′ ∈ N N \J 3 such that y * j ′ = 0. In this case, we let y ∈ Ω m be given by ( <ref type="formula" coords="12,350.73,628.14,7.66,8.64" target="#formula_79">43</ref>). Note that |w * j ′ | &gt; |w * j ′′ |. We have that (44) holds, which contradicts (40). Hence y * j = 0 for all j ∈ J 3 . Note that J 1 ⫋ J m w * , J m w * \J 1 ⊂ J 2 . In addition, w * / ∈ Ω m implies that w * j ̸ = 0 for all j ∈ J 1 ∪ J 2 . Let m 1 ∈ {0, 1, . . . , m − 1} be the number of elements in J 1 . The fact ∥y * ∥ 0 = m together with (i) and (ii) implies that there must be an index set J ′ 2 ⊂ J 2 with (m − m 1 ) components such that y * j ̸ = 0 for j ∈ J ′ 2 and y * j = 0 for j ∈ J 2 \J ′ 2 . As shown in (i), we can also prove that y * j = w * j for j ∈ J ′ 2 . Now by setting J = J 1 ∪ J ′ 2 , then it is an m-LAV index set of w. In addition, we see from ( <ref type="formula" coords="12,148.41,708.58,8.30,8.64" target="#formula_40">27</ref>) that y * = S m ( Iv * ), which completes the proof. </p><p>For any y ∈ Ω m , there exists an index set J y ⊂ N N with m elements such that y j = 0 for all j ∈ N N \J y . Since J m w contains the m largest components of w in absolute value, we have that</p><formula xml:id="formula_82" coords="13,55.44,233.83,486.67,64.92">j∈J m w w 2 j ⩾ j∈Jy w 2 j , which together with (46) implies that ∥y − w∥ 2 2 ⩾ j∈N N \Jy w 2 j ⩾ j∈N N \J m w w 2 j = ∥ ỹ − w∥ 2 2 .</formula><p>This completes the proof of (45). Now by (45), we have</p><formula xml:id="formula_83" coords="13,173.70,338.46,368.40,22.31">1 2γ ∥ ỹ − Iv∥ 2 2 + ι m ( ỹ) ⩽ 1 2γ ∥y − Iv∥ 2 2 + ι m (y), ∀y ∈ R N .<label>(47)</label></formula><p>Adding f (v) + ι q (Qv) on both sides of ( <ref type="formula" coords="13,222.82,377.99,8.30,8.64" target="#formula_83">47</ref>) yields (28) immediately.</p><p>A.5. Proof of Theorem 3.6</p><p>Proof. Let w := Ĩv. The definition of ιm,γ in (20) implies that ιm,γ (w) = 1 2γ ∥w − S m (w)∥ 2 2 . Then for y = S m (w), we know that ι m (y) = 0 and ιm,γ (w) = 1 2γ ∥w − y∥ 2 2 . Hence Ψ(v) = G(v, y).</p><p>Suppose that (v * , y * ) is a solution of model ( <ref type="formula" coords="13,241.33,457.49,7.66,8.64" target="#formula_36">24</ref>). From Lemma 3.4, we know that y * = S m ( Iv * ), and hence Ψ(v * ) = G(v * , y * ). If v * is not a solution of model ( <ref type="formula" coords="13,231.97,469.45,7.63,8.64" target="#formula_31">21</ref>), then there exists ṽ ∈ R N1 such that Ψ(ṽ) &lt; Ψ(v * ). In this case, we have that G(ṽ, ỹ) = Ψ(ṽ) &lt; Ψ(v * ) = G(v * , y * ), for any ỹ = S m ( I ṽ), which contradicts the assumption that (v * , y * ) is a solution of model ( <ref type="formula" coords="13,132.04,494.63,7.64,8.64" target="#formula_36">24</ref>). This proves that v * is a solution of model ( <ref type="formula" coords="13,322.53,494.63,7.64,8.64" target="#formula_31">21</ref>).</p><p>Conversely, suppose that v * is a solution of model ( <ref type="formula" coords="13,274.97,512.56,8.30,8.64" target="#formula_31">21</ref>) and y * = S m ( Iv * ). We confirm that (v * , y * ) is a solution of model ( <ref type="formula" coords="13,100.09,525.79,7.66,8.64" target="#formula_36">24</ref>). If it is not true, according to Lemma 3.5, we can find vectors v ∈ R N1 and ȳ <ref type="formula" coords="13,224.82,549.70,7.64,8.64" target="#formula_31">21</ref>). This completes the proof.</p><formula xml:id="formula_84" coords="13,55.44,525.33,486.00,33.01">= S m ( I v) such that G(v, ȳ) &lt; G(v * , y * ). We see from (29) that Ψ(v) = G(v, ȳ) and Ψ(v * ) = G(v * , y * ). Hence Ψ(v) &lt; Ψ(v * ), which contradicts that v * is a solution of model (</formula><p>A.6. Proof of Proposition 3.7</p><p>Proof. Compute that</p><formula xml:id="formula_85" coords="13,55.44,617.98,372.01,102.06">∇ v H(v, y) = h 1 + 2λ h 2 h ⊤ 2 v − ρh 2 + 1 γ I ⊤ Iv − I ⊤ y , ∇ y H(v, y) = 1 γ (y − Iv). Let L 1 := 2λ∥h 2 ∥ 2 2 + 1 γ and L 2 := 1 γ . Then for all v 1 , v 2 ∈ R N1 and y ∈ R N , ∥∇ v H(v 1 , y) − ∇ v H(v 2 , y)∥ 2 = 2λh 2 h ⊤ 2 + 1 γ I ⊤ I (v 1 − v 2 ) 2 ⩽ 2λh 2 h ⊤ 2 + 1 γ I ⊤ I 2 • ∥v 1 − v 2 ∥ 2 ⩽ 2λ∥h 2 ∥ 2 2 + 1 γ ∥v 1 − v 2 ∥ 2 = L 1 ∥v 1 − v 2 ∥ 2 . For all y 1 , y 2 ∈ R N and v ∈ R N1 , ∥∇ y H(v, y 1 ) − ∇ y H(v, y 2 )∥ 2 = 1 γ ∥y 1 − y 2 ∥ 2 = L 2 ∥y 1 − y 2 ∥ 2 ,</formula><p>which completes the proof.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A.7. Algorithm for ASMCVaR</head><p>Algorithm 1 ASMCVaR Require: Given the sample asset price relative matrix X ∈ R T ×N ; the parameters m and λ; the maximum iteration numbers (M axIter 1 , M axIter 2 ) and tolerances (tol 1 , tol 2 ). Set the approximation parameter γ, the expected return level ρ and the confidence level c. Preparation: Compute the return matrix R = X − 1 T ×N , the sample mean vector μ = 1 T R ⊤ 1 T . Let matrix Q and vector q be given by ( <ref type="formula" coords="14,177.59,357.13,7.66,8.64" target="#formula_19">16</ref>), I be given by ( <ref type="formula" coords="14,262.04,357.13,7.66,8.64" target="#formula_19">16</ref>), h 1 and h 2 be given by ( <ref type="formula" coords="14,384.46,357.13,7.66,8.64" target="#formula_17">15</ref>). Compute the Lipschitz constants</p><formula xml:id="formula_86" coords="14,55.44,366.88,486.00,205.13">L 1 = 2λ∥h 2 ∥ 2 2 + 1 γ and L 2 = 1 γ . Initialization: Given the initial vectors by v 0 = 1 N 1 ⊤ N , 0 ⊤ 1+T ⊤ and y 0 = 1 N 1 N . Set β 1 = 0.99 L1 and β 2 = 0.99 L2 in PALM. Set θ = 1.99 ∥Q∥ 2 2 in FPPA. repeat p k =v k −β 1 h 1 +2λ h 2 h ⊤ 2 v k −ρh 2 + 1 γ I ⊤ Iv k − I ⊤ y k repeat 1. x l = Qp k + z l − θQQ ⊤ z l 2. z l+1 = x l − max x l , q 3. l = l + 1 until ∥z l −z l−1 ∥2 ∥z l−1 ∥2 ⩽ tol 1 or l &gt; M axIter 1 . 4. v k+1 = p k − θQ ⊤ z l 5. y k+1 = S m y k − β 2 1 γ (y k − Iv k+1 ) 6. k = k + 1 until ∥v k −v k−1 ∥2 ∥v k−1 ∥2 ⩽ tol 2 or k &gt; M axIter 2 . Ensure: Portfolio w * = v k 1:N .</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A.8. PALM for Relaxed Sparse Regression</head><p>To see the performance of the proposed relaxation technique and the PALM algorithm for the sparse regression problem, we consider the following two models:</p><formula xml:id="formula_87" coords="14,199.70,637.95,197.48,51.94">min β 1 2 ∥Xβ − y∥ 2 2 + ι m (β) , min β,η 1 2 ∥Xβ − y∥ 2 2 + 1 2γ ∥β − η∥ 2 2 + ι m (η) .</formula><p>They correspond to the original model ( <ref type="formula" coords="14,223.88,696.62,8.30,8.64" target="#formula_25">19</ref>) and the relaxed dual-variable optimization model (24), respectively. We conducted two sets of experiments to validate two aspects:</p><p>1. The equivalence of the above relaxation model and original model, in the sense of approximation.</p><p>2. The effectiveness of the PALM algorithm for solving the relaxation model.</p><p>In these experiments, data sets comprising 50 samples are synthetically generated according to the model y = x ⊤ β * + ϵ, where β * = (1 3 , 0 7 ) ⊤ ∈ R 10 represents the true coefficient vector and ϵ denotes the random error following a normal distribution N (0, 1). The input vector x ∈ R 10 is generated by a normal distribution with mean zero and covariance matrix Σ ∈ R 10×10 , where Σ ij := 0.5 |i−j| . We set the sparsity level m as 3. The direct exhaustive approach is utilized to enumerate all possible support set configurations, totaling C 3 10 = 120 cases. By comparing the optimal solutions corresponding to these 120 cases, we can ascertain the exact globally optimal solutions of the aforementioned two models. The iterative scheme of the PALM algorithm for solving the above relaxed model can be given by</p><formula xml:id="formula_88" coords="15,182.02,191.36,221.67,34.58">   β k+1 = β k − α 1 X ⊤ (Xβ k − y) + 1 γ (β k − η k ) , η k+1 = S m 1 − α2 γ η k + α2 γ β k+1 ,</formula><p>where S m is defined by ( <ref type="formula" coords="15,155.70,240.85,7.64,8.64" target="#formula_40">27</ref>). Parameters α 1 and α 2 are set as 0.99 • ∥X ⊤ X + 1 γ I∥ −1 2 and 0.99γ, respectively. To ensure a better convergence, we conduct 5 × 10 6 iterations of PALM. The initial vectors for iteration are casually chosen as β 0 = η 0 = 0 10 .</p><p>To demonstrate the robustness of our findings, we repeated each of the aforementioned two sets of experiments for 10 times, with different X and y in each run. Through the first set of experiments, we observed that for sufficiently small γ (e.g., 10 −7 ), the solutions of the original and relaxed models are identical. This suggests that as γ tends to zero, the optimal solution of the relaxed model indeed converges to that of the original model. In the subsequent set of experiments, we observed that across the 10 trials, the solutions obtained by PALM consistently approached the optimal solutions of the relaxed model to a remarkable degree. This reflects that in certain scenarios, PALM may be capable of directly converging to the globally optimal solution of the original nonconvex optimization model, even though the initializations may not necessarily be very close to the true solution.</p><p>A.9. Cumulative Wealth Plots (Figure <ref type="figure" coords="15,217.40,393.07,4.15,8.96">2</ref>  </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="4,436.32,596.36,105.12,8.64;4,307.44,608.00,152.39,8.96;4,307.44,626.25,193.89,8.64"><head></head><label></label><figDesc>Figure 1 shows a diagram for ιm,γ (w) with N = 10 and m = 5. Now the proposed ASMCVaR model is given by</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="5,54.94,262.98,235.75,8.06;5,55.28,273.94,168.68,8.06;5,229.54,272.31,3.65,5.24;5,227.40,279.02,7.55,5.24"><head>Figure 1 .</head><label>1</label><figDesc>Figure 1. Diagram for tailed approximation of ℓ0 constraint: ιm,γ(w) with N = 10 and m = 5. As γ ↘ 0, 1 2γ</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="12,90.84,427.28,92.43,8.96;12,183.55,425.71,4.08,6.12;12,183.28,431.92,3.30,6.12;12,188.13,427.28,26.90,8.74;12,215.30,425.71,4.08,6.12;12,215.03,431.92,9.41,6.12;12,225.44,427.28,76.07,9.65;12,301.78,425.71,4.08,6.12;12,301.51,431.92,3.30,6.12;12,306.36,427.28,26.90,8.74;12,333.53,425.71,4.08,6.12;12,333.26,431.92,9.41,6.12;12,343.67,427.28,93.49,9.65;12,437.43,425.71,4.08,6.12;12,437.17,431.92,3.30,6.12;12,442.01,427.28,26.90,8.74;12,469.19,425.71,4.08,6.12;12,468.92,431.92,9.41,6.12;12,479.33,427.28,63.36,9.65;12,55.44,439.56,49.58,8.64"><head></head><label></label><figDesc>index sets such that |w * j | &gt; |w * jm | for all j ∈ J 1 , |w * j | = |w * jm | for all j ∈ J 2 , and |w * j | &lt; |w * jm | for all j ∈ J 3 , respectively.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="13,55.44,70.15,104.13,8.96;13,55.44,88.84,160.89,8.99;13,226.18,115.92,36.95,8.88;13,263.12,113.99,3.97,6.12;13,263.12,116.03,54.70,10.65;13,317.83,113.99,3.97,6.12;13,317.83,120.56,3.97,6.12;13,322.30,116.06,48.41,9.65;13,525.51,116.38,16.60,8.64;13,55.44,143.11,486.00,9.79;13,55.44,155.17,17.42,8.77;13,66.77,155.07,215.85,9.79;13,244.81,184.25,36.95,8.88;13,281.76,182.31,3.97,6.12;13,281.76,188.89,3.97,6.12;13,288.99,184.39,7.75,8.74;13,299.51,198.17,35.77,7.36;13,328.50,202.14,5.60,4.38;13,337.44,184.39,7.13,8.74;13,344.84,182.31,3.97,6.12;13,344.57,188.89,3.30,6.12;13,349.31,184.39,2.77,8.74"><head>A. 4 .</head><label>4</label><figDesc>Proof of Lemma 3.5 Proof. Let w := Iv. We first prove that ∥ ỹ − w∥ 2 2 ⩽ ∥y − w∥ 2 2 , ∀y ∈ Ω m . (45) If w ∈ Ω m , then it is easy to see from the definition (27) of operator S m that ỹ = w and hence (45) holds. For the case w / ∈ Ω m , since ỹ = S m ( Iv), we know that ỹ ∈ Ω m and ∥ ỹ − w∥ 2</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5" coords="16,82.27,646.11,432.35,7.77"><head>Figure 2 .Figure 3 .</head><label>23</label><figDesc>Figure 2. Cumulative wealths of different portfolio optimization models along with trade time on 6 benchmark data sets.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" coords="6,55.08,70.54,489.35,646.68"><head></head><label></label><figDesc>ιq•Q is very tough, due to the complexity of matrix Q. Instead, we use the Fixed-Point Proximity Algorithm (FPPA,<ref type="bibr" coords="6,128.41,573.04,83.55,8.64" target="#b28">Micchelli et al. 2011)</ref> to solve model (30) iteratively. Before this, we give the closed form of operator prox ιq . From the definition of proximity operator, it is easy to see that The whole ASMCVaR approach is summarized as Algorithm 1 in Supplementary A.7, with PALM and FPPA in the outer and the inner iterations, respectively.It is noteworthy that both the proposed relaxation (tailed approximation) technique and the PALM algorithm can be readily extended to various other machine learning problems. To exemplify this, we have introduced two additional modules. Firstly, we apply the proposed relaxation technique and the PALM algorithm to the sparse regression problem, as detailed in Supplementary A.8. Secondly, we have developed a PyTorch module based on this relaxation technique and PALM, facilitating its application to deep learning scenarios. The codes for these two modules are available in the folders Sparse Relaxation Test and Pytorch Demo, respectively, accessible via the link: https: //github.com/linyizun2024/ASMCVaR.</figDesc><table coords="6,55.44,621.39,236.16,25.22"><row><cell>prox ιq (x)=</cell><cell>arg min u∈{z∈R N 2 :z⩾q}</cell><cell>1 2</cell><cell>∥u−x∥ 2 2 = max {x, q} .</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1" coords="6,306.89,237.71,236.11,278.45"><head>Table 1 .</head><label>1</label><figDesc>conduct extensive experiments on 6 real-world financial data sets from Kenneth R. French's Data Library 2 , whose details are provided in Table1. They contain monthly price relative sequences of some portfolios formed by different criteria, and one portfolio here is considered as one asset actually. Both FF25 and FF25EU contain 25 portfolios, while the former is built on BE/ME (book equity to market equity) and investment from the US market, the latter is built on ME and prior return from the European market. FF32 consists of 32 portfolios built on BE/ME and investment from the US market, while FF49 consists of 49 industry portfolios from the US market. FF100 and FF100MEOP consist of 100 portfolios from the US market. FF100 is built on ME and BE/ME, while FF100MEOP is built on ME and operating profitability, respectively. Information of 6 real-world monthly benchmark data sets.</figDesc><table coords="6,310.43,445.09,230.93,71.07"><row><cell>Data Set</cell><cell>Region</cell><cell>Time</cell><cell cols="2">Months # Assets</cell></row><row><cell>FF25</cell><cell>US</cell><cell>Jul/1971 -May/2023</cell><cell>623</cell><cell>25</cell></row><row><cell>FF25EU</cell><cell cols="3">EU Nov/1990 -May/2023 391</cell><cell>25</cell></row><row><cell>FF32</cell><cell>US</cell><cell>Jul/1971 -May/2023</cell><cell>623</cell><cell>32</cell></row><row><cell>FF49</cell><cell>US</cell><cell>Jul/1971 -May/2023</cell><cell>623</cell><cell>49</cell></row><row><cell>FF100</cell><cell>US</cell><cell>Jul/1971 -May/2023</cell><cell>623</cell><cell>100</cell></row><row><cell cols="2">FF100MEOP US</cell><cell>Jul/1971 -May/2023</cell><cell>623</cell><cell>100</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2" coords="7,306.89,278.34,236.03,87.21"><head>Table 2 .</head><label>2</label><figDesc>Proportion of overlapped assets for ASMCVaR with different sparsities on 6 benchmark data sets.</figDesc><table coords="7,312.74,302.99,223.88,62.56"><row><cell></cell><cell>FF25 FF25EU FF32</cell><cell>FF49 FF100</cell><cell>FF100 MEOP</cell></row><row><cell>p1</cell><cell cols="3">0.9115 0.9147 0.8919 0.9468 0.9222 0.9018</cell></row><row><cell cols="4">σ(p 1 ) 0.1182 0.1215 0.1307 0.0832 0.1060 0.1154</cell></row><row><cell>p2</cell><cell cols="3">0.9554 0.9553 0.9348 0.9372 0.9543 0.9478</cell></row><row><cell cols="4">σ(p 2 ) 0.0808 0.0854 0.0958 0.0825 0.0766 0.0724</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3" coords="8,70.37,77.01,453.91,146.20"><head>Table 3 .</head><label>3</label><figDesc>α factors with p-values of t-tests of different portfolio optimization models on 6 benchmark data sets.</figDesc><table coords="8,70.37,90.32,453.91,132.88"><row><cell>Method</cell><cell>α</cell><cell>FF25 p-value</cell><cell cols="2">FF25EU α p-value</cell><cell>α</cell><cell cols="2">FF32 p-value</cell><cell>α</cell><cell>FF49 p-value</cell><cell>α</cell><cell>FF100 p-value</cell><cell>FF100MEOP α p-value</cell></row><row><cell>1/N</cell><cell>0</cell><cell cols="2">0.4318 -0.0031</cell><cell>1</cell><cell cols="3">0.0001 0.3782</cell><cell>0</cell><cell cols="3">0.5487 -0.0004 0.9427 -0.0002 0.9083</cell></row><row><cell>SSMP</cell><cell cols="11">0.0002 0.4465 -0.0027 0.9992 -0.0028 0.9744 0.0017 0.1935 -0.0068 0.9999 -0.0051 0.9983</cell></row><row><cell>SSPO</cell><cell cols="3">-0.0024 0.9440 -0.0098</cell><cell>1</cell><cell cols="7">-0.0046 0.9994 -0.0056 0.9278 -0.0100 0.9999 -0.0071 0.9996</cell></row><row><cell>SPOLC</cell><cell cols="3">-0.0032 0.9984 -0.0103</cell><cell>1</cell><cell cols="7">-0.0011 0.8050 -0.0037 0.9008 -0.0073</cell><cell>1</cell><cell>-0.0050 0.9977</cell></row><row><cell>S1</cell><cell cols="3">-0.0027 0.9701 -0.0104</cell><cell>1</cell><cell cols="7">-0.0049 0.9997 -0.0062 0.9463 -0.0110</cell><cell>1</cell><cell>-0.0069 0.9991</cell></row><row><cell>S2</cell><cell cols="3">-0.0029 0.9740 -0.0101</cell><cell>1</cell><cell cols="7">-0.0050 0.9996 -0.0062 0.9475 -0.0106</cell><cell>1</cell><cell>-0.0072 0.9994</cell></row><row><cell>S3</cell><cell cols="3">-0.0028 0.9738 -0.0103</cell><cell>1</cell><cell cols="7">-0.0049 0.9997 -0.0062 0.9465 -0.0110</cell><cell>1</cell><cell>-0.0068 0.9991</cell></row><row><cell>Mean-CVaR</cell><cell cols="11">0.0009 0.1133 -0.0014 0.9216 0.0019 0.0183 0.0025 0.0098 -0.0006 0.7222 0.0017 0.0405</cell></row><row><cell>Mean-CVaR-ℓ1</cell><cell cols="9">0.0015 0.0339 -0.0011 0.8947 0.0017 0.0300 0.0027 0.0065</cell><cell>0</cell><cell>0.4987 0.0006 0.2969</cell></row><row><cell>MT-CVaR</cell><cell cols="3">-0.0041 0.9984 -0.0090</cell><cell>1</cell><cell cols="2">-0.0067</cell><cell>1</cell><cell cols="4">-0.0044 0.8979 -0.0105</cell><cell>1</cell><cell>-0.0050 0.9891</cell></row><row><cell cols="4">ASMCVaR(m = 10) 0.0022 0.0006 0.0027</cell><cell>0</cell><cell cols="7">0.0027 0.0002 0.0029 0.0049 0.0023 0.0038 0.0020 0.0060</cell></row><row><cell cols="4">ASMCVaR(m = 15) 0.0019 0.0029 0.0027</cell><cell>0</cell><cell cols="7">0.0025 0.0001 0.0024 0.0112 0.0025 0.0012 0.0017 0.0109</cell></row><row><cell cols="4">ASMCVaR(m = 20) 0.0019 0.0017 0.0025</cell><cell>0</cell><cell cols="7">0.0024 0.0001 0.0023 0.0098 0.0024 0.0010 0.0016 0.0114</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4" coords="8,54.89,256.58,237.88,156.14"><head>Table 4 .</head><label>4</label><figDesc>Final cumulative wealths of different portfolio optimization models on 6 benchmark data sets.</figDesc><table coords="8,59.92,278.66,232.85,134.07"><row><cell>Method</cell><cell cols="3">FF25 FF25EU FF32</cell><cell cols="2">FF49 FF100</cell><cell>FF100 MEOP</cell></row><row><cell>1/N</cell><cell cols="2">355.98 13.05</cell><cell cols="4">424.42 235.48 364.87 348.70</cell></row><row><cell>SSMP</cell><cell cols="2">248.67 13.47</cell><cell cols="4">158.98 186.79 10.09 26.06</cell></row><row><cell>SSPO</cell><cell>129.35</cell><cell>1.22</cell><cell>30.20</cell><cell>1.33</cell><cell>0.89</cell><cell>3.90</cell></row><row><cell>SPOLC</cell><cell>57.53</cell><cell>0.96</cell><cell cols="2">169.60 5.44</cell><cell>2.39</cell><cell>8.23</cell></row><row><cell>S1</cell><cell>100.76</cell><cell>1.08</cell><cell>29.47</cell><cell>1.09</cell><cell>0.54</cell><cell>4.31</cell></row><row><cell>S2</cell><cell>83.10</cell><cell>1.19</cell><cell>25.93</cell><cell>1.15</cell><cell>0.66</cell><cell>3.55</cell></row><row><cell>S3</cell><cell>96.26</cell><cell>1.11</cell><cell>29.45</cell><cell>1.09</cell><cell>0.55</cell><cell>4.38</cell></row><row><cell>Mean-CVaR</cell><cell cols="2">333.41 18.60</cell><cell cols="4">331.14 150.15 70.31 306.40</cell></row><row><cell>Mean-CVaR-ℓ 1</cell><cell cols="2">440.32 18.58</cell><cell cols="4">332.55 178.93 102.11 163.77</cell></row><row><cell>MT-CVaR</cell><cell>34.58</cell><cell>1.53</cell><cell>7.96</cell><cell>4.93</cell><cell>0.61</cell><cell>11.66</cell></row><row><cell cols="7">ASMCVaR(m = 10) 973.23 122.82 1122.76 758.66 966.32 783.47</cell></row><row><cell cols="7">ASMCVaR(m = 15) 827.18 123.13 1303.80 694.83 1126 712.45</cell></row><row><cell cols="7">ASMCVaR(m = 20) 872.03 113.28 1317.01 767.61 1117.20 714.49</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5" coords="8,306.89,473.53,236.14,152.01"><head>Table 5 .</head><label>5</label><figDesc>Sharpe ratios of different portfolio optimization models on 6 benchmark data sets.</figDesc><table coords="8,309.93,495.60,233.10,129.93"><row><cell>Method</cell><cell>FF25 FF25EU FF32 FF49 FF100</cell><cell>FF100 MEOP</cell></row><row><cell>1/N</cell><cell cols="2">0.2278 0.1576 0.2236 0.2059 0.2089 0.2077</cell></row><row><cell>SSMP</cell><cell cols="2">0.1935 0.1598 0.1536 0.1659 0.0883 0.1085</cell></row><row><cell>SSPO</cell><cell cols="2">0.1545 0.0412 0.1182 0.0588 0.0425 0.0685</cell></row><row><cell>SPOLC</cell><cell cols="2">0.1453 0.0316 0.1735 0.0753 0.0563 0.0864</cell></row><row><cell>S1</cell><cell cols="2">0.1498 0.0370 0.1169 0.0559 0.0327 0.0709</cell></row><row><cell>S2</cell><cell cols="2">0.1446 0.0408 0.1137 0.0571 0.0367 0.0670</cell></row><row><cell>S3</cell><cell cols="2">0.1486 0.0381 0.1170 0.0559 0.0331 0.0712</cell></row><row><cell>Mean-CVaR</cell><cell cols="2">0.2305 0.1803 0.2375 0.2220 0.1738 0.2204</cell></row><row><cell>Mean-CVaR-ℓ1</cell><cell cols="2">0.2392 0.1862 0.2330 0.2262 0.1815 0.1939</cell></row><row><cell>MT-CVaR</cell><cell cols="2">0.1251 0.0505 0.0844 0.0767 0.0325 0.0911</cell></row><row><cell cols="3">ASMCVaR(m = 10) 0.2610 0.2758 0.2638 0.2339 0.2446 0.2363</cell></row><row><cell cols="3">ASMCVaR(m = 15) 0.2541 0.2765 0.2615 0.2286 0.2503 0.2326</cell></row><row><cell cols="3">ASMCVaR(m = 20) 0.2558 0.2713 0.2603 0.2300 0.2501 0.2322</cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="2" xml:id="foot_0">http://mba.tuck.dartmouth.edu/pages/ faculty/ken.french/data_library.html</note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgements</head><p>The authors thank the anonymous reviewers for their constructive comments and valuable suggestions in improving this paper. This work was supported in part by National Natural Science Foundation of China under Grant 62176103, in part by Guangdong Basic and Applied Basic Research Foundation under Grant 2021A1515110541, and in part by the Science and Technology Planning Project of Guangzhou under Grants 2024A04J3940 and 2024A04J9896.</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="9,307.44,284.53,234.00,8.64;9,317.40,296.31,224.04,8.81;9,317.15,308.27,130.34,8.81" xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Approaching Mean-Variance Efficiency for Large Portfolios</title>
+		<author>
+			<persName><forename type="first">Mengmeng</forename><surname>Ao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Li</forename><surname>Yingying</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xinghua</forename><surname>Zheng</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/rfs/hhy105</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Review of Financial Studies</title>
+		<idno type="ISSN">0893-9454</idno>
+		<idno type="ISSNe">1465-7368</idno>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="2890" to="2919" />
+			<date type="published" when="2019">2019</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,307.44,327.07,234.00,8.64;9,317.40,338.86,225.29,8.81;9,316.66,350.98,22.42,8.64" xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Coherent Measures of Risk</title>
+		<author>
+			<persName><forename type="first">Philippe</forename><surname>Artzner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Freddy</forename><surname>Delbaen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jean‐marc</forename><surname>Eber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Heath</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/1467-9965.00068</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Mathematical Finance</title>
+		<title level="j" type="abbrev">Mathematical Finance</title>
+		<idno type="ISSN">0960-1627</idno>
+		<idno type="ISSNe">1467-9965</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="203" to="228" />
+			<date type="published" when="1999-07">1999</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,307.44,369.62,234.00,8.64;9,317.40,381.57,225.42,8.64;9,317.40,393.53,224.04,8.64;9,317.40,405.31,225.69,8.81;9,317.40,417.27,132.40,8.81" xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Convergence of descent methods for semi-algebraic and tame problems: proximal algorithms, forward–backward splitting, and regularized Gauss–Seidel methods</title>
+		<author>
+			<persName><forename type="first">Hedy</forename><surname>Attouch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jérôme</forename><surname>Bolte</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Benar</forename><forename type="middle">Fux</forename><surname>Svaiter</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10107-011-0484-9</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Mathematical Programming</title>
+		<title level="j" type="abbrev">Math. Program.</title>
+		<idno type="ISSN">0025-5610</idno>
+		<idno type="ISSNe">1436-4646</idno>
+		<imprint>
+			<biblScope unit="volume">137</biblScope>
+			<biblScope unit="issue">1-2</biblScope>
+			<biblScope unit="page" from="91" to="129" />
+			<date type="published" when="2013">2013</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,307.44,436.07,234.00,8.64;9,317.40,447.86,225.28,8.81;9,317.40,459.98,117.61,8.64" xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Machine Learning and Portfolio Optimization</title>
+		<author>
+			<persName><forename type="first">Gah-Yi</forename><surname>Ban</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Noureddine</forename><surname>El Karoui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><forename type="middle">E B</forename><surname>Lim</surname></persName>
+		</author>
+		<idno type="DOI">10.1287/mnsc.2016.2644</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<title level="j" type="abbrev">Management Science</title>
+		<idno type="ISSN">0025-1909</idno>
+		<idno type="ISSNe">1526-5501</idno>
+		<imprint>
+			<biblScope unit="volume">64</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="1136" to="1154" />
+			<date type="published" when="2018-03">Mar. 2018</date>
+			<publisher>Institute for Operations Research and the Management Sciences (INFORMS)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,307.44,478.62,234.00,8.64;9,317.40,490.40,224.03,8.81;9,317.07,502.36,145.84,8.81" xml:id="b4">
+	<analytic>
+		<title level="a" type="main">A Scalable Algorithm for Sparse Portfolio Selection</title>
+		<author>
+			<persName><forename type="first">Dimitris</forename><surname>Bertsimas</surname></persName>
+			<idno type="ORCID">0000-0002-1985-1003</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ryan</forename><surname>Cory-Wright</surname></persName>
+			<idno type="ORCID">0000-0002-4485-0619</idno>
+		</author>
+		<idno type="DOI">10.1287/ijoc.2021.1127</idno>
+	</analytic>
+	<monogr>
+		<title level="j">INFORMS Journal on Computing</title>
+		<title level="j" type="abbrev">INFORMS Journal on Computing</title>
+		<idno type="ISSN">1091-9856</idno>
+		<idno type="ISSNe">1526-5528</idno>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="1489" to="1511" />
+			<date type="published" when="2022-05">2022</date>
+			<publisher>Institute for Operations Research and the Management Sciences (INFORMS)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,307.44,521.16,235.65,8.64;9,317.40,532.95,225.28,8.81;9,316.66,545.07,22.42,8.64" xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Universal portfolios with and without transaction costs</title>
+		<author>
+			<persName><forename type="first">Avrim</forename><surname>Blum</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><surname>Kalai</surname></persName>
+		</author>
+		<idno type="DOI">10.1023/a:1007530728748</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Machine Learning</title>
+		<idno type="ISSN">0885-6125</idno>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="193" to="205" />
+			<date type="published" when="1999">1999</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,307.44,563.71,234.00,8.64;9,317.40,575.66,224.04,8.64;9,317.40,587.45,225.28,8.81;9,317.40,599.57,22.42,8.64" xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Proximal alternating linearized minimization for nonconvex and nonsmooth problems</title>
+		<author>
+			<persName><forename type="first">Jérôme</forename><surname>Bolte</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shoham</forename><surname>Sabach</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marc</forename><surname>Teboulle</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10107-013-0701-9</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Mathematical Programming</title>
+		<title level="j" type="abbrev">Math. Program.</title>
+		<idno type="ISSN">0025-5610</idno>
+		<idno type="ISSNe">1436-4646</idno>
+		<imprint>
+			<biblScope unit="volume">146</biblScope>
+			<biblScope unit="issue">1-2</biblScope>
+			<biblScope unit="page" from="459" to="494" />
+			<date type="published" when="2014">2014</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,307.44,618.21,234.00,8.64;9,317.40,630.00,225.69,8.81;9,317.40,641.95,224.04,8.58;9,317.15,653.91,208.38,8.81" xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Sparse and stable Markowitz portfolios</title>
+		<author>
+			<persName><forename type="first">Joshua</forename><surname>Brodie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ingrid</forename><surname>Daubechies</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christine</forename><surname>De Mol</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Domenico</forename><surname>Giannone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ignace</forename><surname>Loris</surname></persName>
+		</author>
+		<idno type="DOI">10.1073/pnas.0904287106</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the National Academy of Sciences</title>
+		<title level="j" type="abbrev">Proc. Natl. Acad. Sci. U.S.A.</title>
+		<idno type="ISSN">0027-8424</idno>
+		<idno type="ISSNe">1091-6490</idno>
+		<imprint>
+			<biblScope unit="volume">106</biblScope>
+			<biblScope unit="issue">30</biblScope>
+			<biblScope unit="page" from="12267" to="12272" />
+			<date type="published" when="2009-07-28">Jul. 2009</date>
+			<publisher>Proceedings of the National Academy of Sciences</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,307.44,672.71,234.00,8.64;9,317.40,684.66,224.04,8.64;9,317.40,696.45,225.69,8.81;9,317.40,708.41,168.03,8.81" xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Revenue Driven Resource Allocation: Funding Authority, Incentives, and New Product Development Portfolio Management</title>
+		<author>
+			<persName><forename type="first">Raul</forename><forename type="middle">O</forename><surname>Chao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stylianos</forename><surname>Kavadias</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cheryl</forename><surname>Gaimon</surname></persName>
+		</author>
+		<idno type="DOI">10.1287/mnsc.1090.1046</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<title level="j" type="abbrev">Management Science</title>
+		<idno type="ISSN">0025-1909</idno>
+		<idno type="ISSNe">1526-5501</idno>
+		<imprint>
+			<biblScope unit="volume">55</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="1556" to="1569" />
+			<date type="published" when="2009-09">2009</date>
+			<publisher>Institute for Operations Research and the Management Sciences (INFORMS)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,55.44,70.54,235.65,8.64;10,65.40,82.32,224.04,8.81;10,65.40,94.28,225.28,8.81;10,65.40,106.40,22.42,8.64" xml:id="b9">
+	<analytic>
+		<title level="a" type="main">On cardinality constrained mean-CVaR portfolio optimization</title>
+		<author>
+			<persName><forename type="first">Runze</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jianjun</forename><surname>Gao</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/ccdc.2015.7162076</idno>
+	</analytic>
+	<monogr>
+		<title level="m">The 27th Chinese Control and Decision Conference (2015 CCDC)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2015-05">2015</date>
+			<biblScope unit="page" from="1074" to="1079" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,55.44,127.52,234.75,8.81;10,65.07,139.65,79.97,8.64" xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Universal Portfolios</title>
+		<author>
+			<persName coords=""><forename type="first">Thomas</forename><forename type="middle">M</forename><surname>Cover</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/j.1467-9965.1991.tb00002.x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Mathematical Finance</title>
+		<title level="j" type="abbrev">Mathematical Finance</title>
+		<idno type="ISSN">0960-1627</idno>
+		<idno type="ISSNe">1467-9965</idno>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="29" />
+			<date type="published" when="1991-01">Jan. 1991</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,55.44,160.94,234.00,8.64;10,65.40,172.89,224.04,8.64;10,65.40,184.68,225.53,8.81;10,64.66,196.80,68.07,8.64" xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Optimal Versus Naive Diversification: How Inefficient is the 1/&lt;i&gt;N&lt;/i&gt;Portfolio Strategy?</title>
+		<author>
+			<persName><forename type="first">Victor</forename><surname>Demiguel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lorenzo</forename><surname>Garlappi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Raman</forename><surname>Uppal</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/rfs/hhm075</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Review of Financial Studies</title>
+		<title level="j" type="abbrev">Rev. Financ. Stud.</title>
+		<idno type="ISSN">0893-9454</idno>
+		<idno type="ISSNe">1465-7368</idno>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1915" to="1953" />
+			<date type="published" when="2009-05">May 2009</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,55.44,218.09,234.00,8.64;10,65.40,229.88,225.28,8.81;10,65.40,242.00,207.87,8.64" xml:id="b12">
+	<analytic>
+		<title level="a" type="main">The Endowment Model and Modern Portfolio Theory</title>
+		<author>
+			<persName><forename type="first">Stephen</forename><forename type="middle">G</forename><surname>Dimmock</surname></persName>
+			<idno type="ORCID">0000-0003-3404-9307</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Neng</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0001-7895-6502</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jinqiang</forename><surname>Yang</surname></persName>
+		</author>
+		<idno type="DOI">10.1287/mnsc.2023.4759</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<title level="j" type="abbrev">Management Science</title>
+		<idno type="ISSN">0025-1909</idno>
+		<idno type="ISSNe">1526-5501</idno>
+		<imprint>
+			<biblScope unit="volume">70</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="1554" to="1579" />
+			<date type="published" when="2023-04">Apr. 2023</date>
+			<publisher>Institute for Operations Research and the Management Sciences (INFORMS)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,55.44,263.29,234.00,8.64;10,65.40,275.08,225.28,8.81;10,65.40,287.20,22.42,8.64" xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Least angle regression</title>
+		<author>
+			<persName><forename type="first">Bradley</forename><surname>Efron</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Trevor</forename><surname>Hastie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Iain</forename><surname>Johnstone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><surname>Tibshirani</surname></persName>
+		</author>
+		<idno type="DOI">10.1214/009053604000000067</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Annals of Statistics</title>
+		<title level="j" type="abbrev">Ann. Statist.</title>
+		<idno type="ISSN">0090-5364</idno>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="407" to="451" />
+			<date type="published" when="2004-04-01">2004</date>
+			<publisher>Institute of Mathematical Statistics</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,55.44,308.49,235.65,8.64;10,65.40,320.28,224.03,8.81;10,64.80,332.23,225.89,8.81;10,65.40,344.36,22.42,8.64" xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Improving Mean Variance Optimization through Sparse Hedging Restrictions</title>
+		<author>
+			<persName><forename type="first">Shingo</forename><surname>Goto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yan</forename><surname>Xu</surname></persName>
+		</author>
+		<idno type="DOI">10.1017/s0022109015000526</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Financial and Quantitative Analysis</title>
+		<title level="j" type="abbrev">J. Financ. Quant. Anal.</title>
+		<idno type="ISSN">0022-1090</idno>
+		<idno type="ISSNe">1756-6916</idno>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1415" to="1441" />
+			<date type="published" when="2015-12">2015</date>
+			<publisher>Cambridge University Press (CUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,55.44,365.65,234.00,8.64;10,65.40,377.43,225.70,8.81;10,65.40,389.39,93.25,8.81" xml:id="b15">
+	<analytic>
+		<title level="a" type="main">On the role of norm constraints in portfolio selection</title>
+		<author>
+			<persName><forename type="first">Jun-Ya</forename><surname>Gotoh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Akiko</forename><surname>Takeda</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10287-011-0130-2</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computational Management Science</title>
+		<title level="j" type="abbrev">Comput Manag Sci</title>
+		<idno type="ISSN">1619-697X</idno>
+		<idno type="ISSNe">1619-6988</idno>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="323" to="353" />
+			<date type="published" when="2011-08-05">2011</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,55.44,410.85,234.00,8.64;10,65.40,422.80,225.69,8.64;10,65.40,434.59,225.28,8.81;10,65.40,446.71,22.42,8.64" xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Perspective reformulations of mixed integer nonlinear programs with indicator variables</title>
+		<author>
+			<persName><forename type="first">Oktay</forename><surname>Günlük</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jeff</forename><surname>Linderoth</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10107-010-0360-z</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Mathematical Programming</title>
+		<title level="j" type="abbrev">Math. Program.</title>
+		<idno type="ISSN">0025-5610</idno>
+		<idno type="ISSNe">1436-4646</idno>
+		<imprint>
+			<biblScope unit="volume">124</biblScope>
+			<biblScope unit="issue">1-2</biblScope>
+			<biblScope unit="page" from="183" to="205" />
+			<date type="published" when="2010-05-09">2010</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,55.44,467.83,234.00,8.81;10,64.80,479.79,190.90,8.81" xml:id="b17">
+	<monogr>
+		<title level="m" type="main">Value at Risk: The New Benchmark for Managing Financial Risk</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Jorion</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1997">1997</date>
+			<publisher>McGraw-Hill</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,55.44,501.25,235.65,8.64;10,65.40,513.20,224.21,8.64;10,65.40,524.99,225.28,8.81;10,65.40,537.11,86.61,8.64" xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Bilevel cutting-plane algorithm for cardinality-constrained mean-CVaR portfolio optimization</title>
+		<author>
+			<persName><forename type="first">Ken</forename><surname>Kobayashi</surname></persName>
+			<idno type="ORCID">0000-0002-6609-7488</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yuichi</forename><surname>Takano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kazuhide</forename><surname>Nakata</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10898-021-01048-5</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Global Optimization</title>
+		<title level="j" type="abbrev">J Glob Optim</title>
+		<idno type="ISSN">0925-5001</idno>
+		<idno type="ISSNe">1573-2916</idno>
+		<imprint>
+			<biblScope unit="volume">81</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="493" to="528" />
+			<date type="published" when="2021-07-08">2021</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,55.44,558.40,235.65,8.64;10,65.15,570.36,224.28,8.64;10,65.40,582.14,224.04,8.81;10,65.07,594.27,146.09,8.64" xml:id="b19">
+	<analytic>
+		<title level="a" type="main">A Survey on Gaps between Mean-Variance Approach and Exponential Growth Rate Approach for Portfolio Optimization</title>
+		<author>
+			<persName><forename type="first">Zhao-Rong</forename><surname>Lai</surname></persName>
+			<idno type="ORCID">0000-0002-7631-8512</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Haisheng</forename><surname>Yang</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3485274</idno>
+	</analytic>
+	<monogr>
+		<title level="j">ACM Computing Surveys</title>
+		<title level="j" type="abbrev">ACM Comput. Surv.</title>
+		<idno type="ISSN">0360-0300</idno>
+		<idno type="ISSNe">1557-7341</idno>
+		<imprint>
+			<biblScope unit="volume">55</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="1" to="36" />
+			<date type="published" when="1925">Mar. 2023. Article No. 25</date>
+			<publisher>Association for Computing Machinery (ACM)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,55.44,615.55,234.00,8.64;10,65.40,627.51,225.70,8.64;10,65.40,639.30,224.03,8.81;10,65.09,651.25,137.55,8.81" xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Short-term sparse portfolio optimization based on alternating direction method of multipliers</title>
+		<author>
+			<persName coords=""><forename type="first">Z.-R</forename><surname>Lai</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P.-Y</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Fang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Wu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Machine Learning Research</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">63</biblScope>
+			<biblScope unit="page" from="1" to="28" />
+			<date type="published" when="2018-10">Oct. 2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,55.44,672.71,234.00,8.64;10,65.04,684.66,224.40,8.64;10,65.40,696.45,224.78,8.81;10,65.07,708.58,85.51,8.64" xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Loss control with rank-one covariance estimate for short-term portfolio optimization</title>
+		<author>
+			<persName coords=""><forename type="first">Z.-R</forename><surname>Lai</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Tan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Fang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Machine Learning Research</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">97</biblScope>
+			<biblScope unit="page" from="1" to="37" />
+			<date type="published" when="2020-06">Jun. 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,307.44,70.54,234.00,8.64;10,317.40,82.32,224.04,8.81;10,316.85,94.28,225.84,8.58;10,317.40,106.40,213.96,8.64" xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Multitrend Conditional Value at Risk for Portfolio Optimization</title>
+		<author>
+			<persName><forename type="first">Zhao-Rong</forename><surname>Lai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cheng</forename><surname>Li</surname></persName>
+			<idno type="ORCID">0000-0002-9019-0922</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaotian</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Quanlong</forename><surname>Guan</surname></persName>
+			<idno type="ORCID">0000-0001-6911-3853</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Liangda</forename><surname>Fang</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/tnnls.2022.3183891</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Neural Networks and Learning Systems</title>
+		<title level="j" type="abbrev">IEEE Trans. Neural Netw. Learning Syst.</title>
+		<idno type="ISSN">2162-237X</idno>
+		<idno type="ISSNe">2162-2388</idno>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="1545" to="1558" />
+			<date type="published" when="2022">2022</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,307.44,126.33,235.65,8.64;10,317.40,138.11,224.04,8.81;10,317.09,150.07,138.11,8.81" xml:id="b23">
+	<analytic>
+		<title level="a" type="main">OLPS: A Toolbox for Online Portfolio Selection</title>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Sahoo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">C</forename><surname>Hoi</surname></persName>
+		</author>
+		<idno type="DOI">10.1201/b19011-22</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Online Portfolio Selection</title>
+				<imprint>
+			<publisher>CRC Press</publisher>
+			<date type="published" when="2016">2016</date>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="page" from="143" to="169" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,307.44,170.16,234.00,8.64;10,317.40,182.12,225.77,8.64;10,317.09,193.91,226.09,8.81;10,316.66,206.03,22.42,8.64" xml:id="b24">
+	<analytic>
+		<title level="a" type="main">The Valuation of Risk Assets and the Selection of Risky Investments in Stock Portfolios and Capital Budgets</title>
+		<author>
+			<persName coords=""><forename type="first">John</forename><surname>Lintner</surname></persName>
+		</author>
+		<idno type="DOI">10.2307/1924119</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Review of Economics and Statistics</title>
+		<title level="j" type="abbrev">The Review of Economics and Statistics</title>
+		<idno type="ISSN">0034-6535</idno>
+		<imprint>
+			<biblScope unit="volume">47</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">13</biblScope>
+			<date type="published" when="1965-02">Feb. 1965</date>
+			<publisher>JSTOR</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,307.44,225.96,234.00,8.64;10,317.40,237.74,224.03,8.81;10,317.07,249.87,76.65,8.64" xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Market Crashes, Correlated Illiquidity, and Portfolio Choice</title>
+		<author>
+			<persName><forename type="first">Hong</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mark</forename><surname>Loewenstein</surname></persName>
+		</author>
+		<idno type="DOI">10.1287/mnsc.1120.1561</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<title level="j" type="abbrev">Management Science</title>
+		<idno type="ISSN">0025-1909</idno>
+		<idno type="ISSNe">1526-5501</idno>
+		<imprint>
+			<biblScope unit="volume">59</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="715" to="732" />
+			<date type="published" when="2013-03">2013</date>
+			<publisher>Institute for Operations Research and the Management Sciences (INFORMS)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,307.44,269.79,235.65,8.64;10,317.40,281.58,225.69,8.81;10,317.40,293.53,61.72,8.81" xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Closed-form solutions for short-term sparse portfolio optimization</title>
+		<author>
+			<persName><forename type="first">Ziyan</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaotong</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Naihua</forename><surname>Xiu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xingyuan</forename><surname>Wang</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/02331934.2020.1839071</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Optimization</title>
+		<title level="j" type="abbrev">Optimization</title>
+		<idno type="ISSN">0233-1934</idno>
+		<idno type="ISSNe">1029-4945</idno>
+		<imprint>
+			<biblScope unit="volume">71</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1937" to="1953" />
+			<date type="published" when="2020-11-05">2020</date>
+			<publisher>Informa UK Limited</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,307.44,313.46,235.25,8.81;10,317.15,325.58,92.70,8.64" xml:id="b27">
+	<analytic>
+		<title level="a" type="main">PORTFOLIO SELECTION*</title>
+		<author>
+			<persName coords=""><forename type="first">Harry</forename><forename type="middle">M</forename><surname>Markowitz</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/j.1540-6261.1952.tb01525.x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Finance</title>
+		<title level="j" type="abbrev">The Journal of Finance</title>
+		<idno type="ISSN">0022-1082</idno>
+		<idno type="ISSNe">1540-6261</idno>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="77" to="91" />
+			<date type="published" when="1952-03">Mar. 1952</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,307.44,345.51,234.00,8.64;10,317.40,357.29,225.43,8.81;10,317.40,369.42,57.28,8.64" xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Proximity algorithms for image models: denoising</title>
+		<author>
+			<persName><forename type="first">Charles</forename><forename type="middle">A</forename><surname>Micchelli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lixin</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuesheng</forename><surname>Xu</surname></persName>
+		</author>
+		<idno type="DOI">10.1088/0266-5611/27/4/045009</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Inverse Problems</title>
+		<title level="j" type="abbrev">Inverse Problems</title>
+		<idno type="ISSN">0266-5611</idno>
+		<idno type="ISSNe">1361-6420</idno>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">045009</biblScope>
+			<date type="published" when="2011-03-17">2011</date>
+			<publisher>IOP Publishing</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,307.44,389.34,235.65,8.64;10,317.40,401.13,224.04,8.81;10,317.04,413.08,122.05,8.81" xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Dual Stochastic Dominance and Related Mean-Risk Models</title>
+		<author>
+			<persName><forename type="first">Wlodzimierz</forename><surname>Ogryczak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrzej</forename><surname>Ruszczynski</surname></persName>
+		</author>
+		<idno type="DOI">10.1137/s1052623400375075</idno>
+	</analytic>
+	<monogr>
+		<title level="j">SIAM Journal on Optimization</title>
+		<title level="j" type="abbrev">SIAM J. Optim.</title>
+		<idno type="ISSN">1052-6234</idno>
+		<idno type="ISSNe">1095-7189</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="60" to="78" />
+			<date type="published" when="2002-01">2002</date>
+			<publisher>Society for Industrial &amp; Applied Mathematics (SIAM)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,307.44,433.18,235.65,8.64;10,317.40,444.96,218.65,8.81" xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Optimization of conditional value-at-risk</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">Tyrrell</forename><surname>Rockafellar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stanislav</forename><surname>Uryasev</surname></persName>
+		</author>
+		<idno type="DOI">10.21314/jor.2000.038</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Risk</title>
+		<title level="j" type="abbrev">JOR</title>
+		<idno type="ISSN">1465-1211</idno>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="21" to="41" />
+			<date type="published" when="2000">2000</date>
+			<publisher>Infopro Digital Services Limited</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,307.44,465.06,234.00,8.64;10,317.40,476.84,225.28,8.81;10,316.66,488.97,106.54,8.64" xml:id="b31">
+	<analytic>
+		<title level="a" type="main">CAPITAL ASSET PRICES: A THEORY OF MARKET EQUILIBRIUM UNDER CONDITIONS OF RISK*</title>
+		<author>
+			<persName coords=""><forename type="first">William</forename><forename type="middle">F</forename><surname>Sharpe</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/j.1540-6261.1964.tb02865.x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Finance</title>
+		<title level="j" type="abbrev">The Journal of Finance</title>
+		<idno type="ISSN">0022-1082</idno>
+		<idno type="ISSNe">1540-6261</idno>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="425" to="442" />
+			<date type="published" when="1964-09">Sep. 1964</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,307.44,508.73,235.65,8.81;10,317.40,520.68,127.01,8.81" xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Mutual Fund Performance</title>
+		<author>
+			<persName coords=""><forename type="first">William</forename><forename type="middle">F</forename><surname>Sharpe</surname></persName>
+		</author>
+		<idno type="DOI">10.1086/294846</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Business</title>
+		<title level="j" type="abbrev">J BUS</title>
+		<idno type="ISSN">0021-9398</idno>
+		<idno type="ISSNe">1537-5374</idno>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="issue">S1</biblScope>
+			<biblScope unit="page">119</biblScope>
+			<date type="published" when="1966-01">Jan. 1966</date>
+			<publisher>University of Chicago Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,307.44,540.77,234.00,8.64;10,317.40,552.56,225.43,8.81;10,317.40,564.68,62.27,8.64" xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Regression Shrinkage and Selection Via the Lasso</title>
+		<author>
+			<persName coords=""><forename type="first">Robert</forename><surname>Tibshirani</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/j.2517-6161.1996.tb02080.x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Royal Statistical Society Series B: Statistical Methodology</title>
+		<idno type="ISSN">1369-7412</idno>
+		<idno type="ISSNe">1467-9868</idno>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="267" to="288" />
+			<date type="published" when="1996-01-01">1996</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

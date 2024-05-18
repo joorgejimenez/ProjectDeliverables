@@ -1,0 +1,879 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Comparative analysis of neural network architectures for short-term FOREX forecasting</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,85.10,173.61,115.00,9.34"><forename type="first">Theodoros</forename><surname>Zafeiriou</surname></persName>
+							<email>zafiriou.theodore@ac.eap.gr</email>
+							<affiliation key="aff0">
+								<orgName type="institution">Hellenic Open University</orgName>
+								<address>
+									<addrLine>Parodos Aristotelous 18 Patras</addrLine>
+									<postCode>26335</postCode>
+									<country key="GR">Greece</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,85.10,291.12,81.74,9.34"><forename type="first">Dimitris</forename><surname>Kalles</surname></persName>
+							<email>kalles@eap.gr</email>
+							<affiliation key="aff1">
+								<orgName type="institution">Hellenic Open University</orgName>
+								<address>
+									<addrLine>Parodos Aristotelous 18 Patras</addrLine>
+									<postCode>26335</postCode>
+									<country key="GR">Greece</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Comparative analysis of neural network architectures for short-term FOREX forecasting</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">61DCA2A42EFF4A49BD7B09FE9A8E3D36</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2024-05-18T21:25+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Foreign exchange</term>
+					<term>technical analysis</term>
+					<term>neural networks</term>
+					<term>trend forecasting</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>The present document delineates the analysis, design, implementation, and benchmarking of various neural network architectures within a short-term frequency prediction system for the foreign exchange market (FOREX).</p><p>Our aim is to simulate the judgment of the human expert (technical analyst) using a system that responds promptly to changes in market conditions, thus enabling the optimization of short-term trading strategies.</p><p>We designed and implemented a series of LSTM neural network architectures which are taken as input the exchange rate values and generate the short-term market trend forecasting signal and an ANN custom architecture based on technical analysis indicator simulators We performed a comparative analysis of the results and came to useful conclusions regarding the suitability of each architecture and the cost in terms of time and computational power to implement them. The ANN custom architecture produces better prediction quality with higher sensitivity using fewer resources and spending less time than LSTM architectures. The ANN custom architecture appears to be ideal for use in low-power computing systems and for use cases that need fast decisions with the least possible computational cost.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.44" lry="841.68"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.44" lry="841.68"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.44" lry="841.68"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.44" lry="841.68"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.44" lry="841.68"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.44" lry="841.68"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.44" lry="841.68"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.44" lry="841.68"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.44" lry="841.68"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="595.44" lry="841.68"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="595.44" lry="841.68"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="595.44" lry="841.68"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="595.44" lry="841.68"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="595.44" lry="841.68"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="595.44" lry="841.68"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="595.44" lry="841.68"/>
+		<surface n="17" ulx="0.0" uly="0.0" lrx="595.44" lry="841.68"/>
+		<surface n="18" ulx="0.0" uly="0.0" lrx="595.44" lry="841.68"/>
+		<surface n="19" ulx="0.0" uly="0.0" lrx="595.44" lry="841.68"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>The majority of profits in the foreign exchange market, particularly in FOREX <ref type="bibr" coords="1,417.84,728.66,15.31,8.96">[01]</ref>, are derived from extensive leverage utilizing margin <ref type="bibr" coords="1,229.67,741.73,15.22,8.96">[02]</ref>. Leverages reaching as high as 1:200 (meaning someone with an initial capital of €1000 can risk capital of €200,000) pose a significant risk for low-volatility investments, particularly those conducted on the same day and sometimes within a few minutes. Consequently, there is a contention that forecasting models [03] should be grounded in short time periods.</p><p>In markets characterized by substantial depth and volume, such as FOREX, capitalizing on microvolatility in the short term holds paramount importance and can be accomplished through analogous shortterm forecasts <ref type="bibr" coords="2,143.94,166.86,15.31,8.96">[04]</ref>.</p><p>Over the past few decades, economists have endeavored to construct models capable of successfully predicting trends, giving rise to the field known as technical analysis. Despite extensive and prolonged efforts, there is still no universally applicable index or model that can reliably forecast financial market trends. The primary obstacle stems from technical analysis neglecting the most recent shifts in fundamentals, which remain unrecorded, as well as the impact of breaking news on investor psychology.</p><p>The aim of this paper is to compare the short-term trend prediction provided by a number of artificial neural network architectures by drawing useful conclusions about the suitability of each of them. Specifically, we compare the quality of the prediction of six different parameterizations of vanilla LSTM, bidirectional LSTM and convolutional LSTM networks with a prototype artificial neural network architecture based on simple error backpropagation networks. This paper is structured in four sections. First, we briefly review related work on exchange rate forecasting using computational intelligence. We then describe the architectures of the different forecasting systems in our experimentation and proceed to present and analyze the experimental results before concluding, in the last section, where we also set out some future directions for work.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">A brief background on predicting exchange rates using computational intelligence</head><p>As previously mentioned, traders in the FOREX market utilize technical analysis tools [05] to forecast exchange rates. However, automated systems [03] often yield higher profits by trading substantial sums based on forecasting models. The success of technical analysis methods varies, with failures typically attributed to undetected changes in fundamental values and market psychology. Forecasting inaccuracies tend to increase with shorter-term forecasting <ref type="bibr" coords="2,269.48,468.83,15.31,8.96">[06]</ref>.</p><p>Efficiently approaching the challenge of automated trading with a large portfolio strategy that continuously processes data streams across diverse markets is demonstrated in <ref type="bibr" coords="2,403.33,494.87,15.31,8.96">[07]</ref>. The paper introduces a scalable trading model that learns to generate profit from multiple inter-market price predictions and market correlation structures.</p><p>Forecasting methods are broadly categorized into traditional and non-traditional approaches. Traditional methods rely on static algorithms unaffected by input data [08], serving as econometric models for result interpretation and hypothesis testing, a standard quality assurance procedure in technical analysis <ref type="bibr" coords="2,476.10,559.91,15.39,8.96">[08]</ref>.</p><p>Non-traditional methods, on the other hand, encompass data-driven approaches that self-correct [08]. These methods, such as fuzzy logic [09], Artificial Neural Networks (ANN) <ref type="bibr" coords="2,390.70,585.83,15.39,8.96" target="#b9">[10]</ref>, neuro-fuzzy architecture (hybrid systems) <ref type="bibr" coords="2,155.55,598.91,15.31,8.96" target="#b10">[11]</ref>, and genetic algorithms <ref type="bibr" coords="2,272.87,598.91,15.31,8.96" target="#b11">[12]</ref>, can be competitive with econometric methods due to their generalized operations <ref type="bibr" coords="2,201.12,611.87,15.31,8.96" target="#b12">[13]</ref>. Machine-learning-based methods, particularly those using past trading data, are considered robust for predicting trading patterns in FOREX <ref type="bibr" coords="2,362.10,624.86,15.39,8.96" target="#b9">[10]</ref>.</p><p>Neural networks, especially those with hidden layers, offer an internal representation of variable relationships and excel in handling sparse data and complex phenomena <ref type="bibr" coords="2,371.30,650.90,15.31,8.96" target="#b13">[14]</ref>. Genetic algorithms have been employed to learn trading rules and combined with echo-state networks for market trend prediction, yielding better results in both bull and bear markets compared to conventional strategies <ref type="bibr" coords="2,439.88,676.94,15.40,8.96" target="#b14">[15]</ref>.</p><p>We now briefly review some key contributions to the field. Cavalcante et al.'s <ref type="bibr" coords="2,175.76,702.86,16.72,8.96" target="#b15">[16]</ref> comprehensive overview of primary studies from 2009 to 2015, emphasizing techniques for preprocessing, clustering financial data, forecasting market movements, and mining financial information. Patel et al. <ref type="bibr" coords="2,186.48,728.90,16.61,8.96" target="#b16">[17]</ref> focused on predicting stock market index prices using a two-stage fusion approach with Support Vector Regression (SVR) and Artificial Neural Networks (ANN). Yıldırım et al. <ref type="bibr" coords="3,85.10,95.82,16.72,8.96" target="#b17">[18]</ref> utilized LSTM networks for directional predictions in Forex, achieving success with a hybrid model incorporating macroeconomic and technical indicator data.</p><p>Fisher et al. <ref type="bibr" coords="3,156.56,121.86,16.72,8.96" target="#b18">[19]</ref> employed LSTM networks for predicting directional movements in S&amp;P 500 constituent stocks, with varying profitability over time. <ref type="bibr" coords="3,305.35,134.82,64.84,8.96">Xiong et al. [20]</ref> applied Long Short-Term Memory neural networks to model S&amp;P 500 volatility, outperforming linear benchmarks. Galeshchuk and Mukherjee <ref type="bibr" coords="3,131.74,160.86,16.61,8.96" target="#b20">[21]</ref> investigated the use of deep convolutional neural networks for predicting exchange rate direction with satisfactory accuracy.</p><p>In previous work <ref type="bibr" coords="3,173.65,186.78,15.31,8.96" target="#b21">[22]</ref>, we developed an ANN to predict market signals in the FOREX, combining advantages of technical analysis and ANN in causal modeling and case control. In a subsequent study <ref type="bibr" coords="3,490.87,199.86,15.31,8.96" target="#b22">[23]</ref>, we presented an ultra-short-term frequency trading system for FOREX, incorporating artificial intelligence techniques for pre-trade analysis, trend forecasting, and trade execution. The system aimed to simulate human expert judgment and decision-making, achieving superior performance compared to individual or combined technical indicators across various automated trading engines.</p><p>In this paper we experiment with several LSTM network architectures and compare their performance with the performance of an improved version of the aforementioned architecture, drawing useful conclusions about their suitability for FOREX time series prediction.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">A detailed system description</head><p>In this section, we detail our approach to analyzing, designing, and implementing ultra-short trend prediction. This system encompasses crucial stages, namely Pretrade Analysis and Transaction Signal Production (Trend Forecasting) <ref type="bibr" coords="3,213.58,360.81,15.31,8.96" target="#b23">[24]</ref>.</p><p>Our objective is to emulate the decision-making of a human expert, whether a technical analyst or broker, through an artificial intelligence system that adeptly responds to changes in market conditions. This responsiveness is integral to optimizing the efficiency of short-term transactions.</p><p>The analysis stage commences with data mining, where relevant data for subsequent steps are carefully selected. Subsequently, in the trend forecasting stage, various Artificial Neural Network (ANN) architectures are conceived and implemented to generate trend forecasting signals. The final step involves a comparative analysis of different sources of trend forecasting, specifically the diverse ANN architectures employed.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.">Selection of the Exchange rate and experimental data source</head><p>For our experiments, we opted to focus on the EUR/USD exchange rate, given its status as the world's largest trading currency pair. The market depth of this pair acts as a deterrent to lobbies engaging in price manipulations that could distort its true representation.</p><p>Our selected sources for experimental data include Truefx <ref type="bibr" coords="3,347.26,546.35,15.31,8.96" target="#b24">[25]</ref>, recognized as an industry-leading exchange rate data server, and American Integral <ref type="bibr" coords="3,281.28,559.31,15.31,8.96">[26]</ref>. Integral is utilized by the largest institutional service FOREX providers globally for their price references.</p><p>The experimental data pertains to the tick-to-tick EUR/USD exchange rate for the months of October, November, and December 2021. Initially, the dataset comprises over 10 million values, which undergo preprocessing to eliminate flat areas where the exchange rate remains constant.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.">Selected LSTM networks</head><p>Recurrent networks leverage feedback connections to retain information from recent input events as a trigger for the activation function, enabling the incorporation of short-term memory. Although networks of this type are effective for several applications (e.g. voice recognition) they have weaknesses in cases where there is a non-trivial time lag between the input and the expected output.</p><p>"Long Short-Term Memory" or LSTM networks, commonly known as such, are recurrent networks specifically designed to address the issue of rapidly diminishing short-term memory in retaining information over longer sequences. The LSTM model effectively preserves selected information in longterm memory, which is stored in the cell state, while short-term information is captured in the hidden state.</p><p>For the implementation of the chosen LSTM architectures, we utilized Keras &amp; TensorFlow 2. Keras is a deep learning API written in Python, operating on the TensorFlow machine learning platform. It is designed with a focus on facilitating rapid experimentation <ref type="bibr" coords="4,322.97,121.86,15.31,8.96" target="#b25">[27]</ref>. Known for its top-notch performance and scalability.</p><p>We selected eight different LSTM architectures for our experimentation with parameters as shown in Table <ref type="table" coords="4,110.39,160.86,3.76,8.96" target="#tab_0">1</ref>. All these LSTM architectures follow the sequential model and have a ReLU activation function. </p><formula xml:id="formula_0" coords="4,90.74,224.34,369.46,103.43">-1-1 100 1 X 1 1 No No sLSTM-15-1 100 1 X 1 15 No No sLSTM-15-1,15 100 1 X 15, 1 X 1 1 No No biLSTM-1-1 100 1 X 1 1 Yes No biLSTM-15-1 100 1 X 1 15 Yes No biLSTM-15-1,15 100 1 X 15, 1 X 1 15 Yes No convLSTM-1-1 60 1 X 1 1 No Yes convLSTM-1-1,15 64 1 X 1 15</formula><p>No Yes * The number of sequences of input LSTM will train before generating an output.</p><p>In the following figures we show the various LSTM architectures.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3.">ANN architecture based on technical analysis indicator simulators</head><p>After initial experimentation, we meticulously chose and adapted specific algorithms for our technical indicators in the experiments <ref type="bibr" coords="7,201.65,126.30,15.39,8.96" target="#b22">[23]</ref>, aligning with short-term forecasting objectives (Figure <ref type="figure" coords="7,442.00,126.30,3.59,8.96">6</ref>). These include modified arithmetic moving averages (MAs) calculated over 300, 600, and 900 price intervals, the RSI-300 oscillator, the CCI-300 oscillator, the Williams-300 oscillator, and the Price Oscillator (MA-300, MA-600, MA-900). The application of these technical indicators generates forecasts outlined in Annex I.</p><p>The input parameters encompass exchange rates, time, and dates (Figure <ref type="figure" coords="7,396.01,184.14,3.62,8.96">6</ref>). The system, utilizing the predicted trend signal and its auto-trading agents' configurations, engages in simulated short-term trading, generating performance logs that simulate profit or loss.</p><p>Data inputs are utilized in the custom technical indicator simulators (Figure <ref type="figure" coords="7,415.55,229.14,4.17,8.96">6</ref>) <ref type="bibr" coords="7,427.52,229.14,15.31,8.96" target="#b26">[28]</ref>. Each technical indicator simulator yields an output from the set of values detailed in Table <ref type="table" coords="7,402.89,242.34,3.76,8.96">2</ref>. The outputs from these simulators are directed to the input neurons of the ANN system, as extensively documented in previous studies <ref type="bibr" coords="7,115.32,268.29,15.40,8.96" target="#b22">[23]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Figure. 6. An overview of the systemarchitecture</head><p>The prediction system comprises two sets of Artificial Neural Networks (ANNs) operating in pairs. In each pair, one ANN receives the outputs of simulators corresponding to technical indicators as inputs and operates in conventional error back-propagation mode, striving to align with the trend prediction. This ANN, utilizing past values, calculates the prediction error. The learned weights from this ANN are then transferred to its paired ANN. However, the paired ANN operates exclusively in feed-forward mode, considering present values. Thus, one ANN is trained on historical data, while its counterpart generates predictions on current data. All feed-forward ANNs are combined in an ensemble to generate the final trend forecast <ref type="bibr" coords="7,121.05,719.90,15.31,8.96" target="#b22">[23]</ref>. This architecture is a modification of the fundamental Generative Adversarial Network concept <ref type="bibr" coords="7,118.77,732.86,15.32,8.96" target="#b27">[29]</ref>.</p><p>Custom technical indicators are created, and their predicted trends at time t-M(x)-1 are sent to the input layer of each back-propagation ANN. Each technical indicator corresponds to an input neuron of the ANN, with its calculation reflecting its value at time t-M(x)-1. Here, t-M(x) signifies the time at which the neural network with index x operated in the past (e.g., M(1) = 30 indicates a focus on confirming the technical indicator's prediction within 30 seconds). The hidden layer employs a tanh-type sigmoid activation to produce output values in the range of [-2, +2], while the output layer is linear. The number of hidden layer neurons is set at double the number of input layer neurons based on preliminary results. The output layer neurons, along with corresponding data, export the trend signal for each back-propagation ANN (Figure <ref type="figure" coords="8,502.16,186.78,4.12,8.96">6</ref>) <ref type="bibr" coords="8,85.10,199.86,15.39,8.96" target="#b22">[23]</ref>.</p><p>Furthermore, the algorithm for calculating the real trend is updated using data from time points t-1 and t-1-M(x) (Table <ref type="table" coords="8,152.82,231.78,3.62,8.96">3</ref>). This algorithm generates a normalized estimated value of the real trend. The output value of the final node is then compared to the real trend to train the neural network. Real trend conditions (Table <ref type="table" coords="8,113.74,257.85,4.17,8.96">3</ref>) are selected after preliminary experimentation.</p><p>Each back-propagation ANN in the series is characterized by the time it operates in the past (t-M(x)), with the number of back-propagation ANNs being configurable. The number of feed-forward ANNs equals the number of back-propagation ANNs, as each back-propagation ANN feeds the weights of its neurons into a corresponding feed-forward ANN <ref type="bibr" coords="8,248.64,315.81,15.39,8.96" target="#b22">[23]</ref>.</p><p>Custom technical indicators are generated, and their predicted trends for time t are sent to the input layer of each feed-forward ANN. The hidden layer employs a tanh-type sigmoid activation to produce output values in the range of [-2, +2], while the output layer is linear. All neuron weights are fed from the neuron weights of a corresponding back-propagation ANN <ref type="bibr" coords="8,292.78,373.89,15.31,8.96" target="#b22">[23]</ref>.</p><p>Each back-propagation ANN in the series is characterized by the time it operates in the past (t-M(x)), with the number of back-propagation ANNs being customizable. The count of feed-forward ANNs matches the number of back-propagation ANNs, as each back-propagation ANN channels the weights of its neurons into a corresponding feed-forward ANN <ref type="bibr" coords="8,248.64,431.85,15.39,8.96" target="#b22">[23]</ref>.</p><p>Custom technical indicators are generated, and their predicted trends for time t are transmitted to the input layer of each feed-forward ANN. The hidden layer, activated by a tanh-type sigmoid, produces output values within the range of [-2, +2], while the output layer is linear. All neuron weights are derived from the neuron weights of a corresponding back-propagation ANN <ref type="bibr" coords="8,323.13,508.91,15.31,8.96" target="#b22">[23]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Table 2. Mapping of numerical values to trends.</head><p>Each Forecasting Trend (FT(x)) from the ANN feedforward series contributes a certain proportion to the final Forecasting Trend (FFT) of the system (Figure <ref type="figure" coords="8,323.95,696.26,3.62,8.96">7</ref>). This algorithm essentially determines the contribution weight of each ANN feedforward to the ultimate forecast. The contribution of each ANN to the final prediction is calculated as the inverse of its absolute error divided by the sum of the inverses of the absolute errors of both ANNs for time t-K, where K=0,1,2,3,... (before training the ANNs for time t-K). The FFT is then normalized to one of the values shown in Table 2 <ref type="bibr" coords="8,351.49,748.33,15.31,8.96" target="#b22">[23]</ref>.</p><p>The parameter values for all neural networks (both back-propagation and feed-forward series) were chosen based on our previous work to ensure comparability (Table <ref type="table" coords="9,350.55,108.78,3.62,8.96">4</ref>). Similar to our prior work, each series of back-propagation and feed-forward ANNs consists of three ANNs (three pairs of ANNs). Additionally, each back-propagation ANN has five parameters, as outlined in Table <ref type="table" coords="9,379.01,134.82,3.76,8.96">5</ref>. The parameter values for the technical analysis simulators align with those in our previous work (Table <ref type="table" coords="9,386.91,147.78,3.62,8.96">6</ref>). The Predicted Trend Value defines the upward or downward multiplier of the exchange rate required for the neural network to trigger the corresponding trend (±2, ±1.5, ±1, ±1, ±1, ±0.5). Essentially, the rate of rise or fall of the exchange rate characterizes the market trend as neutral, slightly bullish/bearish, bullish/bearish, quite bullish/bearish, very bullish/bearish. The predicted trend values (Table <ref type="table" coords="9,286.35,199.86,4.17,8.96">5</ref>) are chosen after preliminary experimentation <ref type="bibr" coords="9,479.33,199.86,15.31,8.96" target="#b22">[23]</ref>.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.4.">System development and use</head><p>This ANN was developed in Java using the Apache NetBeans IDE 13.0 <ref type="bibr" coords="10,390.19,599.63,15.34,8.96" target="#b28">[30]</ref>. The application is fully configurable via a properly labeled parameter file. The LSTM architectures were developed in Python using Google Colab <ref type="bibr" coords="10,144.14,625.70,15.24,8.96" target="#b29">[31]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.5.">Experimentation and results</head><p>In this section, we will evaluate and compare various LSTM architectures outlined in Table <ref type="table" coords="10,467.95,668.18,4.98,8.96" target="#tab_0">1</ref> with the specific ANN architecture we have developed (Section 3.3). We will compare them in terms of forecasting success in the same field of experimentation, sensitivity in terms of the ability to generate forecasting signals and in terms of resource consumption.</p><p>Our experimentation involves the tick-to-tick EUR/USD exchange rate data for the months of October, November, and December 2021. We used 2 metrics to compare the different architectures in our experimentation: Success in terms of trend οf all prediction signals (STA) and success in terms of trend of strong prediction signals (STS) only. A strong prediction signal is considered to be a signal with an intensity &lt;=-1 or &gt;=1, as described in Table <ref type="table" coords="11,85.10,134.82,3.77,8.96">3</ref>. A signal is considered successful in terms of direction and strength when it is confirmed within 900 exchange rate values (approximately 15 minutes). The conditions of success for each signal is shown in Table <ref type="table" coords="11,110.39,160.86,3.78,8.96">7</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Table 7. Condition of Success in term of trend of each value of signal.</head><p>The data were fed to eight (8) LSTM architectures (Table <ref type="table" coords="11,318.14,386.61,4.17,8.96" target="#tab_0">1</ref>) and our architecture described in Section 3.3. For the LSTM architectures, 50% of each month's data was used for training and 50% for trend forecasting. In our architecture, which is retrained serially with each new value, no training dataset was larger than the period of the long-term technical indicator used (in this case 900 exchange rate values, about 15min of data) is required. To make the results of our architecture and the LSTM architectures comparable, we present the trend forecast only for the data that predicted the trend and the LSTM architectures (2nd half of each month).</p><p>Table <ref type="table" coords="11,123.60,483.59,4.98,8.96" target="#tab_3">8</ref> shows the aggregate results of the experiment for the different LSTM architectures (section 3.2) and our ANN architecture. We see that, in all three months, in both the STA and STS indices, the ANN custom architecture outperforms the LSTM architectures in terms of success rates. Furthermore, we observe that the absolute number of forecasting signals yielded by the specific ANN architecture is always more than 100% larger than the number of signals yielded by the LSTM architectures, suggesting a significantly higher sensitivity and better forecasting ability.</p><p>Figures <ref type="figure" coords="12,131.13,500.51,29.31,8.96">8 and 9</ref> show the cumulative time series of successful STA and STS predictions over the entire experimentation.</p><p>Throughout the experiment it is clearly shown that the ANN-specific architecture outperforms all alternative LSTM architectures. There is no time window during which the predictions of the ANN-specific architecture produces inferior quality forecasting compared to the forecasting of the LSTM architectures. Note that the superiority of this ANN architecture is even more significant when we consider that it generates multiple numbers of forecasting signals than LSTM architectures.</p><p>The clarity of the picture is obvious as time passes.</p><p>At the end of the field experimentation the specific ANN architecture has produced 31,701 forecasting signals with 25,720 (81.13%) of them being successful. Correspondingly it has produced 2,070 strong forecasting signals of which 1,627 (78.6% percentage) were confirmed.</p><p>All LSTM architectures had similar performance between them. We can say that the basic LSTM architecture sLSTM-1-1 (Table <ref type="table" coords="12,212.05,680.66,4.17,8.96" target="#tab_0">1</ref>) had the best relative performance by producing 4,145 forecasting signals of which 3,011 (72.64%) were successful. Correspondingly it produced 822 strong forecasting signals of which 515 (62.7%) were confirmed.</p><p>Therefore, the specific ANN architecture produced a total of 7.6 times more forecasting signals than LSTM. The successful forecasting signals of the specific ANN architecture are 8.5 times more than the LSTM architecture. On a separate but increasingly important aspect, we note that when selecting an artificial neural network architecture one cannot fail to consider the resources it consumes to train and produce prediction.</p><p>For the medium complexity LSTM architecture of our experiments (biLSTM-15-1.15) using resources from google colab and specifically a python 3 Google Compute Engine backend with GPU acceleration, the time taken to train and predict the month of December 2021 was 1,175 seconds.</p><p>The specific ANN architecture using local resources (laptop with Ryzen 5 7520U processor without GPU acceleration), the time taken for same field of experimentation was 44 sec.</p><p>Therefore, the specific ANN architecture needs 27 times less time and fewer resources to perform the same field of experimentation compared to the LSTM architectures which can be an important selection criterion for users who cannot invest in the processing and communication overheads required by some modern cloud services.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.6.">Conclusions</head><p>We have designed and built a ANN custom architecture which combines machine learning and technical analysis.</p><p>Specifically, a set of modified artificial indicators are fed to the input neurons of an ANN architecture, which consists of a series of back propagation trained ANNs and a series of feed forward only ANNs, all of which work in pairs. In each pair, a backpropagation neural network (learn-only network) assigns its weights to an artificial neural network (use-only network) which only works in feedforward mode. The final prediction is based on a weighting algorithm that takes into account the prediction quality of each pair of neural networks (learn-only NN and use-only NN) of the previous time window.</p><p>The prediction quality of the custom architecture was compared with the prediction quality of 9 different LSTM architectures. We looked at both the absolute number of successful forecasts and the success rate of all of them. In all cases the custom ANN architecture outperformed the LSTM ones, producing a total of 31,701 forecasting signals with 25,720 (81.13%) of them being successful. The best performing LSTM architectures produced a total of 4,145 forecasting signals with 3,011 (72.64%) of them being successful. It becomes clear that the custom ANN architecture produces better quality forecasting while also being more sensitive, i.e. it produces more, better quality, trend signals It is also important to note that our custom architecture trains and generates signals serially throughout the experimentation, requiring minimal initial calibration data depending on the maximum period of the modified technical indicators. Note that all LSTM architectures require training on the initial 50% of the experimentation field in order to then generate a reasonable forecast for the remaining 50%.</p><p>An increasingly important issue in the selection of an artificial neural network architecture is the resources it consumes to train and produce prediction. We have produced an indicative estimate that the custom ANN architecture requires nearly 1/25 th of the time and far fewer resources to perform the same field of experimentation compared to the LSTM architectures. This makes it possible to use it in real time devices with low computational resources, thus lowering the entry threshold for stakeholders who might want to join the FOREX trading market, as well as for other types of applications which rely on nearlyreal-time data processing.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>ANNEX 1</head><p>Algorithms to calculate the Trend Forecasting of technical Indicators.</p><p>The tables are read from top to bottom. The first condition that is verified is valid </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Simulators of Moving Averages</head></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="4,193.61,396.33,208.32,8.96;4,169.98,411.20,255.40,276.59"><head>Figure 1 .Figure 2 .</head><label>12</label><figDesc>Figure 1. sLSTM-1-1 and sLSTM-15-architectures</figDesc><graphic coords="4,169.98,411.20,255.40,276.59" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="5,188.45,446.87,218.64,8.96;5,169.88,461.75,255.59,290.00"><head>Figure 3 .Figure 4 .Figure 5 .</head><label>345</label><figDesc>Figure 3. biLSTM-1-1 and biLSTM-15-architectures</figDesc><graphic coords="5,169.88,461.75,255.59,290.00" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="9,107.06,223.74,381.02,8.96;9,175.43,238.65,244.05,168.45"><head>Figure 7 .Table 3 .</head><label>73</label><figDesc>Figure 7. An overview of the calculation of the final forecasting trend (for two networks).</figDesc><graphic coords="9,175.43,238.65,244.05,168.45" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="13,122.42,94.74,350.46,8.96;13,85.05,109.65,421.79,275.75"><head>Figure. 8 .Figure 9 .</head><label>89</label><figDesc>Figure. 8. Cumulative time series of the percentage of successful predictions -STA</figDesc><graphic coords="13,85.05,109.65,421.79,275.75" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" coords="6,170.18,106.65,254.38,326.10"><head></head><label></label><figDesc></figDesc><graphic coords="6,170.18,106.65,254.38,326.10" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" coords="6,170.93,459.25,253.45,275.99"><head></head><label></label><figDesc></figDesc><graphic coords="6,170.93,459.25,253.45,275.99" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" coords="7,88.10,307.15,419.15,311.98"><head></head><label></label><figDesc></figDesc><graphic coords="7,88.10,307.15,419.15,311.98" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" coords="4,90.74,184.74,411.24,48.56"><head>Table 1 .</head><label>1</label><figDesc>Selected LSTM architectures</figDesc><table coords="4,90.74,197.82,411.24,35.48"><row><cell>Name</cell><cell>LSTM</cell><cell>Dense Units</cell><cell>Lookback *</cell><cell>Bidirectional Convolutional</cell></row><row><cell></cell><cell>Units</cell><cell></cell><cell></cell><cell></cell></row><row><cell>sLSTM</cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1" coords="9,182.27,468.16,191.91,144.61"><head>Table 4 . Parameterization of the Artificial Neural Network (ANN)Table 5 . Parameterization of back-propagation ANN's.Table 6 . Parameterization of Technical Indicators Simulators.</head><label>456</label><figDesc></figDesc><table coords="9,344.89,499.03,6.64,7.24"><row><cell>-2</cell></row></table><note>ConditionsValue price(t-1)/price(t-1-M(x))&gt;1,00090 +2 price(t-1-M(x))/price(t-1)&gt;1,00090</note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3" coords="11,90.74,207.99,414.65,552.25"><head>Table 8 . Aggregated results of experimentation.</head><label>8</label><figDesc></figDesc><table coords="11,90.74,544.30,414.65,215.94"><row><cell></cell><cell>OCTOBER</cell><cell></cell><cell cols="2">NOVEMBER</cell><cell cols="2">DECEMBER</cell></row><row><cell>ANN</cell><cell>STA</cell><cell>STS</cell><cell>STA</cell><cell>STS</cell><cell>STA</cell><cell>STS</cell></row><row><cell>Successful Forecasting Signals</cell><cell>3808</cell><cell>310</cell><cell>10923</cell><cell>880</cell><cell>10989</cell><cell>437</cell></row><row><cell>Total forecasting signals</cell><cell>4641</cell><cell>407</cell><cell>13371</cell><cell>1070</cell><cell>13689</cell><cell>593</cell></row><row><cell>% Success</cell><cell>82,05%</cell><cell>76,17%</cell><cell>81,69%</cell><cell>82,24%</cell><cell>80,28%</cell><cell>73,69%</cell></row><row><cell>sLSTM-1-1</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Successful Forecasting Signals</cell><cell>761</cell><cell>101</cell><cell>831</cell><cell>161</cell><cell>1419</cell><cell>253</cell></row><row><cell>Total forecasting signals</cell><cell>1091</cell><cell>161</cell><cell>1133</cell><cell>237</cell><cell>1921</cell><cell>424</cell></row><row><cell>% Success</cell><cell>69,75%</cell><cell>62,73%</cell><cell>73,35%</cell><cell>67,93%</cell><cell>73,87%</cell><cell>59,67%</cell></row><row><cell>sLSTM-15-1</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Successful Forecasting Signals</cell><cell>769</cell><cell>96</cell><cell>483</cell><cell>80</cell><cell>1334</cell><cell>224</cell></row><row><cell>Total forecasting signals</cell><cell>1122</cell><cell>158</cell><cell>653</cell><cell>115</cell><cell>1803</cell><cell>372</cell></row><row><cell>% Success</cell><cell>68,54%</cell><cell>60,76%</cell><cell>73,97%</cell><cell>69,57%</cell><cell>73,99%</cell><cell>60,22%</cell></row><row><cell>sLSTM-15-1,15</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Successful Forecasting Signals</cell><cell>782</cell><cell>100</cell><cell>310</cell><cell>58</cell><cell>1393</cell><cell>248</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4" coords="17,85.10,193.49,411.92,393.57"><head></head><label></label><figDesc>MA_M(t): Moiving Average of M values, MA_10: Moving Average of 10-values</figDesc><table coords="17,85.10,193.49,411.92,393.57"><row><cell>Conditions of Price Oscillator</cell><cell cols="2">Trend Forecasting Signal</cell></row><row><cell>Conditions of Williams PROSC(t)&lt;-12</cell><cell cols="2">Trend Forecasting Signal +2</cell></row><row><cell cols="2">WILL(t)&lt;-99 &amp;&amp; WILL(t)&lt;WILL(t-1) &amp;&amp; WILL(t-1)&lt;WILL(t-2) &amp;&amp; WILL(t-2)&lt;WILL(t-3) PROSC(t)&gt;12</cell><cell>+2 -2</cell></row><row><cell cols="2">WILL(t)&gt;-1 &amp;&amp; WILL(t)&gt;WILL(t-1) &amp;&amp; WILL(t-1)&gt;WILL(t-2) &amp;&amp; WILL(t-2)&gt;WILL(t-3) PROSC(t)&lt;-9</cell><cell>-2 +1,5</cell></row><row><cell>WILL(t)&lt;-99 PROSC(t)&gt;9</cell><cell></cell><cell>+2 -1,5</cell></row><row><cell>Conditions WILL(t)&gt;-1 PROSC(t)&lt;6</cell><cell cols="2">Trend Forecasting Signal -2 +1</cell></row><row><cell>MA_Μ(t) &lt; MA_10(t) &amp;&amp; MA_Μ(t-1) ≥ MA_10(t-1) WILL(t)&lt;-98 PROSC(t)&gt;-6</cell><cell>+2</cell><cell>+1,5 -1</cell></row><row><cell>MA_Μ(t) &gt; MA_10(t) &amp;&amp; MA_Μ(t-1) ≤ MA_10(t-1) WILL(t)&gt;-2 PROSC(t)&lt;0</cell><cell>-2</cell><cell>-1,5 +0,5</cell></row><row><cell>MA_Μ(t) &lt; MA_10(t) WILL(t)&lt;-80 PROSC(t)&gt;0</cell><cell>+1</cell><cell>+1 -0,5</cell></row><row><cell>MA_Μ(t) &gt; MA_10(t) WILL(t)&gt;-20 Other Cases</cell><cell>-1</cell><cell>-1 0</cell></row><row><cell>Other Cases WILL(t)&lt;-80</cell><cell>0</cell><cell>+0,5</cell></row><row><cell>WILL(t)&gt;-20</cell><cell></cell><cell>-0,5</cell></row><row><cell>Other Cases</cell><cell></cell><cell>0</cell></row><row><cell>Oscillators Simulators</cell><cell></cell><cell></cell></row><row><cell>Conditions of RSI</cell><cell cols="2">Trend Forecasting Signal</cell></row><row><cell>Conditions of CCI</cell><cell cols="2">Trend Forecasting Signal</cell></row><row><cell></cell><cell>3) 3)</cell><cell>+2 -2</cell></row><row><cell cols="2">CCI(t)&gt;150 &amp;&amp; CCI(t)&gt;CCI(t-1) &amp;&amp; CCI(t-1)&gt;CCI(t-2) &amp;&amp; CCI(t-2)&gt;CCI(t-3) RSI(t)&lt;5</cell><cell>-2 +1,5</cell></row><row><cell>CCI(t)&lt;-150 RSI(t)&gt;90</cell><cell></cell><cell>+1,5 -1,5</cell></row><row><cell>CCI(t)&gt;150 RSI(t)&lt;15</cell><cell></cell><cell>-1,5 +1</cell></row><row><cell>CCI(t)&lt;-100 RSI(t)&gt;85</cell><cell></cell><cell>+1 -1</cell></row><row><cell>CCI(t)&gt;100 RSI(t)&lt;30</cell><cell></cell><cell>-1 +0,5</cell></row><row><cell>CCI(t)&lt;CCI(t-1) &amp;&amp; CCI(t-1)&lt;CCI(t-2) &amp;&amp; CCI(t)&lt;0 RSI(t)&gt;70</cell><cell></cell><cell>+0,5 -0,5</cell></row><row><cell>CCI(t)&gt;CCI(t-1) &amp;&amp; CCI(t-1)&gt;CCI(t-2) &amp;&amp; CCI(t)&gt;0 Other Cases</cell><cell></cell><cell>-0,5 0</cell></row><row><cell>Other Cases</cell><cell></cell><cell>0</cell></row></table><note>CCI(t)&lt;-150 &amp;&amp; CCI(t)&lt;CCI(t-1) &amp;&amp; CCI(t-1)&lt;CCI(t-2) &amp;&amp; CCI(t-2)&lt;CCI(t-RSI(t)&lt;5 &amp;&amp; RSI(t)&lt;RSI(t-1) &amp;&amp; RSI(t-1)&lt;RSI(t-2) &amp;&amp; RSI(t-2)&lt;RSI(t-3) +2 RSI(t)&gt;90 &amp;&amp; RSI(t)&gt;RSI(t-1) &amp;&amp; RSI(t-1)&gt;RSI(t-2) &amp;&amp; RSI(t-2)&gt;RSI(t-</note></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgement</head><p>Some of the tables presented in this work are copied from work previously published by the authors so as to render the current paper self-contained. Proper citations and references have been included to attribute credit to the source of these tables, fully acknowledging the authors' earlier contributions to the field.</p></div>
+			</div>
+
+
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data Availability Statement</head><p>The data that support the findings of this study are available from the corresponding author, upon reasonable request.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conflict of Interest</head><p>The authors declare that they have no conflict of interest.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="15,96.19,182.18,405.21,8.19" xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Exchange Rates &amp; International Finance</title>
+		<author>
+			<persName coords=""><forename type="first">Laurance</forename><surname>Copeland</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2014">2014</date>
+			<publisher>Trans-Atlantic Publications</publisher>
+		</imprint>
+	</monogr>
+	<note>6th edition</note>
+</biblStruct>
+
+<biblStruct coords="15,96.19,199.31,305.68,8.10" xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Indexado de caminos navegacionales en Wikipedia</title>
+		<author>
+			<persName><forename type="first">José</forename><forename type="middle">Luis</forename><surname>Larroque</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Diego</forename><surname>Torres</surname></persName>
+		</author>
+		<idno type="DOI">10.35537/10915/72418</idno>
+		<ptr target="http://en.wikipedia.org/wiki/Margin_%28finance%29" />
+	</analytic>
+	<monogr>
+		<title level="m">Wikipedia</title>
+				<imprint>
+			<publisher>Universidad Nacional de La Plata</publisher>
+			<date>null</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,96.19,216.26,414.05,8.19;15,103.10,227.27,179.19,8.10" xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Algorithmic, Electronic, and Automated Trading</title>
+		<author>
+			<persName coords=""><forename type="first">Ayub</forename><surname>Hanif</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Robert</forename><forename type="middle">Elliott</forename><surname>Smith</surname></persName>
+		</author>
+		<idno type="DOI">10.3905/jot.2012.7.4.078</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Trading</title>
+		<title level="j" type="abbrev">JOT</title>
+		<idno type="ISSN">1559-3967</idno>
+		<idno type="ISSNe">2168-8427</idno>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="78" to="86" />
+			<date type="published" when="2012-09-30">Sep 2012</date>
+			<publisher>Pageant Media US</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,96.19,244.22,413.80,8.19;15,103.10,255.26,287.26,8.19" xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Automated Finance: The Assumptions and Behavioral Aspects of Algorithmic Trading</title>
+		<author>
+			<persName coords=""><forename type="first">Andrew</forename><surname>Kumiega</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Benjamin</forename><forename type="middle">Edward</forename><surname>Van Vliet</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/15427560.2012.654924</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Behavioral Finance</title>
+		<title level="j" type="abbrev">Journal of Behavioral Finance</title>
+		<idno type="ISSN">1542-7560</idno>
+		<idno type="ISSNe">1542-7579</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="51" to="55" />
+			<date type="published" when="2012-01">2012</date>
+			<publisher>Informa UK Limited</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,96.19,272.21,413.95,8.19;15,103.10,283.34,212.97,8.10" xml:id="b4">
+	<analytic>
+		<title level="a" type="main">The use of technical analysis in the foreign exchange market</title>
+		<author>
+			<persName coords=""><forename type="first">Mark</forename><forename type="middle">P</forename><surname>Taylor</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Helen</forename><surname>Allen</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/0261-5606(92)90048-3</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of International Money and Finance</title>
+		<title level="j" type="abbrev">Journal of International Money and Finance</title>
+		<idno type="ISSN">0261-5606</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="304" to="314" />
+			<date type="published" when="1992-06">1992</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,96.19,300.29,413.94,8.19;15,103.10,311.30,180.32,8.10" xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Herd Behaviour and Cascading in Capital Markets: a Review and Synthesis</title>
+		<author>
+			<persName><forename type="first">David</forename><surname>Hirshleifer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Siew</forename><surname>Hong Teoh</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/1468-036x.00207</idno>
+	</analytic>
+	<monogr>
+		<title level="j">European Financial Management</title>
+		<title level="j" type="abbrev">Euro Fin Management</title>
+		<idno type="ISSN">1354-7798</idno>
+		<idno type="ISSNe">1468-036X</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="25" to="66" />
+			<date type="published" when="2003-03">2003</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,96.19,328.34,413.86,8.10;15,103.10,339.38,305.37,8.10" xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Automated Trading with Machine Learning on Big Data</title>
+		<author>
+			<persName coords=""><forename type="first">Dymitr</forename><surname>Ruta</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/bigdata.congress.2014.143</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2014 IEEE International Congress on Big Data</title>
+				<meeting><address><addrLine>Anchorage, AK</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2014-06">2014. 2014</date>
+			<biblScope unit="page" from="824" to="830" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,96.19,356.21,414.01,8.19;15,103.10,367.34,61.60,8.10" xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Non-traditional methods of forecasting</title>
+		<author>
+			<persName coords=""><forename type="first">Derek</forename><forename type="middle">W</forename><surname>Bunn</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/0377-2217(96)00006-9</idno>
+	</analytic>
+	<monogr>
+		<title level="j">European Journal of Operational Research</title>
+		<title level="j" type="abbrev">European Journal of Operational Research</title>
+		<idno type="ISSN">0377-2217</idno>
+		<imprint>
+			<biblScope unit="volume">92</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="528" to="536" />
+			<date type="published" when="1992">1992</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,96.19,384.29,413.94,8.19;15,103.10,395.21,406.98,8.18;15,103.10,406.34,63.76,8.10" xml:id="b8">
+	<analytic>
+		<title level="a" type="main">A new time invariant fuzzy time series forecasting method based on particle swarm optimization</title>
+		<author>
+			<persName coords=""><forename type="first">Ufuk</forename><surname>Cagdas Hakan Aladaga</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Erol</forename><surname>Yolcu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ali</forename><forename type="middle">Z</forename><surname>Egrioglu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Dalar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Applied Soft Computing</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="3291" to="3299" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,95.80,423.29,414.77,8.19;15,103.10,434.21,407.23,8.18;15,103.10,445.36,20.35,8.10" xml:id="b9">
+	<analytic>
+		<title level="a" type="main">SHORT-TERM TREND PREDICTION OF FOREIGN EXCHANGE RATES WITH A NEURAL-NETWORK BASED ENSEMBLE OF FINANCIAL TECHNICAL INDICATORS</title>
+		<author>
+			<persName coords=""><forename type="first">Theodoros</forename><surname>Zafeiriou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Dimitris</forename><surname>Kalles</surname></persName>
+		</author>
+		<idno type="DOI">10.1142/s0218213013500164</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal on Artificial Intelligence Tools</title>
+		<title level="j" type="abbrev">Int. J. Artif. Intell. Tools</title>
+		<idno type="ISSN">0218-2130</idno>
+		<idno type="ISSNe">1793-6349</idno>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">03</biblScope>
+			<biblScope unit="page">1350016</biblScope>
+			<date type="published" when="2013-06">2013</date>
+			<publisher>World Scientific Pub Co Pte Lt</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,95.80,462.31,414.35,8.19;15,103.10,473.23,219.79,8.19" xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Statistical fuzzy interval neural networks for currency exchange rate time series prediction</title>
+		<author>
+			<persName><forename type="first">Yan-Qing</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xuhui</forename><surname>Wan</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.asoc.2006.01.002</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Applied Soft Computing</title>
+		<title level="j" type="abbrev">Applied Soft Computing</title>
+		<idno type="ISSN">1568-4946</idno>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1149" to="1156" />
+			<date type="published" when="2007-08">2007</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,95.80,490.27,414.24,8.19;15,103.10,501.31,407.12,8.18;15,103.10,512.32,188.84,8.10" xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Developing an Intelligent Forex Rolling Forecasting and Trading Decision Support System I: Conceptual Framework, Modeling Techniques and System Implementations</title>
+		<author>
+			<persName coords=""><forename type="first">Fauzi</forename><surname>Yudhi Septiawan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Afia</forename><surname>Hayati</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Handra</forename><surname>Kusuma</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-0-387-71720-3_14</idno>
+	</analytic>
+	<monogr>
+		<title level="m">International Series in Operations Research &amp; Management Science</title>
+				<imprint>
+			<publisher>Springer US</publisher>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="page" from="249" to="274" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,95.80,529.27,414.29,8.19;15,103.10,540.31,402.25,8.19" xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Neural Networks and Statistical Techniques in Marketing Research</title>
+		<author>
+			<persName coords=""><forename type="first">V</forename><surname>Venugopal</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Baets</surname></persName>
+		</author>
+		<idno type="DOI">10.1108/02634509410065555</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Marketing Intelligence &amp; Planning</title>
+		<idno type="ISSN">0263-4503</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="30" to="38" />
+			<date type="published" when="1994-08-01">1994</date>
+			<publisher>Emerald</publisher>
+		</imprint>
+	</monogr>
+	<note>Marketing Intelligence and planning</note>
+</biblStruct>
+
+<biblStruct coords="15,95.80,557.23,414.39,8.19;15,103.10,568.27,272.40,8.18" xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Intelligent technical analysis based equivolume charting for stock trading using neural networks</title>
+		<author>
+			<persName coords=""><surname>Th</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Chavarnakul</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Enke</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="s">Expert Systems with Applications</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="page" from="1004" to="1017" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,95.80,585.31,414.24,8.19;15,103.10,596.23,407.12,8.18;15,103.10,607.36,188.84,8.10" xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Developing an Intelligent Forex Rolling Forecasting and Trading Decision Support System I: Conceptual Framework, Modeling Techniques and System Implementations</title>
+		<author>
+			<persName coords=""><forename type="first">Fauzi</forename><surname>Yudhi Septiawan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Afia</forename><surname>Hayati</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Handra</forename><surname>Kusuma</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-0-387-71720-3_14</idno>
+	</analytic>
+	<monogr>
+		<title level="m">International Series in Operations Research &amp; Management Science</title>
+				<imprint>
+			<publisher>Springer US</publisher>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="page" from="249" to="274" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,95.80,624.34,414.47,8.19;15,103.10,635.26,279.92,8.19" xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Computational Intelligence and Financial Markets: A Survey and Future Directions</title>
+		<author>
+			<persName><forename type="first">Rodolfo</forename><forename type="middle">C</forename><surname>Cavalcante</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rodrigo</forename><forename type="middle">C</forename><surname>Brasileiro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Victor</forename><forename type="middle">L F</forename><surname>Souza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jarley</forename><forename type="middle">P</forename><surname>Nobrega</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adriano</forename><forename type="middle">L I</forename><surname>Oliveira</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.eswa.2016.02.006</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Expert Systems with Applications</title>
+		<title level="j" type="abbrev">Expert Systems with Applications</title>
+		<idno type="ISSN">0957-4174</idno>
+		<imprint>
+			<biblScope unit="volume">55</biblScope>
+			<biblScope unit="page" from="194" to="211" />
+			<date type="published" when="2016-08">2016</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,95.80,652.30,414.13,8.19;15,103.10,663.34,187.14,8.19" xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Predicting stock market index using fusion of machine learning techniques</title>
+		<author>
+			<persName><forename type="first">Jigar</forename><surname>Patel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sahil</forename><surname>Shah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Priyank</forename><surname>Thakkar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Kotecha</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.eswa.2014.10.031</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Expert Systems with Applications</title>
+		<title level="j" type="abbrev">Expert Systems with Applications</title>
+		<idno type="ISSN">0957-4174</idno>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="2162" to="2172" />
+			<date type="published" when="2015-03">2015</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,95.80,680.26,414.25,8.19;15,103.10,691.30,397.10,8.19" xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Forecasting directional movement of Forex data using LSTM with technical and macroeconomic indicators</title>
+		<author>
+			<persName><forename type="first">Deniz</forename><forename type="middle">Can</forename><surname>Yıldırım</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ismail</forename><forename type="middle">Hakkı</forename><surname>Toroslu</surname></persName>
+			<idno type="ORCID">0000-0002-4524-8232</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ugo</forename><surname>Fiore</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/s40854-020-00220-2</idno>
+		<ptr target="https://doi.org/10.1186/s40854-020-00220-2" />
+	</analytic>
+	<monogr>
+		<title level="j">Financial Innovation</title>
+		<title level="j" type="abbrev">Financ Innov</title>
+		<idno type="ISSNe">2199-4730</idno>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2021-01-04">2021</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,95.80,708.34,414.60,8.19;15,103.10,719.35,394.99,8.10" xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Deep learning with long short-term memory networks for financial market predictions</title>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Fischer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><surname>Krauss</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ejor.2017.11.054</idno>
+		<ptr target="https://doi.org/10.1016/j.ejor.2017.11.054" />
+	</analytic>
+	<monogr>
+		<title level="j">European Journal of Operational Research</title>
+		<title level="j" type="abbrev">European Journal of Operational Research</title>
+		<idno type="ISSN">0377-2217</idno>
+		<imprint>
+			<biblScope unit="volume">270</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="654" to="669" />
+			<date type="published" when="2018-10">2018</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,95.80,736.30,414.15,8.19;15,103.10,747.43,154.85,8.10" xml:id="b19">
+	<monogr>
+		<title level="m" type="main">Deep Learning Stock Volatility with Google Domestic Trends</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Xiong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">P</forename><surname>Nichols</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Shen</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.1512.04916</idno>
+		<idno>arxiv</idno>
+		<ptr target="https://doi.org/10.48550/arXiv.1512.04916" />
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="16,95.80,94.82,414.26,8.19;16,103.10,105.83,339.45,8.10" xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Deep networks for predicting direction of change in foreign exchange rates</title>
+		<author>
+			<persName><forename type="first">Svitlana</forename><surname>Galeshchuk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sumitra</forename><surname>Mukherjee</surname></persName>
+			<idno type="ORCID">0000-0003-1367-8200</idno>
+		</author>
+		<idno type="DOI">10.1002/isaf.1404</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Intelligent Systems in Accounting, Finance and Management</title>
+		<title level="j" type="abbrev">Intell Sys Acc Fin Mgmt</title>
+		<idno type="ISSN">1055-615X</idno>
+		<idno type="ISSNe">1099-1174</idno>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="100" to="110" />
+			<date type="published" when="2017-03-19" />
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="16,95.80,122.87,414.61,8.10;16,103.10,133.91,407.04,8.10;16,103.10,144.83,407.44,8.10;16,103.10,155.87,150.28,8.10" xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Intraday Ultra-Short-Term Forecasting of Foreign Exchange Rates using an Ensemble of Neural Networks based on Conventional Technical Indicators</title>
+		<author>
+			<persName><forename type="first">Theodoros</forename><surname>Zafeiriou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dimitris</forename><surname>Kalles</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3411408.3411418</idno>
+		<ptr target="https://doi.org/10.1145/3411408.3411418" />
+	</analytic>
+	<monogr>
+		<title level="m">11th Hellenic Conference on Artificial Intelligence</title>
+				<meeting><address><addrLine>New York, NY, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2020-09-02" />
+			<biblScope unit="page" from="224" to="231" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="16,95.80,172.91,414.68,8.10;16,103.10,183.83,396.02,8.10" xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Ultra-short-term trading system using a neural network-based ensemble of financial technical indicators</title>
+		<author>
+			<persName><forename type="first">Theodoros</forename><surname>Zafeiriou</surname></persName>
+			<idno type="ORCID">0000-0001-7277-8768</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Dimitris</forename><surname>Kalles</surname></persName>
+			<idno type="ORCID">0000-0003-0364-5966</idno>
+		</author>
+		<idno type="DOI">10.1007/s00521-021-05945-4</idno>
+		<ptr target="https://doi.org/10.1007/s00521-021-05945-4" />
+	</analytic>
+	<monogr>
+		<title level="j">Neural Computing and Applications</title>
+		<title level="j" type="abbrev">Neural Comput &amp; Applic</title>
+		<idno type="ISSN">0941-0643</idno>
+		<idno type="ISSNe">1433-3058</idno>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="35" to="60" />
+			<date type="published" when="2023">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="16,95.80,200.78,414.75,8.19" xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Algorithmic Trading</title>
+		<author>
+			<persName><forename type="first">Giuseppe</forename><surname>Nuti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mahnoosh</forename><surname>Mirghaemi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Philip</forename><surname>Treleaven</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chaiyakorn</forename><surname>Yingsaeree</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/mc.2011.31</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computer</title>
+		<title level="j" type="abbrev">Computer</title>
+		<idno type="ISSN">0018-9162</idno>
+		<imprint>
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="61" to="69" />
+			<date type="published" when="2011-11">2011</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="16,95.80,217.91,101.37,8.10;16,88.22,234.83,114.49,8.10" xml:id="b24">
+	<analytic>
+		<title level="a" type="main">LAS VEGAS SANDS CORP., a Nevada corporation, Plaintiff, v. UKNOWN REGISTRANTS OF www.wn0000.com, www.wn1111.com, www.wn2222.com, www.wn3333.com, www.wn4444.com, www.wn5555.com, www.wn6666.com, www.wn7777.com, www.wn8888.com, www.wn9999.com, www.112211.com, www.4456888.com, www.4489888.com, www.001148.com, and www.2289888.com, Defendants.</title>
+		<author>
+			<persName coords=""><surname>Truefx</surname></persName>
+		</author>
+		<idno type="DOI">10.1089/glre.2016.201011</idno>
+		<ptr target="www.truefx.com26.Integral,www.integral.com" />
+	</analytic>
+	<monogr>
+		<title level="j">Gaming Law Review and Economics</title>
+		<title level="j" type="abbrev">Gaming Law Review and Economics</title>
+		<idno type="ISSN">1097-5349</idno>
+		<idno type="ISSNe">1941-5494</idno>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="859" to="868" />
+			<date type="published" when="2016-12" />
+			<publisher>Mary Ann Liebert Inc</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="16,95.80,251.78,414.52,8.19;16,103.10,262.94,20.35,8.10" xml:id="b25">
+	<monogr>
+		<title level="m" type="main">Hands-on machine learning with Scikit-Learn, Keras, and TensorFlow</title>
+		<author>
+			<persName coords=""><forename type="first">Aurélien</forename><surname>Géron</surname></persName>
+		</author>
+		<imprint>
+			<publisher>O&apos;Reilly Media, Inc</publisher>
+			<biblScope unit="page">2022</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="16,95.80,279.77,414.64,8.19;16,103.10,290.81,407.40,8.19;16,103.10,301.85,138.31,8.19" xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Ultra-short term trading using a neural-network based ensemble of financial technical indicators in a closed world market</title>
+		<author>
+			<persName coords=""><forename type="first">Theodoros</forename><surname>Zafeiriou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Dimitris</forename><surname>Kalles</surname></persName>
+		</author>
+		<idno type="DOI">10.3233/idt-229012</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Intelligent Decision Technologies</title>
+		<title level="j" type="abbrev">IDT</title>
+		<idno type="ISSN">1872-4981</idno>
+		<idno type="ISSNe">1875-8843</idno>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="523" to="541" />
+			<date type="published" when="2022-01-01">2022. 1 Jan. 2022</date>
+			<publisher>IOS Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="16,95.80,318.77,414.39,8.19" xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Generative adversarial nets</title>
+		<author>
+			<persName coords=""><forename type="first">Ian</forename><surname>Goodfellow</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in neural information processing systems 27</title>
+				<imprint>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="16,95.80,335.81,414.47,8.19;16,103.10,346.94,332.05,8.10" xml:id="b28">
+	<analytic>
+		<title level="a" type="main">What Is Apache NetBeans</title>
+		<author>
+			<persName><forename type="first">Ioannis</forename><surname>Kostaras</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Constantin</forename><surname>Drabo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Josh</forename><surname>Juneau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sven</forename><surname>Reimers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mario</forename><surname>Schröder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Geertjan</forename><surname>Wielenga</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-1-4842-5370-0_1</idno>
+		<ptr target="https://doi.org/10.1007/978-1-4842-5370-0_1" />
+	</analytic>
+	<monogr>
+		<title level="m">Pro Apache NetBeans</title>
+				<meeting><address><addrLine>Berkeley, CA</addrLine></address></meeting>
+		<imprint>
+			<publisher>Apress</publisher>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="page" from="3" to="28" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="16,95.80,363.86,414.25,8.10;16,103.10,374.90,199.27,8.10" xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Google Colaboratory</title>
+		<author>
+			<persName coords=""><forename type="first">Ekaba</forename><surname>Bisong</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-1-4842-4470-8_7</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Building Machine Learning and Deep Learning Models on Google Cloud Platform</title>
+				<meeting><address><addrLine>Berkeley, CA, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>Apress</publisher>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="page" from="59" to="64" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

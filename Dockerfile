@@ -20,7 +20,7 @@ ENV PATH="/opt/venv/bin:$PATH"
 
 # Instalar TensorFlow, Transformers y Sentence Transformers
  RUN pip install --no-cache-dir --upgrade pip && \
-     pip install --no-cache-dir typing_extensions==3.10.0.0 torch==1.8.0 tensorflow transformers sentence-transformers
+ pip install --no-cache-dir lxml transformers==4.33.3 rdflib sentence-transformers==2.2.2 scikit-learn beautifulsoup4 torch
 
 # Copiar el directorio del cliente GROBID y el archivo de requisitos al contenedor
 COPY grobid_client_python /grobid_client_python

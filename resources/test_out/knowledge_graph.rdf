@@ -1,0 +1,984 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ns1="http://example.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://example.org/entity/_Bobby_Kleinberg">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> Bobby Kleinberg</ns1:text>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Sid_Banerjee"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Erhan_Bayraktar"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Denis_Belomestny"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Thomas_Bruss"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Agostino_Capponi"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Jim_Dai"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Damek_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Mark_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Vivek_Farias"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Paul_Glasserman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Nir_Halman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Shane_Henderson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Saul_Jacka"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Ozalp_Ozer"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Philip_Protter"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Chris_Rogers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Schoenmakers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Timur_Tankayev"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Tsitsiklis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Alberto_Vera"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_David_Williamson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Kaidong_Zhang"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Di_Wu"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Bobby_Kleinberg"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Larry_Shepp"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_Rice_University"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_Yoon">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> Yoon</ns1:text>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_National_Library_of_Medicine"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/NLM"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Ben_Cordier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_Denis_Belomestny">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> Denis Belomestny</ns1:text>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Sid_Banerjee"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Erhan_Bayraktar"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Thomas_Bruss"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Agostino_Capponi"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Jim_Dai"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Damek_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Mark_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Vivek_Farias"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Paul_Glasserman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Nir_Halman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Shane_Henderson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Saul_Jacka"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Bobby_Kleinberg"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Ozalp_Ozer"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Philip_Protter"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Chris_Rogers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Schoenmakers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Timur_Tankayev"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Tsitsiklis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Alberto_Vera"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_David_Williamson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Kaidong_Zhang"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Di_Wu"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Larry_Shepp"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_Rice_University"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_Shane_Henderson">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> Shane Henderson</ns1:text>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Sid_Banerjee"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Erhan_Bayraktar"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Denis_Belomestny"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Thomas_Bruss"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Agostino_Capponi"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Jim_Dai"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Damek_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Mark_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Vivek_Farias"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Paul_Glasserman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Nir_Halman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Saul_Jacka"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Bobby_Kleinberg"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Ozalp_Ozer"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Philip_Protter"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Chris_Rogers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Schoenmakers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Timur_Tankayev"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Tsitsiklis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Alberto_Vera"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_David_Williamson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Kaidong_Zhang"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Di_Wu"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Larry_Shepp"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_Rice_University"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_Evangelos_Pournaras">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> Evangelos Pournaras</ns1:text>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_JY"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_Swiss_National_Science_Foundation"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/SNSF"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_MK"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_CIH"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_DH"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_European_Research_Council"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/ERC"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_European_Union"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_DD"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Yang"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Dominik_Peters"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Regula_Hänggli_Fricker"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_Ben_Cordier">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> Ben Cordier</ns1:text>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_National_Library_of_Medicine"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/NLM"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Yoon"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_David_Williamson">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> David Williamson</ns1:text>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Sid_Banerjee"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Erhan_Bayraktar"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Denis_Belomestny"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Thomas_Bruss"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Agostino_Capponi"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Jim_Dai"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Damek_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Mark_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Vivek_Farias"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Paul_Glasserman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Nir_Halman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Shane_Henderson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Saul_Jacka"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Bobby_Kleinberg"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Ozalp_Ozer"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Philip_Protter"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Chris_Rogers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Schoenmakers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Timur_Tankayev"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Tsitsiklis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Alberto_Vera"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Kaidong_Zhang"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Di_Wu"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Larry_Shepp"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_Rice_University"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_Saul_Jacka">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> Saul Jacka</ns1:text>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Sid_Banerjee"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Erhan_Bayraktar"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Denis_Belomestny"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Thomas_Bruss"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Agostino_Capponi"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Jim_Dai"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Damek_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Mark_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Vivek_Farias"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Paul_Glasserman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Nir_Halman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Shane_Henderson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Bobby_Kleinberg"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Ozalp_Ozer"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Philip_Protter"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Chris_Rogers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Schoenmakers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Timur_Tankayev"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Tsitsiklis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Alberto_Vera"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_David_Williamson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Kaidong_Zhang"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Di_Wu"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Larry_Shepp"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_Rice_University"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_Di_Wu">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> Di Wu</ns1:text>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Sid_Banerjee"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Erhan_Bayraktar"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Denis_Belomestny"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Thomas_Bruss"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Agostino_Capponi"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Jim_Dai"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Damek_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Mark_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Vivek_Farias"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Paul_Glasserman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Nir_Halman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Shane_Henderson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Saul_Jacka"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Bobby_Kleinberg"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Ozalp_Ozer"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Philip_Protter"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Chris_Rogers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Schoenmakers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Timur_Tankayev"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Tsitsiklis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Alberto_Vera"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_David_Williamson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Kaidong_Zhang"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Larry_Shepp"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_Rice_University"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_Kaidong_Zhang">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> Kaidong Zhang</ns1:text>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Sid_Banerjee"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Erhan_Bayraktar"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Denis_Belomestny"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Thomas_Bruss"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Agostino_Capponi"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Jim_Dai"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Damek_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Mark_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Vivek_Farias"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Paul_Glasserman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Nir_Halman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Shane_Henderson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Saul_Jacka"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Bobby_Kleinberg"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Ozalp_Ozer"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Philip_Protter"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Chris_Rogers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Schoenmakers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Timur_Tankayev"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Tsitsiklis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Alberto_Vera"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_David_Williamson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Di_Wu"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Larry_Shepp"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_Rice_University"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_Thomas_Bruss">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> Thomas Bruss</ns1:text>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Sid_Banerjee"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Erhan_Bayraktar"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Denis_Belomestny"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Agostino_Capponi"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Jim_Dai"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Damek_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Mark_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Vivek_Farias"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Paul_Glasserman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Nir_Halman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Shane_Henderson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Saul_Jacka"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Bobby_Kleinberg"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Ozalp_Ozer"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Philip_Protter"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Chris_Rogers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Schoenmakers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Timur_Tankayev"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Tsitsiklis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Alberto_Vera"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_David_Williamson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Kaidong_Zhang"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Di_Wu"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Larry_Shepp"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_Rice_University"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_John_Schoenmakers">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> John Schoenmakers</ns1:text>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Sid_Banerjee"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Erhan_Bayraktar"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Denis_Belomestny"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Thomas_Bruss"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Agostino_Capponi"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Jim_Dai"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Damek_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Mark_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Vivek_Farias"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Paul_Glasserman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Nir_Halman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Shane_Henderson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Saul_Jacka"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Bobby_Kleinberg"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Ozalp_Ozer"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Philip_Protter"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Chris_Rogers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Timur_Tankayev"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Tsitsiklis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Alberto_Vera"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_David_Williamson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Kaidong_Zhang"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Di_Wu"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Larry_Shepp"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_Rice_University"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_Sid_Banerjee">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> Sid Banerjee</ns1:text>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Erhan_Bayraktar"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Denis_Belomestny"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Thomas_Bruss"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Agostino_Capponi"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Jim_Dai"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Damek_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Mark_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Vivek_Farias"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Paul_Glasserman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Nir_Halman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Shane_Henderson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Saul_Jacka"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Bobby_Kleinberg"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Ozalp_Ozer"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Philip_Protter"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Chris_Rogers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Schoenmakers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Timur_Tankayev"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Tsitsiklis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Alberto_Vera"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_David_Williamson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Kaidong_Zhang"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Di_Wu"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Larry_Shepp"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_Rice_University"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_Dominik_Peters">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> Dominik Peters</ns1:text>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_JY"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_Swiss_National_Science_Foundation"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/SNSF"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_MK"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_CIH"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_DH"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_European_Research_Council"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/ERC"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_European_Union"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_DD"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Yang"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Regula_Hänggli_Fricker"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Evangelos_Pournaras"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_Damek_Davis">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> Damek Davis</ns1:text>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Sid_Banerjee"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Erhan_Bayraktar"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Denis_Belomestny"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Thomas_Bruss"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Agostino_Capponi"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Jim_Dai"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Mark_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Vivek_Farias"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Paul_Glasserman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Nir_Halman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Shane_Henderson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Saul_Jacka"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Bobby_Kleinberg"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Ozalp_Ozer"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Philip_Protter"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Chris_Rogers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Schoenmakers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Timur_Tankayev"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Tsitsiklis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Alberto_Vera"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_David_Williamson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Kaidong_Zhang"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Di_Wu"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Larry_Shepp"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_Rice_University"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/CoCi:_Co-Evolving_City_Life">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text>CoCi: Co-Evolving City Life</ns1:text>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_Philip_Protter">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> Philip Protter</ns1:text>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Sid_Banerjee"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Erhan_Bayraktar"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Denis_Belomestny"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Thomas_Bruss"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Agostino_Capponi"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Jim_Dai"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Damek_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Mark_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Vivek_Farias"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Paul_Glasserman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Nir_Halman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Shane_Henderson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Saul_Jacka"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Bobby_Kleinberg"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Ozalp_Ozer"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Chris_Rogers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Schoenmakers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Timur_Tankayev"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Tsitsiklis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Alberto_Vera"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_David_Williamson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Kaidong_Zhang"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Di_Wu"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Larry_Shepp"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_Rice_University"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_Larry_Shepp">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> Larry Shepp</ns1:text>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Sid_Banerjee"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Erhan_Bayraktar"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Denis_Belomestny"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Thomas_Bruss"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Agostino_Capponi"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Jim_Dai"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Damek_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Mark_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Vivek_Farias"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Paul_Glasserman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Nir_Halman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Shane_Henderson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Saul_Jacka"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Bobby_Kleinberg"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Ozalp_Ozer"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Philip_Protter"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Chris_Rogers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Schoenmakers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Timur_Tankayev"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Tsitsiklis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Alberto_Vera"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_David_Williamson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Kaidong_Zhang"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Di_Wu"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_Rice_University"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_Erhan_Bayraktar">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> Erhan Bayraktar</ns1:text>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Sid_Banerjee"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Denis_Belomestny"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Thomas_Bruss"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Agostino_Capponi"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Jim_Dai"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Damek_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Mark_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Vivek_Farias"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Paul_Glasserman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Nir_Halman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Shane_Henderson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Saul_Jacka"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Bobby_Kleinberg"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Ozalp_Ozer"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Philip_Protter"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Chris_Rogers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Schoenmakers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Timur_Tankayev"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Tsitsiklis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Alberto_Vera"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_David_Williamson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Kaidong_Zhang"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Di_Wu"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Larry_Shepp"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_Rice_University"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_Regula_Hänggli_Fricker">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> Regula Hänggli Fricker</ns1:text>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_JY"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_Swiss_National_Science_Foundation"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/SNSF"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_MK"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_CIH"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_DH"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_European_Research_Council"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/ERC"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_European_Union"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_DD"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Yang"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Dominik_Peters"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Evangelos_Pournaras"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_Yang">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> Yang</ns1:text>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_JY"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_Swiss_National_Science_Foundation"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/SNSF"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_MK"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_CIH"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_DH"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_European_Research_Council"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/ERC"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_European_Union"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_DD"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Dominik_Peters"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Regula_Hänggli_Fricker"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Evangelos_Pournaras"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_Horizon_2020_Research_and_Innovation_Programme">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> Horizon 2020 Research and Innovation Programme</ns1:text>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_Vivek_Farias">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> Vivek Farias</ns1:text>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Sid_Banerjee"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Erhan_Bayraktar"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Denis_Belomestny"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Thomas_Bruss"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Agostino_Capponi"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Jim_Dai"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Damek_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Mark_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Paul_Glasserman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Nir_Halman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Shane_Henderson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Saul_Jacka"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Bobby_Kleinberg"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Ozalp_Ozer"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Philip_Protter"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Chris_Rogers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Schoenmakers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Timur_Tankayev"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Tsitsiklis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Alberto_Vera"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_David_Williamson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Kaidong_Zhang"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Di_Wu"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Larry_Shepp"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_Rice_University"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_DVRL">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> DVRL</ns1:text>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_Alberto_Vera">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> Alberto Vera</ns1:text>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Sid_Banerjee"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Erhan_Bayraktar"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Denis_Belomestny"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Thomas_Bruss"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Agostino_Capponi"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Jim_Dai"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Damek_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Mark_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Vivek_Farias"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Paul_Glasserman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Nir_Halman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Shane_Henderson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Saul_Jacka"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Bobby_Kleinberg"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Ozalp_Ozer"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Philip_Protter"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Chris_Rogers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Schoenmakers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Timur_Tankayev"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Tsitsiklis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_David_Williamson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Kaidong_Zhang"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Di_Wu"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Larry_Shepp"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_Rice_University"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/SNSF">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text>SNSF</ns1:text>
+    <ns1:funds rdf:resource="http://example.org/entity/_National_Research_Programme_NRP77_on_Digital_Transformation"/>
+    <ns1:funds rdf:resource="http://example.org/entity/CoCi:_Co-Evolving_City_Life"/>
+    <ns1:funds rdf:resource="http://example.org/entity/_Horizon_2020"/>
+    <ns1:funds rdf:resource="http://example.org/entity/_Distributed_Intelligence_&amp;_Technology_for_Traffic_&amp;_Mobility_Management"/>
+    <ns1:funds rdf:resource="http://example.org/entity/DIT4TraM"/>
+    <ns1:funds rdf:resource="http://example.org/entity/_Horizon_2020_Research_and_Innovation_Programme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_MK">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> MK</ns1:text>
+    <ns1:funds rdf:resource="http://example.org/entity/_National_Research_Programme_NRP77_on_Digital_Transformation"/>
+    <ns1:funds rdf:resource="http://example.org/entity/CoCi:_Co-Evolving_City_Life"/>
+    <ns1:funds rdf:resource="http://example.org/entity/_Horizon_2020"/>
+    <ns1:funds rdf:resource="http://example.org/entity/_Distributed_Intelligence_&amp;_Technology_for_Traffic_&amp;_Mobility_Management"/>
+    <ns1:funds rdf:resource="http://example.org/entity/DIT4TraM"/>
+    <ns1:funds rdf:resource="http://example.org/entity/_Horizon_2020_Research_and_Innovation_Programme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_Chris_Rogers">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> Chris Rogers</ns1:text>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Sid_Banerjee"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Erhan_Bayraktar"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Denis_Belomestny"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Thomas_Bruss"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Agostino_Capponi"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Jim_Dai"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Damek_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Mark_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Vivek_Farias"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Paul_Glasserman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Nir_Halman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Shane_Henderson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Saul_Jacka"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Bobby_Kleinberg"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Ozalp_Ozer"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Philip_Protter"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Schoenmakers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Timur_Tankayev"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Tsitsiklis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Alberto_Vera"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_David_Williamson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Kaidong_Zhang"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Di_Wu"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Larry_Shepp"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_Rice_University"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_Nir_Halman">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> Nir Halman</ns1:text>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Sid_Banerjee"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Erhan_Bayraktar"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Denis_Belomestny"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Thomas_Bruss"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Agostino_Capponi"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Jim_Dai"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Damek_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Mark_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Vivek_Farias"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Paul_Glasserman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Shane_Henderson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Saul_Jacka"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Bobby_Kleinberg"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Ozalp_Ozer"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Philip_Protter"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Chris_Rogers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Schoenmakers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Timur_Tankayev"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Tsitsiklis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Alberto_Vera"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_David_Williamson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Kaidong_Zhang"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Di_Wu"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Larry_Shepp"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_Rice_University"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_Agostino_Capponi">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> Agostino Capponi</ns1:text>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Sid_Banerjee"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Erhan_Bayraktar"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Denis_Belomestny"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Thomas_Bruss"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Jim_Dai"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Damek_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Mark_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Vivek_Farias"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Paul_Glasserman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Nir_Halman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Shane_Henderson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Saul_Jacka"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Bobby_Kleinberg"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Ozalp_Ozer"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Philip_Protter"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Chris_Rogers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Schoenmakers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Timur_Tankayev"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Tsitsiklis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Alberto_Vera"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_David_Williamson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Kaidong_Zhang"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Di_Wu"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Larry_Shepp"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_Rice_University"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_Rice_University">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> Rice University</ns1:text>
+    <ns1:funds rdf:resource="http://example.org/entity/_Symposium"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_John_Tsitsiklis">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> John Tsitsiklis</ns1:text>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Sid_Banerjee"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Erhan_Bayraktar"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Denis_Belomestny"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Thomas_Bruss"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Agostino_Capponi"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Jim_Dai"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Damek_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Mark_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Vivek_Farias"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Paul_Glasserman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Nir_Halman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Shane_Henderson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Saul_Jacka"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Bobby_Kleinberg"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Ozalp_Ozer"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Philip_Protter"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Chris_Rogers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Schoenmakers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Timur_Tankayev"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Alberto_Vera"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_David_Williamson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Kaidong_Zhang"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Di_Wu"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Larry_Shepp"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_Rice_University"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_Mark_Davis">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> Mark Davis</ns1:text>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Sid_Banerjee"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Erhan_Bayraktar"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Denis_Belomestny"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Thomas_Bruss"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Agostino_Capponi"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Jim_Dai"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Damek_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Vivek_Farias"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Paul_Glasserman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Nir_Halman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Shane_Henderson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Saul_Jacka"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Bobby_Kleinberg"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Ozalp_Ozer"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Philip_Protter"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Chris_Rogers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Schoenmakers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Timur_Tankayev"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Tsitsiklis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Alberto_Vera"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_David_Williamson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Kaidong_Zhang"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Di_Wu"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Larry_Shepp"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_Rice_University"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_Timur_Tankayev">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> Timur Tankayev</ns1:text>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Sid_Banerjee"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Erhan_Bayraktar"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Denis_Belomestny"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Thomas_Bruss"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Agostino_Capponi"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Jim_Dai"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Damek_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Mark_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Vivek_Farias"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Paul_Glasserman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Nir_Halman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Shane_Henderson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Saul_Jacka"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Bobby_Kleinberg"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Ozalp_Ozer"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Philip_Protter"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Chris_Rogers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Schoenmakers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Tsitsiklis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Alberto_Vera"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_David_Williamson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Kaidong_Zhang"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Di_Wu"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Larry_Shepp"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_Rice_University"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_André_Goffart">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> André Goffart</ns1:text>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_CIH">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> CIH</ns1:text>
+    <ns1:funds rdf:resource="http://example.org/entity/_National_Research_Programme_NRP77_on_Digital_Transformation"/>
+    <ns1:funds rdf:resource="http://example.org/entity/CoCi:_Co-Evolving_City_Life"/>
+    <ns1:funds rdf:resource="http://example.org/entity/_Horizon_2020"/>
+    <ns1:funds rdf:resource="http://example.org/entity/_Distributed_Intelligence_&amp;_Technology_for_Traffic_&amp;_Mobility_Management"/>
+    <ns1:funds rdf:resource="http://example.org/entity/DIT4TraM"/>
+    <ns1:funds rdf:resource="http://example.org/entity/_Horizon_2020_Research_and_Innovation_Programme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_Paul_Glasserman">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> Paul Glasserman</ns1:text>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Sid_Banerjee"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Erhan_Bayraktar"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Denis_Belomestny"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Thomas_Bruss"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Agostino_Capponi"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Jim_Dai"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Damek_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Mark_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Vivek_Farias"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Nir_Halman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Shane_Henderson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Saul_Jacka"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Bobby_Kleinberg"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Ozalp_Ozer"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Philip_Protter"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Chris_Rogers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Schoenmakers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Timur_Tankayev"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Tsitsiklis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Alberto_Vera"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_David_Williamson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Kaidong_Zhang"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Di_Wu"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Larry_Shepp"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_Rice_University"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_National_Library_of_Medicine">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> National Library of Medicine</ns1:text>
+    <ns1:funds rdf:resource="http://example.org/entity/_Training_Grant"/>
+    <ns1:funds rdf:resource="http://example.org/entity/_DVRL"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_Science_and_Technology_Planning_Project_of_Guangzhou">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> Science and Technology Planning Project of Guangzhou</ns1:text>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/ERC">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text>ERC</ns1:text>
+    <ns1:funds rdf:resource="http://example.org/entity/_National_Research_Programme_NRP77_on_Digital_Transformation"/>
+    <ns1:funds rdf:resource="http://example.org/entity/CoCi:_Co-Evolving_City_Life"/>
+    <ns1:funds rdf:resource="http://example.org/entity/_Horizon_2020"/>
+    <ns1:funds rdf:resource="http://example.org/entity/_Distributed_Intelligence_&amp;_Technology_for_Traffic_&amp;_Mobility_Management"/>
+    <ns1:funds rdf:resource="http://example.org/entity/DIT4TraM"/>
+    <ns1:funds rdf:resource="http://example.org/entity/_Horizon_2020_Research_and_Innovation_Programme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_Guangdong_Basic_and_Applied_Basic_Research_Foundation">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> Guangdong Basic and Applied Basic Research Foundation</ns1:text>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_European_Research_Council">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> European Research Council</ns1:text>
+    <ns1:funds rdf:resource="http://example.org/entity/_National_Research_Programme_NRP77_on_Digital_Transformation"/>
+    <ns1:funds rdf:resource="http://example.org/entity/CoCi:_Co-Evolving_City_Life"/>
+    <ns1:funds rdf:resource="http://example.org/entity/_Horizon_2020"/>
+    <ns1:funds rdf:resource="http://example.org/entity/_Distributed_Intelligence_&amp;_Technology_for_Traffic_&amp;_Mobility_Management"/>
+    <ns1:funds rdf:resource="http://example.org/entity/DIT4TraM"/>
+    <ns1:funds rdf:resource="http://example.org/entity/_Horizon_2020_Research_and_Innovation_Programme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_Ozalp_Ozer">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> Ozalp Ozer</ns1:text>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Sid_Banerjee"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Erhan_Bayraktar"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Denis_Belomestny"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Thomas_Bruss"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Agostino_Capponi"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Jim_Dai"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Damek_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Mark_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Vivek_Farias"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Paul_Glasserman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Nir_Halman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Shane_Henderson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Saul_Jacka"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Bobby_Kleinberg"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Philip_Protter"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Chris_Rogers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Schoenmakers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Timur_Tankayev"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Tsitsiklis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Alberto_Vera"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_David_Williamson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Kaidong_Zhang"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Di_Wu"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Larry_Shepp"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_Rice_University"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_Jim_Dai">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> Jim Dai</ns1:text>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Sid_Banerjee"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Erhan_Bayraktar"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Denis_Belomestny"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Thomas_Bruss"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Agostino_Capponi"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Damek_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Mark_Davis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Vivek_Farias"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Paul_Glasserman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Nir_Halman"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Shane_Henderson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Saul_Jacka"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Bobby_Kleinberg"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Ozalp_Ozer"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Philip_Protter"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Chris_Rogers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Schoenmakers"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Timur_Tankayev"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_John_Tsitsiklis"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Alberto_Vera"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_David_Williamson"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Kaidong_Zhang"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Di_Wu"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Jim_Dai"/>
+    <ns1:collaborates_with rdf:resource="http://example.org/entity/_Larry_Shepp"/>
+    <ns1:acknowledges rdf:resource="http://example.org/entity/_Rice_University"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_JY">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> JY</ns1:text>
+    <ns1:funds rdf:resource="http://example.org/entity/_National_Research_Programme_NRP77_on_Digital_Transformation"/>
+    <ns1:funds rdf:resource="http://example.org/entity/CoCi:_Co-Evolving_City_Life"/>
+    <ns1:funds rdf:resource="http://example.org/entity/_Horizon_2020"/>
+    <ns1:funds rdf:resource="http://example.org/entity/_Distributed_Intelligence_&amp;_Technology_for_Traffic_&amp;_Mobility_Management"/>
+    <ns1:funds rdf:resource="http://example.org/entity/DIT4TraM"/>
+    <ns1:funds rdf:resource="http://example.org/entity/_Horizon_2020_Research_and_Innovation_Programme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_European_Union">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> European Union</ns1:text>
+    <ns1:funds rdf:resource="http://example.org/entity/_National_Research_Programme_NRP77_on_Digital_Transformation"/>
+    <ns1:funds rdf:resource="http://example.org/entity/CoCi:_Co-Evolving_City_Life"/>
+    <ns1:funds rdf:resource="http://example.org/entity/_Horizon_2020"/>
+    <ns1:funds rdf:resource="http://example.org/entity/_Distributed_Intelligence_&amp;_Technology_for_Traffic_&amp;_Mobility_Management"/>
+    <ns1:funds rdf:resource="http://example.org/entity/DIT4TraM"/>
+    <ns1:funds rdf:resource="http://example.org/entity/_Horizon_2020_Research_and_Innovation_Programme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_DH">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> DH</ns1:text>
+    <ns1:funds rdf:resource="http://example.org/entity/_National_Research_Programme_NRP77_on_Digital_Transformation"/>
+    <ns1:funds rdf:resource="http://example.org/entity/CoCi:_Co-Evolving_City_Life"/>
+    <ns1:funds rdf:resource="http://example.org/entity/_Horizon_2020"/>
+    <ns1:funds rdf:resource="http://example.org/entity/_Distributed_Intelligence_&amp;_Technology_for_Traffic_&amp;_Mobility_Management"/>
+    <ns1:funds rdf:resource="http://example.org/entity/DIT4TraM"/>
+    <ns1:funds rdf:resource="http://example.org/entity/_Horizon_2020_Research_and_Innovation_Programme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_National_Research_Programme_NRP77_on_Digital_Transformation">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> National Research Programme NRP77 on Digital Transformation</ns1:text>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/DIT4TraM">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text>DIT4TraM</ns1:text>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_National_Natural_Science_Foundation_of_China">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> National Natural Science Foundation of China</ns1:text>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_Swiss_National_Science_Foundation">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> Swiss National Science Foundation</ns1:text>
+    <ns1:funds rdf:resource="http://example.org/entity/_National_Research_Programme_NRP77_on_Digital_Transformation"/>
+    <ns1:funds rdf:resource="http://example.org/entity/CoCi:_Co-Evolving_City_Life"/>
+    <ns1:funds rdf:resource="http://example.org/entity/_Horizon_2020"/>
+    <ns1:funds rdf:resource="http://example.org/entity/_Distributed_Intelligence_&amp;_Technology_for_Traffic_&amp;_Mobility_Management"/>
+    <ns1:funds rdf:resource="http://example.org/entity/DIT4TraM"/>
+    <ns1:funds rdf:resource="http://example.org/entity/_Horizon_2020_Research_and_Innovation_Programme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_Symposium">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> Symposium</ns1:text>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_Distributed_Intelligence_&amp;_Technology_for_Traffic_&amp;_Mobility_Management">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> Distributed Intelligence &amp; Technology for Traffic &amp; Mobility Management</ns1:text>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_Training_Grant">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> Training Grant</ns1:text>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/NLM">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text>NLM</ns1:text>
+    <ns1:funds rdf:resource="http://example.org/entity/_Training_Grant"/>
+    <ns1:funds rdf:resource="http://example.org/entity/_DVRL"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_DD">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> DD</ns1:text>
+    <ns1:funds rdf:resource="http://example.org/entity/_National_Research_Programme_NRP77_on_Digital_Transformation"/>
+    <ns1:funds rdf:resource="http://example.org/entity/CoCi:_Co-Evolving_City_Life"/>
+    <ns1:funds rdf:resource="http://example.org/entity/_Horizon_2020"/>
+    <ns1:funds rdf:resource="http://example.org/entity/_Distributed_Intelligence_&amp;_Technology_for_Traffic_&amp;_Mobility_Management"/>
+    <ns1:funds rdf:resource="http://example.org/entity/DIT4TraM"/>
+    <ns1:funds rdf:resource="http://example.org/entity/_Horizon_2020_Research_and_Innovation_Programme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/entity/_Horizon_2020">
+    <rdf:type rdf:resource="http://example.org/ns#Entity"/>
+    <ns1:text> Horizon 2020</ns1:text>
+  </rdf:Description>
+</rdf:RDF>

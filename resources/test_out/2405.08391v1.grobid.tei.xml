@@ -1,0 +1,2637 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Cerebralization of mathematical quantities and physical features in neural science: a critical evaluation</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName coords="1,65.30,123.88,70.01,9.94"><forename type="first">Laurent</forename><surname>Goffart</surname></persName>
+							<email>laurent.goffart@cnrs.fr</email>
+							<affiliation key="aff0">
+								<orgName type="laboratory" key="lab1">Centre Gilles Gaston Granger</orgName>
+								<orgName type="laboratory" key="lab2">UMR 7304</orgName>
+								<orgName type="institution">CNRS Aix Marseille Université</orgName>
+								<address>
+									<settlement>Aix-en-Provence</settlement>
+									<country key="FR">France</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Cerebralization of mathematical quantities and physical features in neural science: a critical evaluation</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">7B029B189C6E6D8F31CE6FF7F8389A9B</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2024-05-18T21:25+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>At the turn of the 20th century, Henri Poincaré explained that geometry is a convention and that the properties of space and time are the properties of our measuring instruments. Intriguingly, numerous contemporary authors argue that space, time and even number are "encoded" within the brain, as a consequence of evolution, adaptation and natural selection. In the neuroscientific study of movement generation, the activity of neurons would "encode" kinematic parameters: when they emit action potentials, neurons would "speak" a language carrying notions of classical mechanics. In this article, we shall explain that the movement of a body segment is the ultimate product of a measurement, a filtered numerical outcome of multiple processes taking place in parallel in the central nervous system and converging on the groups of neurons responsible for muscle contractions. The fact that notions of classical mechanics efficiently describe movements does not imply their implementation in the inner workings of the brain. Their relevance to the question how the brain activity enables one to produce accurate movements is questioned within the framework of the neurophysiology of orienting gaze movements toward a visual target.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.2" lry="841.8"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.2" lry="841.8"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.2" lry="841.8"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.2" lry="841.8"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.2" lry="841.8"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.2" lry="841.8"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.2" lry="841.8"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.2" lry="841.8"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.2" lry="841.8"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="595.2" lry="841.8"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">Introduction</head><p>Over the past decades, confusion has spread within the domain of cognitive neuroscience between measurement values, the physiological processes generating them and some general physico-mathematical notions. By directly linking their measurement to concepts, some authors imagined the possibility of an internal "coding" of space, time, number (quantity), geometry and kinematics within the brain <ref type="bibr" coords="1,242.69,470.39,7.51,8.96" target="#b0">[1]</ref><ref type="bibr" coords="1,250.20,470.39,3.76,8.96" target="#b1">[2]</ref><ref type="bibr" coords="1,250.20,470.39,3.76,8.96" target="#b2">[3]</ref><ref type="bibr" coords="1,250.20,470.39,3.76,8.96" target="#b4">[4]</ref><ref type="bibr" coords="1,253.95,470.39,7.51,8.96" target="#b5">[5]</ref>. The suggestion that mathematical and physical notions and practices are cerebralized may look puzzling for those who consider them as human cultural or socio-historical products <ref type="bibr" coords="1,94.46,516.47,7.51,8.96" target="#b7">[6]</ref><ref type="bibr" coords="1,101.97,516.47,3.75,8.96" target="#b8">[7]</ref><ref type="bibr" coords="1,105.73,516.47,7.51,8.96" target="#b9">[8]</ref>, i.e., as collective works of art developed over several generations of intellectuals. For Henri Poincaré, "the geometric language is after all only a language" and "space is only a word that we have believed a thing" <ref type="bibr" coords="1,136.81,562.33,10.60,9.05" target="#b11">[9]</ref>. More crucially, <ref type="bibr" coords="1,226.73,562.43,59.31,8.96">Pellionisz and</ref> Llinas explained that the usage of separate space and time coordinates is inapplicable for describing the inner workings of the brain because there is no simultaneity agent comparable to light within the central nervous system <ref type="bibr" coords="1,86.78,619.91,15.43,8.96">[10]</ref>.</p><p>When we examine, for instance, contemporary neurophysiological studies of eye movement generation, we discover kinematic parameters being "encoded" in the activity of some central neurons, in accordance with signals used in modeling studies. By emitting action potentials, some neurons send signals to their postsynaptic targets that would correspond more or less faithfully to the instantaneous angular distance between gaze and target directions, or to the angular velocity of the orienting gaze movement. The measured physical changes in the orientation of the eyes and head replace not only the complex set of contractions and relaxations of extraocular and neck muscles <ref type="bibr" coords="1,210.77,769.45,12.23,8.96" target="#b13">[11]</ref><ref type="bibr" coords="1,223.00,769.45,4.08,8.96" target="#b14">[12]</ref><ref type="bibr" coords="1,223.00,769.45,4.08,8.96" target="#b15">[13]</ref><ref type="bibr" coords="1,223.00,769.45,4.08,8.96" target="#b16">[14]</ref><ref type="bibr" coords="1,223.00,769.45,4.08,8.96" target="#b17">[15]</ref><ref type="bibr" coords="1,227.08,769.45,12.23,8.96" target="#b18">[16]</ref>, but also associated autonomic responses <ref type="bibr" coords="1,454.75,367.65,15.55,8.96" target="#b19">[17]</ref>. The multiple processes unfolding in parallel in the brain and converging onto the groups of extraocular and neck motor neurons are considered to be devoted to orienting the eyes or gaze (sum of eyes, head and trunk direction) by reducing mismatches between gaze and target directions (gaze error) or between their velocities (velocity error).</p><p>This physico-neurophysiological correspondence is problematic because it has led several authors to introduce the notion of "noise" as an intrinsic part of the brain activity whenever the correlation between the physical measurement values and the firing rate of neurons is low. In the absence of empirical neurophysiological data, also despite evidence to the contrary <ref type="bibr" coords="1,347.11,540.11,15.42,8.96" target="#b20">[18]</ref>, some authors have posited an "internal variability in the motor commands" for generating saccades. They proposed that one part of the brain, the cerebellum would compensate for noisy neuronal signals and account for physically precise movements <ref type="bibr" coords="1,499.42,586.07,15.43,8.96" target="#b21">[19]</ref>. Yet, in the context of saccade generation, Sparks proposed that "the precision or accuracy of a saccade results from the summation of the movement tendencies produced by the population of neurons rather than the discharge of a small number of finely tuned neurons" and that "the effects of variability or "noise" in the discharge frequency of a particular neuron… [could be] reduced by averaging over many neurons <ref type="bibr" coords="1,486.70,678.14,15.43,8.96" target="#b22">[20]</ref>. More fundamentally and as explained elsewhere <ref type="bibr" coords="1,485.74,689.66,15.43,8.96" target="#b23">[21]</ref>, there is neither reason nor necessity for the firing rate of individual neurons to fit with the dimensionality or the sampling rate of our recording instruments. Neuroanatomical and electrophysiological studies reveal a diversity of neuronal types and distributed connectivity, such that not all neuronal activities lead to the rotation of the eyes. The neuronal events that our instruments and cognitive tools cannot grasp might be more than a mere noisy and meaningless hubbub. In this article, we take advantage of the considerable knowledge gathered during the last six decades, in the neuroanatomy and neurophysiology of the primate oculomotor system <ref type="bibr" coords="2,136.94,130.74,12.23,8.96" target="#b13">[11]</ref><ref type="bibr" coords="2,149.17,130.74,4.08,8.96" target="#b14">[12]</ref><ref type="bibr" coords="2,149.17,130.74,4.08,8.96" target="#b15">[13]</ref><ref type="bibr" coords="2,149.17,130.74,4.08,8.96" target="#b16">[14]</ref><ref type="bibr" coords="2,149.17,130.74,4.08,8.96" target="#b17">[15]</ref><ref type="bibr" coords="2,149.17,130.74,4.08,8.96" target="#b18">[16]</ref><ref type="bibr" coords="2,153.25,130.74,12.23,8.96" target="#b19">[17]</ref>, to question the relevance of general notions belonging to the physical sciences of movement for advancing further our understanding of the inner workings of the brain networks and of its relations to mathematics.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">A few words about the movement measurement</head><p>Prior to considering whether the firing rate of neurons might encode a kinematic parameter, we shall discuss what the latter is. In most neurophysiological studies in the trained monkey, the orientation of the eye is recorded with a method based upon the electromagnetic induction <ref type="bibr" coords="2,165.50,296.37,15.46,8.96" target="#b25">[22]</ref>. The animal is placed in front of a visual display with its head at the center of a cube composed of two orthogonal magnetic fields, one horizontal and one vertical. A coil of thin biocompatible cable previously fixed to one eyeball enables measurement of its angular deviation with respect to the magnetic fields. Most often, the monkey is tested with the head restrained, but a coil fixed to the head enables one to record its changes in orientation as well. Each recording consists of sequences of numerical values that quantify the horizontal and vertical orientations successively taken by the eye. The horizontal orientation corresponds to the amount of angular deviation relative to the body midsagittal plane and along the plane passing through the four extraocular muscles (lateral and medial rectus muscles attached to each eye) responsible for the horizontal movements. The vertical orientation corresponds to the amount of angular deviation relative to the horizontal plane. When the head is upright, the intersection between the horizontal and body midsagittal planes defines the straight-ahead direction. By convention, negative values of horizontal and vertical orientations correspond to leftward and downward deviations and positive values to rightward and upward deviations, respectively. Starting from the straight-ahead direction (for which the zero value is assigned to both horizontal and vertical orientations), a rightward movement is numerically represented by a sequence of positive values ranging from an initial value (corresponding to the movement onset) to a final value (movement end).</p><p>A kinematic parameter is a physical magnitude such as the movement amplitude, or a combination of magnitudes as the movement speed (ratio between movement amplitude and duration). It is associated with a continuum of numerical values that are totally ordered. It is a continuum insofar as an infinite number of intermediate ordered values can potentially insert between two successive recorded values. This continuum allows representing the sequence of numerical values by a line segment instead of a sequence of points. Between two successive values, the length of the interval is proportional neither to the amount of effort that was required to change the orientation or the position of the body segment, nor to the amount of energy that was spent. It is proportional to the number of pulses emitted at regular intervals by an external clock. Drawing another line segment (called time) orthogonal to the first one and plotting the numerical values of orientation as a function of the cumulated number of pulses makes it possible to distinguish movements of identical amplitude but with different durations. Further information provided by such a graphical plot is that the time course of orientation values is not rectilinear but slightly curved. The rate of change in eye or head orientation, its angular speed, is not constant. By calculating the ratio between the amplitude and duration of successive changes in orientation and plotting it as a function of time reveals two intervals: a first interval (called acceleration) during which the speed increases to a maximum followed by a second interval (called deceleration) during which it returns to zero. As for the changes in eye or head orientation, the successive speed values are ordered and chained by a continuum of intermediate values. We shall now see that the continuity of measurement values contrasts with the discontinuous character of neuronal activity in the brain.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3">A few basic facts about neuronal activity</head><p>In brain activity, a radically different structure corresponds to the sequences of numerical values. Let's consider the generation of a horizontal saccadic eye movement. Between the two optic nerves (input side) and the nerves innervating the extra-ocular muscles (output), the connectivity is not reducible to independent lines transmitting signals, for example from ganglion cells aligned along the binocular horizontal plane to motor cells innervating the medial and lateral rectus muscles. Its structure is doubly arborescent, initially diffluent then confluent. The signals are not like a series of values ordered within a continuum either. They consist of sequences of unitary events called action potentials (spikes) separated by a relatively silent interval. The spikes emitted by each neuron propagate from the soma to its pre-synaptic endings along an axon that spatially diverges and contacts multiple postsynaptic neurons. The latter can be located in different groups of neurons and at different distances from the former. Moreover, the speed of propagation is not uniform, but varies between neurons. The efficacy of inter-neuronal transmission is modulated by the presence of inhibitory synapses, their number and their recruitment.</p><p>The consequence of this organization is that the concept of simultaneity, which enables us to freeze within a single slice the multiple elements composing a single event or object in the physical world, does not apply to the functioning of the brain <ref type="bibr" coords="2,476.02,733.34,15.43,8.96">[10]</ref>. Once we consider the set of spikes emitted by central cells belonging to the chain of neuronal activity that participates in changing the orientation of the eyes in response to a visual event, they fit within a slice that is much thicker than the slice of spikes emitted by the motor neurons and driving the rotation of the eyes. When it comes to estimating the number of items present in a visual scene as the number of clubs on a playing card, the concept of simultaneity is also implicitly invoked. Some authors have argued that the firing rate of some neurons encodes the number of items on a visual display. However, they have documented neither the duration of the time interval during which the items must aggregate to engender the Gestalt corresponding to the cardinal of the sample, nor the sensitivity of the firing rate to the location of items within the visual field.</p><p>Let's consider the case of an orienting response toward the location of a single spot of light briefly flashed in the visual field. Transmitted by each optic nerve, the dual retinal excitation elicits a flow of activity that manifests in the brain as a kind of tree-like explosion. The activity consists of trains of action potentials propagating from the retinal ganglion cells to multiple neurons located in subcortical territories in the diencephalon and brainstem, and from there to various areas of the cerebral cortex <ref type="bibr" coords="3,224.45,326.25,12.18,8.96" target="#b25">[22]</ref><ref type="bibr" coords="3,240.70,326.25,12.18,8.96" target="#b26">[23]</ref>. The spatiotemporally delimited loci of activity elicited by the transient stimulus on each retina is distributed to multiple groups of neurons whose responses vary in their persistence. As the activity spreads and recruits the groups of cells at the origin of the motor nerves, the diffluence yields to a confluence of activity whose duration will determine the movement amplitude. As the number of spikes emitted by the premotor and motor neurons increases, the contraction of muscle fibers persists and makes the movement longer. The recruitment of additional motor cells and muscle groups enhances the amplitude of the orienting response inasmuch as combining the contraction of extraocular muscles with the contraction of neck muscles yields larger combined eye-head gaze shifts.</p><p>However, a visual event should not be reduced to the transmission of signals from the retina to the motor neurons through a multitude of relays. A postural context precedes the occurrence of the visual event. The visual experience depends upon the initial orientation of the eyes and of the head, and thus the sustained contraction of extraocular and neck muscles. When looking at an object located in front of us, its image is projected onto the fovea, from which the central part of the visual field originates. The foveal projection of the object is allowed by appropriate tonic contractions of extra-ocular muscles and neck muscles. A slight deviation of the head toward the right relative to the trunk is compensated by an equivalent orbital deviation of the eyes toward the left. The retinal image remains the same, but the set of contractions and relaxations is different in the extraocular and neck muscles. In other words, in addition to the spontaneous activity of neurons located centrally in the brain, the visual experience combines sensory signals from the retina, proprioceptive signals from the neck muscles and the sustained firing rate that maintains the tonic contraction of muscles and that holds stable the orientation of both eyes and the head. This tonic motor context is far from negligible. Indeed, psychophysical studies have shown that the direction toward which a subject points (with a laser pointer or with one finger) in response to a visual target is altered by unilateral vibration of neck muscles, which provides a false proprioceptive signal <ref type="bibr" coords="3,398.95,119.22,15.46,8.96" target="#b29">[25]</ref>, during the passive deviation of the eye <ref type="bibr" coords="3,353.71,130.74,16.76,8.96" target="#b31">[26]</ref> or more simply while wearing prismatic spectacles. In the latter case and prior to the subsequent visuo-manual adaptation, the target image is projected onto the fovea and the hand aims at a location that is offset with respect to the physical target location.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4">Does the firing rate of central neurons encode movement kinematics?</head><p>Before explaining why it is unlikely that the firing rate of central neurons encodes a kinematic parameter, we shall first expound the theoretical framework that was used during the last decades to explain the generation of an orienting response to the sudden appearance of a target in the peripheral visual field. This response is characterized by three intervals: a preparatory interval, an interval during which the eyes change their orientation and post-movement interval during which the eyes maintain their orientation toward the target location or nearby.</p><p>During the preparatory phase, the eyes do not move while the target-related signals travel across the brain's neuronal networks toward the motor neurons. The stationarity of the eyeballs is assured by the sustained firing rate of motor neurons, which is maintained by a set of tonic premotor activities forming an equilibrium of commands that counterbalance each other. The notion of poly-equilibrium would be more appropriate to name this state of balanced activity because it is not unitary. It involves the channels leading to the generation of saccades, those leading to the generation of slow eye movements, those yielding the near response (accommodation and vergence) and those holding the head <ref type="bibr" coords="3,389.71,514.79,15.93,8.96" target="#b18">[16,</ref><ref type="bibr" coords="3,412.01,514.79,12.55,8.96" target="#b23">21,</ref><ref type="bibr" coords="3,430.90,514.79,11.95,8.96" target="#b32">27]</ref>. Any suppression of activities within the field of commands participating to this poly-equilibrium alters the direction of gaze while fixating a target. The animal looks toward a location that is offset relative to the target, be it static <ref type="bibr" coords="3,495.22,560.87,12.89,8.96">[28]</ref><ref type="bibr" coords="3,508.11,560.87,4.30,8.96">[29]</ref><ref type="bibr" coords="3,508.11,560.87,4.30,8.96">[30]</ref><ref type="bibr" coords="3,512.41,560.87,12.89,8.96" target="#b33">[31]</ref> or moving [29-30]. In the cat, the direction of the head can also be offset relative to the location of a food target <ref type="bibr" coords="3,522.70,583.79,15.95,8.96">[28,</ref><ref type="bibr" coords="3,309.07,595.31,11.95,8.96" target="#b36">34]</ref>.</p><p>The movement phase consists of a phasic contraction of agonist muscles combined with a relaxation of antagonist muscles. The phasic contraction results from a burst of action potentials that motor neurons emit on top of their sustained firing rate, whereas the relaxation is enabled by a pause in their firing rate <ref type="bibr" coords="3,358.39,675.86,15.43,8.96" target="#b23">[21]</ref>. By recording the activity of motor neurons and the changes in both muscle tension and eye orientation, Davis-Lopez de Carrizosa and colleagues <ref type="bibr" coords="3,309.07,710.30,16.76,8.96" target="#b37">[35]</ref> found that the time course of motoneuronal firing rate better correlates with the time course of muscle tension and eye position than with the time course of eye kinematics (position, velocity and acceleration). Upstream from the motor neurons, the premotor neurons fire with a rate that is quasi-constant, unlike the rise in muscle tension or in eye speed <ref type="bibr" coords="4,188.45,73.24,15.43,8.96" target="#b20">[18]</ref>. Intriguingly, some authors claim that the firing rate of neurons located more centrally, in the deep layers of the superior colliculus, correlates with the instantaneous speed of the change in the direction of the line of sight <ref type="bibr" coords="4,191.09,119.22,10.89,8.96" target="#b5">[5,</ref><ref type="bibr" coords="4,205.37,119.22,11.95,8.96" target="#b38">36]</ref>. They support a functional scheme according to which gaze direction is guided toward the target by a negative feedback loop <ref type="bibr" coords="4,56.64,153.66,12.24,8.96" target="#b40">[37]</ref><ref type="bibr" coords="4,72.96,153.66,12.24,8.96" target="#b41">[38]</ref>. The eye and head premotor neurons would be driven by a motor error command corresponding to the distance between the gaze and target directions. This motor error would result from the continuous comparison between intrinsic signals supposed to encode on the one hand, the gaze-target angle before the movement onset, and on the other hand, the angle of the line of sight as it travels through space. Thus, while gaze moves, the remaining angular distance (motor error) is updated by internal feedback signals encoding the brain's estimate of gaze direction. The saccade would stop once the motor error is zeroed.</p><p>The post-movement phase is characterized by a return to sustained activity for maintaining the new posture, i.e., maintaining the eye deviated in the orbits if the head is prevented from moving, and if the head is free to move, maintaining a new gaze direction. Modelling studies have proposed that the sustained activity responsible for the deviation of the eyes in the orbit results from the temporal integration (in the mathematical sense) of the burst of spikes emitted by the premotor neurons. Until Sparks and colleagues showed its periodic character <ref type="bibr" coords="4,149.18,406.77,15.43,8.96" target="#b20">[18]</ref>, this burst was imagined to convey a signal related to instantaneous eye velocity. Yet, it is worth remembering, as David A. Robinson noted, that "block diagrams of oculomotor organization serve as a compact description of system behavior but seldom have much bearing on the way in which the real system, composed of nerve and muscle, actually operates. The models thus do not contribute much to the neurophysiology (or neurology) of eye movements and incur the danger of suggesting that there actually are segregated portions of the nervous system which perform the differentiation, integration and other operations indicated in the boxes of the diagrams" <ref type="bibr" coords="4,216.17,544.67,15.34,8.96" target="#b43">[39]</ref>.</p><p>These models proposed a conceptual framework that was fruitful insofar as they provoked debates. Their predictions stimulated the undertaking of numerous experiments, which brought new observations. While many results were compatible with the models, others were difficult to explain and barely discussed. More fundamentally, if the signals transmitted between the modules have no neurophysiological substrate, then the model becomes a scientifically embarrassing fiction insofar as it is irrefutable; for it is impossible to demonstrate that a fiction has no real counterpart.</p><p>We shall now examine the evidence supporting the claim that eye velocity is encoded in the firing rate of neurons or in the activity of a population of neurons. Based on empirical data collected during difficult experiments, the evidence remains as weak as that put forward by other authors to defend the idea of a coding of space, of time and quantity in the brain activity.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1">The case of Purkinje cells in the oculomotor vermis</head><p>In 2015, Herzfeld and colleagues <ref type="bibr" coords="4,475.66,107.70,16.76,8.96" target="#b44">[40]</ref> reported a relation between the saccade speed and the population activity of one category of cells in the cerebellar vermis, the Purkinje cells. However, the close examination of their figures leads one to the conclusion that this relation is an artefact resulting from non-homogeneous measurements. The comparison between their figure <ref type="figure" coords="4,528.38,176.70,10.01,8.96">3b</ref> (which plots the speed of all recorded saccades and the corresponding neural activity) and figure <ref type="figure" coords="4,477.08,199.74,8.35,8.96">3f</ref> (which plots the speed of a subset of saccades, those with an amplitude of 10 deg) teaches us that the 10 deg saccades with high-velocity were extremely rare. Figure <ref type="figure" coords="4,528.56,234.18,10.01,8.96">3b</ref> (bottom) shows that the average change in the population response during 10 deg saccades (red trace) is approximately 950 spikes/s whereas figure <ref type="figure" coords="4,490.80,268.74,47.65,8.96">3f (bottom)</ref> shows that the approximate changes are 2450 spikes/s for saccades with 650°/s peak speed (blue trace), 1500 spikes/s for saccades with 525°/s peak speed (green trace), and 750 spikes/s for saccades with 400°/s peak speed (red traces). A grand average value of 950 spikes/s (Fig. <ref type="figure" coords="4,331.71,337.77,8.92,8.96">3b</ref>) can be obtained if the saccades with 650, 525 and 400°/s peak speed (Fig. <ref type="figure" coords="4,426.88,349.17,7.72,8.96">3f</ref>) correspond to 5%, 15% and 80% of 10 deg saccades, respectively. These percentage values indicate that the distribution of peak speed values was strongly asymmetric, which is confirmed when figure 3f is compared to figure <ref type="figure" coords="4,513.94,395.25,12.22,8.96" target="#fig_0">1A</ref> of their supplementary material. Therein, the average peak speed of 10 deg saccades is approximately 440 deg/s, a value at the bottom of peak values reported in figure <ref type="figure" coords="4,527.38,429.69,7.17,8.96">3f</ref>. Consequently the reported correlation between the population activity and saccade speed results from an asymmetric distribution of values, which can be explained by the fact that the fastest saccades were recorded in one single monkey (possibly in the monkey W; see Fig. <ref type="figure" coords="4,360.13,498.71,4.98,8.96">3</ref> in <ref type="bibr" coords="4,379.87,498.71,16.09,8.96" target="#b43">[39]</ref>) and not in the other monkeys. In other words, the relation between saccade speed and population activity could merely result from comparing different subjects. For example, when we examine the data of Kojima and colleagues <ref type="bibr" coords="4,442.66,544.67,15.43,8.96" target="#b45">[41]</ref>, no saccade of 10 deg amplitude has a peak speed higher than 500 deg/s in monkey B (their Figure <ref type="figure" coords="4,411.19,567.71,10.29,8.96">3A</ref>) in contrast to the findings for monkey W (their Fig. <ref type="figure" coords="4,419.64,579.23,9.03,8.96">3D</ref>). That different monkeys produce the same saccade amplitude with a different peak velocity is well-known (see also Fig. <ref type="figure" coords="4,480.08,602.27,4.98,8.96" target="#fig_0">1</ref> in <ref type="bibr" coords="4,497.81,602.27,15.14,8.96" target="#b46">[42]</ref>).</p><p>Another concern in the study of Herzfeld and colleagues is that the correlation between saccade speed and population activity assumed an equal number of "bursting" and "pausing" cells. Indeed, the majority of studies report a numerical difference. McElligott and Keller <ref type="bibr" coords="4,337.39,671.30,16.76,8.96" target="#b48">[43]</ref> reported 71% "bursting" and 29% "pausing" cells, Ohtsuka &amp; Noda <ref type="bibr" coords="4,411.34,682.70,16.76,8.96" target="#b46">[42]</ref> 71% "bursting" and 18% "pausing" cells and Helmchen &amp; Büttner <ref type="bibr" coords="4,497.38,694.22,16.76,8.96" target="#b51">[45]</ref> 67% "bursting" and 10% "pausing" cells. Herzfeld and colleagues <ref type="bibr" coords="4,359.83,717.26,16.76,8.96" target="#b44">[40]</ref> acknowledged that the population response could not predict the real-time saccade velocity if each cluster was not composed of roughly equal numbers of pausing and bursting cells. They also indicated that when 70% of the population were bursting neurons, the peak response still scaled linearly with saccade peak velocity. However, considering our primary concern (combining data collected in different monkeys), the correlation might disappear if the data collected in the non-ordinary monkey (W) were removed from the population. In summary, the suggestion that the activity of the population of Purkinje cells predicts "eye velocity in real-time" is weakly founded.</p><p>A relation between the population response of Purkinje cells and the saccade speed is also not compatible with the electrophysiological recordings in the caudal fastigial nucleus (cFN), the nucleus that houses the post-synaptic neurons targeted by Purkinje cells in the vermis. Indeed, the majority of studies report no modulation of saccade-related bursts with respect to saccade speed in cFN (see <ref type="bibr" coords="5,168.86,234.18,16.79,8.96" target="#b52">[46]</ref> for a detailed review of the literature). Only one study has suggested a relation between cFN activity and saccade velocity <ref type="bibr" coords="5,267.05,257.22,15.43,8.96" target="#b53">[47]</ref>. However, even this relationship may be due to different levels of alertness between the early and late parts of the recording sessions, which were long and boring. Fuchs and colleagues indeed reported an influence of alertness on the firing rate of cFN neurons <ref type="bibr" coords="5,190.73,314.73,15.43,8.96" target="#b54">[48]</ref>.</p><p>In conclusion, the fact that unilateral and brief intrasaccadic changes of activity in the vermis or in the cFN impair the trajectory of saccades to a visual target <ref type="bibr" coords="5,56.64,360.69,12.90,8.96" target="#b55">[49]</ref><ref type="bibr" coords="5,69.54,360.69,4.30,8.96" target="#b56">[50]</ref><ref type="bibr" coords="5,73.84,360.69,12.90,8.96" target="#b57">[51]</ref> does not necessarily imply that the instantaneous firing rate of neurons encodes the instantaneous saccade velocity. It merely tells us that, through their bilateral projections to the premotor burst neurons, the spikes emitted by neurons in the left and right cFN contribute to the phasic contraction of agonist muscle fibers and to the phasic relaxation of antagonist muscle fibers <ref type="bibr" coords="5,237.77,429.69,12.23,8.96" target="#b58">[52]</ref><ref type="bibr" coords="5,254.08,429.69,12.23,8.96" target="#b60">[53]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2">The case of saccade-related burst neurons in the deep superior colliculus</head><p>Following a study showing in the monkey that muscimol injection in the deep layers of the superior colliculus (SC) altered the velocity of saccades toward a peripheral target <ref type="bibr" coords="5,132.86,521.75,15.34,8.96" target="#b61">[54]</ref>, the suggestion was made by Berthoz and colleagues <ref type="bibr" coords="5,164.30,533.27,16.79,8.96" target="#b62">[55]</ref> that the firing rate of neurons in the deep superior colliculus encode the velocity of a saccade. A resemblance was reported between the instantaneous firing rate of seven neurons and the instantaneous speed of saccades produced by one cat. To support their argument, they showed three recording samples illustrating this resemblance. Unfortunately, they reported neither the number of times this resemblance was tested nor the proportion of neurons exhibiting a relation between the firing rate and saccade velocity. Reporting that a neuron emits a burst of action potentials with a time course that roughly resembles the saccade velocity one time out of ten recordings does not have the same meaning as reporting that this resemblance appears for each saccade. Likewise, reporting that seven out of ten neurons emit a burst of spikes with a time course resembling the saccade velocity profile does not have the same meaning as reporting that these neurons represent one percent of SC neurons. In other words, the alleged properties are not supported by a sufficient sampling of neurons.</p><p>The suggestion for a coding of instantaneous velocity by the instantaneous firing rate of collicular neurons was taken up by electrophysiologial studies in macaque monkeys who were tested with the head restrained <ref type="bibr" coords="5,351.55,119.22,15.93,8.96" target="#b38">[36,</ref><ref type="bibr" coords="5,370.51,119.22,13.40,8.96" target="#b63">56]</ref> or unrestrained <ref type="bibr" coords="5,450.82,119.22,10.69,8.96" target="#b5">[5]</ref>. According to van Opstal, the "SC population activity encodes the instantaneous kinematics of the desired gaze shift through its firing rates, whereas the gaze-shift amplitude is encoded by the number of spikes in the saccaderelated burst" <ref type="bibr" coords="5,369.79,176.70,10.69,8.96" target="#b5">[5]</ref>. Several figures reported in his study lead to the impression that all saccade-related neurons in the SC cease emitting spikes shortly before the gaze shift ends. However, this inference may result from the author's choice of example neurons because all saccaderelated neurons in the SC do not exhibit such an abrupt cessation of activity shortly before the gaze saccade ends [57]. In the head-restrained monkey, numerous studies have documented neural discharges that persist beyond saccade end <ref type="bibr" coords="5,360.55,280.29,12.23,8.96" target="#b65">[58]</ref><ref type="bibr" coords="5,372.78,280.29,4.08,8.96" target="#b67">[59]</ref><ref type="bibr" coords="5,372.78,280.29,4.08,8.96" target="#b68">[60]</ref><ref type="bibr" coords="5,372.78,280.29,4.08,8.96" target="#b69">[61]</ref><ref type="bibr" coords="5,372.78,280.29,4.08,8.96" target="#b70">[62]</ref><ref type="bibr" coords="5,372.78,280.29,4.08,8.96" target="#b71">[63]</ref><ref type="bibr" coords="5,376.86,280.29,12.23,8.96" target="#b72">[64]</ref>. Moreover, if the time course of the instantaneous spike density and the time course of "gazetrack" velocity look remarkably similar for the neuron illustrated in Fig. <ref type="figure" coords="5,387.58,314.73,19.81,8.96">9A-B</ref>, it is because the spikes that preceded the saccade-related burst were removed. The graph at the bottom of Fig. <ref type="figure" coords="5,440.38,337.77,12.34,8.96">9A</ref> shows that twenty milliseconds before gaze change onset, the firing rate rises from 0 to 200 spikes per second. Examination of Fig. <ref type="figure" coords="5,328.12,372.21,12.34,8.96">4A</ref> reveals that such an enhancement (from zero to 200 spikes/s) is rare for the same neuron. Presumably, the spikes emitted before the onset of an analysis interval (from 20 ms before gaze onset to 20 ms before gaze end) were removed. However, most studies have reported collicular saccade-related neurons with a long prelude of activity before saccade onset. By removing the spikes emitted before saccade onset and after saccade end, the spike density function exhibits a rising phase followed by a decline as the accelerating and decelerating parts of the velocity. Thus, the correlation between the instantaneous firing rate and gaze velocity is the artificial consequence of selecting a portion of the neuron's activity. It does not support a causal relation either.</p><p>Presumably, van Opstal selected the spikes emitted from 20 ms before gaze onset to 20 ms before gaze shift end because they happened in the time interval during which the so-called omnipause neurons cease firing. Located in the nucleus raphe interpositus, these neurons are known to inhibit the premotor burst neurons. However, if the gaze-shift amplitude is encoded by the number of spikes in the saccade-related burst, then experimentally increasing the pause duration should increase the number of action potentials and lead to hypermetric saccades. Empirical data do not support this prediction insofar as a lesion of nucleus raphe interpositus does not lead to dysmetric saccades <ref type="bibr" coords="5,506.14,671.30,12.24,8.96" target="#b74">[65]</ref><ref type="bibr" coords="5,522.46,671.30,12.24,8.96" target="#b75">[66]</ref>. Furthermore, by cooling the frontal eye fields and recording the firing rate of saccade-related burst neurons in the SC, Peel and colleagues found that the total number of spikes was reduced throughout the entire response field whereas the saccade amplitude remained unchanged <ref type="bibr" coords="5,355.39,740.29,15.43,8.96" target="#b77">[67]</ref>. Their results refute the conjecture of an encoding of gaze-shift amplitude by the number of spikes in the saccade-related burst, even during visuallyguided trials (their Fig. <ref type="figure" coords="5,403.62,774.73,3.68,8.96" target="#fig_0">1</ref>).</p><p>Finally, the evidence brought by Smalianchuk et al. <ref type="bibr" coords="6,56.64,84.64,16.78,8.96" target="#b38">[36]</ref> and by van Opstal <ref type="bibr" coords="6,152.42,84.64,11.72,8.96" target="#b5">[5]</ref> rests upon the replacement of each spike by a Gaussian curve. By transforming the sequence of action potentials into a continuous curve, the correlation can be tested. However, we shall explain that establishing a continuity in the firing rate of neurons is potentially misleading if the parameter critical in neural transmission is not the sequence of spikes emitted by the recorded neuron, but is instead the membrane potentials of post-synaptic neurons and the synchrony of action potentials bombarding them.</p><p>Before this explanation, we shall stress the fact that the premotor burst neurons targeted by the SC neurons exhibit firing rates whose time course is not correlated with the instantaneous saccade velocity. Their instantaneous firing rate is almost constant; their intersaccadic interval is quasi-constant, like a clock <ref type="bibr" coords="6,267.17,257.22,15.34,8.96" target="#b20">[18]</ref>. While the firing rate of motor neurons can be correlated with the instantaneous saccade velocity because of the causal role in the contraction of extraocular muscles, the correlation disappears when we study the firing rate of their presynaptic input from the premotor burst neurons. The discovery that a model factoring muscle tension and its first derivative fits the firing rate of motor neurons better than a model factoring eye position and its first and second derivatives (velocity and acceleration) <ref type="bibr" coords="6,269.57,360.69,16.76,8.96" target="#b37">[35]</ref> brings more difficulty. Indeed, if the activity of SC neurons encoded the instantaneous velocity of the saccade, then, downstream, this kinematic command must be transformed into a dynamic (force-related) command. Any attempt at an explanation might be vain because the time course of the change in eye orientation does not match with the time course of the change in muscle tension. The decrease in muscle force starts before saccade end with a lead time (between the onset of the decay and the end of the saccade) which is longer with larger amplitudes <ref type="bibr" coords="6,157.34,487.19,15.43,8.96" target="#b78">[68]</ref>. Thus, the same physical phenomena, saccades, exhibit different time courses depending upon the measurement method, i.e., depending upon whether one records the change in the orientation of the eye or the change in muscle tension.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3">On the possibility of encoding kinematics or dynamics by central neurons</head><p>We shall now explain why it is dubious that the firing rate of central neurons encodes the time course of a kinematic (or kinetic) parameter. Our explanation rests upon the anatomo-physiological fact that any neuron receives action potentials emitted by presynaptic neurons that are distributed in several brain regions, more or less distant from the recorded neuron. It also rests upon the fact that the probability of emitting an action potential depends upon the relative synchrony of pre-synaptic action potentials <ref type="bibr" coords="6,124.94,696.50,15.43,8.96" target="#b79">[69]</ref>.</p><p>If we consider the firing rate of motor neurons that innervate the extraocular muscles, a correlation between the saccade velocity and the sequence of action potentials is very likely because the latter cause the contraction of extraocular muscle fibers, which in turn exerts the torque responsible for the rotation of the eyeball <ref type="bibr" coords="6,341.71,73.24,15.43,8.96" target="#b81">[70]</ref>. However, if we now turn to the premotor neurons innervating the motor neurons involved, for example, in horizontal saccades, interpreting the correlation is complicated by the fact that several inputs converge onto the motor neurons. They receive inputs from excitatory burst neurons located in the ipsilateral paramedian reticular formation <ref type="bibr" coords="6,447.46,142.26,15.43,8.96" target="#b82">[71]</ref>, inhibitory burst neurons in the contralateral medullary reticular formation <ref type="bibr" coords="6,354.43,165.18,16.76,8.96" target="#b84">[72]</ref> and from burst-tonic neurons located bilaterally in the left and right nuclei prepositus hypoglossi (NPH) and medial vestibular nuclei (MVN) <ref type="bibr" coords="6,309.07,199.74,59.47,8.96">[11-13, 16, 73]</ref>. The discharge patterns of these different groups of neurons do not exhibit identical time courses. Consequently, since the pre-synaptic inputs to the motor neurons originate from neurons distributed in different groups, the correlation between the firing rate and the saccade kinematics becomes weaker. Inevitably, the correlation becomes even weaker when we study the firing rate of neurons that project to those premotor neurons, directly like neurons in the caudal fastigial nuclei <ref type="bibr" coords="6,335.95,303.21,12.89,8.96" target="#b53">[47]</ref><ref type="bibr" coords="6,353.14,303.21,12.89,8.96" target="#b54">[48]</ref> or superior colliculi <ref type="bibr" coords="6,449.74,303.21,15.43,8.96" target="#b87">[74]</ref>.  <ref type="figure" coords="6,449.43,608.53,62.34,9.05">L-O-T-A-I-R-E</ref>" and imagine that each spike emitted by a motor neuron contracts the muscle fibers and increases the eye orientation. The first spike is responsible for increasing the eye orientation from "C" to "L", the second for increasing it from "L" to "O", the third from "O" to "T" etc. As stated previously, the probability of emitting one spike depends upon the synchrony of pre-synaptic action potentials. Let's call "C" all the pre-synaptic simultaneous spikes that are responsible for the postsynaptic spike "C", "L" all the pre-synaptic simultaneous spikes responsible for the post-synaptic spike "L", etc. As we move our investigation from the motor neurons to more central neurons, Fig. <ref type="figure" coords="6,419.92,758.17,4.98,8.96" target="#fig_0">1</ref> shows that the sequence of letters "C-L-O-T-A-I-R-E" is absent from the set of presynaptic sequences. Since each sequence of letters corresponds to a sequence of ordered numerical values, none of them corresponds to any physical measurement. Finally, because of the distributed character of the brain connectivity, different sequences of letters (different sequences of spikes) can lead to kinematically identical saccades. Thus, identical saccades can be associated with variable firing rates.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusion</head><p>A few years after the publication of The Origin of Species by Darwin, Spencer defended the thesis according to which the a priori forms of intelligence such as space and time are a heritage of animal evolution that has been registered in the physiological organization of the nervous system. "Spatial relationships have been the same, not only for all men, all primates and all orders of mammals from which we descend, but also for all orders of less elevated beings". They are "expressed in defined nervous structures, congenitally constituted to act in a certain way, and incapable of acting in a different way" <ref type="bibr" coords="7,118.70,328.53,15.34,8.96" target="#b88">[75]</ref>. One hundred and forty years later, Dehaene and Brannon put forth the same thesis: "in the course of their evolution, humans and many other animal species have internalized basic codes and operations isomorphic to the physical and arithmetic laws that govern the interaction of objects in the external world. Indeed, there is now considerable evidence that space, time and number are part of the essential toolkit that adult humans share with infants and with many nonhuman animals" <ref type="bibr" coords="7,138.59,431.97,12.49,8.96" target="#b0">[1]</ref>. Likewise, Berthoz contended that the laws of Newtonian physics are internalized in the brain functioning <ref type="bibr" coords="7,144.97,455.01,16.89,8.96" target="#b89">[76]</ref> and that mathematics are "the expression of laws and mechanisms which are in operation in the brain ... a language of the brain on the brain itself, that is to say, since the brain is part of the physical world, [a language] about the Universe and its laws" <ref type="bibr" coords="7,82.46,512.51,15.34,8.96" target="#b90">[77]</ref>. An isomorphic relation between the patterns of nature and the patterns of cognition is a central thesis in the domain of evolutionary epistemology <ref type="bibr" coords="7,234.28,535.55,16.77,8.96" target="#b91">[78]</ref> Against this internalization of the laws of nature in the structure of organisms, we defend a more active and contrarian notion of intelligence and living forms. Cognition, physiology and even morphology are not merely representations, embodied copies of the external world. They are counter-reactions, explorations of possibilities for expansion, attempts to trace sustainable paths through an environment characterized by constraints specific to each level of complexity <ref type="bibr" coords="7,247.73,638.99,15.43,8.96" target="#b92">[79]</ref>. One may be tempted to claim that "the philosophy of mathematics has not paid much attention to the biological context of mathematics, although it goes without saying that mathematicians are biological organisms and that they produce mathematical theories and practices with their brains" <ref type="bibr" coords="7,209.09,708.02,10.69,8.96" target="#b4">[4]</ref>. However, by reducing the mind to the brain and intellectual development to brain maturation, we confound the brain functioning of an individual with the historical and collective evolution of scientific discourse, which is stored in books, libraries and technical artefacts, and obeys Boolean logic. "Mathematics is a collective work of art that derives its objectivity through social interactions" <ref type="bibr" coords="7,363.65,96.18,11.73,8.96" target="#b8">[7]</ref> and "the locus of scientific rationality is not the individual scientist but the scientific community" <ref type="bibr" coords="7,309.07,119.22,15.43,8.96" target="#b93">[80]</ref>. As early as in 1909, Emile Durkheim explained that the categories of human thought are not "a priori, universal …, locked in the physiology or biology of Homo sapiens, but socio-historical…" <ref type="bibr" coords="7,466.90,153.66,15.43,8.96" target="#b94">[81]</ref>, that they are "like learned instruments of thought, which human groups have laboriously forged over the centuries and where they have accumulated the best of their intellectual capital" <ref type="bibr" coords="7,391.73,199.74,15.35,8.96" target="#b95">[82]</ref>. By placing "in man (and more precisely in his brain) what is the mere product of social relationships maintained with other men and objects (products of human activity)" <ref type="bibr" coords="7,447.58,234.18,15.43,8.96" target="#b93">[80]</ref>, some cognitive neuroscientists have diverted the search for core networks that make the complexity of the brain <ref type="bibr" coords="7,519.58,257.22,15.35,8.96" target="#b92">[79]</ref>, overlooking also the human collective and sociohistorical dimension of mathematics.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="6,309.07,436.05,229.38,8.96;6,309.07,447.57,229.48,8.96;6,309.07,459.09,108.12,8.96;6,331.75,482.05,206.74,9.06;6,309.07,493.67,229.51,8.96;6,309.07,504.97,229.57,9.06;6,309.07,516.59,229.29,8.96;6,309.07,528.11,229.18,8.96;6,309.07,539.63,229.16,8.96;6,309.07,551.05,229.42,9.05;6,309.07,562.67,229.62,8.96;6,309.07,573.97,229.57,9.05;6,309.07,585.49,229.45,9.06;6,309.07,597.01,229.47,9.06;6,309.07,608.53,229.41,9.06;6,309.07,620.15,229.44,8.96;6,309.07,631.67,229.44,8.96;6,309.07,643.07,229.52,8.96;6,309.07,654.49,229.27,9.05;6,309.07,666.04,229.54,9.06;6,309.07,677.66,229.14,8.96;6,309.07,689.18,229.49,8.96;6,309.07,700.48,229.46,9.06;6,309.07,712.10,229.57,8.96;6,309.07,723.52,229.46,9.06;6,309.07,735.03,229.58,9.06;6,309.07,746.65,229.40,8.96;6,309.07,758.17,229.49,8.96;6,309.07,769.47,229.43,9.06;6,309.06,323.96,228.95,110.16"><head>Fig. 1 :</head><label>1</label><figDesc>Fig. 1: Black-colored cells emit a "letter-spike" (C, L, O, T, A, I, R and E) in response to three simultaneous presynaptic "letter-spikes". Let's consider the successive values of eye orientation that make a saccade of 8 degrees amplitude starting from straight ahead. The values are "1-2-3-4-5-6-7-8"; they are ordinal. As explained at the beginning of our article, each value is chained to its preceding and following values by an infinite number of intermediate values. The sequence "4-3-7-2-1-8-7-5" is not a physically plausible movement. To be a movement, it would have to be "1-2-3-4-3-4-5-6-7-6-5-4-3-2-1-2-3-4-5-6-7-8-7-6-5. Let's now replace the sequence of numerical values "1-2-3-4-5-6-7-8" by the sequence of letters in the given name "C-L-O-T-A-I-R-E" and imagine that each spike emitted by a motor neuron contracts the muscle fibers and increases the eye orientation. The first spike is responsible for increasing the eye orientation from "C" to "L", the second for increasing it from "L" to "O", the third from "O" to "T" etc. As stated previously, the probability of emitting one spike depends upon the synchrony of pre-synaptic action potentials. Let's call "C" all the pre-synaptic simultaneous spikes that are responsible for the postsynaptic spike "C", "L" all the pre-synaptic simultaneous spikes responsible for the post-synaptic spike "L", etc. As we move our investigation from the motor neurons to more central neurons, Fig.1shows that the sequence of letters "C-L-O-T-A-I-R-E" is absent from the set of</figDesc><graphic coords="6,309.06,323.96,228.95,110.16" type="bitmap" /></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgments</head><p>The author thanks the reviewers for detailed comments that significantly improved the text. This article is dedicated to the memory of André Goffart.</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="7,312.84,404.85,3.77,8.96;7,331.75,404.85,206.77,8.96;7,309.07,416.37,229.50,8.96;7,309.07,427.77,188.35,8.96" xml:id="b0">
+	<analytic>
+		<title level="a" type="main">STANISLAS DEHAENE AND ELIZABETH M. BRANNON eds. Space, Time and Number in the Brain: Searching for the Foundations of Mathematical Thought</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Dehaene</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">M</forename><surname>Brannon</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/philmat/nkr042</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Philosophia Mathematica</title>
+		<title level="j" type="abbrev">Philosophia Mathematica</title>
+		<idno type="ISSN">0031-8019</idno>
+		<idno type="ISSNe">1744-6406</idno>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="273" to="274" />
+			<date type="published" when="2012-01-19">2012</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,312.84,439.29,3.77,8.96;7,331.75,439.29,206.61,8.96;7,309.07,450.81,229.75,8.96;7,309.07,462.33,138.51,8.96" xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Number Faculty Is Rooted in Our Biological Heritage</title>
+		<author>
+			<persName coords=""><forename type="first">Andreas</forename><surname>Nieder</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.tics.2017.03.014</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Trends in Cognitive Sciences</title>
+		<title level="j" type="abbrev">Trends in Cognitive Sciences</title>
+		<idno type="ISSN">1364-6613</idno>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="403" to="404" />
+			<date type="published" when="2017-06">2017</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,312.83,473.87,3.76,8.96;7,331.75,473.87,206.55,8.96;7,309.07,485.39,7.75,8.96;7,332.58,485.39,38.47,8.96;7,386.90,485.39,56.69,8.96;7,459.43,485.39,33.92,8.96;7,509.20,485.39,29.30,8.96" xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Space perception</title>
+		<author>
+			<persName coords=""><forename type="first">Frank</forename><surname>Bremmer</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/b978-0-12-820480-1.00061-9</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Reference Module in Neuroscience and Biobehavioral Psychology</title>
+				<imprint>
+			<publisher>Elsevier</publisher>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note>Space perception</note>
+</biblStruct>
+
+<biblStruct coords="7,318.25,496.79,146.91,8.96" xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Space perception</title>
+		<author>
+			<persName><forename type="first">Frank</forename><surname>Bremmer</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/b978-0-12-820480-1.00061-9</idno>
+		<idno>1016/B978-0-12-820480-1.00061-9</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Reference Module in Neuroscience and Biobehavioral Psychology</title>
+				<imprint>
+			<publisher>Elsevier</publisher>
+			<date type="published" when="2024" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,312.84,508.31,3.77,8.96;7,331.75,508.31,206.52,8.96;7,309.07,519.83,229.23,8.96;7,309.07,531.35,229.50,8.96;7,309.07,542.87,228.03,8.96" xml:id="b4">
+	<analytic>
+		<title level="a" type="main">An enhanced argument for innate elementary geometric knowledge and its philosophical implications</title>
+		<author>
+			<persName coords=""><forename type="first">H</forename><forename type="middle">De</forename><surname>Cruz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">New perspectives on mathematical practices</title>
+				<editor>
+			<persName><forename type="first">B</forename><surname>Van Kerkhove</surname></persName>
+		</editor>
+		<imprint>
+			<date type="published" when="2009">2009</date>
+			<biblScope unit="page" from="185" to="206" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,312.84,554.39,3.77,8.96;7,331.75,554.39,206.57,8.96;7,309.07,565.79,229.38,8.96;7,309.07,577.31,41.23,8.96;7,365.43,577.31,29.60,8.96;7,410.16,577.31,19.76,8.96;7,445.18,577.31,19.14,8.96;7,479.45,577.31,14.93,8.96;7,509.42,577.31,29.19,8.96" xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Neural encoding of instantaneous kinematics of eye-head gaze shifts in monkey superior Colliculus</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">J</forename><surname>Van Opstal</surname></persName>
+			<idno type="ORCID">0000-0001-5957-5712</idno>
+		</author>
+		<idno type="DOI">10.1038/s42003-023-05305-z</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Communications Biology</title>
+		<title level="j" type="abbrev">Commun Biol</title>
+		<idno type="ISSNe">2399-3642</idno>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">927</biblScope>
+			<date type="published" when="2023-09-09">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,318.20,588.83,109.56,8.96" xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Neural encoding of instantaneous kinematics of eye-head gaze shifts in monkey superior Colliculus</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">John</forename><surname>Van Opstal</surname></persName>
+			<idno type="ORCID">0000-0001-5957-5712</idno>
+		</author>
+		<idno type="DOI">10.1038/s42003-023-05305-z</idno>
+		<idno>1038/s42003-023-05305-z</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Communications Biology</title>
+		<title level="j" type="abbrev">Commun Biol</title>
+		<idno type="ISSNe">2399-3642</idno>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2023-09-09" />
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,312.84,600.35,3.77,8.96;7,331.75,600.35,206.78,8.96;7,309.07,611.87,229.69,8.96;7,309.07,623.27,156.02,8.96" xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Number – Biological Enculturation Beyond Natural Selection</title>
+		<author>
+			<persName coords=""><forename type="first">Rafael</forename><forename type="middle">E</forename><surname>Núñez</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.tics.2017.03.013</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Trends in Cognitive Sciences</title>
+		<title level="j" type="abbrev">Trends in Cognitive Sciences</title>
+		<idno type="ISSN">1364-6613</idno>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="404" to="405" />
+			<date type="published" when="2017-06">2017</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,312.84,634.79,3.77,8.96;7,331.75,634.79,206.60,8.96;7,309.07,646.31,229.50,8.96;7,309.07,657.86,86.16,8.96" xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Philosophical Problems of Mathematics in the Light of Evolutionary Epistemology</title>
+		<author>
+			<persName coords=""><forename type="first">Yehuda</forename><surname>Rav</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/0-387-29831-2_5</idno>
+	</analytic>
+	<monogr>
+		<title level="m">18 Unconventional Essays on the Nature of Mathematics</title>
+				<imprint>
+			<publisher>Springer-Verlag</publisher>
+			<date type="published" when="1988">1988</date>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page" from="71" to="96" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,312.84,669.38,3.77,8.96;7,331.75,669.38,206.62,8.96" xml:id="b9">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Paz</surname></persName>
+		</author>
+		<title level="m">From jurisprudence to mechanics</title>
+				<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,309.07,680.90,229.22,8.96;7,309.07,692.30,216.61,8.96" xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Poincaré on convention</title>
+		<author>
+			<persName coords=""><forename type="first">Reech</forename><surname>Jacobi</surname></persName>
+		</author>
+		<idno type="DOI">10.1017/S0269889718000170</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Sci. Context</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="223" to="250" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,312.84,703.82,3.77,8.96;7,331.75,703.82,207.00,8.96;7,309.07,715.34,130.15,8.96" xml:id="b11">
+	<monogr>
+		<title level="m" type="main">The foundations of science</title>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Poincaré</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1913">1913</date>
+			<publisher>The Science Press</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,317.45,726.86,221.06,8.96;7,309.07,738.37,229.39,8.96;7,309.07,749.89,229.67,8.96;7,309.07,761.29,182.85,8.96" xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Space-time representation in the brain. The cerebellum as a predictive space-time metric tensor</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Pellionisz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Llina´s</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/0306-4522(82)90224-x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuroscience</title>
+		<title level="j" type="abbrev">Neuroscience</title>
+		<idno type="ISSN">0306-4522</idno>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="2949" to="2970" />
+			<date type="published" when="1982-12">1982</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,65.04,73.24,221.22,8.96;8,56.64,84.64,229.41,8.96;8,56.64,96.18,116.35,8.96" xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Present concepts of oculomotor organization</title>
+		<author>
+			<persName><forename type="first">U</forename><surname>Büttner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Büttner-Ennever</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/s0079-6123(05)51001-x</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Progress in Brain Research</title>
+				<editor>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Büttner-Ennever</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Amsterdam</addrLine></address></meeting>
+		<imprint>
+			<publisher>Elsevier</publisher>
+			<date type="published" when="1988">1988</date>
+			<biblScope unit="page" from="1" to="42" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,65.04,107.70,221.22,8.96;8,56.64,119.22,229.55,8.96;8,56.64,130.74,116.41,8.96" xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Present concepts of oculomotor organization</title>
+		<author>
+			<persName><forename type="first">U</forename><surname>Büttner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Büttner-Ennever</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/s0079-6123(05)51001-x</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Progress in Brain Research</title>
+				<editor>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Büttner-Ennever</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Amsterdam</addrLine></address></meeting>
+		<imprint>
+			<publisher>Elsevier</publisher>
+			<date type="published" when="2008">2008</date>
+			<biblScope unit="volume">151</biblScope>
+			<biblScope unit="page" from="1" to="42" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,65.04,142.26,220.93,8.96;8,56.64,153.66,229.29,8.96;8,56.64,165.18,229.70,8.96;8,56.64,176.70,200.03,8.96" xml:id="b15">
+	<analytic>
+		<title level="a" type="main">The microscopic anatomy and physiology of the mammalian saccadic system</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">K</forename><surname>Moschovakis</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">A</forename><surname>Scudder</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">M</forename><surname>Highstein</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/s0301-0082(96)00034-2</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Progress in Neurobiology</title>
+		<title level="j" type="abbrev">Progress in Neurobiology</title>
+		<idno type="ISSN">0301-0082</idno>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="issue">2-3</biblScope>
+			<biblScope unit="page" from="133" to="254" />
+			<date type="published" when="1996-10">1996</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,65.02,188.22,221.01,8.96;8,56.64,199.74,229.46,8.96;8,56.64,211.26,52.80,8.96" xml:id="b16">
+	<monogr>
+		<title level="m" type="main">The Head-Neck Sensory Motor System</title>
+		<idno type="DOI">10.1093/acprof:oso/9780195068207.001.0001</idno>
+		<editor>A. Berthoz, W. Graf and P. P. Vidal</editor>
+		<imprint>
+			<date type="published" when="1992-04-16">1992</date>
+			<publisher>Oxford University PressNew York</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,65.02,222.66,221.12,8.96;8,56.64,234.18,197.34,8.96" xml:id="b17">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">B</forename><forename type="middle">W</forename><surname>Peterson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><forename type="middle">J</forename><surname>Richmond</surname></persName>
+		</author>
+		<title level="m">Control of head movement</title>
+				<imprint>
+			<publisher>Oxford University Press</publisher>
+			<date type="published" when="1988">1988</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,65.04,245.70,220.87,8.96;8,56.64,257.22,229.20,8.96;8,56.64,268.74,229.21,8.96;8,56.64,280.29,221.99,8.96" xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Neurophysiology of gaze orientation: Core neuronal networks</title>
+		<author>
+			<persName><forename type="first">Laurent</forename><surname>Goffart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Julie</forename><surname>Quinet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Clara</forename><surname>Bourrelly</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/b978-0-12-820480-1.00062-0</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Reference Module in Neuroscience and Biobehavioral Psychology</title>
+				<imprint>
+			<publisher>Elsevier</publisher>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,65.02,291.69,221.20,8.96;8,56.64,303.21,229.59,8.96;8,56.64,314.73,66.23,8.96" xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Autonomic Control of the Eye</title>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">H</forename><surname>Mcdougal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><forename type="middle">D</forename><surname>Gamlin</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/cphy.c140014</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Compr. Physiol</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page" from="439" to="473" />
+			<date type="published" when="2015">2015</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,65.04,326.25,220.83,8.96;8,56.64,337.77,229.50,8.96;8,56.64,349.17,229.58,8.96;8,56.64,360.69,183.53,8.96" xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Reliability of oculomotor command signals carried by individual neurons</title>
+		<author>
+			<persName><forename type="first">Xintian</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Huihui</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chaoliang</forename><surname>Gu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chuanyu</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">L</forename><surname>Sparks</surname></persName>
+		</author>
+		<idno type="DOI">10.1073/pnas.0702799104</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the National Academy of Sciences</title>
+		<title level="j" type="abbrev">Proc. Natl. Acad. Sci. U.S.A.</title>
+		<idno type="ISSN">0027-8424</idno>
+		<idno type="ISSNe">1091-6490</idno>
+		<imprint>
+			<biblScope unit="volume">104</biblScope>
+			<biblScope unit="issue">19</biblScope>
+			<biblScope unit="page" from="8137" to="8142" />
+			<date type="published" when="2007-05-08">2007</date>
+			<publisher>Proceedings of the National Academy of Sciences</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,65.04,372.21,220.98,8.96;8,56.64,383.73,229.35,8.96;8,56.64,395.25,49.35,8.96;8,125.87,395.25,160.46,8.96;8,56.64,406.77,206.82,8.96" xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Cerebellar Contributions to Adaptive Control of Saccades in Humans</title>
+		<author>
+			<persName><forename type="first">Minnan</forename><surname>Xu-Wilson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haiyin</forename><surname>Chen-Harris</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">S</forename><surname>Zee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Reza</forename><surname>Shadmehr</surname></persName>
+		</author>
+		<idno type="DOI">10.1523/jneurosci.3115-09.2009</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Neuroscience</title>
+		<title level="j" type="abbrev">J. Neurosci.</title>
+		<idno type="ISSN">0270-6474</idno>
+		<idno type="ISSNe">1529-2401</idno>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">41</biblScope>
+			<biblScope unit="page" from="12930" to="12939" />
+			<date type="published" when="2009-10-14">2009</date>
+			<publisher>Society for Neuroscience</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,65.04,418.17,221.00,8.96;8,56.64,429.69,229.31,8.96;8,56.64,441.21,229.73,8.96;8,56.64,452.73,128.51,8.96" xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Size and distribution of movement fields in the monkey superior colliculus</title>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">L</forename><surname>Sparks</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Richard</forename><surname>Holland</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Barton</forename><forename type="middle">L</forename><surname>Guthrie</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/0006-8993(76)90003-2</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Brain Research</title>
+		<title level="j" type="abbrev">Brain Research</title>
+		<idno type="ISSN">0006-8993</idno>
+		<imprint>
+			<biblScope unit="volume">113</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="21" to="34" />
+			<date type="published" when="1976-08">1976</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,65.04,464.25,220.91,8.96;8,56.64,475.79,229.42,8.96;8,56.64,487.19,229.38,8.96;8,56.64,498.71,56.81,8.96;8,140.54,498.71,17.61,8.96;8,185.05,498.71,45.08,8.96;8,257.17,498.71,28.97,8.96" xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Neurophysiology of visually guided eye movements: critical review and alternative viewpoint</title>
+		<author>
+			<persName><forename type="first">Laurent</forename><surname>Goffart</surname></persName>
+			<idno type="ORCID">0000-0001-8767-1867</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Clara</forename><surname>Bourrelly</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jean-Charles</forename><surname>Quinton</surname></persName>
+		</author>
+		<idno type="DOI">10.1152/jn.00402.2018</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neurophysiology</title>
+		<title level="j" type="abbrev">Journal of Neurophysiology</title>
+		<idno type="ISSN">0022-3077</idno>
+		<idno type="ISSNe">1522-1598</idno>
+		<imprint>
+			<biblScope unit="volume">120</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="3234" to="3245" />
+			<date type="published" when="2018-12-01">2018</date>
+			<publisher>American Physiological Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,65.50,510.23,84.17,8.96" xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Neurophysiology of visually guided eye movements: critical review and alternative viewpoint</title>
+		<author>
+			<persName><forename type="first">Laurent</forename><surname>Goffart</surname></persName>
+			<idno type="ORCID">0000-0001-8767-1867</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Clara</forename><surname>Bourrelly</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jean-Charles</forename><surname>Quinton</surname></persName>
+		</author>
+		<idno type="DOI">10.1152/jn.00402.2018</idno>
+		<idno>1152/jn.00402</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neurophysiology</title>
+		<title level="j" type="abbrev">Journal of Neurophysiology</title>
+		<idno type="ISSN">0022-3077</idno>
+		<idno type="ISSNe">1522-1598</idno>
+		<imprint>
+			<biblScope unit="volume">120</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="3234" to="3245" />
+			<date type="published" when="2018-12-01">2018</date>
+			<publisher>American Physiological Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,65.04,521.75,220.89,8.96;8,56.64,533.27,229.40,8.96;8,56.64,544.67,229.69,8.96;8,56.64,556.19,174.39,8.96" xml:id="b25">
+	<analytic>
+		<title level="a" type="main">A method for measuring horizontal and vertical eye movement chronically in the monkey.</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">F</forename><surname>Fuchs</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">A</forename><surname>Robinson</surname></persName>
+		</author>
+		<idno type="DOI">10.1152/jappl.1966.21.3.1068</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Applied Physiology</title>
+		<title level="j" type="abbrev">Journal of Applied Physiology</title>
+		<idno type="ISSN">8750-7587</idno>
+		<idno type="ISSNe">1522-1601</idno>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="1068" to="1070" />
+			<date type="published" when="1966-05">1966</date>
+			<publisher>American Physiological Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,65.04,567.71,221.04,8.96;8,56.64,579.23,229.33,8.96;8,56.64,590.75,229.44,8.96;8,56.64,602.27,66.75,8.96" xml:id="b26">
+	<analytic>
+		<title level="a" type="main">The Timing of Information Transfer in the Visual System</title>
+		<author>
+			<persName><forename type="first">Lionel</forename><forename type="middle">G</forename><surname>Nowak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jean</forename><surname>Bullier</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-1-4757-9625-4_5</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Extrastriate Cortex in Primates</title>
+		<title level="s">Extrastriate Cortex</title>
+		<editor>
+			<persName><forename type="first">J</forename><surname>Kaas</surname></persName>
+		</editor>
+		<imprint>
+			<publisher>Springer US</publisher>
+			<date type="published" when="1997">1997</date>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page" from="205" to="241" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,65.04,613.67,220.82,8.96;8,56.64,625.19,229.15,8.96;8,56.64,636.71,229.32,8.96;8,56.64,648.23,56.81,8.96;8,142.22,648.23,12.57,8.96;8,183.38,648.23,45.07,8.96;8,257.05,648.23,29.08,8.96" xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Signal Timing Across the Macaque Visual System</title>
+		<author>
+			<persName><forename type="first">Matthew</forename><forename type="middle">T</forename><surname>Schmolesky</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Youngchang</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Doug</forename><forename type="middle">P</forename><surname>Hanes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kirk</forename><forename type="middle">G</forename><surname>Thompson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefan</forename><surname>Leutgeb</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jeffrey</forename><forename type="middle">D</forename><surname>Schall</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Audie</forename><forename type="middle">G</forename><surname>Leventhal</surname></persName>
+		</author>
+		<idno type="DOI">10.1152/jn.1998.79.6.3272</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neurophysiology</title>
+		<title level="j" type="abbrev">Journal of Neurophysiology</title>
+		<idno type="ISSN">0022-3077</idno>
+		<idno type="ISSNe">1522-1598</idno>
+		<imprint>
+			<biblScope unit="volume">79</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="3272" to="3278" />
+			<date type="published" when="1998-06-01">1998</date>
+			<publisher>American Physiological Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,65.28,659.78,99.36,8.96" xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Signal Timing Across the Macaque Visual System</title>
+		<author>
+			<persName><forename type="first">Matthew</forename><forename type="middle">T</forename><surname>Schmolesky</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Youngchang</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Doug</forename><forename type="middle">P</forename><surname>Hanes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kirk</forename><forename type="middle">G</forename><surname>Thompson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefan</forename><surname>Leutgeb</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jeffrey</forename><forename type="middle">D</forename><surname>Schall</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Audie</forename><forename type="middle">G</forename><surname>Leventhal</surname></persName>
+		</author>
+		<idno type="DOI">10.1152/jn.1998.79.6.3272</idno>
+		<idno>1152/jn.1998.79.6.3272</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neurophysiology</title>
+		<title level="j" type="abbrev">Journal of Neurophysiology</title>
+		<idno type="ISSN">0022-3077</idno>
+		<idno type="ISSNe">1522-1598</idno>
+		<imprint>
+			<biblScope unit="volume">79</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="3272" to="3278" />
+			<date type="published" when="1998-06-01" />
+			<publisher>American Physiological Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,65.04,671.30,220.98,8.96;8,56.64,682.70,229.21,8.96;8,56.64,694.22,229.18,8.96;8,56.64,705.74,22.23,8.96;8,114.14,705.74,29.22,8.96;8,178.42,705.74,43.43,8.96;8,257.05,705.74,29.19,8.96" xml:id="b29">
+	<analytic>
+		<title level="a" type="main">NECK MUSCLE VIBRATION MODIFIES THE REPRESENTATION OF VISUAL MOTION AND DIRECTION IN MAN</title>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Biguer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">I</forename><forename type="middle">M L</forename><surname>Donaldson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Hein</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Jeannerod</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/brain/111.6.1405</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Brain</title>
+		<title level="j" type="abbrev">Brain</title>
+		<idno type="ISSN">0006-8950</idno>
+		<idno type="ISSNe">1460-2156</idno>
+		<imprint>
+			<biblScope unit="volume">111</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1405" to="1424" />
+			<date type="published" when="1988">1988</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,65.26,717.26,94.85,8.96" xml:id="b30">
+	<analytic>
+		<title level="a" type="main">NECK MUSCLE VIBRATION MODIFIES THE REPRESENTATION OF VISUAL MOTION AND DIRECTION IN MAN</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Biguer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><forename type="middle">M L</forename><surname>Donaldson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Hein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Jeannerod</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/brain/111.6.1405</idno>
+		<idno>1093/brain/111.6.1405</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Brain</title>
+		<title level="j" type="abbrev">Brain</title>
+		<idno type="ISSN">0006-8950</idno>
+		<idno type="ISSNe">1460-2156</idno>
+		<imprint>
+			<biblScope unit="volume">111</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1405" to="1424" />
+			<date type="published" when="1988" />
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,65.04,728.78,220.96,8.96;8,56.64,740.29,229.31,8.96;8,56.64,751.69,193.13,8.96" xml:id="b31">
+	<analytic>
+		<title level="a" type="main">OCULAR MUSCLE PROPRIOCEPTION AND VISUAL LOCALIZATION OF TARGETS IN MAN</title>
+		<author>
+			<persName><forename type="first">Gabriel</forename><forename type="middle">M</forename><surname>Gauthier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Danielle</forename><surname>Nommay</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jean-Louis</forename><surname>Vercher</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/brain/113.6.1857</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Brain</title>
+		<title level="j" type="abbrev">Brain</title>
+		<idno type="ISSN">0006-8950</idno>
+		<idno type="ISSNe">1460-2156</idno>
+		<imprint>
+			<biblScope unit="volume">113</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1857" to="1871" />
+			<date type="published" when="1990">1990</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,317.45,73.24,220.98,8.96;8,309.07,84.64,229.42,8.96;8,309.07,96.18,219.88,8.96;8,309.07,107.70,229.27,8.96;8,309.07,119.22,229.23,8.96;8,309.07,130.74,229.67,8.96;8,309.07,142.26,162.14,8.96;8,309.07,153.66,229.38,8.96;8,309.07,165.18,229.32,8.96;8,309.07,176.70,229.27,8.96;8,309.07,188.22,202.10,8.96;8,309.07,199.74,229.28,8.96;8,309.07,211.26,229.23,8.96;8,309.07,222.66,229.63,8.96;8,309.07,234.18,124.61,8.96" xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Goffart and D. Pélisson, Orienting gaze shifts during muscimol inactivation of caudal fastigial nucleus in the cat. I. Gaze dysmetria</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Goffart</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">;</forename><forename type="middle">C</forename><surname>Dias</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">A</forename><surname>Segraves</surname></persName>
+		</author>
+		<idno type="DOI">10.1152/jn.00771.2009</idno>
+		<idno>10.1152/jn.00771.2009</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Kinematics and the neurophysiological study of visually-guided eye movements. Prog</title>
+				<editor>
+			<persName><forename type="first">L</forename><surname>Guerrasio</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">J</forename><surname>Quinet</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">U</forename><surname>Büttner</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">L</forename><surname>Goffart</surname></persName>
+		</editor>
+		<imprint>
+			<date type="published" when="1988">2019. 1998. 1999. 1988-2001 (2010</date>
+			<biblScope unit="volume">249</biblScope>
+			<biblScope unit="page" from="2191" to="2214" />
+		</imprint>
+	</monogr>
+	<note>J. Neurophysiol.</note>
+</biblStruct>
+
+<biblStruct coords="8,317.45,245.70,220.80,8.96;8,309.07,257.22,229.29,8.96;8,309.07,268.74,229.62,8.96;8,309.07,280.29,179.21,8.96" xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Visual Fixation as Equilibrium: Evidence from Superior Colliculus Inactivation</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Goffart</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><forename type="middle">M</forename><surname>Hafed</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">J</forename><surname>Krauzlis</surname></persName>
+		</author>
+		<idno type="DOI">10.1523/jneurosci.0696-12.2012</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neuroscience</title>
+		<title level="j" type="abbrev">Journal of Neuroscience</title>
+		<idno type="ISSN">0270-6474</idno>
+		<idno type="ISSNe">1529-2401</idno>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">31</biblScope>
+			<biblScope unit="page" from="10627" to="10636" />
+			<date type="published" when="2012-08-01">2012</date>
+			<publisher>Society for Neuroscience</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,317.45,291.69,220.84,8.96;8,309.07,303.21,229.39,8.96;8,309.07,314.73,229.63,8.96;8,309.07,326.25,179.21,8.96" xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Superior Colliculus Inactivation Causes Stable Offsets in Eye Position during Tracking</title>
+		<author>
+			<persName><forename type="first">Ziad</forename><forename type="middle">M</forename><surname>Hafed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Laurent</forename><surname>Goffart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Richard</forename><forename type="middle">J</forename><surname>Krauzlis</surname></persName>
+		</author>
+		<idno type="DOI">10.1523/jneurosci.1317-08.2008</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Neuroscience</title>
+		<title level="j" type="abbrev">J. Neurosci.</title>
+		<idno type="ISSN">0270-6474</idno>
+		<idno type="ISSNe">1529-2401</idno>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">32</biblScope>
+			<biblScope unit="page" from="8124" to="8137" />
+			<date type="published" when="2008-08-06">2008</date>
+			<publisher>Society for Neuroscience</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,317.45,337.77,220.81,8.96;8,309.07,349.17,229.21,8.96;8,309.07,360.69,229.67,8.96;8,309.07,372.21,147.17,8.96" xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Pursuit disorder and saccade dysmetria after caudal fastigial inactivation in the monkey</title>
+		<author>
+			<persName><forename type="first">Clara</forename><surname>Bourrelly</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Julie</forename><surname>Quinet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Laurent</forename><surname>Goffart</surname></persName>
+			<idno type="ORCID">0000-0001-8767-1867</idno>
+		</author>
+		<idno type="DOI">10.1152/jn.00278.2018</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neurophysiology</title>
+		<title level="j" type="abbrev">Journal of Neurophysiology</title>
+		<idno type="ISSN">0022-3077</idno>
+		<idno type="ISSNe">1522-1598</idno>
+		<imprint>
+			<biblScope unit="volume">120</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1640" to="1654" />
+			<date type="published" when="2018-10-01">2018</date>
+			<publisher>American Physiological Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,317.45,383.73,220.79,8.96;8,309.07,395.25,229.21,8.96;8,309.07,406.77,229.38,8.96;8,309.07,418.17,229.11,8.96;8,309.07,429.69,229.16,8.96;8,309.07,441.21,229.35,8.96;8,309.07,452.73,102.84,8.96" xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Control of Head Movement in the Cat: Two Separate Pathways from the Superior Colliculus to Neck Motoneurones and Their Roles in Orienting Movements</title>
+		<author>
+			<persName><forename type="first">Tadashi</forename><surname>Isa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tohru</forename><surname>Itouji</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shigeto</forename><surname>Sasaki</surname></persName>
+		</author>
+		<idno type="DOI">10.1159/000421388</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Vestibular and Brain Stem Control of Eye, Head and Body Movements</title>
+				<editor>
+			<persName><forename type="first">H</forename><surname>Shimazu</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Y</forename><surname>Shinoda</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Tokyo</addrLine></address></meeting>
+		<imprint>
+			<publisher>S. Karger AG</publisher>
+			<date type="published" when="1992">1992</date>
+			<biblScope unit="page" from="275" to="284" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,317.45,464.25,221.31,8.96;8,309.07,475.79,229.41,8.96;8,309.07,487.19,229.43,8.96;8,309.07,498.71,229.63,8.96;8,309.07,510.23,179.21,8.96" xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Dual Encoding of Muscle Tension and Eye Position by Abducens Motoneurons</title>
+		<author>
+			<persName><forename type="first">María</forename><forename type="middle">A</forename><surname>Davis-López De Carrizosa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Camilo</forename><forename type="middle">J</forename><surname>Morado-Díaz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joel</forename><forename type="middle">M</forename><surname>Miller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rosa</forename><forename type="middle">R</forename><surname>De La Cruz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ángel</forename><forename type="middle">M</forename><surname>Pastor</surname></persName>
+		</author>
+		<idno type="DOI">10.1523/jneurosci.5416-10.2011</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Neuroscience</title>
+		<title level="j" type="abbrev">J. Neurosci.</title>
+		<idno type="ISSN">0270-6474</idno>
+		<idno type="ISSNe">1529-2401</idno>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="2271" to="2279" />
+			<date type="published" when="2011-02-09">2011</date>
+			<publisher>Society for Neuroscience</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,317.45,521.75,220.93,8.96;8,309.07,533.27,229.32,8.96;8,309.07,544.67,38.47,8.96;8,373.99,544.67,29.32,8.96;8,429.61,544.67,53.42,8.96;8,509.47,544.67,29.19,8.96" xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Instantaneous Midbrain Control of Saccade Velocity</title>
+		<author>
+			<persName><forename type="first">Ivan</forename><surname>Smalianchuk</surname></persName>
+			<idno type="ORCID">0000-0001-5097-1428</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Uday</forename><forename type="middle">K</forename><surname>Jagadisan</surname></persName>
+			<idno type="ORCID">0000-0003-4253-6041</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Neeraj</forename><forename type="middle">J</forename><surname>Gandhi</surname></persName>
+			<idno type="ORCID">0000-0002-4915-2131</idno>
+		</author>
+		<idno type="DOI">10.1523/jneurosci.0962-18.2018</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Neuroscience</title>
+		<title level="j" type="abbrev">J. Neurosci.</title>
+		<idno type="ISSN">0270-6474</idno>
+		<idno type="ISSNe">1529-2401</idno>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">47</biblScope>
+			<biblScope unit="page" from="10156" to="10167" />
+			<date type="published" when="2018-10-05">2018</date>
+			<publisher>Society for Neuroscience</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,318.90,556.19,137.68,8.96" xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Instantaneous Midbrain Control of Saccade Velocity</title>
+		<author>
+			<persName><forename type="first">Ivan</forename><surname>Smalianchuk</surname></persName>
+			<idno type="ORCID">0000-0001-5097-1428</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Uday</forename><forename type="middle">K</forename><surname>Jagadisan</surname></persName>
+			<idno type="ORCID">0000-0003-4253-6041</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Neeraj</forename><forename type="middle">J</forename><surname>Gandhi</surname></persName>
+			<idno type="ORCID">0000-0002-4915-2131</idno>
+		</author>
+		<idno type="DOI">10.1523/jneurosci.0962-18.2018</idno>
+		<idno>1523/JNEUROSCI.0962-18</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Neuroscience</title>
+		<title level="j" type="abbrev">J. Neurosci.</title>
+		<idno type="ISSN">0270-6474</idno>
+		<idno type="ISSNe">1529-2401</idno>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">47</biblScope>
+			<biblScope unit="page" from="10156" to="10167" />
+			<date type="published" when="2018-10-05">2018</date>
+			<publisher>Society for Neuroscience</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,317.45,567.71,221.12,8.96;8,309.07,579.23,229.68,8.96;8,309.07,590.75,229.50,8.96;8,309.07,602.27,229.60,8.96;8,309.07,613.67,112.44,8.96" xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Oculomotor signals</title>
+		<author>
+			<persName coords=""><forename type="first">David</forename><forename type="middle">A</forename><surname>Robinson</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/bs.pbr.2021.10.007</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Progress in Brain Research</title>
+				<editor>
+			<persName><forename type="first">G</forename><surname>Lennerstrand</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">P</forename><surname>Bach-Y-Rita</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Pergamon, Oxford</addrLine></address></meeting>
+		<imprint>
+			<publisher>Elsevier</publisher>
+			<date type="published" when="1975">1975</date>
+			<biblScope unit="page" from="155" to="168" />
+		</imprint>
+	</monogr>
+	<note>Oculomotor control signals</note>
+</biblStruct>
+
+<biblStruct coords="8,317.45,625.19,221.07,8.96;8,309.07,636.71,229.26,8.96;8,309.07,648.23,32.35,8.96;8,379.99,648.23,17.61,8.96;8,436.02,648.23,35.01,8.96;8,509.47,648.23,29.19,8.96" xml:id="b41">
+	<analytic>
+		<title level="a" type="main">The vestibulo‐ocular reflex during human saccadic eye movements.</title>
+		<author>
+			<persName coords=""><forename type="first">V</forename><forename type="middle">P</forename><surname>Laurutis</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">A</forename><surname>Robinson</surname></persName>
+		</author>
+		<idno type="DOI">10.1113/jphysiol.1986.sp016043</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Physiology</title>
+		<title level="j" type="abbrev">The Journal of Physiology</title>
+		<idno type="ISSN">0022-3751</idno>
+		<idno type="ISSNe">1469-7793</idno>
+		<imprint>
+			<biblScope unit="volume">373</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="209" to="233" />
+			<date type="published" when="1986-04">1986</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,317.82,659.78,122.53,8.96" xml:id="b42">
+	<analytic>
+		<title level="a" type="main">The vestibulo‐ocular reflex during human saccadic eye movements.</title>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">P</forename><surname>Laurutis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">A</forename><surname>Robinson</surname></persName>
+		</author>
+		<idno type="DOI">10.1113/jphysiol.1986.sp016043</idno>
+		<idno>1113/jphysiol.1986.sp016043</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Physiology</title>
+		<title level="j" type="abbrev">The Journal of Physiology</title>
+		<idno type="ISSN">0022-3751</idno>
+		<idno type="ISSNe">1469-7793</idno>
+		<imprint>
+			<biblScope unit="volume">373</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="209" to="233" />
+			<date type="published" when="1986-04" />
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,317.45,671.30,220.87,8.96;8,309.07,682.70,229.53,8.96;8,309.07,694.22,229.47,8.96;8,309.07,705.74,103.08,8.96" xml:id="b43">
+	<analytic>
+		<title level="a" type="main">MODELS OF OCULOMOTOR NEURAL ORGANIZATION</title>
+		<author>
+			<persName coords=""><forename type="first">David</forename><forename type="middle">A</forename><surname>Robinson</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/b978-0-12-071050-8.50025-2</idno>
+	</analytic>
+	<monogr>
+		<title level="m">The Control of Eye Movements</title>
+				<editor>
+			<persName><forename type="first">P</forename><surname>Bach-Y-Rita</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">C</forename><forename type="middle">C</forename><surname>Collins</surname></persName>
+		</editor>
+		<meeting><address><addrLine>new York</addrLine></address></meeting>
+		<imprint>
+			<publisher>Elsevier</publisher>
+			<date type="published" when="1971">1971</date>
+			<biblScope unit="page" from="519" to="538" />
+		</imprint>
+	</monogr>
+	<note>The control of eye movements</note>
+</biblStruct>
+
+<biblStruct coords="8,317.45,717.26,220.91,8.96;8,309.07,728.78,229.25,8.96;8,309.07,740.29,229.60,8.96;8,309.07,751.69,85.27,8.96" xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Encoding of action by the Purkinje cells of the cerebellum</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">J</forename><surname>Herzfeld</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Kojima</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Soetedjo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Shadmehr</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/nature15693</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<imprint>
+			<biblScope unit="volume">526</biblScope>
+			<biblScope unit="issue">7573</biblScope>
+			<biblScope unit="page" from="439" to="442" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,317.45,763.21,220.89,8.96;8,309.07,774.73,229.24,8.96;9,56.64,73.24,229.22,8.96;9,56.64,84.64,212.79,8.96" xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Effects of GABA agonist and antagonist injections into the oculomotor vermis on horizontal saccades</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Kojima</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Soetedjo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">F</forename><surname>Fuchs</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.brainres.2010.10.027</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Brain Res</title>
+		<imprint>
+			<biblScope unit="volume">1366</biblScope>
+			<biblScope unit="page" from="93" to="100" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,65.02,96.18,221.11,8.96;9,56.64,107.70,229.43,8.96;9,56.64,119.22,229.65,8.96" xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Influence of Head Restraint on Visually Triggered Saccades in the Rhesus Monkey</title>
+		<author>
+			<persName><forename type="first">Julie</forename><surname>Quinet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Laurent</forename><surname>Goffart</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/j.1749-6632.2003.tb00248.x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Annals of the New York Academy of Sciences</title>
+		<title level="j" type="abbrev">Annals of the New York Academy of Sciences</title>
+		<idno type="ISSN">0077-8923</idno>
+		<idno type="ISSNe">1749-6632</idno>
+		<imprint>
+			<biblScope unit="volume">1004</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="404" to="408" />
+			<date type="published" when="2003-10">2003</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,65.42,130.74,140.45,8.96" xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Influence of Head Restraint on Visually Triggered Saccades in the Rhesus Monkey</title>
+		<author>
+			<persName><forename type="first">Julie</forename><surname>Quinet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Laurent</forename><surname>Goffart</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/j.1749-6632.2003.tb00248.x</idno>
+		<idno>1111/j.1749-6632.2003.tb00248.x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Annals of the New York Academy of Sciences</title>
+		<title level="j" type="abbrev">Annals of the New York Academy of Sciences</title>
+		<idno type="ISSN">0077-8923</idno>
+		<idno type="ISSNe">1749-6632</idno>
+		<imprint>
+			<biblScope unit="volume">1004</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="404" to="408" />
+			<date type="published" when="2003-10" />
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,65.04,142.26,220.85,8.96;9,56.64,153.66,229.27,8.96;9,56.64,165.18,229.18,8.96;9,56.64,176.70,229.64,8.96;9,56.64,188.22,181.97,8.96" xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Neuronal discharge in the posterior cerebellum: its relationship to saccadic eye movement generation</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">G</forename><surname>Mcelligott</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">L</forename><surname>Keller</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Functional basis of ocular motility disorders</title>
+				<editor>
+			<persName><forename type="first">G</forename><surname>Lennerstrand</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">D</forename><forename type="middle">S</forename><surname>Zee</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">E</forename><forename type="middle">L</forename><surname>Keller</surname></persName>
+		</editor>
+		<imprint>
+			<date type="published" when="1982">1982</date>
+			<biblScope unit="page" from="463" to="461" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,65.04,199.74,221.08,8.96;9,56.64,211.26,229.30,8.96;9,56.64,222.66,229.36,8.96;9,56.64,234.18,56.81,8.96;9,138.86,234.18,24.33,8.96;9,188.41,234.18,43.40,8.96;9,257.17,234.18,28.97,8.96" xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Discharge properties of Purkinje cells in the oculomotor vermis during visually guided saccades in the macaque monkey</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Ohtsuka</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Noda</surname></persName>
+		</author>
+		<idno type="DOI">10.1152/jn.1995.74.5.1828</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neurophysiology</title>
+		<title level="j" type="abbrev">Journal of Neurophysiology</title>
+		<idno type="ISSN">0022-3077</idno>
+		<idno type="ISSNe">1522-1598</idno>
+		<imprint>
+			<biblScope unit="volume">74</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1828" to="1840" />
+			<date type="published" when="1995-11-01">1995</date>
+			<publisher>American Physiological Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,65.28,245.70,99.36,8.96" xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Discharge properties of Purkinje cells in the oculomotor vermis during visually guided saccades in the macaque monkey</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Ohtsuka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Noda</surname></persName>
+		</author>
+		<idno type="DOI">10.1152/jn.1995.74.5.1828</idno>
+		<idno>1152/jn.1995.74.5.1828</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neurophysiology</title>
+		<title level="j" type="abbrev">Journal of Neurophysiology</title>
+		<idno type="ISSN">0022-3077</idno>
+		<idno type="ISSNe">1522-1598</idno>
+		<imprint>
+			<biblScope unit="volume">74</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1828" to="1840" />
+			<date type="published" when="1995-11-01" />
+			<publisher>American Physiological Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,65.04,257.22,221.01,8.96;9,56.64,268.74,229.29,8.96;9,56.64,280.29,229.30,8.96;9,56.64,291.69,219.73,8.96" xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Saccade-related Purkinje cell activity in the oculomotor vermis during spontaneous eye movements in light and darkness</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Helmchen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>B�ttner</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/bf00231706</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Experimental Brain Research</title>
+		<title level="j" type="abbrev">Exp Brain Res</title>
+		<idno type="ISSN">0014-4819</idno>
+		<idno type="ISSNe">1432-1106</idno>
+		<imprint>
+			<biblScope unit="volume">103</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="198" to="208" />
+			<date type="published" when="1995-03">1995</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,65.04,303.21,221.03,8.96;9,56.64,314.73,229.26,8.96;9,56.64,326.25,229.67,8.96;9,56.64,337.77,124.63,8.96" xml:id="b52">
+	<analytic>
+		<title level="a" type="main">Cerebellar control of saccade dynamics: contribution of the fastigial oculomotor region</title>
+		<author>
+			<persName><forename type="first">Julie</forename><surname>Quinet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Laurent</forename><surname>Goffart</surname></persName>
+		</author>
+		<idno type="DOI">10.1152/jn.01021.2014</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neurophysiology</title>
+		<title level="j" type="abbrev">Journal of Neurophysiology</title>
+		<idno type="ISSN">0022-3077</idno>
+		<idno type="ISSNe">1522-1598</idno>
+		<imprint>
+			<biblScope unit="volume">113</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="3323" to="3336" />
+			<date type="published" when="2015-05">2015</date>
+			<publisher>American Physiological Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,65.04,349.17,221.17,8.96;9,56.64,360.69,229.21,8.96;9,56.64,372.21,229.60,8.96;9,56.64,383.73,93.03,8.96" xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Saccade-Related Neurons in the Primate Fastigial Nucleus: What Do They Encode?</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">F</forename><surname>Kleine</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Guan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Büttner</surname></persName>
+		</author>
+		<idno type="DOI">10.1152/jn.00021.2003</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neurophysiology</title>
+		<title level="j" type="abbrev">Journal of Neurophysiology</title>
+		<idno type="ISSN">0022-3077</idno>
+		<idno type="ISSNe">1522-1598</idno>
+		<imprint>
+			<biblScope unit="volume">90</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="3137" to="3154" />
+			<date type="published" when="2003-11">2003</date>
+			<publisher>American Physiological Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,65.04,395.25,221.16,8.96;9,56.64,406.77,229.22,8.96;9,56.64,418.17,229.78,8.96;9,56.64,429.69,185.54,8.96" xml:id="b54">
+	<analytic>
+		<title level="a" type="main">Role of the caudal fastigial nucleus in saccade generation. I. Neuronal discharge pattern</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">F</forename><surname>Fuchs</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><forename type="middle">R</forename><surname>Robinson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Straube</surname></persName>
+		</author>
+		<idno type="DOI">10.1152/jn.1993.70.5.1723</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neurophysiology</title>
+		<title level="j" type="abbrev">Journal of Neurophysiology</title>
+		<idno type="ISSN">0022-3077</idno>
+		<idno type="ISSNe">1522-1598</idno>
+		<imprint>
+			<biblScope unit="volume">70</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1723" to="1740" />
+			<date type="published" when="1993-11-01">1993</date>
+			<publisher>American Physiological Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,65.04,441.21,220.93,8.96;9,56.64,452.73,229.23,8.96;9,56.64,464.25,229.66,8.96;9,56.64,475.79,160.31,8.96" xml:id="b55">
+	<analytic>
+		<title level="a" type="main">Microstimulation of the primate cerebellar vermis during saccadic eye movements</title>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">L</forename><surname>Keller</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">P</forename><surname>Slakey</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><forename type="middle">F</forename><surname>Crandall</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/0006-8993(83)90087-2</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Brain Research</title>
+		<title level="j" type="abbrev">Brain Research</title>
+		<idno type="ISSN">0006-8993</idno>
+		<imprint>
+			<biblScope unit="volume">288</biblScope>
+			<biblScope unit="issue">1-2</biblScope>
+			<biblScope unit="page" from="131" to="143" />
+			<date type="published" when="1983-12">1983</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,65.04,487.19,220.87,8.96;9,56.64,498.71,229.50,8.96;9,56.64,510.23,229.23,8.96;9,56.64,521.75,204.93,8.96" xml:id="b56">
+	<analytic>
+		<title level="a" type="main">Saccade Dysmetria during Functional Perturbation of the Caudal Fastigial Nucleus in the Monkey</title>
+		<author>
+			<persName><forename type="first">Laurent</forename><surname>Goffart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Longtang</forename><forename type="middle">L</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">L</forename><surname>Sparks</surname></persName>
+		</author>
+		<idno type="DOI">10.1196/annals.1303.019</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Annals of the New York Academy of Sciences</title>
+		<title level="j" type="abbrev">Annals of the New York Academy of Sciences</title>
+		<idno type="ISSN">0077-8923</idno>
+		<idno type="ISSNe">1749-6632</idno>
+		<imprint>
+			<biblScope unit="volume">1004</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="220" to="228" />
+			<date type="published" when="2003-10">2003</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,65.04,533.27,221.13,8.96;9,56.64,544.67,229.19,8.96;9,56.64,556.19,229.32,8.96;9,56.64,567.71,119.44,8.96" xml:id="b57">
+	<analytic>
+		<title level="a" type="main">Closed-loop optogenetic perturbation of macaque oculomotor cerebellum: evidence for an internal saccade model</title>
+		<author>
+			<persName><forename type="first">Robijanto</forename><surname>Soetedjo</surname></persName>
+			<idno type="ORCID">0000-0002-3776-857X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Gregory</forename><forename type="middle">D</forename><surname>Horwitz</surname></persName>
+			<idno type="ORCID">0000-0001-5130-5259</idno>
+		</author>
+		<idno type="DOI">10.1101/2023.06.22.546199</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J. Neurosci</title>
+		<imprint>
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1" to="15" />
+			<date type="published" when="2024">2024</date>
+			<publisher>Cold Spring Harbor Laboratory</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,65.04,579.23,221.16,8.96;9,56.64,590.75,229.30,8.96;9,56.64,602.27,229.45,8.96;9,56.64,613.67,56.81,8.96;9,142.82,613.67,12.57,8.96;9,184.57,613.67,43.39,8.96;9,257.17,613.67,29.08,8.96" xml:id="b58">
+	<analytic>
+		<title level="a" type="main">Deficits in Saccades and Fixation During Muscimol Inactivation of the Caudal Fastigial Nucleus in the Rhesus Monkey</title>
+		<author>
+			<persName><forename type="first">Laurent</forename><surname>Goffart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Longtang</forename><forename type="middle">L</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">L</forename><surname>Sparks</surname></persName>
+		</author>
+		<idno type="DOI">10.1152/jn.01199.2003</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neurophysiology</title>
+		<title level="j" type="abbrev">Journal of Neurophysiology</title>
+		<idno type="ISSN">0022-3077</idno>
+		<idno type="ISSNe">1522-1598</idno>
+		<imprint>
+			<biblScope unit="volume">92</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="3351" to="3367" />
+			<date type="published" when="2004-12">2004</date>
+			<publisher>American Physiological Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,65.50,625.19,84.17,8.96" xml:id="b59">
+	<analytic>
+		<title level="a" type="main">Deficits in Saccades and Fixation During Muscimol Inactivation of the Caudal Fastigial Nucleus in the Rhesus Monkey</title>
+		<author>
+			<persName><forename type="first">Laurent</forename><surname>Goffart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Longtang</forename><forename type="middle">L</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">L</forename><surname>Sparks</surname></persName>
+		</author>
+		<idno type="DOI">10.1152/jn.01199.2003</idno>
+		<idno>1152/jn.01199.2003</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neurophysiology</title>
+		<title level="j" type="abbrev">Journal of Neurophysiology</title>
+		<idno type="ISSN">0022-3077</idno>
+		<idno type="ISSNe">1522-1598</idno>
+		<imprint>
+			<biblScope unit="volume">92</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="3351" to="3367" />
+			<date type="published" when="2004-12" />
+			<publisher>American Physiological Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,65.04,636.71,220.99,8.96;9,56.64,648.23,229.28,8.96;9,56.64,659.78,229.23,8.96;9,56.64,671.30,229.67,8.96;9,56.64,682.70,93.03,8.96" xml:id="b60">
+	<analytic>
+		<title level="a" type="main">Bilateral control of interceptive saccades: evidence from the ipsipulsion of vertical saccades after caudal fastigial inactivation</title>
+		<author>
+			<persName><forename type="first">Clara</forename><surname>Bourrelly</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Julie</forename><surname>Quinet</surname></persName>
+			<idno type="ORCID">0000-0003-3043-3424</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Laurent</forename><surname>Goffart</surname></persName>
+			<idno type="ORCID">0000-0001-8767-1867</idno>
+		</author>
+		<idno type="DOI">10.1152/jn.00037.2021</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neurophysiology</title>
+		<title level="j" type="abbrev">Journal of Neurophysiology</title>
+		<idno type="ISSN">0022-3077</idno>
+		<idno type="ISSNe">1522-1598</idno>
+		<imprint>
+			<biblScope unit="volume">125</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="2068" to="2083" />
+			<date type="published" when="2021-06-01">2021</date>
+			<publisher>American Physiological Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,65.04,694.22,220.93,8.96;9,56.64,705.74,229.49,8.96;9,56.64,717.26,229.29,8.96;9,56.64,728.78,229.62,8.96;9,56.64,740.29,102.97,8.96" xml:id="b61">
+	<analytic>
+		<title level="a" type="main">Modification of saccadic eye movements by GABA-related substances. I. Effect of muscimol and bicuculline in monkey superior colliculus</title>
+		<author>
+			<persName coords=""><forename type="first">O</forename><surname>Hikosaka</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">H</forename><surname>Wurtz</surname></persName>
+		</author>
+		<idno type="DOI">10.1152/jn.1985.53.1.266</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neurophysiology</title>
+		<title level="j" type="abbrev">Journal of Neurophysiology</title>
+		<idno type="ISSN">0022-3077</idno>
+		<idno type="ISSNe">1522-1598</idno>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="266" to="291" />
+			<date type="published" when="1985-01-01">1985</date>
+			<publisher>American Physiological Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,65.04,751.69,220.78,8.96;9,56.64,763.21,229.23,8.96;9,309.07,73.24,229.69,8.96;9,309.07,84.64,70.02,8.96" xml:id="b62">
+	<analytic>
+		<title level="a" type="main">Some collicular efferent neurons code saccadic eye velocity</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Berthoz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Grantyn</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Droulez</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/0304-3940(86)90528-8</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuroscience Letters</title>
+		<title level="j" type="abbrev">Neuroscience Letters</title>
+		<idno type="ISSN">0304-3940</idno>
+		<imprint>
+			<biblScope unit="volume">72</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="289" to="294" />
+			<date type="published" when="1986-12">1986</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,317.45,96.18,221.08,8.96;9,309.07,107.70,229.44,8.96;9,309.07,119.22,229.46,8.96;9,309.07,130.74,212.20,8.96;9,309.07,142.26,229.30,8.96;9,309.07,153.66,229.49,8.96;9,309.07,165.18,229.63,8.96;9,309.07,176.70,229.32,8.96;9,309.07,188.22,38.47,8.96;9,377.35,188.22,29.32,8.96;9,436.33,188.22,43.45,8.96;9,509.58,188.22,29.08,8.96" xml:id="b63">
+	<analytic>
+		<title level="a" type="main">Superior colliculus neurons mediate the dynamic characteristics of saccades</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">M</forename><surname>Waitzman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">P</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">M</forename><surname>Optican</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">H</forename><surname>Wurtz</surname></persName>
+		</author>
+		<idno type="DOI">10.1152/jn.1991.66.5.1716</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neurophysiology</title>
+		<title level="j" type="abbrev">Journal of Neurophysiology</title>
+		<idno type="ISSN">0022-3077</idno>
+		<idno type="ISSNe">1522-1598</idno>
+		<imprint>
+			<biblScope unit="volume">66</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1716" to="1737" />
+			<date type="published" when="1991-11-01">1991. 2009</date>
+			<publisher>American Physiological Society</publisher>
+		</imprint>
+	</monogr>
+	<note>J. Neurosci.</note>
+</biblStruct>
+
+<biblStruct coords="9,318.90,199.74,137.68,8.96" xml:id="b64">
+	<analytic>
+		<title level="a" type="main">Firing Patterns in Superior Colliculus of Head-Unrestrained Monkey during Normal and Perturbed Gaze Saccades Reveal Short-Latency Feedback and a Sluggish Rostral Shift in Activity</title>
+		<author>
+			<persName><forename type="first">Woo</forename><forename type="middle">Young</forename><surname>Choi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Guitton</surname></persName>
+		</author>
+		<idno type="DOI">10.1523/jneurosci.5038-08.2009</idno>
+		<idno>1523/JNEUROSCI.5038-08.2009</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Neuroscience</title>
+		<title level="j" type="abbrev">J. Neurosci.</title>
+		<idno type="ISSN">0270-6474</idno>
+		<idno type="ISSNe">1529-2401</idno>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">22</biblScope>
+			<biblScope unit="page" from="7166" to="7180" />
+			<date type="published" when="2009-06-03" />
+			<publisher>Society for Neuroscience</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,317.45,211.26,220.90,8.96;9,309.07,222.66,229.57,8.96;9,309.07,234.18,229.33,8.96;9,309.07,245.70,56.81,8.96;9,394.63,245.70,24.35,8.96;9,447.56,245.70,33.42,8.96;9,509.59,245.70,29.08,8.96" xml:id="b65">
+	<analytic>
+		<title level="a" type="main">Two-Dimensional Saccade-Related Population Activity in Superior Colliculus in Monkey</title>
+		<author>
+			<persName><forename type="first">Russell</forename><forename type="middle">W</forename><surname>Anderson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Edward</forename><forename type="middle">L</forename><surname>Keller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Neeraj</forename><forename type="middle">J</forename><surname>Gandhi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sanjoy</forename><surname>Das</surname></persName>
+		</author>
+		<idno type="DOI">10.1152/jn.1998.80.2.798</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neurophysiology</title>
+		<title level="j" type="abbrev">Journal of Neurophysiology</title>
+		<idno type="ISSN">0022-3077</idno>
+		<idno type="ISSNe">1522-1598</idno>
+		<imprint>
+			<biblScope unit="volume">80</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="798" to="817" />
+			<date type="published" when="1998-08-01">1998</date>
+			<publisher>American Physiological Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,317.65,257.22,94.39,8.96" xml:id="b66">
+	<analytic>
+		<title level="a" type="main">Two-Dimensional Saccade-Related Population Activity in Superior Colliculus in Monkey</title>
+		<author>
+			<persName><forename type="first">Russell</forename><forename type="middle">W</forename><surname>Anderson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Edward</forename><forename type="middle">L</forename><surname>Keller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Neeraj</forename><forename type="middle">J</forename><surname>Gandhi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sanjoy</forename><surname>Das</surname></persName>
+		</author>
+		<idno type="DOI">10.1152/jn.1998.80.2.798</idno>
+		<idno>1152/jn.1998.80.2.798</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neurophysiology</title>
+		<title level="j" type="abbrev">Journal of Neurophysiology</title>
+		<idno type="ISSN">0022-3077</idno>
+		<idno type="ISSNe">1522-1598</idno>
+		<imprint>
+			<biblScope unit="volume">80</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="798" to="817" />
+			<date type="published" when="1998-08-01" />
+			<publisher>American Physiological Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,317.45,268.74,221.19,8.96;9,309.07,280.29,229.21,8.96;9,309.07,291.69,229.59,8.96;9,309.07,303.21,108.00,8.96" xml:id="b67">
+	<analytic>
+		<title level="a" type="main">Blink-Perturbed Saccades in Monkey. II. Superior Colliculus Activity</title>
+		<author>
+			<persName coords=""><forename type="first">H</forename><forename type="middle">H L M</forename><surname>Goossens</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">J</forename><surname>Van Opstal</surname></persName>
+		</author>
+		<idno type="DOI">10.1152/jn.2000.83.6.3430</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neurophysiology</title>
+		<title level="j" type="abbrev">Journal of Neurophysiology</title>
+		<idno type="ISSN">0022-3077</idno>
+		<idno type="ISSNe">1522-1598</idno>
+		<imprint>
+			<biblScope unit="volume">83</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="3430" to="3452" />
+			<date type="published" when="2000-06-01">2000</date>
+			<publisher>American Physiological Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,317.45,314.73,220.87,8.96;9,309.07,326.25,229.25,8.96;9,309.07,337.77,229.69,8.96;9,309.07,349.17,148.25,8.96" xml:id="b68">
+	<analytic>
+		<title level="a" type="main">Activity in deep intermediate layer collicular neurons during interrupted saccades</title>
+		<author>
+			<persName><forename type="first">Edward</forename><forename type="middle">L</forename><surname>Keller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Neeraj</forename><forename type="middle">J</forename><surname>Gandhi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Vijay Sekaran</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s002219900239</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Experimental Brain Research</title>
+		<title level="j" type="abbrev">Exp Brain Res</title>
+		<idno type="ISSN">0014-4819</idno>
+		<idno type="ISSNe">1432-1106</idno>
+		<imprint>
+			<biblScope unit="volume">130</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="227" to="237" />
+			<date type="published" when="2000-01">2000</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,317.45,360.69,221.01,8.96;9,309.07,372.21,229.20,8.96;9,309.07,383.73,229.81,8.96;9,309.07,395.25,162.14,8.96" xml:id="b69">
+	<analytic>
+		<title level="a" type="main">Saccade-related activity in monkey superior colliculus. I. Characteristics of burst and buildup cells</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">P</forename><surname>Munoz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">H</forename><surname>Wurtz</surname></persName>
+		</author>
+		<idno type="DOI">10.1152/jn.1995.73.6.2313</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neurophysiology</title>
+		<title level="j" type="abbrev">Journal of Neurophysiology</title>
+		<idno type="ISSN">0022-3077</idno>
+		<idno type="ISSNe">1522-1598</idno>
+		<imprint>
+			<biblScope unit="volume">73</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="2313" to="2333" />
+			<date type="published" when="1995-06-01">1995</date>
+			<publisher>American Physiological Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,317.45,406.77,221.10,8.96;9,309.07,418.17,229.24,8.96;9,309.07,429.69,229.63,8.96;9,309.07,441.21,139.69,8.96" xml:id="b70">
+	<analytic>
+		<title level="a" type="main">Activity of neurons in monkey superior colliculus during interrupted saccades</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">P</forename><surname>Munoz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">M</forename><surname>Waitzman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">H</forename><surname>Wurtz</surname></persName>
+		</author>
+		<idno type="DOI">10.1152/jn.1996.75.6.2562</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neurophysiology</title>
+		<title level="j" type="abbrev">Journal of Neurophysiology</title>
+		<idno type="ISSN">0022-3077</idno>
+		<idno type="ISSNe">1522-1598</idno>
+		<imprint>
+			<biblScope unit="volume">75</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="2562" to="2580" />
+			<date type="published" when="1996-06-01">1996</date>
+			<publisher>American Physiological Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,317.45,452.73,220.94,8.96;9,309.07,464.25,229.20,8.96;9,309.07,475.79,229.60,8.96;9,309.07,487.19,93.03,8.96" xml:id="b71">
+	<analytic>
+		<title level="a" type="main">Discharge Properties of Monkey Tectoreticular Neurons</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">Kip</forename><surname>Rodgers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Douglas</forename><forename type="middle">P</forename><surname>Munoz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephen</forename><forename type="middle">H</forename><surname>Scott</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Paré</surname></persName>
+		</author>
+		<idno type="DOI">10.1152/jn.00908.2005</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neurophysiology</title>
+		<title level="j" type="abbrev">Journal of Neurophysiology</title>
+		<idno type="ISSN">0022-3077</idno>
+		<idno type="ISSNe">1522-1598</idno>
+		<imprint>
+			<biblScope unit="volume">95</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="3502" to="3511" />
+			<date type="published" when="2006-06">2006</date>
+			<publisher>American Physiological Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,317.45,498.71,220.85,8.96;9,309.07,510.23,229.44,8.96;9,309.07,521.75,229.61,8.96" xml:id="b72">
+	<analytic>
+		<title level="a" type="main">Movement fields of saccade-related burst neurons in the monkey superior colliculus</title>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">L</forename><surname>Sparks</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lawrence</forename><forename type="middle">E</forename><surname>Mays</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/0006-8993(80)91158-0</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Brain Research</title>
+		<title level="j" type="abbrev">Brain Research</title>
+		<idno type="ISSN">0006-8993</idno>
+		<imprint>
+			<biblScope unit="volume">190</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="39" to="50" />
+			<date type="published" when="1980-05">1980</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,318.25,533.27,119.31,8.96" xml:id="b73">
+	<analytic>
+		<title level="a" type="main">Movement fields of saccade-related burst neurons in the monkey superior colliculus</title>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">L</forename><surname>Sparks</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lawrence</forename><forename type="middle">E</forename><surname>Mays</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/0006-8993(80)91158-0</idno>
+		<idno>1016/0006-8993(80)91158-0</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Brain Research</title>
+		<title level="j" type="abbrev">Brain Research</title>
+		<idno type="ISSN">0006-8993</idno>
+		<imprint>
+			<biblScope unit="volume">190</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="39" to="50" />
+			<date type="published" when="1980-05" />
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,317.45,544.67,220.92,8.96;9,309.07,556.19,229.35,8.96;9,309.07,567.71,229.63,8.96;9,309.07,579.23,139.69,8.96" xml:id="b74">
+	<analytic>
+		<title level="a" type="main">Effect of ibotenic acid lesions of the omnipause neurons on saccadic eye movements in rhesus macaques</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">R</forename><surname>Kaneko</surname></persName>
+		</author>
+		<idno type="DOI">10.1152/jn.1996.75.6.2229</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neurophysiology</title>
+		<title level="j" type="abbrev">Journal of Neurophysiology</title>
+		<idno type="ISSN">0022-3077</idno>
+		<idno type="ISSNe">1522-1598</idno>
+		<imprint>
+			<biblScope unit="volume">75</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="2229" to="2242" />
+			<date type="published" when="1996-06-01">1996</date>
+			<publisher>American Physiological Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,317.45,590.75,220.86,8.96;9,309.07,602.27,229.23,8.96;9,309.07,613.67,229.33,8.96;9,309.07,625.19,56.81,8.96;9,394.63,625.19,24.29,8.96;9,447.51,625.19,33.47,8.96;9,509.59,625.19,29.08,8.96" xml:id="b75">
+	<analytic>
+		<title level="a" type="main">Evidence That the Superior Colliculus Participates in the Feedback Control of Saccadic Eye Movements</title>
+		<author>
+			<persName><forename type="first">Robijanto</forename><surname>Soetedjo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chris</forename><forename type="middle">R S</forename><surname>Kaneko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Albert</forename><forename type="middle">F</forename><surname>Fuchs</surname></persName>
+		</author>
+		<idno type="DOI">10.1152/jn.00886.2000</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neurophysiology</title>
+		<title level="j" type="abbrev">Journal of Neurophysiology</title>
+		<idno type="ISSN">0022-3077</idno>
+		<idno type="ISSNe">1522-1598</idno>
+		<imprint>
+			<biblScope unit="volume">87</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="679" to="695" />
+			<date type="published" when="2002-02-01">2002</date>
+			<publisher>American Physiological Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,317.93,636.71,84.17,8.96" xml:id="b76">
+	<analytic>
+		<title level="a" type="main">Evidence That the Superior Colliculus Participates in the Feedback Control of Saccadic Eye Movements</title>
+		<author>
+			<persName><forename type="first">Robijanto</forename><surname>Soetedjo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chris</forename><forename type="middle">R S</forename><surname>Kaneko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Albert</forename><forename type="middle">F</forename><surname>Fuchs</surname></persName>
+		</author>
+		<idno type="DOI">10.1152/jn.00886.2000</idno>
+		<idno>1152/jn.00886.2000</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neurophysiology</title>
+		<title level="j" type="abbrev">Journal of Neurophysiology</title>
+		<idno type="ISSN">0022-3077</idno>
+		<idno type="ISSNe">1522-1598</idno>
+		<imprint>
+			<biblScope unit="volume">87</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="679" to="695" />
+			<date type="published" when="2002-02-01" />
+			<publisher>American Physiological Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,317.45,648.23,220.77,8.96;9,309.07,659.78,229.55,8.96;9,309.07,671.30,229.33,8.96;9,309.07,682.70,229.69,8.96;9,309.07,694.22,168.33,8.96" xml:id="b77">
+	<analytic>
+		<title level="a" type="main">Frontal eye field inactivation alters the readout of superior colliculus activity for saccade generation in a task-dependent manner</title>
+		<author>
+			<persName><forename type="first">Tyler</forename><forename type="middle">R</forename><surname>Peel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Suryadeep</forename><surname>Dash</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephen</forename><forename type="middle">G</forename><surname>Lomber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brian</forename><forename type="middle">D</forename><surname>Corneil</surname></persName>
+			<idno type="ORCID">0000-0002-4702-7089</idno>
+		</author>
+		<idno type="DOI">10.1007/s10827-020-00760-7</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Computational Neuroscience</title>
+		<title level="j" type="abbrev">J Comput Neurosci</title>
+		<idno type="ISSN">0929-5313</idno>
+		<idno type="ISSNe">1573-6873</idno>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="229" to="249" />
+			<date type="published" when="2021">2021</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,317.45,705.74,220.92,8.96;9,309.07,717.26,229.23,8.96;9,309.07,728.78,229.28,8.96;9,309.07,740.29,65.04,8.96" xml:id="b78">
+	<analytic>
+		<title level="a" type="main">Force development and velocity of saccadic eye movements in exotropia</title>
+		<author>
+			<persName><forename type="first">Gunnar</forename><surname>Lennerstrand</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Suna</forename><surname>Tian</surname></persName>
+		</author>
+		<idno type="DOI">10.3109/01658109509044592</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neuro-Ophthalmology</title>
+		<title level="j" type="abbrev">Neuro-Ophthalmology</title>
+		<idno type="ISSN">0165-8107</idno>
+		<idno type="ISSNe">1744-506X</idno>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="111" to="126" />
+			<date type="published" when="1993">1993</date>
+			<publisher>Informa UK Limited</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,317.45,751.69,220.87,8.96;9,309.07,763.21,229.21,8.96;9,309.07,774.73,229.31,8.96;10,56.64,73.24,22.23,8.96;10,106.29,73.24,17.39,8.96;10,151.22,73.24,17.61,8.96;10,196.32,73.24,33.45,8.96;10,257.18,73.24,29.19,8.96" xml:id="b79">
+	<analytic>
+		<title level="a" type="main">Synchronizing the tracking eye movements with the motion of a visual target: Basic neural processes</title>
+		<author>
+			<persName><forename type="first">Laurent</forename><surname>Goffart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Clara</forename><surname>Bourrelly</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Julie</forename><surname>Quinet</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/bs.pbr.2017.07.009</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Progress in Brain Research</title>
+				<imprint>
+			<publisher>Elsevier</publisher>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="volume">236</biblScope>
+			<biblScope unit="page" from="243" to="268" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,65.29,84.64,103.79,8.96" xml:id="b80">
+	<analytic>
+		<title level="a" type="main">Synchronizing the tracking eye movements with the motion of a visual target: Basic neural processes</title>
+		<author>
+			<persName><forename type="first">Laurent</forename><surname>Goffart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Clara</forename><surname>Bourrelly</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Julie</forename><surname>Quinet</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/bs.pbr.2017.07.009</idno>
+		<idno>1016/bs.pbr.2017.07.009</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Progress in Brain Research</title>
+				<imprint>
+			<publisher>Elsevier</publisher>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="243" to="268" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,65.04,96.18,220.80,8.96;10,56.64,107.70,229.29,8.96;10,56.64,119.22,223.38,8.96;10,56.64,130.74,187.22,8.96" xml:id="b81">
+	<analytic>
+		<title level="a" type="main">Quantitative Analysis of Abducens Neuron Discharge Dynamics During Saccadic and Slow Eye Movements</title>
+		<author>
+			<persName><forename type="first">Pierre</forename><forename type="middle">A</forename><surname>Sylvestre</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kathleen</forename><forename type="middle">E</forename><surname>Cullen</surname></persName>
+		</author>
+		<idno type="DOI">10.1152/jn.1999.82.5.2612</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neurophysiology</title>
+		<title level="j" type="abbrev">Journal of Neurophysiology</title>
+		<idno type="ISSN">0022-3077</idno>
+		<idno type="ISSNe">1522-1598</idno>
+		<imprint>
+			<biblScope unit="volume">82</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="2612" to="2632" />
+			<date type="published" when="1999-11-01">1999</date>
+			<publisher>American Physiological Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,65.04,142.26,221.04,8.96;10,56.64,153.66,229.30,8.96;10,56.64,165.18,229.23,8.96;10,56.64,176.70,26.83,8.96;10,106.16,176.70,30.20,8.96;10,159.14,176.70,17.89,8.96;10,199.57,176.70,35.01,8.96;10,257.19,176.70,29.08,8.96" xml:id="b82">
+	<analytic>
+		<title level="a" type="main">Anatomy and physiology of saccadic burst neurons in the alert squirrel monkey. I. Excitatory burst neurons</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Strassman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">M</forename><surname>Highstein</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">A</forename><surname>Mccrea</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/cne.902490303</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Comparative Neurology</title>
+		<title level="j" type="abbrev">J of Comparative Neurology</title>
+		<idno type="ISSN">0021-9967</idno>
+		<idno type="ISSNe">1096-9861</idno>
+		<imprint>
+			<biblScope unit="volume">249</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="337" to="357" />
+			<date type="published" when="1986-07-15">1986</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,65.84,188.22,87.45,8.96" xml:id="b83">
+	<analytic>
+		<title level="a" type="main">Anatomy and physiology of saccadic burst neurons in the alert squirrel monkey. I. Excitatory burst neurons</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Strassman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">M</forename><surname>Highstein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">A</forename><surname>Mccrea</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/cne.902490303</idno>
+		<idno>1002/cne.902490303</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Comparative Neurology</title>
+		<title level="j" type="abbrev">J of Comparative Neurology</title>
+		<idno type="ISSN">0021-9967</idno>
+		<idno type="ISSNe">1096-9861</idno>
+		<imprint>
+			<biblScope unit="volume">249</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="337" to="357" />
+			<date type="published" when="1986-07-15" />
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,65.04,199.74,220.96,8.96;10,56.64,211.26,229.30,8.96;10,56.64,222.66,229.19,8.96;10,56.64,234.18,26.83,8.96;10,106.16,234.18,30.20,8.96;10,159.14,234.18,17.89,8.96;10,199.61,234.18,34.97,8.96;10,257.19,234.18,29.08,8.96" xml:id="b84">
+	<analytic>
+		<title level="a" type="main">Anatomy and physiology of saccadic burst neurons in the alert squirrel monkey. II. Inhibitory burst neurons</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Strassman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">M</forename><surname>Highstein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">A</forename><surname>Mccrea</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/cne.902490304</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Comparative Neurology</title>
+		<title level="j" type="abbrev">J of Comparative Neurology</title>
+		<idno type="ISSN">0021-9967</idno>
+		<idno type="ISSNe">1096-9861</idno>
+		<imprint>
+			<biblScope unit="volume">249</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="358" to="380" />
+			<date type="published" when="1986-07-15">1986</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,65.84,245.70,87.45,8.96" xml:id="b85">
+	<analytic>
+		<title level="a" type="main">Anatomy and physiology of saccadic burst neurons in the alert squirrel monkey. II. Inhibitory burst neurons</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Strassman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">M</forename><surname>Highstein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">A</forename><surname>Mccrea</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/cne.902490304</idno>
+		<idno>1002/cne.902490304</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Comparative Neurology</title>
+		<title level="j" type="abbrev">J of Comparative Neurology</title>
+		<idno type="ISSN">0021-9967</idno>
+		<idno type="ISSNe">1096-9861</idno>
+		<imprint>
+			<biblScope unit="volume">249</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="358" to="380" />
+			<date type="published" when="1986-07-15" />
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,65.04,257.22,220.79,8.96;10,56.64,268.74,229.39,8.96;10,56.64,280.29,229.61,8.96;10,56.64,291.69,114.20,8.96" xml:id="b86">
+	<analytic>
+		<title level="a" type="main">The brainstem burst generator for saccadic eye movements</title>
+		<author>
+			<persName><forename type="first">Charles</forename><surname>Scudder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chris</forename><surname>Kaneko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Albert</forename><surname>Fuchs</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00221-001-0912-9</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Experimental Brain Research</title>
+		<title level="j" type="abbrev">Experimental Brain Research</title>
+		<idno type="ISSN">0014-4819</idno>
+		<idno type="ISSNe">1432-1106</idno>
+		<imprint>
+			<biblScope unit="volume">142</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="439" to="462" />
+			<date type="published" when="2002-02-01">2002</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,65.04,303.21,220.76,8.96;10,56.64,314.73,229.14,8.96;10,56.64,326.25,229.61,8.96;10,56.64,337.77,108.00,8.96" xml:id="b87">
+	<analytic>
+		<title level="a" type="main">Evidence Against Direct Connections to PPRF EBNs From SC in the Monkey</title>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">L</forename><surname>Keller</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">M</forename><surname>Mcpeek</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Salz</surname></persName>
+		</author>
+		<idno type="DOI">10.1152/jn.2000.84.3.1303</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neurophysiology</title>
+		<title level="j" type="abbrev">Journal of Neurophysiology</title>
+		<idno type="ISSN">0022-3077</idno>
+		<idno type="ISSNe">1522-1598</idno>
+		<imprint>
+			<biblScope unit="volume">84</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="1303" to="1313" />
+			<date type="published" when="2000-09-01">2000</date>
+			<publisher>American Physiological Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,65.04,349.17,221.32,8.96;10,56.64,360.69,153.00,8.96" xml:id="b88">
+	<analytic>
+		<title level="a" type="main">Morgan, Alfred. First principles of radio communication. New York: D. Appleton‐Century Company, 1913. 366 p. $3.00</title>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Spencer</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/sce.3730280517</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Science Education</title>
+		<title level="j" type="abbrev">Science Education</title>
+		<idno type="ISSN">0036-8326</idno>
+		<idno type="ISSNe">1098-237X</idno>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="295" to="295" />
+			<date type="published" when="1871">1871</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,317.45,73.24,220.99,8.96;10,309.07,84.64,229.29,8.96;10,309.07,96.18,99.07,8.96" xml:id="b89">
+	<monogr>
+		<title level="m" type="main">Simplexity</title>
+		<author>
+			<persName><forename type="first">Alain</forename><surname>Berthoz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Giselle</forename><surname>Weiss</surname></persName>
+		</author>
+		<idno type="DOI">10.12987/yale/9780300169348.001.0001</idno>
+		<imprint>
+			<date type="published" when="2012-01-24">2012</date>
+			<publisher>Yale University Press</publisher>
+			<pubPlace>New Haven</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,317.45,107.70,220.93,8.96;10,309.07,119.22,229.39,8.96;10,309.07,130.63,144.30,9.07" xml:id="b90">
+	<analytic>
+		<title level="a" type="main">Espace perçu, espace vécu, espace conçu</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Berthoz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="s">Les espaces de l&apos;homme</title>
+		<editor>A. Berthoz and R. Recht</editor>
+		<imprint>
+			<date type="published" when="2005">2005</date>
+			<publisher>Odile Jacob</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,317.45,142.26,221.21,8.96;10,309.07,153.66,229.22,8.96;10,309.07,165.18,229.46,8.96;10,309.07,176.70,202.10,8.96" xml:id="b91">
+	<analytic>
+		<title level="a" type="main">Evolutionary Epistemology — A Challenge to Science and Philosophy</title>
+		<author>
+			<persName coords=""><forename type="first">Franz</forename><forename type="middle">M</forename><surname>Wuketits</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-94-009-7127-1_1</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Concepts and Approaches in Evolutionary Epistemology</title>
+				<editor>
+			<persName><forename type="first">F</forename><forename type="middle">M</forename><surname>Wuketits</surname></persName>
+		</editor>
+		<imprint>
+			<publisher>Springer Netherlands</publisher>
+			<date type="published" when="1984">1984</date>
+			<biblScope unit="page" from="1" to="33" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,317.45,188.11,221.07,9.07;10,309.07,199.74,229.50,8.96;10,309.07,211.26,229.46,8.96;10,309.07,222.66,229.17,8.96;10,309.07,234.18,229.55,8.96;10,309.07,245.70,147.75,8.96" xml:id="b92">
+	<analytic>
+		<title level="a" type="main">Index des notions</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Goffart</surname></persName>
+		</author>
+		<idno type="DOI">10.3917/sh.dorti.2014.01.0470</idno>
+		<ptr target="https://amu.hal.science/tel-04070171" />
+	</analytic>
+	<monogr>
+		<title level="m">Le cerveau et la pensée</title>
+				<imprint>
+			<publisher>Éditions Sciences Humaines</publisher>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="page" from="470" to="474" />
+		</imprint>
+		<respStmt>
+			<orgName>Aix Marseille Université</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,317.45,257.12,220.93,9.06;10,309.07,268.64,229.58,9.06;10,309.07,280.29,65.25,8.96" xml:id="b93">
+	<analytic>
+		<title level="a" type="main">Commentary on Alison Gopnik&apos;s “The Scientist As Child”</title>
+		<author>
+			<persName coords=""><forename type="first">Miriam</forename><surname>Solomon</surname></persName>
+		</author>
+		<idno type="DOI">10.1086/289975</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Philosophy of Science</title>
+		<title level="j" type="abbrev">Philos. of Sci.</title>
+		<idno type="ISSN">0031-8248</idno>
+		<idno type="ISSNe">1539-767X</idno>
+		<imprint>
+			<biblScope unit="volume">63</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="547" to="551" />
+			<date type="published" when="1996-12">1996</date>
+			<publisher>Cambridge University Press (CUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,317.45,291.58,221.13,9.07;10,309.07,303.21,29.25,8.96" xml:id="b94">
+	<monogr>
+		<title level="m" type="main">L&apos;esprit sociologique. La découverte</title>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Lahire</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,317.45,314.73,221.09,8.96;10,309.07,326.25,229.63,8.96;10,309.07,337.77,29.19,8.96" xml:id="b95">
+	<analytic>
+		<title level="a" type="main">Sociologie religieuse et théorie de la connaissance</title>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Durkheim</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Rev. Métaphys. Morale</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="733" to="758" />
+			<date type="published" when="1909">1909</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

@@ -1,0 +1,1780 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">LLM Voting: Human Choices and AI Collective Decision-Making</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2024-05-15">15 May 2024</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,75.56,129.91,79.51,10.75"><forename type="first">Joshua</forename><forename type="middle">C</forename><surname>Yang</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Computational Social Science ETH Zurich Zürich</orgName>
+								<address>
+									<country key="CH">Switzerland</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,165.53,129.91,85.36,10.75"><forename type="first">Damian</forename><surname>Dailisan</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Computational Social Science ETH Zurich Zürich</orgName>
+								<address>
+									<country key="CH">Switzerland</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,261.35,129.91,81.28,10.75"><forename type="first">Marcin</forename><surname>Korecki</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Computational Social Science ETH Zurich Zürich</orgName>
+								<address>
+									<country key="CH">Switzerland</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,353.10,129.91,103.96,10.75"><forename type="first">Carina</forename><forename type="middle">I</forename><surname>Hausladen</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Computational Social Science ETH Zurich Zürich</orgName>
+								<address>
+									<country key="CH">Switzerland</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,467.52,129.91,67.43,10.75"><forename type="first">Dirk</forename><surname>Helbing</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Computational Social Science ETH Zurich Zürich</orgName>
+								<address>
+									<country key="CH">Switzerland</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">LLM Voting: Human Choices and AI Collective Decision-Making</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2024-05-15">15 May 2024</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">46E6A95186EA395505A58785CC9BCBFB</idno>
+					<idno type="arXiv">arXiv:2402.01766v2[cs.CL]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2024-05-18T21:25+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>This paper investigates the voting behaviors of Large Language Models (LLMs), specifically GPT-4 and LLaMA-2, their biases, and how they align with human voting patterns. Our methodology involved using a dataset from a human voting experiment to establish a baseline for human preferences and a corresponding experiment with LLM agents. We observed that the methods used for voting input and the presentation of choices influence LLM voting behavior. We discovered that varying the persona can reduce some of these biases and enhance alignment with human choices. While the Chainof-Thought approach did not improve prediction accuracy, it has potential for AI explainability in the voting process. We also identified a trade-off between preference diversity and alignment accuracy in LLMs, influenced by different temperature settings. Our findings indicate that LLMs may lead to less diverse collective outcomes and biased assumptions when used in voting scenarios, emphasizing the importance of cautious integration of LLMs into democratic processes.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="17" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="18" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="19" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="20" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">Introduction</head><p>Recent breakthroughs in generative models have marked a significant achievement in Artificial Intelligence (AI): the creation of machines capable of fluently processing human language. Large Language Models (LLMs) are increasingly being integrated into a variety of services. As with many discoveries before, a great deal of enthusiasm has been associated with LLMs and their potential applications. As exciting and potentially useful LLMs may be, however, they are also limited in various ways, and their uncritical integration with the social fabric may bring many unforeseen consequences.</p><p>Researchers, for example, have proposed the use of LLMs to replicate studies with human participants <ref type="bibr" coords="1,231.55,569.38,60.95,8.64;1,54.00,580.34,63.65,8.64" target="#b0">(Aher, Arriaga, and Kalai 2023;</ref><ref type="bibr" coords="1,120.15,580.34,78.17,8.64" target="#b3">Argyle et al. 2023b)</ref>. Similarly, LLMs have been applied to simulate human economic behavior <ref type="bibr" coords="1,260.96,591.30,31.54,8.64;1,54.00,602.25,21.44,8.64">(Horton 2023)</ref>. Such simulations of human behaviors may further be considered for the investigation of social media platforms and the evaluation of news feed algorithms <ref type="bibr" coords="1,229.73,624.17,62.77,8.64;1,54.00,635.13,21.44,8.64" target="#b38">(Törnberg et al. 2023)</ref>. Some propose the use of LLMs in the context of democratic discourse to improve online conversations <ref type="bibr" coords="1,275.56,646.09,12.71,8.64;1,54.00,657.05,64.08,8.64" target="#b2">(Argyle et al. 2023a</ref>). Another proposal is to use LLMs to perform human-related scientific research <ref type="bibr" coords="1,211.67,668.01,80.84,8.64;1,319.50,219.48,69.56,8.64" target="#b7">(Boiko, MacKnight, and Gomes 2023;</ref><ref type="bibr" coords="1,391.18,219.48,65.31,8.64" target="#b9">Bran et al. 2023;</ref><ref type="bibr" coords="1,458.62,219.48,95.10,8.64" target="#b35">Sourati and Evans 2023)</ref>.</p><p>Despite the impressive development of LLMs, however, it is clear that LLMs are currently still limited and prone to errors <ref type="bibr" coords="1,345.95,252.99,110.91,8.64" target="#b34">(Sobieszek and Price 2022;</ref><ref type="bibr" coords="1,460.08,252.99,51.79,8.64" target="#b17">Floridi 2023)</ref>. The "hallucinations" <ref type="bibr" coords="1,372.02,263.95,70.37,8.64" target="#b46">(Yao et al. 2023)</ref>, proclivity for lies <ref type="bibr" coords="1,528.14,263.95,29.87,8.64;1,319.50,274.91,78.23,8.64">(Azaria and Mitchell 2023)</ref>, effects such as a strong primacy effect <ref type="bibr" coords="1,338.40,285.87,81.40,8.64" target="#b41">(Wang et al. 2023b)</ref>, and clear political biases <ref type="bibr" coords="1,534.76,285.87,23.24,8.64;1,319.50,296.83,47.71,8.64" target="#b14">(Feng et al. 2023)</ref> all question that LLMs can be safely used in social settings.</p><p>In the area of digital democracy, an application of AI that has sparked considerable debate is the concept of assisted real-time voting. The proposal to use AI "digital twins" to replace politicians has been raised <ref type="bibr" coords="1,456.22,352.26,54.68,8.64" target="#b23">(Hidalgo 2018</ref>). These AI systems, including customized LLM agents, envisioned to vote and mirror individual voter preferences <ref type="bibr" coords="1,499.81,374.17,58.19,8.64;1,319.50,385.13,63.99,8.64" target="#b18">(Gersbach and Martinelli 2023)</ref>. Proponents believe that such agents could enable more nuanced and granular voting under voter supervision <ref type="bibr" coords="1,345.79,407.05,190.11,8.64" target="#b37">(Tang, Weyl, and the Plurality Community 2023)</ref>. Yet, ethical concerns about automation, democratic integrity, and agent bias necessitate careful consideration. <ref type="bibr" coords="1,496.07,428.97,61.94,8.64;1,319.50,439.93,26.56,8.64" target="#b1">Allen and Weyl (2024)</ref> argue that Generative Foundation Models (GFMs), such as GPT-4, present unprecedented challenges for democratic institutions. The deployment of such technology in democratic processes would require a cautious and thoroughly scrutinized approach, ensuring that the core values of democracy are upheld <ref type="bibr" coords="1,420.60,494.72,81.21,8.64" target="#b22">(Helbing et al. 2022)</ref>.</p><p>In our study, we aim to explore the limitations and potentials of integrating LLMs into collective decision-making processes. We focus on examining LLM behavior in voting scenarios by contrasting the voting patterns of human participants with those of LLaMA-2 and GPT-4 agents. This analysis uses data from a Participatory Budgeting (PB) experimental study by <ref type="bibr" coords="1,401.37,572.07,70.08,8.64" target="#b45">Yang et al. (2024)</ref>. By investigating the behavior of LLMs in this context, we seek to contribute to the broader discourse on LLM decision-making, value alignment, AI explainability, and ethical use of AI in society. munity exhibits human-like behavior. <ref type="bibr" coords="2,213.41,57.48,79.09,8.64;2,54.00,68.44,75.81,8.64" target="#b7">Boiko, MacKnight, and Gomes (2023)</ref> suggests combining multiple LLMs for the autonomous design, planning, and execution of scientific experiments. For a literature survey on creating autonomous LLM agents, we refer the reader to <ref type="bibr" coords="2,195.64,101.31,76.63,8.64" target="#b40">Wang et al. (2023a)</ref>.</p><p>Research into multi-agent LLM systems, drawing inspiration from social and biological cooperative systems, explores the dynamics of cooperative artificial agents <ref type="bibr" coords="2,266.65,138.23,21.54,8.64;2,54.00,149.19,97.64,8.64" target="#b4">(Axelrod and Hamilton 1981;</ref><ref type="bibr" coords="2,154.86,149.19,137.64,8.64" target="#b32">Shoham and Leyton-Brown 2009;</ref><ref type="bibr" coords="2,54.00,160.14,163.93,8.64" target="#b8">Bonabeau, Dorigo, and Theraulaz 1999)</ref>. Studies have investigated various LLM agents in both software and embodied forms for complex tasks, such as text evaluation <ref type="bibr" coords="2,268.16,182.06,24.35,8.64;2,54.00,193.02,46.82,8.64" target="#b10">(Chan et al. 2023)</ref>, image captioning, and text-to-image synthesis <ref type="bibr" coords="2,68.33,203.98,79.77,8.64" target="#b24">(Zhuge et al. 2023;</ref><ref type="bibr" coords="2,151.90,203.98,111.33,8.64" target="#b36">Talebirad and Nadiri 2023;</ref><ref type="bibr" coords="2,267.05,203.98,25.45,8.64;2,54.00,214.94,48.28,8.64" target="#b47">Zhang et al. 2023b)</ref>. Innovations include proactivity and adaptability enhancement <ref type="bibr" coords="2,121.98,225.90,78.85,8.64" target="#b47">(Zhang et al. 2023a)</ref>, standardized prompting mechanisms <ref type="bibr" coords="2,120.51,236.86,70.56,8.64" target="#b24">(Hong et al. 2023)</ref>, roleplaying frameworks for cooperation study <ref type="bibr" coords="2,144.75,247.82,61.01,8.64" target="#b26">(Li et al. 2023)</ref>, and debating methods to improve answer quality <ref type="bibr" coords="2,180.72,258.77,68.49,8.64" target="#b43">(Wei et al. 2022;</ref><ref type="bibr" coords="2,252.48,258.77,40.02,8.64;2,54.00,269.73,22.69,8.64">Hao et al. 2023;</ref><ref type="bibr" coords="2,80.81,269.73,62.83,8.64" target="#b47">Du et al. 2023)</ref>. Furthermore, researchers have explored the use of different personas within a single agent to enhance complex task performance <ref type="bibr" coords="2,210.07,291.65,78.12,8.64" target="#b42">(Wang et al. 2023c)</ref>. While most studies focus on surpassing benchmarks in complex tasks, some also focus on the intrinsic characteristics of multi-agent LLM systems <ref type="bibr" coords="2,158.33,324.53,108.99,8.64" target="#b31">(Serapio-García et al. 2023;</ref><ref type="bibr" coords="2,269.26,324.53,23.24,8.64;2,54.00,335.49,43.30,8.64" target="#b27">Liang et al. 2023)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>LLM Societies</head><p>One particular example of a multi-agent LLM system is the creation of LLM societies. Such systems create environments for studying debates and societal simulations. <ref type="bibr" coords="2,278.67,417.50,13.84,8.64;2,54.00,428.46,51.40,8.64" target="#b28">Liu et al. (2023)</ref> introduces an open-source platform for simulating artificial human societies, while <ref type="bibr" coords="2,220.64,439.42,71.86,8.64">Hao et al. (2023)</ref> proposes a ChatLLM network system for more objective and comprehensive decision-making. Zhuge et al. <ref type="bibr" coords="2,265.94,461.34,26.56,8.64">(2023)</ref> explores the concept of natural language-based societies of mind, questioning their optimal governance structure. In <ref type="bibr" coords="2,54.00,494.22,77.92,8.64" target="#b42">Wang et al. (2023c)</ref>, the idea of Solo Performance Prompting (SPP) is proposed, transforming a single LLM into a "cognitive synergist" through multi-turn self-collaboration with multiple personas. <ref type="bibr" coords="2,151.49,527.09,64.83,8.64" target="#b47">Du et al. (2023)</ref> presents a method where multiple language model instances propose, debate, and refine their responses to reach consensus. <ref type="bibr" coords="2,63.96,564.01,88.21,8.64" target="#b27">Liang et al. (2023)</ref> addresses the Degeneration-of-Thought (DoT) problem with a Multi-Agent Debate (MAD) framework, where agents engage in "tit for tat" arguments and a judge oversees the debate to derive a final solution. <ref type="bibr" coords="2,54.00,607.84,111.11,8.64" target="#b36">Talebirad and Nadiri (2023)</ref> introduces a collaborative environment, where intelligent agents with distinct attributes and roles communicate. <ref type="bibr" coords="2,136.31,629.76,67.49,8.64" target="#b44">Wu et al. (2023)</ref> discusses "Autogen", an open-source library facilitating conversation among multiple LLM agents. Furthermore, <ref type="bibr" coords="2,188.48,651.68,60.86,8.64" target="#b15">Ferland (2015)</ref> and <ref type="bibr" coords="2,271.47,651.68,21.03,8.64;2,54.00,662.64,86.29,8.64" target="#b31">Rank and Mushtare (2019)</ref> explore the use of personas in civic communication and the potential of digital twins to understand voter behavior and address biases in democratic processes.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Social Choice and Rationality</head><p>Social welfare functions play a critical role in aggregating individual preferences into a collective social ranking <ref type="bibr" coords="2,539.74,81.50,18.26,8.64;2,319.50,92.46,21.44,8.64" target="#b31">(Sen 1995)</ref>. This aggregation, denoted by R, derived from individual rankings {R i }, focuses on forming a coherent social order while balancing fairness and rational decision-making <ref type="bibr" coords="2,319.50,125.34,53.01,8.64" target="#b4">(Arrow 1951)</ref>.</p><p>Rationality in social choice theory impacts voting behaviors and preference aggregation. It encompasses:</p><p>Internal Consistency of Choice: This aspect, fundamental in decision theory and economics, necessitates that an individual's choices are coherent and logically consistent <ref type="bibr" coords="2,319.50,191.09,53.99,8.64" target="#b4">(Arrow 1951)</ref>. In our research, this aspect of rationality is tested by varying voting methods. Previous studies find that the voting methods impacts voter preferences and behaviors to a varying extent depends on the context <ref type="bibr" coords="2,487.85,223.97,70.16,8.64" target="#b45">(Yang et al. 2024;</ref><ref type="bibr" coords="2,319.50,234.93,87.84,8.64" target="#b21">Hausladen et al. 2023)</ref>.</p><p>Self-Interest Maximization: Central to classical economic theory is the assumption that individuals act to maximize their self-interest <ref type="bibr" coords="2,414.68,267.80,55.46,8.64">(Becker 1976)</ref>. Additionally to consistency, self-interest is added to the characterization of an agent <ref type="bibr" coords="2,344.74,289.72,53.09,8.64" target="#b39">(Walsh 1994)</ref>. The latter principle is typically modeled as a utility function, where individuals choose options that maximize their utility.</p><p>Maximization in General: Rationality extends to the maximization of a defined objective function (Sen 1995). In the context of voting, this often implies maximizing collective utility or welfare, where an individual selects the option that yields the greatest collective benefit. This is connected to the idea of other-regarding preferences <ref type="bibr" coords="2,493.75,377.39,59.83,8.64;2,319.50,388.35,106.39,8.64" target="#b6">(Blanco, Engelmann, and Normann 2011)</ref>, describing a situation where an individual's utility is impacted by the well-being of others.</p><p>Our study explores these three dimensions of rational choice, analyzing their influence on individual and collective voting behaviors.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Voting in Multi-Winner Systems</head><p>Collective actions in modern democracies are becoming increasingly individualized and issue-driven, leading to a state of "chaotic pluralism" that challenges traditional democratic processes <ref type="bibr" coords="2,387.76,498.25,88.81,8.64" target="#b29">(Margetts et al. 2016)</ref>. Multi-winner systems, wherein voters select multiple candidates from a broad field with the possibility of multiple winners <ref type="bibr" coords="2,498.29,520.17,55.74,8.64;2,319.50,531.13,105.79,8.64" target="#b33">(Skowron, Faliszewski, and Slinko 2019;</ref><ref type="bibr" coords="2,427.37,531.13,71.13,8.64" target="#b14">Elkind et al. 2017)</ref>, offer a potential solution by aligning with pluralistic societal values and diverse demands.</p><p>Multi-winner systems translates individual voter preferences into a collective decision, often seeking to maximize collective utility or fairness <ref type="bibr" coords="2,437.27,585.93,96.84,8.64" target="#b5">(Aziz and Huang 2017)</ref>. Approval voting is one common method, where the top candidates receiving the most votes are elected (Brams and <ref type="bibr" coords="2,537.52,607.84,16.39,8.64;2,319.50,618.80,43.25,8.64" target="#b8">Fishburn 1983;</ref><ref type="bibr" coords="2,365.24,618.80,139.02,8.64" target="#b25">Laslier and Van Der Straeten 2016)</ref>.</p><p>In the context of LLMs, the presentation of voting options as a list is a critical factor. Similar to how the arrangement of candidates on a ballot can influence voter perception, the order and format in which LLMs present multiple options may affect the selection process, reflecting the need to understand how LLMs mimic these complex multi-candidate and multi-winner decisions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Opinion Sampling and Persona Creation</head><p>Our methodology, which compares actual population opinions with LLM-generated responses, is in line with the work of <ref type="bibr" coords="3,65.90,96.32,84.67,8.64" target="#b13">Durmus et al. (2023)</ref>. They developed the GlobalOpin-ionQA dataset and a metric for comparing LLM and human responses, which is crucial to assess how well LLMs reflect human opinions. Similarly, <ref type="bibr" coords="3,163.97,129.20,87.42,8.64" target="#b38">Törnberg et al. (2023)</ref> simulated social media environments using digital personas based on demographic data. Their findings suggest that this approach leads to healthier, less divisive online discussions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>LLMs and Human Behaviour</head><p>Exploring the intricacies of political biases and personality traits in LLMs is crucial for their ethical application in human interactions. Serapio-García et al. <ref type="bibr" coords="3,207.22,225.06,26.56,8.64">(2023)</ref> investigate the role of personality traits in LLMs, developing methods to assess and customize them in advanced models. Feng et al. <ref type="bibr" coords="3,54.00,257.94,26.56,8.64">(2023)</ref> delve into political biases of LLMs, examining their origins from diverse pretraining data and effects on tasks like hate speech detection. Meanwhile, <ref type="bibr" coords="3,209.95,279.86,82.55,8.64" target="#b3">Argyle et al. (2023b)</ref> explore how LLMs can positively influence online political discourse, with AI chat assistants improving conversation quality and receptiveness to different views. In addition, <ref type="bibr" coords="3,54.00,323.69,77.83,8.64" target="#b41">Wang et al. (2023b)</ref> examine the primacy effect in ChatGPT, finding that: i) ChatGPT's decisions are sensitive to the order of labels in prompts, and ii) there is a higher tendency for ChatGPT to select labels in earlier positions as the answer. In summary, these studies underscore the significance of recognizing personality traits in LLMs and managing biases to ensure their ethical and effective use. The study by <ref type="bibr" coords="3,251.11,389.45,41.39,8.64;3,54.00,400.40,23.24,8.64" target="#b43">(Wei et al. 2022)</ref> demonstrates that "Chain-of-Thought"(CoT) prompting, which involves providing intermediate reasoning steps, enhances the problem-solving abilities of LLMs. In their experiments, CoT significantly improved performance on arithmetic, commonsense, and symbolic reasoning tasks.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>LLMs and Collective Intelligence</head><p>As language models (LLMs) are increasingly used to mimic human behavior, recent research has also begun exploring the collective behavior of LLMs. The work by Jarrett <ref type="bibr" coords="3,54.00,518.19,26.56,8.64">(2023)</ref> defines collective decision-making as the episodic process involving interactions between a group of agents and a decision-making mechanism. Additionally, it addresses the issue of digital representation, which involves simulating an agent's behavior to produce outcomes equivalent to those from the decision mechanism.</p><p>Chuang et al. examines whether groups of LLMs can mimic human behavior when role-playing as partisan personas (like Democrats or Republicans). The authors prompted the LLMs to role-play as different personas created with varying levels of background detail. The research finds that incorporating CoT reasoning or a lack of detailed persona tends to diminish the wisdom of partisan crowds effect, making the group less likely to converge to more accurate beliefs. <ref type="bibr" coords="3,63.96,684.56,66.59,8.64" target="#b16">Fish et al. (2023)</ref> merges social choice theory with the text generation abilities of LLMs. This framework is designed to facilitate complex decision-making, such as selecting textual statements that represent collective preferences. A recent work by <ref type="bibr" coords="3,376.91,79.39,181.09,8.64" target="#b18">Gudiño-Rosero, Grandi, and Hidalgo (2024)</ref> suggests that LLMs using augmented data can more accurately predict the preferences of an entire participant population compared to probabilistic samples, which may not be representative. They indicates that LLMs have significant potential for constructing systems of augmented democracy.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3">Methods</head><p>In this paper, we compare the behavior of human voters in a PB setting to that of LLM voters. For human voters, we utilized data from <ref type="bibr" coords="3,380.90,192.57,70.10,8.64" target="#b45">Yang et al. (2024)</ref> who simulated a Participatory Budgeting (PB) scenario in Zurich in an online experiment. The dataset<ref type="foot" coords="3,393.85,212.82,3.49,6.05" target="#foot_0">1</ref> contains 180 university student participants votes on urban projects, reflecting real urban interests for allocating a CHF 60,000 budget across 24 projects. We simulated the voting of human participants using LLaMA-2 and GPT-4 Turbo models. These models take in an Initial Context with instructions and background that the human voters also received in their experiements, followed by a Voting Prompt for casting votes on the projects in a format that can be processed (see Fig. <ref type="figure" coords="3,426.29,302.16,3.60,8.64" target="#fig_2">2</ref>).</p><p>Both the human participants and LLM agents were presented the same list with 24 projects (Tab. 3) in the voting process, detailed by ID, Name, District (Nord, Süd, Ost, West), Urban Category (Nature, Culture, Transportation), and Cost (CHF 5,000 or CHF 10,000). There is exactly one project for each combination of these characteristics.</p><p>Testing Different LLMs: Our study uses two types of agents: LLaMA-2 70-billion (Q8_0) and GPT-4 Turbo <ref type="bibr" coords="3,319.50,406.56,89.03,8.64">(GPT-4-1106-preview)</ref>. We chose the open-source LLaMA-2 to ensure other researchers can replicate and verify our experiments, thereby enhancing the reliability of our research. Conversely, GPT-4 Turbo was selected for its widespread use and relevance in current applications, making our findings more applicable to real-world scenarios.</p><p>Aggregation: In each experimental setting, we replicated the voting process with 180 LLM voters, matching the sample size of the human experiment. LLM votes, formatted with a '#' and project ID in the textual responese, were parsed using regex. The Borda Count method was applied to Ranked votes to convert ranks into points, while the 10-point Cumulative votes were normalized to ensure equal weighting. Outcomes were then aggregated, ordering projects by total votes or points for a direct comparison with human voter results.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Voting Methods</head><p>We explore the four most representative voting input methods in multi-winner settings, as identified by <ref type="bibr" coords="3,511.97,622.15,46.04,8.64;3,319.50,633.11,26.56,8.64" target="#b45">Yang et al. (2024)</ref> in their voting experiment from which the data originate. Among these, 5-Approval voting is used as our baseline due to its common usage in PB settings and its simplicity, which facilitates the comparison of outcomes when each voter is constrained to select an equal number of projects. For each voting method, we use the same textual voting instructions that were given to the human voters for the LLM agents. The voting instructions are as follows:</p><p>• Approval: "Select any number of projects. Here, in this vote, you can select all the projects you approve of." • 5-Approval: "Select exactly 5 projects."</p><p>• Cumulative: "Distribute 10 points among the projects you like. List the projects and the points you allocate, separated by a colon." • Ranked: "Select 5 projects and rank them from the most preferred to the 5th most preferred."</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Evaluation of Voting Outcomes</head><p>In our study, we use three indices to compare voting outcomes from LLM agents and human participants:</p><p>• Aggregated preferences: We employ Kendall's τ to assess the similarity between LLMs and humans:</p><formula xml:id="formula_0" coords="4,66.95,499.38,180.72,13.47">τ = 2 n(n−1) i&lt;j sgn(x i − x j )sgn(y i − y j ),</formula><p>where n is the number of observations, and x i , x j , y i , y j represent ranked preferences.</p><p>• Individual vote comparison: We utilize the Jaccard Similarity index, defined as J i (A, B) = |A∩B| |A∪B| , where A and B are the vote sets from the i th LLM and human agents, respectively.</p><p>• Preference diversity: The complement of Jaccard Similarity (i.e. Jaccard Distance), D Ji (A, B) = 1−J i (A, B), quantifies the diversity of preferences of voters. A higher value indicates greater heterogeneity in voting patterns.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Experiments</head><p>Variation of the Temperature Parameter: The temperature parameter T modulates the probability of choosing the next token following p(token i ) = exp logiti/T j exp logitj/T . We systematically vary the temperature parameter within the range T ∈ [0, 2] with 0.5 increments, noting that the standard temperature setting in ChatGPT is 1. This helps assess the impact of different randomness levels on the model's outputs.</p><p>Variation of List Presentation: Our study focuses on two list presentation variations in the context of multi-candidate elections: 1. Primacy Effect: This investigates how the positioning of items at the beginning of a list affects their choices. 2. Numerical Labeling Effect: This investigates the impact of numerical IDs on the LLM's decision-making process.</p><p>By examining both the primacy effect and the numerical labeling effect, the study aims to disentangle the influences of item ordering and numerical labeling on LLM decisionmaking.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Addition of Persona</head><p>We construct persona descriptions from participant responses in the survey data conducted in the same study of the human votes. From the survey data, we have the self-reported rating on urban category preferences (Culture, Nature, Transport), district (Nord, Süd, Ost, West), and importance of decision-making factors (district, urban category, cost). These details are incorporated into the Initial Context to introduce a variation of persona. By relying on self-reported preferences rather than personal demographic data, we effectively simulate diverse voter profiles for the assisted-voting scenario, thus avoiding the ethical complexities and privacy concerns associated with AI stereotyping and the use of sensitive personal information.</p><p>Each entry consists of the participant's ID, urban category preferences, district information, connection to the city, and importance ratings. The process of persona generation involves processing survey data and using the numerical scores to generate descriptive human language labels that reflect the participants' preference intensity. The function further combines this with participants' district preferences</p><p>In this participatory budgeting program, you will be voting for the allocation of the 60,000 CHF on city projects in Zurich. You are a university student in Zurich.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>&lt;DESCRIPTION | if Persona&gt;*</head><p>Think about what projects you would personally like to be funded here. Make sure your votes reflect your preference. The explanation should be very short.</p><p>Look at the 24 projects in the following table and think about your preferences in urban projects before you start voting.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>&lt;LIST ALL PROJECTS&gt;</head><p>Select projects out of your personal interest using '#' and project id.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>&lt;INSTRUCTION FOR VOTING METHOD&gt;</head><p>Consider your personal interests and explain how they might influence your decisions when choosing urban projects in a participatory budgeting program in Zurich.  and their prioritization of decision factors like district importance, urban category significance, and cost, creating a comprehensive and personalized narrative for each participant. Here is the persona constructed based on the example in Appendix C:</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Chain-of-thought response</head><p>You are a university student from Nord district in Zurich. In urban topics, you have a strong preference for transport. When deciding on projects, you find the district to be moderately important, the urban category very important, and the cost of the project not important at all.</p><p>Addition of Chain-of-Thoughts (CoT): In the attempt to improve performance without further complicating the comparison between the results of human voters and LLM agents, we applied CoT reasoning technique to the bestperforming model. In this experiment, the model used was focused on GPT-4. The agents would be prompted an additional time before the voting prompt with the project list (see Fig. <ref type="figure" coords="5,73.11,589.02,3.60,8.64" target="#fig_2">2</ref>). This addition aims to provide insight into whether the addition of CoT influences collective decisions and could be further explored in the future.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4">Results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Number of Selection</head><p>The three voter types show distinct behaviors with respect to approval and cumulative voting. Human participants display a broad spectrum of approval patterns, ranging from a minimum of 2 to a maximum of all 24 projects (Fig. <ref type="figure" coords="5,256.83,695.51,4.98,8.64" target="#fig_7">7</ref> Left in the appendix). In contrast, LLaMA's approval patterns form bell-shaped distribution, peaking around 7 projects. GPT4 demonstrates an even narrower distribution, with a median of 5 projects.</p><p>In cumulative voting, LLaMA's point allocations frequently surpassed the prescribed maximum of 10 points, reflecting a deficiency in the model's numerical reasoning capabilities. In contrast, GPT4 adhered strictly to the voting instruction of assigning 10 points (Fig. <ref type="figure" coords="5,476.42,146.31,25.06,8.64" target="#fig_7">7 right</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Consistency across voting methods</head><p>Figure <ref type="figure" coords="5,350.28,188.45,12.17,8.64" target="#fig_3">3A</ref> shows the voting consistency of humans and LLMs across voting methods using Kendall's τ . This metric ranges from −1 for complete disagreement, 0 indicating no discernible pattern in voting, to 1 for perfect agreement across the various voting methods.</p><p>Human voters displayed high average consistency (τ : 0.81) across different voting input methods, that is, human voters are clear with their preference and vote consistently when different voting input methods are presented. Particularly, ranked voting (rank_h) exhibited the highest consistency values for human voters, suggesting that the outcome of ranked voting is more representative of the collective human preferences.</p><p>GPT-4 also showed considerable consistency (τ : 0.71) across voting input methods, with its preferences most distinctly aligned in cumulative voting (cumu_g). LLaMA-2 had a lower average consistency score as compared to humans and GPT-4 agents (τ : 0.45). The LLaMA-2 τ value in ranked voting (rank_l) was notably lower, indicating the least alignment with other voting methods in their selection of projects</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Consistency across list order variations</head><p>To investigate how sensitive the LLMs are to the order of projects, we presented the 24 projects in varying sequences when prompting the LLM: original order, reversed order, and original order with reversed project IDs.</p><p>LLaMA-2 agents demonstrated considerable volatility in preferences due to changing order; the reversed order caused a substantial reshuffling (τ = −0.2). When the IDs were reversed, LLaMA-2 agents with reversed IDs displayed more stability by keeping two of the top three projects (dark orange) at the top (Fig. <ref type="figure" coords="5,407.24,551.89,8.72,8.64" target="#fig_3">3B</ref>). GPT-4 agents showed a stronger consistency when the order is reversed, but the reversed ID scenario resulted in a notable disturbance, elevating the lowest-ranked projects (dark blue). Kendall's τ coefficients at the bottom of Fig. <ref type="figure" coords="5,405.62,595.72,11.63,8.64" target="#fig_3">3B</ref> show that both LLMs experienced a significant drop with reversed orders and IDs.</p><p>These results highlight the sensitivity of LLMs to list presentation, aligning with findings where ChatGPT showed a similar sensitivity to label order <ref type="bibr" coords="5,450.27,640.72,73.67,8.64" target="#b41">(Wang et al. 2023b</ref>). However, our study did not observe the expected Primacy Effect, where top-listed items are typically preferred. As shown in Tab. 1 in the appendix, in our voting scenarios, there was no significant correlation between project rankings and their IDs, which represented their order on the list. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Incorporating Persona into LLM Voting</head><p>The personas of the LLM agents are constructed based on human survey responses regarding the importance of urban categories and residential districts as well as the prioritization of district characteristics, urban categories, and decision-related costs. When personas are applied via a static prompt to the LLM models, individual votes become more aligned to human votes for both, LLaMA-2 (from J = 0.14 to 0.21) and GPT-4 (J = 0.18 to 0.30).</p><p>The incorporation of personas not only influences individual sets of votes but also increases the similarity in collective project rankings. Notably, GPT-4 with persona achieves the highest τ of 0.54. Moreover, GPT-4 voters without persona adjustments (τ = 0.39) still outperform LLaMA-2 voters with persona variations (τ = 0.12). LLaMA-2 without persona creates an outcome (τ = −0.04) that is akin to a random outcome. Qualitatively, GPT-4 without persona exhibits a pronounced bias towards transportation projects. With persona adjustments, however, GPT-4's voting distribution across various project types becomes more diverse and therefore more aligned with human outcomes (Fig. <ref type="figure" coords="6,275.07,647.59,8.72,8.64">4B</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Incorporating Chain-of-Thought into LLM Voting</head><p>We analyze whether the inclusion of CoT reasoning enhances collective decision-making in LLMs. Our findings indicate that the CoT has minimal impact on both individual and collective decision-making levels. As illustrated in Figure <ref type="figure" coords="6,349.19,434.71,9.78,8.64">4A</ref>, GPT-4 agents that underwent the CoT process demonstrate almost identical collective preferences to those without CoT prompting. This observation is corroborated in Figure <ref type="figure" coords="6,359.15,467.59,9.41,8.64">4B</ref>, where both groups show a Jaccard Similarity value of approximately 0.30. Statistical analysis further supports this conclusion; a T-test comparing the Jaccard Similarity scores of GPT-4 agents with and without CoT yields a T-statistic of 0.01186 and a P-value of 0.99055, indicating that the differences observed are not statistically significant.</p><p>However, the addition of CoT can significantly improve the explanability of AI decision-making processes. Typically, GPT-4 agents in 5-approval voting scenarios return simple selections of projects, such as:</p><formula xml:id="formula_1" coords="6,332.45,583.69,75.32,4.91">#19,#20,#21,#22,#7</formula><p>This output fails to clarify the rationale behind the decisions. By contrast, incorporating CoT provides a more comprehensive thought response. For example, here is the thought response of agent 1 before voting (Full response in appendix section E):</p><p>As a university student from the Nord district in Zurich with a strong preference for transport within urban topics, my decisions in a participatory budgeting program would be heavily influenced by proposals tackling A B Figure <ref type="figure" coords="7,82.65,291.94,3.88,8.64">4</ref>: A: Stacked bar plots displaying the distribution of 5-approval votes among different districts (left) and urban project categories (right) for various voter types, including human participants, LLaMA-2, GPT-4, and their respective enhancements (persona, CoT). The addition of persona and CoT is denoted as "+p" and "+c" respectively. Each bar's segment denotes the proportion of votes contributed by each voter type to the district, category, or cost. B: Box plot of Jaccard Similarity of Individual human votes against the agent votes. The addition of persona and CoT is denoted as "+p" and "+c" respectively. The short red lines and annotated numbers denote mean values. The closer agents' votes are to human votes, the closer the value is to 1.0.</p><p>issues of mobility and connectivity. Hence, I would favor projects that aim to improve the transportation infrastructure, such as the development of bike lanes, enhancement of public transport services, and the integration of sustainable transport solutions. Projects that specifically target improvements within the Nord district would be of slightly less importance to me than the overall category of urban transport, but I would still consider them favorably, especially if they promise to better the daily commute and accessibility for residents, including my fellow students. The cost of the project would not influence my decision, as I am focused on the potential benefits and improvements in the transport sector rather than financial constraints. My main criterion for voting for a project would be its potential to make travel within Zurich more efficient, safer, and environmentally friendly.</p><p>This additional thought response offer valuable insights into the reasoning behind the decisions for AI explainability. The implications of this effect are further discussed in the subsequent discussion section.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Qualitative Vote Comparison to Human Voters</head><p>There are some notable differences between LLaMA-2, GPT-4, and human voters. Figure <ref type="figure" coords="7,192.21,662.64,12.17,8.64">4A</ref> shows the proportion of votes that go to the certain types of projects. LLaMA-2 agents demonstrated a tendency to favor more budgetconscious options, shown in the cost bar plot in Figure <ref type="figure" coords="7,277.84,695.51,9.78,8.64">4A</ref>, often selecting projects costing around CHF 5,000. Human voters are the least cost-conscious voter in this study, with the highest votes favoring the more expensive CHF 10,000 projects.</p><p>GPT-4 with no persona variation, in contrast, exhibits a strong preference in urban category for transportationrelated projects. The intensity of this preference towards transportation is not shared with human voters. This discrepancy may stem from an over-reliance on the default "university student" demographic profile, coupled with a stereotypical assumption about the preferences of this group. Incorporating persona variations into GPT-4 agents helps mitigate this bias, leading to voting outcomes that more closely aligned with those of human voters.</p><p>For a more detailed comparison, see Figure <ref type="figure" coords="7,510.45,534.98,4.98,8.64">8</ref> in the appendix, which lists project-specific differences. The voting patterns of GPT-4 agents align slightly more with human preferences than those of LLaMA-2 agents, with average deviations of 101.9% and 141.9%, respectively. LLaMA-2 agents exhibit a distinct preference for kid-oriented projects (#3 and #9), diverging from human choices. Meanwhile, GPT-4 agents without persona variation heavily favor projects enhancing bicycle infrastructure <ref type="bibr" coords="7,484.24,622.65,49.81,8.64">(#5, #7, #11)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Alignment between Stated Preference and Votes</head><p>We also analyzed how votes align with surveyed preferences of human voters. As shown in Figure <ref type="figure" coords="7,473.89,673.60,3.74,8.64" target="#fig_4">5</ref>, human voters typically allocate nearly half of their votes to projects within their self-reported district and preferred urban category, indi-cating openness to supporting projects outside their primary interests.</p><p>In contrast, LLaMA-2 agents without persona variation exhibit voting patterns akin to random outcomes. For both LLaMA-2 and GPT-4 agents, integrating personas leads to a shift toward choices more aligned with stated preferences and human votes. However, when personas are incorporated, GPT-4 agents tend to over-align with self-reported districts and urban interests, surpassing the human tendency for selfprioritization. This overfitting suggests an excessive adherence to the characteristics of the provided human preferences. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Diversity in Different Temperature Settings</head><p>Analysis of LLM agents' voting behaviors across different temperature settings reveals distinct trends in how these settings influence collective decision-making processes. At lower temperatures, both GPT-4 and LLaMA-2 agents demonstrate highly concentrated preferences, consistently selecting similar project sets. This behavior aligns with the deterministic nature of lower temperatures, where the LLMs favor the most probable outcomes based on their training, leading to limited diversity in choices. As temperatures increase, there is a notable shift towards broader and more diverse preferences. This is particularly evident at a temperature of 2, where LLM agents begin to explore a wider array of options, reflecting a range of human interests (Fig. <ref type="figure" coords="8,134.24,618.01,8.72,8.64" target="#fig_6">6B</ref>). The increased randomness allows the models to simulate a more human-like variance in preferences, although this comes at the cost of reduced predictability in outcomes.</p><p>For our analysis, we simplified our description by equating the limit as temperature approaches zero (T-&gt;+0) with a temperature of 0. Mathematically, as T approaches +0, the softmax function converges to argmax, selecting the token in a perfectly deterministic manner. This behavior was observed in our experiments with LLAMA-2 but notably not with GPT-4 in Figure <ref type="figure" coords="8,409.11,79.39,9.41,8.64" target="#fig_6">6B</ref>, suggesting a possible divergence in their softmax implementation.</p><p>The alignment of LLaMA-2 and GPT-4 agents across different temperature settings with human voting patterns is illustrated in Figure <ref type="figure" coords="8,403.10,123.23,9.78,8.64" target="#fig_6">6A</ref>. Among the LLaMA-2 and GPT-4 voters themselves, outcomes generated with the temperature setting of 1.0 are found to be the most stable, as they consistently exhibit high Kendall's τ values above 0.8 compared to settings of 0.5 and 1.5.</p><p>When we compare LLM outcomes with human outcome, however, the Kendall's τ values are relatively low across all temperature settings for LLaMA-2, indicating a consistent lack of alignment with human voting outcomes. GPT-4 agents achieve a better alignment with human outcome at a temperature setting of 1.0, as evidenced by the highest τ values, 0.39, in the first column of Figure <ref type="figure" coords="8,486.67,243.78,9.78,8.64" target="#fig_6">6A</ref>.</p><p>As expected, increasing the temperature setting in GPT-4 introduces greater diversity in the voting outcomes but also leads to more pronounced deviations from human-like decision-making. This trade-off is nuanced and merits careful evaluation. For instance, when the temperature is raised from 1.0 to 1.5, there is only a minor reduction in Kendall's τ from 0.39 to 0.37, which suggests a slight decrease in alignment with human outcomes. At the same time, this increase in temperature causes a significant rise in the Jaccard Dissimilarity of the votes, from 0.44 to 0.67, as shown in Figure <ref type="figure" coords="8,360.02,364.33,9.41,8.64" target="#fig_6">6B</ref>. In the subsequent discussion, we will assess whether the modest reduction in alignment is an acceptable compromise for the substantial gain in response diversity.</p><p>The alignment of LLaMA-2 and GPT-4 agents across different temperature settings with human voting patterns is illustrated in Figure <ref type="figure" coords="8,403.10,419.12,9.78,8.64" target="#fig_6">6A</ref>. Among the LLaMA-2 and GPT-4 voters, outcomes generated with the temperature setting of 1.0 seems to be the most stable, as they are relatively consistent with that of 0.5 or 1.5 with τ all above 0.8.</p><p>For LLaMA-2 agents, the Kendall's τ values are close to 0 across all temperature settings, indicating a consistent lack of alignment with human voting outcomes. In contrast, GPT-4 agents achieve optimal alignment at a temperature setting of 1, as evidenced by the highest τ values. Overall, when a higher temperature introduces more diversity into the voting outcomes, it also results in a greater deviation from humanlike decision-making patterns. However, increasing the temperature to 1.5 results in only a slight decrease in τ from 0.39 to 0.37, yet affects the Jaccard Dissimilarity or diversity of the votes, as shown in Figure <ref type="figure" coords="8,440.40,572.55,9.41,8.64" target="#fig_6">6B</ref>, jumps from 0.44 to 0.67. The temperature of 1.5 seems to balance the need for diversity and the desire to maintain coherence with human-like decision-making.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5">Discussion</head><p>Integrating LLM agents into collective decision-making processes-like voting-presents both possibilities and challenges. Our experiments on voting consistency showed some differences across different voting methods. Humans demonstrated proficiency in ranking and relative comparisons. For the LLM agents, GPT-4 excelled in quanti-  fying and distributing preferences using cumulative voting, whereas LLaMA-2 notably showed inconsistent voting across many methods. This comparison highlights the distinct capabilities and limitations inherent in human decisionmakers and different AI models.</p><p>A major shortcoming of LLM voting agents is that the ordering of candidate lists influences the choices of the agent. Although these agents often provide convincing justifications for their votes in their responses (Appendix E), a quantifiable change in collective votes reveals a inconsistency in their preferences. These preference variations show that LLMs, in their current state, lack the comprehensive, consistent rational decision-making ability typically expected in such democratic processes.</p><p>On top of voting consistency, both LLM models display some distinct preferences not shared by humans. LLaMa-2 shows a preference for 'kids'-related projects, possibly because its embedding space closely associates 'kids' with 'university students' in the prompt. GPT-4, conversely, exhibits a strong inclination towards transportation projects, often rationalizing this as a bike preference among young people. The self-interest analysis also suggests that human decision-making is not solely driven by self-interest maximization as LLM agents tend to assume, but also significantly influenced by other-regarding preferences. These patterns underscore the complexities of AI development for democratic applications, particularly concerning biases and stereotyping. Training data significantly influences AI outputs, leading to potentially skewed or unrepresentative decision-making. This issue is compounded by the lack of public access to training data and fine-tuning processes, which means biases in the models can only be assessed indirectly.</p><p>Our CoT experiment with the GPT-4 agents shows no significant improvement or influence on either individual preferences or collective outcomes. These results align with the findings of Chuang et al., who reported that CoT does not significantly enhance collective decision-making. In our methodology, we specifically prompted agents to reflect on their preferences before presenting the candidates (projects in the context of PB). This approach aimed to mitigate the issue of 'unfaithful' CoT explanations, as described by <ref type="bibr" coords="9,531.33,537.71,26.67,8.64;9,319.50,548.67,47.93,8.64" target="#b37">Turpin et al. (2024)</ref>. By withholding candidate information during the initial CoT phase, we prevented the LLM agents from using pre-existing choices to rationalize their decisions. From the perspective of AI explainability, this pre-voting CoT reasoning offers a valuable window into the agents' thought processes before they encounter the options. Future research should investigate the extent to which such pre-voting CoT reasoning actually aligns with subsequent voting behavior.</p><p>In examining LLM voting behaviors across temperature settings, we observe a trade-off between diversity and accuracy in human alignment. At a temperature of 1, where the GPT-4 model share the highest similarity with human voting outcome, the preference range is overly concentrated, not reflecting the extent of human diversity. At a higher tem-perature, LLMs match human preference diversity but yield relatively random and unreliable results. This situation underscores a serious limitation in LLM collective decisionmaking: the need to sacrifice diversity for accurate human alignment.</p><p>However, in contrast to human voters who are not very cost-conscious in their selection of projects, the LLM models show a higher preference for low-budget projects. This suggests that LLMs could potentially assist humans in decision-making processes that involve cost considerations to reduce the complexity and participation barrier.</p><p>Also, integrating personas has the effect of aligning LLMs more closely with human voting patterns. In our study, these personas were primarily based on direct self-reported preference data collected via a questionnaire, resulting in voting outcomes that more closely resembled those of humans. This demonstrates the feasibility of relying mainly on direct preference parameters, rather than personal socio-demographic details, to customize LLM agents capable of assisting part of human voting without AI stereotyping. However, it is worth noting that even with personas, LLMs continue to reflect the biases present in their training data. Due to these limitations, persona creation for LLMs in assisted voting requires caution and more insights from behavioral sciences and AI ethics research.</p><p>Other limitations of the research and areas for future exploration include:</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Limitations:</head><p>1. Context Specificity: Our findings concerning participatory budgeting and multi-winner elections may not be so generalizable, as it does not directly apply to the more common single-winner election formats (such as presidential elections). 2. Order Effects: Our research underscores that the decisions of LLMs are susceptible to the sequence in which options are presented. However, a systematic understanding of how exactly the order shapes the preference is still lacking. Similarly, it is likely that human preferences are also affected by changes in order and item numbering. However, since these variations were not introduced in the human participant experiments, a direct comparison of this specific type of inconsistency between humans and LLMs could not be made.</p><p>Future Directions: It is crucial to emphasize that we are not advocating for the deployment of LLM agents as substitutes for human decisions. Instead, the purpose is to highlight the risks of integrating LLMs into democratic processes, particularly emphasizing the lack of diversity in model outputs. This serves as a case study to illustrate broader concerns about how generative AI might influence democracy and to inform future policymakers and AI developers about the potential risks LLMs pose to collective decision-making.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6">Conclusion</head><p>This study investigates LLM agents in voting scenarios and highlights the complex dynamic between the potential and limitations of AI in democratic contexts. While LLM-based voting agents show strengths in specific voting aspects, their vulnerability to list ordering and biases highlights the importance of cautious integration into decision-making systems. The compromise between diversity and alignment at different temperature settings indicates challenges in replicating human preference diversity. Adding personas derived from self-reported preferences shows potential in aligning LLM outputs with human voting patterns more closely; however, biases embedded within the LLMs can still emerge and may cause some discrepancy between humans and voting agents.</p><p>Future research should aim to broaden model diversity, enhance the realism of personas, and delve into various electoral formats, to better understand LLMs' role in democratic processes. Balancing the benefits of AI with ethical considerations will be key in optimizing their contribution to collective decision-making.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7">Impact Statement</head><p>This study critically examines the use of LLMs in democratic systems, particularly in the voting process. It reveals that the current capabilities of LLMs are inadequate for capturing the full spectrum of human perspectives, which can threaten the integrity of democratic outcomes. The findings highlight the need for strict ethical guidelines to manage the integration of AI into democratic contexts. A humancentered approach is essential to ensure that AI deployment supports rather than compromises the collective intelligence derived from diverse human preferences in society.   <ref type="table" coords="15,54.00,367.41,31.58,8.64">Table 1:</ref> Pearson correlation between the ranking order and project IDs across various voting scenarios. In the LLM experiments, settings where project lists with reversed IDs (rev_id) and reversed order (rev_order) are included. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A Additional Figures</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B Additional Tables</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>C Persona Description Construction</head><p>We construct persona descriptions from participant responses in a survey. Each entry consists of the participant's ID, urban category preferences, district information, connection to the city, and importance ratings.</p><p>Data Structure and Example Entry: Moderately important</p><p>Based on this data, we then create a narrative description for each persona. The process of persona generation involves processing survey data and using the numerical scores to generate descriptive human language labels that reflect the participants' preference intensity.</p><p>In the survey, participants rated the importance of each urban category, with the total score summing to exactly 100. To construct personas that reflect these nuances, the function interprets scores: if the importance score exceeds 50, it uses the descriptor "having a strong preference for" the category. Scores between 33 and 50 lead to "prefer," indicating a moderate preference. Scores below 33 result in no specific preference being highlighted. This nuanced interpretation ensures that each persona's narrative description accurately mirrors their interests and priorities in urban topics.</p><p>The function further combines this with participants' district preferences and their prioritization of decision factors like district importance, urban category significance, and cost, creating a comprehensive and personalized narrative for each participant.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Corresponding Persona Description:</head><p>"You are a university student from Nord district in Zurich. In urban topics, you have a strong preference for transport. When deciding on projects, you find the district to be moderately important, the urban category very important, and the cost of the project not important at all."</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="4,189.88,267.85,232.24,8.64;4,129.60,54.00,352.80,202.71"><head>Figure 1 :</head><label>1</label><figDesc>Figure 1: Overview of the LLM voting experimental setup</figDesc><graphic coords="4,129.60,54.00,352.80,202.71" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="5,211.56,315.37,36.13,6.08;5,94.99,62.11,39.99,6.74;5,94.99,153.48,56.48,6.74;5,94.99,220.97,42.03,6.74;5,115.11,334.04,136.37,6.08"><head>*</head><label></label><figDesc>Persona and Chain-of-Thought templates are optional</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="5,74.67,354.85,197.17,8.64"><head>Figure 2 :</head><label>2</label><figDesc>Figure 2: Overview of the LLM prompt template.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="6,54.00,291.56,504.00,9.03;6,54.00,302.90,504.00,8.64;6,54.00,313.68,504.00,8.82;6,54.00,324.43,504.00,9.03;6,54.00,335.78,504.00,8.64;6,54.00,346.74,504.00,8.64;6,54.00,357.70,504.00,8.64;6,54.00,368.34,504.00,8.96;6,54.00,379.62,264.97,8.64;6,91.78,72.44,252.01,208.35"><head>Figure 3 :</head><label>3</label><figDesc>Figure 3: A: Heatmap of Kendall's τ across different voting methods with votes cast by human ('_h'), GPT-4 ('_g'), and LLaMA-2 ('_l') voters, showing the similarity between ranking orders of 24 projects, across different groups and methods. Voting methods include 5-Approval (kapp), Approval (appr), Cumulative (10 points) (cumu), and Ranked (rank). Higher values of τ (green) show greater agreement between the compared voting methods. B: Comparative analysis of the primacy effect on LLM ranking behaviors in 5-Approval voting. The outcomes of human votes (baseline) are juxtaposed against results with reversed presentation order or ID sequence, showing how the presentation sequence affects ranking. Project rankings are color-coded to reflect their relative positioning, with green representing projects in the top half, and blue in the bottom half. Additionally, the top and bottom three projects are shown with darker hues. Disparities in τ values underscore the variable susceptibility of each LLM to ordering effects in vote aggregation.</figDesc><graphic coords="6,91.78,72.44,252.01,208.35" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4" coords="8,54.00,353.20,238.50,8.64;8,54.00,364.16,238.50,8.64;8,54.00,375.12,238.50,8.64;8,54.00,386.08,238.50,8.64;8,54.00,397.04,238.50,8.64;8,54.00,408.00,238.50,8.64;8,54.00,418.96,44.52,8.64"><head>Figure 5 :</head><label>5</label><figDesc>Figure 5: Box plots illustrating the distribution of vote percentages towards the voters' self-identified district and category interests. The red lines represent the median values, while the diamond symbols denote the mean values for each group. A random voting situation is added for a clearer comparison with voting outcomes that consist of a particular preference.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6" coords="9,54.00,291.56,504.00,9.03;9,54.00,302.72,504.00,8.82;9,54.00,313.86,504.00,8.64;9,54.00,324.43,504.00,9.03;9,54.00,335.78,504.00,8.64;9,54.00,346.74,504.00,8.64;9,54.00,357.70,211.86,8.64;9,314.52,66.44,213.57,214.30"><head>Figure 6 :</head><label>6</label><figDesc>Figure 6: A: Heatmap displaying Kendall's τ coefficient across various temperature settings of LLaMA-2 and GPT-4 models, compared directly with human vote outcomes. Each cell represents the similarity between the collective ranked results of voting sets, with temperature denoted by 't'. Values closer to 1 indicate a higher similarity in the overall ordering of outcomes, whereas values closer to 0 indicate randomness. B: Box plot illustrating the Jaccard Dissimilarity between all individual votes from human voters and various temperature settings of LLaMA-2 and GPT-4 models. The mean for each group is indicated by a short red line, with the numerical value displayed. Dissimilarity values closer to 1 suggest greater average deviation between vote sets, indicating less similarity in voting patterns.</figDesc><graphic coords="9,314.52,66.44,213.57,214.30" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7" coords="14,54.00,311.76,504.00,8.82;14,54.00,322.71,504.00,8.82;14,54.00,333.85,331.51,8.64;14,57.79,113.75,246.97,187.03"><head>Figure 7 :</head><label>7</label><figDesc>Figure 7: Histograms comparing the voting behavior of Human and LLMs. Left: The number of selected projects in Approval Voting varies across the types of voters. Right: Sum of assigned points in Cumulative Voting for GPT4 and LLaMA-2 voters. GPT4 adheres strictly to the instruction of assigning 10 points, LLaMA-2 does not.</figDesc><graphic coords="14,57.79,113.75,246.97,187.03" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8" coords="14,54.00,670.31,504.00,8.64;14,54.00,681.27,504.00,8.64;14,54.00,692.23,362.32,8.64;14,154.80,399.96,302.40,259.20"><head>Figure 8 :Figure 9 :</head><label>89</label><figDesc>Figure 8: Comparative analysis of voting outcomes, highlighting the percentage differences between human and LLM voters. The 24 projects, spanning various districts and categories, are listed with corresponding vote percentage differences. A positive percentage indicates a project's greater priority for LLM voters compared to human voters.</figDesc><graphic coords="14,154.80,399.96,302.40,259.20" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" coords="7,88.35,61.13,304.60,214.12"><head></head><label></label><figDesc></figDesc><graphic coords="7,88.35,61.13,304.60,214.12" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2" coords="16,159.89,195.79,292.21,191.57"><head>Table 2 :</head><label>2</label><figDesc>Example Survey Response for Persona Description Construction</figDesc><table coords="16,200.63,230.87,210.74,156.49"><row><cell>Field</cell><cell>Value</cell></row><row><cell>ID</cell><cell>YK3TDKDG</cell></row><row><cell>1st Urban Category</cell><cell>Transport</cell></row><row><cell>1st Score</cell><cell>60</cell></row><row><cell>2nd Urban Category</cell><cell>Nature</cell></row><row><cell>2nd Score</cell><cell>30</cell></row><row><cell>3rd Urban Category</cell><cell>Culture</cell></row><row><cell>3rd Score</cell><cell>10</cell></row><row><cell>District</cell><cell>Nord</cell></row><row><cell>How Connected</cell><cell>A lot</cell></row><row><cell>District Importance</cell><cell>Moderately important</cell></row><row><cell cols="2">Urban Category Importance Very important</cell></row><row><cell>Cost Importance</cell><cell>Not important at all</cell></row><row><cell>Likelihood Importance</cell><cell></cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="1" xml:id="foot_0">https://github.com/joshuay1/zurich-pb-voting</note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="8">Acknowledgments</head><p>JY would like to express gratitude to the Swiss National Science Foundation (SNSF) for the financial support provided for the previously conducted participatory budgeting (PB) voting experiment in <ref type="bibr" coords="11,140.92,104.30,71.59,8.64" target="#b45">Yang et al. (2024)</ref>, which was part of the National Research Programme NRP77 on Digital Transformation (project no. 187249). JY also thanks Dominik Peters, Regula Hänggli Fricker, and Evangelos Pournaras for their intellectual contributions. MK, CIH, and DH acknowledge the support from the "CoCi: Co-Evolving City Life" project, funded by the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation program (grant agreement No. 833168). DD acknowledges the support from the Distributed Intelligence &amp; Technology for Traffic &amp; Mobility Management (DIT4TraM) project, funded by the European Union's Horizon 2020 Research and Innovation Programme (grant agreement No. 953783).</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>D List of Projects</head><p>• 5-Approval Voting:</p><p>"#2, #5, #11, #17, #24"</p><p>• Cumulative Voting:</p><p>"#5 -3 points #11 -2 points #17 -3 points #23 -2 points As a university student, I am focused on sustainable transportation and fostering a bike-friendly city, hence my preference for safe bike paths, free bike fixing workshops, bike lanes, and a public bicycle moving trailer. These projects would directly benefit my daily life and the lives of my peers, promoting health, sustainability, and convenience."</p><p>• Ranked Voting: LLaMA-2 Responses: agent #3, temp=1, no persona</p><p>• Approval Voting:</p><p>"Sure! As a university student in Zurich, I would like to vote for the following projects: #5 Safe Bike Paths around Irchel Park -This project would improve the safety of bike paths in the area, making it easier for students like me to get around by bike. #10 Car-free Sunday Festivals on Mutschellenstrasse -This project would create a fun and environmentally-friendly event that I could enjoy with my friends and fellow students. #17 Bike Lanes on Seefeldstrasse -This project would improve the infrastructure for cyclists in the city, making it easier for me to get around by bike. #22 Sustainable Cooking Workshop with Kids -This project would promote sustainability and healthy eating habits among young people, which is an important issue for me as a student. I hope that my votes will help make these projects a reality!"</p><p>• 5-Approval Voting:</p><p>"Sure! Here are my votes: #3 -Kid Festival at Leutschenpark (Nord) -I think it's important to invest in events that bring the community together and provide fun activities for kids. #6 -More Night Buses to Oerlikon (Nord) -As a student, I often have late nights studying or socializing, and having more night buses would make it easier for me to get home safely. #13 -Transforming City Spaces under Trees into Gardens (Ost) -I love the idea of turning unused spaces into beautiful gardens. It would make the city more enjoyable to live in and help the environment. #17 -Bike Lanes on Seefeldstrasse (Ost) -As a cyclist, I think it's important to have designated bike lanes to ensure safety and encourage more people to cycle. #22 -Sustainable Cooking Workshop with Kids (West) -I believe it's important to teach kids about sustainability and healthy eating habits from a young age. This project aligns with my values and interests."</p><p>• Cumulative Voting:</p><p>"Sure! Here are my preferences for the participatory budgeting program in Zurich, with three projects that I believe would greatly benefit the city and its residents: 1. #5 -Safe Bike Paths around Irchel Park (Nord) -4 points As a university student, I believe that improving cycling infrastructure is crucial for a safer and more sustainable commute. This project would enhance the safety of bike paths around Irchel Park, making it easier for students and residents to get around the city without relying on cars. 2. #17 -Bike Lanes on Seefeldstrasse (Ost) -3 points This project would create dedicated bike lanes on a busy street in the eastern part of Zurich, providing a safer and more convenient route for cyclists. As a student, I believe that investing in cycling infrastructure is essential for reducing traffic congestion and promoting sustainable transportation. 3. #22 -Sustainable Cooking Workshop with Kids (West) -3 points This project would offer cooking workshops for children, focusing on sustainable food practices and healthy eating habits. As a young adult, I believe that it's important to educate the next generation about the impact of their food choices on the environment and their health. By supporting this project, I hope to encourage sustainable living practices among young people in Zurich. Total points allocated: 10"</p><p>• Ranked Voting:</p><p>"Sure! Here are my votes: #1 -Planting Workshops at Oerlikon (Nord) -Nature -5000 CHF #2 -Free Open Badi Space in Wollishofen (S\u00fcd) -Nature -5000 CHF #3 -Environmental Film Session for Kids (S\u00fcd) -Culture -5000 CHF #4 -Car-free Sunday Festivals on Mutschellenstrasse (S\u00fcd) -Culture -10,000 CHF #5 -Bike Lanes on Seefeldstrasse (Ost) -Transportation -5,000 CHF My ranking is: 1. #1 -Planting Workshops at Oerlikon (Nord) -Nature -5000 CHF 2. #3 -Environmental Film Session for Kids (S\u00fcd) -Culture -5,000 CHF 3. #4 -Car-free Sunday Festivals on Mutschellenstrasse (S\u00fcd) -Culture -10,000 CHF 4. #2 -Free Open Badi Space in Wollishofen (S\u00fcd) -Nature -5,000 CHF 5. #5 -Bike Lanes on Seefeldstrasse (Ost) -Transportation -5,000 CHF I ranked projects based on my personal interest in environmental sustainability, cultural events, and transportation infrastructure. I believe that investing in planting workshops, environmental education for kids, and car-free festivals will contribute to a greener and more livable city. Additionally, I think it's important to provide free open spaces for residents to enjoy, especially in densely populated areas like Wollishofen. Finally, I support the development of bike lanes on Seefeldstrasse to promote sustainable transportation options."</p><p>GPT-4 Responses: agent #0, temp=1, with persona</p><p>• 5-Approval Voting:</p><p>#19,#20,#21,#22,#7</p><p>LLaMA-2 Responses: agent #3, temp=1, with persona GPT-4 Chain-of-Thoughts Responses: agent #1, temp=1, with persona</p><p>• First thought response "As a university student from the Nord district in Zurich with a strong preference for transport within urban topics, my decisions in a participatory budgeting program would be heavily influenced by proposals tackling issues of mobility and connectivity. Hence, I would favor projects that aim to improve the transportation infrastructure, as the development of bike lanes, enhancement of public transport services, and the integration of sustainable transport solutions. Projects that specifically target improvements within the Nord district would be of slightly less importance to me than the overall category of urban transport, but I would still consider them favorably, especially if they promise to better the daily commute and accessibility for residents, including my fellow students. The cost of the project would not influence my decision, as I am focused on the potential benefits and improvements in the transport sector rather than financial constraints. My main criterion for voting for a project would be its potential to make travel within Zurich more efficient, safer, and environmentally friendly."</p><p>• 5-Approval Voting GPT-4 Chain-of-Thoughts Responses: agent #39, temp=1, with persona</p><p>• First thought response "As a university student from the West district of Zurich with a strong preference for culture, my decisions regarding urban projects in a participatory budgeting program would be influenced by how well the projects align with the cultural enrichment of my district and the city at large. Given my background, I would prioritize funding for projects that promote cultural activities, such as the establishment of art galleries, support for local theaters, music festivals, or public art installations, especially those that are within or benefit the West district, as I find the district of execution very important.Moreover , since the urban category is very important to me, I would look favorably on projects that enhance urban livability through cultural means, such as creating cultural community centers or artist-in-residence programs that could bring a diverse range of cultural experiences to the residents.The cost of the project is moderately important, suggesting that while I am cost-conscious and desire effective use of funds, I might be willing to support slightly more expensive projects if they offer significant cultural benefits to the community. Nevertheless, overly expensive projects might be deprioritized in favor of those that offer better cost-to-benefit ratios within my interests. To sum up, cultural relevance, location within the West district, and a reasonable cost structure would guide my decisions in the participatory budgeting process."</p><p>• 5-Approval Voting "Based on my preferences for cultural projects, their location in the West district, and moderate consideration of the project cost, I would select the following:</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="11,319.50,71.73,238.50,7.77;11,319.50,81.69,238.50,7.77;11,319.50,91.65,128.53,7.77" xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Using Large Language Models to Simulate Multiple Humans and Replicate Human Subject Studies</title>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Aher</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">I</forename><surname>Arriaga</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">T</forename><surname>Kalai</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2208.10264</idno>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,319.50,104.76,238.50,7.77;11,319.50,114.56,142.58,7.93" xml:id="b1">
+	<analytic>
+		<title level="a" type="main">The Real Dangers of Generative AI</title>
+		<author>
+			<persName><forename type="first">Danielle</forename><surname>Allen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">Glen</forename><surname>Weyl</surname></persName>
+		</author>
+		<idno type="DOI">10.1353/jod.2024.a915355</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Democracy</title>
+		<title level="j" type="abbrev">jod</title>
+		<idno type="ISSNe">1086-3214</idno>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="147" to="162" />
+			<date type="published" when="2024-01">2024</date>
+			<publisher>Project MUSE</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,319.50,127.83,238.50,7.77;11,319.50,137.79,238.50,7.77;11,319.50,147.75,238.50,7.77;11,319.50,157.55,238.50,7.93;11,319.50,167.52,238.50,7.93;11,319.50,177.64,153.15,7.77" xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Leveraging AI for democratic discourse: Chat interventions can improve online political conversations at scale</title>
+		<author>
+			<persName><forename type="first">Lisa</forename><forename type="middle">P</forename><surname>Argyle</surname></persName>
+			<idno type="ORCID">0000-0003-3109-2537</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><forename type="middle">A</forename><surname>Bail</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ethan</forename><forename type="middle">C</forename><surname>Busby</surname></persName>
+			<idno type="ORCID">0000-0002-8931-6348</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Joshua</forename><forename type="middle">R</forename><surname>Gubler</surname></persName>
+			<idno type="ORCID">0000-0003-1635-8210</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Howe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><surname>Rytting</surname></persName>
+			<idno type="ORCID">0000-0002-7373-9741</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Taylor</forename><surname>Sorensen</surname></persName>
+			<idno type="ORCID">0000-0002-3251-3527</idno>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Wingate</surname></persName>
+			<idno type="ORCID">0000-0003-1850-6926</idno>
+		</author>
+		<idno type="DOI">10.1073/pnas.2311627120</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the National Academy of Sciences</title>
+		<title level="j" type="abbrev">Proc. Natl. Acad. Sci. U.S.A.</title>
+		<idno type="ISSN">0027-8424</idno>
+		<idno type="ISSNe">1091-6490</idno>
+		<imprint>
+			<biblScope unit="volume">120</biblScope>
+			<biblScope unit="issue">41</biblScope>
+			<biblScope unit="page">e2311627120</biblScope>
+			<date type="published" when="2023-10-03">2023a</date>
+			<publisher>Proceedings of the National Academy of Sciences</publisher>
+		</imprint>
+	</monogr>
+	<note>Publisher: Proceedings of the National Academy of Sciences</note>
+</biblStruct>
+
+<biblStruct coords="11,319.50,190.74,238.50,7.77;11,319.50,200.71,238.50,7.77;11,319.50,210.51,223.68,7.93" xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Out of One, Many: Using Language Models to Simulate Human Samples</title>
+		<author>
+			<persName><forename type="first">Lisa</forename><forename type="middle">P</forename><surname>Argyle</surname></persName>
+			<idno type="ORCID">0000-0003-3109-2537</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ethan</forename><forename type="middle">C</forename><surname>Busby</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nancy</forename><surname>Fulda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joshua</forename><forename type="middle">R</forename><surname>Gubler</surname></persName>
+			<idno type="ORCID">0000-0003-1635-8210</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><surname>Rytting</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Wingate</surname></persName>
+		</author>
+		<idno type="DOI">10.1017/pan.2023.2</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Political Analysis</title>
+		<title level="j" type="abbrev">Polit. Anal.</title>
+		<idno type="ISSN">1047-1987</idno>
+		<idno type="ISSNe">1476-4989</idno>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="337" to="351" />
+			<date type="published" when="2023-02-21">2023b</date>
+			<publisher>Cambridge University Press (CUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,319.50,223.61,238.50,7.93;11,319.50,233.74,60.91,7.77;11,319.50,246.68,238.50,7.93;11,319.50,256.64,71.23,7.93;11,319.50,269.91,238.50,7.77;11,319.50,279.87,158.69,7.77" xml:id="b4">
+	<analytic>
+		<title level="a" type="main">The Evolution of Cooperation. Basic Books</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">J</forename><surname>Arrow</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Axelrod</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><forename type="middle">D</forename><surname>Hamilton</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Mitchell</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2304.13734</idno>
+	</analytic>
+	<monogr>
+		<title level="m">The Internal State of an LLM Knows When It&apos;s Lying</title>
+				<meeting><address><addrLine>Azaria, A</addrLine></address></meeting>
+		<imprint>
+			<publisher>Yale University Press</publisher>
+			<date type="published" when="1951">1951. 1981. 2023</date>
+		</imprint>
+	</monogr>
+	<note>Social Choice and Individual Values</note>
+</biblStruct>
+
+<biblStruct coords="11,319.50,292.98,238.50,7.77;11,319.50,302.78,180.43,7.93;11,319.50,315.88,238.50,7.93;11,319.50,326.01,102.75,7.77" xml:id="b5">
+	<monogr>
+		<title level="m" type="main">A Polynomial-time Algorithm to Achieve Extended Justified Representation. ar5iv. Becker, G. S. 1976. The Economic Approach to Human Behavior</title>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Aziz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Huang</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<publisher>University of Chicago Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,319.50,339.11,238.50,7.77;11,319.50,348.92,238.50,7.93;11,319.50,358.88,119.29,7.93" xml:id="b6">
+	<analytic>
+		<title level="a" type="main">A within-subject analysis of other-regarding preferences</title>
+		<author>
+			<persName><forename type="first">Mariana</forename><surname>Blanco</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dirk</forename><surname>Engelmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hans</forename><forename type="middle">Theo</forename><surname>Normann</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.geb.2010.09.008</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Games and Economic Behavior</title>
+		<title level="j" type="abbrev">Games and Economic Behavior</title>
+		<idno type="ISSN">0899-8256</idno>
+		<imprint>
+			<biblScope unit="volume">72</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="321" to="338" />
+			<date type="published" when="2011-06">2011</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,319.50,372.14,238.50,7.77;11,319.50,382.11,238.50,7.77;11,319.50,392.07,105.08,7.77" xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Autonomous chemical research with large language models</title>
+		<author>
+			<persName><forename type="first">Daniil</forename><forename type="middle">A</forename><surname>Boiko</surname></persName>
+			<idno type="ORCID">0000-0003-4140-4645</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><surname>Macknight</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ben</forename><surname>Kline</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gabe</forename><surname>Gomes</surname></persName>
+			<idno type="ORCID">0000-0002-8235-5969</idno>
+		</author>
+		<idno type="DOI">10.1038/s41586-023-06792-0</idno>
+		<idno>ArXiv:2304.05332</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<title level="j" type="abbrev">Nature</title>
+		<idno type="ISSN">0028-0836</idno>
+		<idno type="ISSNe">1476-4687</idno>
+		<imprint>
+			<biblScope unit="volume">624</biblScope>
+			<biblScope unit="issue">7992</biblScope>
+			<biblScope unit="page" from="570" to="578" />
+			<date type="published" when="2023-12-20">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,319.50,405.01,238.50,7.93;11,319.50,414.98,238.50,7.93;11,319.50,425.10,21.17,7.77;11,319.50,438.04,238.50,7.93;11,319.50,448.17,127.51,7.77" xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Swarm Intelligence</title>
+		<author>
+			<persName><forename type="first">Eric</forename><surname>Bonabeau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marco</forename><surname>Dorigo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guy</forename><surname>Theraulaz</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/oso/9780195131581.001.0001</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Swarm Intelligence: From Natural to Artificial Systems</title>
+				<meeting><address><addrLine>Boston</addrLine></address></meeting>
+		<imprint>
+			<publisher>Oxford University Press</publisher>
+			<date type="published" when="1983">1999. 1983</date>
+		</imprint>
+	</monogr>
+	<note>Approval Voting. ISBN 9783764331085</note>
+</biblStruct>
+
+<biblStruct coords="11,319.50,461.27,238.50,7.77;11,319.50,471.24,238.50,7.77;11,319.50,481.20,174.36,7.77" xml:id="b9">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">M</forename><surname>Bran</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Cox</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">O</forename><surname>Schilter</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Baldassari</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">D</forename><surname>White</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Schwaller</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2304.05376</idno>
+		<title level="m">ChemCrow: Augmenting large-language models with chemistry tools</title>
+				<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,319.50,494.30,238.50,7.77;11,319.50,504.27,238.50,7.77;11,319.50,514.23,175.59,7.77;11,319.50,527.33,238.50,7.77;11,319.50,537.30,238.50,7.77;11,319.50,547.26,238.50,7.77;11,319.50,557.06,238.50,7.93;11,319.50,567.02,101.34,7.73" xml:id="b10">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">C.-M</forename><surname>Chan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Su</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Xue</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Fu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y.-S</forename><surname>Chuang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Harlalka</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Suresh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Goyal</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">D</forename><surname>Hawkins</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">V</forename><surname>Shah</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Rogers</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2308.07201</idno>
+		<title level="m">The Wisdom of Partisan Crowds: Comparing Collective Intelligence in Humans and LLM-based Agents</title>
+				<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note>ChatEval: Towards Better LLM-based Evaluators through Multi-Agent Debate. In ICLR 2024 Workshop on Large Language Model (LLM) Agents</note>
+</biblStruct>
+
+<biblStruct coords="11,319.50,580.29,238.50,7.77" xml:id="b11">
+	<monogr>
+		<title/>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Du</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Torralba</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">B</forename><surname>Tenenbaum</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">I</forename><surname>Mordatch</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,335.64,590.25,222.36,7.77;11,319.50,600.21,188.29,7.77" xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Distributed Multiagent Inference</title>
+		<idno type="DOI">10.1017/cbo9780511546938.009</idno>
+		<idno>ArXiv:2305.14325</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Probabilistic Reasoning in Multiagent Systems</title>
+				<imprint>
+			<publisher>Cambridge University Press</publisher>
+			<date type="published" when="2002-08-26" />
+			<biblScope unit="page" from="182" to="214" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,319.50,613.32,238.50,7.77;11,319.50,623.28,238.50,7.77;11,319.50,633.24,238.50,7.77;11,319.50,643.21,238.50,7.77;11,319.50,653.17,238.50,7.77;11,319.50,663.13,118.06,7.77" xml:id="b13">
+	<monogr>
+		<title level="m" type="main">Towards Measuring the Representation of Subjective Global Opinions in Language Models</title>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Durmus</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Nyugen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">I</forename><surname>Liao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Schiefer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Askell</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Bakhtin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Hatfield-Dodds</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Hernandez</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Joseph</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Lovitt</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Mccandlish</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">O</forename><surname>Sikder</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Tamkin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Thamkul</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Kaplan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Clark</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Ganguli</surname></persName>
+		</author>
+		<idno>ArXiv:2306.16388</idno>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,319.50,676.24,238.50,7.77;11,319.50,686.04,238.50,7.93;11,319.50,696.16,33.62,7.77;12,54.00,58.13,238.50,7.77;12,54.00,68.09,238.50,7.77;12,54.00,78.05,238.50,7.77;12,54.00,88.01,85.69,7.77" xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Properties of multiwinner voting rules</title>
+		<author>
+			<persName><forename type="first">Edith</forename><surname>Elkind</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Piotr</forename><surname>Faliszewski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Piotr</forename><surname>Skowron</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arkadii</forename><surname>Slinko</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00355-017-1026-z</idno>
+		<idno>ArXiv:2305.08283</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Social Choice and Welfare</title>
+		<title level="j" type="abbrev">Soc Choice Welf</title>
+		<idno type="ISSN">0176-1714</idno>
+		<idno type="ISSNe">1432-217X</idno>
+		<imprint>
+			<biblScope unit="volume">48</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="599" to="632" />
+			<date type="published" when="2017-01-30">2017. 2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note>Properties of Multiwinner Voting Rules</note>
+</biblStruct>
+
+<biblStruct coords="12,54.00,100.77,238.50,7.77;12,54.00,110.73,238.50,7.77;12,54.00,120.53,202.51,7.93" xml:id="b15">
+	<analytic>
+		<title level="a" type="main">A rational or a virtuous citizenry? – The asymmetric impact of biases in votes-seats translation on citizens&apos; satisfaction with democracy</title>
+		<author>
+			<persName coords=""><forename type="first">Benjamin</forename><surname>Ferland</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.electstud.2015.03.008</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Electoral Studies</title>
+		<title level="j" type="abbrev">Electoral Studies</title>
+		<idno type="ISSN">0261-3794</idno>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="page" from="394" to="408" />
+			<date type="published" when="2015-12">2015</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,54.00,133.45,238.50,7.77;12,54.00,143.25,238.50,7.93;12,54.00,153.21,99.04,7.73" xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Preprint repository arXiv achieves milestone million uploads</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Fish</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Gölz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">C</forename><surname>Parkes</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">D</forename><surname>Procaccia</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Rusak</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">I</forename><surname>Shapira</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Wüthrich</surname></persName>
+		</author>
+		<idno type="DOI">10.1063/pt.5.028530</idno>
+		<idno type="arXiv">arXiv:2309.01291</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Physics Today</title>
+		<title level="j" type="abbrev">Phys. Today</title>
+		<idno type="ISSNe">1945-0699</idno>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+			<publisher>AIP Publishing</publisher>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="12,54.00,166.13,238.50,7.77;12,54.00,175.93,238.50,7.93;12,54.00,185.89,80.63,7.93" xml:id="b17">
+	<analytic>
+		<title level="a" type="main">AI as Agency Without Intelligence: on ChatGPT, Large Language Models, and Other Generative Models</title>
+		<author>
+			<persName coords=""><forename type="first">Luciano</forename><surname>Floridi</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s13347-023-00621-y</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Philosophy &amp; Technology</title>
+		<title level="j" type="abbrev">Philos. Technol.</title>
+		<idno type="ISSN">2210-5433</idno>
+		<idno type="ISSNe">2210-5441</idno>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">15</biblScope>
+			<date type="published" when="2023-03">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,54.00,198.80,238.50,7.77;12,54.00,208.77,238.50,7.77;12,54.00,218.73,11.21,7.77;12,54.00,231.48,238.50,7.77;12,54.00,241.45,238.50,7.77;12,54.00,251.25,121.21,7.73" xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Supported democracy: reinventing direct democracy, AI and voting twice</title>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Gersbach</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Martinelli</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Gudiño-Rosero</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">U</forename><surname>Grandi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">A</forename><surname>Hidalgo</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2405.03452</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Large Language Models (LLMs) as Agents for Augmented Democracy</title>
+				<imprint>
+			<date type="published" when="2023">2023. 2024</date>
+			<biblScope unit="page" from="2024" to="2025" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="12,54.00,264.16,238.50,7.77" xml:id="b19">
+	<monogr>
+		<title/>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Hao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Qi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Q</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Nie</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,70.14,274.13,222.36,7.77;12,54.00,284.09,85.69,7.77" xml:id="b20">
+	<analytic>
+		<title level="a" type="main">What do more intelligent brains look like?</title>
+		<author>
+			<persName><forename type="first">Ian</forename><forename type="middle">J</forename><surname>Deary</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/actrade/9780198796206.003.0006</idno>
+		<idno>ArXiv:2304.12998</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Intelligence: A Very Short Introduction</title>
+				<imprint>
+			<publisher>Oxford University PressOxford</publisher>
+			<date type="published" when="2020-03-26" />
+			<biblScope unit="page" from="83" to="C6.P23" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,54.00,296.84,238.50,7.77;12,54.00,306.80,238.50,7.77;12,54.00,316.61,101.62,7.73" xml:id="b21">
+	<analytic>
+		<title level="a" type="main">On the Legitimacy of Voting Methods</title>
+		<author>
+			<persName><forename type="first">Carina</forename><forename type="middle">Ines</forename><surname>Hausladen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Regula</forename><surname>Hänggli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dirk</forename><surname>Helbing</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Renato</forename><surname>Kunz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Junling</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Evangelos</forename><surname>Pournaras</surname></persName>
+		</author>
+		<idno type="DOI">10.2139/ssrn.4372245</idno>
+	</analytic>
+	<monogr>
+		<title level="j">SSRN Electronic Journal</title>
+		<title level="j" type="abbrev">SSRN Journal</title>
+		<idno type="ISSNe">1556-5068</idno>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,54.00,329.52,238.50,7.77;12,54.00,339.48,238.50,7.77;12,54.00,349.45,238.50,7.77;12,54.00,359.41,238.50,7.77;12,54.00,369.21,212.23,7.93" xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Democracy by Design: Perspectives for Digitally Assisted, Participatory Upgrades of Society</title>
+		<author>
+			<persName><forename type="first">Dirk</forename><surname>Helbing</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sachit</forename><surname>Mahajan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Regula</forename><surname>Hänggli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrea</forename><surname>Musso</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carina</forename><forename type="middle">Ines</forename><surname>Hausladen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cesare</forename><surname>Carissimo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dino</forename><surname>Carpentras</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elisabeth</forename><surname>Stockinger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Javier</forename><surname>Argota Sanchez-Vaquerizo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joshua</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mark</forename><forename type="middle">C</forename><surname>Ballandies</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marcin</forename><surname>Korecki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rohit</forename><forename type="middle">Kumar</forename><surname>Dubey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Evangelos</forename><surname>Pournaras</surname></persName>
+		</author>
+		<idno type="DOI">10.2139/ssrn.4266038</idno>
+	</analytic>
+	<monogr>
+		<title level="j">SSRN Electronic Journal</title>
+		<title level="j" type="abbrev">SSRN Journal</title>
+		<idno type="ISSNe">1556-5068</idno>
+		<imprint>
+			<biblScope unit="page">71</biblScope>
+			<date type="published" when="2022-11-02">2022. November 2, 2022</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,54.00,382.13,238.50,7.77" xml:id="b23">
+	<monogr>
+		<title level="m" type="main">Augmented Democracy</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Hidalgo</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="page" from="2024" to="2025" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,54.00,394.88,238.50,7.77;12,54.00,404.84,238.50,7.77;12,54.00,414.80,238.50,7.77;12,54.00,424.77,238.50,7.77;12,54.00,434.73,67.52,7.77;12,54.00,447.48,238.50,7.77;12,54.00,457.45,238.50,7.77;12,54.00,467.41,116.57,7.77" xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Large Language Models as Simulated Economic Agents: What Can We Learn from Homo Silicus?</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Zhuge</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">K S</forename><surname>Yau</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Ran</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Xiao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Schmidhuber</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2308.00352</idno>
+		<idno>ArXiv:2301.07543</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J. J</title>
+		<imprint>
+			<date type="published" when="2023">2023. 2023</date>
+		</imprint>
+	</monogr>
+	<note>MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework. econ, q-fin</note>
+</biblStruct>
+
+<biblStruct coords="12,54.00,480.16,238.50,7.77;12,54.00,490.13,238.50,7.77;12,54.00,499.93,201.29,7.93" xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Strategic voting in multi-winner elections with approval balloting: a theory for large electorates</title>
+		<author>
+			<persName><forename type="first">Jean-François</forename><surname>Laslier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Karine</forename><surname>Van Der Straeten</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00355-016-0983-y</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Social Choice and Welfare</title>
+		<title level="j" type="abbrev">Soc Choice Welf</title>
+		<idno type="ISSN">0176-1714</idno>
+		<idno type="ISSNe">1432-217X</idno>
+		<imprint>
+			<biblScope unit="volume">47</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="559" to="587" />
+			<date type="published" when="2016-07-28">2016</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,54.00,512.84,238.50,7.77;12,54.00,522.80,238.50,7.77;12,54.00,532.77,238.50,7.77" xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Large Language Model-Empowered Agents for Simulating Macroeconomic Activities</title>
+		<author>
+			<persName><forename type="first">Nian</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chen</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yong</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qingmin</forename><surname>Liao</surname></persName>
+		</author>
+		<idno type="DOI">10.2139/ssrn.4606937</idno>
+		<idno type="arXiv">arXiv:2303.17760</idno>
+	</analytic>
+	<monogr>
+		<title level="j">SSRN Electronic Journal</title>
+		<title level="j" type="abbrev">SSRN Journal</title>
+		<idno type="ISSNe">1556-5068</idno>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,54.00,545.52,238.50,7.77;12,54.00,555.48,238.50,7.77;12,54.00,565.45,194.57,7.77" xml:id="b27">
+	<monogr>
+		<title level="m" type="main">Encouraging Divergent Thinking in Large Language Models through Multi-Agent Debate</title>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Jiao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Tu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Shi</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,54.00,578.20,238.50,7.77;12,54.00,588.16,238.50,7.77;12,54.00,598.13,237.11,7.77" xml:id="b28">
+	<monogr>
+		<title level="m" type="main">Training Socially Aligned Language Models on Simulated Social Interactions</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Jia</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">M</forename><surname>Dai</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Vosoughi</surname></persName>
+		</author>
+		<idno>ArXiv:2305.16960</idno>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,54.00,610.72,238.50,7.93;12,54.00,620.68,238.50,7.93;12,54.00,630.80,147.33,7.77" xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Political Turbulence</title>
+		<author>
+			<persName><forename type="first">Helen</forename><surname>Margetts</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><surname>John</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Scott</forename><surname>Hale</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Taha</forename><surname>Yasseri</surname></persName>
+		</author>
+		<idno type="DOI">10.2307/j.ctvc773c7</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Political Turbulence: How Social Media Shape Collective Action</title>
+				<imprint>
+			<publisher>Princeton University Press</publisher>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,54.00,643.56,238.50,7.77;12,54.00,653.52,238.50,7.77;12,54.00,663.48,162.20,7.77" xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Generative Agents: Interactive Simulacra of Human Behavior</title>
+		<author>
+			<persName><forename type="first">Joon</forename><forename type="middle">Sung</forename><surname>Park</surname></persName>
+			<idno type="ORCID">0000-0001-5036-4409</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Joseph</forename><surname>O'brien</surname></persName>
+			<idno type="ORCID">0009-0004-0781-926X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Carrie</forename><forename type="middle">Jun</forename><surname>Cai</surname></persName>
+			<idno type="ORCID">0000-0001-9421-7128</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Meredith</forename><forename type="middle">Ringel</forename><surname>Morris</surname></persName>
+			<idno type="ORCID">0000-0003-1436-9223</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Percy</forename><surname>Liang</surname></persName>
+			<idno type="ORCID">0000-0002-0458-6139</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">S</forename><surname>Bernstein</surname></persName>
+			<idno type="ORCID">0000-0001-8020-9434</idno>
+		</author>
+		<idno type="DOI">10.1145/3586183.3606763</idno>
+		<idno>ArXiv:2304.03442</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 36th Annual ACM Symposium on User Interface Software and Technology</title>
+				<meeting>the 36th Annual ACM Symposium on User Interface Software and Technology</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2023-10-29">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,54.00,676.24,238.50,7.77;12,54.00,686.04,238.50,7.93;12,54.00,696.00,83.68,7.93;12,319.50,57.96,238.50,7.94;12,319.50,67.93,82.82,7.94;12,319.50,80.84,238.50,7.77;12,319.50,90.80,238.50,7.77;12,319.50,100.77,238.50,7.77" xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Rationality and social choice. The American economic review</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">D</forename><surname>Rank</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Mushtare</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Sen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Serapio-García</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Safdari</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Crepy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Fitz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Romero</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Abdulhai</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Faust</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Matarić</surname></persName>
+		</author>
+		<idno>ArXiv:2307.00184</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of General Education</title>
+		<imprint>
+			<biblScope unit="volume">68</biblScope>
+			<biblScope unit="issue">3-4</biblScope>
+			<biblScope unit="page" from="252" to="262" />
+			<date type="published" when="1995">2019. 1995. 2023</date>
+		</imprint>
+	</monogr>
+	<note>Using Personas as a Tool for Teaching Civic Communication. Personality Traits in Large Language Models</note>
+</biblStruct>
+
+<biblStruct coords="12,319.50,113.36,238.50,7.93;12,319.50,123.32,238.50,7.93;12,319.50,133.45,60.91,7.77" xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Multiagent Systems</title>
+		<author>
+			<persName><forename type="first">Yoav</forename><surname>Shoham</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kevin</forename><surname>Leyton-Brown</surname></persName>
+		</author>
+		<idno type="DOI">10.1017/cbo9780511811654</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Multiagent Systems: Algorithmic, Game-Theoretic, and Logical Foundations</title>
+				<imprint>
+			<publisher>Cambridge University Press</publisher>
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,319.50,146.20,238.50,7.77;12,319.50,156.00,238.50,7.93;12,319.50,165.96,68.24,7.93" xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Axiomatic characterization of committee scoring rules</title>
+		<author>
+			<persName><forename type="first">Piotr</forename><surname>Skowron</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Piotr</forename><surname>Faliszewski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arkadii</forename><surname>Slinko</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jet.2018.12.011</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Economic Theory</title>
+		<title level="j" type="abbrev">Journal of Economic Theory</title>
+		<idno type="ISSN">0022-0531</idno>
+		<imprint>
+			<biblScope unit="volume">180</biblScope>
+			<biblScope unit="page" from="244" to="273" />
+			<date type="published" when="2019-03">2019</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,319.50,178.88,238.50,7.77;12,319.50,188.68,238.50,7.93;12,319.50,198.64,96.99,7.93" xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Playing Games with Ais: The Limits of GPT-3 and Similar Large Language Models</title>
+		<author>
+			<persName><forename type="first">Adam</forename><surname>Sobieszek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tadeusz</forename><surname>Price</surname></persName>
+			<idno type="ORCID">0000-0003-1264-7103</idno>
+		</author>
+		<idno type="DOI">10.1007/s11023-022-09602-0</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Minds and Machines</title>
+		<title level="j" type="abbrev">Minds &amp; Machines</title>
+		<idno type="ISSN">0924-6495</idno>
+		<idno type="ISSNe">1572-8641</idno>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="341" to="364" />
+			<date type="published" when="2022-05-03">2022</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,319.50,211.56,238.50,7.77;12,319.50,221.36,238.50,7.93;12,319.50,231.48,66.75,7.77" xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Accelerating science with human-aware artificial intelligence</title>
+		<author>
+			<persName><forename type="first">Jamshid</forename><surname>Sourati</surname></persName>
+			<idno type="ORCID">0000-0002-4893-2793</idno>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><forename type="middle">A</forename><surname>Evans</surname></persName>
+			<idno type="ORCID">0000-0001-9838-0707</idno>
+		</author>
+		<idno type="DOI">10.1038/s41562-023-01648-z</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Human Behaviour</title>
+		<title level="j" type="abbrev">Nat Hum Behav</title>
+		<idno type="ISSNe">2397-3374</idno>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="1682" to="1696" />
+			<date type="published" when="2023-07-13">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,319.50,244.24,144.33,7.77;12,479.99,244.24,78.01,7.77;12,319.50,254.20,238.50,7.77;12,319.50,264.16,85.69,7.77" xml:id="b36">
+	<monogr>
+		<title level="m" type="main">Multi-Agent Collaboration: Harnessing the Power of Intelligent LLM Agents</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Talebirad</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Nadiri</surname></persName>
+		</author>
+		<idno>ArXiv:2306.03314</idno>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,319.50,276.92,238.50,7.77;12,319.50,286.88,204.73,7.77;12,319.50,299.63,238.50,7.77;12,319.50,309.60,238.50,7.77;12,319.50,319.40,238.50,7.93;12,319.50,329.36,112.91,7.93" xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Language models don&apos;t always say what they think: unfaithful explanations in chain-of-thought prompting</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Weyl</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Plurality</forename><surname>Community ; Turpin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Michael</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Perez</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Bowman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems</title>
+				<imprint>
+			<date type="published" when="2023">2023. 2024</date>
+			<biblScope unit="page">36</biblScope>
+		</imprint>
+	</monogr>
+	<note>Plurality: The Future of Collaborative Technology and Democracy</note>
+</biblStruct>
+
+<biblStruct coords="12,319.50,342.27,238.50,7.77;12,319.50,352.24,238.50,7.77;12,319.50,362.20,216.34,7.77" xml:id="b38">
+	<monogr>
+		<title level="m" type="main">Simulating Social Media Using Large Language Models to Evaluate Alternative News Feed Algorithms</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Törnberg</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Valeeva</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Uitermark</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Bail</surname></persName>
+		</author>
+		<idno>ArXiv:2310.05984</idno>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,319.50,374.95,238.50,7.77;12,319.50,384.76,232.32,7.93" xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Rationality as the pursuit of Self-interest</title>
+		<author>
+			<persName coords=""><forename type="first">Vivian</forename><surname>Walsh</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/oso/9780198287728.003.0006</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Rationality, allocation, And reproduction</title>
+				<imprint>
+			<publisher>Oxford University PressOxford</publisher>
+			<date type="published" when="1994">1994</date>
+			<biblScope unit="volume">84</biblScope>
+			<biblScope unit="page" from="112" to="138" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,319.50,397.67,238.50,7.77;12,319.50,407.63,238.50,7.77;12,319.50,417.60,238.50,7.77;12,319.50,427.56,116.56,7.77" xml:id="b40">
+	<analytic>
+		<title level="a" type="main">A survey on large language model based autonomous agents</title>
+		<author>
+			<persName><forename type="first">Lei</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chen</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xueyang</forename><surname>Feng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zeyu</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hao</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jingsen</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhiyuan</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiakai</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xu</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yankai</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wayne</forename><forename type="middle">Xin</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhewei</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jirong</forename><surname>Wen</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s11704-024-40231-1</idno>
+		<idno>ArXiv:2308.11432</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers of Computer Science</title>
+		<title level="j" type="abbrev">Front. Comput. Sci.</title>
+		<idno type="ISSN">2095-2228</idno>
+		<idno type="ISSNe">2095-2236</idno>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<date type="published" when="2023">2023a</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,319.50,440.31,238.50,7.77;12,319.50,450.27,179.53,7.77" xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Primacy Effect of ChatGPT</title>
+		<author>
+			<persName><forename type="first">Yiwei</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yujun</forename><surname>Cai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Muhao</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuxuan</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bryan</forename><surname>Hooi</surname></persName>
+		</author>
+		<idno type="DOI">10.18653/v1/2023.emnlp-main.8</idno>
+		<idno>ArXiv:2310.13206</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing</title>
+				<meeting>the 2023 Conference on Empirical Methods in Natural Language Processing</meeting>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2023">2023b</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,319.50,463.03,238.50,7.77;12,319.50,472.99,238.50,7.77;12,319.50,482.95,238.50,7.77;12,319.50,492.92,85.69,7.77" xml:id="b42">
+	<monogr>
+		<title level="m" type="main">Unleashing Cognitive Synergy in Large Language Models: A Task-Solving Agent through Multi-Persona Self-Collaboration</title>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Mao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Ge</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Ji</surname></persName>
+		</author>
+		<idno>ArXiv:2307.05300</idno>
+		<imprint>
+			<date type="published" when="2023">2023c</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,319.50,505.67,238.50,7.77;12,319.50,515.63,238.50,7.77;12,319.50,525.43,238.50,7.93;12,319.50,535.40,156.00,7.93" xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Chain-of-thought prompting elicits reasoning in large language models</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Schuurmans</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Bosma</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Xia</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Chi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Q</forename><forename type="middle">V</forename><surname>Le</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Zhou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems</title>
+				<imprint>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="page" from="24824" to="24837" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,319.50,548.31,238.50,7.77;12,319.50,558.27,238.50,7.77;12,319.50,568.24,238.50,7.77;12,319.50,578.20,238.50,7.77;12,319.50,588.16,85.69,7.77" xml:id="b44">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">Q</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Bansal</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">H</forename><surname>Awadallah</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">W</forename><surname>White</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Burger</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Wang</surname></persName>
+		</author>
+		<idno>ArXiv:2308.08155</idno>
+		<title level="m">AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation</title>
+				<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,319.50,600.92,238.50,7.77;12,319.50,610.88,238.50,7.77;12,319.50,620.84,238.50,7.77;12,319.50,630.64,238.50,7.93;12,319.50,640.61,83.31,7.73" xml:id="b45">
+	<monogr>
+		<title level="m" type="main">Fairness and Legitimacy of Voting Methods in Digital Participatory Budgeting</title>
+		<author>
+			<persName coords=""><forename type="first">Joshua</forename><forename type="middle">C</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">I</forename><surname>Hausladen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Peters</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Pournaras</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">H</forename><surname>Fricker</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Helbing</surname></persName>
+		</author>
+		<idno type="DOI">10.1257/rct.11021</idno>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+			<publisher>American Economic Association</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,319.50,653.52,238.50,7.77;12,319.50,663.48,238.50,7.77;12,319.50,673.45,108.35,7.77" xml:id="b46">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">J.-Y</forename><surname>Yao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K.-P</forename><surname>Ning</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z.-H</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M.-N</forename><surname>Ning</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Yuan</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2310.01469</idno>
+		<title level="m">LLM Lies: Hallucinations are not Bugs, but Features as Adversarial Examples</title>
+				<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,319.50,686.20,238.50,7.77;12,319.50,696.16,238.50,7.77;13,54.00,58.13,238.50,7.77;13,54.00,68.09,190.36,7.77;13,54.00,80.54,238.50,7.77;13,54.00,90.50,238.50,7.77;13,54.00,100.47,238.50,7.77;13,54.00,110.43,67.52,7.77;13,54.00,122.88,238.50,7.77;13,54.00,132.84,238.50,7.77;13,54.00,142.81,238.50,7.77;13,54.00,152.77,238.50,7.77;13,54.00,162.73,238.50,7.77;13,54.00,172.70,238.50,7.77;13,54.00,182.66,85.69,7.77" xml:id="b47">
+	<analytic>
+		<title level="a" type="main">ProAgent: Building Proactive Cooperative Agents with Large Language Models</title>
+		<author>
+			<persName><forename type="first">Ceyao</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kaijie</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Siyi</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zihao</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guanghe</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yihang</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cheng</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhaowei</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anji</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Song-Chun</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaojun</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Junge</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Feng</forename><surname>Yin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yitao</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yaodong</forename><surname>Yang</surname></persName>
+		</author>
+		<idno type="DOI">10.1609/aaai.v38i16.29710</idno>
+		<idno type="arXiv">arXiv:2308.11339</idno>
+		<idno>ArXiv:2305.17066</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the AAAI Conference on Artificial Intelligence</title>
+		<title level="j" type="abbrev">AAAI</title>
+		<idno type="ISSN">2159-5399</idno>
+		<idno type="ISSNe">2374-3468</idno>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">16</biblScope>
+			<biblScope unit="page" from="17591" to="17599" />
+			<date type="published" when="2023">2023a. 2023b. 2023</date>
+			<publisher>Association for the Advancement of Artificial Intelligence (AAAI)</publisher>
+		</imprint>
+	</monogr>
+	<note>Mindstorms in Natural Language-Based Societies of Mind</note>
+</biblStruct>
+
+<biblStruct coords="20,97.64,60.08,251.06,4.91;20,97.64,70.04,301.27,4.91;20,97.64,80.00,355.67,4.91;20,97.64,89.97,280.35,4.91;20,97.64,99.93,234.32,4.91;20,97.64,109.89,447.72,4.91;20,117.56,119.85,41.84,4.91" xml:id="b48">
+	<analytic>
+		<title level="a" type="main">West of Eden: Resource Wars and Nature–Cultures in the American West</title>
+		<author>
+			<persName><forename type="first">Scout</forename><surname>Calvert</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/09505431.2011.576241</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Science as Culture</title>
+		<title level="j" type="abbrev">Science as Culture</title>
+		<idno type="ISSN">0950-5431</idno>
+		<idno type="ISSNe">1470-1189</idno>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="129" to="134" />
+			<date type="published" when="2012-03" />
+			<publisher>Informa UK Limited</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

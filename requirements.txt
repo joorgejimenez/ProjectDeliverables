@@ -1,10 +1,8 @@
-requests
 lxml
-wordcloud
-matplotlib
-transformers==4.10.0
-# rdflib
-tensorflow==2.5.0
-sentence-transformers
+transformers==4.33.3
+rdflib
+sentence-transformers==2.2.2
 scikit-learn
 beautifulsoup4
+torch
+nltk
