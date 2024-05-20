@@ -1,0 +1,1295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">The Rise of Recommerce: Ownership and Sustainability with Overlapping Generations</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2024-05-15">15 May 2024</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,282.45,157.40,47.09,10.96"><forename type="first">Rubing</forename><surname>Li</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">New York University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,260.55,186.96,90.90,10.96"><forename type="first">Arun</forename><surname>Sundararajan</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="institution">New York University</orgName>
+							</affiliation>
+						</author>
+						<title level="a" type="main">The Rise of Recommerce: Ownership and Sustainability with Overlapping Generations</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2024-05-15">15 May 2024</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">D8A1F94148B2B7AF2B4704115E229B27</idno>
+					<idno type="arXiv">arXiv:2405.09023v1[econ.GN]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2024-05-19T14:32+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>analytical model</term>
+					<term>platform</term>
+					<term>secondary market</term>
+					<term>pricing</term>
+					<term>versioning</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>The emergence of the branded recommerce channel -digitally enabled and branded marketplaces that facilitate purchasing pre-owned items directly from a manufacturer's e-commerce site -leads to new variants of classic IS and economic questions relating to secondary markets. Such branded recommerce is increasingly platform-enabled, creating opportunities for greater sustainability and stronger brand experience control but posing a greater risk of cannibalization of the sales of new items. We model the effects that the sales of pre-owned items have on market segmentation and product durability choices for a monopolist facing heterogeneous customers, contrasting outcomes when the trade of pre-owned goods takes place through a third-party marketplace with outcomes under branded recommerce. We show that the direct revenue benefits of branded recommerce are not their primary source of value to the monopolist, and rather, there are three indirect effects that alter profits and sustainability. Product durability increases, a seller finds it optimal to forgo marketplace fees altogether, and there are greater seller incentives to lower the quality uncertainty associated with pre-owned items. We establish these results for a simple two-period model as well as developing a new infinite horizon model with overlapping generations. Our paper sheds new insight into this emerging digital channel phenomenon, underscoring the importance of recommerce platforms in aligning seller profits with sustainability goals.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="17" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="18" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="19" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="20" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="21" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="22" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="23" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="24" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="25" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="26" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="27" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="28" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="29" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="30" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="31" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="32" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>The market for pre-owned items has seen a significant growth and acceleration of digital innovation over the last few years. Third-party digital markets such as Depop, Poshmark, StockX, and The RealReal have contributed to this recent explosion of "recommerce" -the sale or trading of preowned items. In parallel, new digital platforms like Trove and Recurate have made it possible for companies ranging from Canada Goose and Patagonia to Zara and lululemon to set up their own branded marketplaces that facilitate purchasing pre-owned items directly from the brand, a practice we refer to as branded recommerce. Figure <ref type="figure" coords="2,272.78,252.09,5.37,10.96" target="#fig_0">1</ref> presents examples of two branded recommerce sites.</p><p>Sales of pre-owned apparel, over $100 billion globally in 2022, are projected to grow at five times the rate of overall commerce, doubling to $218 billion by 2026 and making up 23% of apparel retail sales <ref type="bibr" coords="2,97.15,325.97,75.12,10.96">(Thredup, 2022)</ref>. The emergence of platform-based branded recommerce leads to new variants of classic economics and IS questions relating to secondary markets. For example, manufacturers who see branded recommerce as an opportunity to shape the initial brand experience of customers who begin their brand relationship by buying a pre-owned item have to weigh these benefits against the possible increased threat of cannibalization of the sales of new items. A manufacturer who may not have previously encouraged the purchasing of pre-owned items may find their economic incentives are altered by the prospect of value capture from these transactions under branded recommerce, or may see branded recommerce as an "entry deterring" move against specialty third-party marketplaces for pre-owned items. The ability to capture value from recommerce may increase the incentives of a manufacturer to create more durable products better aligned with sustainability goals.</p><p>In this paper, our focus is on the interplay of some of these factors with a brand's choice of product durability. Intuitively, a more durable product can be used (and reused) more. A higher potential level of reusability can be thought of as being more sustaiable. As an expert on sustainable fashion recently observed in a Bloomberg article <ref type="bibr" coords="3,265.36,283.09,68.55,10.96" target="#b44">(Woody (2024)</ref>):</p><p>"Durability and reparability affect environmental impact," says Veronica Bates Kassatly, a Londonbased fashion industry analyst focused on sustainability. She cites the example of wearing a shirt 500 times. If a cheaply made shirt is replaced after being worn 10 times, 50 shirts will need to be produced and discarded. But if one better-made and easily mended shirt can be worn 500 times, the environmental cost is significantly lower, even if making the garment uses more water and energy upfront.</p><p>A tradeoff for a brand considering this kind of move towards sustainability stems from the threat of cannibalizing the sales of new products; products that degrade faster help drive more frequent replacement or sales of new products. Perhaps the emergence of a channel that allows a brand to internalize some of the value created by resale alters this tradeoff.</p><p>We develop an economic model of recommerce that sheds light on some of these issues. We begin by examining the effects that the sales of pre-owned items have on market segmentation and product durability choices in a two-period model, contrasting outcomes when the trade of pre-owned goods takes place through a third-party marketplace with outcomes under branded recommerce. Our model includes stylized measures that capture third-party market power (the extent to which value from preowned goods trade is captured by the marketplace owner) and quality uncertainty (the gap between the valuation of a pre-owned item by the original owner who knows its actual quality and condition, and a potential buyer who does not). We then extend this analysis to a more general infinte-horizon model in which there are overlapping generations of customers.</p><p>Our results show that under fairly general assumptions, adopting branded recommerce is profitable for a monopolist who faces a third-party secondary marketplace. Furthermore, the monopolist's profit-maximizing durability choices are more aligned with sustainability goals under branded recommerce. We show how this "sustainability bump" from branded recommerce is higher when third-party markets are more powerful, and when pre-owned product quality uncertainty is higher, even though the move to branded recommerce by itself may not resolve any of the underlying quality uncertainty.</p><p>Counterintuitively, the direct revenue potential of branded recommerce is not its equilibrium source of value. Rather, we demonstrate a set of indirect economic effects which benefit manufacturers and increase sustainability. Product durability increases, there are greater seller incentives to invest in lowering the quality uncertainty associated with pre-owned items, and it is actually optimal for manufacturers to forgo marketplace fees altogether.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Literature Review</head><p>At a time when planned obsolescence is both widespread and lowering product durability is under fire as being environmentally irresponsible, our results suggest that branded recommerce could offer an additional economic lever to sellers balancing profit maximization with sustainability considerations.</p><p>We build on the theory of the optimal pricing of a product line <ref type="bibr" coords="4,377.89,513.42,119.40,10.96" target="#b27">(Mussa and Rosen (1978)</ref>, <ref type="bibr" coords="4,505.96,513.42,34.04,10.96;4,72.00,538.65,76.02,10.96" target="#b25">Maskin and Riley (1984)</ref>, <ref type="bibr" coords="4,155.88,538.65,114.06,10.96" target="#b26">Moorthy and Png (1992)</ref>, <ref type="bibr" coords="4,277.79,538.65,94.47,10.96" target="#b37">Sundararajan (2004)</ref>, <ref type="bibr" coords="4,380.12,538.65,150.65,10.96" target="#b5">Bhargava and Choudhary (2008)</ref>), <ref type="bibr" coords="4,72.00,563.89,122.41,10.96" target="#b24">Mantena and Saha (2012)</ref>, <ref type="bibr" coords="4,203.51,563.89,112.49,10.96" target="#b29">Pang and Etzion (2012)</ref>). For example, <ref type="bibr" coords="4,395.56,563.89,78.92,10.96" target="#b43">Waldman (1996)</ref> shows that a monopoly seller has an incentive to lower product durability because at higher levels of durability, the ensuing higher quality of the pre-owned item in future periods limits pricing power. We follow <ref type="bibr" coords="4,72.00,639.60,78.74,10.96" target="#b43">Waldman (1996)</ref> and <ref type="bibr" coords="4,176.49,639.60,123.41,10.96" target="#b17">Hendel and Lizzeri (1999)</ref> in modeling durability as determining the quality gap between new and pre-owned goods, in contrast with <ref type="bibr" coords="4,342.56,664.84,72.02,10.96" target="#b20">Johnson (2011)</ref> and others who treat new and pre-owned goods as having equal quality and model durability as the survival probability of a product.</p><p>Following the literature in economics and IS that has shown the economic importance of product uncertainty <ref type="bibr" coords="5,130.08,105.12,98.77,10.96" target="#b30">(Pavlou et al. (2007)</ref>, <ref type="bibr" coords="5,238.28,105.12,99.08,10.96" target="#b11">Dimoka et al. (2012)</ref>, <ref type="bibr" coords="5,346.76,105.12,61.59,10.96" target="#b15">Ghose (2009)</ref>, <ref type="bibr" coords="5,417.77,105.12,117.38,10.96" target="#b18">Hong and Pavlou (2014)</ref>)</p><p>and transaction cost <ref type="bibr" coords="5,173.40,130.54,64.18,10.96" target="#b1">(Bakos (1997)</ref>), we explicitly incorporate simple representations of these two factors into our model. A more detailed model of how the nature of secondary market frictions affect market outcomes <ref type="bibr" coords="5,155.44,181.39,101.15,10.96" target="#b21">(Kannan et al. (2023)</ref>) may lead to further insight, and this represents a direction for future researchers.</p><p>Our paper is also related to the literature on the incentives of monopoly sellers of durable goods that stems from the celebrated Coase conjecture <ref type="bibr" coords="5,279.34,257.66,64.31,10.96" target="#b9">(Coase (1972)</ref>) -that absent commitment devices, the price charged by a durable goods monopolist is driven down to marginal cost by a time inconsistency problem, thus leading to monopoly choices of durability that are lower than the socially optimal levels, and, as shown by earlier work <ref type="bibr" coords="5,246.28,333.94,143.60,10.96" target="#b22">(Levhari and Srinivasan (1969)</ref>, <ref type="bibr" coords="5,398.01,333.94,89.36,10.96" target="#b35">Schmalensee (1970)</ref>), inducing a monopolist to pursue a strategy of planned obsolescence. A series of papers that followed have either reinforced and refuted the Coase conjecture. For example, in a series of papers, <ref type="bibr" coords="5,478.83,384.79,56.49,10.96" target="#b39">Swan (1970)</ref>, <ref type="bibr" coords="5,72.00,410.21,57.07,10.96" target="#b40">Swan (1971)</ref>, <ref type="bibr" coords="5,137.97,410.21,58.76,10.96" target="#b41">Swan (1972)</ref> and <ref type="bibr" coords="5,222.46,410.21,113.41,10.96" target="#b36">Sieper and Swan (1973)</ref> assert using a model that endogenizes the monopolist's choice of durability that this will actually be at the socially optimal level. In contrast, <ref type="bibr" coords="5,72.00,461.06,60.41,10.96" target="#b6">Bulow (1982)</ref>, <ref type="bibr" coords="5,140.05,461.06,62.12,10.96" target="#b7">Bulow (1986)</ref> reaffirms the Coase results, strengthening the theoretical case for leasing and planned obsolescence. While we do not aim to exhaustively summarize this literature, to the best of our knowledge, ours is the first paper that connects the ownership of the secondary market to this discussion on optimal durability.</p><p>Our model with overlapping generations of consumers aims to capture the effect of evolving consumer preferences that <ref type="bibr" coords="5,183.31,588.18,72.15,10.96" target="#b20">Johnson (2011)</ref> and others like <ref type="bibr" coords="5,333.45,588.18,86.46,10.96" target="#b8">Chen et al. (2013)</ref> and Fraiberger and Sundararajan (2017) models as idiosyncratic preference shocks. Our approach follows a standard infinite horizon setting in which consumers live for two periods (see, for example, <ref type="bibr" coords="5,412.20,639.03,83.33,10.96" target="#b42">Villas-Boas (2004)</ref>). Rather than incorporating explicitly changing preferences like some of the prior work on secondary markets, in our model, changes in the "age" of a consumer alter their preferences because their horizon is different (two periods versus one).</p><p>Fundamentally, our paper addresses a variant of the central question in <ref type="bibr" coords="6,435.37,79.69,89.05,10.96" target="#b8">Chen et al. (2013)</ref> whether secondary markets help or hurt producers -albeit with a focus specifically on the marketplace ownership choice (recommerce versus third-party). While simpler, our model captures elements of all three key effects of this literature -the substitution effect (pre-owned items may cannibalize new product sales), the allocative effect (sellers indirectly earn higher rents from higher valuation and forward-looking customers if these customers can sell their products in the future), and aspects of the time consistency effect (this increase in willingness to pay of the higher valuation consumers is affected by their future price expectations, which in turn are shaped by the seller's output choices, and the seller does not have the ability to commit to future prices).</p><p>More saliently, our paper adds to an extensive literature in economics, marketing and information systems on secondary markets (see, for example, <ref type="bibr" coords="6,309.81,323.68,92.25,10.96" target="#b2">Bapna et al. (2004)</ref>, <ref type="bibr" coords="6,411.29,323.68,90.74,10.96" target="#b16">Ghose et al. (2006)</ref>, <ref type="bibr" coords="6,511.25,323.68,28.75,10.96;6,72.00,348.08,28.10,10.96" target="#b15">Ghose (2009)</ref>, <ref type="bibr" coords="6,107.64,348.08,75.57,10.96" target="#b33">Rao et al. (2009)</ref>, <ref type="bibr" coords="6,190.74,348.08,95.75,10.96" target="#b14">Gavazza et al. (2014)</ref>, <ref type="bibr" coords="6,294.04,348.08,81.38,10.96" target="#b8">Chen et al. (2013)</ref>, <ref type="bibr" coords="6,382.96,348.08,49.58,10.96" target="#b32">Rao (2015)</ref>, <ref type="bibr" coords="6,440.08,348.08,95.24,10.96" target="#b31">Pilehvar et al. (2017)</ref>, <ref type="bibr" coords="6,72.00,372.48,125.47,10.96" target="#b19">Ishihara and Ching (2019)</ref>). We also add to the digital platform and sharing economy literature <ref type="bibr" coords="6,72.00,396.88,133.11,10.96" target="#b4">(Bardhi and Eckhardt (2012)</ref>, <ref type="bibr" coords="6,212.61,396.88,126.55,10.96" target="#b10">Cramer and Krueger (2016)</ref>, <ref type="bibr" coords="6,346.66,396.88,87.05,10.96" target="#b3">Bapna et al. (2016)</ref>, <ref type="bibr" coords="6,441.21,396.88,94.10,10.96" target="#b38">Sundararajan (2016)</ref>, <ref type="bibr" coords="6,72.00,421.28,86.52,10.96">Zervas et al. (2017)</ref>, <ref type="bibr" coords="6,165.86,421.28,89.50,10.96" target="#b23">Li and Wang (2024)</ref>). Over the last decade, while true sharing economy platforms that facilitate product sharing and reuse have promised to lead to more sustainable and circular usage, behavior changes that lead to widespread durable goods renting and sharing has been limited outside of the automobile sector. Meanwhile, the trade of pre-owned items has exploded, leading us to believe that perhaps the real impact of platforms on sustainable consumption will come not from sharing but from the digital trade and consumption of pre-owned items. Our efforts to provide a more robust theoretical basis for the ownership structure and economic factors that aid or abet this evolution is aligned with this belief.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Overview of Model</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.">Firm and customers</head><p>We model a monopoly seller whose products last 2 periods. We begin with a two-period world, and then extend it to an infinite period model with overlapping generations. In the first period, the seller chooses how much durability D to build into its products. This choice is fixed across both periods.</p><p>1 The firm bears a constant marginal cost of production c(D) and no fixed costs. We assume that the function c(D) is positive, increasing and strictly convex for all D &gt; 0, and thus c ′ (0) = 0, c ′ (D) &gt; 0, c ′′ (D) &gt; 0 for all D &gt; 0. We also assume that c(0) = 0.</p><p>New products are of a fixed quality level that is normalized to 1. In the second period, units that are 1 period old are of quality s(D), where s(0) = 0, s(D) &lt; 1 for all D, s ′ (D) &gt; 0, s ′′ (D) &lt; 0 for all D ≥ 0. Put simply, the more durable a product, the higher its value as a pre-owned item.</p><p>Customers are heterogeneous, indexed by type j = L, H. Each consumer lives 2 periods. There are n j identical customers of type j. To ensure that the trade of pre-owned goods actually occurs in what follows, we assume that n L &gt; n H . In each period, type-H customers derive a gross benefit v H s from consumption of one unit of good of quality s, while the corresponding gross benefit derived by the low valuation customers is v L s, v H &gt; v L &gt; 0. Customers use either zero units or one unit of the seller's output in each period. The firm and customers discount the future using the discount factor δ, 0 &lt; δ &lt; 1.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.">Interaction Between the Firm and its Customers</head><p>We assume that the firm cannot explicitly distinguish between consumer types. 2 The firm offers one product in each period. Consumers in the second period may also have the option of buying a preowned item. Thus, in the second period, the firm faces a design problem analogous to one faced by a multiproduct monopolist, but where the quality level of the inferior version in period 2 is determined by the durability choice made in period 1 and whether the secondary market is run by a third party (more on this later).</p><p>The sequence of interaction between the firm and its customers is as follows:</p><p>1 We have also analyzed the case where the firm makes a separate durability choice in each period. It is of comparable analytical complexity. Since there is no "next period" in the second period, this artificially distorts durability downwards. Further, in practice, it may not be realistic to imagine a firm continuously varying its durability, either for technological reasons, or because of brand perception concerns.</p><p>2 Thus, we ignore the customer recognition information the firm may have in the second period from the choices consumers make in the first period (Villas-Boas ( <ref type="formula" coords="7,270.97,715.15,15.87,7.92">2004</ref>)).</p><p>• Period 1: The firm first announces a durability choice D, and the price for a new unit of output p N 1 . All consumers then simultaneously decide what, if anything, to purchase from the firm.</p><p>• Period 2: First, the firm announces the price p N 2 for a new unit of output while maintaining its durability level D. Second, all consumers then decide what, if anything, to purchase directly from the firm. Third, a secondary market opens up where prices on the secondhand marketplace equate supply and demand.</p><p>Trade in the secondary market is affected by the following economic factors:</p><p>• Quality uncertainty: Potential buyers of a pre-owned item may not be able to ascertain its true quality prior to purchase. We model this by assuming that in a third-party marketplace, potential buyers of pre-owned goods have a willingness to pay that is deflated by a factor α, 0 &lt; α &lt; 1, relative to existing owners of these pre-owned goods who know the actual quality.</p><p>We later assume that when the seller operates the secondary market (the "recommerce case"), this quality uncertainty may change.</p><p>• Marketplace transaction costs: Sellers of used goods pay a fraction β, 0 &lt; β &lt; 1, of the transaction price as a commission. This revenue is received by whoever operates the secondhand marketplace.</p><p>The firm chooses durability and prices to maximize total anticipated profits in all remaining periods. The consumers have the following choices.</p><p>• In period 2, a consumer who did not purchase a product in the first period chooses between purchasing a new product, purchasing a pre-owned product (if such products are offered) or not participating. A consumer who purchased a product in the first period chooses whether or not to purchase a new product, and whether or not to sell their pre-owned product in the secondary market.</p><p>• In period 1, a consumer chooses whether or not to purchase a new product.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">A two-period model</head><p>We analyze the two-period model in some detail in what follows, since many of the expressions and results from this analysis carry over to the model with overlapping generations. The following situation -which we refer to as the active pre-owned marketplace case -is the one of interest in our analysis, since it is what leads to activity in the marketplace for pre-owned items:</p><p>• Period 1: Consumers of type-H purchase a new product from the firm.</p><p>• Period 2: Consumers of type-H purchase a new product from the firm, selling their pre-owned products in the secondhand marketplace, and consumers of type-L purchase a pre-owned product.</p><p>It is straightforward to show that this case leads to higher firm profits than any case under which the firm's choices lead to type-H consumers wanting to keep their goods in the second period rather than selling them in the secondhand marketplace. This is because the profits from the latter,</p><formula xml:id="formula_0" coords="9,72.00,311.68,125.06,11.22">n H [v H (1 + δs(D)) − c(D)],</formula><p>are strictly less than the profits (1 + δ)n H v H that the firm could earn from offering a product of durability zero in each period priced at v H . There is yet another possibility -that the firm chooses a strategy that induces type-L consumers to purchase new goods in one or both periods. However, under any strategy of this kind, there will be no trade in the secondhand marketplace: if type-L consumers purchase a new good in period 1, there is no difference between the pre-owned goods being offered for sale and the ones they hold in period 2 as a consequence of their period 1 purchase, and if type-L consumers do not purchase pre-owned goods in period 2 , there are no potential buyers for any pre-owned goods being offered for sale in period 2. We examine this in greater detail in our overlapping generations model in Section 4 .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1.">Socially optimal product choices</head><p>We benchmark the socially optimal level of durability under this active pre-owned marketplace setting -where type-H customers consume a new good in each period, and where type-L customers do not participate in the market in the first period, while buying a pre-owned good in the second period.<ref type="foot" coords="9,531.75,622.37,3.97,6.16" target="#foot_0">3</ref> </p><p>Under this benchmark setting, viewing things from the first period, suppose the firm chooses a durability level D. The gross surplus from the consumption of the type-H customers is n H v H in each period. The total cost borne by the seller from this consumption is c(D) in each period. Since n L &gt; n H , only a fraction n H /n L of type-L customers will have a pre-owned good available for their consumption in period 2. The gross surplus generated from this consumption is n H v L s(D). Thus, the total surplus from this consumption and production activity, viewing things from the first period is:</p><formula xml:id="formula_1" coords="10,203.69,237.55,204.63,11.22">(1 + δ)n H v H + δn H v L s(D) − (1 + δ)n H c(D).</formula><p>(1)</p><p>Maximizing ( <ref type="formula" coords="10,135.07,271.72,4.57,10.96">1</ref>) with respect to D yields the following expression for the socially optimal durability level D * * :</p><formula xml:id="formula_2" coords="10,245.56,314.52,120.87,25.15">c ′ (D * * ) = δ 1 + δ v L s ′ (D * * ).</formula><p>(2)</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2.">Prices under the active digital pre-owned marketplace case</head><p>Let p n 2 denote the price for a new good in the second period, and p u 2 denote the price for a pre-owned good in the second period. One can formulate the seller's problem in period 2 in terms of incentivecompatibility (IC) and individual rationality (IR) constraints that induce each type to choose the product "designed" for them. (This is not essential, but we present it this way so that the parallel with the standard price screening problem is clearer to those readers familiar with that literature.)</p><p>• In period 2, type-H customers choose to sell their pre-owned product and buy a new product rather than holding on to their pre-owned product (akin to an IC condition for type-H)</p><formula xml:id="formula_3" coords="10,246.57,555.03,288.86,13.35">v H − p n 2 + (1 − β)p u 2 ≥ v H s(D). (<label>3</label></formula><formula xml:id="formula_4" coords="10,535.43,556.10,4.57,10.96">)</formula><p>• In period 2, type-L customers choose to buy a pre-owned product rather than a new product (akin to an IC condition for type-L)</p><formula xml:id="formula_5" coords="10,260.90,648.09,274.53,13.35">αv L s(D) − p u 2 ≥ v L − p n 2 . (<label>4</label></formula><formula xml:id="formula_6" coords="10,535.43,649.16,4.57,10.96">)</formula><p>and in the second period, creates a single-period rental contract that offers the pre-owned goods returned by the type-H consumer at the end of period 1 to type-L customers in period 2. This situation yields what is akin to the "first best" durability choice.</p><p>• The surplus of each type in period 2 is non-negative (akin to the IR conditions)</p><formula xml:id="formula_7" coords="11,275.29,115.18,264.71,50.37">v H − p n 2 ≥ 0, (5) αv L s(D) − p u 2 ≥ 0. (<label>6</label></formula><formula xml:id="formula_8" coords="11,535.43,153.26,4.57,10.96">)</formula><p>It is straightforward to see that the IR condition for type-L will bind, and thus:</p><formula xml:id="formula_9" coords="11,272.58,221.02,267.42,13.35">p u 2 = αv L s(D). (7)</formula><p>Next, we can use ( <ref type="formula" coords="11,159.79,258.64,4.57,10.96">7</ref>) to rewrite equation (3) as</p><formula xml:id="formula_10" coords="11,219.89,294.13,315.55,13.35">v H − p n 2 ≥ v H s(D) − α(1 − β)v L s(D), (<label>8</label></formula><formula xml:id="formula_11" coords="11,535.43,295.20,4.57,10.96">)</formula><p>which yields the maximum price the firm can charge for a new good of durability D in period 2<ref type="foot" coords="11,525.10,331.20,3.97,6.16" target="#foot_1">4</ref> :</p><formula xml:id="formula_12" coords="11,219.58,367.25,320.42,13.35">p n 2 = α(1 − β)v L s(D) + v H (1 − s(D)). (9)</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3.">Durability choices</head><p>Let D * denote the firm's profit-maximizing durability choice. We can now characterize the optimal choices of the seller under two regimes: when the secondhand marketplace is run by a third-party ("third-party marketplace") and when the secondhand marketplace is run by the seller ("branded recommerce").</p><p>Lemma 1. (Equilibrium outcomes with a third-party marketplace):</p><formula xml:id="formula_13" coords="11,75.41,553.01,132.38,36.33">If v L &gt; v H /2α(1 − β), then (a)</formula><p>The profit maximizing level of durability D * satisfies:</p><formula xml:id="formula_14" coords="11,221.69,608.25,313.54,25.15">c ′ (D * ) = δ 1 + δ [2α(1 − β)v L − v H ] s (D * ) . (<label>10</label></formula><formula xml:id="formula_15" coords="11,75.96,614.93,464.04,47.52">) (b)</formula><p>The price of new goods in period 1 is</p><formula xml:id="formula_16" coords="11,250.52,686.98,284.71,13.35">p n 1 = v H + δα(1 − β)v L s(D * ). (<label>11</label></formula><formula xml:id="formula_17" coords="11,535.23,688.04,4.77,10.96">)</formula><p>(c) The price of new goods in period 2 is</p><formula xml:id="formula_18" coords="12,82.73,117.98,457.27,51.64">p n 2 = α(1 − β)v L s(D * ) + v H (1 − s(D * )). (12) Note that if v L ≤ v H /2α(1 − β)</formula><p>, there is no positive value of D that supports an active pre-owned marketplace, since it is more profitable for the seller to choose a durability level of zero, setting prices</p><formula xml:id="formula_19" coords="12,72.00,209.95,58.54,12.80">p n 1 = p n 2 = v H</formula><p>and shutting the lower types out of the market.</p><p>We now turn to the branded recommerce situation under which the seller operates the pre-owned marketplace. To aid in comparability with the prior case, we retain the possibility of some quality uncertainty remaining even if the seller operates the pre-owned marketplace. We discuss the case of α = 1 as a special case later in the paper.</p><p>Lemma 2. (Equilibrium outcomes with branded recommerce):</p><formula xml:id="formula_20" coords="12,75.41,375.04,127.01,36.99">If v L &gt; v H /α(2 − β), then (a)</formula><p>The profit maximizing level of durability D * satisfies:</p><formula xml:id="formula_21" coords="12,75.96,433.75,464.04,57.00">c ′ (D * ) = δ 1 + δ [α(2 − β)v L − v H ] s (D * ) (13) (b)</formula><p>The price of new goods in period 1 is</p><formula xml:id="formula_22" coords="12,75.96,518.07,464.04,51.39">p n 1 = v H + δα(1 − β)v L s(D * ) (14) (c)</formula><p>The price of new goods in period 2 is</p><formula xml:id="formula_23" coords="12,228.06,596.79,311.94,13.35">p n 2 = α(1 − β)v L s(D * ) + v H (1 − s(D * )) (15)</formula><p>Akin to the case of a third-party marketplace, if v L ≤ v H /α(2 − β), then it is more profitable for the seller to choose a durability level of zero, setting prices p n 1 = p n 2 = v H and shutting the lower types out of the market. Since our focus is on examining the difference between third-party and branded recommerce, we do not analyze this case further.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.4.">Contrasting branded recommerce with third-party pre-owned markets</head><p>We now turn to analyzing how the possibility of branded recommerce changes a firm's choices. First, we examine how the pre-owned marketplace commissions and quality uncertainty distort the durability choices of the seller, independent of who runs the pre-owned marketplace. Next, we establish how branded recommerce leads to more sustainable choices by inducing an increase in the durability of products (and as a consequence, the quality of pre-owned goods) and separate out three different drivers of this increase.</p><p>Proposition 1. Independent of whether the seller or a third-party operates the pre-owned marketplace:</p><p>(a) As quality uncertainty goes down (and thus, α increases), the optimal level of durability D * chosen by the seller increases, and the seller profit increases.</p><p>(b) As the commission β charged by the operator of the pre-owned marketplace increases, the optimal level of durability D * chosen by the seller decreases, and the seller profit decreases.</p><p>The proof of the proposition is provided in Appendix. Proposition 1 indicates that the emergence of robust third-party pre-owned marketplace can have countervailing effects on a seller's sustainability incentives. On the one hand, the emergence of a pre-owned marketplace where none existed in the past has a strictly positive effect on the durability, raising it above the baseline level of 0 in our model 5 . However, an increase in the power of a third-party marketplace operator (leading to an increase in the commission rate ) lowers the seller's incentives to create a more durable (and thus sustainable) product.</p><p>We now show how these potentially countervailing incentives are all aligned when the firm runs its own pre-owned marketplace.</p><p>5 One might ask whether we are ignoring, in the absence of a pre-owned marketplace, the possibility of the seller creating a product with positive durability aimed at getting higher type consumers to purchase the product and hold it for 2 periods. This option is strictly dominated by the options of offering a product of durability 0 in both periods, priced at vH .</p><p>Proposition 2. Relative to the case of a third-party pre-owned marketplace, under the case of branded recommerce:</p><p>(a) Optimal durability is higher at any third-party commission rate β and quality uncertainty α.</p><p>(b) The seller will choose a commission rate β = 0.</p><p>(c) The incentives of a seller to invest in reducing quality uncertainty α are higher.</p><p>Proposition 2 establishes a main result -that branded recommerce has a direct effect of inducing higher durability, or put differently, increases the incentives of a firm that makes something to design it to last longer. It also proves a set of indirect economic effects which benefit manufacturers and increase sustainability. Part (b) shows that it is optimal for manufacturers to forgo marketplace fees altogether. Counterintuitively, therefore, the direct revenue potential of branded recommerce is not its equilibrium source of value. Part (c) shows that there are greater seller incentives to invest in lowering the quality uncertainty associated with pre-owned items. The "branding" of recommerce by itself may reduce quality uncertainty -after all, a customer is buying the pre-owned item directly from the manufacturer rather than from an unknown individual. However, a key implication of part (a) of the proposition is that the welfare gains of branded recommerce from an increase in durability do not have to assume any change in perceived quality, and the incentive to lower quality uncertainty is a separate positive economic effect. In what follows, we examine whether the insights gained from our two-period model carry over to a more general setting.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">A model with overlapping generations</head><p>In this section, we develop a model of infinitely many periods in which a fixed number of customers enter in each period, and each generation of customers lives for two periods. We continue to assume that the firm sets a level of durability D that remains fixed across periods. In each period t, the seller chooses its price p n (t), bearing a constant marginal cost of production c(D) that is positive, increasing and strictly convex for all D &gt; 0. Products last two periods. In each period t, new units of output are of a fixed quality level that is normalized to 1 , and pre-owned units (those produced in period t-1) are of quality s(D), where, as before, s(0) = 0, s(D) &lt; 1, s ′ (D) &gt; 0, s ′′ (D) &lt; 0 for all D ≥ 0. The price of pre-owned items in period t is p u (t).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Figure 2 An Illustration of the overlapping generation model</head><p>Note. It illustrates the overlapping of generations in each period. In period t, the prior generation that was born in period (t -1) is of age 2, and the new generation that is born in period t is of age 1. In every period, the seller thus faces both "legacy" customers and "fresh" customers.</p><p>As before, the fraction of type-H (L) customers that enter in each period is n H (n L ), where n H + n L = 1. Type-H customers derive a gross benefit per period of v H s from consuming a good of perceived quality s, while the corresponding gross benefit derived by type-L customers is v L s, and v H &gt; v L &gt; 0.</p><p>In any "current" period, the customers who entered in the previous period are referred to as "age-2" customers, and those customers who enter in the current period are referred to as "age-1" customers.</p><p>Customers and sellers discount the future at the rate δ.</p><p>The payoff-relevant state variable x(t) for period t is the fraction of age-2 customers who bought the new product in the previous period t − 1. We focus on deterministic consumer and seller choices.</p><p>As before, the seller cannot observe customer types, which means that if type-L customers purchase in any period, then so do type-H customers. Thus, the possible states are x(t) ∈ {0, n H , 1}.</p><p>Following the standard Blackwell/Bellman approach, we look for a stationary policy which maps each state {0, n H , 1} to a period price p n (t) for the new good. We begin with the case of D = 0. The state will always be x = 0, and the seller's choices here are therefore to price the product at either v L or v H . Thus,the optimal steady-state policy will be to price at v L if v L &gt; n H v H and at v H otherwise. Now consider D &gt; 0. In each period apart from the first period, the seller faces a setting somewhat similar to what was faced in period 2 of the two-period model. However, there are, essentially, four types of customers rather than two -age-1 type-L, age-1 type-H, age-2 type-L and age-2 type-H.</p><p>However, if this is in fact a steady-state, then both type-L and type-H customers of age-2 already own a pre-owned item. As a consequence, there are no potential buyers for the pre-owned items in any period. The profit-maximizing price that sustains this steady-state is v L (1 + δs(D)) which yields a demand level of 1 in each period. Following an argument similar to one made in Section 4, the profit stream from this price is strictly lower than the profit stream from a choice of D = 0 and a price v L which yields a demand level of 2 in each period. This completes the proof.</p><p>Next, let us consider the set of consumer actions that are consistent with a steady-state policy. We show in our next result that under any steady-state policy in which there is any kind of pre-owned market activity, customers with lower willingness to pay will always buy pre-owned items while the choices of customers with higher willingness to pay depends on their decision horizon.</p><p>Lemma 4. Under any steady-state policy</p><p>• All customers with lower willingness-to-pay (type-L customer) will purchase a pre-owned item that lasts one period.</p><p>• Customers with a higher willingess-to-pay who have just entered the market (Type-H, age 1) will buy a new product</p><p>• Customers with a higher willingess-to-pay who were in the market in the previous period (Type-H, age 2) will sell their existing product and buy a new product Again, rather than relegating this proof to the Appendix, we present it in the main body of the paper because it aids in understanding the implications of the result.</p><p>First, to maintain the steady-state x = n H , it is clear that type-H customers of age-1 must choose to buy new. The choices of type-H customers of age 2 can be partitioned as follows:</p><p>• If type-H customers of age-2 discard their existing product and buy new, the steady-state then involves type-L customers not participating, and type-H customers consuming their product for one period. In this case, any durability level D &gt; 0 is strictly less profitable for the seller than the choice of D = 0.</p><p>• If type-H customers of age 2 keep their existing product, then the steady-state again involves type-L customers not participating, and type-H customers consuming their product for both periods of their life. The profit-maximizing price that sustains this steady-state is v H (1 + δs(D))</p><p>which yields a demand level of n H per period. However, this is strictly less profitable for the seller than choosing a durability D = 0, pricing at v H , and realizing a demand of 2n H (from both all type-H customers).</p><p>• If type-H customers of age 2 sell their existing product and buy a new product, then one must characterize the choices of type-L customers (since someone has to buy these products). Since the product lasts 2 periods, a pre-owned product has a remaining life of 1 period. As a consequence, its value is identical to both age 1 and age 2 customers of type-L.</p><p>-The steady-state cannot be maintained if type-L customers of age 1 prefer to buy the new product.</p><p>-The steady-state can be maintained if type-L customers of age 2 prefer to buy the new product at whatever price levels the new and pre-owned products are at (since they are no longer in the economy after the current period, their choices do not affect the state in the next period), while type-L customers of age 1 prefer to purchase the pre-owned product.</p><p>However, since type-L customers of age 1 have an additional period of life and thus have a strictly higher consumption value from the new product, which in turn means that the set of actions (type-L customers of age 2 buy new, type-L customers of age 1 buy pre-owned)</p><p>is not individually rational.</p><p>-The steady state can also be maintained if type-L customers of both age 1 and age 2 prefer to buy the used product over buying the new product. This is possible if there are sufficient</p><formula xml:id="formula_24" coords="18,115.23,662.34,250.94,11.22">type-L customers, that is, if 2n L &gt; n H , or if n H &lt; 2/3</formula><p>This completes the proof.</p><p>The choices implied by Lemma 4 are summarized in  Next, we characterize the prices p n , p u that are consistent with these choices. We reintroduce the marketplace commission β and quality uncertainty α parameters defined in Section 2. A subset of the conditions that define the consumer choices are summarized below.</p><p>[Type-H, Age 2]:</p><formula xml:id="formula_25" coords="19,199.09,296.87,336.15,12.28">v H − p n + (1 − β)p u ≥ v H s(D). (<label>16</label></formula><formula xml:id="formula_26" coords="19,117.13,297.94,422.88,40.16">) [Type-H, Age 1]: v H − p n + δ (max [v H − p n + (1 − β)p u , v H s(D)]) ≥ v H s(D) − p u . (<label>17</label></formula><formula xml:id="formula_27" coords="19,117.13,326.88,422.88,40.16">) [Type-L, both ages]: αv L s(D) − p u ≥ 0.<label>(18)</label></formula><p>[Type-L, Age 1]:</p><formula xml:id="formula_28" coords="19,197.75,383.70,337.48,12.28">αv L s(D) − p u ≥ v L − p n + δ (max [v L − p n + (1 − β)p u , v L s(D)]) . (<label>19</label></formula><formula xml:id="formula_29" coords="19,117.13,384.77,422.88,40.16">) [Type-L, Age 2]: αv L s(D) − p u ≥ v L − p n . (<label>20</label></formula><formula xml:id="formula_30" coords="19,535.23,413.71,4.77,10.96">)</formula><p>(16) and ( <ref type="formula" coords="19,129.77,451.49,9.54,10.96" target="#formula_26">17</ref>) are analogous to the IC conditions for the type-H customers. Since v H &gt; v L &gt; 0, ( <ref type="formula" coords="19,522.35,451.49,8.82,10.96" target="#formula_25">16</ref>), ( <ref type="formula" coords="19,76.77,477.15,9.54,10.96" target="#formula_26">17</ref>) and ( <ref type="formula" coords="19,121.99,477.15,9.54,10.96" target="#formula_27">18</ref>) also imply that type-H consumers of both ages get non-negative surplus from their choice. ( <ref type="formula" coords="19,111.14,502.80,9.54,10.96" target="#formula_27">18</ref>) ensures that type-L customers get non-negative surplus, and ( <ref type="formula" coords="19,416.77,502.80,9.54,10.96" target="#formula_28">19</ref>) and ( <ref type="formula" coords="19,459.29,502.80,9.54,10.96" target="#formula_29">20</ref>) are analogous to their IC conditions. It is straightforward to see that if ( <ref type="formula" coords="19,346.45,528.46,9.54,10.96" target="#formula_28">19</ref>) is satisfied, (20) can be ignored.</p><p>Our final lemma establish the prices consistent with the steady-state described in Lemma 4 and summarized in Table <ref type="table" coords="19,173.70,579.77,4.17,10.96" target="#tab_0">4</ref>.</p><p>Lemma 5. The prices of the new and pre-owned item consistent with a steady-state are identical to those obtained in the two-period model:</p><formula xml:id="formula_31" coords="19,221.07,675.07,318.93,51.46">p u = αv L s(D) (21) p n = α(1 − β)v L s(D) + v H (1 − s(D))<label>(22)</label></formula><p>We are now in a position to contrast the outcomes under branded recommerce with those obtained when there is a third-party marketplace. By Lemma 5, under the steady-state policy, the firm's per-period payoffs with a third-party marketplace are:</p><formula xml:id="formula_32" coords="20,202.60,166.18,337.40,11.21">n H [α(1 − β)v L s(D) + v H (1 − s(D)) − c(D)] ,<label>(23)</label></formula><p>and the firm's per-period payoffs under branded recommerce after taking quality undertainty and transaction fees into consideration are</p><formula xml:id="formula_33" coords="20,218.87,263.44,316.36,11.22">n H [αv L s(D) + v H (1 − s(D)) − c(D)] . (<label>24</label></formula><formula xml:id="formula_34" coords="20,535.23,263.44,4.77,10.96">)</formula><p>Notice the close parallel between these expressions and those derived in the two-period model. Happily, we can now establish that under the optimal steady-state policy, a set of results in Proposition 3 that parallel those established for the two-period model continue to hold.</p><p>Proposition 3. In a model with overlapping generations, under the unique optimal steady-state policy:</p><p>(a) Independent of the ownership structure of the third-party marketplace, as quality uncertainty goes down (and thus, α increases), the optimal level of durability D * chosen by the seller increases, and the seller profit increases.</p><p>(b) Independent of the ownership structure of the third-party marketplace, as the commission β charged by the operator of the pre-owned marketplace increases, the optimal level of durability D * chosen by the seller decreases, and the seller profit decreases.</p><p>(c) Under branded recommerce: (i) the durability level chosen by the seller is higher, (ii) the seller will choose a commission rate β = 0 , and the incentives of a seller to invest in reducing quality uncertainty are higher.</p><p>Proposition 3 establishes that the main results of Proposition 2 -that choosing branded recommerce has the direct effect of inducing the manufacturer of a product to make more durable products -is not a modeling artifact of a two-period setting, but generalizes to an infinite horizon setting with overlapping generations Broadly, this result underscores what could be a key societal benefit of branded recommerce. Granted, sellers may be drawn to branded recommerce by the prospect of greater control of the customer experience for those buyers who begin their brand interaction by purchasing pre-owned items, or by the promise of profits from secondary market transactions. Our result establishes that there is a path to greater profits from sacrificing the latter, and that in addition to whatever firm-specific benefits that may accrue from branded recommerce, it shifts incentives in a manner that makes it more desirable for a seller to make goods that last longer, rather than resorting to the less sustainable path of more perishable durables in pursuit of repeat sales.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.">Conclusion</head><p>The promise of digitally-enabled branded recommerce is clear to a brand -running one's own pre-owned marketplace allows value capture from the trade of one's used items, signals support</p><p>for circular consumption and allows stronger brand experience control for the growing subset of consumers who favor buying pre-owned items. Brands, however, may initially balk at the prospect of placing pre-owned items aside new products on their ecommerce sites, fearing profit reductions from cannibalization.</p><p>Our analysis presents reassuring news: that branded recommerce has a number of positive effects on both durability and profitability. Interestingly, we find that a brand's focus should not be on the value capture promise of branded recommerce -in our stylized setting, a seller finds it optimal to forgo marketplace fees altogether, suggesting that direct revenue impacts of branded recommerce should not be seen as their primary economic benefit. Rather, we uncover more subtle benefits that stem from the ability to set higher prices, the ability to profitably raise product durability, and greater seller incentives to lower quality uncertainty associated with pre-owned items.</p><p>While formal empirical validation of our theoretical results remains in the future, it has been reassuring to observe anecdotal evidence of a relationship between the adoption of branded recommerce and investments into raising product durability. For example, Patagonia, which pioneered its "Worn</p><p>Wear" effort to sell pre-owned items in stores in 2013, and was of the early adopters of branded recommerce in 2017, has since made significant efforts to increase the durability and reusability of the products it manufactures <ref type="bibr" coords="22,211.91,105.12,68.55,10.96" target="#b44">(Woody (2024)</ref>).</p><p>Our future work aims to extend our model in a few directions. We are working on an extension that considers the potential simultaneous presence of branded recommerce and a third-party marketplace.</p><p>Our preliminary findings suggest that under certain conditions, the threat of a third-party marketplace can cause a firm to introduce branded recommerce in settings under which it would not have customarily encouraged the trade of pre-owned items -this move can deter the entry of a third-party marketplace that would have a more adverse effect on seller outcomes. Our model extension in which the two pre-owned marketplace options are differentiated by both quality uncertainty and product availability is in progress, but is one we hope will take us closer to having richer testable results.</p><p>We are also exploring extensions to the baseline model that add additional details that reflect what we have observed in practice. For example, in the implementation of recommerce, there may be differing levels of search frictions <ref type="bibr" coords="22,246.72,384.79,131.84,10.96" target="#b13">(Gavazza and Lizzeri (2021)</ref>, <ref type="bibr" coords="22,387.35,384.79,96.18,10.96" target="#b34">Rhodes et al. (2021)</ref>) associated with the pre-owned item when compared to new items, depending on whether the pre-owned item is listed alongside the new item (like it is on Amazon), in a separate tab on the brand's primary ecommerce site (like it is on Lululemon), or on an entirely different web site. While we currently model this as being subsumed by the reduction in perceived value, a more detailed model could shed new insight and lead to testable hypotheses, given the variations in these frictions we have observed across recommerce sites. The choices on these front may also have quality signaling implications <ref type="bibr" coords="22,492.81,537.33,47.19,10.96;22,72.00,562.76,94.80,10.96" target="#b28">(Nian and Sundararajan (2022)</ref>, <ref type="bibr" coords="22,174.99,562.76,139.34,10.96" target="#b0">Ananthakrishnan et al. (2023)</ref>), as firms that highlight their recommerce sites more visibly could be perceived as standing more firmly behind the quality of their durable goods.</p><p>There are often unexpected and subtle economic effects from changes to market participant visibility <ref type="bibr" coords="22,72.00,639.03,93.74,10.96" target="#b3">(Bapna et al. (2016)</ref>). Many of these will eventually be empirical questions, and we have partnered with a leading recommerce platform to test some of our current and ongoing theory results.</p><p>While research into digital secondary markets has been widespread in economics, marketing and IS over the last two decades, the phenomenon of branded recommerce is new, and, powered by new recommerce platforms, will account for tens of billions of dollars of ecommerce in the coming years.</p><p>Branded recommerce is the most significant new digital "channel," as important today as ecommerce was two decades ago. Our paper is the first we are aware of that sheds new insight into this important new digital development, underscoring its importance in aligning seller profits with sustainability goals.</p><p>Thus, the firm's ex ante total expected profits at the time they choose D is:</p><formula xml:id="formula_35" coords="24,114.00,126.60,426.00,9.62">π(D) = n H [v H + δα(1 − β)v L s(D) − c(D)] + δn H [α(1 − β)v L s(D) + v H (1 − s(D)) − c(D)] (A1)</formula><p>The firm's optimal durability choice D * maximizes (A1). The first-order condition yields: </p><formula xml:id="formula_36" coords="24,72.00,178.30,468.00,46.35">c ′ (D * ) = δ 1 + δ [2α(1 − β)v L − v H ] s ′ (D * ) (A2) Now, since v L &gt; v H /2α(1 − β), it follows that 2α(1 − β)v L − v H &gt; 0,</formula><formula xml:id="formula_37" coords="24,72.00,236.64,467.50,135.79">* &lt; D * * if [2α(1 − β)v L − v H ] &lt; v L which simplifies to v H &gt; v L [2α(1 − β) − 1], which is true for all 0 &lt; α &lt; 1, 0 &lt; β &lt; 1, since v H &gt; v L . (Q.E.D.)</formula><p>Proof of Lemma 2. This proof parallels that of Lemma 1. Following the same logic, the first and second period price for new goods are, respectively</p><formula xml:id="formula_38" coords="24,227.44,445.50,157.12,38.46">p n 1 = v H + δα(1 − β)v L s(D) p n 2 = α(1 − β)v L s(D) + v H (1 − s(D))</formula><p>As in Lemma 1, the firm's first period profits are n</p><formula xml:id="formula_39" coords="24,319.93,493.29,143.92,9.62">H [v H + δα(1 − β)v L s(D) − c(D)].</formula><p>However, in the second period, as the operator of the pre-owned marketplace, the firm also receives marketplace commissions n H βp 2 u . (Note that only a fraction n H /n L of type-L customers end up purchasing the pre-owned product owing to this being the total supply.) Recall from (7) that p 2 u = αv L s(D). The firm's second period profits are therefore:</p><formula xml:id="formula_40" coords="24,174.76,607.16,262.48,9.62">π = n H [α(1 − β)v L s(D) + v H (1 − s(D)) − c(D)] + αβv L s(D),</formula><p>which simplifies to:</p><formula xml:id="formula_41" coords="24,216.54,658.27,178.92,9.62">π = n H [αv L s(D) + v H (1 − s(D)) − c(D)] .</formula><p>Thus, the firm's ex ante expected profits in first period when choosing durability D are</p><formula xml:id="formula_42" coords="24,174.76,716.66,262.48,9.62">π = n H [α(1 − β)v L s(D) + v H (1 − s(D)) − c(D)] + αβv L s(D),</formula><p>which simplifies to:</p><formula xml:id="formula_43" coords="25,216.54,103.61,178.92,9.62">π = n H [αv L s(D) + v H (1 − s(D)) − c(D)] .</formula><p>Thus, the firm's ex ante expected profits in first period when choosing durability D are</p><formula xml:id="formula_44" coords="25,126.90,176.24,413.10,9.62">π(D) = n H [v H + δα(1 − β)s(D)v L − c(D)] + δn H [αv L s(D) + v H (1 − s(D)) − c(D)] . (A3)</formula><p>The firm's optimal durability choice D * therefore maximizes (A3). The first-order condition yields: </p><formula xml:id="formula_45" coords="25,81.96,242.20,458.04,43.80">c ′ (D * ) = δ 1 + δ [α(2 − β)v L − v H ] s ′ (D * ) . (A4) Now, since v L &gt; v H /α(2 − β), it follows that α(2 − β)v L − v H &gt; 0,</formula><formula xml:id="formula_46" coords="25,72.00,297.77,363.11,105.99">(D) &gt; 0, D * &lt; D * * if [α(2 − β)v L − v H ] &lt; v L , which simplifies to v H &gt; v L (α(2 − β) − 1),</formula><p>which is true for all 0 &lt; α &lt; 1, 0 &lt; β &lt; 1 since v H &gt; v L . The result follows. (Q.E.D.)</p><p>Proof of Proposition 1.</p><p>(a) By the envelope theorem, and the profit expressions in (A1), it follows that in the third-party marketplace case:</p><formula xml:id="formula_47" coords="25,240.54,503.99,155.26,23.54">dπ (D * (α)) dα = n H δ [(2 − 2β)v L s (D ′ )]</formula><p>which is strictly positive for β &lt; 1. Also, rearranging (A2) yields</p><formula xml:id="formula_48" coords="25,244.67,562.28,295.33,23.54">c ′ (D * ) s ′ (D * ) = δ 1 + δ [2α(1 − β)v L − v H ] (A5)</formula><p>Since c(D) is strictly convex and s(D) is strictly concave, it follows that c ′ (D) s ′ (D) is strictly increasing in D for all D &gt; 0. Notice that as α increases, the right-hand side of A5 is higher, thus requires a higher value of c ′ (D * ) s ′ (D * ) on the left-hand side, and consequently, a higher value of D * .</p><p>Similarly, by the envelope theorem, and the profit expressions in (A1), it follows that in the branded recommerce case:</p><formula xml:id="formula_49" coords="25,240.95,705.90,154.42,23.54">dπ (D * (α)) dα = n H δ [(2 − β)v L s (D ′ )] ,</formula><p>which is also strictly positive for β ≤ 1. Correspondingly, rearranging (A4) yields</p><formula xml:id="formula_50" coords="26,247.16,101.73,292.84,23.54">c ′ (D * ) s ′ (D * ) = δ 1 + δ [α(2 − β)v L − v H ] (A6)</formula><p>and based on the same logic as above, a higher value of α implies a higher value of D * . The result follows. with a third-party marketplace and</p><formula xml:id="formula_51" coords="26,245.09,471.66,146.16,23.54">c ′ (D * ) s ′ (D * ) = δ 1 + δ [α(2 − β)v L − v H ] ,</formula><p>with branded recommerce. Comparing the right-hand sides of (A5) and (A6), and using the fact that 2α(1 − β) &lt; α(2 − β) if α &gt; 0, β &gt; 0, it follows that:</p><formula xml:id="formula_52" coords="26,231.88,559.29,171.37,9.62">[α(2 − β)v L − v H ] &gt; [2α(1 − β)v L − v H ] .</formula><p>Since c ′ (D) s ′ (D) is strictly increasing in D as established in the proof of Proposition 1, the durability level that satisfies (A5) must be higher than the durability level that satisfies (A6). The result follows. is strict for any third-party marketplace with a non-zero commission. Thus, the seller gets a larger increase in profits under branded recommerce from any fixed increase in α or equivalently, any fixed reduction in quality uncertainty, than with a third-party marketplace. The result follows.</p><p>Proof of Lemma 5.</p><p>Note that ( <ref type="formula" coords="27,132.06,275.60,8.86,8.80" target="#formula_25">16</ref>) implies that:</p><formula xml:id="formula_53" coords="27,187.22,305.74,348.35,11.29">max [v H − p n + 1 − β) p u , v H s(D)] = v H − p n + 1 − β) p u . (<label>25</label></formula><formula xml:id="formula_54" coords="27,535.57,307.42,4.43,8.80">)</formula><p>Rearranging ( <ref type="formula" coords="27,143.04,339.23,8.86,8.80" target="#formula_25">16</ref>) yields  <ref type="formula" coords="27,214.24,569.70,8.86,8.80">26</ref>) is satisfied, (28) can be ignored. It follows that ( <ref type="formula" coords="27,442.52,569.70,8.86,8.80" target="#formula_25">16</ref>) implies (17).</p><p>From (18), since there are more buyers than sellers in the pre-owned marketplace, it follows that</p><formula xml:id="formula_55" coords="27,276.37,638.17,263.63,11.29">p u = αv L s(D)<label>(29)</label></formula><p>(29) and ( <ref type="formula" coords="27,126.80,669.67,8.86,8.80" target="#formula_25">16</ref>) imply that the highest price the seller can charge for new goods is</p><formula xml:id="formula_56" coords="27,227.44,714.99,312.56,11.29">p n = α(1 − β)v L s(D) + v H (1 − s(D)) (30)</formula><p>Note that these are identical to the second-period prices obtained in the two-period model.</p><p>We can use ( <ref type="formula" coords="28,139.02,103.74,8.86,8.80" target="#formula_55">29</ref>) and ( <ref type="formula" coords="28,179.43,103.74,8.86,8.80">30</ref> We can use ( <ref type="formula" coords="28,138.69,177.15,8.19,8.80" target="#formula_55">29</ref>), ( <ref type="formula" coords="28,162.50,177.15,8.19,8.80">30</ref>), (31) together to simplify (19) as:</p><formula xml:id="formula_57" coords="28,245.64,215.80,294.36,23.19">v L v H ≤ 1 − s(D) 1 − [(1 − β)α − δ]s(D) (32)</formula><p>If ( <ref type="formula" coords="28,96.69,250.56,8.86,8.80">32</ref>) is true, we can establish that ( <ref type="formula" coords="28,249.48,250.56,8.86,8.80" target="#formula_28">19</ref>) is satisfied and ( <ref type="formula" coords="28,339.54,250.56,8.86,8.80" target="#formula_29">20</ref>) is thus implied. This completes the proof. and G B ′′ (D) &lt; G T ′′ (D), which is sufficient to establish that durability is higher under branded recommerce.</p><p>Standard comparative statics methods establish the rest of the results. (Q.E.D.)</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="2,72.00,547.25,33.54,7.96;2,121.49,547.25,418.51,7.96;2,121.48,567.87,407.94,7.96;2,80.89,354.27,212.60,178.57"><head>Figure 1</head><label>1</label><figDesc>Figure 1 Examples of two "branded recommerce" sites. (The Lululemon Like New site is powered by the Trove recommerce platform; the Zara Pre-Owned site is powered by the Recurate recommerce platform.)</figDesc><graphic coords="2,80.89,354.27,212.60,178.57" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="24,367.89,215.04,47.75,8.80;24,415.64,213.86,2.13,5.68;24,418.28,215.04,56.00,8.80;24,474.27,213.86,4.27,5.68;24,479.04,215.04,60.96,8.80;24,72.00,237.81,98.24,8.80;24,170.52,236.64,3.79,5.68;24,177.67,237.81,215.12,8.80;24,392.79,236.64,4.27,5.68;24,397.55,237.81,109.65,8.80;24,507.49,236.64,1.26,5.68"><head></head><label></label><figDesc>and since c ′ (0) = 0 and c ′′ (D) &gt; 0, there is a positive value of D * that satisfies (A2). Comparing 2 and (A2), since c ′′ (D) &gt; 0, it follows that D</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="26,76.37,187.29,442.17,8.80;26,518.54,186.11,3.79,5.68;26,522.83,187.29,17.18,8.80;26,95.14,209.82,124.64,8.80;26,223.94,205.78,18.03,7.45;26,223.85,214.87,18.22,6.51;26,246.13,209.82,293.87,8.80;26,95.14,232.35,184.58,8.80;26,243.75,254.21,24.73,8.80;26,268.75,253.03,3.79,5.68;26,273.04,254.21,17.78,8.80;26,261.61,267.84,10.82,8.74;26,293.96,260.95,75.24,9.62;26,369.48,259.27,2.13,5.68;26,372.11,260.95,20.48,8.80;26,95.14,289.54,204.65,8.80;26,246.24,311.40,24.73,8.80;26,271.24,310.22,3.79,5.68;26,275.53,311.40,17.78,8.80;26,264.10,325.03,10.82,8.74;26,296.45,318.14,70.26,9.62;26,366.99,316.46,2.13,5.68;26,369.62,318.14,20.48,8.80;26,519.80,318.14,20.20,8.80;26,72.00,348.72,38.19,8.80;26,72.00,371.31,116.23,8.75;26,76.93,393.79,231.71,8.80;26,308.92,392.61,3.79,5.68;26,316.53,393.79,33.38,8.80;26,242.78,415.70,4.31,8.74;26,247.09,414.47,2.13,5.68;26,251.10,415.64,12.12,8.80;26,263.50,414.47,3.79,5.68;26,267.79,415.64,3.87,8.80;26,242.60,428.78,29.25,9.23;26,274.98,422.38,7.75,8.80;26,293.88,415.70,4.43,8.74;26,285.86,429.22,20.48,8.80;26,309.29,422.38,84.44,9.62"><head></head><label></label><figDesc>(b) Inspecting (A5) and (A6) above establishes that a higher value of β induces a lower value of D * , by the same argument involving c ′(D)  s ′ (D) being strictly increasing in D. Applying the envelope theorem to the profit expressions in (A1) and (A3) yields:dπ (D * (β)) dβ = −2n H δαv L s (D ′ ) &lt; 0in the case of the third-party marketplace, anddπ (D * (β)) dβ = −n H δαv L s (D ′ ) from (A5) and (A6), optimal durability D * satisfiesc ′ (D * ) s ′ (D * ) = δ 1 + δ [2α(1 − β)v L − v H ] ,</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="26,76.37,636.94,227.07,8.80;26,244.85,658.80,24.73,8.80;26,269.86,657.62,3.79,5.68;26,274.15,658.80,17.78,8.80;26,262.72,672.43,10.82,8.74;26,295.06,665.53,70.26,9.62;26,365.60,663.86,2.13,5.68;26,368.23,665.53,23.25,8.80;26,95.14,694.13,444.86,8.80;26,95.14,716.66,80.40,8.80;27,77.48,81.05,141.33,8.80;27,223.33,77.01,35.19,7.45;27,236.59,86.92,8.66,5.68;27,263.04,81.05,196.61,8.80;27,219.92,130.03,80.58,9.62;27,300.78,128.36,2.13,5.68;27,303.41,130.03,101.06,9.62;27,404.74,128.36,2.13,5.68;27,407.37,130.03,6.64,8.80;27,519.80,130.03,20.20,8.80;27,95.14,159.86,444.86,8.80"><head></head><label></label><figDesc>(b) Recall from (A7) that by the envelope theorem,dπ (D * (β)) dβ = −n H δαv L s (D ′ ) &lt; 0.Under branded recommerce, the seller can choose β, and will thus choose the lowest feasible level β = 0.The result follows.(c) Compare the expressions for dπ(D * (α)) dα in (A5) and (A6). Since β ≥ 0, it follows thatn H δ [(2 − β)v L s (D ′ ) ≥ n H δ [(2 − 2β)v L s (D ′ )] (A8)However, part (b) establishes that under branded recommerce, β = 0, and thus the inequality in (A8)</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4" coords="27,242.46,386.23,100.50,9.62;27,342.96,384.56,4.37,5.68;27,349.77,386.29,14.70,8.74;27,364.47,384.56,4.57,5.68;27,522.29,386.23,17.71,8.80;27,81.96,416.06,149.61,8.80;27,200.18,463.11,27.96,9.56;27,228.14,461.38,4.57,5.68;27,234.88,463.05,46.38,9.62;27,281.25,461.38,4.57,5.68;27,287.99,463.05,44.38,8.80;27,332.37,461.38,4.37,5.68;27,337.24,463.05,69.71,9.62;27,406.95,461.38,4.37,5.68;27,522.29,463.05,17.71,8.80;27,81.96,492.88,102.36,8.80;27,217.16,539.87,14.39,8.80;27,241.63,533.19,6.37,8.74;27,234.41,546.71,20.48,8.80;27,256.46,539.87,72.26,9.62;27,339.60,533.19,4.43,8.74;27,331.58,546.71,20.48,8.80;27,353.63,539.93,19.89,8.74;27,373.52,538.20,4.37,5.68;27,380.33,539.93,14.70,8.74;27,395.03,538.20,4.57,5.68;27,522.29,539.87,17.71,8.80;27,81.96,569.70,22.69,8.80;27,113.25,568.22,4.81,5.68;27,109.17,575.54,12.73,5.72;27,125.27,569.70,34.04,8.80;27,168.51,568.22,3.36,5.68;27,163.82,575.54,12.73,5.72;27,179.92,569.70,34.32,8.80"><head>[ 1</head><label>1</label><figDesc>− s(D)]v H + (1 − β)p u ≥ p n (26)We can use (25) to rewrite (17) asv H − p n + δ [v H − p n + (1 − β)p u ] ≥ αv H s(D) − p u</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5" coords="28,188.29,103.74,67.55,8.80;28,212.70,149.13,49.39,9.62;28,262.08,147.46,4.57,5.68;28,268.81,149.13,44.38,8.80;28,313.20,147.46,4.37,5.68;28,318.07,149.13,81.23,9.62;28,522.29,149.13,17.71,8.80"><head></head><label></label><figDesc>) to derive that max [v L − p n + (1 − β)p u , v L s(D)] = v L s(D) (31)</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6" coords="28,72.00,273.26,38.19,8.80;28,81.96,295.96,458.04,8.80;28,72.00,318.65,302.37,8.80;28,179.73,348.23,39.65,9.62;28,224.84,338.22,7.38,5.68;28,222.44,362.13,12.16,5.68;28,237.10,348.29,4.43,8.74;28,241.91,346.56,2.79,5.68;28,245.20,348.23,187.07,9.62;28,522.29,348.23,17.71,8.80;28,72.00,377.80,16.05,8.80;28,192.37,400.50,40.19,9.62;28,238.01,390.49,7.38,5.68;28,235.62,414.40,12.16,5.68;28,250.28,400.56,4.43,8.74;28,255.08,398.83,2.79,5.68;28,258.37,400.50,161.26,9.62;28,522.29,400.50,17.71,8.80;28,72.00,428.52,468.00,8.80;28,72.00,451.21,468.00,9.62;28,72.00,473.91,468.00,9.62;28,72.00,496.61,403.04,9.62;28,475.85,495.43,2.13,5.68;28,478.48,496.61,41.12,9.62;28,521.10,495.43,2.13,5.68;28,523.73,496.61,16.27,8.80"><head>δ</head><label></label><figDesc>(Q.E.D.)Proof of Proposition 3. Imagine the optimization problem faced by the seller when choosing their optimal durability level D. Let the first-period price be g1(D). DefineG T (D) = ∞ t=1 δ t n H [α(1 − β)v L s(D) + v H (1 − s(D)) − c(D)] t n H [αv L s(D) + v H (1 − s(D)) − c(D)] .(34)These are the steady-state profit streams as viewed from period 1 , under the third-party pre-owned marketplace (T) and branded recommerce (B) respectively. The seller therefore chooses D to maximize n H g 1 (D) + G T (D) with a third-party marketplace, and n H g 1 (D) + G B (D) with branded recommerce. Under the parameter restrictions that ensure the seller will not want to shut out the type-L customers, G B ′ (D) &gt; G T ′ (D)</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" coords="18,331.30,715.31,34.87,10.96"><head>Table 4</head><label>4</label><figDesc></figDesc><table /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1" coords="19,131.10,80.69,349.79,83.25"><head>Table 4 Choices made by each type under any steady-state policy for which</head><label>4</label><figDesc>D &gt; 0</figDesc><table coords="19,217.17,102.57,177.66,61.37"><row><cell>Type-L</cell><cell>Type-H</cell></row><row><cell cols="2">Age 2 buy used sell used+buy new</cell></row><row><cell>Age 1 buy used</cell><cell>buy new</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2" coords="25,72.00,275.20,467.50,32.54"><head></head><label></label><figDesc>and thus, there is a positive value of D</figDesc><table /><note>*that satisfies (A4). As before, comparing (2) and (A4), since c ′′</note></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="3" xml:id="foot_0">This may seem like a somewhat unusual socially optimal benchmark. However, it is the one that is meaningful in our context. In contrast, if we consider the situation under which both consumer types consumed a new good in each period, durability is irrelevant, and the optimal level of durability is zero. To motivate this benchmark, imagine that the seller can identify types, creates a single period rental contract for the new good offered to type-H in each period,</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="4" xml:id="foot_1">This is akin to the IC condition for type-H binding.</note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgments</head><p>We thank Anindya Ghose, Silin Huang, Xiao Liu, Vandith Pemuru, Andy Ruben, Joao Sedoc, Zhengyuan Zhou and seminar participants at New York University, the 2024 International Industrial Organization Conference, and the 2023 Marketing Science, ICIS and WISE conferences for helpful comments and discussion.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>The set of possible choices that each type-age pair has available to them are summarized below.   </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Appendix. Technical Details and Proofs</head><p>Proof of Lemma 1. Recall that in the active pre-owned marketplace case, type-H customers purchase new goods in period 1 and type-L customers purchase the pre-owned goods from type-H customers via the third-party marketplace in period 2. We derive the optimal level of durability and the optimal prices of new goods in each period under this setting.</p><p>Consider any durability choice D. From (9), the corresponding price of new goods in the second period is:</p><p>The firm's profits in second period are therefore</p><p>If the firm and customers anticipate the second period, since the type-L customers are not active in the first period, the maximum price the firm can charge for new units in the first period is the value realized from the new good in the first period added to the discounted price the consumer will receive from selling the good in the pre-owned marketplace in period 2, or</p><p>and the firm's profits from these first period sales are therefore</p><p>Zervas G, Proserpio D, Byers JW (2017) The rise of the sharing economy: Estimating the impact of Airbnb on the hotel industry. Journal of Marketing Research 54(5):687-705.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="28,72.00,593.72,468.00,8.80;28,95.91,616.41,156.32,8.80" xml:id="b0">
+	<analytic>
+		<title level="a" type="main">I Hear You: Does Quality Improve with Customer Voice?</title>
+		<author>
+			<persName><forename type="first">Uttara</forename><surname>Ananthakrishnan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Davide</forename><surname>Proserpio</surname></persName>
+			<idno type="ORCID">0000-0002-9271-067X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Siddhartha</forename><surname>Sharma</surname></persName>
+			<idno type="ORCID">0000-0002-6274-4086</idno>
+		</author>
+		<idno type="DOI">10.1287/mksc.2023.1437</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Marketing Science</title>
+		<title level="j" type="abbrev">Marketing Science</title>
+		<idno type="ISSN">0732-2399</idno>
+		<idno type="ISSNe">1526-548X</idno>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1143" to="1161" />
+			<date type="published" when="2023-11">2023</date>
+			<publisher>Institute for Operations Research and the Management Sciences (INFORMS)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="28,72.00,643.84,467.99,8.80;28,95.91,666.54,78.04,8.80" xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Reducing Buyer Search Costs: Implications for Electronic Marketplaces</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">Y</forename><surname>Bakos</surname></persName>
+		</author>
+		<idno type="DOI">10.1287/mnsc.43.12.1676</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<title level="j" type="abbrev">Management Science</title>
+		<idno type="ISSN">0025-1909</idno>
+		<idno type="ISSNe">1526-5501</idno>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="1676" to="1692" />
+			<date type="published" when="1997-12">1997</date>
+			<publisher>Institute for Operations Research and the Management Sciences (INFORMS)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="28,72.00,693.97,468.00,8.80;28,95.91,716.66,268.62,8.80" xml:id="b2">
+	<analytic>
+		<title level="a" type="main">User Heterogeneity and Its Impact on Electronic Auction Market Design: An Empirical Exploration</title>
+		<author>
+			<persName><surname>Bapna</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Goes</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Gupta</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Jin</surname></persName>
+		</author>
+		<idno type="DOI">10.2307/25148623</idno>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<title level="j" type="abbrev">MIS Quarterly</title>
+		<idno type="ISSN">0276-7783</idno>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">21</biblScope>
+			<date type="published" when="2004">2004</date>
+			<publisher>JSTOR</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="29,72.00,81.05,468.00,8.80;29,95.91,104.01,249.02,8.80" xml:id="b3">
+	<analytic>
+		<title level="a" type="main">One-Way Mirrors in Online Dating: A Randomized Field Experiment</title>
+		<author>
+			<persName><forename type="first">Ravi</forename><surname>Bapna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jui</forename><surname>Ramaprasad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Galit</forename><surname>Shmueli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Akhmed</forename><surname>Umyarov</surname></persName>
+		</author>
+		<idno type="DOI">10.1287/mnsc.2015.2301</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<title level="j" type="abbrev">Management Science</title>
+		<idno type="ISSN">0025-1909</idno>
+		<idno type="ISSNe">1526-5501</idno>
+		<imprint>
+			<biblScope unit="volume">62</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="3100" to="3122" />
+			<date type="published" when="2016-11">2016</date>
+			<publisher>Institute for Operations Research and the Management Sciences (INFORMS)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="29,72.00,131.71,468.00,8.80;29,95.91,154.67,104.88,8.80" xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Access-Based Consumption: The Case of Car Sharing: Table 1.</title>
+		<author>
+			<persName><forename type="first">Fleura</forename><surname>Bardhi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Giana</forename><forename type="middle">M</forename><surname>Eckhardt</surname></persName>
+		</author>
+		<idno type="DOI">10.1086/666376</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Consumer Research</title>
+		<title level="j" type="abbrev">J Consum Res</title>
+		<idno type="ISSN">0093-5301</idno>
+		<idno type="ISSNe">1537-5277</idno>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="881" to="898" />
+			<date type="published" when="2012-12-01">2012</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="29,72.00,182.37,468.00,8.80;29,95.91,205.33,73.06,8.80" xml:id="b5">
+	<analytic>
+		<title level="a" type="main">&lt;b&gt;Research Note&lt;/b&gt;—When Is Versioning Optimal for Information Goods?</title>
+		<author>
+			<persName><forename type="first">Hemant</forename><forename type="middle">K</forename><surname>Bhargava</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vidyanand</forename><surname>Choudhary</surname></persName>
+		</author>
+		<idno type="DOI">10.1287/mnsc.1070.0773</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<title level="j" type="abbrev">Management Science</title>
+		<idno type="ISSN">0025-1909</idno>
+		<idno type="ISSNe">1526-5501</idno>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1029" to="1035" />
+			<date type="published" when="2008-05">2008</date>
+			<publisher>Institute for Operations Research and the Management Sciences (INFORMS)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="29,72.00,233.03,388.40,8.80" xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Durable-Goods Monopolists</title>
+		<author>
+			<persName coords=""><forename type="first">Jeremy</forename><forename type="middle">I</forename><surname>Bulow</surname></persName>
+		</author>
+		<idno type="DOI">10.1086/261058</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Political Economy</title>
+		<title level="j" type="abbrev">Journal of Political Economy</title>
+		<idno type="ISSN">0022-3808</idno>
+		<idno type="ISSNe">1537-534X</idno>
+		<imprint>
+			<biblScope unit="volume">90</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="314" to="332" />
+			<date type="published" when="1982-04">1982</date>
+			<publisher>University of Chicago Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="29,72.00,260.72,468.00,8.80" xml:id="b7">
+	<analytic>
+		<title level="a" type="main">An Economic Theory of Planned Obsolescence</title>
+		<author>
+			<persName coords=""><forename type="first">Jeremy</forename><surname>Bulow</surname></persName>
+		</author>
+		<idno type="DOI">10.2307/1884176</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Quarterly Journal of Economics</title>
+		<title level="j" type="abbrev">The Quarterly Journal of Economics</title>
+		<idno type="ISSN">0033-5533</idno>
+		<imprint>
+			<biblScope unit="volume">101</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">729</biblScope>
+			<date type="published" when="1986-11">1986</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="29,72.00,288.42,468.00,8.80;29,95.91,311.38,68.08,8.80" xml:id="b8">
+	<analytic>
+		<title level="a" type="main">When Do Secondary Markets Harm Firms?</title>
+		<author>
+			<persName><forename type="first">Jiawei</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Susanna</forename><surname>Esteban</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><surname>Shum</surname></persName>
+		</author>
+		<idno type="DOI">10.1257/aer.103.7.2911</idno>
+	</analytic>
+	<monogr>
+		<title level="j">American Economic Review</title>
+		<title level="j" type="abbrev">American Economic Review</title>
+		<idno type="ISSN">0002-8282</idno>
+		<imprint>
+			<biblScope unit="volume">103</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="2911" to="2934" />
+			<date type="published" when="2013-12-01">2013</date>
+			<publisher>American Economic Association</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="29,72.00,339.08,415.64,8.80" xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Durability and Monopoly</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">H</forename><surname>Coase</surname></persName>
+		</author>
+		<idno type="DOI">10.1086/466731</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Law and Economics</title>
+		<title level="j" type="abbrev">The Journal of Law and Economics</title>
+		<idno type="ISSN">0022-2186</idno>
+		<idno type="ISSNe">1537-5285</idno>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="143" to="149" />
+			<date type="published" when="1972-04">1972</date>
+			<publisher>University of Chicago Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="29,72.00,366.77,468.00,8.80;29,95.91,389.74,97.20,8.80" xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Disruptive Change in the Taxi Business: The Case of Uber</title>
+		<author>
+			<persName><forename type="first">Judd</forename><surname>Cramer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alan</forename><forename type="middle">B</forename><surname>Krueger</surname></persName>
+		</author>
+		<idno type="DOI">10.1257/aer.p20161002</idno>
+	</analytic>
+	<monogr>
+		<title level="j">American Economic Review</title>
+		<title level="j" type="abbrev">American Economic Review</title>
+		<idno type="ISSN">0002-8282</idno>
+		<imprint>
+			<biblScope unit="volume">106</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="177" to="182" />
+			<date type="published" when="2016-05-01">2016</date>
+			<publisher>American Economic Association</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="29,72.00,417.43,468.00,8.80;29,95.91,440.40,108.75,8.80" xml:id="b11">
+	<analytic>
+		<title level="a" type="main">On Product Uncertainty in Online Markets: Theory and Evidence</title>
+		<author>
+			<persName><surname>Dimoka</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Pavlou</surname></persName>
+		</author>
+		<idno type="DOI">10.2307/41703461</idno>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<title level="j" type="abbrev">MIS Quarterly</title>
+		<idno type="ISSN">0276-7783</idno>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">395</biblScope>
+			<date type="published" when="2012">2012</date>
+			<publisher>JSTOR</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="29,72.00,468.09,467.99,8.80;29,95.91,491.06,108.61,8.80" xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Peer-to-Peer Rental Markets in the Sharing Economy</title>
+		<author>
+			<persName><forename type="first">Samuel</forename><forename type="middle">P</forename><surname>Fraiberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arun</forename><surname>Sundararajan</surname></persName>
+		</author>
+		<idno type="DOI">10.2139/ssrn.2574337</idno>
+	</analytic>
+	<monogr>
+		<title level="j">SSRN Electronic Journal</title>
+		<title level="j" type="abbrev">SSRN Journal</title>
+		<idno type="ISSN">1556-5068</idno>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="29,72.00,518.75,468.00,8.80;29,95.91,541.72,444.09,8.80;29,95.91,564.68,356.63,9.08" xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Frictions in product markets</title>
+		<author>
+			<persName><forename type="first">Alessandro</forename><surname>Gavazza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alessandro</forename><surname>Lizzeri</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/bs.hesind.2021.11.006</idno>
+		<ptr target="http://dx.doi.org/https://doi.org/10.1016/bs.hesind.2021.11.006" />
+	</analytic>
+	<monogr>
+		<title level="m">Handbook of Industrial Organization</title>
+				<editor>
+			<persName><forename type="first">K</forename><surname>Ho</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">A</forename><surname>Hortaçsu</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">A</forename><surname>Lizzeri</surname></persName>
+		</editor>
+		<imprint>
+			<publisher>Elsevier</publisher>
+			<date type="published" when="2021">2021</date>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page" from="433" to="484" />
+		</imprint>
+	</monogr>
+	<note>Frictions in product markets</note>
+</biblStruct>
+
+<biblStruct coords="29,72.00,592.38,468.00,8.80;29,95.91,615.34,117.12,8.80" xml:id="b14">
+	<analytic>
+		<title level="a" type="main">A Quantitative Analysis of the Used-Car Market</title>
+		<author>
+			<persName><forename type="first">Alessandro</forename><surname>Gavazza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alessandro</forename><surname>Lizzeri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nikita</forename><surname>Roketskiy</surname></persName>
+		</author>
+		<idno type="DOI">10.1257/aer.104.11.3668</idno>
+	</analytic>
+	<monogr>
+		<title level="j">American Economic Review</title>
+		<title level="j" type="abbrev">American Economic Review</title>
+		<idno type="ISSN">0002-8282</idno>
+		<imprint>
+			<biblScope unit="volume">104</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="3668" to="3700" />
+			<date type="published" when="2014-11-01">2014</date>
+			<publisher>American Economic Association</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="29,72.00,643.04,468.00,8.80;29,95.91,666.00,173.92,8.80" xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Internet Exchanges for Used Goods: An Empirical Analysis of Trade Patterns and Adverse Selection</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Ghose</surname></persName>
+		</author>
+		<idno type="DOI">10.2307/20650292</idno>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<title level="j" type="abbrev">MIS Quarterly</title>
+		<idno type="ISSN">0276-7783</idno>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">263</biblScope>
+			<date type="published" when="2009">2009</date>
+			<publisher>JSTOR</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="29,72.00,693.70,468.00,8.80;29,95.91,716.66,342.10,8.80" xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Internet Exchanges for Used Books: An Empirical Analysis of Product Cannibalization and Welfare Impact</title>
+		<author>
+			<persName><forename type="first">Anindya</forename><surname>Ghose</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">D</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rahul</forename><surname>Telang</surname></persName>
+		</author>
+		<idno type="DOI">10.1287/isre.1050.0072</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<title level="j" type="abbrev">Information Systems Research</title>
+		<idno type="ISSN">1047-7047</idno>
+		<idno type="ISSNe">1526-5536</idno>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="3" to="19" />
+			<date type="published" when="2006-03">2006</date>
+			<publisher>Institute for Operations Research and the Management Sciences (INFORMS)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="30,72.00,81.05,461.05,8.80" xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Interfering with Secondary Markets</title>
+		<author>
+			<persName><forename type="first">Igal</forename><surname>Hendel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alessandro</forename><surname>Lizzeri</surname></persName>
+		</author>
+		<idno type="DOI">10.2307/2556043</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The RAND Journal of Economics</title>
+		<title level="j" type="abbrev">The RAND Journal of Economics</title>
+		<idno type="ISSN">0741-6261</idno>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">1</biblScope>
+			<date type="published" when="1999">1999</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="30,72.00,108.74,468.00,8.80;30,95.91,131.71,198.72,8.80" xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Product Fit Uncertainty in Online Markets: Nature, Effects, and Antecedents</title>
+		<author>
+			<persName><forename type="first">Yili</forename><forename type="middle">(kevin)</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><forename type="middle">A</forename><surname>Pavlou</surname></persName>
+		</author>
+		<idno type="DOI">10.1287/isre.2014.0520</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<title level="j" type="abbrev">Information Systems Research</title>
+		<idno type="ISSN">1047-7047</idno>
+		<idno type="ISSNe">1526-5536</idno>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="328" to="344" />
+			<date type="published" when="2014-06">2014</date>
+			<publisher>Institute for Operations Research and the Management Sciences (INFORMS)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="30,72.00,159.40,468.00,8.80;30,95.91,182.37,297.21,8.80" xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Dynamic Demand for New and Used Durable Goods Without Physical Depreciation: The Case of Japanese Video Games</title>
+		<author>
+			<persName><forename type="first">Masakazu</forename><surname>Ishihara</surname></persName>
+			<idno type="ORCID">0000-0003-0368-1705</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><forename type="middle">T</forename><surname>Ching</surname></persName>
+			<idno type="ORCID">0000-0002-0907-284X</idno>
+		</author>
+		<idno type="DOI">10.1287/mksc.2018.1142</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Marketing Science</title>
+		<title level="j" type="abbrev">Marketing Science</title>
+		<idno type="ISSN">0732-2399</idno>
+		<idno type="ISSNe">1526-548X</idno>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="392" to="416" />
+			<date type="published" when="2019-05">2019</date>
+			<publisher>Institute for Operations Research and the Management Sciences (INFORMS)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="30,72.00,210.06,468.00,8.80;30,95.91,233.03,63.10,8.80" xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Secondary markets with changing preferences</title>
+		<author>
+			<persName coords=""><forename type="first">Justin</forename><forename type="middle">P</forename><surname>Johnson</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/j.1756-2171.2011.00139.x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The RAND Journal of Economics</title>
+		<title level="j" type="abbrev">The RAND J of Economics</title>
+		<idno type="ISSN">0741-6261</idno>
+		<idno type="ISSNe">1756-2171</idno>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="555" to="574" />
+			<date type="published" when="2011-09">2011</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="30,72.00,260.72,468.00,8.80;30,95.91,283.69,208.69,8.80" xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Analyzing Frictions in Generalized Second-Price Auction Markets</title>
+		<author>
+			<persName><forename type="first">Karthik</forename><surname>Kannan</surname></persName>
+			<idno type="ORCID">0000-0002-9861-0717</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Vandith</forename><surname>Pamuru</surname></persName>
+			<idno type="ORCID">0000-0002-8572-5099</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yaroslav</forename><surname>Rosokha</surname></persName>
+			<idno type="ORCID">0000-0002-8567-659X</idno>
+		</author>
+		<idno type="DOI">10.1287/isre.2022.1187</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<title level="j" type="abbrev">Information Systems Research</title>
+		<idno type="ISSN">1047-7047</idno>
+		<idno type="ISSNe">1526-5536</idno>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1437" to="1454" />
+			<date type="published" when="2023-12">2023</date>
+			<publisher>Institute for Operations Research and the Management Sciences (INFORMS)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="30,72.00,311.38,468.00,8.80;30,95.91,334.35,143.17,8.80" xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Optimal Savings Under Uncertainty</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Levhari</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">N</forename><surname>Srinivasan</surname></persName>
+		</author>
+		<idno type="DOI">10.2307/2296834</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Review of Economic Studies</title>
+		<title level="j" type="abbrev">The Review of Economic Studies</title>
+		<idno type="ISSN">0034-6527</idno>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">153</biblScope>
+			<date type="published" when="1969-04">1969</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="30,72.00,362.04,468.00,8.80;30,95.91,385.01,84.96,8.80" xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Regulating Powerful Platforms: Evidence from Commission Fee Caps</title>
+		<author>
+			<persName><forename type="first">Zhuoxin</forename><surname>Li</surname></persName>
+			<idno type="ORCID">0000-0002-4687-4913</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Gang</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0002-4086-4343</idno>
+		</author>
+		<idno type="DOI">10.1287/isre.2022.0191</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<title level="j" type="abbrev">Information Systems Research</title>
+		<idno type="ISSN">1047-7047</idno>
+		<idno type="ISSNe">1526-5536</idno>
+		<imprint>
+			<biblScope unit="volume">0</biblScope>
+			<biblScope unit="issue">0</biblScope>
+			<biblScope unit="page" from="1" to="15" />
+			<date type="published" when="2024-02-28">2024</date>
+			<publisher>Institute for Operations Research and the Management Sciences (INFORMS)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="30,72.00,412.70,468.00,8.80;30,95.91,435.67,216.16,8.80" xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Co-opetition Between Differentiated Platforms in Two-Sided Markets</title>
+		<author>
+			<persName><forename type="first">Ravi</forename><surname>Mantena</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rajib</forename><forename type="middle">L</forename><surname>Saha</surname></persName>
+		</author>
+		<idno type="DOI">10.2753/mis0742-1222290205</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Management Information Systems</title>
+		<title level="j" type="abbrev">Journal of Management Information Systems</title>
+		<idno type="ISSN">0742-1222</idno>
+		<idno type="ISSNe">1557-928X</idno>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="109" to="140" />
+			<date type="published" when="2012-10">2012</date>
+			<publisher>Informa UK Limited</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="30,72.00,463.36,468.00,8.80;30,95.91,486.33,43.17,8.80" xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Monopoly with Incomplete Information</title>
+		<author>
+			<persName><forename type="first">Eric</forename><surname>Maskin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><surname>Riley</surname></persName>
+		</author>
+		<idno type="DOI">10.2307/2555674</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The RAND Journal of Economics</title>
+		<title level="j" type="abbrev">The RAND Journal of Economics</title>
+		<idno type="ISSN">0741-6261</idno>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">171</biblScope>
+			<date type="published" when="1984">1984</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="30,72.00,514.02,468.00,8.80;30,95.91,536.99,157.94,8.80" xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Market Segmentation, Cannibalization, and the Timing of Product Introductions</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">Sridhar</forename><surname>Moorthy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ipl</forename><forename type="middle">P L</forename><surname>Png</surname></persName>
+		</author>
+		<idno type="DOI">10.1287/mnsc.38.3.345</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<title level="j" type="abbrev">Management Science</title>
+		<idno type="ISSN">0025-1909</idno>
+		<idno type="ISSNe">1526-5501</idno>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="345" to="359" />
+			<date type="published" when="1992-03">1992</date>
+			<publisher>Institute for Operations Research and the Management Sciences (INFORMS)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="30,72.00,564.68,446.15,8.80" xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Monopoly and product quality</title>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Mussa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sherwin</forename><surname>Rosen</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/0022-0531(78)90085-6</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Economic Theory</title>
+		<title level="j" type="abbrev">Journal of Economic Theory</title>
+		<idno type="ISSN">0022-0531</idno>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="301" to="317" />
+			<date type="published" when="1978-08">1978</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="30,72.00,592.38,468.00,8.80;30,95.91,615.34,198.72,8.80" xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Social Media Marketing, Quality Signaling, and the Goldilocks Principle</title>
+		<author>
+			<persName><forename type="first">Tingting</forename><surname>Nian</surname></persName>
+			<idno type="ORCID">0000-0003-3398-5064</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Arun</forename><surname>Sundararajan</surname></persName>
+		</author>
+		<idno type="DOI">10.1287/isre.2021.1067</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<title level="j" type="abbrev">Information Systems Research</title>
+		<idno type="ISSN">1047-7047</idno>
+		<idno type="ISSNe">1526-5536</idno>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="540" to="556" />
+			<date type="published" when="2022-06">2022</date>
+			<publisher>Institute for Operations Research and the Management Sciences (INFORMS)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="30,72.00,643.04,468.00,8.80;30,95.91,666.00,153.03,8.80" xml:id="b29">
+	<analytic>
+		<title level="a" type="main">&lt;b&gt;Research Note&lt;/b&gt;— Analyzing Pricing Strategies for Online Services with Network Effects</title>
+		<author>
+			<persName><forename type="first">Min-Seok</forename><surname>Pang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hila</forename><surname>Etzion</surname></persName>
+		</author>
+		<idno type="DOI">10.1287/isre.1110.0414</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Research</title>
+		<title level="j" type="abbrev">Information Systems Research</title>
+		<idno type="ISSN">1047-7047</idno>
+		<idno type="ISSNe">1526-5536</idno>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1364" to="1377" />
+			<date type="published" when="2012-12">2012</date>
+			<publisher>Institute for Operations Research and the Management Sciences (INFORMS)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="30,72.00,693.70,468.00,8.80;30,95.91,716.66,292.53,8.80" xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Understanding and Mitigating Uncertainty in Online Exchange Relationships: A Principal-Agent Perspective</title>
+		<author>
+			<persName><surname>Pavlou</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Xue</surname></persName>
+		</author>
+		<idno type="DOI">10.2307/25148783</idno>
+	</analytic>
+	<monogr>
+		<title level="j">MIS Quarterly</title>
+		<title level="j" type="abbrev">MIS Quarterly</title>
+		<idno type="ISSN">0276-7783</idno>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">105</biblScope>
+			<date type="published" when="2007">2007</date>
+			<publisher>JSTOR</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="31,72.00,81.05,467.99,8.80;31,95.91,104.97,295.57,8.80" xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Market Information and Bidder Heterogeneity in Secondary Market Online B2B Auctions</title>
+		<author>
+			<persName><forename type="first">Ali</forename><surname>Pilehvar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wedad</forename><forename type="middle">J</forename><surname>Elmaghraby</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anandasivam</forename><surname>Gopal</surname></persName>
+		</author>
+		<idno type="DOI">10.1287/mnsc.2016.2444</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<title level="j" type="abbrev">Management Science</title>
+		<idno type="ISSN">0025-1909</idno>
+		<idno type="ISSNe">1526-5501</idno>
+		<imprint>
+			<biblScope unit="volume">63</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1493" to="1518" />
+			<date type="published" when="2017-05">2017</date>
+			<publisher>Institute for Operations Research and the Management Sciences (INFORMS)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="31,72.00,133.62,443.25,8.80" xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Online Content Pricing: Purchase and Rental Markets</title>
+		<author>
+			<persName coords=""><forename type="first">Anita</forename><surname>Rao</surname></persName>
+		</author>
+		<idno type="DOI">10.1287/mksc.2014.0896</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Marketing Science</title>
+		<title level="j" type="abbrev">Marketing Science</title>
+		<idno type="ISSN">0732-2399</idno>
+		<idno type="ISSNe">1526-548X</idno>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="430" to="451" />
+			<date type="published" when="2015-05">2015</date>
+			<publisher>Institute for Operations Research and the Management Sciences (INFORMS)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="31,72.00,162.27,468.00,8.80;31,95.91,186.19,208.63,8.80" xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Understanding the Role of Trade-Ins in Durable Goods Markets: Theory and Evidence</title>
+		<author>
+			<persName><forename type="first">Raghunath</forename><forename type="middle">Singh</forename><surname>Rao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Om</forename><surname>Narasimhan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">George</forename><surname>John</surname></persName>
+		</author>
+		<idno type="DOI">10.1287/mksc.1080.0461</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Marketing Science</title>
+		<title level="j" type="abbrev">Marketing Science</title>
+		<idno type="ISSN">0732-2399</idno>
+		<idno type="ISSNe">1526-548X</idno>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="950" to="967" />
+			<date type="published" when="2009-09">2009</date>
+			<publisher>Institute for Operations Research and the Management Sciences (INFORMS)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="31,72.00,214.85,468.01,8.80;31,95.91,238.77,265.89,9.08" xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Multiproduct Intermediaries</title>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Rhodes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Makoto</forename><surname>Watanabe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jidong</forename><surname>Zhou</surname></persName>
+		</author>
+		<idno type="DOI">10.1086/711917</idno>
+		<ptr target="http://dx.doi.org/10.1086/711917" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Political Economy</title>
+		<title level="j" type="abbrev">Journal of Political Economy</title>
+		<idno type="ISSN">0022-3808</idno>
+		<idno type="ISSNe">1537-534X</idno>
+		<imprint>
+			<biblScope unit="volume">129</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="421" to="464" />
+			<date type="published" when="2021-02-01">2021</date>
+			<publisher>University of Chicago Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="31,72.00,267.42,468.00,8.80;31,95.91,291.34,94.17,8.80" xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Regulation and the Durability of Goods</title>
+		<author>
+			<persName coords=""><forename type="first">Richard</forename><surname>Schmalensee</surname></persName>
+		</author>
+		<idno type="DOI">10.2307/3003022</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Bell Journal of Economics and Management Science</title>
+		<title level="j" type="abbrev">The Bell Journal of Economics and Management Science</title>
+		<idno type="ISSN">0005-8556</idno>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">54</biblScope>
+			<date type="published" when="1970">1970</date>
+			<publisher>JSTOR</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="31,72.00,319.99,468.00,8.80;31,95.91,343.91,123.90,8.80" xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Monopoly and Competition in the Market for Durable Goods</title>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Sieper</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">L</forename><surname>Swan</surname></persName>
+		</author>
+		<idno type="DOI">10.2307/2296454</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Review of Economic Studies</title>
+		<title level="j" type="abbrev">The Review of Economic Studies</title>
+		<idno type="ISSN">0034-6527</idno>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">333</biblScope>
+			<date type="published" when="1973-07">1973</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="31,72.00,372.57,452.03,8.80" xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Nonlinear Pricing of Information Goods</title>
+		<author>
+			<persName coords=""><forename type="first">Arun</forename><surname>Sundararajan</surname></persName>
+		</author>
+		<idno type="DOI">10.1287/mnsc.1040.0291</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Management Science</title>
+		<title level="j" type="abbrev">Management Science</title>
+		<idno type="ISSN">0025-1909</idno>
+		<idno type="ISSNe">1526-5501</idno>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="1660" to="1673" />
+			<date type="published" when="2004-12">2004</date>
+			<publisher>Institute for Operations Research and the Management Sciences (INFORMS)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="31,72.00,401.22,468.00,8.80;31,95.91,425.14,110.32,8.80" xml:id="b38">
+	<monogr>
+		<title level="m" type="main">The Sharing Economy: The End of Employment and the Rise of Crowd-Based Capitalism</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Sundararajan</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<publisher>The MIT Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="31,72.00,453.79,431.52,8.80" xml:id="b39">
+	<analytic>
+		<title level="a" type="main">BARKER v BURKE</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">L</forename><surname>Swan</surname></persName>
+		</author>
+		<idno type="DOI">10.25291/vr/1970-vr-884</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Victorian Reports</title>
+		<title level="j" type="abbrev">VR</title>
+		<idno type="ISSNe">2208-4886</idno>
+		<imprint>
+			<biblScope unit="volume">[1970] VR</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="884" to="894" />
+			<date type="published" when="1970">1970</date>
+			<publisher>Little William Bourke</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="31,72.00,482.45,468.00,8.80;31,95.91,506.37,133.04,8.80" xml:id="b40">
+	<analytic>
+		<title level="a" type="main">The Durability of Goods and Regulation of Monopoly</title>
+		<author>
+			<persName coords=""><forename type="first">Peter</forename><forename type="middle">L</forename><surname>Swan</surname></persName>
+		</author>
+		<idno type="DOI">10.2307/3003172</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Bell Journal of Economics and Management Science</title>
+		<title level="j" type="abbrev">The Bell Journal of Economics and Management Science</title>
+		<idno type="ISSN">0005-8556</idno>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">347</biblScope>
+			<date type="published" when="1971">1971</date>
+			<publisher>JSTOR</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="31,72.00,535.02,467.99,8.80;31,95.91,558.94,140.25,8.80" xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Optimum Durability, Second-Hand Markets, and Planned Obsolescence</title>
+		<author>
+			<persName coords=""><forename type="first">Peter</forename><forename type="middle">L</forename><surname>Swan</surname></persName>
+		</author>
+		<idno type="DOI">10.1086/259906</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Political Economy</title>
+		<title level="j" type="abbrev">Journal of Political Economy</title>
+		<idno type="ISSN">0022-3808</idno>
+		<idno type="ISSNe">1537-534X</idno>
+		<imprint>
+			<biblScope unit="volume">80</biblScope>
+			<biblScope unit="issue">3, Part 1</biblScope>
+			<biblScope unit="page" from="575" to="585" />
+			<date type="published" when="1972-05">1972</date>
+			<publisher>University of Chicago Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="31,72.00,587.59,468.00,8.80;31,95.91,611.51,43.17,8.80" xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Price Cycles in Markets with Customer Recognition</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">M</forename><surname>Villas-Boas</surname></persName>
+		</author>
+		<idno type="DOI">10.2307/1593704</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The RAND Journal of Economics</title>
+		<title level="j" type="abbrev">The RAND Journal of Economics</title>
+		<idno type="ISSN">0741-6261</idno>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">486</biblScope>
+			<date type="published" when="2004">2004</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="31,72.00,640.17,440.20,8.80" xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Durable Goods Pricing When Quality Matters</title>
+		<author>
+			<persName coords=""><forename type="first">Michael</forename><surname>Waldman</surname></persName>
+		</author>
+		<idno type="DOI">10.1086/209702</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Business</title>
+		<title level="j" type="abbrev">J BUS</title>
+		<idno type="ISSN">0021-9398</idno>
+		<idno type="ISSNe">1537-5374</idno>
+		<imprint>
+			<biblScope unit="volume">69</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">489</biblScope>
+			<date type="published" when="1996-01">1996</date>
+			<publisher>University of Chicago Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="31,72.00,668.82,468.00,8.80;31,95.91,692.74,438.49,8.80;31,95.91,716.66,84.27,8.80" xml:id="b44">
+	<analytic>
+		<title level="a" type="main">5 Making endlessly recyclable plastics</title>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Woody</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/s0262-4079(22)00392-x</idno>
+		<ptr target="https://www.bloomberg.com/news/features/2024-05-02/patagonia-is-cracking-the-code-on-endlessly-recyclable-wetsuits" />
+	</analytic>
+	<monogr>
+		<title level="j">New Scientist</title>
+		<title level="j" type="abbrev">New Scientist</title>
+		<idno type="ISSN">0262-4079</idno>
+		<imprint>
+			<biblScope unit="volume">253</biblScope>
+			<biblScope unit="issue">3376</biblScope>
+			<biblScope unit="page">42</biblScope>
+			<date type="published" when="2024">2024</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

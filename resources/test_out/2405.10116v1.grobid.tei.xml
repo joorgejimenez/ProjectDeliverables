@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Enhancing Energy Efficiency in O-RAN Through Intelligent xApps Deployment</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2024-05-16">16 May 2024</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,59.79,120.83,63.93,9.50;1,123.73,118.57,1.41,6.99"><forename type="first">Xuanyu</forename><surname>Liang</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Physics Engineering and Technology</orgName>
+								<orgName type="institution">University of York</orgName>
+								<address>
+									<country key="GB">United Kingdom</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,135.04,120.83,107.05,9.50;1,242.08,118.57,1.41,6.99"><forename type="first">Ahmed</forename><surname>Al-Tahmeesschi</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Physics Engineering and Technology</orgName>
+								<orgName type="institution">University of York</orgName>
+								<address>
+									<country key="GB">United Kingdom</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,253.39,120.83,50.43,9.50;1,303.82,118.57,1.41,6.99"><forename type="first">Qiao</forename><surname>Wang</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Physics Engineering and Technology</orgName>
+								<orgName type="institution">University of York</orgName>
+								<address>
+									<country key="GB">United Kingdom</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,315.13,120.83,65.82,9.50;1,380.95,118.57,1.41,6.99"><forename type="first">Swarna</forename><surname>Chetty</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Physics Engineering and Technology</orgName>
+								<orgName type="institution">University of York</orgName>
+								<address>
+									<country key="GB">United Kingdom</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,392.26,120.83,56.20,9.50;1,448.45,118.57,1.41,6.99"><forename type="first">Chenrui</forename><surname>Sun</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Physics Engineering and Technology</orgName>
+								<orgName type="institution">University of York</orgName>
+								<address>
+									<country key="GB">United Kingdom</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,476.68,120.83,70.79,9.50;1,547.47,118.57,1.41,6.99"><forename type="first">Hamed</forename><surname>Ahmadi</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Physics Engineering and Technology</orgName>
+								<orgName type="institution">University of York</orgName>
+								<address>
+									<country key="GB">United Kingdom</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Enhancing Energy Efficiency in O-RAN Through Intelligent xApps Deployment</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2024-05-16">16 May 2024</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">45834A02B061D4D7E88730156F5455B8</idno>
+					<idno type="arXiv">arXiv:2405.10116v1[eess.SY]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2024-05-19T14:18+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>EE</term>
+					<term>O-RAN</term>
+					<term>xApp</term>
+					<term>RIC</term>
+					<term>QoS</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>The proliferation of 5G technology presents an unprecedented challenge in managing the energy consumption of densely deployed network infrastructures, particularly Base Stations (BSs), which account for the majority of power usage in mobile networks. The O-RAN architecture, with its emphasis on open and intelligent design, offers a promising framework to address the Energy Efficiency (EE) demands of modern telecommunication systems. This paper introduces two xApps designed for the O-RAN architecture to optimize power savings without compromising the Quality of Service (QoS). Utilizing a commercial RAN Intelligent Controller (RIC) simulator, we demonstrate the effectiveness of our proposed xApps through extensive simulations that reflect real-world operational conditions. Our results show a significant reduction in power consumption, achieving up to 50% power savings with a minimal number of User Equipments (UEs), by intelligently managing the operational state of Radio Cards (RCs), particularly through switching between active and sleep modes based on network resource block usage conditions.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>I. INTRODUCTION</head><p>5G technology is poised to transform the industry with its high-speed data transmission and ultra-low latency, paving the way for a surge in new telecommunications services. However, this advancement necessitates a more densely packed network infrastructure, particularly in terms of access points, resulting in a proliferation of BSs. Consequently, energy consumption is likely to rise in correlation to the growing number of BS and the enhanced bit rate. Approximately 80% of energy consumption in cellular mobile networks is attributed to BSs <ref type="bibr" coords="1,48.96,536.10,10.58,8.64" target="#b0">[1]</ref>. The surge in energy consumption not only amplifies the operational costs for wireless network providers but also contributes to a rise in CO2 emissions <ref type="bibr" coords="1,217.73,560.01,10.58,8.64" target="#b1">[2]</ref>. In this context, the O-RAN Alliance offer a new architecture and standard to achieving the various service requirements while enhancing Energy Efficiency (EE), which is one of fundamental Key Performance Indicators (KPIs) of growing importance as telecommunications companies face increasing operational costs <ref type="bibr" coords="1,74.12,631.74,10.58,8.64" target="#b2">[3]</ref>, characterized by its open and intelligent design, facilitates a more efficient and versatile network infrastructure through the disaggregation of user and control plane functions and the integration of open interfaces and standards <ref type="bibr" coords="1,264.74,667.61,10.58,8.64" target="#b3">[4]</ref>, <ref type="bibr" coords="1,282.34,667.61,10.58,8.64" target="#b4">[5]</ref>.</p><p>Open Radio Access Network (O-RAN) revolutionizes the conventional monolithic structure by disaggregating base station functionalities into distinct components: the O-Central Unit (CU), the O-Distributed Unit (DU), and the O-Radio Unit (RU). In this architecture, the O-CU and O-DU collectively embody the functionalities of the Base Band Unit (BBU) found in previous RAN models, with their operations predominantly hosted in the cloud. The O-RU, on the other hand, serves as a physical entity, akin to the Remote Radio Head (RRH) of traditional systems, albeit with a streamlined role. It is specifically tasked with managing the low-physical layer, the RF module and power amplifiers, which is a major contributor of the total energy consumption of O-RAN <ref type="bibr" coords="1,489.31,261.19,10.58,8.64" target="#b5">[6]</ref>. Consequently, achieving a higher number of deactivated O-RUs directly correlates with increased power savings, provided that such reductions align with the load requirements of the O-RU and the overall network demand.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A. Key Innovations of O-RAN</head><p>A significant innovation within the O-RAN framework is the introduction of the RIC illustrated in Fig. <ref type="figure" coords="1,485.95,368.79,3.74,8.64" target="#fig_0">1</ref>, a programmable unit crafted to manage the growing complexities of network infrastructures effectively, thus improving both the precision and the operational performance. Acting as a pivotal abstraction layer within the network, the RIC aggregates extensive Key Performence Measurements (KPMs) data, offering a detailed overview of the network infrastructure's condition, including user metrics, traffic loads, and throughput capabilities <ref type="bibr" coords="1,535.19,452.47,10.58,8.64" target="#b6">[7]</ref>. To cater to various operational dynamics, the architecture includes two distinct versions of the RIC: the Near Real Time RIC (Near-RT RIC) and the Non Real Time RIC (Non-RT RIC) [?] which anchored in orchestrating network management, each tasked across different temporal scales, specifically within time frames of 10 ms to 1s, and beyond 1s, in a closedloop system. The Near-RT RIC consists multiple applications to support various service demands called xApps. xApps are developed using a standardized framework that allows for their deployment across different vendor equipment and RAN configurations <ref type="bibr" coords="1,372.94,583.98,11.62,8.64" target="#b7">[8]</ref> via the open interfaces. Within the framework established by the O-RAN Alliance, open interfaces are precisely defined standard interfaces that foster a diverse ecosystem of options for operators. These interfaces enable operators to select from an array of vendors for various O-RAN components, thereby enhancing market competitiveness. Among these, the E2 interface stands out as a critical conduit linking the Near-RT RIC with E2 nodes <ref type="bibr" coords="1,486.21,667.67,10.58,8.64" target="#b8">[9]</ref>, which include DU, CU, and LTE eNB compliant with O-RAN specifications. The principal role of the E2 interface revolves around the acquisition of dynamic network information from E2 nodes, with the Near-RT RIC subsequently processing this data and generating actionable feedback. In our case, feedback from Near-RT RIC can be the set of active RCs. Another pivotal open interface within the O-RAN architecture is the O1 interface. This interface is instrumental in connecting all O-RAN elements, encompassing RAN nodes and the Near-RT RIC, with the Service Management and Orchestration (SMO) framework and the Non-Real Time RIC <ref type="bibr" coords="2,210.65,105.77,15.27,8.64" target="#b9">[10]</ref>. The O1 interface significantly empowers the SMO, which is tasked with the comprehensive management, orchestration, and automation of network services and functionalities, enabling direct access to network information.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B. Related Works and Contributions</head><p>Some studies focus on using mathematical optimization to select the proper switching-off RRH or BS without considering the user's QoS <ref type="bibr" coords="2,109.16,214.68,15.27,8.64" target="#b10">[11]</ref>, <ref type="bibr" coords="2,130.60,214.68,15.27,8.64" target="#b11">[12]</ref>. Those approaches show a decent performance on energy efficiency, but it takes high computational requirements and increases the network complexity when the network is laid out densely.</p><p>The authors in <ref type="bibr" coords="2,119.73,262.17,16.60,8.64" target="#b12">[13]</ref> mainly discussed the dynamic operation of macro BSs including both switch off and on for potential energy saving. Both downlink (DL) and uplink (UL) were taken into consideration. The proposed algorithm allowed for a flexible balance between UL and DL by adjusting a parameter called the fraction factor. However, the authors did not study the impact of energy saving on UE's QoS.</p><p>Authors in <ref type="bibr" coords="2,110.48,345.53,16.60,8.64" target="#b13">[14]</ref> and <ref type="bibr" coords="2,153.18,345.53,16.60,8.64" target="#b14">[15]</ref> formulated the BS switching strategies as a joint optimization problem, taking user's QoS and user association policy into consideration. The algorithm <ref type="bibr" coords="2,48.96,381.40,16.60,8.64" target="#b13">[14]</ref> aimed to turn off BSs one by one, taking into account the additional load increments brought to neighboring BSs. The paper also proposed three heuristic versions of Switchingon/off based Energy Saving (SWES) that use approximate values of network-impact as decision metrics to reduce signaling and implementation overhead further. In <ref type="bibr" coords="2,232.62,441.17,15.27,8.64" target="#b14">[15]</ref>, the authors tackled the Energy Efficiency Maximization Problem (EEMP) in two phases. First, it examines static-EEMP, using heuristic algorithms to optimize energy efficiency by considering user proximity and base station impacts. Then, it introduces the QoS First Maximum EE (QFMEE) strategy, which iteratively deactivates base stations, reassigns users, and evaluates shortterm network efficiency, seeking an optimal network configuration that maintains service quality. While this paper is the user-centric putting QoS in prime position, the process is overly complex and it is possible to integrate two steps into a single step.</p><p>On the other hand, <ref type="bibr" coords="2,144.79,584.31,15.27,8.64" target="#b15">[16]</ref>, <ref type="bibr" coords="2,168.69,584.31,15.27,8.64" target="#b16">[17]</ref>, <ref type="bibr" coords="2,192.57,584.31,15.27,8.64" target="#b17">[18]</ref>, <ref type="bibr" coords="2,216.46,584.31,16.60,8.64" target="#b18">[19]</ref> control the BS switching off or BS sleep mode by adapting Deep Reinforcement Learning (DRL). The researchers segmented the sleep mode of the BS into various stages, each characterized by distinct levels of energy consumption and specific conditions for activation, which significantly enhanced the optimization of energy efficiency across the entire network. Machine Learning (ML) models typically demand greater computational resources relative to certain mathematical methodologies. Additionally, they necessitate substantial volumes of data for training purposes, along with extended periods dedicated to the training process.</p><p>The purpose of this paper is to create an energy saving xApp and implement it into a realistic environment. In addition, our work differ from previous literature in the assumption of having multiple RCs in an O-RU. An RC within an O-RU is a hardware module responsible for converting digital signals to radio frequencies and vice versa. It carries out key operations like modulation, demodulation, amplification, and filtering of signals. Each RC operates on specific frequency bands, allowing the O-RU to support various cellular standards and ensure effective communication between the network and UEs. We propose two xApps to control the sleep mode of RCs while satisfying the UE's QoS and load threshold of RCs. Both xApps are implemented into the real simulator 'TeraVM' RICtester <ref type="bibr" coords="2,336.13,189.46,16.60,8.64" target="#b19">[20]</ref> and obtain a maximum of 50% power saving during small number of UEs.</p><p>The main contributions of this paper are:</p><p>• We develop two xApps for RCs switching within the O-RAN architecture to reduce the network's overall power consumption.</p><p>• We integrate those xApps with the 'TeraVM' RIC-tester, a real simulation software environment, demonstrating its practical applicability. • We justify the achievable performance of the proposed approach in terms of power saving with simulation and demonstrate the effectiveness of the xApps in adapting to changes in the radio environment.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>II. SYSTEM MODEL AND ENVIRONMENT</head><p>In this segment, the configuration of the system implemented in this study is delineated. To craft a simulation environment that mirrors real-world conditions closely, the 'TeraVM' RIC tester is employed. Additionally, the Urban Microcell path loss (UMa) channel model is utilized to enhance the realism of the simulations <ref type="bibr" coords="2,434.84,462.75,15.27,8.64" target="#b19">[20]</ref>. This research incorporates a single O-CU and 12 O-RUs, each of which is serviced by a corresponding O-DU. The O-RUs are positioned at fixed locations, maintaining a uniform inter-site distance of 100 meters. The installation height for each O-RU is standardized at 10 meters, and each O-RU encompasses two RCs operating on distinct frequencies-specifically, n77 and n78 as illustrated in Fig. <ref type="figure" coords="2,345.48,546.44,3.74,8.64" target="#fig_0">1</ref>. Both RCs are equipped with isotropic antennas, and the transmission power for each RC is set to 30 dBm. During the simulation, all the UEs are static and randomly distributed in the considered area. For the sake of subsequent better expression, we assume that there are a set of RCs M and a set of UEs K. Let k ∈ K be the index of k-th UE and m ∈ M be the index of m-th RC. The power consumption model for RCs are delineated following the framework presented by <ref type="bibr" coords="2,311.98,642.08,15.27,8.64" target="#b20">[21]</ref>. The model encapsulates the various components of power expenditure as follows:</p><formula xml:id="formula_0" coords="2,373.35,676.39,189.69,12.69">P RC = P mode F IX + P data + P T C ,<label>(1)</label></formula><p>where, P RC represents the overall power consumption of all RCs in the network. P T C denotes for the power consumed by the transceiver chains. The term P mode F IX represents the fixed power consumption of RCs, which varies depending on whether an RC is in its active state or sleep mode. This can be expressed as:</p><formula xml:id="formula_1" coords="3,73.22,379.34,226.80,30.20">P mode F IX = M m=1 α m * P Active + (1 − α m ) * P Sleep ,<label>(2)</label></formula><p>in which α m is a binary indicator denoting the operational state of RC m (1 for active and 0 for sleep). The P Active and P Sleep respectively signify the fixed power consumption rates of an RC in its active and sleep states. Furthermore, accounts for the power consumption associated with the transmission power of RC m, which scales with the usage of RC resource blocks as defined by:</p><formula xml:id="formula_2" coords="3,98.83,505.05,201.19,30.20">P data = M m=1 α m * P tx η * P RB m usage ,<label>(3)</label></formula><p>where the P tx is the transmission power of RC and η is represented as the Power Amplifier (PA) efficiency. The term P RB m usage reflects the resource block usage on RC m, illustrating that an increase in the number of UEs served by an RC directly influences its power consumption.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>III. PROBLEM FORMULATION</head><p>The objective function of this study is to minimize the total power consumption of the network. To achieve this, we have developed two xApps that adjusts the activity of RCs based on current network conditions. The xApps aim to find the most energy-efficient configuration of an RCs without compromising network performance and quality. This optimization is subject to three key constraints. The first is Reference Signals Received Power (RSRP), which represents the power of the reference signals spread over the entire bandwidth and is measured in decibels milliwatt (dBm). RSRP is a vital indicator of signal strength received by a UE from an RC and plays a significant role in determining the quality of the connection between the UE and the network. By ensuring that each UE maintains a minimum UE level, we aim to guarantee robust and reliable connectivity across the network.</p><p>In addition, data rate as the second constrain ensures that the data rate meets the operational needs of the UEs. The last constrain is managing resource block usage on each RC efficiently. This resource block management prevents any RC from becoming overwhelmed with traffic, ensuring a balanced distribution of network resources. Consequently, the resource block utilization L m of RC m is defined as the average portion of bandwidth occupied:</p><formula xml:id="formula_3" coords="3,394.29,513.05,168.75,20.14">L m = k∈Km B k /B m ,<label>(4)</label></formula><p>where B m denotes the maximum resource block of RC m and B k represents the resource blocks currently occupied by the UE k. Hence, the problem of minimizing the network's power consumption is formulated as:</p><formula xml:id="formula_4" coords="3,336.63,593.52,226.41,126.10">P 1 : min P RC s.t. M m=1 β k,m γ k,m ≥ γ min , ∀k ∈ K, M m=1 β k,m R k,m ≥ R min , ∀k ∈ K, M m=1 β k,m ≤ 1 ∀k ∈ K, L m ≤ 1, ∀m ∈ M,<label>(5)</label></formula><p>where β k,m is the binary variable to represent the association between the UE k and RC m. β k,m = 1 means UE k and RC m is associated. γ min is the minimum RSRP threshold necessary for UE k and γ k,m is the RSRP of UE k from RC m. R k,m is the data rate of UE k when associate with RC m and R min is the minimum required data rate by a UE. A UE is considered to be in an outage if its data rate is below this specified threshold. Additionally, to prevent any RC from being overloaded, L m must not exceed 1.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>IV. RC SWITCHING ALGORITHM</head><p>The objective, as stated in <ref type="bibr" coords="4,169.27,170.10,10.58,8.64" target="#b4">(5)</ref>, is to identify an optimal set of active RCs that minimises power consumption. To achieve this goal, we propose two distinct xApps. One of the clear benefits of the considered approach is that all the KPMs are all defined by 3GPP and O-RAN Alliance.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A. Proposed xApp1</head><p>Given that UEs are randomly distributed within a designated area, this results in not all RCs being associated with UEs. Especially when the number of UEs is relatively small, there will be some RCs in idle state (i.e., not serving UEs). Our designed first xApp is to switch those RCs in to sleep mode, which illustrate on Algorithm 1. First of all it iterates through all the RCs in the RC list and then utilizes the KPM of RRC.ConnMean to assess the number of UEs serviced by each RC <ref type="bibr" coords="4,64.92,356.22,15.27,8.64">[22]</ref>. If an RC is found to have no UEs to serve. The xApp to transition that RC into sleep mode. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B. Proposed xApp2</head><p>The Algorithm 2 is proposed based on the initial intervention by the first xApp, certain RCs are set to sleep mode to enhance network efficiency. This action, however, leads to a new scenario where some of the still-active RCs are found to be serving a very small number of UEs, indicating a low-load operation. These RCs, due to their minimal usage, become prime candidates for potentially entering sleep mode to conserve power. In the proposed algorithm, when both of resource block usage and throughput below the certain threshold can be regarded as low-load RCs.</p><p>The possibility of transitioning these low-load RCs into sleep mode hinges on successfully reallocating the UEs they serve to other RCs. This reallocation must meet two critical conditions: firstly, the RSRP for the UEs must remain above a certain threshold to ensure no compromise on service quality; secondly, the load on any new RC tasked with serving additional UEs should not exceed a specific limit, for instance, 50%, to prevent overburdening. When all the UEs in the RC have been successfully reassigned out, the RC can enter the sleep state. The reassigned UE needs to update its RSS based on the new association. But when the UE cannot fulfil both hard constrains. The RC must remain active even if it is in a low load state.</p><p>The proposed algorithm seeks to further diminish the network's total power usage. This ensures that the network capacity is utilised appropriately without unnecessarily keeping under-loaded RCs active. This xApp presents a balanced way to optimize network performance while minimizing power expenditure. We consider a network consisting of 12 O-RUs and 24 RCs in the area of 500 × 500 m 2 , where the inter-site-distance is 100m. We randomly distributed 10, 50 and 100 UEs. The channel model is chosen to follow the UMa model <ref type="bibr" coords="4,524.63,679.56,15.27,8.64" target="#b21">[23]</ref>.</p><p>The entire procedure is systematically depicted in Fig. <ref type="figure" coords="4,555.56,691.58,3.74,8.64" target="#fig_2">2</ref>. Initially, an xApp initiates the process by dispatching a request for network data or KPMs to the RIC-tester through the REST Application Programming Interface (API). Subsequently, the RIC-tester processes this request and furnishes the requisite feedback to the xApp. Upon receiving the feedback, the xApp evaluates the appropriate action based on its embedded algorithm and communicates the decision back to the RICtester using the 'REST' API. Finally, the RIC-tester implements the specified configuration in accordance with the action determined by the xApp.</p><p>Our initial exploration focuses on assessing the average (over 10 trials) power consumption in percentage across varying distributions of UE utilizing our proposed algorithms. Illustrated in Fig. <ref type="figure" coords="5,130.52,414.94,3.74,8.64" target="#fig_4">3</ref>, with a scenario of merely 10 UEs, both the xApp1 and the xApp2 demonstrate substantial power savings, reaching up to 50%. In this context, the performance differential between the xApp1 and xApp2 is less than 5% because with a small number of UEs, xApp1 has already switched most of the RCs into sleep mode, and xApp2 can no longer find RCs that fulfil the conditions. However, as the UE count escalates, a divergence in performance becomes apparent. Specifically, when the UE tally extends to 100, the xApp1's power consumption parallels that observed when all RCs are active, contrasting sharply with xApp2, which sustains approximately 15% in power savings. On top of that, xApp2 still outperforms xApp1 by almost 20%. This analysis underscores the efficiency of xApp2 in managing power consumption, particularly as network demand intensifies.</p><p>In Fig. <ref type="figure" coords="5,89.49,595.94,4.98,8.64" target="#fig_5">4</ref> we examine the number of RCs are switched into sleep mode. It becomes evident that under conditions of high UE density, the xApp1 exhibits a limited propensity to transition RCs into sleep mode. This observation is corresponding to the data presented in Fig. <ref type="figure" coords="5,152.22,643.76,3.74,8.64" target="#fig_4">3</ref>. Conversely, the xApp2, leveraging our proposed algorithm, demonstrates the capability to place approximately 10 RCs into sleep mode, even with increased UE density (50 and 100). A comparative analysis of Fig. <ref type="figure" coords="5,278.02,679.62,4.98,8.64" target="#fig_4">3</ref> and Fig. <ref type="figure" coords="5,68.18,691.58,4.98,8.64" target="#fig_5">4</ref> reveals that, for xApp2, the variation in the number of RCs entering sleep mode between scenarios with 50 and 100 UEs is marginal, at around 2 RCs. Nonetheless, this small difference leads to a more noticeable difference in power savings. This phenomenon can be attributed to the escalating  Not only are RCs required to accommodate a larger volume of UEs, but they must also manage UEs located at greater distances. This scenario necessitates increased resource block usage utilization and, consequently, leads to heightened power consumption.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>VI. CONCLUSIONS</head><p>In this paper, we introduced two xApps specifically designed for switching RCs into sleep mode while satisfying UE required data rate and resource block usage of RCs. This work also tested within the "TeraVM" RIC-tester, a commercial-grade simulation environment. Our numerical results substantiate the effectiveness of the proposed xApps in achieving considerable power savings across varying network demands. Moving forward, our focus will include considering user mobility, thereby treating traffic variations in O-RUs as an ongoing dynamic process. Machine learning techniques, such as deep reinforcement learning, are expected to offer superior performance in navigating the complexities and constraints of network environments.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>ACKNOWLEDGEMENT</head><p>This work was supported in part by the Engineering and Physical Sciences Research Council United Kingdom (EP-SRC), Impact Acceleration Accounts (IAA) (Green Secure and Privacy Aware Wireless Networks for Sustainable Future Connected and Autonomous Systems) under Grant EP/X525856/1</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="3,48.96,256.81,514.07,8.64;3,48.96,268.77,514.07,8.64;3,48.96,280.72,514.07,8.64;3,48.96,292.68,514.07,8.64;3,48.96,304.64,514.07,8.64;3,48.96,316.59,369.43,8.64;3,346.77,59.21,205.67,180.41"><head>Fig. 1 :</head><label>1</label><figDesc>Fig. 1: shows O-RAN Architecture, with components and interfaces from O-RAN and 3GPP. O-RAN interfaces are drawn as solid lines, 3GPP ones as dashed lines. The layout of the O-RU and the distribution of users is shown in the picture in the right section. Each O-RU consists of two RCs operating on distinct frequencies, n77 and n78, represented by red and green circles, respectively. Due to the identical coverage areas of both RCs, only the color of one RC is discernible in the figure. The color of the UEs within the figure matches the RC to which they are connected, indicating their network association based on the respective RC's frequency. The proposed two xApps are anchored in Near-RT RIC</figDesc><graphic coords="3,346.77,59.21,205.67,180.41" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="4,53.95,392.72,129.15,9.03;4,50.46,408.02,97.18,8.96;4,50.86,422.04,3.49,6.27;4,74.27,420.37,209.17,8.64;4,50.86,434.00,3.49,6.27;4,74.27,431.94,166.66,8.96;4,51.26,445.95,3.49,6.27;4,89.61,444.28,146.00,8.64"><head>Algorithm 1 :</head><label>1</label><figDesc>xApp1 algorithm 1 for each RC in M do 2 Retrieve the list of UEs attached to the current RC 3 if the list of attached UEs is empty then 4 Put the current RC into sleep mode</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="4,311.98,151.34,251.06,8.64;4,311.98,163.30,123.64,8.64"><head>Fig. 2 :</head><label>2</label><figDesc>Fig. 2: shows the flowgraph that how the python code based xApp interact with RIC-tester.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="4,316.96,318.00,129.14,9.03;4,313.47,333.70,97.35,8.64;4,313.47,345.26,112.83,8.96;4,313.87,359.28,3.49,6.27;4,337.28,357.22,203.96,8.96;4,342.26,369.17,111.71,8.96;4,314.27,383.19,3.49,6.27;4,352.63,381.52,69.52,8.64;4,314.27,395.15,3.49,6.27;4,352.63,393.09,180.79,8.96;4,314.67,407.10,3.49,6.27;4,367.97,405.04,154.40,8.96;4,372.95,417.00,46.28,8.96;4,315.07,431.01,3.49,6.27;4,383.31,428.95,131.75,8.96;4,388.29,440.98,143.51,9.65;4,388.29,452.86,106.79,8.96;4,315.46,466.88,3.49,6.27;4,398.65,464.89,123.76,8.96;4,403.63,477.16,133.11,8.64;4,403.63,489.12,82.26,8.64;4,315.07,502.74,3.49,6.27;4,383.31,500.68,15.49,8.96;4,311.98,514.70,6.97,6.27;4,398.65,512.71,143.49,8.96;4,403.63,524.98,22.14,8.64;4,310.78,550.57,6.97,6.27;4,352.63,548.50,148.74,8.96;4,357.61,560.46,75.89,8.96;4,311.18,574.48,6.97,6.27;4,367.97,572.48,125.26,8.96;4,411.28,628.20,52.47,8.64"><head>Algorithm 2 : 7 if 9 else 10 RC m can't be switched into sleep mode 11 if</head><label>2791011</label><figDesc>xApp2 algorithm 1 Initialize Algorithm 1 2 for each active RC m do 3 if the resource block usage and throughput of RC m less than threshold then 4 Select those RCs 5 for each UE k served by selected RC m do 6 for each RC n(n ∈ M, n ̸ = m) in the network do the RSRP of UE k is satisfied threshold γ min and load of RC L n can accept extra UE then 8 Reassign the UE to RC n and update the UE's RSRP based on the new association. all the UE k served by RC m are re-associated then 12 Switch RC m into sleep mode V. RESULTS</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4" coords="5,48.96,231.30,251.06,8.64;5,48.96,243.26,251.06,8.64;5,48.96,255.21,251.06,8.64;5,48.96,267.17,180.31,8.64"><head>Fig. 3 :</head><label>3</label><figDesc>Fig. 3: shows the power consumption in percentage among 10, 50 and 100 UEs in three different scenarios. All on is always in 100% power consumption. xApp1 and xApp2 show a relative percentage of the All on scenario.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5" coords="5,311.98,353.01,251.06,8.64;5,311.98,364.96,251.06,8.64;5,311.98,376.92,74.61,8.64"><head>Fig. 4 :</head><label>4</label><figDesc>Fig. 4: shows the average (over 10 trials) number of RCs are switched into sleep mode between 10, 50 and 100 UEs in three different scenarios</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" coords="5,351.29,54.37,169.64,108.73"><head>TABLE I :</head><label>I</label><figDesc>Simulation Parameters</figDesc><table coords="5,351.29,71.90,169.64,91.19"><row><cell>Parameter</cell><cell>Value</cell></row><row><cell>Carrier frequency n77/n78</cell><cell>3.5/3.7GH</cell></row><row><cell>Channel bandwidth, Bm</cell><cell>100MHz</cell></row><row><cell>Fixed power in active mode, P Active</cell><cell>20W</cell></row><row><cell>Fixed power in sleep mode, P Sleep</cell><cell>5W</cell></row><row><cell>Power Amplifier efficiency (PA), η</cell><cell>1.67%</cell></row><row><cell>Power per RF chain, P T C</cell><cell>1W</cell></row><row><cell>UE required data rate, R min</cell><cell>10 Mbps</cell></row><row><cell>The number of O-RUs, N</cell><cell>12</cell></row><row><cell>The number of RCs, M</cell><cell>24</cell></row></table></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>and Department of Science, Innovation and Technology, United Kingdom, under Grants Yorkshire Open-RAN (YO-RAN) TS/X013758/1 and RIC Enabled (CF-)mMIMO for HDD (REACH) TS/Y008952/1.</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="6,67.22,138.00,232.79,6.91;6,67.22,146.82,232.80,7.05;6,67.22,155.79,232.80,6.87" xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Energy efficiency of 5G mobile networks with base station sleep modes</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Lähdekorpi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Hronec</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Jolma</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Moilanen</surname></persName>
+		</author>
+		<imprint>
+			<publisher>CSCN</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,67.22,173.96,232.80,6.91;6,67.22,182.79,232.80,7.05;6,67.22,191.75,232.80,7.05;6,67.22,200.72,161.50,7.05" xml:id="b1">
+	<analytic>
+		<title level="a" type="main">How much energy is needed to run a wireless network?</title>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Auer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">V</forename><surname>Giannini</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Desset</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">I</forename><surname>Godor</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Skillermark</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Olsson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">A</forename><surname>Imran</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Sabella</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">J</forename><surname>Gonzalez</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">O</forename><surname>Blume</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE wireless communications</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="40" to="49" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,67.22,209.93,232.80,6.91;6,67.22,218.76,232.80,7.05;6,67.22,227.72,232.80,7.05;6,67.22,236.83,55.39,6.91" xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Grove: A cost-efficient green radio over ethernet architecture for next generation radio access networks</title>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Pamuklu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Ersoy</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Green Communications and Networking</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="84" to="93" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,67.22,245.90,232.80,6.91;6,67.22,254.87,232.80,6.91;6,67.22,263.83,187.44,6.91" xml:id="b3">
+	<monogr>
+		<title level="m" type="main">O-RAN Architecture Description</title>
+		<author>
+			<persName coords=""><forename type="first">O-Ran</forename><surname>Allience</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Wg1</forename></persName>
+		</author>
+		<ptr target="https://orandownloadsweb.azurewebsites.net/specifications" />
+		<imprint>
+			<date type="published" when="2022-10-02">October 2022. 2 Jan 2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,67.22,272.90,232.80,6.91;6,67.22,281.87,232.80,6.91;6,67.22,290.83,187.44,6.91" xml:id="b4">
+	<monogr>
+		<title level="m" type="main">A1 Interface: general aspects and principles 3.0</title>
+		<author>
+			<persName coords=""><forename type="first">O-Ran</forename><surname>Allience</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Wg2</forename></persName>
+		</author>
+		<ptr target="https://orandownloadsweb.azurewebsites.net/specifications" />
+		<imprint>
+			<date type="published" when="2022-10-12">October 2022. 12 Dec 2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,67.22,299.90,232.80,6.91;6,67.22,308.87,232.80,6.91;6,67.22,317.69,232.80,6.87;6,67.22,326.80,69.47,6.91" xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Energy efficiency of open radio access network: A survey</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">I</forename><surname>Abubakar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">O</forename><surname>Onireti</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Sambo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Ragesh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">A</forename><surname>Imran</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2023 IEEE 97th Vehicular Technology Conference (VTC2023-Spring)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="page" from="1" to="7" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,67.22,335.87,232.80,6.91;6,67.22,344.84,232.80,6.91;6,67.22,353.66,227.86,7.05" xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Energy-efficient and delay-guaranteed joint resource allocation and du selection in o-ran</title>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Pamuklu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Mollahasani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Erol-Kantarci</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2021 IEEE 4th 5G World Forum (5GWF)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2021">2021</date>
+			<biblScope unit="page" from="99" to="104" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,67.22,362.87,232.80,6.91;6,67.22,371.84,232.80,6.91" xml:id="b7">
+	<monogr>
+		<title level="m" type="main">Near-real-time RAN intelligent controller near-rt ric architecture</title>
+		<author>
+			<persName coords=""><forename type="first">O-Ran</forename><surname>Allience</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Wg3</forename></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2021-06-12">June 2021. 12 Dec 2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,67.22,389.88,232.80,6.91;6,67.22,398.84,232.80,6.91;6,67.22,407.81,101.84,6.91" xml:id="b8">
+	<monogr>
+		<title level="m" type="main">O-RAN E2 Interface Test Specification 2.0</title>
+		<ptr target="https://orandownloadsweb.azurewebsites.net/specifications" />
+		<imprint>
+			<date type="published" when="2023-03-12">March 2023. 12 JAN 2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,67.22,416.88,232.80,6.91;6,67.22,425.84,232.80,6.91;6,67.22,434.81,187.44,6.91" xml:id="b9">
+	<monogr>
+		<title level="m" type="main">O-RAN O1 Interface specification for O-DU 9.0</title>
+		<author>
+			<persName coords=""><forename type="first">O-Ran</forename><surname>Allience</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Wg5</forename></persName>
+		</author>
+		<ptr target="https://orandownloadsweb.azurewebsites.net/specifications" />
+		<imprint>
+			<date type="published" when="2024">2024. 12 JAN 2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,67.22,443.88,232.80,6.91;6,67.22,452.70,232.80,7.05;6,67.22,461.67,197.94,7.05" xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Boost: Base station on-off switching strategy for green massive mimo hetnets</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Feng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Mao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Jiang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Wireless Communications</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="7319" to="7332" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,67.22,470.88,232.80,6.91;6,67.22,479.70,232.80,7.05;6,67.22,488.67,232.80,6.87;6,67.22,497.78,69.47,6.91" xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Energy efficiency optimization through rrhs on/off switching technique in c-ran</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Alemam</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">A</forename><surname>El-Sherif</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Elbatt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2019 IEEE Wireless Communications and Networking Conference (WCNC)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="page" from="1" to="6" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,67.22,506.85,232.80,6.91;6,67.22,515.67,232.80,7.05;6,67.22,524.64,127.33,7.05" xml:id="b12">
+	<analytic>
+		<title level="a" type="main">A unified base station switching framework considering both uplink and downlink traffic</title>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Oh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Son</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Wireless Communications Letters</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="30" to="33" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,67.22,533.85,232.80,6.91;6,67.22,542.67,232.80,7.05;6,67.22,551.64,206.06,7.05" xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Dynamic base station switchingon/off strategies for green cellular networks</title>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Oh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Son</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Krishnamachari</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE transactions on wireless communications</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="2126" to="2136" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,67.22,560.85,232.80,6.91;6,67.22,569.82,232.80,6.91;6,67.22,578.64,190.36,7.05" xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Energy-efficient switching on/off strategies analysis for dense cellular networks with partial conventional base-stations</title>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Jian</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Muqing</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Min</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Access</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="9133" to="9145" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,67.22,587.86,232.80,6.91;6,67.22,596.82,232.80,6.91;6,67.22,605.64,232.80,7.05;6,67.22,614.75,84.88,6.91" xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Deep reinforcement learning with spatio-temporal traffic forecasting for data-driven base station sleep control</title>
+		<author>
+			<persName coords=""><forename type="first">Q</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE/ACM Transactions on Networking</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="935" to="948" />
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,67.22,623.82,232.80,6.91;6,67.22,632.79,232.80,6.91;6,67.22,641.61,232.80,7.05;6,67.22,650.72,55.39,6.91" xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Energy and spectrum efficient cell switch-off with channel and power allocation in ultra-dense networks: A deep reinforcement learning approach</title>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Rezaei</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><forename type="middle">S</forename><surname>Ghahfarokhi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Computer Networks</title>
+		<imprint>
+			<biblScope unit="volume">234</biblScope>
+			<biblScope unit="page">109912</biblScope>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,67.22,659.79,232.80,6.91;6,67.22,668.76,232.80,6.91;6,67.22,677.58,232.80,7.05;6,67.22,686.55,232.80,6.87;6,67.22,695.66,69.47,6.91" xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Reinforcement learning for traffic-adaptive sleep mode management in 5G networks</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Masoudi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">G</forename><surname>Khafagy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Soroush</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Giacomelli</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Morosi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Cavdar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2020 IEEE 31st Annual International Symposium on Personal, Indoor and Mobile Radio Communications</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="page" from="1" to="6" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,67.22,704.73,232.80,6.91;6,67.22,713.69,232.80,6.91;6,67.22,722.52,227.36,7.05" xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Deepnap: Data-driven base station sleeping operations through deep reinforcement learning</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Krishnamachari</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Niu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Internet of Things Journal</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="4273" to="4282" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,67.22,731.73,232.80,6.91;6,67.22,740.69,232.80,6.91" xml:id="b19">
+	<monogr>
+		<author>
+			<persName coords=""><surname>Viavi Solutions</surname></persName>
+		</author>
+		<ptr target="https://www.viavisolutions.com/enuk/products/teravm-ric-test" />
+		<title level="m">TeraVM RIC Test</title>
+				<imprint>
+			<biblScope unit="page" from="2024" to="2027" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,330.24,59.25,232.80,6.91;6,330.24,68.22,232.80,6.91;6,330.24,77.04,232.80,7.05;6,330.24,86.15,71.33,6.91" xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Optimal design of energy-efficient multi-user MIMO systems: Is massive MIMO the answer?</title>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Björnson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Sanguinetti</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Hoydis</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Debbah</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on wireless communications</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="3059" to="3075" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,330.24,113.05,232.80,6.91;6,330.24,122.01,228.81,6.91;6,330.24,130.98,164.29,6.91" xml:id="b21">
+	<monogr>
+		<ptr target="https://www.etsi.org/deliver/etsitr/138900138999/138901/16.01.0060/tr138901v160100p.pdf" />
+		<title level="m">Study on channel model for frequencies from 0.5 to 100 GHz</title>
+				<imprint>
+			<biblScope unit="page" from="2024" to="2027" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

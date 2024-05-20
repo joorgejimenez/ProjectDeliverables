@@ -1,0 +1,1930 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Explainable Self-Organizing Artificial Intelligence Captures Landscape Changes Correlated with Human Impact Data</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,78.37,106.33,90.91,8.75"><forename type="first">John</forename><forename type="middle">Mwangi</forename><surname>Wandeto</surname></persName>
+							<email>john.wandeto@dkut.ac.ke</email>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Information Technology</orgName>
+								<orgName type="institution">Dedan Kimathi University of Technology</orgName>
+								<address>
+									<settlement>Nyeri</settlement>
+									<country key="KE">Kenya</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="laboratory">UMR 7357</orgName>
+								<orgName type="institution" key="instit1">Centre National de la Recherche Scientifique (CNRS)</orgName>
+								<orgName type="institution" key="instit2">Strasbourg University</orgName>
+								<address>
+									<country key="FR">France</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,184.17,106.33,93.23,8.75"><forename type="first">Birgitta</forename><surname>Dresp-Langley</surname></persName>
+							<email>birgitta.dresp@cnrs.fr</email>
+						</author>
+						<author>
+							<affiliation key="aff2">
+								<orgName type="laboratory">UMR 7357</orgName>
+								<orgName type="institution">CNRS-Strasbourg University</orgName>
+								<address>
+									<country>France Email</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Explainable Self-Organizing Artificial Intelligence Captures Landscape Changes Correlated with Human Impact Data</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">630CC7DE4902CB4ED79EC2B6974C7772</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2024-05-19T14:32+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Landscapes</term>
+					<term>Urban Environments</term>
+					<term>Satellite Imaging</term>
+					<term>Las Vegas</term>
+					<term>Self Organizing Map (SOM)</term>
+					<term>Quantization Error (QE)</term>
+					<term>Demographic Data</term>
+					<term>Human Impact Analysis</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Novel methods of analysis are needed to help advance our understanding of the intricate interplay between landscape changes, population dynamics, and sustainable development. Self-organized machine learning has been highly successful in the analysis of visual data the human expert eye may not be able to see. Thus, subtle but significant changes in fine visual detail in images relating to trending alterations in natural or urban landscapes, for example, may remain undetected. In the course of time, such changes may be the cause or the consequence of measurable human impact, or climate change. Capturing such change in time series of satellite images before the human eye can detect the signs thereof makes important trend information readily available at early stages to citizens, professionals and policymakers. This promotes change awareness, and facilitates early decision making for action. Here, we use unsupervised Artificial Intelligence (AI) that exploits principles of self-organized biological visual learning for the analysis of time series of satellite images. The Quantization Error (QE) in the output of a Self-Organizing Map prototype is exploited as a computational metric of variability and change. Given the proven sensitivity of this neural network metric to the intensity and polarity of image pixel contrast, and its proven selectivity to pixel colour, it is shown to capture critical changes in urban landscapes. This is achieved here on the example of satellite images from two regions of geographic interest in Las Vegas County, Nevada, USA across the years 1984-2008. The SOM analysis is combined with the statistical analysis of demographic data revealing human impacts significantly correlated with the structural changes in the specific regions of interest. By correlating the impact of human activities with the structural evolution of urban environments we further expand SOM analysis as a parsimonious and reliable AI approach to the rapid detection of human footprint-related environmental change.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.32" lry="841.92"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.32" lry="841.92"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.32" lry="841.92"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.32" lry="841.92"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.32" lry="841.92"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.32" lry="841.92"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.32" lry="841.92"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.32" lry="841.92"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.32" lry="841.92"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="595.32" lry="841.92"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="595.32" lry="841.92"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="595.32" lry="841.92"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="595.32" lry="841.92"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="595.32" lry="841.92"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="595.32" lry="841.92"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>Rapid modification of human environments results in unprecedented environmental challenges that impact sustainability to greater or lesser extents depending on the specific geographic and social context. The study of urban landscape evolution and its correlation with human impact and demographic data helps understand its implications for the development of human activities in these urban ecosystems and their sustainability given the particular geographic context. Novel approaches and methods of analysis are needed to help advance our understanding of the intricate interplay between landscape changes, population dynamics, and sustainable development <ref type="bibr" coords="1,124.84,590.17,105.76,8.75" target="#b7">(Craglia and Nativi, 2018)</ref> under the light of a more or less limited availability of natural resources. Subtle changes in changes in earth imaging data may reflect the cause or the consequence of measurable human impact or climate change <ref type="bibr" coords="1,174.01,613.21,73.20,8.75" target="#b26">(Kotchi et al, 2019</ref><ref type="bibr" coords="1,247.21,613.21,91.88,8.75" target="#b17">, Furusawa et al, 2023)</ref>. Predicting or mapping the risks associated with these by exploiting artificial intelligence (AI) for the analysis of satellite images is an emerging method that can support research, surveillance, prevention and control activities <ref type="bibr" coords="1,342.96,636.25,91.09,8.75" target="#b44">(Sudmanns et al, 2019)</ref>. This often implies resorting to methods of data analysis from several disciplines to address the problems of human impact on landscapes <ref type="bibr" coords="1,116.53,659.17,164.20,8.75" target="#b42">(Schipper, Dubash, and Mulugetta, 2021)</ref>. Recognition of the complexity of the links between human impact data, landscape alterations, and climate change compels researchers to draw on interdisciplinary knowledge that marries the physical and natural sciences with social sciences and humanities. Given the slow unfolding of what may become catastrophic changes to human environments <ref type="bibr" coords="1,380.55,693.73,48.51,8.75" target="#b38">(Palmer and</ref><ref type="bibr" coords="1,431.74,693.73,58.70,8.75;1,70.80,705.25,87.66,8.75">Stevens, 2019, Olsavszky et al, 2020)</ref>, the methods of earth observation image analysis need to be sufficiently sensitive to the smallest detectable changes to permit risk-aware monitoring at different scales of time and space. Such highly sensitive methods then can inform the quantitative estimation and prediction of risks as well as risk mapping. The current array of Earth observation satellites provides access to a large quantity and variety of data with the highest possible spatial and temporal resolution <ref type="bibr" coords="1,263.45,751.21,76.59,8.75" target="#b26">(Kotchi et al, 2019)</ref>, which facilitates their subsequent analysis.</p><p>There are various approaches to the analysis of Earth image data from satellites <ref type="bibr" coords="2,390.98,73.21,63.09,8.75" target="#b0">(Ahn et al, 2023</ref><ref type="bibr" coords="2,454.06,73.21,51.51,8.75;2,70.80,84.73,63.63,8.75" target="#b27">, Kumar and Miklavcic, 2018</ref><ref type="bibr" coords="2,134.43,84.73,80.51,8.75" target="#b31">, Metzler et al, 2023</ref><ref type="bibr" coords="2,214.95,84.73,66.70,8.75" target="#b10">, Dou et al, 2023</ref><ref type="bibr" coords="2,281.64,84.73,55.77,8.75" target="#b29">, Luke, 2013)</ref> to study temporal changes in landscape data that may represent meaningful phenomena in terms of human impact <ref type="bibr" coords="2,348.94,96.25,88.99,8.75" target="#b4">(Camacho et al, 2014)</ref> or climate change <ref type="bibr" coords="2,70.80,107.77,50.70,8.75" target="#b36">(Orheim and</ref><ref type="bibr" coords="2,124.09,107.77,146.62,8.75">Lucchitta, 1990, Bhaskar et al, 2010)</ref>. Here, we use a pixel color-based approach to the analysis of Earth imaging data to show that the method consistently captures the earliest signs of structural change in satellite images of two specific geographical regions of interest (ROI) across a time period where critical landscape changes occurred. These changes are further shown to be significantly correlated with human data and demographics from public archives for the same time period, highlighting critical dimensions of human impact on the expansion of built environments and the stresses this exerts on survival relevant natural resources (Figure <ref type="figure" coords="2,70.80,176.77,3.63,8.75">1</ref>). NASA Landsat images (NASA Goddard Space Flight Center, 2012) of Las Vegas City Centre and the residential North of Las Vegas from the time period between 1984 and 2008 were submitted to analysis for this study. In the 1980ies Las Vegas City, located in the middle of the Nevada Desert, featured mainly 'The Strip', with a number of smaller casinos and motels. Subsequently, in a large restructuration project between 1990 and 2007 a large number of the old casinos and motels were demolished. The ensuing reconstruction of Las Vegas City Centre and the subsequent opening of a large number of mega-resorts with casino spaces, artificial tropical landscapes and urban large-scale simulations, restaurants with world-class chefs, and shows performed by international megastars transformed Las Vegas City Centre and The Strip entirely. By offering multiple kinds of entertainment, dining gambling, and lodging, attracting millions of visitors (Las Vegas Convention and Visitors Authority, 2024) from all over the world, Las Vegas City Centre has become one of the largest entertainment poles in the world <ref type="bibr" coords="2,145.16,291.73,50.55,8.75" target="#b29">(Luke, 2013)</ref>. Most elements of this project opened in late 2009. This was accompanied by the rapid spread of greater Las Vegas, including the residential North, into the adjacent desert. The population count (Las Vegas Population Review, 2024) grew from thousands in 1984 to millions in 2009. Given the specific geographic location and the limited natural resources therein, the expanded urbanization of Las Vegas had its consequences on its own sustainability, as demonstrated in a recent study suggesting that conservation and other strategic water supply measures now have become urgently necessary to ensure water supply for Las Vegas in the future <ref type="bibr" coords="2,111.85,360.73,67.81,8.75" target="#b11">(Dow et al., 2019</ref><ref type="bibr" coords="2,179.65,360.73,322.46,8.75;2,70.80,372.37,62.71,8.75">, US Department of Interior Bureau of Reclamation Hoover Dam Control Room Statistics, 2023)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Figure 1 Consequences of human activity on urban development and natural resources</head><p>Although the current array of Earth observation satellites such as NASA's Landsat provides access to a large quantity and variety of data with the highest possible spatial and temporal resolution <ref type="bibr" coords="2,433.60,651.73,76.53,8.75" target="#b26">(Kotchi et al, 2019)</ref>, any technique for studying changes in imaging data across time sooner or later requires choosing a method and a model for an interpretation. This introduces potential sources of bias <ref type="bibr" coords="2,347.08,674.65,133.88,8.75" target="#b46">(Tan, Gao, Khan, and Guan, 2022</ref><ref type="bibr" coords="2,480.96,674.65,27.50,8.75;2,70.80,686.17,80.06,8.75" target="#b41">, Saint James Aquino, 2023</ref><ref type="bibr" coords="2,150.86,686.17,102.93,8.75" target="#b45">, Sylolypavan et al, 2023)</ref>, even when the image analysis is combined with an advanced imaging model, which itself has to be explainable. In computer and AI-assisted methods for the analysis of image time series, there are various potential sources of bias <ref type="bibr" coords="2,314.26,709.21,104.13,8.75">(Brown, 2017, Baxter and</ref><ref type="bibr" coords="2,420.97,709.21,54.45,8.75" target="#b1">Jannin, 2022)</ref> at essentially three levels:</p><p>1) input/training data and/or their configuration <ref type="bibr" coords="2,262.89,742.21,92.00,8.75">(MacNamee et al, 2002</ref><ref type="bibr" coords="2,354.89,742.21,92.25,8.75" target="#b8">, Daneshjou et al, 2021</ref><ref type="bibr" coords="2,447.13,742.21,62.63,8.75;2,70.80,753.73,23.34,8.75">, Gichoya et al, 2023)</ref> 2) learning algorithms <ref type="bibr" coords="3,162.05,73.33,54.09,8.75" target="#b55">(Wieland and</ref><ref type="bibr" coords="3,218.73,73.33,128.37,8.75">Pittore, 2014, Nazer et al, 2023)</ref> 3) interpretation of output data <ref type="bibr" coords="3,196.10,94.93,53.52,8.75" target="#b3">(Brown, 2017</ref><ref type="bibr" coords="3,249.62,94.93,88.17,8.75" target="#b13">, Drukker et al, 2023)</ref> Also, a meaningful interpretation of the data may involve guesswork when the uncertainty about trends or correlations is high. In short, it is difficult to rule out subjectivity of the human agent at various steps in the process, even when the latter is a skilled expert. In addition, sustainable technology for data classification needs to combine high accuracy with further advantages relative to economy in resource demands, computing speed, objectivity, and output reproducibility. The proposed approach ensures these criteria <ref type="bibr" coords="3,410.74,162.25,86.17,8.75;3,70.80,173.77,59.39,8.75" target="#b50">(Wandeto and Dresp-Langley, 2023)</ref>, and excludes human bias at any of the three levels mentioned above. The method consists of exploiting the quantization error (QE) in the output of a SOM <ref type="bibr" coords="3,319.91,185.29,63.05,8.75" target="#b24">(Kohonen, 1998</ref><ref type="bibr" coords="3,389.99,185.29,18.01,8.75" target="#b23">(Kohonen, , 2001</ref><ref type="bibr" coords="3,414.99,185.29,21.58,8.75" target="#b25">(Kohonen, , 2014))</ref>, a self-organizing neural network architecture that maps pixel color input (RGB) from large image data, i.e. images containing up to several millions of pixels, with the highest possible (to the single pixel) precision on the basis of unsupervised, competitive winner-take-all learning <ref type="bibr" coords="3,219.20,219.73,65.96,8.75">(Carpenter, 1997</ref><ref type="bibr" coords="3,285.16,219.73,66.68,8.75" target="#b24">, Kohonen, 1998</ref><ref type="bibr" coords="3,351.84,219.73,92.24,8.75" target="#b56">, Yang and Chen, 2000</ref><ref type="bibr" coords="3,444.08,219.73,54.73,8.75" target="#b6">, Chen, 2017)</ref>. The QE in the SOM output, frequently used as a quality metric for network quantization <ref type="bibr" coords="3,408.16,231.25,63.06,8.75" target="#b23">(Kohonen, 2001</ref><ref type="bibr" coords="3,471.22,231.25,38.54,8.75;3,70.80,242.77,116.00,8.75">, deBodt, Cottrell, and Verleysen, 2002</ref><ref type="bibr" coords="3,186.80,242.77,192.22,8.75" target="#b5">, Castagnetti, Pegatoquet, and Miramond, 2023)</ref>, has more recently proven a consistent detector of invisible local changes in streams of thousands or millions of, randomly or systematically varying, input data <ref type="bibr" coords="3,148.52,265.69,56.23,8.75">(Wandeto and</ref><ref type="bibr" coords="3,207.35,265.69,169.35,8.75" target="#b11">Dresp-Langley, 2019 a, b, c, Wandeto and</ref><ref type="bibr" coords="3,379.29,265.69,86.52,8.75">Dresp-Langley, 2023)</ref>. When the SOM input is constant across time, the quantization error is invariant; when variations in a locally defined dimension of the input data occur across time, the QE will reliably increase or decrease depending on the direction of change. This novel aspect of input-driven self-organization <ref type="bibr" coords="3,358.49,300.25,52.04,8.75" target="#b57">(Zhang, 1991</ref><ref type="bibr" coords="3,410.53,300.25,71.17,8.75" target="#b19">, Grossberg, 1993</ref><ref type="bibr" coords="3,481.70,300.25,34.51,8.75;3,70.80,311.77,59.24,8.75">, Ligaya and Fusi, 2013</ref><ref type="bibr" coords="3,132.63,311.77,113.82,8.75" target="#b14">Eglen and Gjorgjieva, 2009)</ref> can be, as is shown here, strategically exploited in artificial neural network maps with a minimalistic functional design where the model neurons become locally and globally ordered during learning <ref type="bibr" coords="3,167.60,334.69,162.62,8.75" target="#b15">(Erwin, Obermayer, and Schulten, 1992;</ref><ref type="bibr" coords="3,332.72,334.69,60.42,8.75" target="#b37">Ota et al, 2011)</ref>. Unsupervised winner-take-all learning in SOM is akin to biological synaptic learning <ref type="bibr" coords="3,293.15,346.21,48.25,8.75" target="#b20">(Hebb, 1949</ref><ref type="bibr" coords="3,341.40,346.21,78.92,8.75" target="#b19">, Grossberg, 1993,)</ref> and the self-organizing functional properties of biological sensory neurons (e.g. <ref type="bibr" coords="3,297.09,357.73,137.08,8.75">Buonamano and Merzenich, 1998)</ref>. The output metric as defined provides a highly reliable indicator that scales, in a few minutes and with a to-the-single-pixel precision, local variability in time series of images containing millions of pixels each. This was previously demonstrated on image time series of natural environments <ref type="bibr" coords="3,241.16,392.29,194.88,8.75">(Wandeto, Dresp-Langley, and Nyongesa, 2018)</ref> organs <ref type="bibr" coords="3,467.61,392.29,42.05,8.75;3,70.80,403.69,149.74,8.75">(Wandeto, Nyongesa, and Dresp-Langley, 2017;</ref><ref type="bibr" coords="3,223.04,403.69,228.48,8.75">Wandeto, Nyongesa, Remond, and Dresp-Langley, 2017)</ref>, cells <ref type="bibr" coords="3,479.18,403.69,39.38,8.75;3,70.80,415.21,104.41,8.75" target="#b49">(Wandeto and Dresp-Langley, 2019a</ref><ref type="bibr" coords="3,175.21,415.21,145.55,8.75" target="#b13">, Dresp-Langley and Wandeto, 2020</ref><ref type="bibr" coords="3,320.77,415.21,33.50,8.75" target="#b13">, 2021b)</ref>, simulated visual objects (Dresp-Langley and Wandeto, 2021a) and temporal series of sensor data (Dresp-Langley, <ref type="bibr" coords="3,365.64,426.73,33.25,8.75">Liu, and</ref><ref type="bibr" coords="3,401.49,426.73,82.41,8.75;3,70.80,438.37,179.54,8.75">Wandeto, 2021, Liu, Wandeto, Nageotte, Zanne, de Mathelin, and</ref><ref type="bibr" coords="3,252.93,438.37,86.65,8.75">Dresp-Langley, 2023)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Theoretical Framework</head><p>The Self-Organizing Map (SOM) may be described formally as a nonlinear, ordered, smooth mapping of highdimensional input data onto the elements of a regular, low-dimensional array <ref type="bibr" coords="3,381.26,494.17,63.11,8.75" target="#b24">(Kohonen, 1998</ref><ref type="bibr" coords="3,451.41,494.17,18.09,8.75" target="#b23">(Kohonen, , 2001</ref><ref type="bibr" coords="3,476.41,494.17,21.58,8.75" target="#b25">(Kohonen, , 2014))</ref>. The general, fully connected functional architecture of the prototype for this study here is graphically represented in Fig. <ref type="figure" coords="3,89.01,517.21,3.78,8.75" target="#fig_0">2</ref>. It is assumed that the set of input variables can be defined as a real vector x, of n-dimensionality. A parametric real vector mi of n-dimension is associated with each element in the SOM. Vector mi is a model and the SOM is therefore an array of models. Assuming a general distance measure between x and mi denoted by d(x, mi), the map of an input vector x on the SOM array is defined as the array element mc that matches best (smallest d(x, mi)) with x. During the learning process, the input vector x is compared with all the mi in order to identify mc. The Euclidean distances ||x-mi|| define mc. Models topographically close in the map up to a certain geometric distance indicated by hci will activate each other to learn something from their common input x. This results in a local relaxation or smoothing effect on the models in this neighborhood, which in continuous learning leads to global ordering. Self-organized learning in a SOM is represented by the equation m(t+1)=m_i (t)+α(t) h_ci (t)⌈x(t)-m_i (t)⌉ (1) where t=1,2,3...is an integer, the discrete-time coordinate, hci (t) is the neighborhood function, a smoothing kernel defined over the map points which converges towards zero with time, α(t)is the learning rate, which also converges towards zero with time and affects the amount of learning in each model. At the end of the winnertake-all learning process in the SOM, each image input vector x becomes associated to its best matching model on the map mc. The difference between x and mc, ||x-mc||, is a measure of how close the final SOM value is to the original input value and is reflected by the quantization error QE. The average QE of all Xi in an image is given by</p><formula xml:id="formula_0" coords="4,70.80,218.65,231.96,8.75">QE= 1ÚN ∑_(i=1)^N‖X_i-m_(c_i ) ‖ (2)</formula><p>where N is the number of input vectors x in the image. The final weights of the SOM here are defined by a three dimensional output vector space representing R, G, and B channels. The magnitude as well as the direction of change in any of these from one image to another is reliably reflected by changes in the QE. The spatial location, or coordinates, of each of the model neurons, or domains, placed at different locations on the map, exhibit characteristics that make each one different from all the others. When a new input signal is presented to the map, the models compete and the winner will be the model the features of which most closely resemble those of the input signal. The input signal will thus be classified or grouped in one of models. Each model or domain acts like a separate decoder for the same input, i.e. independently interprets the information carried by a new input. The input is represented as a mathematical vector of the same format as that of the models in the map. Therefore, it is the presence or absence of an active response at a specific map location and not so much the exact input-output signal transformation, or magnitude of response, that generates the interpretation of the input. To obtain the map size needed for a given study, a trial-and-error process is generally implemented <ref type="bibr" coords="4,394.23,366.49,104.12,8.75;4,70.80,378.01,49.87,8.75">(Kohonen, 1998, de Bodt, Cottrell, and</ref><ref type="bibr" coords="4,123.26,378.01,67.06,8.75" target="#b9">Verleysen, 2002)</ref>, which is directly determined by the value of the resulting quantization error; the lower this value, the better the "first guess".</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Materials and Methods</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.">Images</head><p>Earth observation satellites such as NASA's Landsat provide access to data with the highest possible spatial and temporal resolution <ref type="bibr" coords="4,151.16,468.49,76.86,8.75" target="#b26">(Kotchi et al, 2019)</ref>.  All images were pre-processed <ref type="bibr" coords="4,196.95,711.97,111.61,8.75" target="#b55">(Wieland and Pittore, 2014)</ref> to ensure they were identically scaled and aligned within a given series. This was achieved here through StackReg, a software tool for image co-registration specifically designed for scientific multidimensional image processing <ref type="bibr" coords="4,355.31,735.01,163.80,8.75" target="#b48">(Thévenaz, Ruttimann, and Unser, 1998)</ref> and the ancillary plugin TurboReg. Both are plugins to ImageJ, an open source image processing software package. ImageJ's script editor supports various programming languages including python and matlab. The co-registration method exploits an automatic subpixel registration algorithm minimizing the mean square intensity difference between a reference and a test data set based on a coarse to fine iterative strategy performed according to a new variation of the Marquardt-Levenberg algorithm for nonlinear least-square optimization <ref type="bibr" coords="5,460.71,96.25,44.59,8.75;5,70.80,107.77,114.71,8.75" target="#b48">(Thévenaz, Ruttimann, and Unser, 1998)</ref>. StackReg is used as a front-end to TurboReg. Several mechanisms are at work to exchange data between these plugins, one of them involving temporary files which are written into the temporary directory that ImageJ defines. The StackReg software is available at http://bigwww.epfl.ch/thevenaz/stackreg/, with a direct link to TurboReg. The last image of the time series was used to anchor the registration. Control for variations in contrast intensity between images of a given series was performed after registration by increasing the image contrast and by removing strictly local variations at different times of image acquisition. For each extracted image, contrast intensity (I) normalization was ensured using Ifinal = (I -Imin/Imax -Imin) x 255</p><p>(3)</p><p>The registered and normalized image taken in 2008, the last year of a time series from each ROI, was used to train the SOM for SOM-QE analysis.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.">SOM-QE analysis</head><p>Pixel RGB values were used as input stream to a four-by-four SOM with sixteen model neurons (Figure <ref type="figure" coords="5,489.37,280.21,3.63,8.75" target="#fig_0">2</ref>). This input dimensionality ensures the processing of fine image detail and permits avoiding errors due to inaccurate feature calculation, which occur frequently with complex images <ref type="bibr" coords="5,333.13,303.25,160.88,8.75" target="#b43">(Schneider, Rasband, and Eliceiri, 2012)</ref>. To yield quantitative criteria for choosing the map size, a trial-and-error process <ref type="bibr" coords="5,380.32,314.77,139.33,8.75;5,70.80,326.29,14.34,8.75">(Kohonen, 1998, de Bodt, Cottrell, and</ref><ref type="bibr" coords="5,87.73,326.29,68.98,8.75" target="#b9">Verleysen, 2002)</ref> was implemented using the image input data. This process led to observe that map sizes with more than 16 model neurons produced observations where some models ended up empty, which meant that these models did not attract any input towards the end of the training. As a consequence, a four-by-four SOM architecture with 16 models was sufficient to represent all the image data. Neighborhood distance and learning rate were constant at 1.2 and 0.2 respectively. These parameters arise on the basis of the same initial trial-anderror process when testing the quality of the "map's best first guess" <ref type="bibr" coords="5,346.77,383.77,63.13,8.75" target="#b24">(Kohonen, 1998</ref><ref type="bibr" coords="5,417.01,383.77,17.93,8.75" target="#b23">(Kohonen, , 2001</ref><ref type="bibr" coords="5,442.01,383.77,21.52,8.75" target="#b25">(Kohonen, , 2014))</ref>, which is directly determined by the value of the resulting quantization error; the lower this value, the better the first guess. The models were initialized by randomly picking vectors from the training image, which allows the SOM to work on the original data without any prior assumptions about any level of organization within the data, but requires starting with a wider neighborhood function and a higher learning-rate factor than in procedures where initial values for model vectors are pre-selected. As a consequence, the SOM training here consisted of 1000 iterations for a two-dimensional rectangular map of 4 by 4 nodes capable of creating 16 model observations from the data. The spatial locations, or coordinates, of each of the 16 models or domains, placed at different locations on the map, exhibit characteristics that make each one different from all the others. When a new input signal is presented to the map, the models compete and the winner will be the model the features of which most closely resemble those of the input signal. The input signals are classified or grouped in one of models. Each model or domain acts like a separate decoder for the same input, i.e. independently interprets the information carried by new input. After the training phase, the QE in the trained map output was determined for each of the 25 images of the series. The code for running the SOM is written in Python 3 with numpy 1.24.2, available at https://github.com/SoftwareImpacts/SIMPAC-2023-308 in a special open access collection featuring software that has been verified for computational reproducibility by code ocean: https://codeocean.com/capsule/3541740/tree/v2.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Results</head><p>The results from the analyses on the image time series for the two geographical ROI show a general trend towards increase in the QE metric for each ROI between 1984 and 2008. These results are given in Table <ref type="table" coords="5,494.14,625.21,4.98,8.75">1</ref> as a function of the image year and the ROI.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Table 1</head><p>The quantization error in the SOM output (SOM-QE) as a function of the image year and geographic ROI</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Year</head><p>Las Vegas City Residential North 1984 0,240437503 0,151226618 1985 0,264341069 0,157865360 1986 0,271480118 0,155998180 1987 0,289065099 <ref type="bibr" coords="5,318.03,748.72,47.34,7.90;5,230.64,759.04,134.74,7.90;6,230.64,73.00,134.74,7.90;6,230.64,83.44,134.74,7.90;6,230.64,93.76,134.74,7.90;6,230.64,104.08,134.74,7.90;6,230.64,114.40,134.74,7.90;6,230.64,124.84,134.74,7.90;6,230.64,135.16,134.74,7.90;6,230.64,145.48,18.09,7.90">0,169213765 1988 0,282803632 0,210600120 1989 0,286535270 0,213982186 1991 0,303956828 0,219973707 1991 0,298541690 0,225406972 1992 0,301994751 0,214975264 1993 0,293683986 0,208605453 1994 0,304328745 0,221313177 1995 0,298240329 0,212630331 1996</ref>  <ref type="table" coords="6,259.89,145.48,105.48,7.90;6,230.64,155.80,134.74,7.90;6,230.64,166.24,134.74,7.90;6,230.64,176.56,134.74,7.90;6,230.64,186.88,134.74,7.90;6,230.64,197.20,134.74,7.90;6,230.64,207.64,91.70,7.90" target="#tab_2">0,309779114 0,222464495  1997 0,284870821 0,225816809  1998 0,291493024 0,223026329  1999 0,296067339 0,238731572  2000 0,304491317 0,246826836  2001 0,311488540 0,254509105  2002 0,314104190 0</ref> The numerical data were submitted to linear regression analysis to assess the statistical significance of the increase in SOM-QE across the years. The linear fits are shown in Figure <ref type="figure" coords="6,368.78,304.69,4.98,8.75" target="#fig_4">4</ref> for each of the two ROI. As an estimate of the part of variance in the data that is accounted for by the linear trend, or fit, the regression coefficient r2 is computed. It is a direct reflection of the goodness of the fit. The statistical significance of the trend in the data in any given direction, upward or downward, is determined by the probability that the linear adjustment sufficiently differs from zero on the basis of Student's distribution (t). These results reveal a statistically significant linear trend towards increase in The SOM-QE as a function of time for each geographical ROI. The results from the linear regression analysis with the slopes and intercepts of the fits and their regression coefficients r2 are shown in Table <ref type="table" coords="6,209.62,385.21,3.78,8.75">2</ref>. The results from the statistical trend analyses with Student's t, degrees of freedom (df) for a given comparison and the associated probability (p), limits are given in Table <ref type="table" coords="6,457.68,396.73,3.78,8.75" target="#tab_0">3</ref>. The regression coefficients (Table <ref type="table" coords="6,192.11,408.25,4.20,8.75">2</ref>) reveal that the linear fit to the SOM-QE for the images of the residential North is a reasonably good one, while the linear fit to the SOM-QE for Las Vegas City is not. This is consistent with the type of structural change that took place in each of the ROI across the study years. While there was a disruptive reorganization of the City Center, with old casinos and hotel centers disappearing to be replaced or not by new ones over the years, the landscape of what is now the residential North changed in terms of a much smoother and rather progressive, step-by-step development of building and housing agglomerations in these arid regions of the Nevada desert.  The linear trend statistics (Table <ref type="table" coords="7,202.66,186.97,4.20,8.75" target="#tab_0">3</ref>) reveal a statistically highly significant increase in the SOM-QE across the image years for both ROI. For the same reference time period, the Las Vegas Convention and Visitors Authority (2024), and the Las Vegas Population Review ( <ref type="formula" coords="7,261.74,210.01,17.88,8.75">2024</ref>) have provided publically archived data that show a steep increase of human impact across the same years as those from which the satellite images analyzed here were taken. These data are shown in Table <ref type="table" coords="7,221.98,233.05,4.98,8.75" target="#tab_1">4</ref> in terms of annual population estimates in thousands for Greater Las Vegas, which includes the City and the residential North, and visitors in millions. These demographic data were also submitted to linear regression and statistical trend analysis. The linear trends are shown graphically in Figure <ref type="figure" coords="7,200.51,608.89,3.78,8.75" target="#fig_5">5</ref>. The results reveal statistically significant linear trends towards increase as a function of time for both types of human impact data. The results from the linear regression analysis with the slopes and intercepts of these fits and their regression coefficients r2 are shown in Table <ref type="table" coords="7,426.00,631.93,3.69,8.75" target="#tab_2">5</ref>. The results from the statistical trend analyses with Student's t, Degrees of Freedom (df) for a given comparison and the associated probability (p), limits are given in Table <ref type="table" coords="7,234.11,654.97,3.78,8.75">6</ref>. The regression coefficients r2 in Table <ref type="table" coords="7,401.39,654.97,4.98,8.75" target="#tab_2">5</ref> reveal that the quality of the linear fits to the human impact data trends in terms of annual visitor increase and population growth across the study years is excellent. The steady increase in population and visitors of Greater Las Vegas is consistent with the restructuration that took place across these years, creating an increasingly larger offer for human activities and work in the entertainment sector on the one hand, and a need for more residential development catering for the needs of people providing their workforce for this expanding industry. The linear trend statistics in Table <ref type="table" coords="7,508.54,712.45,4.98,8.75">6</ref> reveal highly significant growth trends for both demographic variables.  The subsequent analysis is concerned with the correlations between the QE distributions from image analysis and the distributions reflecting human impact data in terms of population and visitor growth over the years. Correlations are useful because, although a direct causality cannot be inferred, they may indicate a predictive relationship between variables. Significance and direction of correlations then can be further exploited for further interpretation of the image data in their wider context. To that effect we computed Pearson's correlation coefficient R, which mathematically determines statistical covariance. The probability p that the covariance of two observables is statistically significant is determined by the magnitude of the Pearson coefficient, which is directly linked to the strength of correlation, while its sign is directly linked to the direction of the covariance (positive or negative) of two variables. This analysis was performed on the paired distributions from the image analysis of the residential North and the population data, and on the paired distributions from the image analysis of Las Vegas City and the yearly visitor estimates. The correlations are shown graphically in Figure <ref type="figure" coords="8,472.57,696.37,4.98,8.75" target="#fig_6">6</ref> for the SOM-QE data from the 25 images of the residential North as a function of the yearly population estimates (top) and the SOM-QE data from the 25 images of Las Vegas City as a function of the yearly number of visitors (bottom). The analysis signals statistically significant positive correlations between the paired variables in both cases. The correlation statistics, with Pearson coefficients R for a given comparison and the associated df and probability limits p, are shown in Table <ref type="table" coords="8,231.47,753.85,3.78,8.75">7</ref>. Greater Las Vegas is one of the driest regions in the world <ref type="bibr" coords="9,306.81,492.61,86.37,8.75" target="#b16">(Frumkin et al , 2020)</ref>. The particular problem space of considerable urban expansion and economic growth in such a region, and their impact on limited natural resources (Figure <ref type="figure" coords="9,142.90,515.65,4.20,8.75">1</ref>) therein, such as water, is highlighted by further statistics. The University of Nevada's Center for Gaming Research Annual Statistics (2023) show a steep increase in revenue from gaming and leisure activities in these years , while the water level measures for Lake Mead from the US Department of Interior's Bureau of Reclamation Hoover Dam Control Room Statistics (2023) show supply dwindling away during these same years. This is shown here in Figure <ref type="figure" coords="9,288.22,561.61,4.98,8.75" target="#fig_7">7</ref> in terms of a significant negative correlation between economic growth in terms of a steep increase in revenue and water availability.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Discussion</head><p>SOM analysis of satellite images of the residential North of Greater Las Vegas and Las Vegas City Center consistently captures the structural changes in each ROI across the study years. These were characterized by a step-by-step reorganization of the City Center, with old casinos and hotel centers disappearing and replaced by more and larger new ones, and the progressive development of housing and infrastructure in desert regions that are now part of the residential North. The significant positive correlations between the QE distributions from the SOM-QE analysis of the satellite images and the statistical distributions on human impacts in terms of population growth and increasing visitor volume across the same years allow for a meaningful image interpretation in a wider sense. The human response to an increasingly larger offer of state-of-the-art entertainment in the City engendered an increasing need for residential development in desert regions to provide housing for an increasing population providing the necessary workforce. At the same time, the water supply to these arid regions dwindled away steeply. Greater Las Vegas being one of the most arid regions of the planet <ref type="bibr" coords="9,70.80,745.57,86.38,8.75" target="#b16">(Frumkin et al., 2020)</ref>, linking the numerical model predictions statistically to numerical human impact data, as shown here, permits anticipating the scale of the effects of urbanization and directly related human impacts on this particular region. Such anticipation allows for prompt planning and implementation of measures for their mitigation, taking fully into account the specific geographic and economic context.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Conclusions</head><p>These data and observations illustrate how AI-assisted image analysis may be combined with the analysis of human impact statistics to enable an interpretation of image data in their direct societal context. The approach illustrates an explainable AI method for the rapid analysis of large data input streams by exploiting selforganized competitive learning for fully automated data analysis, in this study here pixel-based satellite imaging data, prior to further scrutiny or human decision making. The method is economic in computational resources and easily implemented, and can be used as a building block within step-by-step approaches to image analysis (e.g. <ref type="bibr" coords="10,91.06,462.01,87.73,8.75" target="#b35">Olsavszky et al, 2020)</ref>, from pixels to image regions (e.g. <ref type="bibr" coords="10,323.14,462.01,47.34,8.75" target="#b36">Orheim and</ref><ref type="bibr" coords="10,373.17,462.01,120.78,8.75">Lucchitta, 1990, Wandeto and</ref><ref type="bibr" coords="10,496.54,462.01,27.25,8.75;10,70.80,473.53,59.39,8.75">Dresp-Langley, 2023)</ref>. Current criteria for trustworthy and sustainable AI <ref type="bibr" coords="10,340.40,473.53,164.48,8.75">(HLEGAI, 2020, Radclyffe, Ribeiro, and</ref><ref type="bibr" coords="10,70.80,485.05,66.17,8.75" target="#b39">Wortham, 2023)</ref> are satisfied for a wide range of potential applications, with limitations similar to those of any method of automated image data analysis. Prior hypotheses and additional analyses are required to convey meaning to the classification data.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="3,279.60,607.93,35.78,8.75;3,80.88,619.21,433.20,8.75;3,255.00,639.84,86.28,109.68"><head>Figure 2</head><label>2</label><figDesc>Figure 2 SOM (cf. Kohonen, 1998) prototype with sixteen model neurons in a fully connected functional architecture</figDesc><graphic coords="3,255.00,639.84,86.28,109.68" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="4,234.82,468.49,272.81,8.75;4,70.80,480.01,439.35,8.75;4,70.80,491.41,450.22,8.75;4,70.80,502.93,441.30,8.75;4,70.80,514.45,445.90,8.75;4,70.80,525.97,449.09,8.75;4,70.80,537.49,433.62,8.75;4,70.80,548.89,419.52,8.75;4,70.80,560.41,444.52,8.75;4,70.80,572.05,271.75,8.75"><head></head><label></label><figDesc>For this study, time series of satellite images NASA Landsat images (NASA Goddard Space Flight Center, 2012) of Las Vegas City Centre and the residential North of Las Vegas were submitted to analysis. The original images 25 images for each geographical ROI were extracted from timelapse animations of Las Vegas County, Nevada, for a reference time period from 1984 to 2008, as captured by NASA Landsat sensors. VLC (2023), an open source media player, was used to generate static images from the time-lapse animations provided. The original images are false-colour, displaying arid desert regions in greenishbrown, building structures in gray levels and healthy vegetation/green spaces in red. Water is represented by black pixels. The 50 original static images can be downloaded from researchgate as indicated in the Data Availability Statement. Low-resolution copies of two of the high-resolution 25 images for the residential North from the years 1984 and 2008 are shown in Figure 3 for illustration.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="4,279.60,593.65,35.78,8.75;4,123.24,604.93,348.69,8.75;4,191.04,614.04,214.80,84.12"><head>Figure 3</head><label>3</label><figDesc>Figure 3 Satellite image examples showing the residential North of Las Vegas in 1984 and 2008</figDesc><graphic coords="4,191.04,614.04,214.80,84.12" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4" coords="6,279.60,500.41,35.78,8.75;6,156.60,511.69,281.84,8.75;6,199.32,520.92,198.36,145.44"><head>Figure 4</head><label>4</label><figDesc>Figure 4Linear fits to SOM-QE trends as a function of the image year and ROI</figDesc><graphic coords="6,199.32,520.92,198.36,145.44" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5" coords="8,279.60,289.45,35.78,8.75;8,132.84,300.73,329.36,8.75;8,203.64,309.84,189.72,269.16"><head>Figure 5</head><label>5</label><figDesc>Figure 5 Linear fits to visitor (top) and population (bottom) statistics for Greater Las Vegas</figDesc><graphic coords="8,203.64,309.84,189.72,269.16" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6" coords="9,279.60,73.45,35.78,8.75;9,132.72,84.73,329.56,8.75;9,200.16,93.96,196.56,282.60"><head>Figure 6</head><label>6</label><figDesc>Figure 6 Correlations between SOM-QE and population (top) and visitor (bottom) statistics</figDesc><graphic coords="9,200.16,93.96,196.56,282.60" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7" coords="10,279.60,108.01,35.78,8.75;10,76.68,119.29,441.76,8.75;10,83.04,130.81,429.06,8.75;10,274.20,142.21,46.77,8.75;10,186.00,151.44,225.00,170.28"><head>Figure 7</head><label>7</label><figDesc>Figure 7 Economic growth vs water availability (University of Nevada's Center for Gaming Research Annual Statistics and US Department of Interior's Bureau of Reclamation Hoover Dam Control Room statistics for the years 1984-2008)</figDesc><graphic coords="10,186.00,151.44,225.00,170.28" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" coords="7,92.52,73.45,410.15,97.94"><head>Table 3</head><label>3</label><figDesc>Linear regression statistics with Student's t, degrees of freedom (df) and probability limits (p) for each geographical ROI</figDesc><table coords="7,224.64,120.76,145.93,50.62"><row><cell>Linear</cell><cell>Las Vegas</cell><cell>Residential</cell></row><row><cell>Regression</cell><cell>City</cell><cell>North</cell></row><row><cell>t</cell><cell>88,98</cell><cell>33,45</cell></row><row><cell>df</cell><cell>(1, 24)</cell><cell>(1, 24)</cell></row><row><cell>p</cell><cell>&lt;.001</cell><cell>&lt;.001</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1" coords="7,116.76,267.73,361.62,314.06"><head>Table 4</head><label>4</label><figDesc>Visitor and population statistics for Greater Las Vegas across the years of the study period</figDesc><table coords="7,233.16,303.52,128.81,278.26"><row><cell>Year</cell><cell>Visitors</cell><cell>Population</cell></row><row><cell></cell><cell>(in millions)</cell><cell>(in K)</cell></row><row><cell>1984</cell><cell>12,8000</cell><cell>191,0000</cell></row><row><cell>1985</cell><cell>14,2000</cell><cell>197,0000</cell></row><row><cell>1986</cell><cell>15,2000</cell><cell>204,0000</cell></row><row><cell>1987</cell><cell>16,2000</cell><cell>226,0000</cell></row><row><cell>1988</cell><cell>17,2000</cell><cell>240,0000</cell></row><row><cell>1989</cell><cell>18,1000</cell><cell>266,0000</cell></row><row><cell>1991</cell><cell>20,9000</cell><cell>276,0000</cell></row><row><cell>1991</cell><cell>21,3000</cell><cell>298,0000</cell></row><row><cell>1992</cell><cell>21,9000</cell><cell>310,0000</cell></row><row><cell>1993</cell><cell>23,5000</cell><cell>330,0000</cell></row><row><cell>1994</cell><cell>28,2000</cell><cell>352,0000</cell></row><row><cell>1995</cell><cell>29,0000</cell><cell>374,0000</cell></row><row><cell>1996</cell><cell>29,6000</cell><cell>406,0000</cell></row><row><cell>1997</cell><cell>30,4000</cell><cell>423,0000</cell></row><row><cell>1998</cell><cell>30,6000</cell><cell>448,0000</cell></row><row><cell>1999</cell><cell>33,8000</cell><cell>466,0000</cell></row><row><cell>2000</cell><cell>35,8000</cell><cell>483,0000</cell></row><row><cell>2001</cell><cell>35,0000</cell><cell>506,0000</cell></row><row><cell>2002</cell><cell>35,0000</cell><cell>521,0000</cell></row><row><cell>2003</cell><cell>35,5000</cell><cell>535,0000</cell></row><row><cell>2004</cell><cell>37,3000</cell><cell>560,0000</cell></row><row><cell>2005</cell><cell>38,6000</cell><cell>576,0000</cell></row><row><cell>2006</cell><cell>38,3000</cell><cell>592,0000</cell></row><row><cell>2007</cell><cell>37,5000</cell><cell>603,0000</cell></row><row><cell>2008</cell><cell>39,5000</cell><cell>608,0000</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2" coords="8,80.52,73.45,434.07,200.18"><head>Table 5</head><label>5</label><figDesc>Goodness of the linear fits to visitor and population statistics</figDesc><table coords="8,80.52,109.24,434.07,164.38"><row><cell>Fit</cell><cell cols="2">Visitors Population</cell></row><row><cell>Parameter</cell><cell></cell><cell></cell></row><row><cell>Slope (b 1 )</cell><cell>1,1828</cell><cell>19,0723</cell></row><row><cell>Intercept (b 0 ) r 2</cell><cell>-2,333 0,9657</cell><cell>-3766 0,9955</cell></row><row><cell></cell><cell>Table 6</cell><cell></cell></row><row><cell cols="3">Linear regression statistics with Student's t, degrees of freedom (df) and probability limits (p) for visitor and</cell></row><row><cell cols="3">population statistics</cell></row><row><cell>Linear</cell><cell cols="2">Visitors Population</cell></row><row><cell>Regression</cell><cell></cell><cell></cell></row><row><cell>t</cell><cell>15,70</cell><cell>14,20</cell></row><row><cell>df</cell><cell>(1, 24)</cell><cell>(1, 24)</cell></row><row><cell>p</cell><cell>&lt;.001</cell><cell>&lt;.001</cell></row></table></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgement</head><p>This work is sponsored by CNRS France and DEKUT Kenya.</p></div>
+			</div>
+
+
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data Availability Statement</head><p>The data that support the findings of this study are available in the paper. The images analyzed here are available publically on Researchgate at the following page: https://www.researchgate.net/publication/377577425_SatelliteImage_DataLVCityResidentialNorthtar.Copying the link into your browser opens the page that contains the .tar file for downloading.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Ethical Statement</head><p>This study does not contain any studies with human or animal subjects performed by any of the authors.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conflict of Interest</head><p>The authors declare that they have no conflict of interest.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="11,70.80,115.57,415.40,8.75;11,70.80,128.77,432.12,8.75;11,70.80,141.97,445.68,8.75;11,70.80,155.17,386.88,8.75;11,70.80,168.49,262.05,8.75" xml:id="b0">
+	<analytic>
+		<title level="a" type="main">A human-machine collaborative approach measures economic development using satellite imagery</title>
+		<author>
+			<persName><forename type="first">Donghyun</forename><surname>Ahn</surname></persName>
+			<idno type="ORCID">0000-0001-8473-9598</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jeasurk</forename><surname>Yang</surname></persName>
+			<idno type="ORCID">0000-0002-9765-1218</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Meeyoung</forename><surname>Cha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hyunjoo</forename><surname>Yang</surname></persName>
+			<idno type="ORCID">0000-0001-7204-5919</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jihee</forename><surname>Kim</surname></persName>
+			<idno type="ORCID">0000-0002-3875-1083</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sangyoon</forename><surname>Park</surname></persName>
+			<idno type="ORCID">0000-0003-3078-5956</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sungwon</forename><surname>Han</surname></persName>
+			<idno type="ORCID">0000-0002-1129-760X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Eunji</forename><surname>Lee</surname></persName>
+			<idno type="ORCID">0000-0002-1677-4102</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Susang</forename><surname>Lee</surname></persName>
+			<idno type="ORCID">0000-0002-6882-9558</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sungwon</forename><surname>Park</surname></persName>
+			<idno type="ORCID">0000-0002-6369-8130</idno>
+		</author>
+		<idno type="DOI">10.1038/s41467-023-42122-8</idno>
+		<idno>on16/01/2024</idno>
+		<ptr target="https://ec.europa.eu/newsroom/dae/document.cfm?doc_id=68342" />
+	</analytic>
+	<monogr>
+		<title level="j">Nature Communications</title>
+		<title level="j" type="abbrev">Nat Commun</title>
+		<idno type="ISSNe">2041-1723</idno>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2020">2023. 2020</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note>High-Level Expert Group on Artificial Intelligence HLEGAI</note>
+</biblStruct>
+
+<biblStruct coords="11,70.80,194.89,418.18,8.75;11,70.80,208.09,204.79,8.75" xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Bias in machine learning for computer-assisted surgery and medical image processing</title>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">S H</forename><surname>Baxter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pierre</forename><surname>Jannin</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/24699322.2021.2013619</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computer Assisted Surgery</title>
+		<title level="j" type="abbrev">Computer Assisted Surgery</title>
+		<idno type="ISSNe">2469-9322</idno>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="3" />
+			<date type="published" when="2022-02-08">2022</date>
+			<publisher>Informa UK Limited</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,70.80,234.61,449.02,8.75;11,70.80,247.81,231.22,8.75" xml:id="b2">
+	<monogr>
+		<title level="m" type="main">Interdisciplinarity and Climate Change</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Bhaskar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Frank</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">K</forename><surname>Hoyer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Naess</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Parker</surname></persName>
+		</author>
+		<idno type="DOI">10.4324/9780203855317</idno>
+		<imprint>
+			<date type="published" when="2010-02-25">2010</date>
+			<publisher>Routledge</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,70.80,274.21,441.40,8.75;11,70.80,287.41,17.63,8.75;11,70.80,313.93,444.18,8.75;11,70.80,327.13,17.63,8.75" xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Bias in image analysis and its solution: unbiased stereology</title>
+		<author>
+			<persName coords=""><forename type="first">Danielle</forename><forename type="middle">L</forename><surname>Brown</surname></persName>
+		</author>
+		<idno type="DOI">10.1293/tox.2017-0013</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Toxicologic Pathology</title>
+		<title level="j" type="abbrev">J Toxicol Pathol</title>
+		<idno type="ISSN">0914-9198</idno>
+		<idno type="ISSNe">1881-915X</idno>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="183" to="191" />
+			<date type="published" when="1998">2017. 1998</date>
+			<publisher>Japanese Society of Toxicologic Pathology</publisher>
+		</imprint>
+	</monogr>
+	<note>J Toxicol Pathol</note>
+</biblStruct>
+
+<biblStruct coords="11,70.80,353.53,446.39,8.75;11,70.80,366.85,421.40,8.75;11,70.80,380.05,37.05,8.75;11,70.80,406.45,419.41,8.75;11,70.80,419.65,189.42,8.75" xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Human-Induced Changes in Landscape Configuration Influence Individual Movement Routines: Lessons from a Versatile, Highly Mobile Species</title>
+		<author>
+			<persName><forename type="first">Carlos</forename><surname>Camacho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sebastián</forename><surname>Palacios</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pedro</forename><surname>Sáez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sonia</forename><surname>Sánchez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jaime</forename><surname>Potti</surname></persName>
+		</author>
+		<idno type="DOI">10.1371/journal.pone.0104974</idno>
+	</analytic>
+	<monogr>
+		<title level="j">PLoS ONE</title>
+		<title level="j" type="abbrev">PLoS ONE</title>
+		<idno type="ISSNe">1932-6203</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page">e104974</biblScope>
+			<date type="published" when="1997">2014. 1997</date>
+			<publisher>Public Library of Science (PLoS)</publisher>
+		</imprint>
+	</monogr>
+	<note>PLoS One</note>
+</biblStruct>
+
+<biblStruct coords="11,70.80,446.17,450.44,8.75;11,70.80,459.37,118.99,8.75" xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Trainable quantization for Speedy Spiking Neural Networks</title>
+		<author>
+			<persName><forename type="first">Andrea</forename><surname>Castagnetti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alain</forename><surname>Pegatoquet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Benoît</forename><surname>Miramond</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fnins.2023.1154241</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Neuroscience</title>
+		<title level="j" type="abbrev">Front. Neurosci.</title>
+		<idno type="ISSNe">1662-453X</idno>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="page">1154241</biblScope>
+			<date type="published" when="2023-03-03">2023</date>
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,70.80,485.77,438.22,8.75;11,104.96,499.09,68.81,8.75" xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Mechanisms of Winner-Take-All and Group Selection in Neuronal Spiking Networks</title>
+		<author>
+			<persName coords=""><forename type="first">Yanqing</forename><surname>Chen</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fncom.2017.00020</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Computational Neuroscience</title>
+		<title level="j" type="abbrev">Front. Comput. Neurosci.</title>
+		<idno type="ISSNe">1662-5188</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page">20</biblScope>
+			<date type="published" when="2017-04-21">2017</date>
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,70.80,525.49,445.01,8.75;11,70.80,538.69,437.52,8.75" xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Mind the Gap: Big Data vs. Interoperability and Reproducibility of Science</title>
+		<author>
+			<persName><forename type="first">Max</forename><surname>Craglia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefano</forename><surname>Nativi</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-319-65633-5_6</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Earth Observation Open Science and Innovation</title>
+				<editor>
+			<persName><forename type="first">P</forename><surname>Mathieu</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">C</forename><surname>Aubrecht</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Cham</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="page" from="121" to="141" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,70.80,565.21,430.99,8.75;11,70.80,578.41,431.02,8.75" xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Lack of Transparency and Potential Bias in Artificial Intelligence Data Sets and Algorithms</title>
+		<author>
+			<persName><forename type="first">Roxana</forename><surname>Daneshjou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mary</forename><forename type="middle">P</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mary</forename><forename type="middle">D</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Veronica</forename><surname>Rotemberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><surname>Zou</surname></persName>
+		</author>
+		<idno type="DOI">10.1001/jamadermatol.2021.3129</idno>
+	</analytic>
+	<monogr>
+		<title level="j">JAMA Dermatology</title>
+		<title level="j" type="abbrev">JAMA Dermatol</title>
+		<idno type="ISSN">2168-6068</idno>
+		<imprint>
+			<biblScope unit="volume">157</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page">1362</biblScope>
+			<date type="published" when="2021-11-01">2021</date>
+			<publisher>American Medical Association (AMA)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,70.80,604.81,432.58,8.75;11,70.80,618.01,138.97,8.75" xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Statistical tools to assess the reliability of self-organizing maps</title>
+		<author>
+			<persName><forename type="first">Eric</forename><surname>De Bodt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marie</forename><surname>Cottrell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michel</forename><surname>Verleysen</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/s0893-6080(02)00071-0</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neural Networks</title>
+		<title level="j" type="abbrev">Neural Networks</title>
+		<idno type="ISSN">0893-6080</idno>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">8-9</biblScope>
+			<biblScope unit="page" from="967" to="978" />
+			<date type="published" when="2002-10">2002</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,70.80,644.53,424.74,8.75;11,70.80,657.73,440.01,8.75;11,70.80,670.93,52.69,8.75" xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Dynamic landscapes and the influence of human activities in the Yellow River Delta wetland region</title>
+		<author>
+			<persName><forename type="first">Xinyu</forename><surname>Dou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Huadong</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lu</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dong</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qi</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xuting</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Heng</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhuoran</forename><surname>Lv</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yiming</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yiting</forename><surname>Gou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhoulong</forename><surname>Wang</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.scitotenv.2023.166239</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Science of The Total Environment</title>
+		<title level="j" type="abbrev">Science of The Total Environment</title>
+		<idno type="ISSN">0048-9697</idno>
+		<imprint>
+			<biblScope unit="volume">899</biblScope>
+			<biblScope unit="page">166239</biblScope>
+			<date type="published" when="2023-11">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,70.80,697.45,441.27,8.75;11,70.80,710.65,274.40,8.75;11,70.80,737.05,450.42,8.75;11,70.80,750.25,137.86,8.75" xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Evaluating the sustainability of indirect potable reuse and direct potable reuse: a southern Nevada case study</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Dow</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Ahmad</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Stave</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Gerrity</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Dresp-Langley</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Wandeto</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.2106.08995</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Water Sci</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<date type="published" when="2019">2019. 2021</date>
+		</imprint>
+	</monogr>
+	<note>Surgical task expertise detected by a self-organizing neural network map</note>
+</biblStruct>
+
+<biblStruct coords="12,70.80,86.65,422.90,8.75;12,70.80,99.85,134.49,8.75" xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Human Symmetry Uncertainty Detected by a Self-Organizing Neural Network Map</title>
+		<author>
+			<persName><forename type="first">Birgitta</forename><surname>Dresp-Langley</surname></persName>
+			<idno type="ORCID">0000-0002-2860-6472</idno>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">M</forename><surname>Wandeto</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/sym13020299</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Symmetry</title>
+		<title level="j" type="abbrev">Symmetry</title>
+		<idno type="ISSNe">2073-8994</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">299</biblScope>
+			<date type="published" when="2021-02-10">2021a</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,70.80,126.25,423.52,8.75;12,70.80,139.45,278.93,8.75;12,70.80,165.97,442.53,8.75;12,70.80,179.17,443.50,8.75;12,70.80,192.37,443.72,8.75;12,70.80,205.57,444.60,8.75;12,70.80,232.09,433.94,8.75;12,70.80,245.29,442.45,8.75;12,70.80,258.49,189.00,8.75;12,283.21,258.49,239.85,8.75;12,70.80,271.69,158.47,8.75" xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Pixel precise unsupervised detection of viral particle proliferation in cellular imaging data</title>
+		<author>
+			<persName><forename type="first">Birgitta</forename><surname>Dresp-Langley</surname></persName>
+			<idno type="ORCID">0000-0002-2860-6472</idno>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">Mwangi</forename><surname>Wandeto</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.imu.2020.100433</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Informatics in Medicine Unlocked</title>
+		<title level="j" type="abbrev">Informatics in Medicine Unlocked</title>
+		<editor>J.A., Tinetti, F.G.</editor>
+		<idno type="ISSN">2352-9148</idno>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page">100433</biblScope>
+			<date type="published" when="2020">2020. 100433. 2021b. 2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note>Unsupervised classification of cell-imaging data using the quantization error in a self-organizing map</note>
+</biblStruct>
+
+<biblStruct coords="12,70.80,298.21,447.09,8.75;12,70.80,311.41,50.34,8.75" xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Self‐organization in the developing nervous system: Theoretical models</title>
+		<author>
+			<persName><forename type="first">Stephen</forename><forename type="middle">J</forename><surname>Eglen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Julijana</forename><surname>Gjorgjieva</surname></persName>
+		</author>
+		<idno type="DOI">10.2976/1.3079539</idno>
+	</analytic>
+	<monogr>
+		<title level="j">HFSP Journal</title>
+		<title level="j" type="abbrev">HFSP Journal</title>
+		<idno type="ISSN">1955-2068</idno>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="176" to="185" />
+			<date type="published" when="2009-06">2009</date>
+			<publisher>Informa UK Limited</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,70.80,337.81,446.31,8.75;12,70.80,351.13,145.83,8.75" xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Self-organizing maps: ordering, convergence properties and energy functions</title>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Erwin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Obermayer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Schulten</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/bf00201801</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Biological Cybernetics</title>
+		<title level="j" type="abbrev">Biol. Cybern.</title>
+		<idno type="ISSN">0340-1200</idno>
+		<idno type="ISSNe">1432-0770</idno>
+		<imprint>
+			<biblScope unit="volume">67</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="47" to="55" />
+			<date type="published" when="1992-05">1992</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,70.80,377.53,451.48,8.75;12,70.80,390.73,210.12,8.75" xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Protecting health in dry cities: considerations for policy makers</title>
+		<author>
+			<persName><forename type="first">Howard</forename><surname>Frumkin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maitreyi</forename><forename type="middle">Bordia</forename><surname>Das</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maya</forename><surname>Negev</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Briony</forename><forename type="middle">C</forename><surname>Rogers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roberto</forename><surname>Bertollini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carlos</forename><surname>Dora</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sonalde</forename><surname>Desai</surname></persName>
+		</author>
+		<idno type="DOI">10.1136/bmj.m2936</idno>
+	</analytic>
+	<monogr>
+		<title level="j">BMJ</title>
+		<title level="j" type="abbrev">BMJ</title>
+		<idno type="ISSNe">1756-1833</idno>
+		<imprint>
+			<biblScope unit="page">m2936</biblScope>
+			<date type="published" when="2020-10-30">2020</date>
+			<publisher>BMJ</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,70.80,417.25,446.82,8.75;12,70.80,430.45,186.41,8.75" xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Time-series analysis of satellite imagery for detecting vegetation cover changes in Indonesia</title>
+		<author>
+			<persName><forename type="first">Takuro</forename><surname>Furusawa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Takuya</forename><surname>Koera</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rikson</forename><surname>Siburian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Agung</forename><surname>Wicaksono</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kazunari</forename><surname>Matsudaira</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yoshinori</forename><surname>Ishioka</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41598-023-35330-1</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Reports</title>
+		<title level="j" type="abbrev">Sci Rep</title>
+		<idno type="ISSNe">2045-2322</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">8437</biblScope>
+			<date type="published" when="2023-05-25">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,70.80,456.85,450.38,8.75;12,70.80,470.05,428.69,8.75;12,70.80,483.37,42.53,8.75" xml:id="b18">
+	<analytic>
+		<title level="a" type="main">AI pitfalls and what not to do: mitigating bias in AI</title>
+		<author>
+			<persName><forename type="first">Judy</forename><forename type="middle">Wawira</forename><surname>Gichoya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kaesha</forename><surname>Thomas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Leo</forename><forename type="middle">Anthony</forename><surname>Celi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nabile</forename><surname>Safdar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Imon</forename><surname>Banerjee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">D</forename><surname>Banja</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Laleh</forename><surname>Seyyed-Kalantari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hari</forename><surname>Trivedi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Saptarshi</forename><surname>Purkayastha</surname></persName>
+		</author>
+		<idno type="DOI">10.1259/bjr.20230023</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The British Journal of Radiology</title>
+		<idno type="ISSN">0007-1285</idno>
+		<idno type="ISSNe">1748-880X</idno>
+		<imprint>
+			<biblScope unit="volume">96</biblScope>
+			<biblScope unit="issue">1150</biblScope>
+			<biblScope unit="page">96</biblScope>
+			<date type="published" when="2023-09-25">2023. 20230023</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,70.80,509.77,441.53,8.75;12,70.80,522.97,406.26,8.75;12,70.80,536.17,173.16,8.75" xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Self-Organizing Neural Networks for Stable Control of Autonomous Behavior in A Changing World</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Grossberg</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/s0924-6509(08)70037-0</idno>
+	</analytic>
+	<monogr>
+		<title level="m">North-Holland Mathematical Library</title>
+				<editor>
+			<persName><forename type="first">J</forename><forename type="middle">G</forename><surname>Taylor</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Amsterdam, The Netherlands</addrLine></address></meeting>
+		<imprint>
+			<publisher>Elsevier</publisher>
+			<date type="published" when="1993">1993</date>
+			<biblScope unit="page" from="139" to="197" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,70.80,562.69,361.41,8.75" xml:id="b20">
+	<monogr>
+		<title level="m" type="main">The Organization of Behaviour</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Hebb</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1949">1949</date>
+			<publisher>John Wiley &amp; Sons</publisher>
+			<pubPlace>Hoboken, NJ, USA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,70.80,589.09,439.17,8.75;12,70.80,602.29,72.54,8.75" xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Dynamical Regimes in Neural Network Models of Matching Behavior</title>
+		<author>
+			<persName><forename type="first">Kiyohito</forename><surname>Iigaya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefano</forename><surname>Fusi</surname></persName>
+		</author>
+		<idno type="DOI">10.1162/neco_a_00522</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neural Computation</title>
+		<title level="j" type="abbrev">Neural Computation</title>
+		<idno type="ISSN">0899-7667</idno>
+		<idno type="ISSNe">1530-888X</idno>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="3093" to="3112" />
+			<date type="published" when="2013-12">2013</date>
+			<publisher>MIT Press - Journals</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,70.80,628.81,452.77,8.75;12,70.80,642.01,282.77,8.75" xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Essential properties and explanation effectiveness of explainable artificial intelligence in healthcare: A systematic review</title>
+		<author>
+			<persName><forename type="first">Jinsun</forename><surname>Jung</surname></persName>
+			<idno type="ORCID">0000-0003-0952-5877</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hyungbok</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hyunggu</forename><surname>Jung</surname></persName>
+			<idno type="ORCID">0000-0002-2967-4370</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hyeoneui</forename><surname>Kim</surname></persName>
+			<idno type="ORCID">0000-0002-5931-7286</idno>
+		</author>
+		<idno type="DOI">10.1016/j.heliyon.2023.e16110</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Heliyon</title>
+		<title level="j" type="abbrev">Heliyon</title>
+		<idno type="ISSN">2405-8440</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page">e16110</biblScope>
+			<date type="published" when="2023-05">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,70.80,668.41,363.89,8.75;12,70.80,681.73,210.96,8.75" xml:id="b23">
+	<monogr>
+		<title level="m" type="main">Self-Organizing Maps</title>
+		<author>
+			<persName coords=""><forename type="first">Teuvo</forename><surname>Kohonen</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-642-56927-2</idno>
+		<idno>16/01/2024</idno>
+		<ptr target="http://link.springer.com/10.1007/978-3-642-56927-2" />
+		<imprint>
+			<date type="published" when="2001">2001</date>
+			<publisher>Springer Berlin Heidelberg</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,70.80,708.13,290.15,8.75" xml:id="b24">
+	<analytic>
+		<title level="a" type="main">The self-organizing map</title>
+		<author>
+			<persName coords=""><forename type="first">Teuvo</forename><surname>Kohonen</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/s0925-2312(98)00030-7</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neurocomputing</title>
+		<title level="j" type="abbrev">Neurocomputing</title>
+		<idno type="ISSN">0925-2312</idno>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">1-3</biblScope>
+			<biblScope unit="page" from="1" to="6" />
+			<date type="published" when="1998-11">1998</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,70.80,734.53,438.25,8.75;12,70.80,747.85,71.83,8.75" xml:id="b25">
+	<monogr>
+		<title level="m" type="main">MATLAB Implementations and Applications of the Self-Organizing Map. Unigrafia Oy</title>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Kohonen</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2014">2014</date>
+			<pubPlace>Helsinki, Finland</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,70.80,73.33,448.67,8.75;13,70.80,86.65,440.38,8.75" xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Using Earth observation images to inform risk assessment and mapping of climate change-related infectious diseases</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">O</forename><surname>Kotchi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Bouchard</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Ludwig</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">E</forename><surname>Rees</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Brazeau</surname></persName>
+		</author>
+		<idno type="DOI">10.14745/ccdr.v45i05a04</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Canada Communicable Disease Report</title>
+		<title level="j" type="abbrev">CCDR</title>
+		<idno type="ISSNe">1481-8531</idno>
+		<imprint>
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="133" to="142" />
+			<date type="published" when="2019-05-02">2019</date>
+			<publisher>Infectious Disease and Control Branch (IDPCB) - Public Health Agency of Canada</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,70.80,113.05,452.97,8.75;13,70.80,126.25,34.32,8.75;13,70.80,152.77,408.11,8.75;13,70.80,165.97,96.02,8.75;13,70.80,192.37,345.34,8.75;13,70.80,205.57,277.34,8.75" xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Marketing Bulletin, Las Vegas Convention/Visitors Authority, 1976 Summary. Las Vegas Convention/Visitors Authority, P.O. Box 14006, Las Vegas, Nevada 89114. March 15, 1977. 32p</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">J</forename><surname>Miklavcic</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/004728757701600170</idno>
+		<idno>16/01/2024</idno>
+		<ptr target="https://worldpopulationreview.com/world-cities/las-vegas-population" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Travel Research</title>
+		<title level="j" type="abbrev">Journal of Travel Research</title>
+		<idno type="ISSN">0047-2875</idno>
+		<idno type="ISSNe">1552-6763</idno>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="45" to="45" />
+			<date type="published" when="2018">2018. 2024. 2024</date>
+			<publisher>SAGE Publications</publisher>
+		</imprint>
+	</monogr>
+	<note>Available online</note>
+</biblStruct>
+
+<biblStruct coords="13,70.80,232.09,445.14,8.75;13,70.80,245.29,322.87,8.75" xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Spatiotemporal Modeling of Grip Forces Captures Proficiency in Manual Robot Control</title>
+		<author>
+			<persName><forename type="first">Rongrong</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><surname>Wandeto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Florent</forename><surname>Nageotte</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Philippe</forename><surname>Zanne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michel</forename><surname>De Mathelin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Birgitta</forename><surname>Dresp-Langley</surname></persName>
+			<idno type="ORCID">0000-0002-2860-6472</idno>
+		</author>
+		<idno type="DOI">10.3390/bioengineering10010059</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Bioengineering</title>
+		<title level="j" type="abbrev">Bioengineering</title>
+		<idno type="ISSNe">2306-5354</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">59</biblScope>
+			<date type="published" when="2023-01-03">2023</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,70.80,271.69,452.85,8.75;13,70.80,285.01,281.93,8.75" xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Gaming Space: Casinopolitan Globalism from Las Vegas to Macau</title>
+		<author>
+			<persName coords=""><forename type="first">Timothy</forename><forename type="middle">W</forename><surname>Luke</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/14747731003669800</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Globalizations</title>
+		<title level="j" type="abbrev">Globalizations</title>
+		<editor>Steger M, McNevin A.</editor>
+		<idno type="ISSN">1474-7731</idno>
+		<idno type="ISSNe">1474-774X</idno>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="395" to="405" />
+			<date type="published" when="2013">2013</date>
+			<publisher>Informa UK Limited</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,70.80,311.41,443.00,8.75;13,70.80,324.61,274.90,8.75" xml:id="b30">
+	<analytic>
+		<title level="a" type="main">The problem of bias in training data in regression problems in medical decision support</title>
+		<author>
+			<persName coords=""><forename type="first">Mac</forename><surname>Namee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Cunningham</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Byrne</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Corrigan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">O</forename><forename type="middle">I</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Artif Intell Med</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="51" to="70" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,70.80,351.13,448.81,8.75;13,70.80,364.33,453.33,8.75" xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Phenotyping urban built and natural environments with high-resolution satellite images and unsupervised deep learning</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">Barbara</forename><surname>Metzler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ricky</forename><surname>Nathvani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Viktoriia</forename><surname>Sharmanska</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wenjia</forename><surname>Bai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Emily</forename><surname>Muller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Simon</forename><surname>Moulds</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Charles</forename><surname>Agyei-Asabere</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dina</forename><surname>Adjei-Boadi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elvis</forename><surname>Kyere-Gyeabour</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jacob</forename><forename type="middle">Doku</forename><surname>Tetteh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">George</forename><surname>Owusu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Samuel</forename><surname>Agyei-Mensah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jill</forename><surname>Baumgartner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brian</forename><forename type="middle">E</forename><surname>Robinson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Raphael</forename><forename type="middle">E</forename><surname>Arku</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Majid</forename><surname>Ezzati</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.scitotenv.2023.164794</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Science of The Total Environment</title>
+		<title level="j" type="abbrev">Science of The Total Environment</title>
+		<idno type="ISSN">0048-9697</idno>
+		<imprint>
+			<biblScope unit="volume">893</biblScope>
+			<biblScope unit="page">164794</biblScope>
+			<date type="published" when="2023-10">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,70.80,377.53,442.67,8.75;13,70.80,390.73,165.93,8.75" xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Phenotyping urban built and natural environments with high-resolution satellite images and unsupervised deep learning</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">Barbara</forename><surname>Metzler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ricky</forename><surname>Nathvani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Viktoriia</forename><surname>Sharmanska</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wenjia</forename><surname>Bai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Emily</forename><surname>Muller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Simon</forename><surname>Moulds</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Charles</forename><surname>Agyei-Asabere</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dina</forename><surname>Adjei-Boadi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elvis</forename><surname>Kyere-Gyeabour</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jacob</forename><forename type="middle">Doku</forename><surname>Tetteh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">George</forename><surname>Owusu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Samuel</forename><surname>Agyei-Mensah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jill</forename><surname>Baumgartner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brian</forename><forename type="middle">E</forename><surname>Robinson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Raphael</forename><forename type="middle">E</forename><surname>Arku</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Majid</forename><surname>Ezzati</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.scitotenv.2023.164794</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Science of The Total Environment</title>
+		<title level="j" type="abbrev">Science of The Total Environment</title>
+		<idno type="ISSN">0048-9697</idno>
+		<imprint>
+			<biblScope unit="volume">893</biblScope>
+			<biblScope unit="page">164794</biblScope>
+			<date type="published" when="2023-10" />
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,70.80,417.25,436.99,8.75;13,70.80,430.45,260.34,8.75" xml:id="b33">
+	<analytic>
+		<title level="a" type="main">NASA/Goddard Space Flight Center (GSFC) Wallops Flight Facility (WFF) [Organization Profiles]</title>
+		<author>
+			<persName><forename type="first">Scott</forename><forename type="middle">H</forename><surname>Schaire</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/mgrs.2013.2260932</idno>
+		<idno>16/01/2024</idno>
+		<ptr target="http://svs.gsfc.nasa.gov/10721" />
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Geoscience and Remote Sensing Magazine</title>
+		<title level="j" type="abbrev">IEEE Geosci. Remote Sens. Mag.</title>
+		<idno type="ISSNe">2168-6831</idno>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="76" to="78" />
+			<date type="published" when="2012">2012</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,70.80,456.85,453.21,8.75;13,70.80,470.05,447.89,8.75;13,70.80,483.37,119.04,8.75" xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Bias in artificial intelligence algorithms and recommendations for mitigation</title>
+		<author>
+			<persName><forename type="first">Lama</forename><forename type="middle">H</forename><surname>Nazer</surname></persName>
+			<idno type="ORCID">0000-0002-7550-4751</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Razan</forename><surname>Zatarah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shai</forename><surname>Waldrip</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Janny</forename><forename type="middle">Xue Chen</forename><surname>Ke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mira</forename><surname>Moukheiber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ashish</forename><forename type="middle">K</forename><surname>Khanna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rachel</forename><forename type="middle">S</forename><surname>Hicklen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lama</forename><surname>Moukheiber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dana</forename><surname>Moukheiber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haobo</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Piyush</forename><surname>Mathur</surname></persName>
+		</author>
+		<idno type="DOI">10.1371/journal.pdig.0000278</idno>
+	</analytic>
+	<monogr>
+		<title level="j">PLOS Digital Health</title>
+		<title level="j" type="abbrev">PLOS Digit Health</title>
+		<idno type="ISSNe">2767-3170</idno>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page">e0000278</biblScope>
+			<date type="published" when="2023-06-22">2023</date>
+			<publisher>Public Library of Science (PLoS)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,70.80,509.77,445.77,8.75;13,70.80,522.97,398.21,8.75" xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Time Series Analysis and Forecasting with Automated Machine Learning on a National ICD-10 Database</title>
+		<author>
+			<persName><forename type="first">Victor</forename><surname>Olsavszky</surname></persName>
+			<idno type="ORCID">0000-0001-6083-5534</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mihnea</forename><surname>Dosius</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cristian</forename><surname>Vladescu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Johannes</forename><surname>Benecke</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/ijerph17144979</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Environmental Research and Public Health</title>
+		<title level="j" type="abbrev">IJERPH</title>
+		<idno type="ISSNe">1660-4601</idno>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">14</biblScope>
+			<biblScope unit="page">4979</biblScope>
+			<date type="published" when="2020-07-10">2020</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,70.80,549.49,449.14,8.75;13,70.80,562.69,229.78,8.75" xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Investigating Climate Change by Digital Analysis of Blue Ice Extent on Satellite Images of Antarctica</title>
+		<author>
+			<persName><forename type="first">Olav</forename><surname>Orheim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Baerbel</forename><surname>Lucchitta</surname></persName>
+		</author>
+		<idno type="DOI">10.1017/s0260305500008600</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Annals of Glaciology</title>
+		<title level="j" type="abbrev">A. Glaciology.</title>
+		<idno type="ISSN">0260-3055</idno>
+		<idno type="ISSNe">1727-5644</idno>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page" from="211" to="215" />
+			<date type="published" when="1990">1990</date>
+			<publisher>International Glaciological Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,70.80,589.09,446.40,8.75;13,70.80,602.29,304.93,8.75" xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Asymmetric neighborhood functions accelerate ordering process of self-organizing maps</title>
+		<author>
+			<persName><forename type="first">Kaiichiro</forename><surname>Ota</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Takaaki</forename><surname>Aoki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Koji</forename><surname>Kurata</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Toshio</forename><surname>Aoyagi</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/physreve.83.021903</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Physical Review E</title>
+		<title level="j" type="abbrev">Phys. Rev. E</title>
+		<idno type="ISSN">1539-3755</idno>
+		<idno type="ISSNe">1550-2376</idno>
+		<imprint>
+			<biblScope unit="volume">83</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">21903</biblScope>
+			<date type="published" when="2011-02-04">2011</date>
+			<publisher>American Physical Society (APS)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,70.80,628.81,452.29,8.75;13,70.80,642.01,158.70,8.75" xml:id="b38">
+	<analytic>
+		<title level="a" type="main">The scientific challenge of understanding and estimating climate change</title>
+		<author>
+			<persName><forename type="first">Tim</forename><surname>Palmer</surname></persName>
+			<idno type="ORCID">0000-0002-7121-2196</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Bjorn</forename><surname>Stevens</surname></persName>
+			<idno type="ORCID">0000-0003-3795-0475</idno>
+		</author>
+		<idno type="DOI">10.1073/pnas.1906691116</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the National Academy of Sciences</title>
+		<title level="j" type="abbrev">Proc. Natl. Acad. Sci. U.S.A.</title>
+		<idno type="ISSN">0027-8424</idno>
+		<idno type="ISSNe">1091-6490</idno>
+		<imprint>
+			<biblScope unit="volume">116</biblScope>
+			<biblScope unit="issue">49</biblScope>
+			<biblScope unit="page" from="24390" to="24395" />
+			<date type="published" when="2019-12-02">2019</date>
+			<publisher>Proceedings of the National Academy of Sciences</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,70.80,668.41,426.37,8.75;13,70.80,681.73,245.14,8.75" xml:id="b39">
+	<analytic>
+		<title level="a" type="main">The assessment list for trustworthy artificial intelligence: A review and recommendations</title>
+		<author>
+			<persName><forename type="first">Charles</forename><surname>Radclyffe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mafalda</forename><surname>Ribeiro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><forename type="middle">H</forename><surname>Wortham</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/frai.2023.1020592</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Artificial Intelligence</title>
+		<title level="j" type="abbrev">Front. Artif. Intell.</title>
+		<idno type="ISSNe">2624-8212</idno>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page">1020592</biblScope>
+			<date type="published" when="2023-03-09">2023</date>
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,70.80,708.13,385.01,8.75" xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Self-organizing maps for internal representations</title>
+		<author>
+			<persName coords=""><forename type="first">Helge</forename><surname>Ritter</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/bf00877520</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Psychological Research</title>
+		<title level="j" type="abbrev">Psychol. Res</title>
+		<idno type="ISSN">0340-0727</idno>
+		<idno type="ISSNe">1430-2772</idno>
+		<imprint>
+			<biblScope unit="volume">52</biblScope>
+			<biblScope unit="issue">2-3</biblScope>
+			<biblScope unit="page" from="128" to="136" />
+			<date type="published" when="1990">1990</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,70.80,734.53,448.97,8.75;13,70.80,747.85,136.13,8.75" xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Making decisions: Bias in artificial intelligence and data-driven diagnostic tools</title>
+		<author>
+			<persName coords=""><forename type="first">James</forename><surname>Saint</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Aquino</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Aust J Gen Pract</title>
+		<imprint>
+			<biblScope unit="volume">52</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="439" to="442" />
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,70.80,73.33,411.84,8.75;14,70.80,86.65,230.35,8.75" xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Climate change research and the search for solutions: rethinking interdisciplinarity</title>
+		<author>
+			<persName coords=""><forename type="first">Elf</forename><forename type="middle">Lisa F</forename><surname>Schipper</surname></persName>
+			<idno type="ORCID">0000-0001-6228-9178</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Navroz</forename><forename type="middle">K</forename><surname>Dubash</surname></persName>
+			<idno type="ORCID">0000-0003-3758-8971</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yacob</forename><surname>Mulugetta</surname></persName>
+			<idno type="ORCID">0000-0003-3191-8896</idno>
+		</author>
+		<idno type="DOI">10.1007/s10584-021-03237-3</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Climatic Change</title>
+		<title level="j" type="abbrev">Climatic Change</title>
+		<idno type="ISSN">0165-0009</idno>
+		<idno type="ISSNe">1573-1480</idno>
+		<imprint>
+			<biblScope unit="volume">168</biblScope>
+			<biblScope unit="issue">3-4</biblScope>
+			<biblScope unit="page">18</biblScope>
+			<date type="published" when="2021-10">2021</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,70.80,113.05,425.97,8.75;14,70.80,126.25,97.25,8.75" xml:id="b43">
+	<analytic>
+		<title level="a" type="main">NIH Image to ImageJ: 25 years of image analysis</title>
+		<author>
+			<persName><forename type="first">Caroline</forename><forename type="middle">A</forename><surname>Schneider</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wayne</forename><forename type="middle">S</forename><surname>Rasband</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kevin</forename><forename type="middle">W</forename><surname>Eliceiri</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/nmeth.2089</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Methods</title>
+		<title level="j" type="abbrev">Nat Methods</title>
+		<idno type="ISSN">1548-7091</idno>
+		<idno type="ISSNe">1548-7105</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="671" to="675" />
+			<date type="published" when="2012-06-28">2012</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,70.80,152.77,453.48,8.75;14,70.80,165.97,421.39,8.75" xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Big Earth data: disruptive changes in Earth observation data management and analysis?</title>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Sudmanns</surname></persName>
+			<idno type="ORCID">0000-0002-0473-1260</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Dirk</forename><surname>Tiede</surname></persName>
+			<idno type="ORCID">0000-0002-5473-3344</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Stefan</forename><surname>Lang</surname></persName>
+			<idno type="ORCID">0000-0003-0619-0098</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Helena</forename><surname>Bergstedt</surname></persName>
+			<idno type="ORCID">0000-0003-4044-4792</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Georg</forename><surname>Trost</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hannah</forename><surname>Augustin</surname></persName>
+			<idno type="ORCID">0000-0002-3334-5350</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Andrea</forename><surname>Baraldi</surname></persName>
+			<idno type="ORCID">0000-0001-5196-9944</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Blaschke</surname></persName>
+			<idno type="ORCID">0000-0002-1860-8458</idno>
+		</author>
+		<idno type="DOI">10.1080/17538947.2019.1585976</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Digital Earth</title>
+		<title level="j" type="abbrev">International Journal of Digital Earth</title>
+		<idno type="ISSN">1753-8947</idno>
+		<idno type="ISSNe">1753-8955</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="832" to="850" />
+			<date type="published" when="2019-03-14">2019</date>
+			<publisher>Informa UK Limited</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,70.80,192.37,442.88,8.75;14,70.80,205.57,202.69,8.75" xml:id="b45">
+	<analytic>
+		<title level="a" type="main">The impact of inconsistent human annotations on AI driven clinical decision making</title>
+		<author>
+			<persName><forename type="first">Aneeta</forename><surname>Sylolypavan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Derek</forename><surname>Sleeman</surname></persName>
+			<idno type="ORCID">0000-0001-7609-4371</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Honghan</forename><surname>Wu</surname></persName>
+			<idno type="ORCID">0000-0002-0213-5668</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Malcolm</forename><surname>Sim</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41746-023-00773-3</idno>
+	</analytic>
+	<monogr>
+		<title level="j">npj Digital Medicine</title>
+		<title level="j" type="abbrev">npj Digit. Med.</title>
+		<idno type="ISSNe">2398-6352</idno>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">26</biblScope>
+			<date type="published" when="2023-02-21">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,70.80,232.09,431.68,8.75;14,70.80,245.29,145.69,8.75" xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Interpretable Artificial Intelligence through Locality Guided Neural Networks</title>
+		<author>
+			<persName><forename type="first">Randy</forename><surname>Tan</surname></persName>
+			<idno type="ORCID">0000-0003-3078-0805</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Lei</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Naimul</forename><surname>Khan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ling</forename><surname>Guan</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.neunet.2022.08.009</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neural Networks</title>
+		<title level="j" type="abbrev">Neural Networks</title>
+		<idno type="ISSN">0893-6080</idno>
+		<imprint>
+			<biblScope unit="volume">155</biblScope>
+			<biblScope unit="page" from="58" to="73" />
+			<date type="published" when="2022-11">2022</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,70.80,271.69,366.89,8.75;14,70.80,285.01,213.44,8.75" xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Enhanced Hand Gesture Recognition System for Vlc Media Player Control Via Two-Stream Transfer Learning</title>
+		<author>
+			<persName><forename type="first">Anjali</forename><surname>Patil</surname></persName>
+		</author>
+		<idno type="DOI">10.2139/ssrn.4784762</idno>
+		<idno>16/01/2024</idno>
+		<ptr target="https://www.videolan.org/vlc/download-sources.html" />
+	</analytic>
+	<monogr>
+		<title level="m">The VLC media player source code</title>
+				<imprint>
+			<publisher>Elsevier BV</publisher>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,70.80,311.41,446.46,8.75;14,70.80,324.61,206.05,8.75;14,70.80,351.13,443.80,8.75;14,70.80,364.33,336.31,8.75;14,70.80,390.73,432.09,8.75;14,70.80,403.93,393.72,8.75;14,70.80,430.45,445.43,8.75;14,70.80,443.65,234.44,8.75;14,305.28,441.39,4.32,5.69;14,311.99,443.65,207.30,8.75;14,70.80,456.85,177.09,8.75" xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Vision-inspired automatic detection of water-level changes in satellite images: the example of Lake Mead</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Thévenaz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">U</forename><forename type="middle">E</forename><surname>Ruttimann</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">A</forename><surname>Unser</surname></persName>
+		</author>
+		<idno>16/01/2024</idno>
+		<ptr target="https://www.usbr.gov/lc/region/g4000/hourly/mead-elv.html" />
+	</analytic>
+	<monogr>
+		<title level="m">st European Conference on Visual Perception</title>
+				<editor>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Wandeto</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">B</forename><surname>Dresp-Langley</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">H</forename><forename type="middle">K O</forename><surname>Nyongesa</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Trieste Italy</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="1998">1998. 2023. 21/01/2024. 2023. 2018</date>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page">47</biblScope>
+		</imprint>
+		<respStmt>
+			<orgName>University of Nevada Center for Gaming Research Annual Statistics</orgName>
+		</respStmt>
+	</monogr>
+	<note>IEEE Transactions on Image Processing. Perception, 47, ECVP Abstracts</note>
+</biblStruct>
+
+<biblStruct coords="14,70.80,483.37,451.01,8.75;14,70.80,496.57,444.34,8.75;14,70.80,509.77,175.41,8.75" xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Ultrafast automatic classification of SEM image sets showing CD4 cells with varying extent of HIV virion infection</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Wandeto</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Dresp -Langley</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">7ièmes Journées de la Fédération de Médecine Translationnelle de Strasbourg</title>
+				<meeting><address><addrLine>Strasbourg, France</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2019-05-25">2019a. May 25-26</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,70.80,536.17,453.47,8.75;14,70.80,549.49,294.61,8.75;14,70.80,562.69,178.60,8.75" xml:id="b50">
+	<analytic>
+		<title level="a" type="main">SOM-QE ANALYSIS: A biologically inspired technique to detect and track meaningful changes within image regions</title>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">Mwangi</forename><surname>Wandeto</surname></persName>
+			<idno type="ORCID">0000-0002-7502-2517</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Birgitta</forename><surname>Dresp-Langley</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.simpa.2023.100568</idno>
+		<ptr target="https://doi.org/10.1016/j.simpa.2023.100568" />
+	</analytic>
+	<monogr>
+		<title level="j">Software Impacts</title>
+		<title level="j" type="abbrev">Software Impacts</title>
+		<idno type="ISSN">2665-9638</idno>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="page">100568</biblScope>
+			<date type="published" when="2023-09">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,70.80,589.09,442.03,8.75;14,70.80,602.29,452.62,8.75;14,70.80,615.61,205.44,8.75" xml:id="b51">
+	<analytic>
+		<title level="a" type="main">The quantization error in a Self-Organizing Map as a contrast and colour specific indicator of single-pixel change in large random patterns</title>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">M</forename><surname>Wandeto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Birgitta</forename><surname>Dresp-Langley</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.neunet.2019.09.017</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neural Networks</title>
+		<title level="j" type="abbrev">Neural Networks</title>
+		<idno type="ISSN">0893-6080</idno>
+		<imprint>
+			<biblScope unit="volume">120</biblScope>
+			<biblScope unit="page" from="116" to="128" />
+			<date type="published" when="2019-12">2019b</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,70.80,642.01,441.43,8.75;14,70.80,655.21,394.54,8.75" xml:id="b52">
+	<analytic>
+		<title level="a" type="main">The quantization error in a Self-Organizing Map as a contrast and colour specific indicator of single-pixel change in large random patterns</title>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">M</forename><surname>Wandeto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Birgitta</forename><surname>Dresp-Langley</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.neunet.2019.08.014</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neural Networks</title>
+		<title level="j" type="abbrev">Neural Networks</title>
+		<idno type="ISSN">0893-6080</idno>
+		<imprint>
+			<biblScope unit="volume">119</biblScope>
+			<biblScope unit="page" from="273" to="285" />
+			<date type="published" when="2019-11">2019c</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,70.80,681.73,450.99,8.75;14,70.80,694.93,358.68,8.75" xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Detection of small changes in medical and random-dot images comparing self-organizing map performance to human detection</title>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">Mwangi</forename><surname>Wandeto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Henry</forename><surname>Nyongesa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yves</forename><surname>Rémond</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Birgitta</forename><surname>Dresp-Langley</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.imu.2017.03.001</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Informatics in Medicine Unlocked</title>
+		<title level="j" type="abbrev">Informatics in Medicine Unlocked</title>
+		<idno type="ISSN">2352-9148</idno>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page" from="39" to="45" />
+			<date type="published" when="2017">2017</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,70.80,721.33,423.98,8.75;14,70.80,734.53,438.81,8.75;14,70.80,747.85,79.34,8.75" xml:id="b54">
+	<analytic>
+		<title level="a" type="main">Detection of small changes in medical and random-dot images comparing self-organizing map performance to human detection</title>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">Mwangi</forename><surname>Wandeto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Henry</forename><surname>Nyongesa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yves</forename><surname>Rémond</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Birgitta</forename><surname>Dresp-Langley</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.imu.2017.03.001</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Informatics in Medicine Unlocked</title>
+		<title level="j" type="abbrev">Informatics in Medicine Unlocked</title>
+		<idno type="ISSN">2352-9148</idno>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page" from="39" to="45" />
+			<date type="published" when="2017">2017</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,70.80,73.33,427.07,8.75;15,70.80,86.65,327.77,8.75" xml:id="b55">
+	<analytic>
+		<title level="a" type="main">Performance Evaluation of Machine Learning Algorithms for Urban Pattern Recognition from Multi-spectral Satellite Images</title>
+		<author>
+			<persName><forename type="first">Marc</forename><surname>Wieland</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Massimiliano</forename><surname>Pittore</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/rs6042912</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Remote Sensing</title>
+		<title level="j" type="abbrev">Remote Sensing</title>
+		<idno type="ISSNe">2072-4292</idno>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="2912" to="2939" />
+			<date type="published" when="2014-03-31">2014</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,70.80,113.05,434.60,8.75;15,70.80,126.25,78.10,8.75" xml:id="b56">
+	<analytic>
+		<title level="a" type="main">Winner-take-all neural networks using the highest threshold</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">F</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">M</forename><surname>Chen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans Neural Netw</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="194" to="199" />
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,70.80,150.85,389.70,8.75" xml:id="b57">
+	<analytic>
+		<title level="a" type="main">Dynamics and Formation of Self-Organizing Maps</title>
+		<author>
+			<persName coords=""><forename type="first">Jun</forename><surname>Zhang</surname></persName>
+		</author>
+		<idno type="DOI">10.1162/neco.1991.3.1.54</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neural Computation</title>
+		<title level="j" type="abbrev">Neural Computation</title>
+		<idno type="ISSN">0899-7667</idno>
+		<idno type="ISSNe">1530-888X</idno>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="54" to="66" />
+			<date type="published" when="1991-02">1991</date>
+			<publisher>MIT Press - Journals</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

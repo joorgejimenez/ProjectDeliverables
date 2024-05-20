@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Analysis of Near-Field Effects, Spatial Non-Stationary Characteristics Based on 11-15 GHz Channel Measurement in Indoor Scenario</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2024-04-19">19 Apr 2024</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,137.76,150.99,115.30,9.80"><roleName>Pan Tang,</roleName><forename type="first">Haiyang</forename><surname>Miao</surname></persName>
+							<email>hymiao@bupt.edu.cn</email>
+							<affiliation key="aff0">
+								<orgName type="department">State Key Lab of Networking and Switching Technology</orgName>
+								<orgName type="institution">Beijing University of Posts and Telecommunications</orgName>
+								<address>
+									<settlement>Beijing</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,256.68,150.99,56.06,9.80"><forename type="first">Weirang</forename><surname>Zuo</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">State Key Lab of Networking and Switching Technology</orgName>
+								<orgName type="institution">Beijing University of Posts and Telecommunications</orgName>
+								<address>
+									<settlement>Beijing</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,321.60,150.99,29.98,9.80"><forename type="first">Qi</forename><surname>Wei</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">State Key Lab of Networking and Switching Technology</orgName>
+								<orgName type="institution">Beijing University of Posts and Telecommunications</orgName>
+								<address>
+									<settlement>Beijing</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,360.36,150.99,36.51,9.80"><forename type="first">Lei</forename><surname>Tian</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">State Key Lab of Networking and Switching Technology</orgName>
+								<orgName type="institution">Beijing University of Posts and Telecommunications</orgName>
+								<address>
+									<settlement>Beijing</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,405.12,150.99,65.48,9.80"><forename type="first">Jianhua</forename><surname>Zhang</surname></persName>
+							<email>jhzhang@bupt.edu.cn</email>
+							<affiliation key="aff0">
+								<orgName type="department">State Key Lab of Networking and Switching Technology</orgName>
+								<orgName type="institution">Beijing University of Posts and Telecommunications</orgName>
+								<address>
+									<settlement>Beijing</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Analysis of Near-Field Effects, Spatial Non-Stationary Characteristics Based on 11-15 GHz Channel Measurement in Indoor Scenario</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2024-04-19">19 Apr 2024</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">EAD35A359D60E029202E4638E7FAC107</idno>
+					<idno type="arXiv">arXiv:2405.09555v1[eess.SP]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2024-05-19T14:16+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Near-field</term>
+					<term>new mid-band</term>
+					<term>spherical-wave model</term>
+					<term>spatial non-stationary</term>
+					<term>channel measurements</term>
+					<term>3GPP</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>In the sixth-generation (6G), with the further expansion of array element number and frequency bands, the wireless communications are expected to operate in the near-field region. The near-field radio communications (NFRC) will become crucial in 6G communication systems. The new mid-band (6-24 GHz) is the 6G potential candidate spectrum. In this paper, we will investigate the channel measurements and characteristics for the emerging NFRC. First, the near-field spherical-wave signal model is derived in detail, and the stationary interval (SI) division method is discussed based on the channel statistical properties. Then, the influence of line-of-sight (LOS) and obstructed-LOS (OLOS) environments on the near-field effects and spatial nonstationary (SnS) characteristic are explored based on the nearfield channel measurements at 11-15 GHz band. We hope that this work will give some reference to the NFRC research.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>I. INTRODUCTION</head><p>At present, the researches on sixth-generation (6G) has been carried out on a global scale <ref type="bibr" coords="1,210.24,458.27,7.55,8.91" target="#b0">[1]</ref><ref type="bibr" coords="1,221.57,458.27,7.55,8.91" target="#b1">[2]</ref>. In June 2023, the 44th meeting of International Telecommunication Union-Radiocommunication Sector (ITU-R) WP5D described the 6G overall objectives and trends <ref type="bibr" coords="1,166.80,494.03,10.69,8.91" target="#b2">[3]</ref>. For fulfilling these goals and trends, tremendous research efforts are being made to develop new wireless technologies to meet the key performance indicators of 6G, which are superior to those of fifth-generation (5G). For instance, thanks to the enormous spatial multiplexing and beamforming gain, the extreme multiple-input-multiple-output (E-MIMO) is expected to accomplish a 10-fold increase in the spectral efficiency for 6G <ref type="bibr" coords="1,155.52,577.79,10.69,8.91" target="#b0">[1]</ref>. Meanwhile, the unique channel characteristics and models need to be explored. In December 2023, the 3GPP Rel-19 has determined the need to study the near-field channel for 7-24 GHz.</p><p>At present, some research has been carried out to explore the channel for large scale antenna array. In <ref type="bibr" coords="1,208.92,638.03,10.69,8.91" target="#b3">[4]</ref>, the received power and average power delay distribution (APDP) were studied in 2.6 GHz band, and the non-stationarity was analyzed in the spatial domain. In <ref type="bibr" coords="1,140.28,673.79,10.69,8.91" target="#b4">[5]</ref>, two array configurations (including virtual ULA and UCA) were used to conduct channel measurement in an outdoor stadium scenario in the 1.4725 GHz band, and the angular power spectrum along the virtual linear array was analyzed. In <ref type="bibr" coords="1,384.60,243.47,10.69,8.91" target="#b5">[6]</ref>, to gain further insight into the massive MIMO channel, the channel information was extracted from measurement data. In <ref type="bibr" coords="1,402.72,267.35,10.69,8.91" target="#b6">[7]</ref>, the delay spread characteristic of a massive MIMO system was analyzed at 3.5 GHz in outdoorto-indoor (O2I) scenario. In <ref type="bibr" coords="1,436.92,291.23,10.69,8.91" target="#b7">[8]</ref>, the virtual antenna UCA at Tx and the dual-polarized 64-port uniform circular patch array at Rx were used for channel measurement in the urban scenario in 2.53 GHz band. In <ref type="bibr" coords="1,435.24,327.11,10.69,8.91" target="#b8">[9]</ref>, the massive MIMO channel measurements were studied in terahertz band. In <ref type="bibr" coords="1,527.04,339.11,15.43,8.91" target="#b9">[10]</ref>, we have proposed a channel modeling method based on the capture and observation of multipath propagation mechanisms at mmWave band. In <ref type="bibr" coords="1,406.20,374.99,15.43,8.91" target="#b10">[11]</ref>, an indoor massive virtual array channel measurement was presented from 26 to 30 GHz. In <ref type="bibr" coords="1,312.00,398.87,15.43,8.91" target="#b11">[12]</ref>, the evolution of cluster number with virtual array was given in the 3.5 GHz band under line-of-sight (LOS) and nonline-of-sight (NLOS) conditions respectively, which showed the cluster appearance and disappearance.</p><p>Most channel measurements were carried out at 1.4725 GHz, 2.53 GHz, 2.6 GHz, 3.5 GHz, and high-bands. Currently, the new mid-band (6-24 GHz) has attracted extensive attention from academia and industry, becoming the potential band for 6G <ref type="bibr" coords="1,329.52,494.15,15.43,8.91" target="#b12">[13]</ref>. Some companies and researchers expressed their considerations for 6G spectrum. Ericsson thinks the 7-15 GHz range can be exploited for 6G by deploying advanced sharing mechanisms. In <ref type="bibr" coords="1,382.56,530.03,15.43,8.91" target="#b13">[14]</ref>, the system performances at the new mid-band were discussed by comparing with sub-6 GHz and mmWave. Notably, in November 2023, WRC-23 proposed to identify the mid-band for mobile in every ITU Region <ref type="bibr" coords="1,538.68,565.91,15.43,8.91" target="#b14">[15]</ref>.</p><p>In this paper, the NFRC research work is mainly aimed at the theoretical derivation, measurement and characterization for the near-field channel. The main contributions and novelties of this paper are summarized as follows:</p><p>• The near-field spherical-wave signal model is analyzed and discussed theoretically. The concept of multiplanar wave (MW) model is proposed based on the division of stationary interval (SI). The new criterion is introduced to discuss the partition method of SI with the adaptive division method.</p><p>• Based on the near-field channel measurements in the new mid-band, the differences of channel characteristics and SI in the different environments are explored for the near-field effect in the LOS and obstructed-LOS (OLOS) environments. Especially, the spatial non-stationarity on antenna array are validated by investigating the temporalspatial channel characteristics including power, phase, delay spread, etc. The rest of this paper is organized as follows. In Section II, the near-field signal model is deduced theoretically, and the division methods of SI are analyzed. In Section III, the verification of near-field channel characteristics are explored under LOS/OLOS environments at the new mid-band. Finally, we conclude this paper in Section IV.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>II. ANALYSIS OF SPHERICAL-WAVE MODEL AND SPATIAL NON-STATIONARY FOR THE NFRC</head><p>With the increase of MIMO scale, near-field effects and SnS characteristics are more likely to appear. The large physical size of the array will lead to the different large/small scale fading characteristics of different region on the arrays. The SnS characteristics refer to the different channel environments seen, so the inevitable phenomenon is the birth-death process of the ray/cluster. It can be found that the SnS includes the channel characteristics change caused by occlusion, and the channel characteristics will also change greatly along the elements under the LOS condition in near-field region. However, the large/small scale fading characteristics of all elements are the same within the stationary interval (SI), which can be assumed that the far-field condition is approximately satisfied. In the near-field region, there is an important issue: How to characterize the spherical wave signal model in nearfield region? </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A. Spherical-Wave Model</head><p>For channel modeling, compared with distance estimation, angle estimation has more high-precision SAGE algorithms <ref type="bibr" coords="2,48.96,649.91,10.69,8.91" target="#b5">[6]</ref>. Therefore, we consider introducing the angle to model the spherical wave signal. The BS on the base station side is a large-scale array in Fig. <ref type="figure" coords="2,177.24,673.79,3.77,8.91" target="#fig_0">1</ref>, and we take the first hop cluster or UE on the downlink as an example. In the SI, the signal propagates in the form of planar wave, so the multipath information (including angle, power, etc.) can be obtained based on estimation in the same SI. The spherical-wave model needs to be established between different SIs, thus reducing the influence of the complexity brought by spherical wave.</p><p>The angle of path is θ 1 and the distance of path is r 1 between UE and SI1 subarray as a reference subarray. The angle of path is θ n and the distance of path is r n between UE and SIn subarray, and δ n is the wave path difference due to spherical wave. In Fig. <ref type="figure" coords="2,409.08,135.83,3.77,8.91" target="#fig_0">1</ref>, the r 1 can be defined as</p><formula xml:id="formula_0" coords="2,321.72,161.13,241.40,34.00">r 1 = (n − 1)d sin(θ n − θ 1 ) sin(π − θ n ) = (n − 1)d sin(θ n − θ 1 ) sin(θ n ).<label>(1)</label></formula><p>Also, the r n can be defined as</p><formula xml:id="formula_1" coords="2,381.24,228.45,181.88,23.52">r n = (n − 1)d sin(θ n − θ 1 ) sin(θ 1 ).<label>(2)</label></formula><p>Then, the path difference δ n can be expressed as</p><formula xml:id="formula_2" coords="2,327.36,284.01,235.76,23.52">δ n = r n − r 1 = (n − 1)d sin(θ n − θ 1 ) (sin(θ 1 ) − sin(θ n )).<label>(3)</label></formula><p>Therefore, the expression of the phase of the near-field is derived as</p><formula xml:id="formula_3" coords="2,341.76,351.33,221.36,23.52">ϕ n = 2πδ n λ = 2π λ (n − 1)d sin(θ 1 ) − sin(θ n ) sin(θ n − θ 1 ) .<label>(4)</label></formula><p>In the far-field, the signal propagates in the form of the planar wave, and the θ n of any element reaching the array surface is equal. In the above phase formula, the phase result of the far field can be obtained in the limit case, that is,</p><formula xml:id="formula_4" coords="2,313.20,416.61,249.81,31.12">θ n = θ 1 . 2π λ (n − 1)</formula><p>d is a parameter related to the number of elements and the spacing. The following is the limit value derivation of the angular domain, take the derivative of θ n as</p><formula xml:id="formula_5" coords="2,313.08,482.85,193.23,23.52">lim θn=θ1 sin(θ 1 ) − sin(θ n ) sin(θ n − θ 1 ) = lim θn=θ1 −cos(θ n ) cos(θ n − θ 1 )</formula><p>= −cos(θ 1 ).</p><p>(5)</p><p>Thus, the phase absolute value of the far-field can be expressed as</p><formula xml:id="formula_6" coords="2,383.40,562.53,175.81,23.20">ϕ n = 2πd(n − 1)cos(θ 1 ) λ . (<label>6</label></formula><formula xml:id="formula_7" coords="2,559.21,568.91,3.91,8.91">)</formula><p>It can be seen from the above model proof that there is a transformation relationship between near and far fields. The far field is a limiting case of the near field, or a special case, which is solved by the limit value.</p><p>Then the accuracy of the model is proved in a Wireless Insite simulation scenario where the originating 256-element array antenna, as shown in Fig. <ref type="figure" coords="2,439.44,661.91,3.74,8.91" target="#fig_1">2</ref> two groups of numbers, it can be observed that the correlation between the two groups of results is very high, indicating that the accuracy of theoretical model is ideal.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B. Spatial Non-Stationary</head><p>In this paper, the subarray of the antenna array is defined as the SI, where the large/small scale fading characteristics are stationary. At present, the division method of SI is usually uniform division based on the experience, but does not consider environmental factors. In the actual environment, the channel is dynamic due to the randomness of the scattering environment, that is, the channel matrix presents a nonlinear structure, and the SIs of antenna array are more likely to exhibit irregularity. Therefore, this paper proposes two potential adaptive division methods.</p><p>Based on channel correlation: Similarity measurement is a key task in the process of stationary interval division of array dimension. Based on the distance criterion, the correlation matrix distance is introduced to measure, whose measurement quality directly affects the accuracy of modeling. Correlation matrix distance measures the difference between two correlation matrices, which can be understood as the orthogonality between matrices. The channel correlation matrix is calculated, and the correlation between different sub-channels is determined by calculating Pearson correlation coefficient. Using the channel correlation matrix, the correlation matrix distance D is introduced to measure the similarity between two subintervals.</p><formula xml:id="formula_8" coords="3,100.20,544.65,199.88,23.20">D(R 1 , R 2 ) = 1 − tr(R 1 , R 2 ) R 1 F R 2 F ,<label>(7)</label></formula><p>where R 1 and R 2 represent the autocorrelation forms of subarray. tr is the trace of a matrix. • F is Frobenius norm (F-norm). The value of D approaching 1 indicates that the matrices are independent, that is, the difference is maximized.</p><p>Based on channel characteristic: Instead of phase variations as for Rayleigh distance, the uniform-power distance concerns the signal amplitude/power variations across array elements, where the power ratio between the weakest and strongest array element is no smaller than a certain threshold. We find that the angle on the array is constant in the far-field, which can better describe the difference between the nearfield and the far-field. In our work, we can extract the angle of paths from all receiving ends to all transmitting antenna array elements.</p><p>To analyze the fluctuation of channel characteristic parameters s ∈ [DS, AS, SF, K, Ω 1 , Ω 2 , τ, P ] on the array domain, some modeling methods can be used for the single parameter, such as the variance, range, coefficient of variation, etc. The slope k of the model curve that the parameters s on the array can be used for measurement.</p><formula xml:id="formula_9" coords="3,375.24,162.69,187.88,23.52">k lim ∆n→0 s(n + ∆n) − s(n) ∆n ,<label>(8)</label></formula><p>where DS, AS, SF, K and P are delay spread, angular spread, shadow fading, Ricean K-factor and power, respectively. n is the index of the array elements. Fig. <ref type="figure" coords="3,340.80,386.51,4.04,8.91" target="#fig_2">3</ref>(a) shows that the maximum power difference is only 0.12 dB across array elements, and the change of power is not obvious in the array domain. The main reason is that the power is a large-scale parameter. However, the largest difference is obvious for angle with 10 • . The LOS power on the array element follows the quadratic polynomial model. The LOS angle presents a linear change with the change of the array elements, indicating the occurrence of SnS phenomenon.</p><p>In <ref type="bibr" coords="3,335.28,482.39,15.43,8.91" target="#b15">[16]</ref>, we proposed a SnS simulation framework from the cluter visibility probability. Considering the characteristics distribution on the array, we continue the consideration of simulation framework evolution in this section, to generate nonstationarty for the base station array, the array is divided into subarrays, i.e., stationary intervals. Within the SI, the scatterer environment seen by all elements is the same. Therefore, it can be considered that the traditional far-field modeling method can be adopted in the stationary intervals. Modeling method based on planar wave under far-field hypothesis. On the one hand, it is obviously unreasonable to use plane wave modeling for the entire array. On the other hand, the spherical wave modeling is adopted for each array element, which increases the complexity of the channel model. As shown in Fig. <ref type="figure" coords="3,555.60,637.79,3.77,8.91" target="#fig_3">4</ref>, the antenna array is divided into three SIs, where the far-field hypothesis can be regarded as satisfied within the SIs. The channel characteristic model is modified between SIs based on near-field effect.</p><p>In Fig. <ref type="figure" coords="3,357.36,697.79,3.86,8.91" target="#fig_2">3</ref>(b), it can be found that the SnS phenomena includes the birth-death caused by occlusion, and the channel characteristics of multipaths will also change greatly along the elements in near-field region, which is the characteristic that is not depicted in the standard <ref type="bibr" coords="4,192.72,197.75,15.43,8.91" target="#b16">[17]</ref>. Therefore, the planar wave modeling can be used within the SI, while near-field effects can be considered between stationary intervals. The multiplanar model can be considered. In the 3GPP channel model <ref type="bibr" coords="4,76.56,245.63,15.43,8.91" target="#b16">[17]</ref>, the array antenna can be viewed as a point source, generating the same cluster angle under the assumption of farfield planar waves. The near-field antenna array is divided into SIs, and the same cluster angle is generated within the SI, while the angle varies between the SIs, which can be generated by establishing statistical angle models under different scenarios. To generate the non-stationarity over the array, it is necessary to chose different parameters of the ray/cluster at the transmitter for each sub-array.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>III. VERIFICATION OF NEAR-FIELD CHANNEL CHARACTERISTICS IN THE NEW MID-BAND</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A. Measurement Configuration and Environment</head><p>Fig. <ref type="figure" coords="4,79.08,402.59,4.98,8.91">5</ref> shows a laboratory room as the measurement scenario. Combined with the high precision automatic mechanical sliding platform, the vertical polarized omnidirectional antenna is translated to form a large-scale virtual array with the near-field region. The vector network analyzer (VNA)-based channel measurement system can be utilized to sound the propagation channel. The scenarios are divided into LOS and OLOS environments. In the OLOS environment, the antenna array is partially obscured by a baffle. The equipment required for measurement and corresponding parameter settings are given in Table <ref type="table" coords="4,110.76,522.23,2.93,8.91">I</ref>.  baffle has a significant effect. In the baffle range (starting with the 26th array element), the power can be seen to be significantly reduced in the blocked area. It can be observed that multi-path has a great influence on the main path, and the total power fluctuates slightly in LOS environment. However, in OLOS environment, occlusion still leads to the reduction of receiving power, and there are the significant SnS characteristics. 2) Delay Spread and Phase: The RMS delay spreads and phase on the array at new mid-band in the LOS and OLOS environment are given in Fig. <ref type="figure" coords="4,436.80,466.07,3.77,8.91" target="#fig_6">7</ref>. In the LOS environment, the fluctuation of delay spread is about 2 ns. The polynomial model can be used to generate the delay spread on the array, because the power changes in the array domain is quadratic. The delay spread can also be generated by using a first-order polynomial fitting model. In the OLOS environment, when part of the antenna array elements are completely blocked, the delay spread increases by about 5 ns, and the SnS phenomenon is significant. The results show that the SnS analysis is not only related to distance, but also the difference between LOS and NLOS scenarios is very obvious. In addition, by comparing Fig. <ref type="figure" coords="5,239.88,76.07,3.74,8.91" target="#fig_6">7</ref>(a), the delay spread also fluctuates slightly in the non-occluded part of the array (black ellipse), indicating that obstacles cause diffraction effects on this part of the channel, resulting in changes in channel state information. The results show that the influence of occlusions on SnS is very important for the study of nearfield spatial nonstationarity. In Fig. <ref type="figure" coords="5,199.20,147.83,3.86,8.91" target="#fig_6">7</ref>(b), the phase obtained by measurement is in good agreement with the spherical-wave signal model.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>C. Stationary Interval</head><p>To explore the influence of the environment on the SI on the array, Fig. <ref type="figure" coords="5,94.92,219.23,4.98,8.91" target="#fig_7">8</ref> represents the correlation on the different array elements in the LOS/OLOS environments.  Fig. <ref type="figure" coords="5,77.40,392.63,4.98,8.91" target="#fig_7">8</ref> shows that the channel correlation matrix in LOS and OLOS environments has the very significant difference. The results show that obstacles can significantly change the SnS characteristics on the array. In Fig. <ref type="figure" coords="5,199.32,428.51,3.74,8.91" target="#fig_7">8</ref>(a), it can be seen that the SI is getting smaller along the array. The main reason is that the distance between Rx and each element on the Tx array gradually increases, and it can be observed the azimuth angular dispersion of the departure angle becoming more pronounced. The results show that the angle has a great influence on the spatial non-stationarity in the near-field region. In Fig. <ref type="figure" coords="5,280.92,500.15,3.86,8.91" target="#fig_7">8</ref>(b), it can be observed that when obstructions are present, more significant SnS characteristics will be caused. Therefore, the occlusion is one of the main factors leading to spatial nonstationarity in near-field channel modeling. Not only different types of scenarios, but also LOS/NLOS environments should explore the different recommended values of SI based on statistical data analysis.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>IV. CONCLUSION</head><p>In this paper, the channel measurements and characterization have been investigated for NFRC. The near-field spherical-wave signal model is derived and proposed. The boundary division methods of spherical wave and planar wave are introduced based on the SI. Based on the new midband near-field channel measurements, the near-field channel characteristics in LOS and OLOS environments are discussed, including delay domain and spatial domain. Compared with LOS environment, the occlusion will reduce the received power in OLOS environment, and there are the significant SnS characteristics.</p><p>For future work, it is necessary to further characterize the near-field channel model for 3GPP, including large and small scale channel characteristic parameters.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="2,81.72,581.89,185.47,7.13"><head>Fig. 1 .</head><label>1</label><figDesc>Fig. 1. Near-field multipath channel propagation model.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="3,48.96,159.73,250.94,7.13;3,48.96,168.61,58.27,7.13"><head>Fig. 2 .</head><label>2</label><figDesc>Fig. 2. Phase verification. (a) Simulation scenario. (b) Simulation results and theoretical model.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="3,312.00,356.65,250.74,7.13;3,312.00,365.65,101.35,7.13;3,438.19,239.09,118.82,99.22"><head>Fig. 3 .</head><label>3</label><figDesc>Fig. 3. The near-field channel. (a) Power and AOD of LOS path. (b) Spherical wave effect and non-stationary.</figDesc><graphic coords="3,438.19,239.09,118.82,99.22" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="4,48.96,133.93,250.98,7.13;4,48.96,142.93,204.19,7.13;4,318.79,50.39,113.92,99.72"><head>Fig. 4 .</head><label>4</label><figDesc>Fig. 4. Division of the base station array into sub-arrays according to the stationarity interval. Wavefront: Planar, Spherical, Multiplanar.</figDesc><graphic coords="4,318.79,50.39,113.92,99.72" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4" coords="4,319.92,168.13,235.27,7.13;4,442.49,50.49,113.52,99.42"><head>2 . 5 Fig. 5 .</head><label>255</label><figDesc>Fig. 5. Near-field channel measurement scenario. (a) LOS. (b) OLOS.</figDesc><graphic coords="4,442.49,50.49,113.52,99.42" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5" coords="4,320.64,420.01,233.83,7.13;4,318.19,302.39,118.82,99.32"><head>Fig. 6 .</head><label>6</label><figDesc>Fig. 6. Power on the array at the new mid-band. (a) LOS. (b) OLOS.</figDesc><graphic coords="4,318.19,302.39,118.82,99.32" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6" coords="4,315.00,606.01,244.87,7.13"><head>Fig. 7 .</head><label>7</label><figDesc>Fig. 7. Channel characteristics. (a) Delay spread. (b) Phase of LOS path.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7" coords="5,48.96,369.85,251.11,7.13"><head>Fig. 8 .</head><label>8</label><figDesc>Fig. 8. The SI on the array based on channel correlation. (a) LOS. (b) OLOS.</figDesc></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>ACKNOWLEDGMENT This work was supported in part by National Natural Science Foundation of China (62201086, 62101069, 92167202), National Science Fund for Distinguished Young Scholars (61925102), and BUPT-CMCC Joint Innovation Center.</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="5,331.56,211.69,231.19,7.13;5,331.56,220.69,231.30,7.13;5,331.56,229.57,60.43,7.13" xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Channel measurement, modeling, and simulation for 6G: A survey and tutorial</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Tang</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2305.16616</idno>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="5,331.56,238.57,231.42,7.13;5,331.56,247.57,231.55,7.13;5,331.56,256.57,160.63,7.13" xml:id="b1">
+	<analytic>
+		<title level="a" type="main">A vision of 6G wireless systems: applications, trends, technologies, and open research problems</title>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Saad</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Bennis</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Chen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Network</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="134" to="142" />
+			<date type="published" when="2020-06">Jun. 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,331.56,265.45,231.46,7.13;5,331.56,274.45,231.18,7.13;5,331.56,283.45,202.75,7.13" xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Massive MIMO is a reality-What is next? Five promising research directions for antenna arrays</title>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Björnson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Sanguinetti</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Wymeersch</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Digital Signal Process</title>
+		<imprint>
+			<biblScope unit="volume">94</biblScope>
+			<biblScope unit="page" from="3" to="20" />
+			<date type="published" when="2019-11">Nov. 2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,331.56,292.33,231.15,7.13;5,331.56,301.33,231.31,7.13;5,331.56,310.33,146.35,7.13" xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Massive MIMO channels-Measurements and models</title>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Tufvesson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">O</forename><surname>Edfors</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2013 Asilomar Conference on Signals, Systems and Computers</title>
+				<imprint>
+			<date type="published" when="2013">2013</date>
+			<biblScope unit="page" from="280" to="284" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,331.56,319.33,231.49,7.13;5,331.56,328.21,231.22,7.13;5,331.56,337.21,175.03,7.13" xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Research on propagation characteristics of massive MIMO channel at 1.4725 GHz</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Tao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Liu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2017 IEEE 85th Vehicular Technology Conference (VTC Spring)</title>
+				<imprint>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="page" from="1" to="5" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,331.56,346.21,231.18,7.13;5,331.56,355.09,231.18,7.13;5,331.56,364.09,231.43,7.13;5,331.56,373.09,58.87,7.13" xml:id="b5">
+	<analytic>
+		<title level="a" type="main">3D MIMO for 5G NR: Several observations from 32 to massive 256 antennas based on channel measurement</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Communications Magazine</title>
+		<imprint>
+			<biblScope unit="volume">56</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="62" to="70" />
+			<date type="published" when="2018-03">Mar. 2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,331.56,382.09,231.38,7.13;5,331.56,390.97,231.55,7.13;5,331.56,399.97,231.43,7.13;5,331.56,408.97,61.87,7.13" xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Measurement-based delay spread analysis of wideband massive MIMO system at 3.5 GHz</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Q</forename><surname>Zheng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">IEEE International Conference on Computational Electromagnetics</title>
+				<imprint>
+			<date type="published" when="2017-04">Apr. 2017</date>
+			<biblScope unit="page" from="246" to="248" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,331.56,417.97,230.79,7.13;5,331.56,426.85,231.25,7.13;5,331.56,435.85,231.43,7.13;5,331.56,444.85,88.39,7.13" xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Cluster characterization of 3-D MIMO propagation channel in an urban macrocellular environment</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Sangodoyin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">V</forename><surname>Kristem</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">Umit</forename><surname>Bas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Wireless Communications</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="5076" to="5091" />
+			<date type="published" when="2018-08">Aug. 2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,331.56,453.73,231.39,7.13;5,331.56,462.73,231.55,7.13;5,331.56,471.73,214.27,7.13" xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Deterministic ray tracing: A promising approach to THz channel modeling in 6G deployment scenarios</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Tang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Communications Magazine</title>
+		<imprint>
+			<biblScope unit="volume">62</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="48" to="54" />
+			<date type="published" when="2024-02">Feb. 2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,331.56,480.73,231.26,7.13;5,331.56,489.61,231.55,7.13;5,331.56,498.61,231.37,7.13;5,331.56,507.61,49.99,7.13" xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Spatial non-stationary near-field channel modeling and validation for massive MIMO systems</title>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Yuan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Ji</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Antennas and Propagation</title>
+		<imprint>
+			<biblScope unit="volume">71</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="921" to="933" />
+			<date type="published" when="2023-01">Jan. 2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,331.56,516.49,231.30,7.13;5,331.56,525.49,231.34,7.13;5,331.56,534.49,139.39,7.13" xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Indoor mmWave channel characterization with large virtual antenna arrays</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Mudonhi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2020 14th European Conference on Antennas and Propagation (EuCAP)</title>
+				<imprint>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="page" from="1" to="5" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,331.56,543.49,231.22,7.13;5,331.56,552.37,231.39,7.13;5,331.56,561.37,177.43,7.13" xml:id="b11">
+	<analytic>
+		<title level="a" type="main">The spatial evolution of clusters in massive MIMO mobile measurement at 3.5 GHz</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Tian</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">IEEE 85th Vehicular Technology Conference</title>
+				<imprint>
+			<date type="published" when="2017-06">Jun. 2017</date>
+			<biblScope unit="page" from="1" to="6" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,331.56,570.37,231.18,7.13;5,331.56,579.25,231.06,7.13;5,331.56,588.25,165.07,7.13" xml:id="b12">
+	<analytic>
+		<title level="a" type="main">New mid-band for 6G: Several considerations from channel propagation characteristics perspective</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Miao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Tang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Communications Magazine</title>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note>accepted</note>
+</biblStruct>
+
+<biblStruct coords="5,331.56,597.25,231.49,7.13;5,331.56,606.25,231.38,7.13;5,331.56,615.13,231.39,7.13;5,331.56,624.13,195.67,7.13" xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Sub-6 GHz to mmWave for 5G-advanced and beyond: Channel measurements, characteristics and impact on system performance</title>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Miao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Tang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Journal on Selected Areas in Communications</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1945" to="1960" />
+			<date type="published" when="2023-06">Jun. 2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,331.56,633.13,231.26,7.13;5,331.56,642.13,230.77,7.13;5,331.56,651.01,74.95,7.13" xml:id="b14">
+	<monogr>
+		<ptr target="https://www.itu.int/dmspub/itu-r/opb/act/R-ACT-WRC.15-2023-PDF-E.pdf" />
+		<title level="m">World Radiocommunication Conference 2023 (WRC-23)</title>
+				<imprint>
+			<date type="published" when="2023-12">Dec. 2023</date>
+		</imprint>
+		<respStmt>
+			<orgName>ITU</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,331.56,660.01,231.15,7.13;5,331.56,669.01,230.86,7.13;5,331.56,677.89,231.19,7.13;5,331.56,686.89,69.79,7.13" xml:id="b15">
+	<analytic>
+		<title level="a" type="main">A 3GPP-like channel simulation framework considering near-field spatial non-stationary characteristics of massive MIMO</title>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Tian</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2023 IEEE Globecom Workshops(GCWkshps)</title>
+				<imprint>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="page" from="1493" to="1498" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,331.56,695.89,231.42,7.13;5,331.56,704.89,158.35,7.13" xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Study on channel model for frequencies from 0.5 to 100 GHz</title>
+		<idno>3GPP TR 38.901</idno>
+	</analytic>
+	<monogr>
+		<title level="j">3GPP</title>
+		<imprint>
+			<date type="published" when="2017-12">Dec. 2017</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">Technical Report</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

@@ -75,7 +75,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		</fileDesc>
 		<encodingDesc>
 			<appInfo>
-				<application version="0.7.2" ident="GROBID" when="2024-05-18T21:25+0000">
+				<application version="0.7.2" ident="GROBID" when="2024-05-19T13:44+0000">
 					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
 					<ref target="https://github.com/kermitt2/grobid"/>
 				</application>
@@ -190,23 +190,19 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 	<analytic>
 		<title level="a" type="main">The Real Dangers of Generative AI</title>
 		<author>
-			<persName><forename type="first">Danielle</forename><surname>Allen</surname></persName>
+			<persName coords=""><forename type="first">D</forename><surname>Allen</surname></persName>
 		</author>
 		<author>
-			<persName coords=""><forename type="first">E</forename><forename type="middle">Glen</forename><surname>Weyl</surname></persName>
+			<persName coords=""><forename type="first">E</forename><surname>Weyl</surname></persName>
 		</author>
-		<idno type="DOI">10.1353/jod.2024.a915355</idno>
 	</analytic>
 	<monogr>
 		<title level="j">Journal of Democracy</title>
-		<title level="j" type="abbrev">jod</title>
-		<idno type="ISSNe">1086-3214</idno>
 		<imprint>
 			<biblScope unit="volume">35</biblScope>
 			<biblScope unit="issue">1</biblScope>
 			<biblScope unit="page" from="147" to="162" />
-			<date type="published" when="2024-01">2024</date>
-			<publisher>Project MUSE</publisher>
+			<date type="published" when="2024">2024</date>
 		</imprint>
 	</monogr>
 </biblStruct>
@@ -215,48 +211,37 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 	<analytic>
 		<title level="a" type="main">Leveraging AI for democratic discourse: Chat interventions can improve online political conversations at scale</title>
 		<author>
-			<persName><forename type="first">Lisa</forename><forename type="middle">P</forename><surname>Argyle</surname></persName>
-			<idno type="ORCID">0000-0003-3109-2537</idno>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">P</forename><surname>Argyle</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Christopher</forename><forename type="middle">A</forename><surname>Bail</surname></persName>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">A</forename><surname>Bail</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Ethan</forename><forename type="middle">C</forename><surname>Busby</surname></persName>
-			<idno type="ORCID">0000-0002-8931-6348</idno>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">C</forename><surname>Busby</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Joshua</forename><forename type="middle">R</forename><surname>Gubler</surname></persName>
-			<idno type="ORCID">0000-0003-1635-8210</idno>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">R</forename><surname>Gubler</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Thomas</forename><surname>Howe</surname></persName>
+			<persName coords=""><forename type="first">T</forename><surname>Howe</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Christopher</forename><surname>Rytting</surname></persName>
-			<idno type="ORCID">0000-0002-7373-9741</idno>
+			<persName coords=""><forename type="first">C</forename><surname>Rytting</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Taylor</forename><surname>Sorensen</surname></persName>
-			<idno type="ORCID">0000-0002-3251-3527</idno>
+			<persName coords=""><forename type="first">T</forename><surname>Sorensen</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">David</forename><surname>Wingate</surname></persName>
-			<idno type="ORCID">0000-0003-1850-6926</idno>
+			<persName coords=""><forename type="first">D</forename><surname>Wingate</surname></persName>
 		</author>
-		<idno type="DOI">10.1073/pnas.2311627120</idno>
 	</analytic>
 	<monogr>
 		<title level="j">Proceedings of the National Academy of Sciences</title>
-		<title level="j" type="abbrev">Proc. Natl. Acad. Sci. U.S.A.</title>
-		<idno type="ISSN">0027-8424</idno>
-		<idno type="ISSNe">1091-6490</idno>
 		<imprint>
 			<biblScope unit="volume">120</biblScope>
 			<biblScope unit="issue">41</biblScope>
 			<biblScope unit="page">e2311627120</biblScope>
-			<date type="published" when="2023-10-03">2023a</date>
-			<publisher>Proceedings of the National Academy of Sciences</publisher>
+			<date type="published" when="2023">2023a</date>
 		</imprint>
 	</monogr>
 	<note>Publisher: Proceedings of the National Academy of Sciences</note>
@@ -266,38 +251,31 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 	<analytic>
 		<title level="a" type="main">Out of One, Many: Using Language Models to Simulate Human Samples</title>
 		<author>
-			<persName><forename type="first">Lisa</forename><forename type="middle">P</forename><surname>Argyle</surname></persName>
-			<idno type="ORCID">0000-0003-3109-2537</idno>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">P</forename><surname>Argyle</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Ethan</forename><forename type="middle">C</forename><surname>Busby</surname></persName>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">C</forename><surname>Busby</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Nancy</forename><surname>Fulda</surname></persName>
+			<persName coords=""><forename type="first">N</forename><surname>Fulda</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Joshua</forename><forename type="middle">R</forename><surname>Gubler</surname></persName>
-			<idno type="ORCID">0000-0003-1635-8210</idno>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">R</forename><surname>Gubler</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Christopher</forename><surname>Rytting</surname></persName>
+			<persName coords=""><forename type="first">C</forename><surname>Rytting</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">David</forename><surname>Wingate</surname></persName>
+			<persName coords=""><forename type="first">D</forename><surname>Wingate</surname></persName>
 		</author>
-		<idno type="DOI">10.1017/pan.2023.2</idno>
 	</analytic>
 	<monogr>
 		<title level="j">Political Analysis</title>
-		<title level="j" type="abbrev">Polit. Anal.</title>
-		<idno type="ISSN">1047-1987</idno>
-		<idno type="ISSNe">1476-4989</idno>
 		<imprint>
 			<biblScope unit="volume">31</biblScope>
 			<biblScope unit="issue">3</biblScope>
 			<biblScope unit="page" from="337" to="351" />
-			<date type="published" when="2023-02-21">2023b</date>
-			<publisher>Cambridge University Press (CUP)</publisher>
+			<date type="published" when="2023">2023b</date>
 		</imprint>
 	</monogr>
 </biblStruct>
@@ -347,87 +325,66 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 </biblStruct>
 
 <biblStruct coords="11,319.50,339.11,238.50,7.77;11,319.50,348.92,238.50,7.93;11,319.50,358.88,119.29,7.93" xml:id="b6">
-	<analytic>
-		<title level="a" type="main">A within-subject analysis of other-regarding preferences</title>
-		<author>
-			<persName><forename type="first">Mariana</forename><surname>Blanco</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Dirk</forename><surname>Engelmann</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Hans</forename><forename type="middle">Theo</forename><surname>Normann</surname></persName>
-		</author>
-		<idno type="DOI">10.1016/j.geb.2010.09.008</idno>
-	</analytic>
 	<monogr>
-		<title level="j">Games and Economic Behavior</title>
-		<title level="j" type="abbrev">Games and Economic Behavior</title>
-		<idno type="ISSN">0899-8256</idno>
+		<title level="m" type="main">A withinsubject analysis of other-regarding preferences</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Blanco</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Engelmann</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><forename type="middle">T</forename><surname>Normann</surname></persName>
+		</author>
 		<imprint>
+			<date type="published" when="2011">2011</date>
+			<publisher>Games and Economic Behavior</publisher>
 			<biblScope unit="volume">72</biblScope>
-			<biblScope unit="issue">2</biblScope>
 			<biblScope unit="page" from="321" to="338" />
-			<date type="published" when="2011-06">2011</date>
-			<publisher>Elsevier BV</publisher>
 		</imprint>
 	</monogr>
 </biblStruct>
 
 <biblStruct coords="11,319.50,372.14,238.50,7.77;11,319.50,382.11,238.50,7.77;11,319.50,392.07,105.08,7.77" xml:id="b7">
-	<analytic>
-		<title level="a" type="main">Autonomous chemical research with large language models</title>
-		<author>
-			<persName><forename type="first">Daniil</forename><forename type="middle">A</forename><surname>Boiko</surname></persName>
-			<idno type="ORCID">0000-0003-4140-4645</idno>
-		</author>
-		<author>
-			<persName><forename type="first">Robert</forename><surname>Macknight</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Ben</forename><surname>Kline</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Gabe</forename><surname>Gomes</surname></persName>
-			<idno type="ORCID">0000-0002-8235-5969</idno>
-		</author>
-		<idno type="DOI">10.1038/s41586-023-06792-0</idno>
-		<idno>ArXiv:2304.05332</idno>
-	</analytic>
 	<monogr>
-		<title level="j">Nature</title>
-		<title level="j" type="abbrev">Nature</title>
-		<idno type="ISSN">0028-0836</idno>
-		<idno type="ISSNe">1476-4687</idno>
+		<title level="m" type="main">Emergent autonomous scientific research capabilities of large language models</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">A</forename><surname>Boiko</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Macknight</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Gomes</surname></persName>
+		</author>
+		<idno>ArXiv:2304.05332</idno>
 		<imprint>
-			<biblScope unit="volume">624</biblScope>
-			<biblScope unit="issue">7992</biblScope>
-			<biblScope unit="page" from="570" to="578" />
-			<date type="published" when="2023-12-20">2023</date>
-			<publisher>Springer Science and Business Media LLC</publisher>
+			<date type="published" when="2023">2023</date>
 		</imprint>
 	</monogr>
 </biblStruct>
 
 <biblStruct coords="11,319.50,405.01,238.50,7.93;11,319.50,414.98,238.50,7.93;11,319.50,425.10,21.17,7.77;11,319.50,438.04,238.50,7.93;11,319.50,448.17,127.51,7.77" xml:id="b8">
-	<analytic>
-		<title level="a" type="main">Swarm Intelligence</title>
-		<author>
-			<persName><forename type="first">Eric</forename><surname>Bonabeau</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Marco</forename><surname>Dorigo</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Guy</forename><surname>Theraulaz</surname></persName>
-		</author>
-		<idno type="DOI">10.1093/oso/9780195131581.001.0001</idno>
-	</analytic>
 	<monogr>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Bonabeau</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Dorigo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Theraulaz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">J</forename><surname>Brams</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">C</forename><surname>Fishburn</surname></persName>
+		</author>
 		<title level="m">Swarm Intelligence: From Natural to Artificial Systems</title>
 				<meeting><address><addrLine>Boston</addrLine></address></meeting>
 		<imprint>
-			<publisher>Oxford University Press</publisher>
+			<publisher>Birkhäuser</publisher>
 			<date type="published" when="1983">1999. 1983</date>
 		</imprint>
 	</monogr>
@@ -547,18 +504,10 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 </biblStruct>
 
 <biblStruct coords="11,335.64,590.25,222.36,7.77;11,319.50,600.21,188.29,7.77" xml:id="b12">
-	<analytic>
-		<title level="a" type="main">Distributed Multiagent Inference</title>
-		<idno type="DOI">10.1017/cbo9780511546938.009</idno>
-		<idno>ArXiv:2305.14325</idno>
-	</analytic>
 	<monogr>
-		<title level="m">Probabilistic Reasoning in Multiagent Systems</title>
-				<imprint>
-			<publisher>Cambridge University Press</publisher>
-			<date type="published" when="2002-08-26" />
-			<biblScope unit="page" from="182" to="214" />
-		</imprint>
+		<title level="m" type="main">Improving Factuality and Reasoning in Language Models through Multiagent Debate</title>
+		<idno>ArXiv:2305.14325</idno>
+		<imprint/>
 	</monogr>
 </biblStruct>
 
@@ -628,33 +577,25 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 
 <biblStruct coords="11,319.50,676.24,238.50,7.77;11,319.50,686.04,238.50,7.93;11,319.50,696.16,33.62,7.77;12,54.00,58.13,238.50,7.77;12,54.00,68.09,238.50,7.77;12,54.00,78.05,238.50,7.77;12,54.00,88.01,85.69,7.77" xml:id="b14">
 	<analytic>
-		<title level="a" type="main">Properties of multiwinner voting rules</title>
+		<title level="a" type="main">From Pretraining Data to Language Models to Downstream Tasks: Tracking the Trails of Political Biases Leading to Unfair NLP Models</title>
 		<author>
-			<persName><forename type="first">Edith</forename><surname>Elkind</surname></persName>
+			<persName coords=""><forename type="first">E</forename><surname>Elkind</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Piotr</forename><surname>Faliszewski</surname></persName>
+			<persName coords=""><forename type="first">P</forename><surname>Faliszewski</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Piotr</forename><surname>Skowron</surname></persName>
+			<persName coords=""><forename type="first">P</forename><surname>Skowron</surname></persName>
 		</author>
-		<author>
-			<persName><forename type="first">Arkadii</forename><surname>Slinko</surname></persName>
-		</author>
-		<idno type="DOI">10.1007/s00355-017-1026-z</idno>
 		<idno>ArXiv:2305.08283</idno>
 	</analytic>
 	<monogr>
 		<title level="j">Social Choice and Welfare</title>
-		<title level="j" type="abbrev">Soc Choice Welf</title>
-		<idno type="ISSN">0176-1714</idno>
-		<idno type="ISSNe">1432-217X</idno>
 		<imprint>
 			<biblScope unit="volume">48</biblScope>
 			<biblScope unit="issue">3</biblScope>
 			<biblScope unit="page" from="599" to="632" />
-			<date type="published" when="2017-01-30">2017. 2023</date>
-			<publisher>Springer Science and Business Media LLC</publisher>
+			<date type="published" when="2017">2017. 2023</date>
 		</imprint>
 	</monogr>
 	<note>Properties of Multiwinner Voting Rules</note>
@@ -662,28 +603,24 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 
 <biblStruct coords="12,54.00,100.77,238.50,7.77;12,54.00,110.73,238.50,7.77;12,54.00,120.53,202.51,7.93" xml:id="b15">
 	<analytic>
-		<title level="a" type="main">A rational or a virtuous citizenry? – The asymmetric impact of biases in votes-seats translation on citizens&apos; satisfaction with democracy</title>
+		<title level="a" type="main">A rational or a virtuous citizenry? -The asymmetric impact of biases in votes-seats translation on citizens&apos; satisfaction with democracy</title>
 		<author>
-			<persName coords=""><forename type="first">Benjamin</forename><surname>Ferland</surname></persName>
+			<persName coords=""><forename type="first">B</forename><surname>Ferland</surname></persName>
 		</author>
-		<idno type="DOI">10.1016/j.electstud.2015.03.008</idno>
 	</analytic>
 	<monogr>
 		<title level="j">Electoral Studies</title>
-		<title level="j" type="abbrev">Electoral Studies</title>
-		<idno type="ISSN">0261-3794</idno>
 		<imprint>
 			<biblScope unit="volume">40</biblScope>
 			<biblScope unit="page" from="394" to="408" />
-			<date type="published" when="2015-12">2015</date>
-			<publisher>Elsevier BV</publisher>
+			<date type="published" when="2015">2015</date>
 		</imprint>
 	</monogr>
 </biblStruct>
 
 <biblStruct coords="12,54.00,133.45,238.50,7.77;12,54.00,143.25,238.50,7.93;12,54.00,153.21,99.04,7.73" xml:id="b16">
 	<analytic>
-		<title level="a" type="main">Preprint repository arXiv achieves milestone million uploads</title>
+		<title/>
 		<author>
 			<persName coords=""><forename type="first">S</forename><surname>Fish</surname></persName>
 		</author>
@@ -705,16 +642,12 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		<author>
 			<persName coords=""><forename type="first">M</forename><surname>Wüthrich</surname></persName>
 		</author>
-		<idno type="DOI">10.1063/pt.5.028530</idno>
 		<idno type="arXiv">arXiv:2309.01291</idno>
 	</analytic>
 	<monogr>
-		<title level="j">Physics Today</title>
-		<title level="j" type="abbrev">Phys. Today</title>
-		<idno type="ISSNe">1945-0699</idno>
+		<title level="j">Generative social choice</title>
 		<imprint>
 			<date type="published" when="2023">2023</date>
-			<publisher>AIP Publishing</publisher>
 		</imprint>
 	</monogr>
 	<note type="report_type">arXiv preprint</note>
@@ -722,23 +655,18 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 
 <biblStruct coords="12,54.00,166.13,238.50,7.77;12,54.00,175.93,238.50,7.93;12,54.00,185.89,80.63,7.93" xml:id="b17">
 	<analytic>
-		<title level="a" type="main">AI as Agency Without Intelligence: on ChatGPT, Large Language Models, and Other Generative Models</title>
+		<title level="a" type="main">AI as agency without intelligence: on ChatGPT, large language models, and other generative models</title>
 		<author>
-			<persName coords=""><forename type="first">Luciano</forename><surname>Floridi</surname></persName>
+			<persName coords=""><forename type="first">L</forename><surname>Floridi</surname></persName>
 		</author>
-		<idno type="DOI">10.1007/s13347-023-00621-y</idno>
 	</analytic>
 	<monogr>
 		<title level="j">Philosophy &amp; Technology</title>
-		<title level="j" type="abbrev">Philos. Technol.</title>
-		<idno type="ISSN">2210-5433</idno>
-		<idno type="ISSNe">2210-5441</idno>
 		<imprint>
 			<biblScope unit="volume">36</biblScope>
 			<biblScope unit="issue">1</biblScope>
 			<biblScope unit="page">15</biblScope>
-			<date type="published" when="2023-03">2023</date>
-			<publisher>Springer Science and Business Media LLC</publisher>
+			<date type="published" when="2023">2023</date>
 		</imprint>
 	</monogr>
 </biblStruct>
@@ -799,113 +727,77 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 </biblStruct>
 
 <biblStruct coords="12,70.14,274.13,222.36,7.77;12,54.00,284.09,85.69,7.77" xml:id="b20">
-	<analytic>
-		<title level="a" type="main">What do more intelligent brains look like?</title>
-		<author>
-			<persName><forename type="first">Ian</forename><forename type="middle">J</forename><surname>Deary</surname></persName>
-		</author>
-		<idno type="DOI">10.1093/actrade/9780198796206.003.0006</idno>
-		<idno>ArXiv:2304.12998</idno>
-	</analytic>
 	<monogr>
-		<title level="m">Intelligence: A Very Short Introduction</title>
-				<imprint>
-			<publisher>Oxford University PressOxford</publisher>
-			<date type="published" when="2020-03-26" />
-			<biblScope unit="page" from="83" to="C6.P23" />
-		</imprint>
+		<idno>ArXiv:2304.12998</idno>
+		<title level="m">ChatLLM Network: More brains, More intelligence</title>
+				<imprint/>
 	</monogr>
 </biblStruct>
 
 <biblStruct coords="12,54.00,296.84,238.50,7.77;12,54.00,306.80,238.50,7.77;12,54.00,316.61,101.62,7.73" xml:id="b21">
-	<analytic>
-		<title level="a" type="main">On the Legitimacy of Voting Methods</title>
-		<author>
-			<persName><forename type="first">Carina</forename><forename type="middle">Ines</forename><surname>Hausladen</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Regula</forename><surname>Hänggli</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Dirk</forename><surname>Helbing</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Renato</forename><surname>Kunz</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Junling</forename><surname>Wang</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Evangelos</forename><surname>Pournaras</surname></persName>
-		</author>
-		<idno type="DOI">10.2139/ssrn.4372245</idno>
-	</analytic>
 	<monogr>
-		<title level="j">SSRN Electronic Journal</title>
-		<title level="j" type="abbrev">SSRN Journal</title>
-		<idno type="ISSNe">1556-5068</idno>
-		<imprint>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">I</forename><surname>Hausladen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Hänggli</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Helbing</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Kunz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Pournaras</surname></persName>
+		</author>
+		<title level="m">On the Legitimacy of Voting Methods. Available at SSRN 4372245</title>
+				<imprint>
 			<date type="published" when="2023">2023</date>
-			<publisher>Elsevier BV</publisher>
 		</imprint>
 	</monogr>
 </biblStruct>
 
 <biblStruct coords="12,54.00,329.52,238.50,7.77;12,54.00,339.48,238.50,7.77;12,54.00,349.45,238.50,7.77;12,54.00,359.41,238.50,7.77;12,54.00,369.21,212.23,7.93" xml:id="b22">
-	<analytic>
-		<title level="a" type="main">Democracy by Design: Perspectives for Digitally Assisted, Participatory Upgrades of Society</title>
-		<author>
-			<persName><forename type="first">Dirk</forename><surname>Helbing</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Sachit</forename><surname>Mahajan</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Regula</forename><surname>Hänggli</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Andrea</forename><surname>Musso</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Carina</forename><forename type="middle">Ines</forename><surname>Hausladen</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Cesare</forename><surname>Carissimo</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Dino</forename><surname>Carpentras</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Elisabeth</forename><surname>Stockinger</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Javier</forename><surname>Argota Sanchez-Vaquerizo</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Joshua</forename><surname>Yang</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Mark</forename><forename type="middle">C</forename><surname>Ballandies</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Marcin</forename><surname>Korecki</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Rohit</forename><forename type="middle">Kumar</forename><surname>Dubey</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Evangelos</forename><surname>Pournaras</surname></persName>
-		</author>
-		<idno type="DOI">10.2139/ssrn.4266038</idno>
-	</analytic>
 	<monogr>
-		<title level="j">SSRN Electronic Journal</title>
-		<title level="j" type="abbrev">SSRN Journal</title>
-		<idno type="ISSNe">1556-5068</idno>
+		<title level="m" type="main">Democracy by Design: Perspectives for Digitally Assisted</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Helbing</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Mahajan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Hänggli</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Musso</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">I</forename><surname>Hausladen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Carissimo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Carpentras</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Stockinger</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Argota Sánchez-Vaquerizo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Yang</surname></persName>
+		</author>
 		<imprint>
-			<biblScope unit="page">71</biblScope>
 			<date type="published" when="2022-11-02">2022. November 2, 2022</date>
-			<publisher>Elsevier BV</publisher>
+			<publisher>Participatory Upgrades of Society. Participatory Upgrades of Society</publisher>
+			<biblScope unit="page">71</biblScope>
 		</imprint>
 	</monogr>
 </biblStruct>
@@ -987,53 +879,47 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 	<analytic>
 		<title level="a" type="main">Strategic voting in multi-winner elections with approval balloting: a theory for large electorates</title>
 		<author>
-			<persName><forename type="first">Jean-François</forename><surname>Laslier</surname></persName>
+			<persName coords=""><forename type="first">J.-F</forename><forename type="middle">;</forename><surname>Laslier</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Karine</forename><surname>Van Der Straeten</surname></persName>
+			<persName coords=""><forename type="first">K</forename><surname>Van Der Straeten</surname></persName>
 		</author>
-		<idno type="DOI">10.1007/s00355-016-0983-y</idno>
 	</analytic>
 	<monogr>
 		<title level="j">Social Choice and Welfare</title>
-		<title level="j" type="abbrev">Soc Choice Welf</title>
-		<idno type="ISSN">0176-1714</idno>
-		<idno type="ISSNe">1432-217X</idno>
 		<imprint>
 			<biblScope unit="volume">47</biblScope>
 			<biblScope unit="issue">3</biblScope>
 			<biblScope unit="page" from="559" to="587" />
-			<date type="published" when="2016-07-28">2016</date>
-			<publisher>Springer Science and Business Media LLC</publisher>
+			<date type="published" when="2016">2016</date>
 		</imprint>
 	</monogr>
 </biblStruct>
 
 <biblStruct coords="12,54.00,512.84,238.50,7.77;12,54.00,522.80,238.50,7.77;12,54.00,532.77,238.50,7.77" xml:id="b26">
 	<analytic>
-		<title level="a" type="main">Large Language Model-Empowered Agents for Simulating Macroeconomic Activities</title>
+		<title level="a" type="main">CAMEL: Communicative Agents for</title>
 		<author>
-			<persName><forename type="first">Nian</forename><surname>Li</surname></persName>
+			<persName coords=""><forename type="first">G</forename><surname>Li</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Chen</forename><surname>Gao</surname></persName>
+			<persName coords=""><forename type="first">H</forename><forename type="middle">A A K</forename><surname>Hammoud</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Yong</forename><surname>Li</surname></persName>
+			<persName coords=""><forename type="first">H</forename><surname>Itani</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Qingmin</forename><surname>Liao</surname></persName>
+			<persName coords=""><forename type="first">D</forename><surname>Khizbullin</surname></persName>
 		</author>
-		<idno type="DOI">10.2139/ssrn.4606937</idno>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Ghanem</surname></persName>
+		</author>
 		<idno type="arXiv">arXiv:2303.17760</idno>
 	</analytic>
 	<monogr>
-		<title level="j">SSRN Electronic Journal</title>
-		<title level="j" type="abbrev">SSRN Journal</title>
-		<idno type="ISSNe">1556-5068</idno>
+		<title level="s">Exploration of Large Language Model Society</title>
 		<imprint>
 			<date type="published" when="2023">2023</date>
-			<publisher>Elsevier BV</publisher>
 		</imprint>
 	</monogr>
 </biblStruct>
@@ -1109,23 +995,19 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 </biblStruct>
 
 <biblStruct coords="12,54.00,610.72,238.50,7.93;12,54.00,620.68,238.50,7.93;12,54.00,630.80,147.33,7.77" xml:id="b29">
-	<analytic>
-		<title level="a" type="main">Political Turbulence</title>
-		<author>
-			<persName><forename type="first">Helen</forename><surname>Margetts</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Peter</forename><surname>John</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Scott</forename><surname>Hale</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Taha</forename><surname>Yasseri</surname></persName>
-		</author>
-		<idno type="DOI">10.2307/j.ctvc773c7</idno>
-	</analytic>
 	<monogr>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Margetts</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>John</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Hale</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Yasseri</surname></persName>
+		</author>
 		<title level="m">Political Turbulence: How Social Media Shape Collective Action</title>
 				<imprint>
 			<publisher>Princeton University Press</publisher>
@@ -1135,41 +1017,29 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 </biblStruct>
 
 <biblStruct coords="12,54.00,643.56,238.50,7.77;12,54.00,653.52,238.50,7.77;12,54.00,663.48,162.20,7.77" xml:id="b30">
-	<analytic>
-		<title level="a" type="main">Generative Agents: Interactive Simulacra of Human Behavior</title>
-		<author>
-			<persName><forename type="first">Joon</forename><forename type="middle">Sung</forename><surname>Park</surname></persName>
-			<idno type="ORCID">0000-0001-5036-4409</idno>
-		</author>
-		<author>
-			<persName><forename type="first">Joseph</forename><surname>O'brien</surname></persName>
-			<idno type="ORCID">0009-0004-0781-926X</idno>
-		</author>
-		<author>
-			<persName><forename type="first">Carrie</forename><forename type="middle">Jun</forename><surname>Cai</surname></persName>
-			<idno type="ORCID">0000-0001-9421-7128</idno>
-		</author>
-		<author>
-			<persName><forename type="first">Meredith</forename><forename type="middle">Ringel</forename><surname>Morris</surname></persName>
-			<idno type="ORCID">0000-0003-1436-9223</idno>
-		</author>
-		<author>
-			<persName><forename type="first">Percy</forename><surname>Liang</surname></persName>
-			<idno type="ORCID">0000-0002-0458-6139</idno>
-		</author>
-		<author>
-			<persName><forename type="first">Michael</forename><forename type="middle">S</forename><surname>Bernstein</surname></persName>
-			<idno type="ORCID">0000-0001-8020-9434</idno>
-		</author>
-		<idno type="DOI">10.1145/3586183.3606763</idno>
-		<idno>ArXiv:2304.03442</idno>
-	</analytic>
 	<monogr>
-		<title level="m">Proceedings of the 36th Annual ACM Symposium on User Interface Software and Technology</title>
-				<meeting>the 36th Annual ACM Symposium on User Interface Software and Technology</meeting>
-		<imprint>
-			<publisher>ACM</publisher>
-			<date type="published" when="2023-10-29">2023</date>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">S</forename><surname>Park</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">C</forename><surname>O'brien</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">J</forename><surname>Cai</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">R</forename><surname>Morris</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">S</forename><surname>Bernstein</surname></persName>
+		</author>
+		<idno>ArXiv:2304.03442</idno>
+		<title level="m">Generative Agents: Interactive Simulacra of Human Behavior</title>
+				<imprint>
+			<date type="published" when="2023">2023</date>
 		</imprint>
 	</monogr>
 </biblStruct>
@@ -1228,17 +1098,13 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 </biblStruct>
 
 <biblStruct coords="12,319.50,113.36,238.50,7.93;12,319.50,123.32,238.50,7.93;12,319.50,133.45,60.91,7.77" xml:id="b32">
-	<analytic>
-		<title level="a" type="main">Multiagent Systems</title>
-		<author>
-			<persName><forename type="first">Yoav</forename><surname>Shoham</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Kevin</forename><surname>Leyton-Brown</surname></persName>
-		</author>
-		<idno type="DOI">10.1017/cbo9780511811654</idno>
-	</analytic>
 	<monogr>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Shoham</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Leyton-Brown</surname></persName>
+		</author>
 		<title level="m">Multiagent Systems: Algorithmic, Game-Theoretic, and Logical Foundations</title>
 				<imprint>
 			<publisher>Cambridge University Press</publisher>
@@ -1251,52 +1117,38 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 	<analytic>
 		<title level="a" type="main">Axiomatic characterization of committee scoring rules</title>
 		<author>
-			<persName><forename type="first">Piotr</forename><surname>Skowron</surname></persName>
+			<persName coords=""><forename type="first">P</forename><surname>Skowron</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Piotr</forename><surname>Faliszewski</surname></persName>
+			<persName coords=""><forename type="first">P</forename><surname>Faliszewski</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Arkadii</forename><surname>Slinko</surname></persName>
+			<persName coords=""><forename type="first">A</forename><surname>Slinko</surname></persName>
 		</author>
-		<idno type="DOI">10.1016/j.jet.2018.12.011</idno>
 	</analytic>
 	<monogr>
 		<title level="j">Journal of Economic Theory</title>
-		<title level="j" type="abbrev">Journal of Economic Theory</title>
-		<idno type="ISSN">0022-0531</idno>
 		<imprint>
 			<biblScope unit="volume">180</biblScope>
 			<biblScope unit="page" from="244" to="273" />
-			<date type="published" when="2019-03">2019</date>
-			<publisher>Elsevier BV</publisher>
+			<date type="published" when="2019">2019</date>
 		</imprint>
 	</monogr>
 </biblStruct>
 
 <biblStruct coords="12,319.50,178.88,238.50,7.77;12,319.50,188.68,238.50,7.93;12,319.50,198.64,96.99,7.93" xml:id="b34">
-	<analytic>
-		<title level="a" type="main">Playing Games with Ais: The Limits of GPT-3 and Similar Large Language Models</title>
-		<author>
-			<persName><forename type="first">Adam</forename><surname>Sobieszek</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Tadeusz</forename><surname>Price</surname></persName>
-			<idno type="ORCID">0000-0003-1264-7103</idno>
-		</author>
-		<idno type="DOI">10.1007/s11023-022-09602-0</idno>
-	</analytic>
 	<monogr>
-		<title level="j">Minds and Machines</title>
-		<title level="j" type="abbrev">Minds &amp; Machines</title>
-		<idno type="ISSN">0924-6495</idno>
-		<idno type="ISSNe">1572-8641</idno>
+		<title level="m" type="main">Playing Games with Ais: The Limits of GPT-3 and Similar Large Language Models. Minds and Machines</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Sobieszek</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Price</surname></persName>
+		</author>
 		<imprint>
+			<date type="published" when="2022">2022</date>
 			<biblScope unit="volume">32</biblScope>
-			<biblScope unit="issue">2</biblScope>
 			<biblScope unit="page" from="341" to="364" />
-			<date type="published" when="2022-05-03">2022</date>
-			<publisher>Springer Science and Business Media LLC</publisher>
 		</imprint>
 	</monogr>
 </biblStruct>
@@ -1305,25 +1157,19 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 	<analytic>
 		<title level="a" type="main">Accelerating science with human-aware artificial intelligence</title>
 		<author>
-			<persName><forename type="first">Jamshid</forename><surname>Sourati</surname></persName>
-			<idno type="ORCID">0000-0002-4893-2793</idno>
+			<persName coords=""><forename type="first">J</forename><surname>Sourati</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">James</forename><forename type="middle">A</forename><surname>Evans</surname></persName>
-			<idno type="ORCID">0000-0001-9838-0707</idno>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">A</forename><surname>Evans</surname></persName>
 		</author>
-		<idno type="DOI">10.1038/s41562-023-01648-z</idno>
 	</analytic>
 	<monogr>
 		<title level="j">Nature Human Behaviour</title>
-		<title level="j" type="abbrev">Nat Hum Behav</title>
-		<idno type="ISSNe">2397-3374</idno>
 		<imprint>
 			<biblScope unit="volume">7</biblScope>
 			<biblScope unit="issue">10</biblScope>
 			<biblScope unit="page" from="1682" to="1696" />
-			<date type="published" when="2023-07-13">2023</date>
-			<publisher>Springer Science and Business Media LLC</publisher>
+			<date type="published" when="2023">2023</date>
 		</imprint>
 	</monogr>
 </biblStruct>
@@ -1403,108 +1249,91 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 
 <biblStruct coords="12,319.50,374.95,238.50,7.77;12,319.50,384.76,232.32,7.93" xml:id="b39">
 	<analytic>
-		<title level="a" type="main">Rationality as the pursuit of Self-interest</title>
+		<title level="a" type="main">Rationality as Self-Interest versus Rationality as Present Aims</title>
 		<author>
-			<persName coords=""><forename type="first">Vivian</forename><surname>Walsh</surname></persName>
+			<persName coords=""><forename type="first">V</forename><surname>Walsh</surname></persName>
 		</author>
-		<idno type="DOI">10.1093/oso/9780198287728.003.0006</idno>
 	</analytic>
 	<monogr>
-		<title level="m">Rationality, allocation, And reproduction</title>
-				<imprint>
-			<publisher>Oxford University PressOxford</publisher>
-			<date type="published" when="1994">1994</date>
+		<title level="j">The American Economic Review</title>
+		<imprint>
 			<biblScope unit="volume">84</biblScope>
-			<biblScope unit="page" from="112" to="138" />
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="401" to="405" />
+			<date type="published" when="1994">1994</date>
 		</imprint>
 	</monogr>
 </biblStruct>
 
 <biblStruct coords="12,319.50,397.67,238.50,7.77;12,319.50,407.63,238.50,7.77;12,319.50,417.60,238.50,7.77;12,319.50,427.56,116.56,7.77" xml:id="b40">
-	<analytic>
-		<title level="a" type="main">A survey on large language model based autonomous agents</title>
-		<author>
-			<persName><forename type="first">Lei</forename><surname>Wang</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Chen</forename><surname>Ma</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Xueyang</forename><surname>Feng</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Zeyu</forename><surname>Zhang</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Hao</forename><surname>Yang</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Jingsen</forename><surname>Zhang</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Zhiyuan</forename><surname>Chen</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Jiakai</forename><surname>Tang</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Xu</forename><surname>Chen</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Yankai</forename><surname>Lin</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Wayne</forename><forename type="middle">Xin</forename><surname>Zhao</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Zhewei</forename><surname>Wei</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Jirong</forename><surname>Wen</surname></persName>
-		</author>
-		<idno type="DOI">10.1007/s11704-024-40231-1</idno>
-		<idno>ArXiv:2308.11432</idno>
-	</analytic>
 	<monogr>
-		<title level="j">Frontiers of Computer Science</title>
-		<title level="j" type="abbrev">Front. Comput. Sci.</title>
-		<idno type="ISSN">2095-2228</idno>
-		<idno type="ISSNe">2095-2236</idno>
-		<imprint>
-			<biblScope unit="volume">18</biblScope>
-			<biblScope unit="issue">6</biblScope>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Feng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><forename type="middle">X</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J.-R</forename><surname>Wen</surname></persName>
+		</author>
+		<idno>ArXiv:2308.11432</idno>
+		<title level="m">A Survey on Large Language Model based Autonomous Agents</title>
+				<imprint>
 			<date type="published" when="2023">2023a</date>
-			<publisher>Springer Science and Business Media LLC</publisher>
 		</imprint>
 	</monogr>
 </biblStruct>
 
 <biblStruct coords="12,319.50,440.31,238.50,7.77;12,319.50,450.27,179.53,7.77" xml:id="b41">
-	<analytic>
-		<title level="a" type="main">Primacy Effect of ChatGPT</title>
-		<author>
-			<persName><forename type="first">Yiwei</forename><surname>Wang</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Yujun</forename><surname>Cai</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Muhao</forename><surname>Chen</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Yuxuan</forename><surname>Liang</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Bryan</forename><surname>Hooi</surname></persName>
-		</author>
-		<idno type="DOI">10.18653/v1/2023.emnlp-main.8</idno>
-		<idno>ArXiv:2310.13206</idno>
-	</analytic>
 	<monogr>
-		<title level="m">Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing</title>
-				<meeting>the 2023 Conference on Empirical Methods in Natural Language Processing</meeting>
+		<title level="m" type="main">Primacy Effect of ChatGPT</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Cai</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Hooi</surname></persName>
+		</author>
+		<idno>ArXiv:2310.13206</idno>
 		<imprint>
-			<publisher>Association for Computational Linguistics</publisher>
 			<date type="published" when="2023">2023b</date>
 		</imprint>
 	</monogr>
@@ -1630,9 +1459,9 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 
 <biblStruct coords="12,319.50,600.92,238.50,7.77;12,319.50,610.88,238.50,7.77;12,319.50,620.84,238.50,7.77;12,319.50,630.64,238.50,7.93;12,319.50,640.61,83.31,7.73" xml:id="b45">
 	<monogr>
-		<title level="m" type="main">Fairness and Legitimacy of Voting Methods in Digital Participatory Budgeting</title>
+		<title level="m" type="main">Designing Digital Voting Systems for Citizens: Achieving Fairness and Legitimacy in Digital Participatory Budgeting Voting Mechanism</title>
 		<author>
-			<persName coords=""><forename type="first">Joshua</forename><forename type="middle">C</forename><surname>Yang</surname></persName>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">C</forename><surname>Yang</surname></persName>
 		</author>
 		<author>
 			<persName coords=""><forename type="first">C</forename><forename type="middle">I</forename><surname>Hausladen</surname></persName>
@@ -1649,10 +1478,9 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		<author>
 			<persName coords=""><forename type="first">D</forename><surname>Helbing</surname></persName>
 		</author>
-		<idno type="DOI">10.1257/rct.11021</idno>
 		<imprint>
 			<date type="published" when="2024">2024</date>
-			<publisher>American Economic Association</publisher>
+			<publisher>ACM Digital Government: Research and Practice</publisher>
 		</imprint>
 	</monogr>
 </biblStruct>
@@ -1683,68 +1511,156 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 </biblStruct>
 
 <biblStruct coords="12,319.50,686.20,238.50,7.77;12,319.50,696.16,238.50,7.77;13,54.00,58.13,238.50,7.77;13,54.00,68.09,190.36,7.77;13,54.00,80.54,238.50,7.77;13,54.00,90.50,238.50,7.77;13,54.00,100.47,238.50,7.77;13,54.00,110.43,67.52,7.77;13,54.00,122.88,238.50,7.77;13,54.00,132.84,238.50,7.77;13,54.00,142.81,238.50,7.77;13,54.00,152.77,238.50,7.77;13,54.00,162.73,238.50,7.77;13,54.00,172.70,238.50,7.77;13,54.00,182.66,85.69,7.77" xml:id="b47">
-	<analytic>
-		<title level="a" type="main">ProAgent: Building Proactive Cooperative Agents with Large Language Models</title>
+	<monogr>
 		<author>
-			<persName><forename type="first">Ceyao</forename><surname>Zhang</surname></persName>
+			<persName coords=""><forename type="first">C</forename><surname>Zhang</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Kaijie</forename><surname>Yang</surname></persName>
+			<persName coords=""><forename type="first">K</forename><surname>Yang</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Siyi</forename><surname>Hu</surname></persName>
+			<persName coords=""><forename type="first">S</forename><surname>Hu</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Zihao</forename><surname>Wang</surname></persName>
+			<persName coords=""><forename type="first">Z</forename><surname>Wang</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Guanghe</forename><surname>Li</surname></persName>
+			<persName coords=""><forename type="first">G</forename><surname>Li</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Yihang</forename><surname>Sun</surname></persName>
+			<persName coords=""><forename type="first">Y</forename><surname>Sun</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Cheng</forename><surname>Zhang</surname></persName>
+			<persName coords=""><forename type="first">C</forename><surname>Zhang</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Zhaowei</forename><surname>Zhang</surname></persName>
+			<persName coords=""><forename type="first">Z</forename><surname>Zhang</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Anji</forename><surname>Liu</surname></persName>
+			<persName coords=""><forename type="first">A</forename><surname>Liu</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Song-Chun</forename><surname>Zhu</surname></persName>
+			<persName coords=""><forename type="first">S.-C</forename><surname>Zhu</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Xiaojun</forename><surname>Chang</surname></persName>
+			<persName coords=""><forename type="first">X</forename><surname>Chang</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Junge</forename><surname>Zhang</surname></persName>
+			<persName coords=""><forename type="first">J</forename><surname>Zhang</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Feng</forename><surname>Yin</surname></persName>
+			<persName coords=""><forename type="first">F</forename><surname>Yin</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Yitao</forename><surname>Liang</surname></persName>
+			<persName coords=""><forename type="first">Y</forename><surname>Liang</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Yaodong</forename><surname>Yang</surname></persName>
+			<persName coords=""><forename type="first">Y</forename><surname>Yang</surname></persName>
 		</author>
-		<idno type="DOI">10.1609/aaai.v38i16.29710</idno>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Du</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Shan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Q</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Du</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">B</forename><surname>Tenenbaum</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Shu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Gan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Faccio</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">R</forename><surname>Ashley</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Csordás</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Gopalakrishnan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Hamdi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><forename type="middle">A A K</forename><surname>Hammoud</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">V</forename><surname>Herrmann</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Irie</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Kirsch</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Mai</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Piękos</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Ramesh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">I</forename><surname>Schlag</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Stanić</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D.-P</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Ghanem</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Schmidhuber</surname></persName>
+		</author>
 		<idno type="arXiv">arXiv:2308.11339</idno>
 		<idno>ArXiv:2305.17066</idno>
-	</analytic>
-	<monogr>
-		<title level="j">Proceedings of the AAAI Conference on Artificial Intelligence</title>
-		<title level="j" type="abbrev">AAAI</title>
-		<idno type="ISSN">2159-5399</idno>
-		<idno type="ISSNe">2374-3468</idno>
-		<imprint>
-			<biblScope unit="volume">38</biblScope>
-			<biblScope unit="issue">16</biblScope>
-			<biblScope unit="page" from="17591" to="17599" />
+		<title level="m">Building Cooperative Embodied Agents Modularly with Large Language Models</title>
+				<imprint>
 			<date type="published" when="2023">2023a. 2023b. 2023</date>
-			<publisher>Association for the Advancement of Artificial Intelligence (AAAI)</publisher>
 		</imprint>
 	</monogr>
 	<note>Mindstorms in Natural Language-Based Societies of Mind</note>
@@ -1752,23 +1668,13 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 
 <biblStruct coords="20,97.64,60.08,251.06,4.91;20,97.64,70.04,301.27,4.91;20,97.64,80.00,355.67,4.91;20,97.64,89.97,280.35,4.91;20,97.64,99.93,234.32,4.91;20,97.64,109.89,447.72,4.91;20,117.56,119.85,41.84,4.91" xml:id="b48">
 	<analytic>
-		<title level="a" type="main">West of Eden: Resource Wars and Nature–Cultures in the American West</title>
-		<author>
-			<persName><forename type="first">Scout</forename><surname>Calvert</surname></persName>
-		</author>
-		<idno type="DOI">10.1080/09505431.2011.576241</idno>
+		<title level="a" type="main">20 -Wet Biotope as Learning Garden in Frankental (West, Nature, 10000) #21 -Dingtheke: Community Things Exchange Library in Wipkingen (West, Culture, 5000) #22 -Sustainable Cooking Workshop with Kids (West, Culture, 10000) #24 -Car-free Langstrasse (West, Transportation, 10000) These projects reflect a strong emphasis on cultural enrichment and environmental considerations in my home district</title>
 	</analytic>
 	<monogr>
-		<title level="j">Science as Culture</title>
-		<title level="j" type="abbrev">Science as Culture</title>
-		<idno type="ISSN">0950-5431</idno>
-		<idno type="ISSNe">1470-1189</idno>
-		<imprint>
-			<biblScope unit="volume">21</biblScope>
-			<biblScope unit="issue">1</biblScope>
-			<biblScope unit="page" from="129" to="134" />
-			<date type="published" when="2012-03" />
-			<publisher>Informa UK Limited</publisher>
+		<title level="m">#19 -Bird Houses for Zurich-H\u00f6ngg</title>
+				<imprint>
+			<publisher>West</publisher>
+			<biblScope unit="volume">5000</biblScope>
 		</imprint>
 	</monogr>
 </biblStruct>

@@ -1,0 +1,1412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Phylotrack: C++ and Python libraries for in silico phylogenetic tracking</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,167.07,188.71,66.90,16.59"><forename type="first">Emily</forename><surname>Dolson</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Computer Science and Engineering</orgName>
+								<orgName type="institution">Michigan State University</orgName>
+								<address>
+									<settlement>East Lansing</settlement>
+									<region>MI</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="department">Ecology, Evolution, and Behavior</orgName>
+								<orgName type="institution">Michigan State University</orgName>
+								<address>
+									<settlement>East Lansing</settlement>
+									<region>MI</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,271.01,188.71,128.26,16.59"><forename type="first">Santiago</forename><surname>Rodruigez-Papa</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Computer Science and Engineering</orgName>
+								<orgName type="institution">Michigan State University</orgName>
+								<address>
+									<settlement>East Lansing</settlement>
+									<region>MI</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,446.12,188.71,84.89,16.59;1,167.07,202.66,38.75,16.59"><forename type="first">Matthew</forename><forename type="middle">Andres</forename><surname>Moreno</surname></persName>
+							<affiliation key="aff2">
+								<orgName type="department">Department of Ecology and Evolutionary Biology</orgName>
+								<orgName type="institution">University of Michigan</orgName>
+								<address>
+									<settlement>Ann Arbor</settlement>
+									<region>MI</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff3">
+								<orgName type="department">Center for the Study of Complex Systems</orgName>
+								<orgName type="institution">University of Michigan</orgName>
+								<address>
+									<settlement>Ann Arbor</settlement>
+									<region>MI</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Phylotrack: C++ and Python libraries for in silico phylogenetic tracking</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">8776168E4ED9662810670BD050AFCC62</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2024-05-19T13:43+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>In silico evolution instantiates the processes of heredity, variation, and differential reproductive success (the three "ingredients" for evolution by natural selection) within digital populations of computational agents. Consequently, these populations undergo evolution <ref type="bibr" coords="1,484.04,349.91,66.42,14.58" target="#b31">(Pennock, 2007)</ref>, and can be used as virtual model systems for studying evolutionary dynamics. This experimental paradigm -used across biological modeling, artificial life, and evolutionary computationcomplements research done using in vitro and in vivo systems by enabling experiments that would be impossible in the lab or field (E. <ref type="bibr" coords="1,340.28,397.73,89.94,14.58" target="#b9">Dolson &amp; Ofria, 2021)</ref>. One key benefit is complete, exact observability. For example, it is possible to perfectly record all parent-child relationships across simulation history, yielding complete phylogenies (ancestry trees). This information reveals when traits were gained or lost, and also facilitates inference of underlying evolutionary dynamics (E.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="596.0" lry="842.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="596.0" lry="842.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="596.0" lry="842.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="597.0" lry="842.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="596.0" lry="842.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="596.0" lry="842.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>The Phylotrack project provides libraries for tracking and analyzing phylogenies in in silico evolution. The project is composed of 1) Phylotracklib: a header-only C++ library, developed under the umbrella of the Empirical project <ref type="bibr" coords="1,360.25,499.37,82.10,14.58" target="#b28">(Ofria et al., 2020)</ref>, and 2) Phylotrackpy: a Python wrapper around Phylotracklib, created with Pybind11 <ref type="bibr" coords="1,436.53,511.32,84.88,14.58" target="#b17">(Jakob et al., 2017)</ref>. Both components supply a public-facing API to attach phylogenetic tracking to digital evolution systems, as well as a stand-alone interface for measuring a variety of popular phylogenetic topology metrics <ref type="bibr" coords="1,238.20,547.19,83.00,14.58" target="#b40">(Tucker et al., 2017)</ref>. Underlying design and C++ implementation prioritizes efficiency, allowing for fast generational turnover for agent populations numbering in the tens of thousands. Several explicit features (e.g., phylogeny pruning and abstraction, etc.) are provided for reducing the memory footprint of phylogenetic information.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Statement of Need</head><p>In silico evolution work enjoys a rich history of phylogenetic measurement and analysis, and many systems facilitate tracking phylogenies <ref type="bibr" coords="1,359.90,651.26,84.35,14.58" target="#b0">(Bohm et al., 2017;</ref><ref type="bibr" coords="1,447.97,651.26,106.29,14.58" target="#b6">De Rainville et al., 2012;</ref><ref type="bibr" coords="1,167.07,663.22,89.41,14.58" target="#b13">Garwood et al., 2019;</ref><ref type="bibr" coords="1,259.81,663.22,86.40,14.58" target="#b29">Ofria &amp; Wilke, 2004;</ref><ref type="bibr" coords="1,349.54,663.22,42.54,14.58" target="#b32">Ray, 1992)</ref>. However, to our knowledge, no other general-purpose perfect phylogeny tracking library exists; prior work has used bespoke systemor framework-specific implementations. In contrast, Phylotrack provides ready-built tracking flexible enough to attach to any population of digital replicating entities.</p><p>Two other general-purpose libraries for phylogenetic record-keeping do exist: hstrat and Automated Phylogeny Over Geological Timescales (APOGeT). However, they provide different modes of phylogenetic instrumentation than Phylotrack does. Whereas Phylotrack uses a graph-based approach to perfectly record asexual phylogenies, the hstrat library implements hereditary stratigraphy, a technique for decentralized phylogenetic tracking that is approximate instead of exact <ref type="bibr" coords="2,191.03,121.61,91.11,14.58" target="#b23">(Moreno et al., 2022b)</ref> (see <ref type="bibr" coords="2,303.45,121.61,114.77,14.58">(Moreno, Papa, et al., 2024)</ref> for a more thorough comparison). APOGeT, in turn, focuses on tracking speciation in sexually-reproducing populations <ref type="bibr" coords="2,523.27,133.56,31.82,14.58;2,167.07,145.52,81.88,14.58" target="#b14">(Godin-Dubois et al., 2019)</ref>.</p><p>Vast amounts of bioinformatics-oriented phylogenetics software is also available. Applications typically include -inferring phylogenies from extant organisms (and sometimes fossils) <ref type="bibr" coords="2,524.09,175.41,29.34,14.58;2,167.07,187.37,72.77,14.58" target="#b2">(Challa &amp; Neelapu, 2019)</ref>, -sampling phylogenies from theoretical models of population and species dynamics <ref type="bibr" coords="2,207.99,199.32,60.48,14.58" target="#b38">(Stadler, 2011)</ref>, -cross-referencing phylogenies with other data (e.g., spatial species distributions) <ref type="bibr" coords="2,225.55,211.28,116.57,14.58" target="#b10">(Emerson &amp; Gillespie, 2008)</ref>, and -analyzing and manipulating tree structures <ref type="bibr" coords="2,166.68,223.24,78.27,14.58" target="#b5">(Cock et al., 2009;</ref><ref type="bibr" coords="2,248.27,223.24,74.10,14.58" target="#b33">Sand et al., 2014;</ref><ref type="bibr" coords="2,325.70,223.24,53.43,14.58" target="#b36">Smith, 2020;</ref><ref type="bibr" coords="2,382.44,223.24,116.44,14.58" target="#b39">Sukumaran &amp; Holder, 2010)</ref>.</p><p>Phylotrack overlaps with these goals only in that it also provides tree statistic implementations. We chose to include this feature to facilitate fast during-simulation calculations of these metrics. Notably, the problem of tracking a phylogeny within an agent-based program differs substantially from the more traditional problem of reconstructing a phylogeny. Users new to recorded phylogenies should refer to the Phylotrackpy documentation for notes on subtle structural differences from reconstructed phylogenies.</p><p>Phylotrack has contributed to a variety of published research projects through integrations with Modular Agent-Based Evolver (MABE) 2.0 <ref type="bibr" coords="2,371.16,330.85,81.52,14.58" target="#b19">(Bohm et al., 2019)</ref>, Symbulation <ref type="bibr" coords="2,515.47,330.85,38.13,14.58;2,167.07,342.80,58.79,14.58">(Vostinar &amp; Ofria, 2019)</ref>, and even a fork of the Avida digital evolution platform (E. <ref type="bibr" coords="2,474.14,342.80,80.11,14.58" target="#b8">Dolson et al., 2020;</ref><ref type="bibr" coords="2,167.07,354.76,83.81,14.58" target="#b29">Ofria &amp; Wilke, 2004)</ref>.</p><p>Research topics include open-ended evolution (E. L. <ref type="bibr" coords="2,471.78,354.76,78.69,14.58" target="#b7">Dolson et al., 2019)</ref>, the origin of endosymbiosis <ref type="bibr" coords="2,280.48,366.72,88.66,14.58" target="#b18">(Johnson et al., 2022)</ref>, the importance of phylogenetic diversity for machine learning via evolutionary computation <ref type="bibr" coords="2,363.49,378.67,100.75,14.58" target="#b15">(Hernandez et al., 2022;</ref><ref type="bibr" coords="2,467.58,378.67,87.23,14.58;2,167.07,390.63,21.75,14.58" target="#b34">Shahbandegan et al., 2022)</ref>, and more. Phylotrackpy is newer, but it has already served as a point of comparison in the development of other phylogenetic tools <ref type="bibr" coords="2,353.81,402.59,88.96,14.58" target="#b22">(Moreno et al., 2022a</ref><ref type="bibr" coords="2,450.68,402.59,22.17,14.58" target="#b24">(Moreno et al., , 2023))</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Features</head><p>Lineage Recording: The core functionality of Phylotrack is to record asexual phylogenies from simulation agent creation and destruction events. To reduce memory overhead, extinct branches are pruned from phylogenies by default, but this feature can be disabled. The level of abstraction (i.e., what constitutes a taxonomic unit) can be customized. Supplemental data about each taxonomic unit can be stored efficiently.</p><p>Lineage recording in phylotrack is efficient. The worst-case time complexity is O(1) <ref type="bibr" coords="2,516.89,524.59,37.93,14.58;2,167.07,536.55,75.52,14.58">(Moreno, Papa, et al., 2024)</ref>. Space complexity is harder to meaningfully calculate, but should be O(N) on average in most evolutionary scenarios (where N is population size) <ref type="bibr" coords="2,462.91,548.51,91.90,14.58;2,167.07,560.46,22.17,14.58">(Moreno, Papa, et al., 2024)</ref>.</p><p>Serialization: Phylotrack exports data in the Artificial Life Standard Phylogeny format <ref type="bibr" coords="2,520.61,578.40,32.82,14.58;2,167.07,590.36,52.10,14.58" target="#b19">(Lalejini et al., 2019)</ref> that plugs into an associated ecosystem of software converters, analyzers, and visualizers. Existing tools support conversion to bioinformatics-standard formats (e.g., Newick, phyloXML, etc.), so Phylotrack phylogenies can also be analyzed with tools designed for biological data. Phylogeny data can be restored from file, enabling post-hoc calculation of phylogenetic topology statistics.</p><p>Phylogenetic Topology Statistics: Support is provided for -Average phylogenetic depth across taxa -Average origin time across taxa -Most recent common ancestor origin time -Shannon diversity <ref type="bibr" coords="2,204.25,680.03,116.65,14.58" target="#b37">(Spellerberg &amp; Fedor, 2003)</ref> -Colless-like index <ref type="bibr" coords="2,404.05,680.03,72.53,14.58" target="#b20">(Mir et al., 2018)</ref> -Mean, sum, and variance of evolutionary distinctiveness <ref type="bibr" coords="2,331.68,691.99,78.13,14.58" target="#b16">(Isaac et al., 2007;</ref><ref type="bibr" coords="2,413.13,691.99,82.72,14.58" target="#b40">Tucker et al., 2017)</ref> -Mean, sum, and variance pairwise distance <ref type="bibr" coords="2,296.07,703.95,103.55,14.58" target="#b3">(Clarke &amp; Warwick, 1998</ref><ref type="bibr" coords="2,399.62,703.95,30.57,14.58" target="#b4">, 2001;</ref><ref type="bibr" coords="2,433.53,703.95,81.37,14.58" target="#b40">Tucker et al., 2017;</ref><ref type="bibr" coords="2,518.23,703.95,35.20,14.58;2,167.07,715.90,39.88,14.58" target="#b42">Webb et al., 2002)</ref> -Phylogenetic diversity <ref type="bibr" coords="2,310.57,715.90,50.37,14.58" target="#b11">(Faith, 1992</ref>) -Sackin's index <ref type="bibr" coords="2,437.83,715.90,91.09,14.58" target="#b35">(Shao &amp; Sokal, 1990)</ref> </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Profiling</head><p>To assess Phylotrack resource usage, we ran a simple asexual evolutionary algorithm instrumented with lineage-pruned systematics tracking. We performed neutral selection with a 20% mutation probability. Genomes consisted of a single floating-point value, which also served as the taxonomic unit.</p><p>We ran 60 second trials using population sizes 10, 1,000, and 100,000, with five replicates each. Each trial concluded with a data export operation.</p><p>We used ( backend) to measure process memory usage <ref type="bibr" coords="3,497.89,207.15,55.53,14.58;3,167.07,219.10,57.23,14.58" target="#b30">(Pedregosa &amp; Gervais, 2023)</ref>. Profiling data and hardware specifications are at https://osf.io/52hzs/ <ref type="bibr" coords="3,524.67,219.10,28.92,14.58;3,167.07,231.06,77.80,14.58" target="#b12">(Foster &amp; Deardorff, 2017)</ref>. Figure <ref type="figure" coords="3,196.51,450.68,5.00,14.58" target="#fig_1">2</ref> shows generations evaluated per second at each population size. At population size 10, 1,000, and 100,000, we observed 3, <ref type="bibr" coords="3,336.55,462.63,218.83,14.58;3,166.82,474.59,18.89,14.58">923 (s.d. 257), 28,386 (s.d. 741), and 67,000 (s.d. 1825</ref>) agent reproduction events per second. Efficiency gains with population size likely arose from NumPy vectorized operations used to perform mutation and selection. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Execution Speed</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Memory Usage</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Future Work</head><p>The primary current limitation of Phylotrack is incompatibility with sexually-reproducing populations (unless tracking is done per-gene). We plan to extend Phylotrack in a future release to allow multiple parents per taxon.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="3,229.77,418.65,190.02,13.12;3,445.57,418.65,45.16,13.12"><head>Figure 1 :</head><label>1</label><figDesc>Figure 1: Execution speed across population sizes. bars are SE.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="3,206.26,662.08,307.98,13.12"><head>Figure 2 :</head><label>2</label><figDesc>Figure 2: Allocated memory over 60-second execution window. Error bars are SE.</figDesc></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_0">Dolson et al. (2024). Phylotrack: C++ and Python libraries for in silico phylogenetic tracking.</note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgements</head><p>This research was supported in part by Michigan State University through the computational resources provided by the Institute for Cyber-Enabled Research.</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="4,167.35,314.81,202.72,14.58;4,412.73,314.81,141.87,14.58;4,182.33,326.77,328.63,14.58" xml:id="b0">
+	<analytic>
+		<title level="a" type="main">MABE (Modular Agent Based Evolver): A framework for digital evolution research</title>
+		<author>
+			<persName><forename type="first">Clifford</forename><surname>Bohm</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nitash</forename><forename type="middle">C</forename><surname>G.</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arend</forename><surname>Hintze</surname></persName>
+		</author>
+		<idno type="DOI">10.7551/ecal_a_016</idno>
+		<ptr target="https://doi.org/10.7551/ecal_a_016" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 14th European Conference on Artificial Life ECAL 2017</title>
+				<meeting>the 14th European Conference on Artificial Life ECAL 2017</meeting>
+		<imprint>
+			<publisher>MIT Press</publisher>
+			<date type="published" when="2017-09">2017</date>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page" from="76" to="83" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,199.49,344.70,354.86,14.58;4,182.33,356.66,372.02,14.58;4,182.33,368.62,373.97,14.58;4,182.08,380.57,97.70,14.58" xml:id="b1">
+	<analytic>
+		<title level="a" type="main">MABE 2.0: An introduction to MABE and a road map for the future of MABE development</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Lalejini</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Schossau</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Ofria</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename></persName>
+		</author>
+		<idno type="DOI">10.1145/3319619.3326825</idno>
+		<ptr target="https://doi.org/10.1145/3319619.3326825" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Genetic and Evolutionary Computation Conference Companion</title>
+				<meeting>the Genetic and Evolutionary Computation Conference Companion</meeting>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="page" from="1349" to="1356" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,167.35,398.51,387.00,14.58;4,182.33,410.46,373.40,14.58;4,182.08,422.42,245.01,14.58" xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Phylogenetic Trees: Applications, Construction, and Assessment</title>
+		<author>
+			<persName><forename type="first">Surekha</forename><surname>Challa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nageswara</forename><forename type="middle">Rao Reddy</forename><surname>Neelapu</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-030-19318-8_10</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Essentials of Bioinformatics, Volume III</title>
+		<title level="s">Essentials of Bioinformatics</title>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="volume">III</biblScope>
+			<biblScope unit="page" from="167" to="192" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,167.35,440.36,387.01,14.58;4,182.33,452.31,352.48,14.58" xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Quantifying structural redundancy in ecological communities</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">R</forename><surname>Clarke</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">M</forename><surname>Warwick</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s004420050379</idno>
+		<ptr target="https://doi.org/10.1007/s004420050379" />
+	</analytic>
+	<monogr>
+		<title level="j">Oecologia</title>
+		<title level="j" type="abbrev">Oecologia</title>
+		<idno type="ISSN">0029-8549</idno>
+		<idno type="ISSNe">1432-1939</idno>
+		<imprint>
+			<biblScope unit="volume">113</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="278" to="289" />
+			<date type="published" when="1998-01-09">1998</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,167.35,470.25,387.01,14.58;4,182.33,482.20,373.96,14.58;4,182.33,494.16,156.96,14.58" xml:id="b4">
+	<analytic>
+		<title level="a" type="main">A further biodiversity index applicable to species lists: variation in taxonomic distinctness</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">R</forename><surname>Clarke</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">M</forename><surname>Warwick</surname></persName>
+		</author>
+		<idno type="DOI">10.3354/meps216265</idno>
+		<ptr target="https://doi.org/10.3354/meps216265" />
+	</analytic>
+	<monogr>
+		<title level="j">Marine Ecology Progress Series</title>
+		<title level="j" type="abbrev">Mar. Ecol. Prog. Ser.</title>
+		<idno type="ISSN">0171-8630</idno>
+		<idno type="ISSNe">1616-1599</idno>
+		<imprint>
+			<biblScope unit="volume">216</biblScope>
+			<biblScope unit="page" from="265" to="278" />
+			<date type="published" when="2001">2001</date>
+			<publisher>Inter-Research Science Center</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,167.35,512.10,388.39,14.58;4,182.33,524.05,372.01,14.58;4,182.33,536.01,373.41,14.58;4,182.33,547.97,284.91,14.58" xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Biopython: freely available Python tools for computational molecular biology and bioinformatics</title>
+		<author>
+			<persName><forename type="first">Peter</forename><forename type="middle">J A</forename><surname>Cock</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">&amp; others.</orgName>
+			</affiliation>
+		</author>
+		<author>
+			<persName><forename type="first">Tiago</forename><surname>Antao</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">&amp; others.</orgName>
+			</affiliation>
+		</author>
+		<author>
+			<persName><forename type="first">Jeffrey</forename><forename type="middle">T</forename><surname>Chang</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">&amp; others.</orgName>
+			</affiliation>
+		</author>
+		<author>
+			<persName><forename type="first">Brad</forename><forename type="middle">A</forename><surname>Chapman</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">&amp; others.</orgName>
+			</affiliation>
+		</author>
+		<author>
+			<persName><forename type="first">Cymon</forename><forename type="middle">J</forename><surname>Cox</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">&amp; others.</orgName>
+			</affiliation>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Dalke</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">&amp; others.</orgName>
+			</affiliation>
+		</author>
+		<author>
+			<persName><forename type="first">Iddo</forename><surname>Friedberg</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">&amp; others.</orgName>
+			</affiliation>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Hamelryck</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">&amp; others.</orgName>
+			</affiliation>
+		</author>
+		<author>
+			<persName><forename type="first">Frank</forename><surname>Kauff</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">&amp; others.</orgName>
+			</affiliation>
+		</author>
+		<author>
+			<persName><forename type="first">Bartek</forename><surname>Wilczynski</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">&amp; others.</orgName>
+			</affiliation>
+		</author>
+		<author>
+			<persName><forename type="first">Michiel</forename><forename type="middle">J L</forename><surname>De Hoon</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">&amp; others.</orgName>
+			</affiliation>
+		</author>
+		<idno type="DOI">10.1093/bioinformatics/btp163</idno>
+		<ptr target="https://doi.org/10.1093/bioinformatics/btp163" />
+	</analytic>
+	<monogr>
+		<title level="j">Bioinformatics</title>
+		<idno type="ISSN">1367-4803</idno>
+		<idno type="ISSNe">1367-4811</idno>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1422" to="1423" />
+			<date type="published" when="2009-03-20">2009</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,167.35,565.90,387.34,14.58;4,182.33,577.86,372.02,14.58;4,182.33,589.81,373.02,14.58;4,182.33,601.77,72.72,14.58" xml:id="b6">
+	<analytic>
+		<title level="a" type="main">DEAP</title>
+		<author>
+			<persName><forename type="first">François-Michel</forename><surname>De Rainville</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Félix-Antoine</forename><surname>Fortin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marc-André</forename><surname>Gardner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marc</forename><surname>Parizeau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><surname>Gagné</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/2330784.2330799</idno>
+		<ptr target="https://doi.org/10.1145/2330784.2330799" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 14th annual conference companion on Genetic and evolutionary computation</title>
+				<meeting>the 14th annual conference companion on Genetic and evolutionary computation</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2012-07-07">2012</date>
+			<biblScope unit="page" from="85" to="92" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,167.35,619.71,388.40,14.58;4,182.33,631.66,373.96,14.58;4,182.33,643.62,162.95,14.58" xml:id="b7">
+	<analytic>
+		<title level="a" type="main">The MODES Toolbox: Measurements of Open-Ended Dynamics in Evolving Systems</title>
+		<author>
+			<persName><forename type="first">Emily</forename><forename type="middle">L</forename><surname>Dolson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anya</forename><forename type="middle">E</forename><surname>Vostinar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">J</forename><surname>Wiser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Charles</forename><surname>Ofria</surname></persName>
+		</author>
+		<idno type="DOI">10.1162/artl_a_00280</idno>
+		<ptr target="https://doi.org/10.1162/artl_a_00280" />
+	</analytic>
+	<monogr>
+		<title level="j">Artificial Life</title>
+		<title level="j" type="abbrev">Artificial Life</title>
+		<idno type="ISSN">1064-5462</idno>
+		<idno type="ISSNe">1530-9185</idno>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="50" to="73" />
+			<date type="published" when="2019-04">2019</date>
+			<publisher>MIT Press - Journals</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,167.35,661.55,388.67,14.58;4,182.33,673.51,373.41,14.58;4,182.33,685.47,219.77,14.58" xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Interpreting the Tape of Life: Ancestry-Based Analyses Provide Insights and Intuition about Evolutionary Dynamics</title>
+		<author>
+			<persName><forename type="first">Emily</forename><surname>Dolson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexander</forename><surname>Lalejini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><surname>Jorgensen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Charles</forename><surname>Ofria</surname></persName>
+		</author>
+		<idno type="DOI">10.1162/artl_a_00313</idno>
+		<ptr target="https://doi.org/10.1162/artl_a_00313" />
+	</analytic>
+	<monogr>
+		<title level="j">Artificial Life</title>
+		<title level="j" type="abbrev">Artificial Life</title>
+		<idno type="ISSN">1064-5462</idno>
+		<idno type="ISSNe">1530-9185</idno>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="58" to="79" />
+			<date type="published" when="2020-04">2020</date>
+			<publisher>MIT Press - Journals</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,167.35,703.40,387.00,14.58;4,182.33,715.36,311.09,14.58" xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Digital Evolution for Ecology Research: A Review</title>
+		<author>
+			<persName><forename type="first">Emily</forename><surname>Dolson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Charles</forename><surname>Ofria</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fevo.2021.750779</idno>
+		<ptr target="https://doi.org/10.3389/fevo.2021.750779" />
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Ecology and Evolution</title>
+		<title level="j" type="abbrev">Front. Ecol. Evol.</title>
+		<idno type="ISSNe">2296-701X</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page">852</biblScope>
+			<date type="published" when="2021-11-29">2021</date>
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,167.07,97.69,386.59,14.58;5,182.03,109.65,373.34,14.58;5,182.03,121.61,179.95,14.58" xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Phylogenetic analysis of community assembly and structure over space and time</title>
+		<author>
+			<persName><forename type="first">Brent</forename><forename type="middle">C</forename><surname>Emerson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rosemary</forename><forename type="middle">G</forename><surname>Gillespie</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.tree.2008.07.005</idno>
+		<ptr target="https://doi.org/10.1016/j.tree.2008.07.005" />
+	</analytic>
+	<monogr>
+		<title level="j">Trends in Ecology &amp; Evolution</title>
+		<title level="j" type="abbrev">Trends in Ecology &amp; Evolution</title>
+		<idno type="ISSN">0169-5347</idno>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="619" to="630" />
+			<date type="published" when="2008-11">2008</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,167.07,139.54,387.75,14.58;5,182.03,151.50,256.76,14.58" xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Conservation evaluation and phylogenetic diversity</title>
+		<author>
+			<persName coords=""><forename type="first">Daniel</forename><forename type="middle">P</forename><surname>Faith</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/0006-3207(92)91201-3</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Biological Conservation</title>
+		<title level="j" type="abbrev">Biological Conservation</title>
+		<idno type="ISSN">0006-3207</idno>
+		<imprint>
+			<biblScope unit="volume">61</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="10" />
+			<date type="published" when="1992">1992</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,167.07,169.43,386.36,14.58;5,182.03,181.39,333.43,14.58" xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Open Science Framework (OSF)</title>
+		<author>
+			<persName><forename type="first">Erin</forename><forename type="middle">D</forename><surname>Foster</surname></persName>
+			<idno type="ORCID">0000-0001-6908-9849</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ariel</forename><surname>Deardorff</surname></persName>
+			<idno type="ORCID">0000-0001-8930-6089</idno>
+		</author>
+		<idno type="DOI">10.5195/jmla.2017.88</idno>
+		<ptr target="https://doi.org/10.5195/jmla.2017.88" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Medical Library Association</title>
+		<title level="j" type="abbrev">jmla</title>
+		<idno type="ISSN">1536-5050</idno>
+		<idno type="ISSNe">1558-9439</idno>
+		<imprint>
+			<biblScope unit="volume">105</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">203</biblScope>
+			<date type="published" when="2017-04-04">2017</date>
+			<publisher>University Library System, University of Pittsburgh</publisher>
+		</imprint>
+	</monogr>
+	<note>JMLA</note>
+</biblStruct>
+
+<biblStruct coords="5,167.07,199.32,386.36,14.58;5,182.03,211.28,372.40,14.58;5,181.78,223.24,82.53,14.58" xml:id="b13">
+	<analytic>
+		<title level="a" type="main">&lt;scp&gt;RE&lt;/scp&gt;voSim: Organism‐level simulation of macro and microevolution</title>
+		<author>
+			<persName><forename type="first">Russell</forename><forename type="middle">J</forename><surname>Garwood</surname></persName>
+			<idno type="ORCID">0000-0002-2803-9471</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Alan</forename><forename type="middle">R T</forename><surname>Spencer</surname></persName>
+			<idno type="ORCID">0000-0001-6590-405X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mark</forename><forename type="middle">D</forename><surname>Sutton</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/pala.12420</idno>
+		<ptr target="https://doi.org/10.1111/pala.12420" />
+	</analytic>
+	<monogr>
+		<title level="j">Palaeontology</title>
+		<title level="j" type="abbrev">Palaeontology</title>
+		<idno type="ISSN">0031-0239</idno>
+		<idno type="ISSNe">1475-4983</idno>
+		<imprint>
+			<biblScope unit="volume">62</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="339" to="355" />
+			<date type="published" when="2019-02-22">2019</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,167.07,241.17,386.37,14.58;5,182.03,253.13,348.59,14.58" xml:id="b14">
+	<monogr>
+		<title level="m" type="main">APOGeT: Automated phylogeny over geological timescales</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Godin-Dubois</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Cussat-Blanc</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Duthen</surname></persName>
+		</author>
+		<idno type="DOI">10.13140/rg.2.2.33781.93921</idno>
+		<ptr target="https://doi.org/10.13140/rg.2.2.33781.93921" />
+		<imprint>
+			<date type="published" when="2019-08">2019. August</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,167.07,271.06,386.36,14.58;5,182.03,283.02,371.39,14.58;5,182.03,294.98,371.57,14.58;5,182.03,306.93,277.34,14.58" xml:id="b15">
+	<analytic>
+		<title level="a" type="main">What Can Phylogenetic Metrics Tell us About Useful Diversity in Evolutionary Algorithms?</title>
+		<author>
+			<persName><forename type="first">Jose</forename><forename type="middle">Guadalupe</forename><surname>Hernandez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexander</forename><surname>Lalejini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Emily</forename><surname>Dolson</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-981-16-8113-4_4</idno>
+		<ptr target="https://doi.org/10.1007/978-981-16-8113-4_4" />
+	</analytic>
+	<monogr>
+		<title level="m">Genetic and Evolutionary Computation</title>
+				<editor>
+			<persName><forename type="first">W</forename><surname>Banzhaf</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">L</forename><surname>Trujillo</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">S</forename><surname>Winkler</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">&amp;</forename><forename type="middle">B</forename><surname>Worzel</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Singapore</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer Nature Singapore</publisher>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="page" from="63" to="82" />
+		</imprint>
+	</monogr>
+	<note>Springer Nature</note>
+</biblStruct>
+
+<biblStruct coords="5,167.07,324.87,386.36,14.58;5,182.03,336.83,373.34,14.58;5,182.03,348.78,194.19,14.58" xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Mammals on the EDGE: Conservation Priorities Based on Threat and Phylogeny</title>
+		<author>
+			<persName><forename type="first">Nick</forename><forename type="middle">J B</forename><surname>Isaac</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Samuel</forename><forename type="middle">T</forename><surname>Turvey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ben</forename><surname>Collen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carly</forename><surname>Waterman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jonathan</forename><forename type="middle">E M</forename><surname>Baillie</surname></persName>
+		</author>
+		<idno type="DOI">10.1371/journal.pone.0000296</idno>
+		<ptr target="https://doi.org/10.1371/journal.pone.0000296" />
+	</analytic>
+	<monogr>
+		<title level="j">PLoS ONE</title>
+		<title level="j" type="abbrev">PLoS ONE</title>
+		<idno type="ISSNe">1932-6203</idno>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">e296</biblScope>
+			<date type="published" when="2007-03-14">2007</date>
+			<publisher>Public Library of Science (PLoS)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,166.83,366.72,386.61,14.58;5,182.03,378.67,246.51,14.58" xml:id="b17">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Jakob</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Rhinelander</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Moldovan</surname></persName>
+		</author>
+		<ptr target="https://github.com/pybind/pybind11" />
+		<title level="m">pybind11 -seamless operability between C++11 and Python</title>
+				<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,166.83,396.61,387.98,14.58;5,182.03,408.57,371.39,14.58;5,182.03,420.52,278.59,14.58" xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Endosymbiosis or Bust: Influence of Ectosymbiosis on Evolution of Obligate Endosymbiosis</title>
+		<author>
+			<persName><forename type="first">Kiara</forename><surname>Johnson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Piper</forename><surname>Welch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Emily</forename><surname>Dolson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anya</forename><forename type="middle">E</forename><surname>Vostinar</surname></persName>
+		</author>
+		<idno type="DOI">10.1162/isal_a_00488</idno>
+		<ptr target="https://doi.org/10.1162/isal_a_00488" />
+	</analytic>
+	<monogr>
+		<title level="m">The 2022 Conference on Artificial Life</title>
+				<imprint>
+			<publisher>MIT Press</publisher>
+			<date type="published" when="2022-07-18">2022, July 18</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,167.07,438.46,387.74,14.58;5,182.03,450.42,371.39,14.58;5,182.03,462.37,326.70,14.58" xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Data Standards for Artificial Life Software</title>
+		<author>
+			<persName><forename type="first">Alexander</forename><surname>Lalejini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Emily</forename><surname>Dolson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Clifford</forename><surname>Bohm</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Austin</forename><forename type="middle">J</forename><surname>Ferguson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">P</forename><surname>Parsons</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Penelope</forename><forename type="middle">Faulkner</forename><surname>Rainford</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><surname>Richmond</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Charles</forename><surname>Ofria</surname></persName>
+		</author>
+		<idno type="DOI">10.1162/isal_a_00213</idno>
+		<ptr target="https://doi.org/10.1162/isal_a_00213" />
+	</analytic>
+	<monogr>
+		<title level="m">The 2019 Conference on Artificial Life</title>
+				<imprint>
+			<publisher>MIT Press</publisher>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="page" from="507" to="514" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,167.07,480.31,386.36,14.58;5,182.03,492.26,341.00,14.58" xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Sound colless-like balance indices for multifurcating trees</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Mir</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Rotger</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Rosselló</surname></persName>
+		</author>
+		<idno type="DOI">10.1371/journal.pone.0203401</idno>
+		<ptr target="https://doi.org/10.1371/journal.pone.0203401" />
+	</analytic>
+	<monogr>
+		<title level="j">Plos One</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,167.07,510.20,386.36,14.58;5,182.03,522.16,370.62,14.58" xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Inferring evolutionary process from phylogenetic tree shape</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">O</forename><surname>Mooers</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">B</forename><surname>Heard</surname></persName>
+		</author>
+		<idno type="DOI">10.1086/419657</idno>
+		<ptr target="https://doi.org/10.1086/419657" />
+	</analytic>
+	<monogr>
+		<title level="j">The Quarterly Review of Biology</title>
+		<imprint>
+			<biblScope unit="volume">72</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="31" to="54" />
+			<date type="published" when="1997">1997</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,167.07,540.09,386.36,14.58;5,182.03,552.05,371.39,14.58;5,182.03,564.00,316.73,14.58" xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Hereditary stratigraphy: Genome annotations to enable phylogenetic inference over distributed populations</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">A</forename><surname>Moreno</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Dolson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Ofria</surname></persName>
+		</author>
+		<idno type="DOI">10.1162/isal_a_00550</idno>
+		<ptr target="https://doi.org/10.1162/isal_a_00550" />
+	</analytic>
+	<monogr>
+		<title level="m">ALIFE 2022: The 2022 Conference on Artificial Life</title>
+				<imprint>
+			<date type="published" when="2022">2022a</date>
+			<biblScope unit="page" from="65" to="66" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,167.07,581.94,386.36,14.58;5,182.03,593.90,372.79,14.58;5,181.78,605.85,210.57,14.58" xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Hstrat: A python package for phylogenetic inference on distributed digital evolution populations</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">A</forename><surname>Moreno</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Dolson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Ofria</surname></persName>
+		</author>
+		<idno type="DOI">10.21105/joss.04866</idno>
+		<ptr target="https://doi.org/10.21105/joss.04866" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Open Source Software</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">80</biblScope>
+			<biblScope unit="page">4866</biblScope>
+			<date type="published" when="2022">2022b</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,167.07,623.79,386.36,14.58;5,182.03,635.74,371.39,14.58;5,182.03,647.70,311.57,14.58" xml:id="b24">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">A</forename><surname>Moreno</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Dolson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Rodriguez-Papa</surname></persName>
+		</author>
+		<idno type="DOI">10.1162/isal_a_00694</idno>
+		<ptr target="https://doi.org/10.1162/isal_a_00694" />
+		<title level="m">Toward Phylogenetic Inference of Evolutionary Dynamics at Scale. ALIFE 2023: Ghost in the Machine: Proceedings of the 2023 Artificial Life Conference</title>
+				<imprint>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="page">79</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,167.07,665.64,386.37,14.58;5,182.03,677.59,371.40,14.58" xml:id="b25">
+	<monogr>
+		<title level="m" type="main">Analysis of phylogeny tracking algorithms for serial and multiprocess applications</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">A</forename><surname>Moreno</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">R</forename><surname>Papa</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Dolson</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.2403.00246</idno>
+		<ptr target="https://doi.org/10.48550/arXiv.2403.00246" />
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,167.07,695.53,386.36,14.58;5,182.03,707.48,373.34,14.58;5,181.78,719.44,102.20,14.58" xml:id="b26">
+	<monogr>
+		<title level="m" type="main">Ecology, spatial structure, and selection pressure induce strong signatures in phylogenetic structure</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">A</forename><surname>Moreno</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Rodriguez-Papa</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Dolson</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.2405.07245</idno>
+		<ptr target="https://doi.org/10.48550/arXiv.2405.07245" />
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,39.35,775.34,514.08,14.58" xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Phylotrack: C++ and Python libraries for in silico phylogenetic tracking</title>
+		<author>
+			<persName coords=""><surname>Dolson</surname></persName>
+		</author>
+		<idno>¿PAGE? 5</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Open Source Software</title>
+		<imprint>
+			<biblScope unit="volume">0</biblScope>
+			<biblScope unit="issue">0</biblScope>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,167.07,97.69,387.75,14.58;6,182.03,109.65,372.79,14.58;6,182.03,121.61,373.34,14.58;6,182.03,133.56,371.40,14.58;6,182.03,145.52,203.77,14.58" xml:id="b28">
+	<monogr>
+		<title level="m" type="main">Empirical: C++ library for efficient, reliable, and accessible scientific software</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Ofria</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">&amp; djrain.</orgName>
+			</affiliation>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">A</forename><surname>Moreno</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">&amp; djrain.</orgName>
+			</affiliation>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Dolson</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">&amp; djrain.</orgName>
+			</affiliation>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Lalejini</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">&amp; djrain.</orgName>
+			</affiliation>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Rodriguez Papa</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">&amp; djrain.</orgName>
+			</affiliation>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Fenton</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">&amp; djrain.</orgName>
+			</affiliation>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Perry</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">&amp; djrain.</orgName>
+			</affiliation>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Jorgensen</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">&amp; djrain.</orgName>
+			</affiliation>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Baldwin</forename><surname>Edwards</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">&amp; djrain.</orgName>
+			</affiliation>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">O</forename><surname>Stredwick</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">&amp; djrain.</orgName>
+			</affiliation>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Vostinar</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">&amp; djrain.</orgName>
+			</affiliation>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Moreno</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">&amp; djrain.</orgName>
+			</affiliation>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Schossau</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">&amp; djrain.</orgName>
+			</affiliation>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Zaman</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">&amp; djrain.</orgName>
+			</affiliation>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename></persName>
+			<affiliation>
+				<orgName type="collaboration">&amp; djrain.</orgName>
+			</affiliation>
+		</author>
+		<idno type="DOI">10.5281/zenodo.4141943</idno>
+		<ptr target="https://doi.org/10.5281/zenodo.4141943" />
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+	<note>Version 0.0.4</note>
+</biblStruct>
+
+<biblStruct coords="6,167.07,163.45,388.03,14.58;6,182.03,175.41,372.40,14.58;6,181.78,187.37,89.77,14.58" xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Avida: A software platform for research in computational evolutionary biology</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Ofria</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">O</forename><surname>Wilke</surname></persName>
+		</author>
+		<idno type="DOI">10.1162/106454604773563612</idno>
+		<ptr target="https://doi.org/10.1162/106454604773563612" />
+	</analytic>
+	<monogr>
+		<title level="j">Artificial Life</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="191" to="229" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,167.07,205.30,225.11,14.58" xml:id="b30">
+	<monogr>
+		<title/>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Pedregosa</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Gervais</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note>Memory profiler</note>
+</biblStruct>
+
+<biblStruct coords="6,167.07,223.24,386.35,14.58;6,182.03,235.19,373.33,14.58;6,182.03,247.15,190.23,14.58" xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Models, simulations, instantiations, and evidence: The case of digital evolution</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">T</forename><surname>Pennock</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/09528130601116113</idno>
+		<ptr target="https://doi.org/10.1080/09528130601116113" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Experimental &amp; Theoretical Artificial Intelligence</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="29" to="42" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,167.07,265.09,388.03,14.58;6,182.03,277.04,372.40,14.58;6,182.03,289.00,84.78,14.58" xml:id="b32">
+	<monogr>
+		<title level="m" type="main">Evolution, ecology and optimization of digital organisms</title>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Ray</surname></persName>
+		</author>
+		<ptr target="https://homeostasis.scs.carleton.ca/~soma/adapsec/readings/tierra-92-08-042.pdf" />
+		<imprint>
+			<date type="published" when="1992">1992</date>
+			<biblScope unit="volume">92</biblScope>
+		</imprint>
+	</monogr>
+	<note type="report_type">Santa Fe Institute Working Paper</note>
+</biblStruct>
+
+<biblStruct coords="6,167.07,306.93,388.30,14.58;6,182.03,318.89,371.39,14.58;6,182.03,330.85,371.58,14.58" xml:id="b33">
+	<analytic>
+		<title level="a" type="main">tqDist: A library for computing the quartet and triplet distances between binary or general trees</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Sand</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">K</forename><surname>Holt</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Johansen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">S</forename><surname>Brodal</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Mailund</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">N</forename><surname>Pedersen</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/bioinformatics/btu157</idno>
+		<ptr target="https://doi.org/10.1093/bioinformatics/btu157" />
+	</analytic>
+	<monogr>
+		<title level="j">Bioinformatics</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">14</biblScope>
+			<biblScope unit="page" from="2079" to="2080" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,167.07,348.78,388.03,14.58;6,182.03,360.74,371.39,14.58;6,182.03,372.70,373.06,14.58;6,182.03,384.65,263.86,14.58" xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Untangling phylogenetic diversity&apos;s role in evolutionary computation using a suite of diagnostic fitness landscapes</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Shahbandegan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">G</forename><surname>Hernandez</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Lalejini</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Dolson</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3520304.3534028</idno>
+		<ptr target="https://doi.org/10.1145/3520304.3534028" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Genetic and Evolutionary Computation Conference Companion</title>
+				<meeting>the Genetic and Evolutionary Computation Conference Companion</meeting>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="page" from="2322" to="2325" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,167.07,402.59,388.30,14.58;6,182.03,414.54,140.35,14.58" xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Tree balance</title>
+		<author>
+			<persName coords=""><forename type="first">K.-T</forename><surname>Shao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">R</forename><surname>Sokal</surname></persName>
+		</author>
+		<idno type="DOI">10.2307/2992186</idno>
+		<ptr target="https://doi.org/10.2307/2992186" />
+	</analytic>
+	<monogr>
+		<title level="j">Systematic Zoology</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="266" to="276" />
+			<date type="published" when="1990">1990</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,167.07,432.48,386.36,14.58;6,182.03,444.44,362.13,14.58" xml:id="b36">
+	<analytic>
+		<title level="a" type="main">TreeDist: Distances between phylogenetic trees. R package version 2.6.1</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">R</forename><surname>Smith</surname></persName>
+		</author>
+		<idno type="DOI">10.5281/zenodo.3528124</idno>
+		<ptr target="https://doi.org/10.5281/zenodo.3528124" />
+	</analytic>
+	<monogr>
+		<title level="m">Comprehensive R Archive Network</title>
+				<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,167.07,462.37,386.36,14.58;6,182.03,474.33,373.34,14.58;6,182.03,486.28,373.34,14.58" xml:id="b37">
+	<analytic>
+		<title level="a" type="main">A tribute to claude shannon (1916-2001) and a plea for more rigorous use of species richness, species diversity and the &apos;shannon-wiener&apos;index</title>
+		<author>
+			<persName coords=""><forename type="first">I</forename><forename type="middle">F</forename><surname>Spellerberg</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">J</forename><surname>Fedor</surname></persName>
+		</author>
+		<idno type="DOI">10.1046/j.1466-822X</idno>
+		<ptr target="https://doi.org/10.1046/j.1466-822X" />
+	</analytic>
+	<monogr>
+		<title level="j">Global Ecology and Biogeography</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="177" to="179" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,167.07,516.18,387.74,14.58;6,182.03,528.13,233.58,14.58" xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Simulating trees with a fixed number of extant species</title>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Stadler</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/sysbio/syr029</idno>
+		<ptr target="https://doi.org/10.1093/sysbio/syr029" />
+	</analytic>
+	<monogr>
+		<title level="j">Systematic Biology</title>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="676" to="684" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,167.07,546.07,386.36,14.58;6,182.03,558.03,372.40,14.58;6,182.03,569.98,28.88,14.58" xml:id="b39">
+	<analytic>
+		<title level="a" type="main">DendroPy: A python library for phylogenetic computing</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Sukumaran</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">T</forename><surname>Holder</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/bioinformatics/btq228</idno>
+		<ptr target="https://doi.org/10.1093/bioinformatics/btq228" />
+	</analytic>
+	<monogr>
+		<title level="j">Bioinformatics</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="1569" to="1571" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,166.73,587.92,388.09,14.58;6,182.03,599.87,372.78,14.58;6,182.03,611.83,371.57,14.58;6,182.03,623.79,373.33,14.58;6,182.03,635.74,146.32,14.58" xml:id="b40">
+	<analytic>
+		<title level="a" type="main">A guide to phylogenetic metrics for conservation, community ecology and macroecology</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">M</forename><surname>Tucker</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">W</forename><surname>Cadotte</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">B</forename><surname>Carvalho</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">J</forename><surname>Davies</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Ferrier</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">A</forename><surname>Fritz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Grenyer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">R</forename><surname>Helmus</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">S</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">O</forename><surname>Mooers</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Pavoine</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">O</forename><surname>Purschke</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">W</forename><surname>Redding</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">F</forename><surname>Rosauer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Winter</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Mazel</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/brv.12252</idno>
+		<ptr target="https://doi.org/10.1111/brv.12252" />
+	</analytic>
+	<monogr>
+		<title level="j">Biological Reviews</title>
+		<imprint>
+			<biblScope unit="volume">92</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="698" to="715" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,166.74,653.68,388.63,14.58;6,181.70,665.64,294.10,14.58" xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Spatial structure can decrease symbiotic cooperation</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">E</forename><surname>Vostinar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Ofria</surname></persName>
+		</author>
+		<idno type="DOI">10.1162/artl_a_00273</idno>
+		<ptr target="https://doi.org/10.1162/artl_a_00273" />
+	</analytic>
+	<monogr>
+		<title level="j">Artificial Life</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="229" to="249" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,166.60,683.57,386.82,14.58;6,182.03,695.53,373.33,14.58;6,182.03,707.48,247.53,14.58" xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Phylogenies and community ecology</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">O</forename><surname>Webb</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">D</forename><surname>Ackerly</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">A</forename><surname>Mcpeek</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">J</forename><surname>Donoghue</surname></persName>
+		</author>
+		<idno type="DOI">10.1146/annurev.ecolsys.33.010802.150448</idno>
+		<ptr target="https://doi.org/10.1146/annurev.ecolsys.33.010802.150448" />
+	</analytic>
+	<monogr>
+		<title level="j">Annual Review of Ecology and Systematics</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="475" to="505" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,39.35,777.64,335.02,11.66" xml:id="b43">
+	<monogr>
+		<title level="m" type="main">Phylotrack: C++ and Python libraries for in silico phylogenetic tracking</title>
+		<author>
+			<persName coords=""><surname>Dolson</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

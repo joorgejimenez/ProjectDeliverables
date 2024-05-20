@@ -1,0 +1,950 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Time-Varying Graph Signal Recovery Using High-Order Smoothness and Adaptive Low-rankness</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2024-05-16">16 May 2024</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,134.77,170.62,53.05,8.81"><forename type="first">Weihong</forename><surname>Guo</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,195.22,170.62,36.37,8.81"><forename type="first">Yifei</forename><surname>Lou</surname></persName>
+							<email>yflou@unc.edu</email>
+						</author>
+						<author>
+							<persName coords="1,238.71,170.62,32.17,8.81"><forename type="first">Jing</forename><surname>Qin</surname></persName>
+							<email>jing.qin@uky.edu</email>
+						</author>
+						<author>
+							<persName coords="1,294.61,170.62,39.68,8.81"><forename type="first">Ming</forename><surname>Yan</surname></persName>
+							<email>yanming@cuhk.edu.cn</email>
+						</author>
+						<author>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Mathematics, Applied Mathematics, and Statistics Case Western Reserve University</orgName>
+								<address>
+									<postCode>44106</postCode>
+									<settlement>Cleveland</settlement>
+									<region>OH</region>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Mathematics &amp; School of Data Science and Society</orgName>
+								<orgName type="institution">University of North Carolina at Chapel Hill Chapel Hill</orgName>
+								<address>
+									<postCode>27599</postCode>
+									<region>NC</region>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff2">
+								<orgName type="department">Department of Mathematics</orgName>
+								<orgName type="institution">University of Kentucky Lexington</orgName>
+								<address>
+									<postCode>40506</postCode>
+									<region>KY</region>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff3">
+								<orgName type="department">School of Data Science</orgName>
+								<orgName type="institution">The Chinese University of Hong Kong</orgName>
+								<address>
+									<postCode>518172</postCode>
+									<settlement>Shenzhen (CUHK-Shenzhen, Shenzhen</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Time-Varying Graph Signal Recovery Using High-Order Smoothness and Adaptive Low-rankness</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2024-05-16">16 May 2024</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">52453CC218376D8747785D8FCB89B7E5</idno>
+					<idno type="arXiv">arXiv:2405.09752v1[eess.SP]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2024-05-19T13:46+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Time-varying graph signal</term>
+					<term>Sobolev smoothness</term>
+					<term>weighted nuclear norm</term>
+					<term>error function</term>
+					<term>low-rank</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Time-varying graph signal recovery has been widely used in many applications, including climate change, environmental hazard monitoring, and epidemic studies. It is crucial to choose appropriate regularizations to describe the characteristics of the underlying signals, such as the smoothness of the signal over the graph domain and the low-rank structure of the spatial-temporal signal modeled in a matrix form. As one of the most popular options, the graph Laplacian is commonly adopted in designing graph regularizations for reconstructing signals defined on a graph from partially observed data. In this work, we propose a time-varying graph signal recovery method based on the high-order Sobolev smoothness and an error-function weighted nuclear norm regularization to enforce the low-rankness. Two efficient algorithms based on the alternating direction method of multipliers and iterative</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="17" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="18" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="19" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="20" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="21" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">Introduction</head><p>Many real-world datasets are represented in the form of graphs, such as sea surface temperatures, Covid-19 cases at regional or global levels, and PM 2.5 levels in the atmosphere. Graphs play a crucial role in data science, facilitating the mathematical modeling of intricate relationships among data points. Typically composed of vertices with either undirected or directed edges, graphs regard each data point as a vertex and use edges to represent pairwise connections in terms of distances or similarities. A graph signal is a collection of values defined on the vertex set. The graph structure can be either provided by specific applications or learned from partial or complete datasets.</p><p>As an extension of (discrete) signal processing, graph signal processing <ref type="bibr" coords="2,438.56,350.30,11.62,8.81" target="#b0">[1]</ref> has become an emerging field in data science and attracted tremendous attention due to its capability of dealing with big data with irregular and complex graph structures from various applications, such as natural language processing <ref type="bibr" coords="2,394.03,386.16,10.58,8.81" target="#b1">[2]</ref>, traffic prediction <ref type="bibr" coords="2,153.20,398.12,10.58,8.81" target="#b2">[3]</ref>, climate change monitoring <ref type="bibr" coords="2,280.64,398.12,10.58,8.81" target="#b3">[4]</ref>, and epidemic prediction <ref type="bibr" coords="2,397.76,398.12,10.58,8.81" target="#b4">[5]</ref>. Graph signal recovery aims to recover a collection of signals with certain smoothness assumptions defined on a graph from partial and/or noisy observations. Unlike signals defined in traditional Euclidean spaces, the intricate geometry of the underlying graph domain must be considered when processing and recovering graph signals. Graph signals typically exhibit smoothness either locally or globally over the graph.</p><p>There are some challenges in graph signal recovery when exploiting the underlying graph structure to improve signal reconstruction accuracy. First, the topology of a graph desires a comprehensive representation involving many graph components, such as structural properties, connectivity patterns, vertex/edge density, and distribution. Second, it may be insufficient to describe the smoothness of graph signals by simply restricting the similarity of signal values locally. Moreover, the growth of graph size leads to a significant computational burden. To address them, various techniques have been developed, including graph-based regularization methods <ref type="bibr" coords="2,152.91,565.49,10.79,8.81" target="#b5">[6,</ref><ref type="bibr" coords="2,167.99,565.49,7.47,8.81" target="#b6">7,</ref><ref type="bibr" coords="2,179.77,565.49,7.47,8.81" target="#b7">8,</ref><ref type="bibr" coords="2,191.53,565.49,7.19,8.81" target="#b8">9]</ref>, spectral graph theory <ref type="bibr" coords="2,298.94,565.49,15.77,8.81" target="#b9">[10,</ref><ref type="bibr" coords="2,319.01,565.49,12.45,8.81" target="#b10">11,</ref><ref type="bibr" coords="2,335.77,565.49,12.45,8.81" target="#b11">12,</ref><ref type="bibr" coords="2,352.52,565.49,11.83,8.81" target="#b12">13]</ref>, and optimization algorithms <ref type="bibr" coords="2,162.92,577.44,15.77,8.81" target="#b13">[14,</ref><ref type="bibr" coords="2,181.18,577.44,11.83,8.81" target="#b14">15]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.1">Time-Varying Graph Signal Recovery</head><p>A time-varying or spatial-temporal graph signal can be considered as a sequence of signals arranged chronologically, where each signal at a specific time instance is defined on a static or dynamically changing spatial graph.</p><p>Consider an undirected unweighted graph 𝐺 = (𝑉, 𝐸), where 𝑉 is a set of 𝑛 vertices and 𝐸 is a set of edges. We assume a collection of time-varying graph signals {x 𝑡 } 𝑡=1,...,𝑚 with x 𝑡 ∈ R 𝑛 are defined on 𝑉 with a time index 𝑡. Let 𝑋 = [x 1 , . . . , x 𝑚 ] ∈ R 𝑛×𝑚 be the data set represented in matrix. The pairwise connections on the graph 𝐺 can be modeled by an adjacency matrix 𝐴, where the (𝑖, 𝑗)-th entry of 𝐴 is one if there is an edge between vertices 𝑖 and 𝑗, and zero otherwise. This binary adjacency matrix can be extended to the non-binary case for a weighted graph, where each entry indicates the similarity between two vertices. Throughout the paper, we use a standard 𝑘 nearest neighbor (kNN) approach based on the Euclidean distance of data points to construct the adjacency matrix.</p><p>Given an adjacency matrix 𝐴, we further define the graph Laplacian matrix, 𝐿 = 𝑀 − 𝐴 ∈ R 𝑛×𝑛 , where 𝑀 is a diagonal matrix with its diagonal element 𝑀 𝑖𝑖 = 𝑗 𝐴 𝑖 𝑗 . The graph Laplacian serves as a matrix representation of the graph structure and can be used to describe some important characteristics of a graph, such as node connectivity and similarity. For example, geographic locations in the form of coordinates, i.e., longitude and latitude, are typically used to calculate the pairwise distance and, thereby, the graph Laplacian for geospatial data. For some data sets without obvious graph domains, a preprocessing step of graph learning can be implemented; see <ref type="bibr" coords="3,219.10,378.19,16.60,8.81" target="#b15">[16]</ref> for a comprehensive review of graph learning techniques.</p><p>Time-varying graph signal recovery aims to recover an underlying matrix from its partially observed entries that are possibly polluted by additive noise. Mathematically, a forward model is 𝑌 = 𝐽 • 𝑋 + N , where 𝑌 is the observed data, 𝐽 ∈ {0, 1} 𝑛×𝑚 is a sampling matrix, and N is a random noise. In this work, we focus on recovering time-varying signals, represented by the matrix 𝑋, from incomplete noisy data 𝑌 defined on static spatial graphs in the sense that the vertex set and the edges do not change over time. In addition, we adopt a symmetrically normalized graph Laplacian that is pre-computed based on geographic locations.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.2">Related Works</head><p>The recovery of graph signals from partial observations is an ill-posed problem due to missing data. Graph regularization plays a crucial role in developing a recovery model for time-varying signals by enforcing temporal correlation and/or describing the underlying graph topology. An intuitive approach for recovering time-varying graph signals is to apply interpolation methods to fill in the missing entries, such as natural neighborhood interpolation (NNI) <ref type="bibr" coords="3,314.72,604.34,15.27,8.81" target="#b16">[17]</ref>. Numerous recovery models with diverse smoothness terms have been proposed to further preserve the underlying geometry. For example, Graph Smoothing (GS) <ref type="bibr" coords="3,329.91,628.25,16.60,8.81" target="#b17">[18]</ref> characterizes the smoothness of the signal using the graph Laplacian of 𝑋. Alternatively, temporal smoothness is incorporated in Time-Varying Graph Signal Recovery (TGSR) <ref type="bibr" coords="4,387.76,111.19,16.60,8.81" target="#b18">[19]</ref> by formulating the graph Laplacian of 𝐷 𝑋, where 𝐷 is a first-order temporal difference operator. The combination of the graph Laplacian of 𝑋 and the Tikhonov regularity of 𝐷 𝑋 was considered in <ref type="bibr" coords="4,209.95,147.06,15.27,8.81" target="#b19">[20]</ref>. In contrast, the graph Laplacian of 𝐷 𝑋 with an additional low-rank regularity of 𝑋 was formulated as Low-Rank Differential Smoothness (LRDS) <ref type="bibr" coords="4,169.37,170.97,15.27,8.81" target="#b20">[21]</ref>. In the Tikhonov regularization, ∥ 𝑋 𝐷 ∥ 2 𝐹 = tr(𝑋 𝐷𝐷 𝑇 𝑋 𝑇 ) implies that 𝐷𝐷 𝑇 is treated as the temporal graph Laplacian. In <ref type="bibr" coords="4,338.33,182.92,15.27,8.81" target="#b21">[22]</ref>, the graph Laplacian matrix 𝐿 is replaced by (𝐿 + 𝜖 𝐼) 𝑟 , where 𝐼 is the identity matrix and 𝑟 ≥ 1 for a high-order Sobolev spatial-temporal smoothness. Its main advantage lies in faster convergence, as this approach does not necessitate extensive eigenvalue decomposition or matrix inversion. Recently, another low-rank and graph-time smoothness (LRGTS) method has been proposed in <ref type="bibr" coords="4,224.64,242.70,15.27,8.81" target="#b22">[23]</ref>, where the sum of the nuclear norm and the Tikhonov regularizer on the second-order temporal smoothness is adopted to promote the low-rankness and the temporal smoothness, respectively.</p><p>All the models mentioned above can be condensed into one minimization framework:</p><formula xml:id="formula_0" coords="4,159.83,308.34,306.59,22.39">min 𝑋 1 2 ∥𝑌 − 𝐽 • 𝑋 ∥ 2 𝐹 + 𝛼 2 tr(𝐷 𝑇 𝜃 𝑋 𝑇 𝐿 𝑠 𝑋 𝐷 𝜃 ) + 𝛽𝑅(𝑋) + 𝛾 2 tr(𝑋 𝐿 𝑡 𝑋 𝑇 ),<label>(1)</label></formula><p>where 𝐷 𝜃 is a 𝜃-th order temporal difference operator, 𝐿 𝑠 and 𝐿 𝑟 are the spatial and temporal graph Laplacian matrices, respectively, 𝑅(𝑋) is the regularization term applied to 𝑋 describing its characteristics, and 𝛼 ≥ 0, 𝛽 ≥ 0, 𝛾 ≥ 0 are three parameters. Two common choices of 𝜃 are (1) 𝜃 = 0 that corresponds to 𝐷 𝜃 = 𝐼 and (2) 𝜃 = 1 used in TGSR. Additionally, 𝐿 𝑠 can be a transformed version of the classical graph Laplacian 𝐿, e.g., L = (𝐿 + 𝜖 𝐼) 𝑟 in the Sobolev method <ref type="bibr" coords="4,134.77,412.05,15.27,8.81" target="#b21">[22]</ref>, where 𝜖 &gt; 0 and 𝑟 ≥ 1, which can be non-integer. The temporal graph Laplacian can be constructed by using the 𝜏-th order temporal difference operator, i.e., 𝐿 𝑡 = 𝐷 𝜏 𝐷 𝑇 𝜏 , for which case the temporal Laplacian can be expressed via the Frobenious norm tr(𝑋 𝐷 𝜏 𝐷 𝑇 𝜏 𝑋 𝑇 ) = ∥ 𝑋 𝐷 𝜏 ∥ 2 𝐹 (see Tikhonov with 𝜏 = 1 and LRGTS with 𝜏 = 2). The regularization 𝑅(𝑋) can be chosen as the nuclear norm of 𝑋 if the underlying time-varying graph signal 𝑋 is low rank. Various models utilize different choices of 𝐷 𝜃 , 𝐿 𝑠 / L, 𝐿 𝑡 , and the regularization 𝑅. Leveraging the recent growth in deep learning, some time-varying graph signal recovery methods include unrolling technique <ref type="bibr" coords="4,214.64,507.69,15.27,8.81" target="#b23">[24]</ref>, graph neural network (GNN) <ref type="bibr" coords="4,354.05,507.69,15.27,8.81" target="#b24">[25]</ref>, and joint sampling and reconstruction of time-varying graph signals <ref type="bibr" coords="4,314.75,519.65,15.27,8.81" target="#b25">[26]</ref>. In this work, we are dedicated to developing unsupervised time-varying graph signal recovery algorithms that do not involve or rely on data training.</p><p>Following the general framework (1), we propose a novel low-rank regularization 𝑅(𝑋) based on the error function (ERF) <ref type="bibr" coords="4,302.32,567.47,16.60,8.81" target="#b26">[27]</ref> for sparse signal recovery (see Section 2.3). In addition, to handle non-Gaussian type of noise such as Laplace noise, we propose a variant model in which the Frobeinus norm based data fidelity term is replaced with the ℓ 1 -norm data fidelity (see Section 2.4). In Table <ref type="table" coords="4,411.73,603.33,3.74,8.81" target="#tab_0">1</ref>, we provide a summary of the proposed models and relevant works pertaining to the general framework outlined in <ref type="bibr" coords="4,225.70,627.24,10.58,8.81" target="#b0">(1)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Method</head><p>Optimization Model GS <ref type="bibr" coords="5,149.20,121.75,14.11,7.49" target="#b17">[18]</ref> min 𝑋</p><formula xml:id="formula_1" coords="5,136.26,119.66,334.64,41.54">1 2 ∥𝑌 − 𝐽 • 𝑋 ∥ 2 𝐹 + 𝛼 2 tr(𝑋 𝑇 𝐿𝑋) (𝜃 = 𝛽 = 𝛾 = 0 ) Tikhonov [20] min 𝑋 1 2 ∥𝑌 − 𝐽 • 𝑋 ∥ 2 𝐹 + 𝛼 2 tr(𝑋 𝑇 𝐿𝑋) + 𝛾 2 ∥ 𝑋𝐷 1 ∥ 2 𝐹 (𝜃 = 𝛽 = 0, 𝐿 𝑡 = 𝐷 1 𝐷 𝑇 1 )</formula><p>TGSR <ref type="bibr" coords="5,160.02,169.65,14.11,7.49" target="#b18">[19]</ref> min 𝑋 </p><formula xml:id="formula_2" coords="5,136.26,167.55,334.64,144.12">1 2 ∥𝑌 − 𝐽 • 𝑋 ∥ 2 𝐹 + 𝛼 2 tr(𝐷 𝑇 1 𝑋 𝑇 𝐿𝑋𝐷 1 ) ( 𝜃 = 1, 𝛽 = 𝛾 = 0) LRDS [21] min 𝑋 1 2 ∥𝑌 − 𝐽 • 𝑋 ∥ 2 𝐹 + 𝛼 2 tr(𝐷 𝑇 1 𝑋 𝑇 𝐿𝑋𝐷 1 ) + 𝛽 ∥ 𝑋 ∥ * (𝜃 = 1, 𝛾 = 0) Sobolev [22] min 𝑋 1 2 ∥𝑌 − 𝐽 • 𝑋 ∥ 2 𝐹 + 𝛼 2 tr(𝐷 𝑇 1 𝑋 𝑇 ( 𝐿 + 𝜖 𝐼 ) 𝑟 𝑋𝐷 1 ) (𝜃 = 1, 𝐿 𝑠 = L, 𝛽 = 𝛾 = 0) LRGTS [23] min 𝑋 1 2 ∥𝑌 − 𝐽 • 𝑋 ∥ 2 𝐹 + 𝛼 2 tr(𝑋 𝑇 𝐿𝑋) + 𝛽 ∥ 𝑋 ∥ * + 𝛾 2 ∥ 𝑋𝐷 2 ∥ 2 𝐹 (𝜃 = 0, 𝐿 𝑡 = 𝐷 2 𝐷 𝑇 2 ) Proposed L2 min 𝑋 1 2 ∥𝑌 − 𝐽 • 𝑋 ∥ 2 𝐹 + 𝛼 2 tr(𝐷 𝑇 𝜃 𝑋 𝑇 ( 𝐿 + 𝜖 𝐼 ) 𝑟 𝑋𝐷 𝜃 ) + 𝛽 ∥ 𝑋 ∥ erf (𝛾 = 0) where ∥ 𝑋 ∥ erf is an ERF weighted nuclear norm Proposed L1 min 𝑋 ∥𝑌 − 𝐽 • 𝑋 ∥ 1 + 𝛼 2 tr(𝐷 𝑇 𝜃 𝑋 𝑇 (𝐿 + 𝜖 𝐼 ) 𝑟 𝑋𝐷 𝜃 ) + 𝛽 ∥ 𝑋 ∥ erf (𝛾 = 0) where ∥ 𝑋 ∥ erf is an ERF weighted nuclear norm</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.3">Contributions</head><p>The major contributions of this work are described as follows.</p><p>1. We develop a generalized time-varying graph signal recovery framework encompassing several state-of-the-art works as specific cases. We also develop two new models with a new regularization based on ERF. 2. The proposed models combine high-order temporal smoothness and graph structures with the temporal correlation exploited by iteratively reweighted nuclear norm regularization. 3. We propose an efficient algorithm for solving the proposed models. Convergence analysis has shown that the algorithm generates a sequence that converges to a stationary point of the problem. 4. We conduct various numerical experiments, utilizing both synthetic and realworld datasets (specifically PM2.5 and sea surface temperature data), to validate the effectiveness of the proposed algorithm.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.4">Organization</head><p>The subsequent sections of this paper are structured as follows. In Section 2, we introduce a pioneering framework for recovering time-varying graph signals, leveraging Sobolev smoothness and ERF regularization. Additionally, we put forth an efficient algorithm based on the alternating direction method of multipliers (ADMM) and iterative reweighting scheme. A comprehensive convergence analysis of the proposed algorithm is also provided. In Section 3, we present numerical experiments conducted on synthetic and real-world datasets sourced from environmental and epidemic contexts. Finally, Section 4 encapsulates our conclusions and outlines potential avenues for future research.</p><p>2 Proposed Method</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1">Error Function Weighted Nuclear Norm Regularization</head><p>To enhance the low-rankness of a matrix, weighted nuclear norm minimization (WNNM) has been developed with promising performance in image denoising <ref type="bibr" coords="6,447.33,271.59,15.27,8.81" target="#b27">[28]</ref>. Specifically, the weighted nuclear norm (WNN) is defined as</p><formula xml:id="formula_3" coords="6,254.08,302.76,212.33,22.16">∥𝐿 ∥ w, * := ∑︁ 𝑖 𝑤 𝑖 𝜎 𝑖 (𝐿),<label>(2)</label></formula><p>where 𝜎 𝑖 (𝐿) is the 𝑖-th singular value of 𝐿 in the decreasing order and the weight vector w = (𝑤 𝑖 ) is in the non-decreasing order with 𝑤 𝑖 ≥ 0 being the 𝑖-th weight.</p><p>Choosing the weights is challenging in sparse and low-rank signal recovery problems. Iteratively reweighted L1 (IRL1) <ref type="bibr" coords="6,265.58,373.14,16.60,8.81" target="#b28">[29]</ref> was proposed for the sparse recovery problem, where the weight is updated based on the previous estimate. It can solve many problems with complicated sparse regularizations, exhibiting improved sparsity and convergence speed.</p><p>In this work, we introduce a novel ERF-weighted nuclear norm based on the ERF regularizer <ref type="bibr" coords="6,180.69,432.92,16.60,8.81" target="#b26">[27]</ref> and use linearization to obtain WNN. For any real matrix 𝑋 with 𝑛 singular values 𝜎 1 (𝑋) ≥ . . . ≥ 𝜎 𝑛 (𝑋), the ERF-weighted nuclear norm is</p><formula xml:id="formula_4" coords="6,236.50,465.08,229.92,27.60">∥ 𝑋 ∥ erf = 𝑛 ∑︁ 𝑖=1 ∫ 𝜎 𝑖 (𝑋) 0 𝑒 −𝑡 2 /𝜎 2 𝑑𝑡,<label>(3)</label></formula><p>where 𝜎 serves as a filtering parameter. To solve the ERF-nuclear norm regularized minimization problem, we use iterative reweighting (linearization) to get WNN with adaptive weights.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2">Fractional-order derivative</head><p>Inspired by the Grünwald-Letnikov fractional derivative <ref type="bibr" coords="6,359.02,599.49,15.27,8.81" target="#b29">[30]</ref>, we introduce the total 𝜃-th order temporal forward difference matrix with a zero boundary condition, as shown below</p><formula xml:id="formula_5" coords="7,215.99,101.33,250.43,108.27">𝐷 𝜃 =                   𝐶 (0) . . . . . . 𝐶 (𝑘) • • • 𝐶 (0) . . . . . . 𝐶 (𝑘) • • • 𝐶 (0)                   ∈ R 𝑚×𝑚 .<label>(4)</label></formula><p>Here the coefficients {𝐶 (𝑖)} 𝑘 𝑖=0 are defined as</p><formula xml:id="formula_6" coords="7,216.66,233.65,167.60,22.79">𝐶 (𝑖) = Γ(𝜃 + 1) Γ(𝑖 + 1)Γ(𝜃 + 1 − 𝑖) , 0 ≤ 𝑖 ≤ 𝑘,</formula><p>where Γ(𝑥) is the Gamma function. Notice that if 𝜃 is a positive integer, 𝑘 can be deterministic. For example, if 𝜃 = 1, then 𝑘 = 1 and we have 𝐶 (0) = 1 and 𝐶 (1) = −1, which is reduced to the first-order finite difference case. If 𝜃 = 2, then it reduces to the temporal Laplacian operator. Generally if 𝜃 = 𝑛, then only the first 𝑛+1 coefficients {𝐶 (𝑖)} 𝑛 𝑖=0 are nonzero and thereby 𝑘 = 𝑛 + 1. For any fractional value 𝜃, we have to choose the parameter 𝑘. The difference matrix ( <ref type="formula" coords="7,371.43,327.38,3.87,8.81" target="#formula_5">4</ref>) is built upon the zero boundary condition, while other types of boundary conditions, e.g., Newmann and periodic boundary conditions, can also be used. Alternatively, we can use low-order difference schemes for boundary conditions, e.g., the first-order forward difference based on the first 𝑚 − 1 time points and the zeroth order for the last time point.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3">Proposed Algorithm 1</head><p>We propose the following ERF regularized time-varying graph signal recovery model min</p><formula xml:id="formula_7" coords="7,179.72,465.79,286.70,22.39">𝑋 1 2 ∥𝑌 − 𝐽 • 𝑋 ∥ 2 𝐹 + 𝛼 2 tr(𝐷 𝑇 𝜃 𝑋 𝑇 (𝐿 + 𝜖 𝐼) 𝑟 𝑋 𝐷 𝜃 ) + 𝛽 ∥ 𝑋 ∥ erf .<label>(5)</label></formula><p>Here we use the least squares as a data fidelity term, the Sobolev smoothness of time-varying graph signals <ref type="bibr" coords="7,249.79,509.72,16.60,8.81" target="#b21">[22]</ref> as the graph regularization, and an ERF-based regularization defined in (3) for temporal low-rank correlation.</p><p>We apply ADMM with linearization to solve the problem <ref type="bibr" coords="7,375.94,533.63,10.58,8.81" target="#b4">(5)</ref>. First, we introduce an auxiliary variable 𝑍 to rewrite the problem (5) into an equivalent constrained problem:</p><formula xml:id="formula_8" coords="7,151.58,577.39,297.86,22.39">min 𝑋,𝑍 1 2 ∥𝑌 − 𝐽 • 𝑋 ∥ 2 𝐹 + 𝛼 2 tr(𝐷 𝑇 𝜃 𝑋 𝑇 (𝐿 + 𝜖 𝐼) 𝑟 𝑋 𝐷 𝜃 ) + 𝛽 ∥𝑍 ∥ erf , s.t. 𝑋 = 𝑍.</formula><p>Since the proximal operator of ∥ • ∥ erf is difficult to compute, we apply linearization on the ERF term to obtain a WNN when solving the subproblem for 𝑍. The ADMM iterates as follows,</p><formula xml:id="formula_9" coords="8,142.82,118.30,323.60,93.29">𝑤 𝑖 ← exp(−𝜎 2 𝑖 (𝑋)/𝜎 2 ), for 𝑖 = 1, . . . , 𝑚 𝑍 ← argmin 𝑍 𝛽 ∥𝑍 ∥ w, * + 𝜌 2 𝑋 − 𝑍 + 𝑍 2 𝐹 𝑋 ← argmin 𝑋 1 2 ∥𝐽 • 𝑋 − 𝑌 ∥ 2 𝐹 + 𝛼 2 tr(𝐷 𝑇 𝜃 𝑋 𝑇 (𝐿 + 𝜖 𝐼) 𝑟 𝑋 𝐷 𝜃 ) + 𝜌 2 𝑋 − 𝑍 + 𝑍 2 𝐹 Ẑ ← Ẑ + (𝑋 − 𝑍),<label>(6)</label></formula><p>where 𝜌 &gt; 0 is a stepsize that affects the convergence; please refer to Theorem 1 for more details. We derive closed-form solutions for both 𝑍-and 𝑋-subproblems in <ref type="bibr" coords="8,145.73,238.65,10.58,8.81" target="#b5">(6)</ref>. Specifically for the 𝑍-subproblem, it can be updated via the singular value thresholding operator, i.e.,</p><formula xml:id="formula_10" coords="8,202.63,271.86,263.79,9.47">𝑍 = 𝑆𝑉𝑇 (𝑋 + 𝑍) = 𝑈 shrink(Σ, diag(𝛽w/𝜌))𝑉 𝑇 ,<label>(7)</label></formula><p>where 𝑈Σ𝑉 𝑇 is the singular value decomposition of 𝑋 + 𝑍, and diag(•) is a diagonalization operator turning a vector into a diagonal matrix with the same entries as the vector. Here the shrink operator shrink(𝑥, 𝜉) = sign(𝑥) * max(|𝑥| −𝜉) is implemented entrywise, where sign(𝑥) returns the sign of 𝑥 if 𝑥 ≠ 0 and zero otherwise.</p><p>In the 𝑋-subproblem, we can rewrite the second term of the objective function as</p><formula xml:id="formula_11" coords="8,148.58,362.10,303.91,46.30">tr(𝐷 𝑇 𝜃 𝑋 𝑇 (𝐿 + 𝜀𝐼) 𝑟 𝑋 𝐷 𝜃 ) = (𝐿 + 𝜀𝐼) 𝑟/2 𝑋 𝐷 𝜃 2 𝐹 = (𝐷 𝑇 𝜃 ⊗ (𝐿 + 𝜀𝐼) 𝑟/2 ) vec(𝑋) 2 2 := ∥ 𝐴 vec(𝑋) ∥ 2 2 ,</formula><p>where ⊗ is the Kronecker product. Thus, the 𝑋-subproblem has the closed-form solution as</p><formula xml:id="formula_12" coords="8,193.34,449.25,273.07,11.43">𝑋 = mat[( 𝐽 + 𝛼𝐴 𝑇 𝐴 + 𝜌𝐼) −1 ( 𝐽 𝑇 𝑌 + 𝜌 vec(𝑍 − 𝑍)))],<label>(8)</label></formula><p>where 𝐽 = diag(vec(𝐽)). Note that 𝐽 𝑇 𝑌 = 𝑌 since 𝐽 is a diagonal matrix with binary entries in the diagonal, whose nonzero entries correspond to the sampled spatial points. Furthermore, considering that the matrix 𝐽 + 𝛼𝐴 𝑇 𝐴 + 𝜌𝐼 is symmetric and positive definite, we perform its Cholesky factorization as 𝐽 + 𝛼𝐴 𝑇 𝐴 + 𝜌𝐼 = L L𝑇 . Subsequently, we leverage forward/backward substitution as a substitute for matrix inversion, thereby reducing computational time. The pseudo-code of the proposed approach for minimizing the model ( <ref type="formula" coords="8,281.70,545.52,3.87,8.81" target="#formula_7">5</ref>) is given in Algorithm 1.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.4">Proposed Algorithm 2</head><p>In real-world applications, the type of noise could be unknown, and it is possible to encounter a mixture of different types of noise. To enhance the robustness against </p><p>Compared with <ref type="bibr" coords="9,197.53,300.41,10.58,8.81" target="#b4">(5)</ref>, this new model utilizes the ℓ 1 -norm data fidelity to accommodate various types of noise. Because of the ℓ 1 term, we need to introduce an additional variable 𝑉 to make the subproblems easy to solve. The equivalent constrained problem is min</p><formula xml:id="formula_14" coords="9,188.85,355.72,223.76,23.69">𝐽•𝑋−𝑌 =𝑉 𝑋=𝑍 ∥𝑉 ∥ 1 + 𝛼 2 tr(𝐷 𝑇 𝜃 𝑋 𝑇 (𝐿 + 𝜖 𝐼) 𝑟 𝑋 𝐷 𝜃 ) + 𝛽 ∥𝑍 ∥ erf .</formula><p>Therefore, the ADMM with linearization on the ERF term has the following subproblems</p><formula xml:id="formula_15" coords="9,155.18,419.31,311.24,104.29">𝑉 ← argmin 𝑉 ∥𝑉 ∥ 1 + 𝜌 1 2 𝐽 • 𝑋 − 𝑌 − 𝑉 + 𝑉 2 𝐹 𝑍 ← argmin 𝑍 ∥𝑍 ∥ w, * + 𝜌 2 2 𝑋 − 𝑍 + 𝑍 2 𝐹 𝑋 ← argmin 𝑋 𝛼 2 tr(𝐷 𝑇 𝜃 𝑋 𝑇 (𝐿 + 𝜖 𝐼) 𝑟 𝑋 𝐷 𝜃 ) + 𝜌 1 2 𝐽 • 𝑋 − 𝑌 − 𝑉 + 𝑉 2 𝐹 + 𝜌 2 2 𝑋 − 𝑍 + 𝑍 2 𝐹<label>(10)</label></formula><p>For the 𝑉-subproblem, we get the closed-form solution expressed via the shrinkage operator 𝑉 = shrink( 𝐽 𝑇 (𝑌 + 𝑉 − 𝑉), 1/𝜌 1 ).</p><p>Similar to Algorithm 1, the solution of the 𝑍-subproblem is given by ( <ref type="formula" coords="9,427.86,574.45,3.87,8.81" target="#formula_10">7</ref>) with 𝜌 replaced by 𝜌 2 . For the 𝑋-subproblem, we get the closed-form solution</p><formula xml:id="formula_17" coords="9,150.01,605.70,312.26,12.34">𝑋 = mat[(𝜌 1 𝐽 + 𝛼𝐴 𝑇 𝐴 + 𝜌 2 𝐼) −1 (𝜌 1 𝐽 𝑇 (𝑌 + 𝑉 − 𝑉) + 𝜌 2 vec(𝑍 − 𝑍)))]. (<label>12</label></formula><formula xml:id="formula_18" coords="9,462.27,608.32,4.15,8.81">)</formula><p>The entire algorithm is described in Algorithm 2. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Algorithm 2</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.5">Convergence Analysis of Algorithm 1</head><p>For simplicity, we define</p><formula xml:id="formula_19" coords="10,191.73,318.68,218.96,22.39">𝑓 (𝑋) := 1 2 ∥𝑌 − 𝐽 • 𝑋 ∥ 2 𝐹 + 𝛼 2 tr(𝐷 𝑇 𝜃 𝑋 𝑇 (𝐿 + 𝜖 𝐼) 𝛾 𝑋 𝐷 𝜃 )</formula><p>and hence the augmented Lagrangian function is given by</p><formula xml:id="formula_20" coords="10,179.42,369.79,242.37,20.11">L (𝑋, 𝑍, Ẑ) = 𝑓 (𝑋) + 𝛽∥𝑍 ∥ erf + 𝜌⟨ Ẑ, 𝑋 − 𝑍⟩ + 𝜌 2 ∥ 𝑋 − 𝑍 ∥ 2 𝐹 .</formula><p>The function 𝑓 is convex and continuously differentiable. In addition, ∇ 𝑓 is Lipschitz continuous with a constant 𝐿.</p><p>Theorem 1 Let 𝜌 &gt; 𝐿 and {(𝑋 𝑘 , 𝑍 𝑘 , Ẑ 𝑘 )} be a sequence generated from Algorithm 1, then, the sequence is bounded and has a limit point that is a stationary point of the problem <ref type="bibr" coords="10,195.02,455.71,10.58,8.81" target="#b4">(5)</ref>.</p><p>Proof Consider one iteration of Algorithm 1, the update of 𝑍 𝑘+1 gives</p><formula xml:id="formula_21" coords="10,148.48,496.52,313.79,80.05">L (𝑋 𝑘 , 𝑍 𝑘+1 , Ẑ 𝑘 ) − L (𝑋 𝑘 , 𝑍 𝑘 , Ẑ 𝑘 ) = 𝛽∥𝑍 𝑘+1 ∥ erf + 𝜌 2 ∥ 𝑋 𝑘 − 𝑍 𝑘+1 + Ẑ 𝑘 ∥ 2 𝐹 − 𝛽∥𝑍 𝑘 ∥ erf − 𝜌 2 ∥ 𝑋 𝑘 − 𝑍 𝑘 + Ẑ 𝑘 ∥ 2 𝐹 ≤ 𝛽∥𝑍 𝑘+1 ∥ 𝑤 𝑘 , * − 𝛽∥𝑍 𝑘 ∥ 𝑤 𝑘 , * + 𝜌 2 ∥ 𝑋 𝑘 + Ẑ 𝑘 − 𝑍 𝑘+1 ∥ 2 𝐹 − 𝜌 2 ∥ 𝑋 𝑘 + Ẑ 𝑘 − 𝑍 𝑘 ∥ 2 𝐹 ≤ − 𝜌 2 ∥𝑍 𝑘+1 − 𝑍 𝑘 ∥ 2 𝐹 . (<label>13</label></formula><formula xml:id="formula_22" coords="10,462.27,560.93,4.15,8.81">)</formula><p>The first inequality holds because the error function is concave for positive values. The second inequality is valid because 𝑍 𝑘+1 is the optimal solution of the 𝑍-subproblem.</p><p>Then we consider the updates of 𝑋 𝑘+1 and Ẑ 𝑘+1 , which together give</p><formula xml:id="formula_23" coords="11,189.39,97.21,221.42,96.65">L (𝑋 𝑘+1 , 𝑍 𝑘+1 , Ẑ 𝑘+1 ) − L (𝑋 𝑘 , 𝑍 𝑘+1 , Ẑ 𝑘 ) = 𝑓 (𝑋 𝑘+1 ) + 𝜌⟨ Ẑ 𝑘+1 , 𝑋 𝑘+1 − 𝑍 𝑘+1 ⟩ + 𝜌 2 ∥ 𝑋 𝑘+1 − 𝑍 𝑘+1 ∥ 2 𝐹 − 𝑓 (𝑋 𝑘 ) − 𝜌⟨ Ẑ 𝑘 , 𝑋 𝑘 − 𝑍 𝑘+1 ⟩ − 𝜌 2 ∥ 𝑋 𝑘 − 𝑍 𝑘+1 ∥ 2 𝐹 = 𝑓 (𝑋 𝑘+1 ) − 𝑓 (𝑋 𝑘 ) + 𝜌⟨ Ẑ 𝑘+1 , 𝑋 𝑘+1 − 𝑋 𝑘 ⟩ + 𝜌∥ Ẑ 𝑘+1 − Ẑ 𝑘 ∥ 2 𝐹 − 𝜌 2 ∥ 𝑋 𝑘+1 − 𝑋 𝑘 ∥ 2 𝐹 ,</formula><p>where the last equality uses the update Ẑ 𝑘+1 = Ẑ 𝑘 + 𝑋 𝑘+1 − 𝑍 𝑘+1 . Since 𝑓 is smooth, the updates of 𝑋 𝑘+1 and Ẑ 𝑘+1 show that 𝜌 Ẑ 𝑘+1 + ∇ 𝑓 (𝑋 𝑘+1 ) = 0. The convexity and smoothness of 𝑓 give 𝑓 (𝑋</p><formula xml:id="formula_24" coords="11,134.86,226.54,331.55,74.84">𝑘+1 ) + ⟨∇ 𝑓 (𝑋 𝑘+1 ), 𝑋 𝑘 − 𝑋 𝑘+1 ⟩ + 1 2𝐿 ∥∇ 𝑓 (𝑋 𝑘+1 ) − ∇ 𝑓 (𝑋 𝑘 ) ∥ 2 ≤ 𝑓 (𝑋 𝑘 ). Therefore, we have L (𝑋 𝑘+1 , 𝑍 𝑘+1 , Ẑ 𝑘+1 ) − L (𝑋 𝑘 , 𝑍 𝑘+1 , Ẑ 𝑘 ) ≤ max 1 𝜌 − 1 2𝐿 , 0 𝐿 2 − 𝜌 2 ∥ 𝑋 𝑘+1 − 𝑋 𝑘 ∥ 2 𝐹 . (<label>14</label></formula><formula xml:id="formula_25" coords="11,462.27,285.74,4.15,8.81">)</formula><p>If 𝜌 &gt; 𝐿, then max 1 𝜌 − 1 2𝐿 , 0 𝐿 2 − 𝜌 2 &lt; 0. Combing the equations ( <ref type="formula" coords="11,246.79,333.96,8.30,8.81" target="#formula_21">13</ref>) and ( <ref type="formula" coords="11,283.16,333.96,7.64,8.81" target="#formula_24">14</ref>), we see that L (𝑋 𝑘 , 𝑍 𝑘 , Ẑ 𝑘 ) is decreasing. Furthermore if 𝜌 &gt; 𝐿, we have</p><formula xml:id="formula_26" coords="11,181.05,365.52,281.22,66.07">𝑓 (𝑋 𝑘 ) + 𝛽∥𝑍 𝑘 ∥ erf + 𝜌⟨ Ẑ 𝑘 , 𝑋 𝑘 − 𝑍 𝑘 ⟩ + 𝜌 2 ∥ 𝑋 𝑘 − 𝑍 𝑘 ∥ 2 𝐹 = 𝑓 (𝑋 𝑘 ) + 𝛽∥𝑍 𝑘 ∥ erf − ⟨∇ 𝑓 (𝑋 𝑘 ), 𝑋 𝑘 − 𝑍 𝑘 ⟩ + 𝜌 2 ∥ 𝑋 𝑘 − 𝑍 𝑘 ∥ 2 𝐹 ≥ 𝑓 (𝑍 𝑘 ) + 𝛽∥𝑍 𝑘 ∥ erf + 𝜌 − 𝐿 2 ∥ 𝑋 𝑘 − 𝑍 𝑘 ∥ 2 𝐹 ≥ 0, (<label>15</label></formula><formula xml:id="formula_27" coords="11,462.27,415.95,4.15,8.81">)</formula><p>where the last inequality comes from the Lipschitz continuity of ∇ 𝑓 . So L (𝑋 𝑘 , 𝑍 𝑘 , Ẑ 𝑘 ) is bounded from below. Therefore, L (𝑋 𝑘 , 𝑍 𝑘 , Ẑ 𝑘 ) converges and lim</p><formula xml:id="formula_28" coords="11,207.65,475.70,254.62,13.94">𝑘→∞ (𝑋 𝑘+1 − 𝑋 𝑘 ) = 0, lim 𝑘→∞ (𝑍 𝑘+1 − 𝑍 𝑘 ) = 0. (<label>16</label></formula><formula xml:id="formula_29" coords="11,462.27,476.37,4.15,8.81">)</formula><p>Since ∇ 𝑓 is Lipschitz continuous, we can get</p><formula xml:id="formula_30" coords="11,237.64,521.70,224.63,15.30">lim 𝑘→∞ Ẑ 𝑘+1 − Ẑ 𝑘 = 𝑋 𝑘 − 𝑍 𝑘 = 0. (<label>17</label></formula><formula xml:id="formula_31" coords="11,462.27,523.73,4.15,8.81">)</formula><p>Next, we show that (𝑋 𝑘 , 𝑍 𝑘 , Ẑ 𝑘 ) is bounded. Since we have shown in <ref type="bibr" coords="11,425.35,551.06,16.60,8.81" target="#b14">(15)</ref> that</p><formula xml:id="formula_32" coords="11,185.28,570.08,230.65,22.79">L (𝑋 𝑘 , 𝑍 𝑘 , Ẑ 𝑘 ) ≥ 𝑓 (𝑍 𝑘 ) + 𝛽∥𝑍 𝑘 ∥ erf + 𝜌 − 𝐿 2 ∥ 𝑋 𝑘 − 𝑍 𝑘 ∥ 2 𝐹 .</formula><p>Therefore, when 𝜌 &gt; 𝐿, the boundedness of L (𝑋 𝑘 , 𝑍 𝑘 , Ẑ 𝑘 ) gives the boundedness of 𝑓 (𝑍 𝑘 ) + 𝛽∥𝑍 𝑘 ∥ erf and ∥ 𝑋 𝑘 − 𝑍 𝑘 ∥ 2 𝐹 . Thus, sequences {𝑋 𝑘 } and {𝑍 𝑘 } are also bounded. Because 𝜌 Ẑ 𝑘 = −∇ 𝑓 (𝑋 𝑘 ), the sequence { Ẑ 𝑘 } is also bounded.</p><p>Since the sequence {(𝑋 𝑘 , 𝑍 𝑘 , Ẑ 𝑘 )} is bounded. There exists a convergent subsequence, that is, (𝑋 𝑘 𝑖 , 𝑍 𝑘 𝑖 , Ẑ 𝑘 𝑖 ) → (𝑋 ★ , 𝑍 ★ , Ẑ★ ). The limits ( <ref type="formula" coords="12,390.28,111.19,8.30,8.81" target="#formula_28">16</ref>) and <ref type="bibr" coords="12,425.14,111.19,16.60,8.81" target="#b16">(17)</ref> show that (𝑋 𝑘 𝑖 +1 , 𝑍 𝑘 𝑖 +1 , Ẑ 𝑘 𝑖 +1 ) → (𝑋 ★ , 𝑍 ★ , Ẑ★ ). Then we have that 𝑋 ★ = 𝑍 ★ and 𝛽𝜕 ∥𝑍 ★ ∥ erf − 𝜌 Ẑ★ = 0. Thus, 𝑋 ★ is a stationary point of the original problem <ref type="bibr" coords="12,443.03,135.10,10.58,8.81" target="#b4">(5)</ref>. □</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3">Numerical Experiments</head><p>In this section, we conduct various numerical experiments on synthetic and real data to demonstrate the performance of our proposed methods. In particular, we compare our methods -Algorithm 1 and Algorithm 2 -with other related states of the art, including natural neighbor interpolation (NNI) <ref type="bibr" coords="12,367.35,242.70,15.27,8.81" target="#b16">[17]</ref>, graph smooth (GS) <ref type="bibr" coords="12,134.77,254.65,15.27,8.81" target="#b17">[18]</ref>, Tikhonov <ref type="bibr" coords="12,199.59,254.65,15.27,8.81" target="#b19">[20]</ref>, TGSR <ref type="bibr" coords="12,251.69,254.65,15.27,8.81" target="#b18">[19]</ref>, LRDS <ref type="bibr" coords="12,303.78,254.65,15.27,8.81" target="#b20">[21]</ref>, and Sobolev <ref type="bibr" coords="12,380.97,254.65,15.27,8.81" target="#b21">[22]</ref>. To evaluate the reconstruction quality, we adopt the root mean square error (RMSE) as a comparison metric, defined as follows</p><formula xml:id="formula_33" coords="12,257.95,290.08,204.32,21.53">RMSE = ∥ 𝑋 − 𝑋 ∥ 𝐹 √ 𝑛𝑚 , (<label>18</label></formula><formula xml:id="formula_34" coords="12,462.27,297.23,4.15,8.81">)</formula><p>where 𝑋 is the approximation of the ground truth graph signal 𝑋 ∈ R 𝑛×𝑚 defined on a spatial-temporal graph with 𝑛 nodes and 𝑚 time instances. All the numerical experiments are implemented on Matlab R2021a in a desktop computer with Intel CPU i9-9960X RAM 64GB and GPU Dual Nvidia Quadro RTX5000 with Windows 10 Pro.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1">Synthetic Data</head><p>Following the work of <ref type="bibr" coords="12,225.09,442.18,15.27,8.81" target="#b18">[19]</ref>, we generate 𝑁 = 100 nodes randomly from the uniform distribution in a 100 × 100 square area. The graph weight is determined using 𝑘-nearest neighbors. Specifically, the weight between any two nodes is inversely proportional to the square of their Euclidean distance. We consider 𝑘 = 5 and visualize the corresponding graph in Fig. <ref type="figure" coords="12,300.71,490.00,3.74,8.81" target="#fig_0">1</ref>. Denote the weight matrix by 𝑊, its degree matrix 𝐷, and the graph Laplacian 𝐿 has eigen-decomposition 𝐿 = 𝑈Λ𝑈 𝑇 , where</p><formula xml:id="formula_35" coords="12,134.77,513.50,331.66,25.51">Λ = diag(0, 𝜆 2 , • • • , 𝜆 𝑁 ). We further define 𝐿 −1/2 = 𝑈Λ −1/2 𝑈 𝑇 where Λ −1/2 = diag(0, 𝜆 −1/2 2 , • • • , 𝜆 −1/2</formula><p>𝑁 ). Starting from 𝑥 1 , we generate the time-varying graph signal</p><formula xml:id="formula_36" coords="12,221.96,558.42,244.46,11.86">𝑥 𝑡 = 𝑥 𝑡 −1 + 𝐿 −1/2 𝑓 𝑡 , for 𝑡 = 2, • • • , 𝑇,<label>(19)</label></formula><p>where 𝑓 𝑡 is an i.i. 10 times, thus also getting a 100 × 200 data matrix. The measurement noise at each node is i.i.d. Gaussian noise N (0, 𝜂 2 ), where 𝜂 is the standard deviation.</p><p>Parameter tuning. For the proposed Algorithm 1, we fix the following parameters: 𝑘 = 3 and 𝜃 = 1.8 in the definition of fractional-order derivative (4); 𝜎 = 10 3 in the definition of the ERF regularization (3); 𝜖 = 0.1 and 𝑟 = 3 in the Sobolev graph Laplacian; and the step size 𝜌 = 10 −6 in the ADMM iterations <ref type="bibr" coords="13,214.05,389.70,10.58,8.81" target="#b5">(6)</ref>. In each set of experiments, we carefully tune two parameters (𝛼, 𝛽) that determine the weights for the spatial-temporal smoothness and the low-rankness, respectively, in the proposed model <ref type="bibr" coords="13,385.19,413.61,10.58,8.81" target="#b4">(5)</ref>. We choose the best combination of (𝛼, 𝛽) among 𝛼 ∈ {0, 10 −5 , 10 −4 , 10 −3 , 10 −2 , 10 −1 , 1, 10} and 𝛽 ∈ {0, 10 −8 , 10 −7 , 10 −6 , 10 −5 , 10 −4 , 10 −3 , 10 −2 , 10 −1 , 1, 10}. As demonstrated in Table <ref type="table" coords="13,160.19,449.48,3.74,8.81" target="#tab_0">1</ref>, some competing methods are special cases of the proposed models, and hence, we only tune the parameters 𝛼, 𝛽 for these methods while keeping other parameters fixed.</p><p>Reconstruction errors with respect to sampling rates. We begin by evaluating the performance of competing methods under different sampling rates. The smoothness level is set as 𝜅 = 1, while the standard deviation of the Gaussian noise is 𝜂 = 0.1. The reconstruction performance is evaluated via RMSE, defined in <ref type="bibr" coords="13,410.61,521.21,15.27,8.81" target="#b17">(18)</ref>, showing that the recovery errors of all the methods decrease with the increase of the sampling rates. The comparison results are visualized in Fig. <ref type="figure" coords="13,367.95,545.12,3.74,8.81">2</ref>. The proposed method achieves significant improvements over the competing methods. Surprisingly, LRDS, equipped with the nuclear norm, does not yield stable reconstruction performance in the low-rank case.</p><p>Reconstruction errors with respect to noise levels. We then investigate the recovery performance under different noise levels by setting the noise variance 𝜂 2 = {0.01, 0.1, 0.2, 0.4, 0.6, 0.8, 1}. In this set of experiments, we fix the sampling rate as 40% and smoothing level 𝜅 = 1. The noise level affects the mag-  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2">Real Data</head><p>In the real data experiments, we first test the daily mean Particulate Matter (PM) 2.5 concentration dataset from California provided by the US Environmental Protection Agency https://www.epa.gov/outdoor-air-quality-data. We used the data captured daily from 93 sensors in California for the first 200 days in 2015. The constructed graph is depicted in Fig. <ref type="figure" coords="15,297.77,174.95,3.74,8.81">4</ref>. In Fig. <ref type="figure" coords="15,335.58,174.95,3.74,8.81">5</ref>, we compare the average recovery accuracy of all the comparing methods over 50 trials when the sampling rates are 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45. In Table <ref type="table" coords="15,325.23,198.86,3.74,8.81" target="#tab_4">2</ref>, we also compare the performance of Algorithm 1 and Algorithm 2, which shows Algorithm 2 can improve the accuracy of Algorithm 1 under some sampling rates with longer time in general. Next, we test the sea surface temperature dataset, which was captured monthly by the NOAA Physical Sciences Laboratory (PSL). The data set can be downloaded from the PSL website https://psl.noaa.gov/. We use a subset of 200 time points on the Pacific Ocean within 400 months. The constructed graph is illustrated in Fig. <ref type="figure" coords="15,162.35,571.29,3.74,8.81">6</ref>. We see from Fig. <ref type="figure" coords="15,241.20,571.29,4.98,8.81">7</ref> that the proposed algorithm outperforms other methods significantly and consistently across all sampling rates. In Table <ref type="table" coords="15,390.04,583.25,3.74,8.81" target="#tab_5">3</ref>, we also compare the performance of Algorithm 1 and Algorithm 2, which indicates Algorithm 2 can improve the accuracy of Algorithm 1 under certain sampling rates but with more computational time in general. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3">Discussions</head><p>Using the sea surface temperature data, we conduct an ablation study of the proposed model ( <ref type="formula" coords="18,165.83,350.40,3.87,8.81" target="#formula_7">5</ref>) without the smoothing regularization by setting 𝛼 = 0 or without the lowrank ERF term by setting 𝛽 = 0. We plot the RMSE curves with respect to the sampling rates and the noise levels in Fig. <ref type="figure" coords="18,308.88,374.31,3.74,8.81" target="#fig_3">8</ref>, showing that the ERF regularization has a larger influence on the performance compared to the Sobolev-base graph Laplacian regularization.  Using the same sea surface temperature data, we investigate whether the proposed model ( <ref type="formula" coords="18,165.10,613.64,3.87,8.81" target="#formula_7">5</ref>) is sensitive to the parameters (𝑟, 𝜖) in defining the Sobolev-graph Laplacian and 𝜎 2 in defining the ERF regularization. Fig. <ref type="figure" coords="18,324.79,625.60,4.98,8.81" target="#fig_4">9</ref> shows that the proposed approach is not sensitive to various degrees of smoothness controlled by 𝑟 and 𝜖. Although the ERF regularization plays an important role in the recovery performance, as illustrated in the ablation study, the proposed model is not sensitive to the choice 𝜎 2 as long as it is larger than 10,000.</p><p>In addition, we compare the proposed Algorithm 1 and Algorithm 2 using the sea surface temperature data and show the results in Tables <ref type="table" coords="19,380.01,159.01,29.67,8.81" target="#tab_5">2 and 3</ref>. One can see that the two algorithms lead to similar RMSE, but Algorithm 2 is slower overall. We therefore prefer to use Algorithm 1 unless the data is heavily polluted by the non-Gaussian type of noise, such as Laplace noise.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4">Conclusions and Future Work</head><p>In this paper, we exploit high-order smoothness across the temporal domain and adaptive low-rankness for time-varying graph signal recovery. In particular, we propose a novel graph signal recovery model based on a hybrid graph regularization involving a general order temporal difference, together with an error-function weighted nuclear norm. We also derive an effective optimization algorithm with guaranteed convergence by adopting a reweighting scheme and the ADMM framework. Numerical experiments have demonstrated their efficiency and performance in terms of accuracy. In the future, we will explore using high-order difference schemes to create a temporal Laplacian and low-rankness for recovering graph signals with dynamic graph topology.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="13,134.77,273.12,331.65,7.66;13,134.77,283.26,182.03,7.49"><head>Fig. 1</head><label>1</label><figDesc>Fig.1The graph is constructed by kNN with 𝑘 = 5. The weight between any two nodes is inversely proportional to the square of their Euclidean distance.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="14,134.77,275.93,192.73,7.51"><head>Fig. 2 1 Fig. 3</head><label>213</label><figDesc>Fig. 2 RMSE vs sampling rates. Averaged over 50 trials.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="15,134.77,484.65,331.65,7.51;15,134.77,494.47,109.71,7.66"><head>125. 0 ° 5 °Fig. 4</head><label>054</label><figDesc>Fig.<ref type="bibr" coords="15,152.00,484.65,4.23,7.40" target="#b3">4</ref> Graph with the places in California for the PM 2.5 concentration data. The graph was constructed with kNN for 𝑘 = 5.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="18,134.77,562.89,331.66,7.51;18,134.77,572.88,16.23,7.49"><head>Fig. 8</head><label>8</label><figDesc>Fig.<ref type="bibr" coords="18,150.93,562.89,4.23,7.40" target="#b7">8</ref> Ablation study sampling rates (left) and noise levels (right) on the sea surface temperature data.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4" coords="19,134.77,356.60,331.65,9.04;19,134.77,368.11,126.22,7.49"><head>Fig. 9</head><label>9</label><figDesc>Fig.<ref type="bibr" coords="19,150.47,358.13,4.23,7.40" target="#b8">9</ref> Sensitivity analysis with respect to varying the graph Laplacian (left) and 𝜎 2 in ERF (right) on the Sea Surface Temperature data.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" coords="5,134.77,319.53,215.17,7.51"><head>Table 1</head><label>1</label><figDesc>Comparison of Related Works and Proposed Methods.</figDesc><table /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1" coords="9,134.77,98.89,331.65,191.93"><head>Algorithm 1</head><label>1</label><figDesc>Robust Time-Varying Graph Signal Recovery with High-Order Smoothness and Adaptive Low-RanknessInput: graph Laplacian 𝐿, parameters 𝛼, 𝛽, 𝜌, spatial Laplacian parameters 𝜖 and 𝑟, ERF parameter 𝜎, Fractional-order derivative parameters 𝜃 &gt; 0 and integer 𝑘 ≥ 1.</figDesc><table coords="9,134.77,144.15,164.27,146.67"><row><cell>Output: 𝑋</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Initialize: 𝑋, 𝑍</cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="4">while The stopping criteria is satisfied do</cell></row><row><cell cols="2">compute the weights w</cell><cell></cell><cell></cell></row><row><cell cols="2">update 𝑍 via (7)</cell><cell></cell><cell></cell></row><row><cell cols="2">update 𝑋 via (8)</cell><cell></cell><cell></cell></row><row><cell cols="2">𝑍 ← 𝑍 + (𝑋 − 𝑍 )</cell><cell></cell><cell></cell></row><row><cell>end while</cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="4">noise, we propose the second model,</cell></row><row><cell>min 𝑋</cell><cell>∥𝑌 − 𝐽 • 𝑋 ∥ 1 +</cell><cell>𝛼 2</cell><cell>tr(𝐷 𝑇</cell></row></table><note>𝜃 𝑋 𝑇 (𝐿 + 𝜖 𝐼) 𝑟 𝑋 𝐷 𝜃 ) + 𝛽 ∥ 𝑋 ∥ erf</note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2" coords="10,134.77,98.92,331.65,142.29"><head></head><label></label><figDesc>Robust Time-Varying Graph Signal Recovery with High-Order Smoothness and Adaptive Low-RanknessInput: graph Laplacian 𝐿, parameters 𝛼, 𝛽, 𝜌 1 , 𝜌 2 , spatial Laplacian parameters 𝜖 and 𝑟, ERF parameter 𝜎, Fractional-order derivative parameters 𝜃 &gt; 0 and integer 𝑘 ≥ 1.</figDesc><table coords="10,143.23,144.15,140.88,97.07"><row><cell>Output: 𝑋</cell></row><row><cell>Initialize: 𝑋, 𝑉, 𝑍</cell></row><row><cell>while The stopping criteria is satisfied do</cell></row><row><cell>compute the weights w</cell></row><row><cell>update 𝑉 via (11)</cell></row><row><cell>update 𝑍 via (7)</cell></row><row><cell>update 𝑋 via (12)</cell></row><row><cell>𝑉 ← 𝑉 + ( 𝐽 • 𝑋 − 𝑌 − 𝑉 )</cell></row><row><cell>𝑍 ← 𝑍 + (𝑋 − 𝑍 )</cell></row><row><cell>end while</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4" coords="16,134.77,105.81,331.65,392.89"><head>Table 2</head><label>2</label><figDesc>Performance comparison of Algorithm 1 and Algorithm 2 for the PM2.5 data. The running time for Algorithm 1 is about 22∼23 seconds while Algorithm 2 uses about 46 ∼ 48 seconds.</figDesc><table coords="16,218.43,105.81,164.32,392.89"><row><cell>Sampling rate</cell><cell>Alg.1</cell><cell>Alg.2</cell></row><row><cell></cell><cell cols="2">RMSE Time (s) RMSE Time (s)</cell></row><row><cell>0.10</cell><cell cols="2">5.7321 22.95 5.6915 46.49</cell></row><row><cell>0.15</cell><cell cols="2">5.4770 22.63 6.4992 45.39</cell></row><row><cell>0.20</cell><cell cols="2">5.0427 23.83 5.9730 48.50</cell></row><row><cell>0.25</cell><cell cols="2">6.0358 23.37 5.6976 47.44</cell></row><row><cell>0.30</cell><cell cols="2">5.6065 23.70 5.3809 47.86</cell></row><row><cell>0.35</cell><cell cols="2">5.1920 23.55 5.1535 47.72</cell></row><row><cell>0.40</cell><cell cols="2">5.2398 23.56 4.7758 47.59</cell></row><row><cell>0.45</cell><cell cols="2">5.2283 23.80 5.0913 48.17</cell></row><row><cell>Sampling rate</cell><cell>Algorithm 1</cell><cell>Algorithm 2</cell></row><row><cell></cell><cell cols="2">RMSE Time (s) RMSE Time (s)</cell></row><row><cell>0.10</cell><cell cols="2">0.3148 3.97 0.3163 22.99</cell></row><row><cell>0.15</cell><cell cols="2">0.2497 3.37 0.2483 17.13</cell></row><row><cell>0.20</cell><cell cols="2">0.2110 3.08 0.2109 13.52</cell></row><row><cell>0.25</cell><cell cols="2">0.1832 2.87 0.1857 11.27</cell></row><row><cell>0.30</cell><cell cols="2">0.1617 2.74 0.1666 9.62</cell></row><row><cell>0.35</cell><cell cols="2">0.1438 2.63 0.1450 5.77</cell></row><row><cell>0.40</cell><cell cols="2">0.1294 2.54 0.1291 5.66</cell></row><row><cell>0.45</cell><cell cols="2">0.1166 2.46 0.1153 5.57</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5" coords="16,134.77,510.52,331.66,27.44"><head>Table 3</head><label>3</label><figDesc>Performance comparison of Algorithm 1 and Algorithm 2 for the sea surface temperature data. The running time for Algorithm 1 is about 2∼4 seconds while Algorithm 2 uses about 6 ∼ 23 seconds. Average recovery accuracy comparison on the PM2.5 data. Graph with the places in the sea for the sea surface temperature data. The graph was constructed with kNN for 𝑘 = 10. Average recovery accuracy comparison on the sea surface temperature data.</figDesc><table coords="17,134.77,101.13,273.45,182.99"><row><cell></cell><cell>7.5</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>7</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>6.5</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>6</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>RMSE</cell><cell>5 5.5</cell><cell>NNI GS</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>4.5</cell><cell cols="2">Tikhonov</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>TGRS</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>4</cell><cell>LRDS</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell cols="2">Sobolev</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>Alg.1</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>3.5</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>0.1</cell><cell>0.15</cell><cell>0.2</cell><cell>0.25</cell><cell>0.3</cell><cell>0.35</cell><cell>0.4</cell><cell>0.45</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell cols="2">sampling rate</cell><cell></cell><cell></cell></row><row><cell>Fig. 5</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgements</head><p>The authors would like to thank the support from the American Institute of Mathematics during 2019-2022 for making this collaboration happen. WG, YL, and JQ would also like to thank the Women in Data Science and Mathematics Research Workshop (WiSDM) hosted by UCLA in 2023 for the support of continuing this collaboration. YL is partially supported by NSF CAREER 2414705. JQ is partially supported by the NSF grant DMS-1941197. MY was partially supported by the Guangdong Key Lab of Mathematical Foundations for Artificial Intelligence, the Shenzhen Science and Technology Program ZDSYS20211021111415025, and the Shenzhen Stability Science Program.</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="20,142.17,293.51,324.24,7.49;20,150.33,303.47,316.08,7.49;20,150.33,313.43,316.09,7.49;20,150.33,323.40,19.05,7.49" xml:id="b0">
+	<analytic>
+		<title level="a" type="main">The emerging field of signal processing on graphs: Extending high-dimensional data analysis to networks and other irregular domains</title>
+		<author>
+			<persName coords=""><surname>David I Shuman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Sunil</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Pascal</forename><surname>Narang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Antonio</forename><surname>Frossard</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Pierre</forename><surname>Ortega</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Vandergheynst</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE signal processing magazine</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="83" to="98" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="20,142.17,333.31,324.24,7.49;20,150.33,343.28,316.08,7.49;20,150.33,353.24,156.03,7.49" xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Graph-based methods for natural language processing and understanding -a survey and analysis</title>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Michael</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Nikolaos</forename><forename type="middle">G</forename><surname>Mills</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Bourbakis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Systems, Man, and Cybernetics: Systems</title>
+		<imprint>
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="59" to="71" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="20,142.17,363.16,324.24,7.49;20,150.33,373.12,207.74,7.49" xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Graph wavelets for multiscale community mining</title>
+		<author>
+			<persName coords=""><forename type="first">Nicolas</forename><surname>Tremblay</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Pierre</forename><surname>Borgnat</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Signal Processing</title>
+		<imprint>
+			<biblScope unit="volume">62</biblScope>
+			<biblScope unit="issue">20</biblScope>
+			<biblScope unit="page" from="5227" to="5239" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="20,142.17,383.03,324.24,7.49;20,150.33,393.00,199.99,7.49" xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Discrete signal processing on graphs</title>
+		<author>
+			<persName coords=""><forename type="first">Aliaksei</forename><surname>Sandryhaila</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>José</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Moura</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE transactions on signal processing</title>
+		<imprint>
+			<biblScope unit="volume">61</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1644" to="1656" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="20,142.17,402.91,324.24,7.49;20,150.33,412.88,316.09,7.49;20,150.33,422.84,316.09,7.49;20,150.33,432.80,19.05,7.49" xml:id="b4">
+	<analytic>
+		<title level="a" type="main">On the minimization of sobolev norms of timevarying graph signals: estimation of new coronavirus disease 2019 cases</title>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Jhony</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Thierry</forename><surname>Giraldo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Bouwmans</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2020 IEEE 30th International Workshop on Machine Learning for Signal Processing</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="page" from="1" to="6" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="20,142.17,442.72,324.24,7.49;20,150.33,452.68,316.09,7.49;20,150.33,462.64,19.05,7.49" xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Signal recovery on graphs: Variation minimization</title>
+		<author>
+			<persName coords=""><forename type="first">Siheng</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Aliaksei</forename><surname>Sandryhaila</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">F</forename><surname>José</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jelena</forename><surname>Moura</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Kovačević</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Signal Processing</title>
+		<imprint>
+			<biblScope unit="volume">63</biblScope>
+			<biblScope unit="issue">17</biblScope>
+			<biblScope unit="page" from="4609" to="4624" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="20,142.17,472.56,324.24,7.49;20,150.33,482.52,316.08,7.49;20,150.33,492.49,164.92,7.49" xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Modeling and recovery of graph signals and difference-based signals</title>
+		<author>
+			<persName coords=""><forename type="first">Ariel</forename><surname>Kroizer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yonina</forename><forename type="middle">C</forename><surname>Eldar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Tirza</forename><surname>Routtenberg</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2019 IEEE Global Conference on Signal and Information Processing (GlobalSIP)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="page" from="1" to="5" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="20,142.17,502.40,324.24,7.49;20,150.33,512.37,312.02,8.26" xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Robust recovery for graph signal via ℓ 0 -norm regularization</title>
+		<author>
+			<persName coords=""><forename type="first">Xiao</forename><surname>Peng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Li</forename></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yi</forename><surname>Yan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ercan</forename><forename type="middle">Engin</forename><surname>Kuruoglu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Hing</forename><surname>Cheung So</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yuan</forename><surname>Chen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Signal Processing Letters</title>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="20,142.17,522.28,324.24,7.49;20,150.33,532.25,256.69,7.49" xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Manifold graph signal restoration using gradient graph laplacian regularizer</title>
+		<author>
+			<persName coords=""><forename type="first">Fei</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Gene</forename><surname>Cheung</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xue</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Signal Processing</title>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="20,141.82,542.16,324.59,7.49;20,150.33,552.12,316.09,7.49;20,150.33,562.09,184.06,7.49" xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Spectrum-blind signal recovery on graphs</title>
+		<author>
+			<persName coords=""><forename type="first">Rohan</forename><surname>Varma</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Siheng</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jelena</forename><surname>Kovačević</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2015 IEEE 6th International Workshop on Computational Advances in Multi-Sensor Adaptive Processing (CAMSAP)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="page" from="81" to="84" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="20,141.82,572.00,324.60,7.49;20,150.33,581.97,193.63,7.49" xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Graph fourier transform: A stable approximation</title>
+		<author>
+			<persName coords=""><forename type="first">João</forename><surname>Domingos</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>José</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Moura</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Signal Processing</title>
+		<imprint>
+			<biblScope unit="volume">68</biblScope>
+			<biblScope unit="page" from="4422" to="4437" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="20,141.82,591.88,324.59,7.49;20,150.33,601.85,305.03,7.49" xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Optimal fractional fourier filtering for graph signals</title>
+		<author>
+			<persName coords=""><forename type="first">Cuneyd</forename><surname>Ozturk</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Haldun</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Sinan</forename><surname>Ozaktas</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Aykut</forename><surname>Gezici</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">¸</forename><surname>Koc</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Signal Processing</title>
+		<imprint>
+			<biblScope unit="volume">69</biblScope>
+			<biblScope unit="page" from="2902" to="2912" />
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="20,141.82,611.76,324.59,7.49;20,150.33,621.73,316.08,7.49;20,150.33,631.69,115.48,7.49" xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Spectral graph theory-based recovery method for missing harmonic data</title>
+		<author>
+			<persName coords=""><forename type="first">Wang</forename><surname>Ying</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xu</forename><surname>Rui</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ma</forename><surname>Xiaoyang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Fu</forename><surname>Qiang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Zhao</forename><surname>Jinshuai</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Zhou</forename><surname>Runze</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Power Delivery</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="3688" to="3697" />
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="21,141.82,100.23,324.59,7.49;21,150.33,110.20,316.09,7.49;21,150.33,120.16,73.62,7.49" xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Graph signal recovery via primal-dual algorithms for total variation minimization</title>
+		<author>
+			<persName coords=""><forename type="first">Peter</forename><surname>Berger</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Gabor</forename><surname>Hannak</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Gerald</forename><surname>Matz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Journal of Selected Topics in Signal Processing</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="842" to="855" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="21,141.82,130.12,324.59,7.49;21,150.33,140.08,316.09,7.49;21,150.33,150.05,193.71,7.49" xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Recovery of time-varying graph signals via distributed algorithms on regularized problems</title>
+		<author>
+			<persName coords=""><forename type="first">Junzheng</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">David</forename><forename type="middle">B</forename><surname>Tay</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Qiyu</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Shan</forename><surname>Ouyang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Signal and Information Processing over Networks</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page" from="540" to="555" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="21,141.82,160.01,324.59,7.49;21,150.33,169.97,289.22,7.49" xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Graph learning: A survey</title>
+		<author>
+			<persName coords=""><forename type="first">Feng</forename><surname>Xia</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ke</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Shuo</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Abdul</forename><surname>Aziz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Liangtian</forename><surname>Wan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Shirui</forename><surname>Pan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Huan</forename><surname>Liu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Artificial Intelligence</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="109" to="127" />
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="21,141.82,179.93,324.60,7.49;21,150.33,189.90,84.94,7.49" xml:id="b16">
+	<monogr>
+		<title level="m" type="main">A brief description of natural neighbour interpolation. Interpreting multivariate data</title>
+		<author>
+			<persName coords=""><forename type="first">Robin</forename><surname>Sibson</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1981">1981</date>
+			<biblScope unit="page" from="21" to="36" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="21,141.82,199.86,324.59,7.49;21,150.33,209.82,316.08,7.49;21,150.33,219.79,195.62,7.49" xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Localized iterative methods for interpolation in graph structured data</title>
+		<author>
+			<persName coords=""><forename type="first">Akshay</forename><surname>Sunil K Narang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Eduard</forename><surname>Gadde</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Antonio</forename><surname>Sanou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Ortega</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2013 IEEE Global Conference on Signal and Information Processing</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2013">2013</date>
+			<biblScope unit="page" from="491" to="494" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="21,141.82,229.75,324.59,7.49;21,150.33,239.71,316.09,7.49;21,150.33,249.67,73.62,7.49" xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Timevarying graph signal reconstruction</title>
+		<author>
+			<persName coords=""><forename type="first">Kai</forename><surname>Qiu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xianghui</forename><surname>Mao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xinyue</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xiaohan</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Tiejian</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yuantao</forename><surname>Gu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Journal of Selected Topics in Signal Processing</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="870" to="883" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="21,141.82,259.64,324.59,7.49;21,150.33,269.60,316.09,7.49;21,150.33,279.56,246.15,7.49" xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Towards stationary time-vertex signal processing</title>
+		<author>
+			<persName coords=""><forename type="first">Nathanaël</forename><surname>Perraudin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Andreas</forename><surname>Loukas</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Francesco</forename><surname>Grassi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Pierre</forename><surname>Vandergheynst</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2017 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="page" from="3914" to="3918" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="21,141.82,289.52,324.59,7.49;21,150.33,299.49,316.08,7.49;21,150.33,309.45,40.22,7.49" xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Spatio-temporal signal recovery based on low rank and differential smoothness</title>
+		<author>
+			<persName coords=""><forename type="first">Xianghui</forename><surname>Mao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Kai</forename><surname>Qiu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Tiejian</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yuantao</forename><surname>Gu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Signal Processing</title>
+		<imprint>
+			<biblScope unit="volume">66</biblScope>
+			<biblScope unit="issue">23</biblScope>
+			<biblScope unit="page" from="6281" to="6296" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="21,141.82,319.41,324.59,7.49;21,150.33,329.37,316.08,7.49;21,150.33,339.34,261.46,7.49" xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Belmar Garcia-Garcia, Dorina Thanou, and Thierry Bouwmans. Reconstruction of time-varying graph signals via sobolev smoothness</title>
+		<author>
+			<persName coords=""><forename type="first">Arif</forename><surname>Jhony H Giraldo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Mahmood</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">IEEE Transactions on Signal and Information Processing over Networks</title>
+				<imprint>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="201" to="214" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="21,141.82,349.30,324.59,7.49;21,150.33,359.26,316.08,7.49;21,150.33,369.22,19.05,7.49" xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Time-varying signal recovery based on low rank and graph-time smoothness</title>
+		<author>
+			<persName coords=""><forename type="first">Jinling</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jiming</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Hongbing</forename><surname>Qiu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Junyi</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Liping</forename><surname>Nong</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Digital Signal Processing</title>
+		<imprint>
+			<biblScope unit="volume">133</biblScope>
+			<biblScope unit="page">103821</biblScope>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="21,141.82,379.19,324.59,7.49;21,150.33,389.15,316.09,7.49;21,150.33,399.11,308.42,7.49" xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Restoration of time-varying graph signals using deep algorithm unrolling</title>
+		<author>
+			<persName coords=""><forename type="first">Hayate</forename><surname>Kojima</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Hikari</forename><surname>Noguchi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Koki</forename><surname>Yamada</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yuichi</forename><surname>Tanaka</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ICASSP 2023-2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="page" from="1" to="5" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="21,141.82,409.08,324.59,7.49;21,150.33,419.04,316.08,7.49;21,150.33,429.00,316.09,7.49;21,150.33,438.96,143.83,7.49" xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Time-varying signals recovery via graph neural networks</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Jhon</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jhony</forename><forename type="middle">H</forename><surname>Castro-Correa</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Anindya</forename><surname>Giraldo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Mohsen</forename><surname>Mondal</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Badiey</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ICASSP 2023-2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="page" from="1" to="5" />
+		</imprint>
+	</monogr>
+	<note>Thierry Bouwmans, and Fragkiskos D Malliaros</note>
+</biblStruct>
+
+<biblStruct coords="21,141.82,448.93,324.59,7.49;21,150.33,458.89,316.09,7.49;21,150.33,468.85,84.47,7.49" xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Joint sampling and reconstruction of time-varying signals over directed graphs</title>
+		<author>
+			<persName coords=""><forename type="first">Zhenlong</forename><surname>Xiao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">He</forename><surname>Fang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Stefano</forename><surname>Tomasin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Gonzalo</forename><surname>Mateos</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xianbin</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Signal Processing</title>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="21,141.82,478.81,324.59,7.49;21,150.33,488.78,272.25,7.49" xml:id="b26">
+	<analytic>
+		<title level="a" type="main">A novel regularization based on the error function for sparse recovery</title>
+		<author>
+			<persName coords=""><forename type="first">Weihong</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yifei</forename><surname>Lou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jing</forename><surname>Qin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ming</forename><surname>Yan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Scientific Computing</title>
+		<imprint>
+			<biblScope unit="volume">87</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="22" />
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="21,141.82,498.74,324.59,7.49;21,150.33,508.70,316.09,7.49;21,150.33,518.66,223.33,7.49" xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Weighted nuclear norm minimization with application to image denoising</title>
+		<author>
+			<persName coords=""><forename type="first">Shuhang</forename><surname>Gu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Lei</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Wangmeng</forename><surname>Zuo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xiangchu</forename><surname>Feng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE conference on computer vision and pattern recognition</title>
+				<meeting>the IEEE conference on computer vision and pattern recognition</meeting>
+		<imprint>
+			<date type="published" when="2014">2014</date>
+			<biblScope unit="page" from="2862" to="2869" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="21,141.82,528.63,324.59,7.49;21,150.30,538.59,289.04,8.26" xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Enhancing sparsity by reweighted ℓ 1 minimization</title>
+		<author>
+			<persName coords=""><forename type="first">Emmanuel</forename><forename type="middle">J</forename><surname>Candes</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Stephen</forename><forename type="middle">P</forename><surname>Michael B Wakin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Boyd</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Fourier analysis and applications</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="877" to="905" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="21,141.82,548.55,324.60,7.49;21,150.33,558.52,63.75,7.49" xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Fractional differential equations</title>
+		<author>
+			<persName coords=""><forename type="first">Igore</forename><surname>Podlubny</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Mathematics in science and engineering</title>
+		<imprint>
+			<biblScope unit="volume">198</biblScope>
+			<biblScope unit="page" from="41" to="119" />
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

@@ -127,7 +127,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		</fileDesc>
 		<encodingDesc>
 			<appInfo>
-				<application version="0.7.2" ident="GROBID" when="2024-05-18T21:25+0000">
+				<application version="0.7.2" ident="GROBID" when="2024-05-19T13:05+0000">
 					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
 					<ref target="https://github.com/kermitt2/grobid"/>
 				</application>
@@ -214,7 +214,6 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 
 <biblStruct coords="11,338.21,324.20,203.44,8.64;11,338.21,335.11,201.79,8.64;11,338.21,346.02,203.03,8.64;11,337.85,356.93,203.81,8.64;11,338.21,367.84,203.44,8.64;11,338.21,378.75,203.03,8.64;11,337.90,389.66,202.10,8.64;11,338.21,400.56,201.79,8.64;11,338.21,411.47,203.44,8.64;11,338.21,422.38,203.53,8.64;11,338.21,433.29,203.04,8.64;11,338.21,444.20,203.53,8.64;11,338.21,455.11,202.14,8.64;11,338.21,466.02,203.53,8.64;11,337.88,476.76,139.19,8.81" xml:id="b0">
 	<analytic>
-		<title level="a" type="main">A Multi-center Study on the Reproducibility of Drug-Response Assays in Mammalian Cell Lines</title>
 		<author>
 			<persName coords=""><forename type="first">Mario</forename><surname>Niepel</surname></persName>
 		</author>
@@ -247,18 +246,6 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		</author>
 		<author>
 			<persName coords=""><forename type="first">James</forename><forename type="middle">E</forename><surname>Korkola</surname></persName>
-		</author>
-		<author>
-			<persName coords=""><forename type="first">Joe</forename><forename type="middle">W</forename><surname>Gray</surname></persName>
-		</author>
-		<author>
-			<persName coords=""><forename type="first">Marc</forename><forename type="middle">R</forename><surname>Birtwistle</surname></persName>
-		</author>
-		<author>
-			<persName coords=""><forename type="first">Laura</forename><forename type="middle">M</forename><surname>Heiser</surname></persName>
-		</author>
-		<author>
-			<persName coords=""><forename type="first">Peter</forename><forename type="middle">K</forename><surname>Sorger</surname></persName>
 		</author>
 		<author>
 			<persName coords=""><forename type="first">Caroline</forename><forename type="middle">E</forename><surname>Shamu</surname></persName>
@@ -306,7 +293,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 			<persName coords=""><forename type="first">Clive</forename><forename type="middle">N</forename><surname>Svendsen</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Avi</forename><surname>Ma’ayan</surname></persName>
+			<persName coords=""><forename type="first">Avi</forename><surname>Ma'ayan</surname></persName>
 		</author>
 		<author>
 			<persName coords=""><forename type="first">Mario</forename><surname>Medvedovic</surname></persName>
@@ -320,44 +307,46 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		<author>
 			<persName coords=""><forename type="first">Kaylyn</forename><surname>Devlin</surname></persName>
 		</author>
-		<idno type="DOI">10.1016/j.cels.2019.06.005</idno>
+		<author>
+			<persName coords=""><forename type="first">Joe</forename><forename type="middle">W</forename><surname>Gray</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Marc</forename><forename type="middle">R</forename><surname>Birtwistle</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Laura</forename><forename type="middle">M</forename><surname>Heiser</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Peter</forename><forename type="middle">K</forename><surname>Sorger</surname></persName>
+		</author>
 	</analytic>
 	<monogr>
-		<title level="j">Cell Systems</title>
-		<title level="j" type="abbrev">Cell Systems</title>
-		<idno type="ISSN">2405-4712</idno>
-		<imprint>
+		<title level="m">A multi-center study on the reproducibility of drug-response assays in mammalian cell lines</title>
+				<imprint>
+			<date type="published" when="2019">2019</date>
 			<biblScope unit="volume">9</biblScope>
-			<biblScope unit="issue">1</biblScope>
-			<biblScope unit="page" from="35" to="48.e5" />
-			<date type="published" when="2019-07">2019</date>
-			<publisher>Elsevier BV</publisher>
+			<biblScope unit="page" from="35" to="48" />
 		</imprint>
 	</monogr>
 </biblStruct>
 
 <biblStruct coords="11,338.21,493.70,203.44,8.64;11,338.21,504.61,203.44,8.64;11,338.21,515.35,203.44,8.81" xml:id="b1">
 	<analytic>
-		<title level="a" type="main">Raise standards for preclinical cancer research</title>
+		<title level="a" type="main">Drug development: Raise standards for preclinical cancer research</title>
 		<author>
-			<persName><forename type="first">C</forename><forename type="middle">Glenn</forename><surname>Begley</surname></persName>
+			<persName coords=""><forename type="first">Glenn</forename><surname>Begley</surname></persName>
 		</author>
 		<author>
 			<persName coords=""><forename type="first">Lee</forename><forename type="middle">M</forename><surname>Ellis</surname></persName>
 		</author>
-		<idno type="DOI">10.1038/483531a</idno>
 	</analytic>
 	<monogr>
 		<title level="j">Nature</title>
-		<title level="j" type="abbrev">Nature</title>
-		<idno type="ISSN">0028-0836</idno>
-		<idno type="ISSNe">1476-4687</idno>
 		<imprint>
 			<biblScope unit="volume">483</biblScope>
 			<biblScope unit="issue">7391</biblScope>
 			<biblScope unit="page" from="531" to="533" />
-			<date type="published" when="2012-03-28">March 2012</date>
-			<publisher>Springer Science and Business Media LLC</publisher>
+			<date type="published" when="2012-03">March 2012</date>
 		</imprint>
 	</monogr>
 </biblStruct>
@@ -374,51 +363,36 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		<author>
 			<persName coords=""><forename type="first">Khusru</forename><surname>Asadullah</surname></persName>
 		</author>
-		<idno type="DOI">10.1038/nrd3439-c1</idno>
 	</analytic>
 	<monogr>
 		<title level="j">Nature Reviews Drug Discovery</title>
-		<title level="j" type="abbrev">Nat Rev Drug Discov</title>
-		<idno type="ISSN">1474-1776</idno>
-		<idno type="ISSNe">1474-1784</idno>
 		<imprint>
 			<biblScope unit="volume">10</biblScope>
-			<biblScope unit="issue">9</biblScope>
 			<biblScope unit="page" from="712" to="712" />
-			<date type="published" when="2011-08-31">2011</date>
-			<publisher>Springer Science and Business Media LLC</publisher>
+			<date type="published" when="2011">2011</date>
 		</imprint>
 	</monogr>
 </biblStruct>
 
 <biblStruct coords="11,338.21,581.79,203.44,8.64;11,337.96,592.70,144.44,8.64" xml:id="b3">
-	<analytic>
-		<title level="a" type="main">Systematic Quality Control Analysis of LINCS Data</title>
+	<monogr>
+		<title level="m" type="main">Systematic quality control analysis of LINCS data</title>
 		<author>
 			<persName coords=""><forename type="first">L</forename><surname>Cheng</surname></persName>
 		</author>
 		<author>
-			<persName coords=""><forename type="first">L</forename><surname>Li</surname></persName>
+			<persName coords=""><surname>Li</surname></persName>
 		</author>
-		<idno type="DOI">10.1002/psp4.12107</idno>
-	</analytic>
-	<monogr>
-		<title level="j">CPT: Pharmacometrics &amp; Systems Pharmacology</title>
-		<title level="j" type="abbrev">CPT Pharmacom &amp; Syst Pharma</title>
-		<idno type="ISSN">2163-8306</idno>
 		<imprint>
 			<biblScope unit="volume">5</biblScope>
-			<biblScope unit="issue">11</biblScope>
 			<biblScope unit="page" from="588" to="598" />
-			<date type="published" when="2016-10-31" />
-			<publisher>Wiley</publisher>
 		</imprint>
 	</monogr>
 </biblStruct>
 
 <biblStruct coords="11,338.21,609.47,201.79,8.64;11,337.63,620.38,202.37,8.64;11,338.21,631.12,201.79,8.81;11,338.21,642.03,203.04,8.58;11,337.46,653.11,96.58,8.64" xml:id="b4">
 	<analytic>
-		<title level="a" type="main">A Review of Data Quality Assessment Methods for Public Health Information Systems</title>
+		<title level="a" type="main">A review of data quality assessment methods for public health information systems</title>
 		<author>
 			<persName coords=""><forename type="first">Hong</forename><surname>Chen</surname></persName>
 		</author>
@@ -431,18 +405,14 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		<author>
 			<persName coords=""><forename type="first">Ping</forename><surname>Yu</surname></persName>
 		</author>
-		<idno type="DOI">10.3390/ijerph110505170</idno>
 	</analytic>
 	<monogr>
-		<title level="j">International Journal of Environmental Research and Public Health</title>
-		<title level="j" type="abbrev">IJERPH</title>
-		<idno type="ISSNe">1660-4601</idno>
+		<title level="j">International journal of environmental research and public health</title>
 		<imprint>
 			<biblScope unit="volume">11</biblScope>
 			<biblScope unit="issue">5</biblScope>
 			<biblScope unit="page" from="5170" to="5207" />
-			<date type="published" when="2014-05-14">2014</date>
-			<publisher>MDPI AG</publisher>
+			<date type="published" when="2014">2014</date>
 		</imprint>
 	</monogr>
 </biblStruct>
@@ -467,49 +437,34 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 
 <biblStruct coords="12,93.58,75.48,201.79,8.64;12,93.58,86.39,201.79,8.64;12,93.58,97.13,114.57,8.81" xml:id="b6">
 	<analytic>
-		<title level="a" type="main">The Challenges of Data Quality and Data Quality Assessment in the Big Data Era</title>
+		<title level="a" type="main">The challenges of data quality and data quality assessment in the big data era</title>
 		<author>
 			<persName coords=""><forename type="first">Li</forename><surname>Cai</surname></persName>
 		</author>
 		<author>
 			<persName coords=""><forename type="first">Yangyong</forename><surname>Zhu</surname></persName>
 		</author>
-		<idno type="DOI">10.5334/dsj-2015-002</idno>
 	</analytic>
 	<monogr>
-		<title level="j">Data Science Journal</title>
-		<title level="j" type="abbrev">CODATA</title>
-		<idno type="ISSNe">1683-1470</idno>
+		<title level="j">Data Sci. J</title>
 		<imprint>
 			<biblScope unit="volume">14</biblScope>
-			<biblScope unit="issue">0</biblScope>
-			<biblScope unit="page">2</biblScope>
-			<date type="published" when="2015-05-22">2015</date>
-			<publisher>Ubiquity Press, Ltd.</publisher>
+			<biblScope unit="issue">2</biblScope>
+			<date type="published" when="2015">2015</date>
 		</imprint>
 	</monogr>
 </biblStruct>
 
 <biblStruct coords="12,93.58,112.43,203.18,8.64;12,93.58,123.34,195.37,8.64" xml:id="b7">
-	<analytic>
-		<title level="a" type="main">Data Shapley Valuation for Efficient Batch Active Learning</title>
+	<monogr>
+		<title level="m" type="main">Data shapley: Equitable valuation of data for machine learning</title>
 		<author>
 			<persName coords=""><forename type="first">Amirata</forename><surname>Ghorbani</surname></persName>
 		</author>
 		<author>
 			<persName coords=""><forename type="first">James</forename><surname>Zou</surname></persName>
 		</author>
-		<author>
-			<persName><forename type="first">Andre</forename><surname>Esteva</surname></persName>
-		</author>
-		<idno type="DOI">10.1109/ieeeconf56349.2022.10064696</idno>
-	</analytic>
-	<monogr>
-		<title level="m">2022 56th Asilomar Conference on Signals, Systems, and Computers</title>
-				<imprint>
-			<publisher>IEEE</publisher>
-			<date type="published" when="2022-10-31" />
-		</imprint>
+		<imprint/>
 	</monogr>
 </biblStruct>
 
@@ -532,8 +487,8 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 </biblStruct>
 
 <biblStruct coords="12,93.58,175.43,203.44,8.64;12,93.58,186.34,203.18,8.64;12,93.58,197.25,203.45,8.64;12,93.58,208.16,156.05,8.64" xml:id="b9">
-	<analytic>
-		<title level="a" type="main">Detection of Influential Observation in Linear Regression</title>
+	<monogr>
+		<title level="m" type="main">Detection of influential observation in linear regression</title>
 		<author>
 			<persName coords=""><forename type="first">R</forename></persName>
 		</author>
@@ -546,27 +501,18 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		<author>
 			<persName coords=""><forename type="first">Ltd</forename><surname>Francis</surname></persName>
 		</author>
-		<idno type="DOI">10.1080/00401706.1977.10489493</idno>
-	</analytic>
-	<monogr>
-		<title level="j">Technometrics</title>
-		<title level="j" type="abbrev">Technometrics</title>
-		<idno type="ISSN">0040-1706</idno>
-		<idno type="ISSNe">1537-2723</idno>
 		<imprint>
+			<publisher>American Society for Quality</publisher>
 			<biblScope unit="volume">19</biblScope>
-			<biblScope unit="issue">1</biblScope>
 			<biblScope unit="page" from="15" to="18" />
-			<date type="published" when="1977-02" />
-			<publisher>Informa UK Limited</publisher>
 		</imprint>
 	</monogr>
 	<note>American Statistical Association</note>
 </biblStruct>
 
 <biblStruct coords="12,93.58,223.29,203.03,8.64;12,93.58,234.20,203.03,8.64;12,93.58,245.11,201.79,8.64;12,93.58,256.02,201.79,8.64;12,93.58,266.93,203.17,8.64;12,92.83,277.84,153.63,8.64" xml:id="b10">
-	<analytic>
-		<title level="a" type="main">Data valuation for medical imaging using Shapley value and application to a large-scale chest X-ray dataset</title>
+	<monogr>
+		<title level="m" type="main">Data valuation for medical imaging using shapley value and application to a large-scale chest x-ray dataset</title>
 		<author>
 			<persName coords=""><forename type="first">Siyi</forename><surname>Tang</surname></persName>
 		</author>
@@ -588,25 +534,18 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		<author>
 			<persName coords=""><forename type="first">Daniel</forename><forename type="middle">L</forename><surname>Rubin</surname></persName>
 		</author>
-		<idno type="DOI">10.1038/s41598-021-87762-2</idno>
-	</analytic>
-	<monogr>
-		<title level="j">Scientific Reports</title>
-		<title level="j" type="abbrev">Sci Rep</title>
-		<idno type="ISSNe">2045-2322</idno>
 		<imprint>
+			<publisher>Nature Publishing Group</publisher>
 			<biblScope unit="volume">11</biblScope>
-			<biblScope unit="issue">1</biblScope>
 			<biblScope unit="page">8366</biblScope>
-			<date type="published" when="2021-04-16" />
-			<publisher>Springer Science and Business Media LLC</publisher>
+			<pubPlace>Number: 1 Publisher</pubPlace>
 		</imprint>
 	</monogr>
 </biblStruct>
 
 <biblStruct coords="12,93.58,292.97,203.53,8.64;12,93.58,303.88,203.04,8.64;12,93.39,314.79,203.23,8.64;12,93.39,325.70,203.22,8.64;12,93.58,336.61,203.03,8.64;12,93.58,347.52,201.79,8.64;12,93.58,358.43,201.79,8.64;12,93.58,369.34,203.44,8.64;12,93.58,380.25,203.03,8.64;12,93.22,391.15,203.90,8.64;12,93.58,402.06,203.44,8.64;12,93.58,412.97,203.04,8.64;12,93.39,423.88,203.22,8.64;12,93.58,434.79,203.53,8.64;12,93.58,445.70,201.79,8.64;12,93.58,456.61,203.54,8.64;12,93.58,467.52,203.44,8.64;12,93.58,478.43,203.04,8.64;12,93.58,489.34,202.15,8.64;12,93.58,500.25,201.79,8.64;12,93.58,510.99,203.28,8.81;12,92.83,522.06,64.20,8.64" xml:id="b11">
 	<analytic>
-		<title level="a" type="main">A Next Generation Connectivity Map: L1000 Platform and the First 1,000,000 Profiles</title>
+		<title/>
 		<author>
 			<persName coords=""><forename type="first">Aravind</forename><surname>Subramanian</surname></persName>
 		</author>
@@ -617,7 +556,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 			<persName coords=""><forename type="first">Steven</forename><forename type="middle">M</forename><surname>Corsello</surname></persName>
 		</author>
 		<author>
-			<persName coords=""><forename type="first">David</forename><forename type="middle">D</forename><surname>Peck</surname></persName>
+			<persName coords=""><forename type="first">David</forename><surname>Peck</surname></persName>
 		</author>
 		<author>
 			<persName coords=""><forename type="first">Ted</forename><forename type="middle">E</forename><surname>Natoli</surname></persName>
@@ -659,7 +598,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 			<persName coords=""><forename type="first">David</forename><surname>Wadden</surname></persName>
 		</author>
 		<author>
-			<persName coords=""><forename type="first">Ian</forename><forename type="middle">C</forename><surname>Smith</surname></persName>
+			<persName coords=""><forename type="first">Ian</forename><surname>Smith</surname></persName>
 		</author>
 		<author>
 			<persName coords=""><forename type="first">Daniel</forename><surname>Lam</surname></persName>
@@ -677,116 +616,117 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 			<persName coords=""><forename type="first">Marek</forename><surname>Orzechowski</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Oana</forename><forename type="middle">M</forename><surname>Enache</surname></persName>
+			<persName coords=""><forename type="first">M</forename><surname>Oana</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Federica</forename><surname>Piccioni</surname></persName>
+			<persName coords=""><forename type="first">Federica</forename><surname>Enache</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Sarah</forename><forename type="middle">A</forename><surname>Johnson</surname></persName>
+			<persName coords=""><forename type="first">Sarah</forename><surname>Piccioni</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Nicholas</forename><forename type="middle">J</forename><surname>Lyons</surname></persName>
+			<persName coords=""><forename type="first">Nicholas</forename><forename type="middle">J</forename><surname>Johnson</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Alice</forename><forename type="middle">H</forename><surname>Berger</surname></persName>
+			<persName coords=""><forename type="first">Alice</forename><forename type="middle">H</forename><surname>Lyons</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Alykhan</forename><forename type="middle">F</forename><surname>Shamji</surname></persName>
+			<persName coords=""><forename type="first">Alykhan</forename><forename type="middle">F</forename><surname>Berger</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Angela</forename><forename type="middle">N</forename><surname>Brooks</surname></persName>
+			<persName coords=""><forename type="first">Angela</forename><forename type="middle">N</forename><surname>Shamji</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Anita</forename><surname>Vrcic</surname></persName>
+			<persName coords=""><forename type="first">Anita</forename><surname>Brooks</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Corey</forename><surname>Flynn</surname></persName>
+			<persName coords=""><forename type="first">Corey</forename><surname>Vrcic</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Jacqueline</forename><surname>Rosains</surname></persName>
+			<persName coords=""><forename type="first">Jacqueline</forename><surname>Flynn</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">David</forename><forename type="middle">Y</forename><surname>Takeda</surname></persName>
+			<persName coords=""><forename type="first">David</forename><forename type="middle">Y</forename><surname>Rosains</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Roger</forename><surname>Hu</surname></persName>
+			<persName coords=""><forename type="first">Roger</forename><surname>Takeda</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Desiree</forename><surname>Davison</surname></persName>
+			<persName coords=""><forename type="first">Desiree</forename><surname>Hu</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Justin</forename><surname>Lamb</surname></persName>
+			<persName coords=""><forename type="first">Justin</forename><surname>Davison</surname></persName>
 		</author>
 		<author>
-			<persName coords=""><forename type="first">Kristin</forename><surname>Ardlie</surname></persName>
+			<persName coords=""><forename type="first">Kristin</forename><forename type="middle">G</forename><surname>Lamb</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Larson</forename><surname>Hogstrom</surname></persName>
+			<persName coords=""><surname>Ardlie</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Peyton</forename><surname>Greenside</surname></persName>
+			<persName coords=""><forename type="first">J</forename><surname>Larson</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Nathanael</forename><forename type="middle">S</forename><surname>Gray</surname></persName>
+			<persName coords=""><forename type="first">Peyton</forename><surname>Hogstrom</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Paul</forename><forename type="middle">A</forename><surname>Clemons</surname></persName>
+			<persName coords=""><forename type="first">Nathanael</forename><forename type="middle">S</forename><surname>Greenside</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Serena</forename><surname>Silver</surname></persName>
+			<persName coords=""><forename type="first">Paul</forename><forename type="middle">A</forename><surname>Gray</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Xiaoyun</forename><surname>Wu</surname></persName>
+			<persName coords=""><forename type="first">Serena</forename><forename type="middle">J</forename><surname>Clemons</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Wen-Ning</forename><surname>Zhao</surname></persName>
+			<persName coords=""><forename type="first">Xiaoyun</forename><surname>Silver</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Willis</forename><surname>Read-Button</surname></persName>
+			<persName coords=""><forename type="first">Wen-Ning</forename><surname>Wu</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Xiaohua</forename><surname>Wu</surname></persName>
+			<persName coords=""><forename type="first">Willis</forename><surname>Zhao</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Stephen</forename><forename type="middle">J</forename><surname>Haggarty</surname></persName>
+			<persName coords=""><forename type="first">Xiaohua</forename><surname>Read-Button</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Lucienne</forename><forename type="middle">V</forename><surname>Ronco</surname></persName>
+			<persName coords=""><forename type="first">Stephen</forename><forename type="middle">J</forename><surname>Wu</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Jesse</forename><forename type="middle">S</forename><surname>Boehm</surname></persName>
+			<persName coords=""><forename type="first">Lucienne</forename><forename type="middle">V</forename><surname>Haggarty</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Stuart</forename><forename type="middle">L</forename><surname>Schreiber</surname></persName>
+			<persName coords=""><forename type="first">Jesse</forename><forename type="middle">S</forename><surname>Ronco</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">John</forename><forename type="middle">G</forename><surname>Doench</surname></persName>
+			<persName coords=""><forename type="first">Stuart</forename><forename type="middle">L</forename><surname>Boehm</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Joshua</forename><forename type="middle">A</forename><surname>Bittker</surname></persName>
+			<persName coords=""><forename type="first">John</forename><forename type="middle">G</forename><surname>Schreiber</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">David</forename><forename type="middle">E</forename><surname>Root</surname></persName>
+			<persName coords=""><forename type="first">Joshua</forename><forename type="middle">A</forename><surname>Doench</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Bang</forename><surname>Wong</surname></persName>
+			<persName coords=""><forename type="first">David</forename><forename type="middle">E</forename><surname>Bittker</surname></persName>
 		</author>
 		<author>
-			<persName coords=""><forename type="first">Todd</forename><forename type="middle">R</forename><surname>Golub</surname></persName>
+			<persName coords=""><forename type="first">Bang</forename><surname>Root</surname></persName>
 		</author>
-		<idno type="DOI">10.1016/j.cell.2017.10.049</idno>
+		<author>
+			<persName coords=""><forename type="first">Todd</forename><forename type="middle">R</forename><surname>Wong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Golub</surname></persName>
+		</author>
 	</analytic>
 	<monogr>
 		<title level="j">Cell</title>
-		<title level="j" type="abbrev">Cell</title>
-		<idno type="ISSN">0092-8674</idno>
 		<imprint>
 			<biblScope unit="volume">171</biblScope>
-			<biblScope unit="issue">6</biblScope>
-			<biblScope unit="page" from="1437" to="1452.e17" />
-			<date type="published" when="2017-11">2017</date>
-			<publisher>Elsevier BV</publisher>
+			<biblScope unit="page" from="1437" to="1452" />
+			<date type="published" when="2017">2017</date>
 		</imprint>
 	</monogr>
 	<note>A next generation connectivity map: L1000 platform and the first 1,000,000 profiles</note>
@@ -797,59 +737,45 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		<title level="a" type="main">A Bayesian approach to accurate and robust signature detection on LINCS L1000 data</title>
 		<author>
 			<persName coords=""><forename type="first">Yue</forename><surname>Qiu</surname></persName>
-			<idno type="ORCID">0000-0001-9692-1290</idno>
 		</author>
 		<author>
 			<persName coords=""><forename type="first">Tianhuan</forename><surname>Lu</surname></persName>
-			<idno type="ORCID">0000-0003-1040-2639</idno>
 		</author>
 		<author>
 			<persName coords=""><forename type="first">Hansaim</forename><surname>Lim</surname></persName>
-			<idno type="ORCID">0000-0002-8420-4750</idno>
 		</author>
 		<author>
 			<persName coords=""><forename type="first">Lei</forename><surname>Xie</surname></persName>
 		</author>
-		<idno type="DOI">10.1093/bioinformatics/btaa064</idno>
 	</analytic>
 	<monogr>
 		<title level="j">Bioinformatics</title>
-		<idno type="ISSN">1367-4803</idno>
-		<idno type="ISSNe">1367-4811</idno>
 		<imprint>
 			<biblScope unit="volume">36</biblScope>
 			<biblScope unit="issue">9</biblScope>
-			<biblScope unit="page" from="2787" to="2795" />
-			<date type="published" when="2020-01-31" />
-			<publisher>Oxford University Press (OUP)</publisher>
+			<biblScope unit="page">2020</biblScope>
 		</imprint>
 	</monogr>
 </biblStruct>
 
 <biblStruct coords="12,93.58,585.06,201.96,8.64;12,93.58,595.97,201.79,8.64;12,93.58,606.71,147.76,8.81" xml:id="b13">
 	<analytic>
-		<title level="a" type="main">l1kdeconv: an R package for peak calling analysis with LINCS L1000 data</title>
+		<title level="a" type="main">l1kdeconv: an r package for peak calling analysis with lincs l1000 data</title>
 		<author>
-			<persName><forename type="first">Zhao</forename><surname>Li</surname></persName>
+			<persName coords=""><forename type="first">Zhaoyang</forename><surname>Li</surname></persName>
 		</author>
 		<author>
 			<persName coords=""><forename type="first">Jin</forename><surname>Li</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Peng</forename><surname>Yu</surname></persName>
+			<persName coords=""><forename type="first">Y</forename><forename type="middle">U</forename><surname>Peng</surname></persName>
 		</author>
-		<idno type="DOI">10.1186/s12859-017-1767-9</idno>
 	</analytic>
 	<monogr>
 		<title level="j">BMC Bioinformatics</title>
-		<title level="j" type="abbrev">BMC Bioinformatics</title>
-		<idno type="ISSNe">1471-2105</idno>
 		<imprint>
-			<biblScope unit="volume">18</biblScope>
-			<biblScope unit="issue">1</biblScope>
 			<biblScope unit="page">18</biblScope>
-			<date type="published" when="2017-07-27">2017</date>
-			<publisher>Springer Science and Business Media LLC</publisher>
+			<date type="published" when="2017">2017</date>
 		</imprint>
 	</monogr>
 </biblStruct>
@@ -876,20 +802,14 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 			<persName coords=""><forename type="first">Qiaonan</forename><surname>Duan</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Avi</forename><surname>Ma’ayan</surname></persName>
+			<persName coords=""><forename type="first">Avi</forename><surname>Ma'ayan</surname></persName>
 		</author>
-		<idno type="DOI">10.1186/1471-2105-15-79</idno>
 	</analytic>
 	<monogr>
 		<title level="j">BMC Bioinformatics</title>
-		<title level="j" type="abbrev">BMC Bioinformatics</title>
-		<idno type="ISSNe">1471-2105</idno>
 		<imprint>
-			<biblScope unit="volume">15</biblScope>
-			<biblScope unit="issue">1</biblScope>
 			<biblScope unit="page">15</biblScope>
-			<date type="published" when="2014-03-21">2014</date>
-			<publisher>Springer Science and Business Media LLC</publisher>
+			<date type="published" when="2014">2014</date>
 		</imprint>
 	</monogr>
 </biblStruct>
@@ -952,8 +872,8 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 </biblStruct>
 
 <biblStruct coords="12,338.21,122.88,201.79,8.64;12,337.85,133.79,202.39,8.64;12,338.21,144.70,201.79,8.64;12,338.21,155.61,203.44,8.64;12,337.46,166.51,202.53,8.64;12,338.21,177.42,146.16,8.64" xml:id="b16">
-	<analytic>
-		<title level="a" type="main">A deep learning framework for high-throughput mechanism-driven phenotype compound screening and its application to COVID-19 drug repurposing</title>
+	<monogr>
+		<title level="m" type="main">A deep learning framework for high-throughput mechanism-driven phenotype compound screening and its application to COVID-19 drug repurposing</title>
 		<author>
 			<persName coords=""><forename type="first">Thai-Hoang</forename><surname>Pham</surname></persName>
 		</author>
@@ -965,24 +885,14 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		</author>
 		<author>
 			<persName coords=""><forename type="first">Lei</forename><surname>Xie</surname></persName>
-			<idno type="ORCID">0000-0001-9051-2111</idno>
 		</author>
 		<author>
 			<persName coords=""><forename type="first">Ping</forename><surname>Zhang</surname></persName>
-			<idno type="ORCID">0000-0002-4601-0779</idno>
 		</author>
-		<idno type="DOI">10.1038/s42256-020-00285-9</idno>
-	</analytic>
-	<monogr>
-		<title level="j">Nature Machine Intelligence</title>
-		<title level="j" type="abbrev">Nat Mach Intell</title>
-		<idno type="ISSNe">2522-5839</idno>
 		<imprint>
+			<publisher>Nature Publishing Group</publisher>
 			<biblScope unit="volume">3</biblScope>
-			<biblScope unit="issue">3</biblScope>
 			<biblScope unit="page" from="247" to="257" />
-			<date type="published" when="2021-02-01" />
-			<publisher>Springer Science and Business Media LLC</publisher>
 		</imprint>
 	</monogr>
 </biblStruct>
@@ -1012,33 +922,19 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 </biblStruct>
 
 <biblStruct coords="12,338.21,217.68,203.53,8.64;12,338.21,228.59,203.54,8.64" xml:id="b18">
-	<analytic>
-		<title level="a" type="main">Dataset Distillation: A Comprehensive Review</title>
+	<monogr>
+		<title level="m" type="main">Dataset distillation: A comprehensive review</title>
 		<author>
 			<persName coords=""><forename type="first">Ruonan</forename><surname>Yu</surname></persName>
-			<idno type="ORCID">0009-0008-4809-7119</idno>
 		</author>
 		<author>
 			<persName coords=""><forename type="first">Songhua</forename><surname>Liu</surname></persName>
-			<idno type="ORCID">0000-0003-1033-5122</idno>
 		</author>
 		<author>
 			<persName coords=""><forename type="first">Xinchao</forename><surname>Wang</surname></persName>
-			<idno type="ORCID">0000-0003-0057-1404</idno>
 		</author>
-		<idno type="DOI">10.1109/tpami.2023.3323376</idno>
-	</analytic>
-	<monogr>
-		<title level="j">IEEE Transactions on Pattern Analysis and Machine Intelligence</title>
-		<title level="j" type="abbrev">IEEE Trans. Pattern Anal. Mach. Intell.</title>
-		<idno type="ISSN">0162-8828</idno>
-		<idno type="ISSNe">1939-3539</idno>
 		<imprint>
-			<biblScope unit="volume">46</biblScope>
-			<biblScope unit="issue">1</biblScope>
-			<biblScope unit="page" from="150" to="170" />
 			<date type="published" when="2023">2023</date>
-			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
 		</imprint>
 	</monogr>
 </biblStruct>
@@ -1049,46 +945,39 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		<author>
 			<persName coords=""><forename type="first">Max</forename><surname>Welling</surname></persName>
 		</author>
-		<idno type="DOI">10.1145/1553374.1553517</idno>
 	</analytic>
 	<monogr>
-		<title level="m">Proceedings of the 26th Annual International Conference on Machine Learning</title>
-				<meeting>the 26th Annual International Conference on Machine Learning<address><addrLine>New York, NY, USA</addrLine></address></meeting>
+		<title level="m">Proceedings of the 26th Annual International Conference on Machine Learning, ICML &apos;09</title>
+				<meeting>the 26th Annual International Conference on Machine Learning, ICML &apos;09<address><addrLine>New York, NY, USA</addrLine></address></meeting>
 		<imprint>
-			<publisher>ACM</publisher>
-			<date type="published" when="2009-06-14">2009</date>
+			<publisher>Association for Computing Machinery</publisher>
+			<date type="published" when="2009">2009</date>
 			<biblScope unit="page" from="1121" to="1128" />
 		</imprint>
 	</monogr>
 </biblStruct>
 
 <biblStruct coords="12,338.21,301.58,203.45,8.64;12,338.21,312.48,141.57,8.64" xml:id="b20">
-	<analytic>
-		<title level="a" type="main">Herding for Structured Prediction</title>
+	<monogr>
+		<title level="m" type="main">Supersamples from kernel herding</title>
 		<author>
 			<persName coords=""><forename type="first">Yutian</forename><surname>Chen</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Andrew</forename><forename type="middle">E</forename><surname>Gelfand</surname></persName>
-		</author>
-		<author>
 			<persName coords=""><forename type="first">Max</forename><surname>Welling</surname></persName>
 		</author>
-		<idno type="DOI">10.7551/mitpress/9969.003.0010</idno>
-	</analytic>
-	<monogr>
-		<title level="m">Advanced Structured Prediction</title>
-				<imprint>
-			<publisher>The MIT Press</publisher>
+		<author>
+			<persName coords=""><forename type="first">Alex</forename><surname>Smola</surname></persName>
+		</author>
+		<imprint>
 			<date type="published" when="2012">2012</date>
-			<biblScope unit="page" from="187" to="212" />
 		</imprint>
 	</monogr>
 </biblStruct>
 
 <biblStruct coords="12,338.21,327.16,203.53,8.64;12,338.21,338.07,201.79,8.64;12,338.21,348.98,203.03,8.64;12,337.90,359.72,202.10,8.58;12,338.21,370.63,201.79,8.81;12,337.79,381.54,203.46,8.81;12,338.21,392.61,128.13,8.64" xml:id="b21">
 	<analytic>
-		<title level="a" type="main">Scalable k -Means Clustering via Lightweight Coresets</title>
+		<title level="a" type="main">Coresets for nonparametric estimation -the case of dp-means</title>
 		<author>
 			<persName coords=""><forename type="first">Olivier</forename><surname>Bachem</surname></persName>
 		</author>
@@ -1098,19 +987,18 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		<author>
 			<persName coords=""><forename type="first">Andreas</forename><surname>Krause</surname></persName>
 		</author>
-		<idno type="DOI">10.1145/3219819.3219973</idno>
 	</analytic>
 	<monogr>
-		<title level="m">Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery &amp; Data Mining</title>
+		<title level="m">Proceedings of the 32nd International Conference on Machine Learning</title>
 				<editor>
 			<persName><forename type="first">Francis</forename><surname>Bach</surname></persName>
 		</editor>
 		<editor>
 			<persName><forename type="first">David</forename><surname>Blei</surname></persName>
 		</editor>
-		<meeting>the 24th ACM SIGKDD International Conference on Knowledge Discovery &amp; Data Mining<address><addrLine>Lille, France</addrLine></address></meeting>
+		<meeting>the 32nd International Conference on Machine Learning<address><addrLine>Lille, France</addrLine></address></meeting>
 		<imprint>
-			<publisher>ACM</publisher>
+			<publisher>PMLR</publisher>
 			<date type="published" when="2015-07">Jul 2015</date>
 			<biblScope unit="volume">37</biblScope>
 			<biblScope unit="page" from="7" to="09" />
@@ -1230,39 +1118,28 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 
 <biblStruct coords="12,338.21,607.80,201.79,8.64;12,337.85,618.71,202.50,8.64;12,338.21,629.45,203.03,8.81;12,338.21,640.53,40.40,8.64" xml:id="b26">
 	<analytic>
-		<title level="a" type="main">Deep Learning for Anomaly Detection</title>
+		<title level="a" type="main">Longbing Cao, and Anton Van Den Hengel. Deep learning for anomaly detection</title>
 		<author>
 			<persName coords=""><forename type="first">Guansong</forename><surname>Pang</surname></persName>
 		</author>
 		<author>
 			<persName coords=""><forename type="first">Chunhua</forename><surname>Shen</surname></persName>
 		</author>
-		<author>
-			<persName><forename type="first">Longbing</forename><surname>Cao</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Anton</forename><forename type="middle">Van Den</forename><surname>Hengel</surname></persName>
-		</author>
-		<idno type="DOI">10.1145/3439950</idno>
 	</analytic>
 	<monogr>
 		<title level="j">ACM Computing Surveys</title>
-		<title level="j" type="abbrev">ACM Comput. Surv.</title>
-		<idno type="ISSN">0360-0300</idno>
-		<idno type="ISSNe">1557-7341</idno>
 		<imprint>
 			<biblScope unit="volume">54</biblScope>
 			<biblScope unit="issue">2</biblScope>
 			<biblScope unit="page" from="1" to="38" />
-			<date type="published" when="2021-03-05">mar 2021</date>
-			<publisher>Association for Computing Machinery (ACM)</publisher>
+			<date type="published" when="2021-03">mar 2021</date>
 		</imprint>
 	</monogr>
 </biblStruct>
 
 <biblStruct coords="12,338.21,655.20,201.79,8.64;12,337.90,666.11,203.76,8.64;12,338.21,677.02,200.05,8.64" xml:id="b27">
-	<analytic>
-		<title level="a" type="main">Backpropagated Gradient Representations for Anomaly Detection</title>
+	<monogr>
+		<title level="m" type="main">Backpropagated gradient representations for anomaly detection</title>
 		<author>
 			<persName coords=""><forename type="first">Gukyeong</forename><surname>Kwon</surname></persName>
 		</author>
@@ -1275,14 +1152,8 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		<author>
 			<persName coords=""><forename type="first">Ghassan</forename><surname>Alregib</surname></persName>
 		</author>
-		<idno type="DOI">10.1007/978-3-030-58589-1_13</idno>
-	</analytic>
-	<monogr>
-		<title level="m">Computer Vision – ECCV 2020</title>
-				<imprint>
-			<publisher>Springer International Publishing</publisher>
+		<imprint>
 			<date type="published" when="2020">2020</date>
-			<biblScope unit="page" from="206" to="226" />
 		</imprint>
 	</monogr>
 </biblStruct>
@@ -1387,38 +1258,28 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 
 <biblStruct coords="13,93.58,233.24,203.45,8.64;13,93.58,244.14,17.89,8.64" xml:id="b33">
 	<monogr>
-		<title level="m" type="main">Table 3: Health datasets from UCI machine learning repository.</title>
+		<title level="m" type="main">UCI machine learning repository</title>
 		<author>
 			<persName coords=""><forename type="first">D</forename><surname>Dua</surname></persName>
 		</author>
 		<author>
 			<persName coords=""><forename type="first">C</forename><surname>Graff</surname></persName>
 		</author>
-		<idno type="DOI">10.7717/peerj-cs.1806/table-3</idno>
-		<imprint>
-			<date>null</date>
-			<publisher>PeerJ</publisher>
-		</imprint>
+		<imprint/>
 	</monogr>
 </biblStruct>
 
 <biblStruct coords="13,93.58,259.04,201.79,8.64;13,92.97,269.78,204.05,8.58;13,93.58,280.69,57.28,8.81" xml:id="b34">
 	<analytic>
-		<title level="a" type="main">86th Annual Conference of the German Society of Mammalogy (Deutsche Gesellschaft für Säugetierkunde e.V.) Frankfurt a.M., 4th–8th September 2012</title>
+		<title level="a" type="main">Feedback prediction for blogs</title>
 		<author>
 			<persName coords=""><forename type="first">Krisztián</forename><surname>Búza</surname></persName>
 		</author>
-		<idno type="DOI">10.1016/j.mambio.2012.07.005</idno>
 	</analytic>
 	<monogr>
-		<title level="j">Mammalian Biology</title>
-		<title level="j" type="abbrev">Mammalian Biology</title>
-		<idno type="ISSN">1616-5047</idno>
-		<imprint>
-			<biblScope unit="volume">77</biblScope>
-			<biblScope unit="page" from="1" to="25" />
-			<date type="published" when="2012-09">2012</date>
-			<publisher>Springer Science and Business Media LLC</publisher>
+		<title level="m">Annual Conference of the Gesellschaft für Klassifikation</title>
+				<imprint>
+			<date type="published" when="2012">2012</date>
 		</imprint>
 	</monogr>
 </biblStruct>
@@ -1437,16 +1298,15 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 </biblStruct>
 
 <biblStruct coords="13,93.58,321.55,201.79,8.64;13,93.58,332.46,203.44,8.64;13,93.58,343.37,203.45,8.64;13,93.58,354.28,195.71,8.64" xml:id="b36">
-	<analytic>
-		<title level="a" type="main">Going deeper with convolutions</title>
+	<monogr>
 		<author>
 			<persName coords=""><forename type="first">Christian</forename><surname>Szegedy</surname></persName>
 		</author>
 		<author>
-			<persName><surname>Wei Liu</surname></persName>
+			<persName coords=""><forename type="first">Wei</forename><surname>Liu</surname></persName>
 		</author>
 		<author>
-			<persName><surname>Yangqing Jia</surname></persName>
+			<persName coords=""><forename type="first">Yangqing</forename><surname>Jia</surname></persName>
 		</author>
 		<author>
 			<persName coords=""><forename type="first">Pierre</forename><surname>Sermanet</surname></persName>
@@ -1457,44 +1317,23 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		<author>
 			<persName coords=""><forename type="first">Dragomir</forename><surname>Anguelov</surname></persName>
 		</author>
-		<author>
-			<persName><forename type="first">Dumitru</forename><surname>Erhan</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Vincent</forename><surname>Vanhoucke</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Andrew</forename><surname>Rabinovich</surname></persName>
-		</author>
-		<idno type="DOI">10.1109/cvpr.2015.7298594</idno>
-	</analytic>
-	<monogr>
-		<title level="m">2015 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<title level="m">Dumitru Erhan, Vincent Vanhoucke, and Andrew Rabinovich. Going deeper with convolutions</title>
 				<imprint>
-			<publisher>IEEE</publisher>
 			<date type="published" when="2014">2014</date>
 		</imprint>
 	</monogr>
 </biblStruct>
 
 <biblStruct coords="13,93.58,369.18,203.44,8.64;13,93.58,380.08,203.53,8.64;13,93.02,390.82,203.84,8.81;13,93.33,401.90,37.36,8.64" xml:id="b37">
-	<analytic>
-		<title level="a" type="main">The Proof and Measurement of Association between Two Things</title>
+	<monogr>
+		<title level="m" type="main">The proof and measurement of association between two things. by c. spearman, 1904. The American journal of psychology</title>
 		<author>
 			<persName coords=""><forename type="first">C</forename><surname>Spearman</surname></persName>
 		</author>
-		<idno type="DOI">10.2307/1422689</idno>
-	</analytic>
-	<monogr>
-		<title level="j">The American Journal of Psychology</title>
-		<title level="j" type="abbrev">The American Journal of Psychology</title>
-		<idno type="ISSN">0002-9556</idno>
 		<imprint>
-			<biblScope unit="volume">100</biblScope>
-			<biblScope unit="issue">3/4</biblScope>
-			<biblScope unit="page">441</biblScope>
 			<date type="published" when="1987">1987</date>
-			<publisher>University of Illinois Press</publisher>
+			<biblScope unit="volume">100</biblScope>
+			<biblScope unit="page" from="441" to="471" />
 		</imprint>
 	</monogr>
 </biblStruct>
@@ -1524,25 +1363,17 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 </biblStruct>
 
 <biblStruct coords="13,93.58,464.42,203.53,8.64;13,93.30,475.16,203.72,8.58;13,93.58,486.07,118.98,8.81" xml:id="b39">
-	<analytic>
-		<title level="a" type="main">(1986) D. E. Rumelhart, G. E. Hinton, and R. J. Williams, &quot;Learning internal representations by error propagation,&quot; Parallel Distributed Processing: Explorations in the Microstructures of Cognition, Vol. I, D. E. Rumelhart and J. L. McClelland (Eds.) Cambridge, MA: MIT Press, pp. 318-362</title>
+	<monogr>
+		<title level="m" type="main">Learning Internal Representations by Error Propagation</title>
 		<author>
 			<persName coords=""><forename type="first">David</forename><forename type="middle">E</forename><surname>Rumelhart</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Geoffrey</forename><forename type="middle">E</forename><surname>Hinton</surname></persName>
+			<persName coords=""><forename type="first">James</forename><forename type="middle">L</forename><surname>Mcclelland</surname></persName>
 		</author>
-		<author>
-			<persName><forename type="first">Ronald</forename><forename type="middle">J</forename><surname>Williams</surname></persName>
-		</author>
-		<idno type="DOI">10.7551/mitpress/4943.003.0128</idno>
-	</analytic>
-	<monogr>
-		<title level="m">Neurocomputing, Volume 1</title>
-				<imprint>
-			<publisher>The MIT Press</publisher>
+		<imprint>
 			<date type="published" when="1987">1987</date>
-			<biblScope unit="page" from="675" to="695" />
+			<biblScope unit="page" from="318" to="362" />
 		</imprint>
 	</monogr>
 </biblStruct>

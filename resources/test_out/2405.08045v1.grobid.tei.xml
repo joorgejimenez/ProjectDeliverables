@@ -52,7 +52,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		</fileDesc>
 		<encodingDesc>
 			<appInfo>
-				<application version="0.7.2" ident="GROBID" when="2024-05-18T21:25+0000">
+				<application version="0.7.2" ident="GROBID" when="2024-05-19T14:15+0000">
 					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
 					<ref target="https://github.com/kermitt2/grobid"/>
 				</application>
@@ -153,22 +153,11 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 
 <biblStruct coords="15,96.19,199.31,305.68,8.10" xml:id="b1">
 	<analytic>
-		<title level="a" type="main">Indexado de caminos navegacionales en Wikipedia</title>
-		<author>
-			<persName><forename type="first">José</forename><forename type="middle">Luis</forename><surname>Larroque</surname></persName>
-		</author>
-		<author>
-			<persName><forename type="first">Diego</forename><surname>Torres</surname></persName>
-		</author>
-		<idno type="DOI">10.35537/10915/72418</idno>
 		<ptr target="http://en.wikipedia.org/wiki/Margin_%28finance%29" />
 	</analytic>
 	<monogr>
 		<title level="m">Wikipedia</title>
-				<imprint>
-			<publisher>Universidad Nacional de La Plata</publisher>
-			<date>null</date>
-		</imprint>
+				<imprint/>
 	</monogr>
 </biblStruct>
 
@@ -185,15 +174,11 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 	</analytic>
 	<monogr>
 		<title level="j">The Journal of Trading</title>
-		<title level="j" type="abbrev">JOT</title>
-		<idno type="ISSN">1559-3967</idno>
-		<idno type="ISSNe">2168-8427</idno>
 		<imprint>
 			<biblScope unit="volume">7</biblScope>
 			<biblScope unit="issue">4</biblScope>
 			<biblScope unit="page" from="78" to="86" />
-			<date type="published" when="2012-09-30">Sep 2012</date>
-			<publisher>Pageant Media US</publisher>
+			<date type="published" when="2012-09">Sep 2012</date>
 		</imprint>
 	</monogr>
 </biblStruct>
@@ -205,21 +190,18 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 			<persName coords=""><forename type="first">Andrew</forename><surname>Kumiega</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Benjamin</forename><forename type="middle">Edward</forename><surname>Van Vliet</surname></persName>
+			<persName coords=""><forename type="first">Benjamin</forename><surname>Edward</surname></persName>
 		</author>
-		<idno type="DOI">10.1080/15427560.2012.654924</idno>
+		<author>
+			<persName coords=""><forename type="first">Van</forename><surname>Vliet</surname></persName>
+		</author>
 	</analytic>
 	<monogr>
 		<title level="j">Journal of Behavioral Finance</title>
-		<title level="j" type="abbrev">Journal of Behavioral Finance</title>
-		<idno type="ISSN">1542-7560</idno>
-		<idno type="ISSNe">1542-7579</idno>
 		<imprint>
 			<biblScope unit="volume">13</biblScope>
-			<biblScope unit="issue">1</biblScope>
 			<biblScope unit="page" from="51" to="55" />
-			<date type="published" when="2012-01">2012</date>
-			<publisher>Informa UK Limited</publisher>
+			<date type="published" when="2012">2012</date>
 		</imprint>
 	</monogr>
 </biblStruct>
@@ -233,18 +215,13 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		<author>
 			<persName coords=""><forename type="first">Helen</forename><surname>Allen</surname></persName>
 		</author>
-		<idno type="DOI">10.1016/0261-5606(92)90048-3</idno>
 	</analytic>
 	<monogr>
 		<title level="j">Journal of International Money and Finance</title>
-		<title level="j" type="abbrev">Journal of International Money and Finance</title>
-		<idno type="ISSN">0261-5606</idno>
 		<imprint>
 			<biblScope unit="volume">11</biblScope>
-			<biblScope unit="issue">3</biblScope>
 			<biblScope unit="page" from="304" to="314" />
-			<date type="published" when="1992-06">1992</date>
-			<publisher>Elsevier BV</publisher>
+			<date type="published" when="1992">1992</date>
 		</imprint>
 	</monogr>
 </biblStruct>
@@ -253,24 +230,20 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 	<analytic>
 		<title level="a" type="main">Herd Behaviour and Cascading in Capital Markets: a Review and Synthesis</title>
 		<author>
-			<persName><forename type="first">David</forename><surname>Hirshleifer</surname></persName>
+			<persName coords=""><forename type="first">D</forename><surname>Hirshleifer</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Siew</forename><surname>Hong Teoh</surname></persName>
+			<persName coords=""><forename type="first">Hong</forename><surname>Teoh</surname></persName>
 		</author>
-		<idno type="DOI">10.1111/1468-036x.00207</idno>
+		<author>
+			<persName coords=""><forename type="first">S</forename></persName>
+		</author>
 	</analytic>
 	<monogr>
 		<title level="j">European Financial Management</title>
-		<title level="j" type="abbrev">Euro Fin Management</title>
-		<idno type="ISSN">1354-7798</idno>
-		<idno type="ISSNe">1468-036X</idno>
 		<imprint>
-			<biblScope unit="volume">9</biblScope>
-			<biblScope unit="issue">1</biblScope>
 			<biblScope unit="page" from="25" to="66" />
-			<date type="published" when="2003-03">2003</date>
-			<publisher>Wiley</publisher>
+			<date type="published" when="2003">2003</date>
 		</imprint>
 	</monogr>
 </biblStruct>
@@ -279,17 +252,15 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 	<analytic>
 		<title level="a" type="main">Automated Trading with Machine Learning on Big Data</title>
 		<author>
-			<persName coords=""><forename type="first">Dymitr</forename><surname>Ruta</surname></persName>
+			<persName coords=""><forename type="first">D</forename><surname>Ruta</surname></persName>
 		</author>
-		<idno type="DOI">10.1109/bigdata.congress.2014.143</idno>
+		<idno type="DOI">10.1109/BigData.Congress.2014.143</idno>
 	</analytic>
 	<monogr>
-		<title level="m">2014 IEEE International Congress on Big Data</title>
-				<meeting><address><addrLine>Anchorage, AK</addrLine></address></meeting>
+		<title level="j">IEEE International Congress on Big Data</title>
 		<imprint>
-			<publisher>IEEE</publisher>
-			<date type="published" when="2014-06">2014. 2014</date>
 			<biblScope unit="page" from="824" to="830" />
+			<date type="published" when="2014">2014. 2014</date>
 		</imprint>
 	</monogr>
 </biblStruct>
@@ -300,18 +271,13 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		<author>
 			<persName coords=""><forename type="first">Derek</forename><forename type="middle">W</forename><surname>Bunn</surname></persName>
 		</author>
-		<idno type="DOI">10.1016/0377-2217(96)00006-9</idno>
 	</analytic>
 	<monogr>
 		<title level="j">European Journal of Operational Research</title>
-		<title level="j" type="abbrev">European Journal of Operational Research</title>
-		<idno type="ISSN">0377-2217</idno>
 		<imprint>
 			<biblScope unit="volume">92</biblScope>
-			<biblScope unit="issue">3</biblScope>
 			<biblScope unit="page" from="528" to="536" />
 			<date type="published" when="1992">1992</date>
-			<publisher>Elsevier BV</publisher>
 		</imprint>
 	</monogr>
 </biblStruct>
@@ -345,58 +311,45 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 
 <biblStruct coords="15,95.80,423.29,414.77,8.19;15,103.10,434.21,407.23,8.18;15,103.10,445.36,20.35,8.10" xml:id="b9">
 	<analytic>
-		<title level="a" type="main">SHORT-TERM TREND PREDICTION OF FOREIGN EXCHANGE RATES WITH A NEURAL-NETWORK BASED ENSEMBLE OF FINANCIAL TECHNICAL INDICATORS</title>
+		<title level="a" type="main">Short-term Trend Forecasting of Foreign Exchange Rates with a Neural-Network Based Ensemble of Financial Technical Indicators</title>
 		<author>
 			<persName coords=""><forename type="first">Theodoros</forename><surname>Zafeiriou</surname></persName>
 		</author>
 		<author>
 			<persName coords=""><forename type="first">Dimitris</forename><surname>Kalles</surname></persName>
 		</author>
-		<idno type="DOI">10.1142/s0218213013500164</idno>
 	</analytic>
 	<monogr>
 		<title level="j">International Journal on Artificial Intelligence Tools</title>
-		<title level="j" type="abbrev">Int. J. Artif. Intell. Tools</title>
-		<idno type="ISSN">0218-2130</idno>
-		<idno type="ISSNe">1793-6349</idno>
 		<imprint>
-			<biblScope unit="volume">22</biblScope>
-			<biblScope unit="issue">03</biblScope>
-			<biblScope unit="page">1350016</biblScope>
-			<date type="published" when="2013-06">2013</date>
-			<publisher>World Scientific Pub Co Pte Lt</publisher>
+			<date type="published" when="2013">2013</date>
 		</imprint>
 	</monogr>
 </biblStruct>
 
 <biblStruct coords="15,95.80,462.31,414.35,8.19;15,103.10,473.23,219.79,8.19" xml:id="b10">
 	<analytic>
-		<title level="a" type="main">Statistical fuzzy interval neural networks for currency exchange rate time series prediction</title>
+		<title level="a" type="main">Statistical fuzzy interval neural networks for currency exchange rate time series forecasting</title>
 		<author>
-			<persName><forename type="first">Yan-Qing</forename><surname>Zhang</surname></persName>
+			<persName coords=""><forename type="first">Y</forename><forename type="middle">Q</forename><surname>Zhang</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Xuhui</forename><surname>Wan</surname></persName>
+			<persName coords=""><forename type="first">X</forename><surname>Wan</surname></persName>
 		</author>
-		<idno type="DOI">10.1016/j.asoc.2006.01.002</idno>
 	</analytic>
 	<monogr>
 		<title level="j">Applied Soft Computing</title>
-		<title level="j" type="abbrev">Applied Soft Computing</title>
-		<idno type="ISSN">1568-4946</idno>
 		<imprint>
 			<biblScope unit="volume">7</biblScope>
-			<biblScope unit="issue">4</biblScope>
 			<biblScope unit="page" from="1149" to="1156" />
-			<date type="published" when="2007-08">2007</date>
-			<publisher>Elsevier BV</publisher>
+			<date type="published" when="2007">2007</date>
 		</imprint>
 	</monogr>
 </biblStruct>
 
 <biblStruct coords="15,95.80,490.27,414.24,8.19;15,103.10,501.31,407.12,8.18;15,103.10,512.32,188.84,8.10" xml:id="b11">
 	<analytic>
-		<title level="a" type="main">Developing an Intelligent Forex Rolling Forecasting and Trading Decision Support System I: Conceptual Framework, Modeling Techniques and System Implementations</title>
+		<title level="a" type="main">Forecasting of currency exchange rate in forex trading system using genetic algorithm</title>
 		<author>
 			<persName coords=""><forename type="first">Fauzi</forename><surname>Yudhi Septiawan</surname></persName>
 		</author>
@@ -406,38 +359,31 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		<author>
 			<persName coords=""><forename type="first">Handra</forename><surname>Kusuma</surname></persName>
 		</author>
-		<idno type="DOI">10.1007/978-0-387-71720-3_14</idno>
 	</analytic>
 	<monogr>
-		<title level="m">International Series in Operations Research &amp; Management Science</title>
+		<title level="m">International Interdisciplinary Conference on Science Technology Machineering Management Pharmacy and Humanities Held</title>
 				<imprint>
-			<publisher>Springer US</publisher>
 			<date type="published" when="2017">2017</date>
-			<biblScope unit="page" from="249" to="274" />
 		</imprint>
 	</monogr>
 </biblStruct>
 
 <biblStruct coords="15,95.80,529.27,414.29,8.19;15,103.10,540.31,402.25,8.19" xml:id="b12">
 	<analytic>
-		<title level="a" type="main">Neural Networks and Statistical Techniques in Marketing Research</title>
+		<title level="a" type="main">NeuralNetworks and statistical techniques in marketing reaserch: An conceptual comparison</title>
 		<author>
 			<persName coords=""><forename type="first">V</forename><surname>Venugopal</surname></persName>
 		</author>
 		<author>
 			<persName coords=""><forename type="first">W</forename><surname>Baets</surname></persName>
 		</author>
-		<idno type="DOI">10.1108/02634509410065555</idno>
 	</analytic>
 	<monogr>
-		<title level="j">Marketing Intelligence &amp; Planning</title>
-		<idno type="ISSN">0263-4503</idno>
-		<imprint>
+		<title level="m">Neural networks vs. statistical technics</title>
+				<imprint>
+			<date type="published" when="1994">1994</date>
 			<biblScope unit="volume">12</biblScope>
-			<biblScope unit="issue">7</biblScope>
 			<biblScope unit="page" from="30" to="38" />
-			<date type="published" when="1994-08-01">1994</date>
-			<publisher>Emerald</publisher>
 		</imprint>
 	</monogr>
 	<note>Marketing Intelligence and planning</note>
@@ -468,7 +414,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 
 <biblStruct coords="15,95.80,585.31,414.24,8.19;15,103.10,596.23,407.12,8.18;15,103.10,607.36,188.84,8.10" xml:id="b14">
 	<analytic>
-		<title level="a" type="main">Developing an Intelligent Forex Rolling Forecasting and Trading Decision Support System I: Conceptual Framework, Modeling Techniques and System Implementations</title>
+		<title level="a" type="main">Forecasting of currency exchange rate in forex trading system using genetic algorithm</title>
 		<author>
 			<persName coords=""><forename type="first">Fauzi</forename><surname>Yudhi Septiawan</surname></persName>
 		</author>
@@ -478,47 +424,40 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		<author>
 			<persName coords=""><forename type="first">Handra</forename><surname>Kusuma</surname></persName>
 		</author>
-		<idno type="DOI">10.1007/978-0-387-71720-3_14</idno>
 	</analytic>
 	<monogr>
-		<title level="m">International Series in Operations Research &amp; Management Science</title>
+		<title level="m">International Interdisciplinary Conference on Science Technology Machineering Management Pharmacy and Humanities Held</title>
 				<imprint>
-			<publisher>Springer US</publisher>
 			<date type="published" when="2017">2017</date>
-			<biblScope unit="page" from="249" to="274" />
 		</imprint>
 	</monogr>
 </biblStruct>
 
 <biblStruct coords="15,95.80,624.34,414.47,8.19;15,103.10,635.26,279.92,8.19" xml:id="b15">
 	<analytic>
-		<title level="a" type="main">Computational Intelligence and Financial Markets: A Survey and Future Directions</title>
+		<title level="a" type="main">Computational intelligence and financial markets: a survey and future directions</title>
 		<author>
-			<persName><forename type="first">Rodolfo</forename><forename type="middle">C</forename><surname>Cavalcante</surname></persName>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">C</forename><surname>Cavalcante</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Rodrigo</forename><forename type="middle">C</forename><surname>Brasileiro</surname></persName>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">C</forename><surname>Brasileiro</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Victor</forename><forename type="middle">L F</forename><surname>Souza</surname></persName>
+			<persName coords=""><forename type="first">Vlf</forename><surname>Souza</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Jarley</forename><forename type="middle">P</forename><surname>Nobrega</surname></persName>
+			<persName coords=""><forename type="first">J</forename><surname>Nobrega</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Adriano</forename><forename type="middle">L I</forename><surname>Oliveira</surname></persName>
+			<persName coords=""><forename type="first">Ali</forename><surname>Oliveira</surname></persName>
 		</author>
-		<idno type="DOI">10.1016/j.eswa.2016.02.006</idno>
 	</analytic>
 	<monogr>
-		<title level="j">Expert Systems with Applications</title>
-		<title level="j" type="abbrev">Expert Systems with Applications</title>
-		<idno type="ISSN">0957-4174</idno>
+		<title level="j">Expert Syst Appl</title>
 		<imprint>
 			<biblScope unit="volume">55</biblScope>
 			<biblScope unit="page" from="194" to="211" />
-			<date type="published" when="2016-08">2016</date>
-			<publisher>Elsevier BV</publisher>
+			<date type="published" when="2016">2016</date>
 		</imprint>
 	</monogr>
 </biblStruct>
@@ -527,29 +466,24 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 	<analytic>
 		<title level="a" type="main">Predicting stock market index using fusion of machine learning techniques</title>
 		<author>
-			<persName><forename type="first">Jigar</forename><surname>Patel</surname></persName>
+			<persName coords=""><forename type="first">J</forename><surname>Patel</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Sahil</forename><surname>Shah</surname></persName>
+			<persName coords=""><forename type="first">S</forename><surname>Shah</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Priyank</forename><surname>Thakkar</surname></persName>
+			<persName coords=""><forename type="first">P</forename><surname>Thakkar</surname></persName>
 		</author>
 		<author>
 			<persName coords=""><forename type="first">K</forename><surname>Kotecha</surname></persName>
 		</author>
-		<idno type="DOI">10.1016/j.eswa.2014.10.031</idno>
 	</analytic>
 	<monogr>
-		<title level="j">Expert Systems with Applications</title>
-		<title level="j" type="abbrev">Expert Systems with Applications</title>
-		<idno type="ISSN">0957-4174</idno>
+		<title level="j">Expert Syst Appl</title>
 		<imprint>
 			<biblScope unit="volume">42</biblScope>
-			<biblScope unit="issue">4</biblScope>
 			<biblScope unit="page" from="2162" to="2172" />
-			<date type="published" when="2015-03">2015</date>
-			<publisher>Elsevier BV</publisher>
+			<date type="published" when="2015">2015</date>
 		</imprint>
 	</monogr>
 </biblStruct>
@@ -558,27 +492,22 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 	<analytic>
 		<title level="a" type="main">Forecasting directional movement of Forex data using LSTM with technical and macroeconomic indicators</title>
 		<author>
-			<persName><forename type="first">Deniz</forename><forename type="middle">Can</forename><surname>Yıldırım</surname></persName>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">C</forename><surname>Yıldırım</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Ismail</forename><forename type="middle">Hakkı</forename><surname>Toroslu</surname></persName>
-			<idno type="ORCID">0000-0002-4524-8232</idno>
+			<persName coords=""><forename type="first">I</forename><forename type="middle">H</forename><surname>Toroslu</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Ugo</forename><surname>Fiore</surname></persName>
+			<persName coords=""><forename type="first">U</forename><surname>Fiore</surname></persName>
 		</author>
 		<idno type="DOI">10.1186/s40854-020-00220-2</idno>
 		<ptr target="https://doi.org/10.1186/s40854-020-00220-2" />
 	</analytic>
 	<monogr>
-		<title level="j">Financial Innovation</title>
-		<title level="j" type="abbrev">Financ Innov</title>
-		<idno type="ISSNe">2199-4730</idno>
+		<title level="j">Financ Innov</title>
 		<imprint>
 			<biblScope unit="volume">7</biblScope>
-			<biblScope unit="issue">1</biblScope>
-			<date type="published" when="2021-01-04">2021</date>
-			<publisher>Springer Science and Business Media LLC</publisher>
+			<date type="published" when="2021">2021</date>
 		</imprint>
 	</monogr>
 </biblStruct>
@@ -587,24 +516,20 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 	<analytic>
 		<title level="a" type="main">Deep learning with long short-term memory networks for financial market predictions</title>
 		<author>
-			<persName><forename type="first">Thomas</forename><surname>Fischer</surname></persName>
+			<persName coords=""><forename type="first">T</forename><surname>Fischer</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Christopher</forename><surname>Krauss</surname></persName>
+			<persName coords=""><forename type="first">C</forename><surname>Krauss</surname></persName>
 		</author>
 		<idno type="DOI">10.1016/j.ejor.2017.11.054</idno>
 		<ptr target="https://doi.org/10.1016/j.ejor.2017.11.054" />
 	</analytic>
 	<monogr>
 		<title level="j">European Journal of Operational Research</title>
-		<title level="j" type="abbrev">European Journal of Operational Research</title>
-		<idno type="ISSN">0377-2217</idno>
 		<imprint>
-			<biblScope unit="volume">270</biblScope>
-			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="volume">2</biblScope>
 			<biblScope unit="page" from="654" to="669" />
-			<date type="published" when="2018-10">2018</date>
-			<publisher>Elsevier BV</publisher>
+			<date type="published" when="2018">2018</date>
 		</imprint>
 	</monogr>
 </biblStruct>
@@ -634,47 +559,40 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 	<analytic>
 		<title level="a" type="main">Deep networks for predicting direction of change in foreign exchange rates</title>
 		<author>
-			<persName><forename type="first">Svitlana</forename><surname>Galeshchuk</surname></persName>
+			<persName coords=""><forename type="first">S</forename><surname>Galeshchuk</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Sumitra</forename><surname>Mukherjee</surname></persName>
-			<idno type="ORCID">0000-0003-1367-8200</idno>
+			<persName coords=""><forename type="first">S</forename><surname>Mukherjee</surname></persName>
 		</author>
 		<idno type="DOI">10.1002/isaf.1404</idno>
 	</analytic>
 	<monogr>
-		<title level="j">Intelligent Systems in Accounting, Finance and Management</title>
-		<title level="j" type="abbrev">Intell Sys Acc Fin Mgmt</title>
-		<idno type="ISSN">1055-615X</idno>
-		<idno type="ISSNe">1099-1174</idno>
+		<title level="j">Intelligent Systems in Accounting Finance &amp; Management</title>
 		<imprint>
 			<biblScope unit="volume">24</biblScope>
-			<biblScope unit="issue">4</biblScope>
-			<biblScope unit="page" from="100" to="110" />
-			<date type="published" when="2017-03-19" />
-			<publisher>Wiley</publisher>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">2017</biblScope>
 		</imprint>
 	</monogr>
 </biblStruct>
 
 <biblStruct coords="16,95.80,122.87,414.61,8.10;16,103.10,133.91,407.04,8.10;16,103.10,144.83,407.44,8.10;16,103.10,155.87,150.28,8.10" xml:id="b21">
 	<analytic>
-		<title level="a" type="main">Intraday Ultra-Short-Term Forecasting of Foreign Exchange Rates using an Ensemble of Neural Networks based on Conventional Technical Indicators</title>
+		<title level="a" type="main">Intraday ultra-short-term forecasting of foreign exchange rates using an ensemble of neural networks based on conventional technical indicators</title>
 		<author>
-			<persName><forename type="first">Theodoros</forename><surname>Zafeiriou</surname></persName>
+			<persName coords=""><forename type="first">T</forename><surname>Zafeiriou</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Dimitris</forename><surname>Kalles</surname></persName>
+			<persName coords=""><forename type="first">D</forename><surname>Kalles</surname></persName>
 		</author>
 		<idno type="DOI">10.1145/3411408.3411418</idno>
 		<ptr target="https://doi.org/10.1145/3411408.3411418" />
 	</analytic>
 	<monogr>
-		<title level="m">11th Hellenic Conference on Artificial Intelligence</title>
+		<title level="m">11th Hellenic conference on artificial intelligence (SETN 2020)</title>
 				<meeting><address><addrLine>New York, NY, USA</addrLine></address></meeting>
 		<imprint>
-			<publisher>ACM</publisher>
-			<date type="published" when="2020-09-02" />
+			<publisher>Association for Computing Machinery</publisher>
 			<biblScope unit="page" from="224" to="231" />
 		</imprint>
 	</monogr>
@@ -684,27 +602,20 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 	<analytic>
 		<title level="a" type="main">Ultra-short-term trading system using a neural network-based ensemble of financial technical indicators</title>
 		<author>
-			<persName><forename type="first">Theodoros</forename><surname>Zafeiriou</surname></persName>
-			<idno type="ORCID">0000-0001-7277-8768</idno>
+			<persName coords=""><forename type="first">T</forename><surname>Zafeiriou</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Dimitris</forename><surname>Kalles</surname></persName>
-			<idno type="ORCID">0000-0003-0364-5966</idno>
+			<persName coords=""><forename type="first">D</forename><surname>Kalles</surname></persName>
 		</author>
 		<idno type="DOI">10.1007/s00521-021-05945-4</idno>
 		<ptr target="https://doi.org/10.1007/s00521-021-05945-4" />
 	</analytic>
 	<monogr>
-		<title level="j">Neural Computing and Applications</title>
-		<title level="j" type="abbrev">Neural Comput &amp; Applic</title>
-		<idno type="ISSN">0941-0643</idno>
-		<idno type="ISSNe">1433-3058</idno>
+		<title level="j">Neural Comput &amp; Applic</title>
 		<imprint>
 			<biblScope unit="volume">35</biblScope>
-			<biblScope unit="issue">1</biblScope>
 			<biblScope unit="page" from="35" to="60" />
 			<date type="published" when="2023">2023</date>
-			<publisher>Springer Science and Business Media LLC</publisher>
 		</imprint>
 	</monogr>
 </biblStruct>
@@ -713,54 +624,36 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 	<analytic>
 		<title level="a" type="main">Algorithmic Trading</title>
 		<author>
-			<persName><forename type="first">Giuseppe</forename><surname>Nuti</surname></persName>
+			<persName coords=""><forename type="first">G</forename><surname>Nuti</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Mahnoosh</forename><surname>Mirghaemi</surname></persName>
+			<persName coords=""><forename type="first">M</forename><surname>Mirghaemi</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Philip</forename><surname>Treleaven</surname></persName>
+			<persName coords=""><forename type="first">P</forename><surname>Treleaven</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Chaiyakorn</forename><surname>Yingsaeree</surname></persName>
+			<persName coords=""><forename type="first">C</forename><surname>Yingsaeree</surname></persName>
 		</author>
-		<idno type="DOI">10.1109/mc.2011.31</idno>
 	</analytic>
 	<monogr>
 		<title level="j">Computer</title>
-		<title level="j" type="abbrev">Computer</title>
-		<idno type="ISSN">0018-9162</idno>
 		<imprint>
 			<biblScope unit="volume">44</biblScope>
-			<biblScope unit="issue">11</biblScope>
 			<biblScope unit="page" from="61" to="69" />
-			<date type="published" when="2011-11">2011</date>
-			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+			<date type="published" when="2011">2011</date>
 		</imprint>
 	</monogr>
 </biblStruct>
 
 <biblStruct coords="16,95.80,217.91,101.37,8.10;16,88.22,234.83,114.49,8.10" xml:id="b24">
-	<analytic>
-		<title level="a" type="main">LAS VEGAS SANDS CORP., a Nevada corporation, Plaintiff, v. UKNOWN REGISTRANTS OF www.wn0000.com, www.wn1111.com, www.wn2222.com, www.wn3333.com, www.wn4444.com, www.wn5555.com, www.wn6666.com, www.wn7777.com, www.wn8888.com, www.wn9999.com, www.112211.com, www.4456888.com, www.4489888.com, www.001148.com, and www.2289888.com, Defendants.</title>
+	<monogr>
+		<title/>
 		<author>
 			<persName coords=""><surname>Truefx</surname></persName>
 		</author>
-		<idno type="DOI">10.1089/glre.2016.201011</idno>
 		<ptr target="www.truefx.com26.Integral,www.integral.com" />
-	</analytic>
-	<monogr>
-		<title level="j">Gaming Law Review and Economics</title>
-		<title level="j" type="abbrev">Gaming Law Review and Economics</title>
-		<idno type="ISSN">1097-5349</idno>
-		<idno type="ISSNe">1941-5494</idno>
-		<imprint>
-			<biblScope unit="volume">20</biblScope>
-			<biblScope unit="issue">10</biblScope>
-			<biblScope unit="page" from="859" to="868" />
-			<date type="published" when="2016-12" />
-			<publisher>Mary Ann Liebert Inc</publisher>
-		</imprint>
+		<imprint/>
 	</monogr>
 </biblStruct>
 
@@ -778,27 +671,18 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 </biblStruct>
 
 <biblStruct coords="16,95.80,279.77,414.64,8.19;16,103.10,290.81,407.40,8.19;16,103.10,301.85,138.31,8.19" xml:id="b26">
-	<analytic>
-		<title level="a" type="main">Ultra-short term trading using a neural-network based ensemble of financial technical indicators in a closed world market</title>
+	<monogr>
+		<title level="m" type="main">Ultra-short Term Trading Using a Neural-network Based Ensemble of Financial Technical Indicators in a Closed World Market&apos;. Intelligent Decision Technologies</title>
 		<author>
 			<persName coords=""><forename type="first">Theodoros</forename><surname>Zafeiriou</surname></persName>
 		</author>
 		<author>
 			<persName coords=""><forename type="first">Dimitris</forename><surname>Kalles</surname></persName>
 		</author>
-		<idno type="DOI">10.3233/idt-229012</idno>
-	</analytic>
-	<monogr>
-		<title level="j">Intelligent Decision Technologies</title>
-		<title level="j" type="abbrev">IDT</title>
-		<idno type="ISSN">1872-4981</idno>
-		<idno type="ISSNe">1875-8843</idno>
+		<idno type="DOI">10.3233/IDT-229012</idno>
 		<imprint>
-			<biblScope unit="volume">16</biblScope>
-			<biblScope unit="issue">3</biblScope>
-			<biblScope unit="page" from="523" to="541" />
 			<date type="published" when="2022-01-01">2022. 1 Jan. 2022</date>
-			<publisher>IOS Press</publisher>
+			<biblScope unit="page" from="523" to="541" />
 		</imprint>
 	</monogr>
 </biblStruct>
@@ -822,44 +706,40 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 	<analytic>
 		<title level="a" type="main">What Is Apache NetBeans</title>
 		<author>
-			<persName><forename type="first">Ioannis</forename><surname>Kostaras</surname></persName>
+			<persName coords=""><forename type="first">I</forename><surname>Kostaras</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Constantin</forename><surname>Drabo</surname></persName>
+			<persName coords=""><forename type="first">C</forename><surname>Drabo</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Josh</forename><surname>Juneau</surname></persName>
+			<persName coords=""><forename type="first">J</forename><surname>Juneau</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Sven</forename><surname>Reimers</surname></persName>
+			<persName coords=""><forename type="first">S</forename><surname>Reimers</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Mario</forename><surname>Schröder</surname></persName>
+			<persName coords=""><forename type="first">M</forename><surname>Schröder</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Geertjan</forename><surname>Wielenga</surname></persName>
+			<persName coords=""><forename type="first">G</forename><surname>Wielenga</surname></persName>
 		</author>
 		<idno type="DOI">10.1007/978-1-4842-5370-0_1</idno>
 		<ptr target="https://doi.org/10.1007/978-1-4842-5370-0_1" />
 	</analytic>
 	<monogr>
-		<title level="m">Pro Apache NetBeans</title>
-				<meeting><address><addrLine>Berkeley, CA</addrLine></address></meeting>
+		<title level="j">Pro Apache NetBeans. Apress</title>
 		<imprint>
-			<publisher>Apress</publisher>
 			<date type="published" when="2020">2020</date>
-			<biblScope unit="page" from="3" to="28" />
 		</imprint>
 	</monogr>
 </biblStruct>
 
 <biblStruct coords="16,95.80,363.86,414.25,8.10;16,103.10,374.90,199.27,8.10" xml:id="b29">
 	<analytic>
-		<title level="a" type="main">Google Colaboratory</title>
+		<title level="a" type="main">Google colaboratory</title>
 		<author>
-			<persName coords=""><forename type="first">Ekaba</forename><surname>Bisong</surname></persName>
+			<persName coords=""><forename type="first">E</forename><surname>Bisong</surname></persName>
 		</author>
-		<idno type="DOI">10.1007/978-1-4842-4470-8_7</idno>
 	</analytic>
 	<monogr>
 		<title level="m">Building Machine Learning and Deep Learning Models on Google Cloud Platform</title>

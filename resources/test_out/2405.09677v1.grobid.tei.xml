@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Homogenization of non-local energies on disconnected sets</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2024-05-15">15 May 2024</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,129.72,195.02,93.28,14.36"><forename type="first">Andrea</forename><surname>Braides</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">SISSA</orgName>
+								<address>
+									<addrLine>via Bonomea 265</addrLine>
+									<settlement>Trieste</settlement>
+									<country key="IT">Italy</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,233.76,195.02,104.13,14.36"><forename type="first">Sergio</forename><surname>Scalabrino</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">SISSA</orgName>
+								<address>
+									<addrLine>via Bonomea 265</addrLine>
+									<settlement>Trieste</settlement>
+									<country key="IT">Italy</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,375.84,195.02,89.88,14.36"><forename type="first">Chiara</forename><surname>Trifone</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">SISSA</orgName>
+								<address>
+									<addrLine>via Bonomea 265</addrLine>
+									<settlement>Trieste</settlement>
+									<country key="IT">Italy</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Homogenization of non-local energies on disconnected sets</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2024-05-15">15 May 2024</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">FFD3F3DE3ED04897F92CAAF56F958E20</idno>
+					<idno type="arXiv">arXiv:2405.09677v1[math.AP]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2024-05-19T14:17+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>homogenization</term>
+					<term>non-local functionals</term>
+					<term>perforated domains</term>
+					<term>separation of scales</term>
+					<term>Gamma-convergence. MSC Class (2020): 35B27</term>
+					<term>74Q05</term>
+					<term>49J45</term>
+					<term>26A33</term>
+					<term>74A70</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>We consider the problem of the homogenization of non-local quadratic energies defined on δ-periodic disconnected sets defined by a double integral, depending on a kernel concentrated at scale ε. For kernels with unbounded support we show that we may have three regimes: (i) ε &lt;&lt; δ, for which the Γ-limit even in the strong topology of L 2 is 0; (ii) ε δ → κ, in which the energies are coercive with respect to a convergence of interpolated functions, and the limit is governed by a non-local homogenization formula parameterized by κ; (iii) δ &lt;&lt; ε, for which the Γ-limit is computed with respect to a coarse-grained convergence and exhibits a separation-of-scales effect; namely, it is the same as the one obtained by formally first letting δ → 0 (which turns out to be a pointwise weak limit, thanks to an iterated use of Jensen's inequality), and then, noting that the outcome is a nonlocal energy studied by Bourgain, Brezis and Mironescu, letting ε → 0. A slightly more complex description is necessary for case (ii) if the kernel is compactly supported.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="17" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="18" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="19" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="20" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="21" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="22" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="23" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="24" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="25" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="26" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">Introduction</head><p>In this paper we study the asymptotic behaviour of a periodic system of disconnected regions that interact through long-range potentials and can therefore be considered 'energetically' connected in the sense of V.V. Zhikov's p-connectedness <ref type="bibr" coords="1,327.72,587.53,17.09,11.97" target="#b16">[17]</ref>. The study of such a type of geometrical objects falls within the analysis of those commonly referred to as 'perforated domains', where the domain of integration is a portion of a scaled periodic set E contained in a given region; that is, a set of the form Ω ∩ δE, with δ &gt; 0 a small parameter. The 'classical' case is obtained by choosing as energy e.g. the Dirichlet integral, for which the functionals take the form</p><formula xml:id="formula_0" coords="1,237.00,669.55,296.67,20.27">F δ (u) = ˆΩ∩δE |∇u| 2 dx. (<label>1</label></formula><formula xml:id="formula_1" coords="1,533.67,677.05,4.99,11.97">)</formula><p>If E is a connected open set, then the energies possess a limit, e.g. in the sense of Γ-convergence <ref type="bibr" coords="1,56.64,718.09,12.36,11.97" target="#b2">[3,</ref><ref type="bibr" coords="1,72.96,718.09,15.00,11.97" target="#b9">10,</ref><ref type="bibr" coords="1,91.92,718.09,8.16,11.97" target="#b5">6]</ref>, as δ → 0 <ref type="bibr" coords="1,156.72,718.09,12.36,11.97" target="#b6">[7]</ref> and it is a coercive homogeneous quadratic form on H 1 (Ω). This result Preprint SISSA 09/2024/MATE can be obtained by using Extension Lemmas, which allow to construct uniformly continuous operators from H 1 (Ω ∩ δE) to H 1 loc (Ω) <ref type="bibr" coords="2,263.88,102.61,11.70,11.97" target="#b0">[1]</ref>, and then regard all the functionals as defined in that common space. For less regular sets it is convenient to substitute the topological notion of connectedness with a more analytic one: loosely speaking, if p &gt; 1, a set A is p-connected if every function u such that ´A |∇u| p dx = 0 is a constant <ref type="bibr" coords="2,366.72,145.93,17.18,11.97" target="#b16">[17]</ref>. More in general this notion can be given for integrals with respect to a measure, of which the restriction of the Lebesgue measure to A is a particular case.</p><p>Following a seminal result of Bourgain et al. <ref type="bibr" coords="2,306.84,189.25,12.36,11.97" target="#b4">[5]</ref> (see also <ref type="bibr" coords="2,370.68,189.25,17.09,11.97" target="#b14">[15]</ref>, and <ref type="bibr" coords="2,419.28,189.25,12.24,11.97" target="#b3">[4,</ref><ref type="bibr" coords="2,435.72,189.25,14.88,11.97" target="#b13">14]</ref> for applications) the Dirichlet integral on an open set U ⊂ R d can itself be approximated by introducing another parameter ε &gt; 0 and considering energies</p><formula xml:id="formula_2" coords="2,182.40,241.56,356.26,29.61">F ε (u) = 1 ε d ˆU×U ϕ x−y ε |u(x) − u(y)| 2 |x − y| 2 dx dy,<label>(2)</label></formula><p>with ϕ a non-negative integrable kernel. Such energies have also been systematically studied within a variational theory for convolution-type functionals <ref type="bibr" coords="2,364.32,298.33,12.36,11.97" target="#b1">[2]</ref> in the equivalent form</p><formula xml:id="formula_3" coords="2,178.20,322.45,360.46,28.28">F ε (u) = 1 ε d+2 ˆU×U ϕ x−y ε |u(x) − u(y)| 2 dx dy,<label>(3)</label></formula><p>up to using the kernel ϕ(ξ)|ξ| 2 in the place of ϕ(ξ). We will use this latter form. Note that if the support of ϕ is unbounded then any set U is in a sense '2-connected' for such functionals, in the sense that if F ε (u) = 0 then u(x) − u(y) = 0 for each x, y ∈ U so that u is constant on U. This observation suggests that, contrary to the local case, for non-local energies we might study the behaviour of perforated domains as above even when E is not topologically connected. In this paper, we consider non-local functionals of the form</p><formula xml:id="formula_4" coords="2,158.64,474.73,380.02,28.16">F ε,δ (u) = 1 ε d+2 ˆΩ∩δE ˆΩ∩δE ϕ x−y ε |u(x) − u(y)| 2 dx dy,<label>(4)</label></formula><p>under the prototypical assumption that</p><formula xml:id="formula_5" coords="2,266.04,539.28,62.67,13.90">E = K + Z d</formula><p>is composed of a periodic array of disconnected sets; that is, K is a (topologically) connected compact set and (K + k)</p><formula xml:id="formula_6" coords="2,186.84,580.68,199.08,13.59">∩ (K + k ′ ) = ∅ if k, k ′ ∈ Z d and k = k ′ .</formula><p>The behaviour of F ε,δ will be driven by the mutual behaviour of the two parameters. In the notation, we will tacitly suppose that δ = δ ε is an infinitesimal family as ε → 0. Functionals of the form (4) have been dealt with in <ref type="bibr" coords="2,98.16,625.45,12.36,11.97" target="#b8">[9]</ref> (see also <ref type="bibr" coords="2,163.08,625.45,12.68,11.97" target="#b1">[2]</ref>) when E is a topologically connected periodic Lipschitz set, using an extension theorem which cannot be applied in our cases.</p><p>The first issue that we examine for such energies is their coerciveness. Since the domain of F ε,δ is composed of functions defined on a disconnected set, we have to specify the type of convergence with respect to which they are studied. In the case of ϕ with support the whole R d we obtain the three cases:</p><p>(i) ε &lt;&lt; δ. In this case we have a loss of coerciveness, and in particular any function in L 2 (Ω) is a limit in L 2 (Ω) of a sequence of functions with vanishing energy;</p><p>(ii) ε ∼ δ. In this case we consider the convergence u ε → u defined as the L 2 loc (Ω) strong convergence of the piecewise-constant functions u ε defined by</p><formula xml:id="formula_7" coords="3,166.08,124.21,372.58,28.16">u ε (x) = 1 |K|δ d ˆδK+δk u ε (y) dy for x ∈ δ(k + [0, 1) d ).<label>(5)</label></formula><p>The functionals are equicoercive with respect to this convergence, and the limit u belongs to H 1 (Ω); (iii) δ &lt;&lt; ε. In this case the functions u ε must be 'coarse grained', considering the strong L 2 loc (Ω)-convergence of the piecewise-constant interpolations u ε defined by</p><formula xml:id="formula_8" coords="3,138.60,228.97,400.06,29.92">u ε (x) = 1 |[0, ε] d ∩ δE| ˆε(k+[0,1) d )∩δE u ε (x) for x ∈ ε(k + [0, 1) d ).<label>(6)</label></formula><p>Also in this case, the limit u is in H 1 (Ω).</p><p>If the support of ϕ is bounded then we may have loss of coerciveness also if ε ∼ δ. More precisely, if the support of ϕ is the closed ball of radius s, then the functionals are equicoercive with respect to the convergence above if and only if sε &gt; δD, where D = inf{r : E + B r/2 is topologically connected}. In this case again the limit u belongs to H 1 (Ω).</p><p>We also compute the Γ-limit with respect to the convergences above. If the support of ϕ is the whole R d we have: (i) (degenerate limit) if ε &lt;&lt; δ then the Γ-limit with respect to the strong L 2 (Ω)-convergence is identically 0;</p><p>(ii) (homogenization) if ε δ → κ, then the Γ-limit is the quadratic form</p><formula xml:id="formula_9" coords="3,222.48,443.58,150.60,21.35">F κ (u) = ˆΩ A κ hom ∇u, ∇u dx,</formula><p>where the symmetric matrix A κ hom satisfies</p><formula xml:id="formula_10" coords="3,86.04,504.18,427.92,34.89">A κ hom ξ, ξ = min ˆ[0,1] d ∩E ˆE ϕ( x−y κ )( ξ, x − y + u(x) − u(y)) 2 dx dy : u 1-periodic .</formula><p>This result can be seen as following from the results in <ref type="bibr" coords="3,347.16,544.57,12.36,11.97" target="#b8">[9]</ref> (see also <ref type="bibr" coords="3,411.96,544.57,12.68,11.97" target="#b1">[2]</ref>) using the techniques therein combined with the coerciveness result above;</p><p>(iii) (separation of scales) if δ &lt;&lt; ε and ϕ is radially symmetric, then the Γ-limit is given by</p><formula xml:id="formula_11" coords="3,140.04,602.05,315.36,28.28">F ∞ (u) = C ∞ ˆΩ |∇u| 2 dx, where C ∞ = |K| 2 1 d ˆRd ϕ(ξ)|ξ| 2 dξ.</formula><p>Note that 1 d ´Rd ϕ(ξ)|ξ| 2 dξ is the constant appearing in the Γ-limit by Bourgain et al. <ref type="bibr" coords="3,507.60,637.45,11.61,11.97" target="#b4">[5]</ref>, so that this limit can be obtained by first letting δ → 0, noting that, upon writing</p><formula xml:id="formula_12" coords="3,148.20,673.57,299.04,28.16">F ε,δ (u) = 1 ε d+2 ˆΩ×Ω χ E×E ( x δ , y δ )ϕ x−y ε |u(x) − u(y)| 2 dx dy,</formula><p>the corresponding Γ-limit is simply</p><formula xml:id="formula_13" coords="3,165.24,734.29,264.96,28.16">F ∞ ε (u) = 1 ε d+2 |K| 2 ˆΩ×Ω ϕ x−y ε |u(x) − u(y)| 2 dx dy,</formula><p>whose successive Γ-limit as ε → 0 is F ∞ . This result is obtained using the Fonseca Müller blow-up method combined by a convexity argument for the lower bound. These arguments allow first to reduce to test functions which are δ-periodic perturbations of affine functions, and then to obtain the desired inequality by a double Jensen's inequality. The upper bound is obtained by a direct computation when the target function u is C 2 . In this case we can take u ε = u, in which case a discretization argument allows to write F ε,δ (u) as an approximation of a Riemann integral. As a technical remark, we note that it is sufficient to treat the case ϕ = χ Br since a general ϕ can be approximated by linear combinations of this type of energies.</p><p>The lower bound then follows by the superadditivity of the lower limit, while the upper bound is proved by the pointwise convergence on C 2 -functions.</p><p>Finally, for ϕ with support the closed ball of radius s the computation in (ii) also holds provided sκ &gt; D, so that the functionals are equi-coercive.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">Notation and statement of the results</head><p>We consider a radial convolution kernel in R d ; that is, a function ϕ : R d → [0, +∞) such that a decreasing function ϕ 0 : [0, +∞) → [0, +∞) exists satisfying ϕ(ξ) = ϕ 0 (|ξ|). We further assume that ˆRd ϕ(ξ)(1</p><formula xml:id="formula_14" coords="4,281.88,356.64,256.78,13.90">+ |ξ| 2 )dx &lt; +∞,<label>(7)</label></formula><p>and for each ε &gt; 0 we define the scaled kernel ϕ ε by</p><formula xml:id="formula_15" coords="4,257.76,401.64,70.75,17.33">ϕ ε (ξ) = 1 ε d ϕ( ξ ε</formula><p>). A simple kernel, which will be used as a comparison for general kernels, is</p><formula xml:id="formula_16" coords="4,56.64,446.04,306.60,53.21">ϕ ε (ξ) = ε −d if |ξ| &lt; ε, 0 elsewhere, obtained with ϕ 0 = χ [0,1] .</formula><p>We consider a periodic set E ⊂ R d , and we fix a bounded domain Ω ⊂ R d with Lipschitz boundary. For all ε &gt; 0 and δ &gt; 0 we define the functional F δ,ε : L 2 (Ω) → [0, +∞) by</p><formula xml:id="formula_17" coords="4,155.16,536.53,383.50,28.28">F δ,ε (u) = 1 ε 2 ˆ(Ω∩δE)×(Ω∩δE) ϕ ε (x − y)|u(x) − u(y)| 2 dxdy.<label>(8)</label></formula><p>Note that if E = R d then F δ,ε is independent of δ and the Γ-limit with respect to the weak and strong convergence in L 2 (Ω) of F ε (u) = F δ,ε (u) has been shown to be equal to</p><formula xml:id="formula_18" coords="4,180.72,608.41,357.94,28.28">C ϕ ˆΩ |∇u| 2 dx, where C ϕ := 1 d ˆRd ϕ(ξ)|ξ| 2 dx.<label>(9)</label></formula><p>We will consider a set E composed of disconnected components; more precisely, a 1-periodic set E in R d of the form</p><formula xml:id="formula_19" coords="4,253.08,672.01,280.37,25.96">E = k∈Z d (k + K), (<label>10</label></formula><formula xml:id="formula_20" coords="4,533.45,672.01,5.22,11.97">)</formula><p>where K is the closure of a connected open set with boundary of zero measure, and is such that (k + K) ∩ K = ∅ if k ∈ Z d and k = 0. We also define Note that for this choice of E dist(K, K + k) ≥ D for all k ∈ R d , which is not the case in general. For example, if we take as K the closed ellipse given by the relation</p><formula xml:id="formula_21" coords="4,166.20,737.53,372.46,12.88">D = inf{r : E + B r/2 is (topologically) connected}.<label>(11)</label></formula><formula xml:id="formula_22" coords="5,56.64,373.14,481.84,34.08">x 2 1 c 2 1 + x 2 2 c 2 2 ≤ 1 with c 2 &lt; c 1 in R 2 , we have dist(K, K + e 1 ) = 1 − 2c 1 and dist(K, K + e 2 ) = 1 − 2c 2 = D.</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1">Definition of convergence and coerciveness</head><p>We first consider the cases in which we do not have coerciveness. The first one is in the regime ε &lt;&lt; δ, for which the Γ-limit, even if computed with respect to the strong L 2 (Ω) convergence is 0. This is a consequence of the following result.</p><p>Theorem 2.2. Let δ = δ ε be such that δ → 0 and</p><formula xml:id="formula_23" coords="5,269.88,524.41,55.44,29.08">lim ε→0 ε δ ε = 0.</formula><p>then for all u ∈ L 2 (Ω) there exists a sequence u ε converging strongly to u in L 2 (Ω) and such that lim</p><formula xml:id="formula_24" coords="5,256.92,593.89,81.48,18.04">ε→0 F δ,ε (u ε ) = 0.</formula><p>Proof. It is sufficient to prove that the claim holds for a strongly dense subclass in L 2 (Ω). We then take a Lipschitz continuous function u, and consider the function u ε equal to the constant</p><formula xml:id="formula_25" coords="5,210.00,660.61,328.66,28.16">u ε (x) = u δ k = 1 δ d |K| ˆδ(k+K) u(y)dy<label>(12)</label></formula><p>in δ(k + K), and to u on Ω \ δE. We have u ε → u in L 2 (Ω), and we can estimate</p><formula xml:id="formula_26" coords="5,143.16,728.51,309.12,30.64">F δ,ε (u ε ) ≤ C 1 ε d+2 ˆ(Ω×Ω)∩{|x−y|&gt;D 0 δ} ϕ |x − y| ε |x − y| 2 dx dy,</formula><p>where D 0 = min{dist(K, k + K) : k = 0}. The change of variables y = x + εξ gives</p><formula xml:id="formula_27" coords="6,211.32,111.42,172.68,34.89">F δ,ε (u ε ) ≤ C ′ ˆ{|ξ|&gt;D 0 δ ε } ϕ(ξ)|ξ| 2 dξ,</formula><p>with C ′ depending only on Ω and the Lipschitz constant of u. This latter integral tends to 0 by <ref type="bibr" coords="6,73.08,167.53,13.68,11.97" target="#b6">(7)</ref>, since δ ε → +∞. In the case δ ∼ ε we havea lack of coerciveness in the case of kernels with compact support. Up to scaling, we can suppose that the support of ϕ 0 is [0, 1]. We then have the following result.</p><p>Proposition 2.3. Let the support of ϕ 0 be [0, 1], and let D be defined by <ref type="bibr" coords="6,435.60,228.25,19.57,11.97" target="#b10">(11)</ref>.</p><p>(a) If δ = δ ε is such that ε &lt; δD 0 then for all u ∈ L 2 (Ω) there exists a sequence with F δ,ε (u ε ) = 0 and converging to u strongly in L 2 (Ω);</p><p>(b) If δ = δ ε is such that ε &lt; δD then there exists a sequence u ε with F δ,ε (u ε ) = 0 and such that u ε χ δE does not converge weakly in L 2 (Ω).</p><p>Proof. Case (a) is dealt with exactly as in the proof of Theorem 2.2. In case (b) we have that the set δE + B ε/2 is composed of infinitely many disconnected components. We may suppose for simplicity that each connected component is not bounded since otherwise we are in case (a), and let k ∈ Z d be such that δ(k + K) does not belong to the same connected component as δK. We may set u ε (x) = m if x belongs to the same connected component as δ(2mk + K), and for example u ε (x) = 0 elsewhere. Since ε &lt; δD, if ϕ( |x−y| ε ) &gt; 0 and x, y ∈ δE then they belong to the same connected component. This shows that F δ,ε (u ε ) = 0. Remark 2.4. Claim (a) in Proposition 2.3 shows that the Γ-limit in the strong L 2 topology is 0. In the second case, if δD 0 &lt; ε &lt; δD then the sequence F δ,ε retains some form of coerciveness, which gives a non-trivial Γ-limit in the weak L 2 topology. For example, in the case of ellipsoidal sets as in Example 2.1, the domain of the Γ-limit will be functions in L 2 (Ω) whose distributional derivative in the x 1 -direction is an L 2 function. Since this issue is not central in our discussion we omit the details of this case.</p><p>The following theorems will be proved in Section 3. They involve piecewise-affine interpolations obtained using Kuhn's decomposition <ref type="bibr" coords="6,292.80,530.05,18.24,11.97" target="#b11">[12]</ref> of cubes of R d into d! simplexes which are uniquely determined by a permutation of the indices {1, ..., d}. Since the actual form of the piecewise-affine interpolations is not relevant in our context we refer e.g. to <ref type="bibr" coords="6,441.96,558.97,18.12,11.97" target="#b15">[16]</ref> for their use in nonlocal interaction problems. Theorem 2.5. Let Ω be a connected set, let</p><formula xml:id="formula_28" coords="6,271.44,615.61,52.32,28.28">lim ε→0 ε δ = κ,</formula><p>and suppose either that ϕ 0 has support [0, 1] and κ &gt; D, or that the support of ϕ be the whole</p><formula xml:id="formula_29" coords="6,56.64,665.64,229.07,15.17">R d . Let u ε be such that sup ε F δ,ε (u ε ) &lt; +∞.</formula><p>Let the functions u ε be defined as the piecewiseaffine interpolations of the functions δk</p><formula xml:id="formula_30" coords="6,261.72,680.16,211.31,15.41">→ u δ k in (5) if k ∈ Z d and δ(k + K) ⊂ Ω.</formula><p>Then, up to subsequences and addition of constants u ε → u in L 2 loc (Ω) for some u ∈ H 1 (Ω). The second result combines the interpolation argument with 'coarse graining'; that is, we consider averages of functions not on the characteristic period δ of the geometry, but on the larger 'mesoscopic' scale ε.</p><p>Theorem 2.6. Let Ω be a connected set, let</p><formula xml:id="formula_31" coords="7,264.24,102.85,66.84,28.28">lim ε→0 ε δ = +∞.</formula><p>Let u ε be such that sup ε F δ,ε (u ε ) &lt; +∞. Let the functions u ε be defined as the piecewise-affine interpolations of the functions εk → u ε k defined on εZ d by</p><formula xml:id="formula_32" coords="7,185.28,168.49,353.38,29.92">u ε k = 1 |δE ∩ ε(k + [0, 1] d )| ˆδE∩ε(k+[0,1] d ) u ε dx.<label>(13)</label></formula><p>Then, up to subsequences and addition of constants, u ε → u in L 2 loc (Ω) for some u ∈ H 1 (Ω).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2">Γ-convergence</head><p>The compactness results in the previous section allow to consider Γ-convergence with respect to the convergence of the interpolations as defined therein. We can then compute the Γ-limits in the hypotheses of Theorem 2.5 and Theorem 2.6, respectively, the degenerate cases being dealt with in Theorem 2.2 when ε &lt;&lt; δ, in which case the Γ-limit is 0 with respect to any topology weaker than the strong L 2 (Ω) one, and in Proposition 2.3 for the case ε &lt; δD, when</p><formula xml:id="formula_33" coords="7,56.64,334.33,267.12,56.24">ϕ 0 has support [0, 1]. Theorem 2.7. Let δ = δ ε satisfy lim ε→0 ε δ = κ,</formula><p>and suppose either that ϕ 0 has support [0, 1] and κ &gt; D, or that the support of ϕ be the whole R d . Then the Γ-limit of F δ,ε as ε → 0 with respect to the convergence of the piecewise-affine interpolations as in Theorem 2.5 is the quadratic form</p><formula xml:id="formula_34" coords="7,222.48,440.10,316.18,21.35">F κ (u) = ˆΩ A κ hom ∇u, ∇u dx,<label>(14)</label></formula><p>where the symmetric matrix A κ hom satisfies</p><formula xml:id="formula_35" coords="7,75.96,493.02,457.49,34.89">A κ hom ξ, ξ = min ˆ[0,1] d ∩E ˆE ϕ( x−y κ )( ξ, x − y + u(x) − u(y)) 2 dx dy : u 1-periodic . (<label>15</label></formula><formula xml:id="formula_36" coords="7,533.45,500.53,5.22,11.97">)</formula><p>Proof. Once the compactness in Theorem 2.5 is proved, the proof of the claim follows very closely that of the homogenization theorem for perforated domains in <ref type="bibr" coords="7,416.40,543.37,11.70,11.97" target="#b8">[9]</ref>, where functionals of the same form as F δ,ε are dealt with, with ε = κδ and E a periodic (topologically) connected Lipschitz domain. We refer to that paper for details.</p><p>The second convergence result highlights a separation of scales, in which we may formally first let δ tend to 0 and note that the characteristic functions χ δE×δE weakly * converge to the constant</p><formula xml:id="formula_37" coords="7,56.64,621.48,274.44,57.69">|K| 2 in L ∞ (Ω × Ω). Theorem 2.8. Let δ = δ ε satisfy lim ε→0 ε δ = +∞.</formula><p>Then the Γ-limit of F δ,ε as ε → 0 with respect to the convergence of the piecewise-affine interpolations as in Theorem 2.6 is</p><formula xml:id="formula_38" coords="7,222.84,713.46,315.82,20.27">F ∞ (u) = |K| 2 C ϕ ˆΩ |∇u| 2 dx,<label>(16)</label></formula><p>where C ϕ is given by (9)</p><p>Remark 2.9. We note that both the convergences described in the theorems above can be restated as a local strong L 2 -convergence; namely, that we have</p><formula xml:id="formula_39" coords="8,230.52,126.66,302.93,34.89">lim ε→0 ˆΩ′ ∩δE |u ε − u| 2 dx = 0. (<label>17</label></formula><formula xml:id="formula_40" coords="8,533.45,134.17,5.22,11.97">)</formula><p>This convergence has been extensively used by Zhikov <ref type="bibr" coords="8,337.92,166.81,17.09,11.97" target="#b16">[17]</ref>.</p><p>To check this claim, we note that by the Poincaré inequality for double integrals, for which we do not need the connectedness of the domain (see e.g. the proof of <ref type="bibr" coords="8,432.84,195.73,18.12,11.97" target="#b12">[13,</ref><ref type="bibr" coords="8,456.24,195.73,73.32,11.97">Theorem 6.33]</ref>), taking into account the definition in Theorem 2.6. we have</p><formula xml:id="formula_41" coords="8,114.48,233.65,346.56,29.80">ˆδE∩ε(k+[0,1] d ) |u ε − u ε k | 2 dx ≤ 1 ε d ˆ(δE∩ε(k+[0,1] d )) 2 |u ε (x) − u ε (y)| 2 dx dy,</formula><p>so that, summing on k</p><formula xml:id="formula_42" coords="8,201.72,299.82,171.84,34.89">ˆΩ′ ∩δE |u ε − u ε | 2 dx ≤ ε 2 CF δ,ε (u ε ),</formula><p>where u ε is the piecewise-constant interpolation of {u ε k }. The claim then follows noting that u ε − u ε tends to 0 locally in L 2 (Ω). For the definition in Theorem 2.5 the argument is the same.</p><p>As a consequence of this remark, we can suppose that the sequence u ε tends to u locally in L 2 (Ω), upon substituting u ε with the function defined by u ε on Ω ∩ δE, and u otherwise.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3">Compactness</head><p>In this section we prove Theorems 2.5 and 2.6. We make the choice of the kernel ϕ = χ Br , and we may suppose that r = 1 up to a scaling argument. With this choice functional <ref type="bibr" coords="8,477.24,464.05,14.86,11.97" target="#b7">(8)</ref> becomes</p><formula xml:id="formula_43" coords="8,186.60,488.17,352.06,40.34">F δ,ε (u) = 1 ε d+2 ˆ(Ω∩δE) 2 {|x−y|}&lt;ε |u(x) − u(y)| 2 dxdy.<label>(18)</label></formula><p>Note that this ϕ is a lower bound for any other positive kernel satisfying the condition ϕ(ξ) ≥ c &gt; 0 for ξ ∈ B r 0 , so that it is sufficient to state the compactness result for families of functions u ε such that (18) is bounded.</p><p>Case 1: δ ∼ ε (Theorem 2.5). With fixed D &lt; κ ′ &lt; κ, we can assume ε δ &gt; κ ′ . By definition of D, there exist r &gt; 0 and a finite number of vectors k</p><formula xml:id="formula_44" coords="8,56.64,604.20,481.81,28.49">1 , ..., k N ∈ Z d generating Z d on Z such that dist(K, K + k i ) &lt; r &lt; κ ′ for all i ∈ {1, ..., N}.</formula><p>For each i ∈ {1, ..., N}, let z i ∈ ∂K and w i ∈ ∂K +k i be such that</p><formula xml:id="formula_45" coords="8,56.64,634.19,481.92,56.22">|z i −w i | = dist (K, K +k i ). Moreover, set A i := {x ∈ K : |x − z i | &lt; 1 2 (κ ′ − r)} and B i := {x ∈ K + k i : |x − w i | &lt; 1 2 (κ ′ − r)}.</formula><p>By the assumptions on K, we have</p><formula xml:id="formula_46" coords="8,107.28,701.39,381.84,52.18">|A i |, |B i | &gt; 0. Moreover, if x ∈ δA i and y ∈ δB i 1 δ |x − y| ≤ | 1 δ x − z i | + |z i − w i | + |w i − 1 δ y| &lt; κ ′ − r + dist(K, K + k i ) &lt; ε δ ; that is, δA i × δB i ⊆ (δK × δ(K + k i )) ∩ {|x − y| &lt; ε}.</formula><p>With this observation in mind, let u ∈ L 2 (Ω) and recall the notation</p><formula xml:id="formula_47" coords="9,230.40,122.65,134.40,28.16">u k = 1 δ d |K| ˆδK+δk u(x)dx.</formula><p>We compute</p><formula xml:id="formula_48" coords="9,75.36,178.69,453.99,264.41">|u 0 − u k i | 2 = 1 δ d |K| ˆδK (u(x) − u(x + δk i ))dx 2 = 1 δ d |K||δA i ||δB i | ˆδK×δA i ×δB i (u(x) − u(x + δk i ) + u(y) − u(y) + u(z) − u(z))dxdydz 2 ≤ 3 1 δ 2d |K| |A i | ˆδK×δA i (u(x) − u(y))dxdy 2 + 1 δ 2d |A i | |B i | ˆδA i ×δB i (u(y) − u(z))dydz 2 + 1 δ 2d |K| |B i | ˆδ(K+k i )×δB i (u(z) − u(w))dwdz 2 ≤ C δ 2d ˆδK×δA i |u(x) − u(y)| 2 dxdy + ˆδA i ×δB i |u(y) − u(z)| 2 dydz + ˆδ(K+k i )×δB i |u(z) − u(w)| 2 dwdz ≤ C δ 2d ˆδK×δK |u(x) − u(y)| 2 dxdy + ˆδK×δ(K+k i ) {|x−y|&lt;ε} |u(y) − u(z)| 2 dydz + ˆδ(K+k i )×δ(K+k i ) |u(z) − u(w)| 2 dwdz ,</formula><p>where in the first inequality we used the relation (a + b + c) 2 ≤ 3(a 2 + b 2 + c 2 ), and in the second one Jensen's inequality and the fact that In the prototypical case K = B c , we can consider the largest balls fully contained in the region of interaction, as depicted in Fig. <ref type="figure" coords="9,299.76,638.65,5.85,11.97" target="#fig_1">2</ref> In order to take into account the first and the third integral of the sum above, we need to control long-range interactions with short-range interactions as specified in the following lemma.</p><formula xml:id="formula_49" coords="9,269.64,465.12,169.08,109.80">|δA i | = δ d |A i | and |δB i | = δ d |B i |. |x − y| &lt; ε δA i δB i</formula><p>Lemma 3.2. There exists a constant C depending on the ratio δ/ε such that</p><formula xml:id="formula_50" coords="9,144.84,730.02,305.10,38.49">ˆδK×δK |u(x) − u(y)| 2 dxdy ≤ C ˆδK×δK {|x−y|&lt;ε} |u(x) − u(y)| 2 dxdy</formula><p>Proof. The proof follows the one of Lemma 6.1 in <ref type="bibr" coords="10,307.92,88.09,11.70,11.97" target="#b1">[2]</ref>. Since K is a connected Lipschitz bounded set, there exists ε 1 ∈ 0, ε 3 such that for every two points η ′ , η ′′ ∈ δK there exists a discrete path from η ′ to η ′′ ; that is, a set of points η ′ = η 0 , η 1 , . . . , η N , η N +1 = η ′′ for which:</p><formula xml:id="formula_51" coords="10,74.28,140.99,201.12,13.02">• |η j+1 − η j | ≤ ε 1 for j ∈ {0, 1, . . . , N};</formula><p>• for all j = 1, ..., N, the ball B ε 1 (η j ) is contained in δK (note that the two extremes are excluded);</p><p>• N ≤ C δ ε for all η ′ , η ′′ ∈ δK. The constant C depends only on diam(K) and its Lipschitz constant;</p><formula xml:id="formula_52" coords="10,56.64,243.01,434.52,65.66">Writing u(x 0 ) − u(x N +1 ) = u(x 0 ) − u(x 1 ) + u(x 1 ) − • • • − u(x N ) + u(x N ) − u(x N +1 ), where x 0 ∈ δK ∩ B ε 1 (η ′ ), x N +1 ∈ δK ∩ B ε 1 (η ′′ )</formula><p>, and x j is a point in B ε 1 (η j ) for j = 1, .., N. By integrating in all variables we get:</p><formula xml:id="formula_53" coords="10,80.04,333.66,435.84,213.93">ˆ(δK∩Bε 1 (η 0 ))×(δK∩Bε 1 (η N+1 )) (u(x 0 ) − u(x N +1 )) 2 dx 0 dx N +1 = (ε 1 ) −N d ˆBε 1 (η 1 ) • • • ˆBε 1 (η N ) ˆ(δK∩Bε 1 (η 0 ))×(δK∩Bε 1 (η N+1 )) u(x 0 ) − u(x 1 ) + u(x 1 ) − • • • • • • − u(x N ) + u(x N ) − u(x N +1 ) 2 dx 0 dx N +1 dx 1 ...dx N ≤ (N + 1)(ε 1 ) −N d ˆδK∩Bε 1 (η 0 ) • • • ˆδK∩Bε 1 (η N+1 ) N +1 j=1 (u(x j ) − u(x j−1 )) 2 dx 0 • • • dx N +1 ≤ (N + 1) N +1 j=1 ˆ(δK∩Bε 1 (η j ))×(δK∩Bε 1 (η j−1 )) (u(x j ) − u(x j−1 )) 2 dx j dx j−1 ≤ C δ ε + 1 2 ˆδK×δK {|x−y|&lt;ε} |u(x) − u(y)| 2 dxdy,</formula><p>where in the last line by set inclusion we used that for any (x j , x j−1 )</p><formula xml:id="formula_54" coords="10,56.64,554.51,481.90,64.98">∈ B ε 1 (η j ) × B ε 1 (η j−1 ) holds |x j − x j−1 | ≤ |x j − η j | + |η j − η j−1 | + |η j−1 − x j−1 | ≤ 3ε 1 &lt; ε and that N is at most C δ ε .</formula><p>We can obtain the final estimate by covering δK with a finite number of balls of radius ε 1 (this number depends on the ratio δ/ε only) and then summing up the previous inequality applied to all possible pairs of these balls.</p><p>By applying Lemma 3.2, we deduce that there exists a constant C such that, for i = 1, . . . , d,</p><formula xml:id="formula_55" coords="10,66.60,684.01,462.00,78.50">|u 0 − u k i | 2 ≤ C δ 2d ˆδK×δK {|x−y|&lt;ε} |u(x) − u(y)| 2 dxdy + ˆδK×δ(K+k i ) {|x−y|}&lt;ε |u(y) − u(z)| 2 dydz + ˆδ(K+k i )×δ(K+k i ) {|x−y|&lt;ε} |u(z) − u(w)| 2 dwdz .</formula><p>Since we need an estimate of δ d u 0 −u k i δ 2 , we multiply by δ d−2 and use that</p><formula xml:id="formula_56" coords="11,56.64,86.64,481.85,83.07">C δ 2d δ d−2 = C ε d+2 (by δ ∼ ε) to find δ d u 0 − u k i δ 2 ≤ C ε d+2 ˆ(δK ∪ δ(K+k i )) 2 {|x−y|}&lt;ε |u(x) − u(y)| 2 dxdy</formula><p>By periodicity it also holds</p><formula xml:id="formula_57" coords="11,128.76,189.24,337.80,43.35">δ d u k − u k+k i δ 2 ≤ C ε d+2 ˆ(δ(K+k) ∪ δ(K+(k+k i ))) 2 {|x−y|}&lt;ε |u(x) − u(y)| 2 dxdy.</formula><p>Finally, since each vector of the canonical basis can be expressed as a linear combination of the k i 's with integer coefficients, via triangle inequality we bound</p><formula xml:id="formula_58" coords="11,129.00,270.00,337.32,43.47">δ d u k − u k+e i δ 2 ≤ C ε d+2 ˆ(δ(K+k) ∪ δ(K+(k+k i ))) 2 {|x−y|}&lt;ε |u(x) − u(y)| 2 dxdy,</formula><p>and thus, summing over nearest neighbours k, k ′ ∈ Z d such that kδ + δK ⊆ Ω, and the same for k ′ , we get</p><formula xml:id="formula_59" coords="11,146.28,352.32,302.88,51.27">k,k ′ |k−k ′ |=1 δ d u k − u k ′ δ 2 ≤ C ε d+2 ˆ(Ω∩δE) 2 {|x−y|}&lt;ε |u(x) − u(y)| 2 dxdy.</formula><p>Therefore, from the equiboundedness of the functional along the sequence u ε we get a uniform bound on the piecewise-affine interpolation u ε , as defined in Theorem 2.5, and thus the existence of a converging subsequence in the sense of <ref type="bibr" coords="11,281.28,436.69,13.68,11.97" target="#b4">(5)</ref>.</p><formula xml:id="formula_60" coords="11,56.64,459.36,481.93,180.66">Case 2: ε ≫ δ (Theorem 2.6). Set C = C(d) := 1 1+ √ d , Q = [0, 1] d and Z ε = k ∈ Z d : Q k ε := Cε(k + Q) ⊆ Ω . Note that if (x, y) ∈ Q k ε × Q k ′ ε with |k − k ′ | ≤ 1; that is x = Cε(k + w) and y = Cε(k ′ + z) with w, z ∈ Q, it automatically holds |x − y| ≤ Cε|k − k ′ | + Cε|w − z| ≤ Cε (1 + diam(Q)) = ε. Moreover, for each k ∈ Z ε , consider Z k := {j ∈ Z d : δ(j + K) ⊆ Q k ε } = j ∈ Z d : j + K ⊆ ε δ (k + Q) . Note that δE ∩ Q k ε ⊇ j∈Z k δ(j + K) ∩ Q k ε = j∈Z k δ(j + K).</formula><p>Moreover, assume K ⊆ B L and fix j ∈ ε δ k + B(0, ε 2δ − L) and x = j + w ∈ j + K; then for all i ∈ {1, . . . , d} we have</p><formula xml:id="formula_61" coords="11,56.64,657.97,481.93,104.93">|x i − ε δ k i | ≤ |x − ε δ k| ≤ |j − ε δ k| + L ≤ ε 2δ ; that is, j + K ⊆ ε δ (k + Q). We deduce that ε δ k + {−⌊ ε 2δ − L⌋, ..., 0, ..., ⌊ ε 2δ − L⌋} d ⊆ Z k and consequently #Z k ≥ (2( ε δ − L − 1) + 1) d ≥ ε δ d , provided ε 2δ ≥ L + 1. In particular |δE ∩ Q k ε | ≥ j∈Z k |δ(j + K)| = #Z k |K|δ d ≥ |K|ε d .</formula><p>We now write</p><formula xml:id="formula_62" coords="12,101.76,109.21,391.38,280.22">F ε (u ε ) = 1 ε d+2 ˆ(Ω∩δE) 2 {|x−y|}&lt;ε (u ε (x) − u ε (y)) 2 dxdy ≥ 1 ε d+2 |k−k ′ |=1 k,k ′ ∈Zε ˆ(Q k ε ×Q k ′ ε )∩(δE) 2 (u ε (x) − u ε (y)) 2 dxdy = 1 ε d+2 |k−k ′ |=1 k,k ′ ∈Zε |δE ∩ Q k ε ||δE ∩ Q k ′ ε | (Q k ε ×Q k ′ ε )∩(δE) 2 (u ε (x) − u ε (y)) 2 dxdy ≥ |K| ε d+2 |k−k ′ |=1 k,k ′ ∈Zε ε 2d (Q k ε ∩δE)×(Q k ′ ε ∩δE) (u ε (x) − u ε (y)) dxdy 2 = |K| ε d+2 |k−k ′ |=1 k,k ′ ∈Zε ε 2d u k ε − u k ′ ε 2 = |K| |k−k ′ |=1 k,k ′ ∈Zε ε d |u k ε − u k ′ ε | 2 ε 2 ,</formula><p>with the averages u k ε defined by</p><formula xml:id="formula_63" coords="12,217.32,422.53,160.68,35.54">u k ε = 1 |Q k ε ∩ δE| ˆQk ε ∩δE u ε (x)dx.</formula><p>As in the previous case, we get a uniform bound on the piecewise-affine interpolation u ε , as defined in Theorem 2.6, so we can conclude that there exists a subsequence converging in the sense of (6).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4">Asymptotic analysis</head><p>This section is devoted to the proof of Theorem 2.8, subdividing it in a lower and an upper bound.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1">Liminf inequality</head><p>We first prove a lower bound. To that end, let u ε → u in the sense of ( <ref type="formula" coords="12,423.87,631.09,4.95,11.97" target="#formula_8">6</ref>) with F ε (u ε ) ≤ M &lt; +∞. Using the conclusion in Remark 2.9 we can suppose that the sequence u ε tends to u locally in L 2 (Ω), and actually that u ε = u outside δE.</p><p>In order to estimate the energy we use Fonseca-Müller's blow-up technique <ref type="bibr" coords="12,458.40,674.41,17.18,11.97" target="#b10">[11]</ref>, as adapted to homogenization problems in <ref type="bibr" coords="12,220.80,688.81,11.70,11.97" target="#b7">[8]</ref>. To that end, we restrict x ∈ A ⊂ Ω, where A is an open subset, defining</p><formula xml:id="formula_64" coords="12,147.84,726.73,390.82,40.34">F ε (u ε , A) = 1 ε d+2 ˆ(A×Ω)∩(δE) 2 {|x−y|&lt;ε} |u ε (x) − u ε (y)| 2 dxdy = µ ε (A)<label>(19)</label></formula><p>Since the measures µ ε are equibounded in mass, we can take a converging subsequence µ ε * ⇀ µ, so that by the lower semicontinuity of weak * convergence on open sets it holds</p><formula xml:id="formula_65" coords="13,212.76,120.73,169.80,28.28">lim inf ε→0 F ε (u ε ) ≥ µ(Ω) ≥ ˆΩ dµ dx dx.</formula><p>From now on, we denote Q := (− 1 2 , 1 2 ) d and, for all r &gt; 0 and x 0 ∈ R d , Q ρ (x 0 ) := x 0 + ρQ. We fix a Lebesgue point x 0 ∈ Ω for u and ∇u, such that there exists</p><formula xml:id="formula_66" coords="13,235.20,190.21,126.00,28.28">dµ dx (x 0 ) = lim ρ→0 µ(Q ρ (x 0 )) ρ d .</formula><p>Since µ(∂Q ρ (x 0 )) = 0 for almost all ρ &gt; 0, we can construct ρ ε → 0, with ρ ε ≫ ε, such that</p><formula xml:id="formula_67" coords="13,231.24,245.17,302.21,30.28">dµ dx (x 0 ) = lim ε→0 µ ε (Q ρε (x 0 )) ρ d ε . (<label>20</label></formula><formula xml:id="formula_68" coords="13,533.45,253.33,5.22,11.97">)</formula><p>From now on we will tacitly suppose that ρ = ρ ε . Now we prove a classical lemma that allows to match boundary data.</p><formula xml:id="formula_69" coords="13,56.64,313.08,372.59,14.21">Lemma 4.1. Let {v ε } ⊆ L 2 (Q) such that v ε → v for some v ∈ H 1 (Q).</formula><p>For all η &gt; 0, there exists another sequence</p><formula xml:id="formula_70" coords="13,74.28,327.60,362.40,175.25">{v η ε } ⊆ L 2 (Q), such that • v η ε → v in L 2 (Q) • v η ε = v in the set {z ∈ Q : dist(z, ∂Q) &lt; η} • v η ε = v ε in the set {z ∈ Q : dist(z, ∂Q) &gt; 2η} • if we define F ′ ε (v ε ) = 1 ε d+2 ˆ(Q×Q)∩(δE) 2 {|z−w|&lt;ε} (v ε (z) − v ε (w)) 2 dzdw, then it holds lim sup ε→0 (F ′ ε (v η ε ) − F ′ ε (v ε )) ≤ o(1),</formula><p>as η → 0.</p><p>Proof. Fix N ∈ N and for k ∈ {1, ..., N} define</p><formula xml:id="formula_71" coords="13,56.64,523.44,482.09,95.86">Q N k := {z ∈ Q : dist(z, ∂Q) &gt; η N (N + k)} and S k := Q N k−1 \ Q N k . Let φ k be a cut-off function such that φ k = 1 in Q N k , φ k = 0 in R d \ Q N k−1 and |∇φ k | ≤ N η . Define v k ε := φ k v ε + (1 − φ k )v. Note that v k ε (z)−v k ε (w) = φ k (z)(v ε (z)−v ε (w))+(1−φ k (z))(v(z)−v(w))(φ k (z)−φ k (w))(v ε (w)− v(w)) for all z, w ∈ Q.</formula><p>We decompose Q × Q as follows:</p><formula xml:id="formula_72" coords="13,116.40,640.92,361.95,117.05">A 1 := Q N k × Q N k , φ k (z) = 1, φ k (w) = 1 ∀(z, w) ∈ A 1 ; A 2 := (Q \ Q N k−1 ) × (Q \ Q N k−1 ), φ k (z) = 0, φ k (w) = 0 ∀(z, w) ∈ A 2 A 3 := S k × Q, |∇φ k (z)| ≤ 1 A ′ 3 := (Q × S k ) \ A 3 A 4 := Q N k × (Q \ Q N k−1 ), |z − w| ≥ η N , ∀(z, w) ∈ A 2 A ′ 4 := Q \ Q N k−1 × Q N k .</formula><p>The integral in A 1 is estimated by:</p><formula xml:id="formula_73" coords="14,67.44,111.61,461.62,78.26">1 ε d+2 ˆA1 ∩(δE) 2 {|z−w|&lt;ε} v k ε (z) − v k ε (w) 2 dzdw = 1 ε d+2 ˆA1 ∩(δE) 2 {|z−w|&lt;ε} (v ε (z) − v ε (w)) 2 dzdw ≤ 1 ε d+2 ˆ(Q×Q)∩(δE) 2 {|z−w|&lt;ε} (v ε (z) − v ε (w)) 2 dzdw = F ′ ε (v ε )</formula><p>Since Q has a Lipschitz boundary and v ∈ H 1 (Q), we can extend it to the whole R d . Denote the set</p><formula xml:id="formula_74" coords="14,214.56,226.67,166.20,13.02">S η = {z ∈ Q : dist(z, ∂Q) &lt; 2η}.</formula><p>We have</p><formula xml:id="formula_75" coords="14,67.80,272.05,460.92,107.12">1 ε d+2 ˆA2 ∩(δE) 2 {|z−w|&lt;ε} v k ε (z) − v k ε (w) 2 dzdw = 1 ε d+2 ˆA2 ∩(δE) 2 {|z−w|&lt;ε} (v(z) − v(w)) 2 dzdw ≤ 1 ε d+2 ˆ(Sη×Sη)∩(δE) 2 {|z−w|&lt;ε} (v(z) − v(w)) 2 dzdw ≤ 1 ε d+2 ˆ(Sη×Sη) {|z−w|&lt;ε} (v(z) − v(w)) 2 dzdw = ˆ|ξ|&lt;1 |ξ| 2 ˆSη,ξ v(z + εξ) − v(z) ε|ξ| 2 dzdξ,</formula><p>where S η,ξ = {z ∈ S η : z + εξ ∈ S η }. Note that, for all |ξ| &lt; 1 and ε small enough, the set S η,ξ is well included in S η + B η (0). Thus we can use a well-known characterization of Sobolev space H 1 to estimate</p><formula xml:id="formula_76" coords="14,65.52,444.24,464.16,31.41">ˆ|ξ|&lt;1 |ξ| 2 ˆSη,ξ v(z + εξ) − v(z) ε|ξ| 2 dzdξ ≤ ˆ|ξ|&lt;1 |ξ| 2 ∇v L 2 (Sη +Bη(0)) dξ = ∇v L 2 (Sη+Bη(0)) ,</formula><p>which tends to 0 as η → 0 independently of ε. As for A 3 , we have</p><formula xml:id="formula_77" coords="14,91.32,513.49,447.34,210.50">1 ε d+2 ˆA3 ∩(δE) 2 {|z−w|&lt;ε} v k ε (z) − v k ε (w) 2 dzdw (21) = 1 ε d+2 ˆA3 ∩(δE) 2 {|z−w|&lt;ε} (φ k (z) (v ε (z) − v ε (w)) + (1 − φ k (z)) (v(z) − v(w)) + (φ k (z) − φ k (w))(v ε (w) − v(w))) 2 dzdw ≤ 3 ε d+2 ˆA3 ∩(δE) 2 {|z−w|&lt;ε} (v ε (z) − v ε (w)) 2 dzdw (22) + 3 ε d+2 ˆA3 ∩(δE) 2 {|z−w|&lt;ε} (v(z) − v(w)) 2 dzdw (23) + 3 ε d+2 ˆA3 ∩(δE) 2 {|z−w|&lt;ε} (φ k (z) − φ k (w)) 2 (v ε (w) − v(w)) 2 dzdw (24)</formula><p>Recalling that A 3 = S k × Q, we estimate (24) with</p><formula xml:id="formula_78" coords="15,129.00,112.74,309.56,173.30">ˆ(S k ×Q)∩(δE) 2 {|z−w|&lt;ε} (φ k (z) − φ k (w)) 2 (v ε (w) − v(w)) 2 dzdw ≤ N 2 η 2 ˆSk ×Q {|z−w|&lt;ε} |z − w| 2 (v ε (w) − v(w)) 2 dzdw = N 2 η 2 ˆSk ˆQ∩B(w,ε) |z − w| 2 dz (v ε (w) − v(w)) 2 dw ≤ N 2 η 2 ˆSk ε 2 |B ε |(v ε (w) − v(w)) 2 dw = ε d+2 N 2 η 2 ˆSk (v ε (w) − v(w)) 2 dw.</formula><p>Note that v ε → v in L 2 (Q) by assumption, so the last term goes to 0 as ε → 0. Moreover, when we sum over k = 1, ..., N the terms ( <ref type="formula" coords="15,244.58,314.89,10.37,11.97">22</ref>) and ( <ref type="formula" coords="15,291.62,314.89,9.65,11.97">23</ref>), we find</p><formula xml:id="formula_79" coords="15,92.16,340.32,404.72,82.11">N k=1 1 ε d+2 ˆA3 ∩(δE) 2 {|z−w|&lt;ε} (v ε (z) − v ε (w)) 2 dzdw + 1 ε d+2 ˆA3 ∩(δE) 2 {|z−w|&lt;ε} (v(z) − v(w)) 2 dzdw ≤ 1 ε d+2 ˆQ2 ∩(δE) 2 {|z−w|&lt;ε} (v ε (z) − v ε (w)) 2 dzdw + 1 ε d+2 ˆQ2 ∩(δE) 2 {|z−w|&lt;ε} (v(z) − v(w)) 2 dzdw.</formula><p>Thus we may find k ∈ {1, . . . , N} such that</p><formula xml:id="formula_80" coords="15,87.12,453.73,431.04,79.34">1 ε d+2 ˆA3 ∩(δE) 2 {|z−w|&lt;ε} (v ε (z) − v ε (w)) 2 dzdw + 1 ε d+2 ˆA3 ∩(δE) 2 {|z−w|&lt;ε} (v(z) − v(w)) 2 dzdw ≤ 1 N 1 ε d+2 ˆQ2 ∩(δE) 2 {|z−w|&lt;ε} (v ε (z) − v ε (w)) 2 dzdw + 1 ε d+2 ˆQ2 ∩(δE) 2 {|z−w|&lt;ε} (v(z) − v(w)) 2 dzdw .</formula><p>With such a choice of k, and setting</p><formula xml:id="formula_81" coords="15,88.44,539.88,428.00,165.57">v η ε = v k ε , (21) is estimated by 1 ε d+2 ˆA3 ∩(δE) 2 {|z−w|&lt;ε} (v η ε (z) − v η ε (w)) 2 dzdw ≤ 3 N 1 ε d+2 ˆQ2 ∩(δE) 2 {|z−w|&lt;ε} (v ε (z) − v ε (w)) 2 dzdw + 1 ε d+2 ˆQ2 ∩(δE) 2 {|z−w|&lt;ε} (v(z) − v(w)) 2 dzdw +3 N 2 η 2 ˆSk (v ε (w) − v(w)) 2 dw = 3 N (F ′ ε (v ε ) + F ′ ε (v)) + 3 N 2 η 2 ˆSk (v ε (w) − v(w)) 2 dw ≤ C N + 3 N 2 η 2 ˆSk (v ε (w) − v(w)) 2 dw.</formula><p>The estimate on A ′ 3 is the same with the roles of z, w reversed. As for A 4 , as already noticed for (z, w) ∈ A 4 we have |z − w| ≥ η N , so that, for η, N fixed and ε small enough (indeed we let it go to 0 before arguing on N), η N &lt; |z − w| &lt; ε cannot happen simultaneously and thus we simply have</p><formula xml:id="formula_82" coords="16,138.48,111.61,319.56,40.34">1 ε d+2 ˆA4 ∩(δE) 2 {|z−w|&lt;ε} v k ε (z) − v k ε (w) 2 dzdw = 0 for ε small enough.</formula><p>This works the same for A ′ 4 as well. Finally, gathering all the estimates together, we find lim sup</p><formula xml:id="formula_83" coords="16,180.96,182.65,243.00,28.60">ε→0 (F ′ ε (v η ε ) − F ′ ε (v ε )) ≤ C N + ∇v L 2 (Sη+Bη(0)) .</formula><p>Sending N → ∞, we prove the claim since ∇v L 2 (Sη +Bη(0</p><formula xml:id="formula_84" coords="16,351.53,217.67,136.87,13.14">)) = ω(η) = o(1) as η → 0.</formula><p>Recalling (20), we consider a Lebesgue point x 0 and a sequence ρ = ρ ε for which the limit</p><formula xml:id="formula_85" coords="16,233.28,266.17,129.96,28.28">dµ dx (x 0 ) = lim ε→0 µ ε (Q ρ (x 0 )) ρ d .</formula><p>exists, with µ ε is defined as in (19).</p><formula xml:id="formula_86" coords="16,56.64,329.76,286.55,14.09">Proposition 4.2. Let {u ε } ⊆ L 2 (Ω), u ε → u ∈ H 1 (Ω)</formula><p>, and let η &gt; 0 be fixed. There exists ũε → u such that</p><formula xml:id="formula_87" coords="16,74.28,369.71,368.27,37.50">• ũε (x) = u ε (x 0 ) + ∇u(x 0 ) • (x − x 0 ), for all x ∈ Q ρ (x 0 ) \ Q ρ(1−2η) (x 0 ); • ũε (x) = u ε (x) for all x ∈ Q ρ(1−4η) (x 0 );</formula><p>• denoting for simplicity</p><formula xml:id="formula_88" coords="16,85.92,442.21,347.28,82.00">F ′ ε (u) = 1 ρ d ε d+2 ˆ(Qρ(x 0 )∩δE) 2 {|x−y|&lt;ε} (u(x) − u(y)) 2 dxdy, it holds lim sup ε→0 (F ′ ε (u ε ) − F ′ ε (ũ ε )) ≤ o(1)</formula><p>as η → 0.</p><p>Proof. The proof of this proposition is obtained by applying Lemma 4.1 to the difference quotient v ε defined by</p><formula xml:id="formula_89" coords="16,56.64,580.55,481.78,48.54">v ε (z) := u ε (x 0 + ρz) − u ε (x 0 ) ρ , z ∈ Q. We may choose ρ = ρ ε such that also v ε → ∇u(x 0 ) • z in L 2 (Q). We rewrite the quotient µε(Qρ(x 0 )) ρ d</formula><p>in terms of the functions v ε :</p><formula xml:id="formula_90" coords="17,116.52,115.69,363.08,204.26">µ ε (Q ρ (x 0 )) ρ d = 1 ρ d ε d+2 ˆ(Qρ(x 0 )×Ω)∩(δE) 2 {|x−y|&lt;ε} (u ε (x) − u ε (y)) 2 dxdy ≥ 1 ρ d ε d+2 ˆ(Qρ(x 0 )×Qρ(x 0 ))∩(δE) 2 {|x−y|&lt;ε} (u ε (x) − u ε (y)) 2 dxdy = ρ d ε d+2 ˆ(Q×Q)∩( δ ρ E) 2 {|z−w|&lt; ε ρ } (u ε (x 0 + ρz) − u ε (x 0 + ρw)) 2 dzdw = ρ d+2 ε d+2 ˆ(Q×Q)∩( δ ρ E) 2 {|z−w|&lt; ε ρ } u ε (x 0 + ρz) − u ε (x 0 + ρw) ρ 2 dzdw = ρ d+2 ε d+2 ˆ(Q×Q)∩( δ ρ E) 2 {|z−w|&lt; ε ρ } (v ε (z) − v ε (w)) 2 dzdw.</formula><p>By Lemma 4.1, there exists</p><formula xml:id="formula_91" coords="17,56.64,328.56,481.93,56.09">v η ε → v in L 2 (Q) which satisfies the properties stated therein, in particular v η ε (z) = ∇u(x 0 ) • z in the set {z ∈ Q : dist(z, ∂Q) &lt; η}. By setting ũε (x 0 + ρz) := ρv η ε (z) + u ε (x 0 ) for all z ∈ Q,</formula><p>the function ũε satisfies the properties in the statement; in particular, ũε (x</p><formula xml:id="formula_92" coords="17,56.64,396.83,481.87,27.42">) = u ε (x 0 ) + ∇u(x 0 ) • (x − x 0 ) in the set {x ∈ Q ρ (x 0 ) : dist(z, ∂Q ρ (x 0 )) &lt; ρη} = Q ρ (x 0 ) \ Q ρ(1−2η) (x 0 )</formula><p>, and by the same change of variable of above to write the functional back in terms of ũε it holds lim sup</p><formula xml:id="formula_93" coords="17,56.64,452.29,472.08,96.57">ε→0 1 ρ d ε d+2 ˆ(Qρ(x 0 )∩δE) 2 {|x−y|&lt;ε} (u ε (x) − u ε (y)) 2 dxdy − 1 ρ d ε d+2 ˆ(Qρ(x 0 )∩δE) 2 {|x−y|&lt;ε} (ũ ε (x) − ũε (y)) 2 dxdy ≤ o(1), as η → 0.</formula><p>To ease the notation we still call u ε the sequence which satisfies</p><formula xml:id="formula_94" coords="17,56.64,560.03,481.99,27.54">u ε (x) = u ε (x 0 ) + ∇u(x 0 ) • (x − x 0 ) for x ∈ Q ρ (x 0 ) \ Q ρ(1−2η) (x 0 ) of Proposition 4.2.</formula><p>Now we would like to have ρ δ ∈ N, so we take a slightly smaller cube than Q ρ (x 0 ) that gives a negligible error at the limit. Set</p><formula xml:id="formula_95" coords="17,145.92,601.32,303.48,57.77">N ε := 1 2 ( ρ δ − 1) , l ε := (1 + 2N ε )δ and Q ε := Q lε (x 0 ) = k∈{−Nε,...,0,...,Nε} d Q δ (x 0 + δk), |Q ε | = l d ε ,</formula><p>In the hypothesis ε ≫ δ and η ∼ ε ρ , we have</p><formula xml:id="formula_96" coords="17,56.64,672.95,481.93,29.58">Q ρ(1−η) (x 0 ) ⊆ Q ε ⊆ Q ρ (x 0 ). In particular, we can extend u ε − u ε (x 0 ) − ∇u(x 0 ) • (• − x 0 ) periodically of period l ε to the whole R d .</formula><p>Note that for all x ∈ Q ε ⊆ Q ρ (x 0 ) and y ∈ B(x; ε), choosing η = 2 ε ρ ,</p><formula xml:id="formula_97" coords="17,101.76,731.65,391.80,28.29">|y i − (x 0 ) i | ≤ |x i − (x 0 ) i | + |x − y| ≤ ρ 2 + ε = ρ(1 + η) 2 for all i ∈ {1, . . . , d}; that is, y ∈ Q ρ(1+η) (x 0 ). Thus we have (Q ε × R d ) ∩ {|x − y| &lt; ε} ⊂ (Q ε × Q ρ(1+η) (x 0 )) ∩ {|x − y| &lt; ε}.</formula><p>We further split the right-hand side in</p><formula xml:id="formula_98" coords="18,110.16,167.03,428.50,13.14">((Q ε × Q ε ) ∩ {|x − y| &lt; ε}) ∪ ((Q ε × (Q ρ(1+η) (x 0 ) \ Q ε )) ∩ {|x − y| &lt; ε}).<label>(25)</label></formula><p>For</p><formula xml:id="formula_99" coords="18,56.64,193.43,481.97,141.30">y ∈ Q ρ(1+η) (x 0 ) \ Q ε ⊂ Q ρ(1+η) (x 0 ) \ Q ρ(1−η) (x 0 ), and x ∈ Q ε ∩ B(y, ε) we have ρ(1 − η) 2 &lt; |y i − (x 0 ) i | ≤ |x i − (x 0 ) i | + |x − y| &lt; |x i − (x 0 ) i | + ε = |x i − (x 0 ) i | + ηρ 2 for some index i ∈ {1, . . . , d}; that is, x ∈ Q ε \ Q ρ(1−2η) (x 0 ) ⊂ Q ρ (x 0 ) \ Q ρ(1−2η) (x 0 ). By Proposition 4.2, it follows that for (x, y) ∈ (Q ε × (Q ρ(1+η) (x 0 ) \ Q ε )) ∩ {|x − y| &lt; ε}, we have simultaneously u ε (x) = u(x 0 ) + ∇u(x 0 ) • (x − x 0 ), u ε (y) = u(x 0 ) + ∇u(x 0 ) • (y − x 0 ),</formula><p>(the latter by periodicity in y). Therefore, by (25), we can estimate</p><formula xml:id="formula_100" coords="18,56.64,366.97,481.14,255.64">1 ρ d ε d+2 ˆ(Qε×R d )∩(δE) 2 {|x−y|&lt;ε} (u ε (x) − u ε (y)) 2 dxdy ≤ 1 ρ d ε d+2 ˆ(Qε×Qε)∩(δE) 2 {|x−y|&lt;ε} (u ε (x) − u ε (y)) 2 dxdy + 1 ρ d ε d+2 ˆ(Qε×(Q ρ(1+η) (x 0 )\Qε))∩(δE) 2 {|x−y|&lt;ε} (∇u(x 0 ) • (x − y)) 2 dxdy ≤ 1 ρ d ε d+2 ˆ(Qε∩δE) 2 {|x−y|&lt;ε} (u ε (x) − u ε (y)) 2 dxdy + |∇u(x 0 )| 2 ε 2 ρ d ε d+2 ˆQρ(1+η) (x 0 )\Qε ˆQε∩B(y,ε) dx dy ≤ 1 ρ d ε d+2 ˆ(Qε∩δE) 2 {|x−y|&lt;ε} (u ε (x) − u ε (y)) 2 dxdy + |∇u(x 0 )| 2 ε 2 ρ d ε d+2 |Q ρ(1+η) \ Q ρ(1−η) |ε d ≤ 1 ρ d ε d+2 ˆ(Qε∩δE) 2 {|x−y|&lt;ε} (u ε (x) − u ε (y)) 2 dxdy + |∇u(x 0 )| 2 ρ d 4dερ d−1 = 1 ρ d ε d+2 ˆ(Qε∩δE) 2 {|x−y|&lt;ε} (u ε (x) − u ε (y)) 2 dxdy + C ε ρ since |Q ρ(1+η) \ Q ε | ≤ |Q ρ(1+η) \ Q ρ(1−η) | = [ρ(1 + η)] d − [ρ(1 − η)] d ≤ 2(ηρ)dρ d−1 = 4dερ d−1 .</formula><p>We can read the estimate above as</p><formula xml:id="formula_101" coords="18,56.64,648.37,481.92,92.68">1 ρ d ε d+2 ˆ(Qε∩δE) 2 {|x−y|&lt;ε} (u ε (x) − u ε (y)) 2 dxdy ≥ 1 ρ d ε d+2 ˆ(Qε×R d )∩(δE) 2 {|x−y|&lt;ε} (u ε (x) − u ε (y)) 2 dxdy − C ε ρ and C ε ρ = o(1) as ε → 0. Set w ε (z) := u ε (x 0 +l ε z)−∇u(x 0 )•l ε z for all z ∈ Q, which is Z d -periodic by our assumption. For simplicity denote M ε = 1 + 2N ε , so that l ε = (1 + 2N ε )δ = M ε δ and |Q ε | d = l d ε = M d ε δ d .</formula><p>We have</p><formula xml:id="formula_102" coords="19,74.52,108.85,456.24,193.58">µ ε (Q ρ (x 0 )) ρ d = 1 ρ d ε d+2 ˆ(Qρ(x 0 )×Ω)∩(δE) 2 {|x−y|&lt;ε} (u ε (x) − u ε (y)) 2 dxdy ≥ 1 ρ d ε d+2 ˆ(Qε∩δE) 2 {|x−y|&lt;ε} (u ε (x) − u ε (y)) 2 dxdy ≥ 1 ρ d ε d+2 ˆ(Qε×R d )∩(δE) 2 {|x−y|&lt;ε} (u ε (x) − u ε (y)) 2 dxdy + o(1) = 1 ρ d ε d+2 ˆ(Qε×R d )∩(δE) 2 {|x−y|&lt;ε} w ε x − x 0 l ε − w ε y − x 0 l ε + ∇u(x 0 ) • (x − y) 2 dxdy + o(1) ≥ 1 ρ d ε d+2 inf w Z d -per. ˆ(Qε×R d )∩(δE) 2 {|x−y|&lt;ε} w x − x 0 l ε − w y − x 0 l ε + ∇u(x 0 ) • (x − y) 2 dxdy .</formula><p>We work on the infimum by change of variables, writing</p><formula xml:id="formula_103" coords="19,79.20,329.75,446.46,121.48">inf w Z d -per. ˆ(Qε×R d )∩(δE) 2 {|x−y|&lt;ε} w x − x 0 l ε − w y − x 0 l ε + ∇u(x 0 ) • (x − y) 2 dxdy = l 2d ε inf w Z d -per. ˆ(Q 1( x 0 lε )×R d )∩( E Mε ) 2 {|x−y|&lt; ε lε } w x − x 0 l ε − w y − x 0 l ε + ∇u(x 0 ) • l ε (x − y) 2 dxdy = l 2d+2 ε inf w Z d -per. ˆ(Q 1( x 0 lε )×R d )∩( E Mε ) 2 {|x−y|&lt; ε lε } (w (x) − w (y) + ∇u(x 0 ) • (x − y)) 2 dxdy.</formula><p>The last equality comes from the fact that, for each w 1-periodic, the transformation w(x) = l ε w x + x 0 lε (which is also 1-periodic) gives the same integral, and the infimum is the same by the one-to-one correspondence. Now we use the periodicity of E to get rid of the center x 0 lε , indeed it holds</p><formula xml:id="formula_104" coords="19,118.44,523.26,367.98,122.37">ˆ(Q 1( x 0 lε )×R d )∩( E Mε ) 2 {|x−y|&lt; ε lε } (w (x) − w (y) + ∇u(x 0 ) • (x − y)) 2 dxdy = ˆ(Q 1( x 0 lε )×R d ) {|x−y|&lt; ε lε } χ ( E Mε × E Mε ) (x, y) (w (x) − w (y) + ∇u(x 0 ) • (x − y)) 2 dxdy = ˆ(Q 1 (0)×R d ) {|x−y|&lt; ε lε } χ ( E Mε × E Mε ) (x, y) (w (x) − w (y) + ∇u(x 0 ) • (x − y)) 2 dxdy,</formula><p>given that the integrand is jointly 1-periodic in both x and y, thanks to the 1-periodicity of E (and in particular of E Mε ), of w and that y runs in R d (so that, when x and y is changed with x + k and y + k ′ , the change of variable y ′ = y + k ′ − k works).</p><p>Let w be Z d -periodic and define a </p><formula xml:id="formula_105" coords="20,75.00,86.76,454.74,236.55">I ε = {−N ε , ..., 0, ..., N ε } d , ˆ Q 1 Mε ×R d ∩( E Mε ) 2 {|x−y|&lt; ε lε } ( w(x) − w(y) + ∇u(x 0 ) • (x − y)) 2 dxdy = 1 M d ε ˆ(Q 1 ×R d )∩( E Mε ) 2 {|x−y|&lt; ε lε } ( w(x) − w(y) + ∇u(x 0 ) • (x − y)) 2 dxdy = 1 M d ε ˆ(Q 1 ×R d )∩( E Mε ) 2 {|x−y|&lt; ε lε } 1 M d ε k∈Iε w x + k M ε − w y + k M ε + ∇u(x 0 ) • (x − y) 2 dxdy ≤ 1 M 2d ε k∈Iε ˆ(Q 1 ×R d )∩( E Mε ) 2 {|x−y|&lt; ε lε } w x + k M ε − w y + k M ε + ∇u(x 0 ) • (x − y) 2 dxdy = 1 M d ε ˆ(Q 1 ×R d )∩( E Mε ) 2 {|x−y|&lt; ε lε } (w (x) − w (y) + ∇u(x 0 ) • (x − y)) 2 dxdy.</formula><p>Thus by taking the infimum for every w 1 Mε Z d -periodic on the left-hand side of the last inequality, by the arbitrariness of w 1-periodic, in (26) we get</p><formula xml:id="formula_106" coords="20,70.92,372.97,463.02,213.62">µ ε (Q ρ (x 0 )) ρ d ≥ l 2d+2 ε ρ d ε d+2 M d ε inf w 1 Mε Z d -per. ˆ Q 1 Mε ×R d ∩( E Mε ) 2 {|x−y|&lt; ε lε } (w(x) − w(y) + ∇u(x 0 ) • (x − y)) 2 dxdy = l d ε ρ d ∼1 as ε→0 δ d+2 ε d+2 inf w 1 Mε Z d -per. ˆ Q 1 Mε ×R d ∩( E Mε ) 2 {|x−y|&lt; ε lε } M 2d+2 ε (w(x) − w(y) + ∇u(x 0 ) • (x − y)) 2 dxdy = δ d+2 ε d+2 inf w 1 Mε Z d -per. ˆ(Q 1 ×R d )∩(E) 2 {|x−y|&lt; ε δ } w x M ε − w y M ε + ∇u(x 0 ) • (x − y) 2 dxdy ≥ δ d+2 ε d+2 inf w Z d -per. ˆ(Q 1 ×R d )∩(E) 2 {|x−y|&lt; ε δ } (w(x) − w(y) + ∇u(x 0 ) • (x − y)) 2 dxdy,</formula><p>where the second equality holds from a change of variable and the same value of the inf with M ε w, and the last inequality comes from the fact that x → w x Mε is 1 periodic if w is 1 Mε periodic, and the infimum decreases. Finally, with fixed η &gt; 0, for ε small enough we have η &gt; δ ε diam(K), and we set</p><formula xml:id="formula_107" coords="20,56.64,636.00,481.73,77.21">Z ε = {k ∈ Z d : δ ε |k| &lt; 1 − η}. Note that, when k ∈ Z ε we have |x − y − k| ≤ diam(K) + |k| &lt; ε δ − ε δ η + diam(K) &lt; ε δ so that (x, y) ∈ (K × E) ∩ {|x − y| &lt; ε δ } = (K × (K + k)) ∩ {|x − y| &lt; ε δ }. By a double Jensen's inequality we have inf w Z d -per. ˆ(Q 1 ×R d )∩(E) 2 {|x−y|&lt; ε δ } (w(x) − w(y) + ∇u(x 0 ) • (x − y)) 2 dxdy = inf w Z d -per. ˆ(K×E)∩{|x−y|&lt; ε δ } (w (x) − w (y) + ∇u(x 0 ) • (x − y)) 2 dxdy ≥ inf w Z d -per. k∈Zε ˆK×(K+k) (w (x) − w (y) + ∇u(x 0 ) • (x − y)) 2 dxdy ≥ inf w Z d -per. k∈Zε |K| 2 1 |K| 2 ˆK×(K+k) w (x) − w (y) + ∇u(x 0 ) • (x − y)dxdy 2 = k∈Zε |K| 2 1 |K| 2 ˆK×K ∇u(x 0 ) • k dxdy 2 = |K 2 | k∈Zε (∇u(x 0 ) • k) 2 ,</formula><p>which is independent of w 1-periodic. Thus</p><formula xml:id="formula_108" coords="21,56.64,326.88,466.44,100.61">µ ε (Q ρ (x 0 )) ρ d ≥ δ d+2 ε d+2 |K 2 | k∈Zε (∇u(x 0 ) • k) 2 and lim inf ε→0 µ ε (Q ρ (x 0 )) ρ d ≥ |K 2 | lim inf ε→0 k∈Zε δ ε d ∇u(x 0 ) • δ ε k 2 = |K| 2 ˆB1−η |∇u(x 0 ) • ξ| 2 dξ.</formula><p>Using the lower semicontinuity of the mass,</p><formula xml:id="formula_109" coords="21,56.64,459.37,422.76,74.92">lim inf ε→0 F ε (u ε ) ≥ µ(Ω) ≥ ˆΩ dµ dx dx, we get lim inf ε→0 F ε (u ε ) ≥ |K| 2 ˆΩ ˆB1 |∇u(x) • ξ| 2 dξdx = |K| 2 C(d) ˆΩ |∇u(x)| 2 dx,</formula><p>with C d := 1 d ´B1 |ξ| 2 dξ as in <ref type="bibr" coords="21,203.76,544.45,12.36,11.97" target="#b4">[5]</ref> (for us ϕ(z) was the characteristic function of the unit ball).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2">Limsup inequality</head><p>Let u ∈ C 2 (Ω) and let η &gt; 0 be fixed. Let Ω ⋐ Ω ′ and set</p><formula xml:id="formula_110" coords="21,56.64,599.64,481.92,30.90">Z δ := k ∈ Z d : Q k δ ∩ Ω = ∅ . For δ ≪ 1 we have k∈Z δ Q k δ ⊆ {x ∈ R d : dist(x, Ω) ≤ 2δ} ⊆ Ω ′ .</formula><p>Moreover, without loss of generality we can assume u ∈ C 2 (Ω ′ ).</p><p>By the regularity assumption on u and a weighted Cauchy-Schwarz inequality:</p><formula xml:id="formula_111" coords="21,56.64,666.72,400.56,93.22">|u(x) − u(y)| 2 = |∇u(x) • (x − y) + R(x, y)| 2 ≤ (1 + η)|∇u(x) • (x − y)| 2 + 1 + 1 η |R(x, y)| 2 , with |R(x, y)| ≤ C|x − y| 2 . Moreover, in the assumption ε ≫ δ, it also holds |kδ − k ′ δ| ≤ |kδ − x| + |k ′ δ − y| + ε ≤ ε + 2δ ≤ ε(1 + η) for all k, k ′ ∈ Z δ and x, y ∈ Q k δ × Q k ′ δ such that |x − y| &lt; ε, which implies F ε (u) ≤ (1 + η) 1 ε d+2 ˆ(Ω∩δE) 2 {|x−y|&lt;ε} |∇u(x) • (x − y)| 2 dxdy + C η 1 ε d+2 ˆ(Ω∩δE) 2 {|x−y|&lt;ε} |x − y| 4 dxdy ≤ (1 + η) 1 ε d+2 k,k ′ ∈Z δ ˆ(Q k δ ×Q k ′ δ )∩(δE) 2 {|x−y|&lt;ε} |∇u(x) • (x − y)| 2 dxdy + C η ε 2 ≤ (1 + η) 1 ε d+2 k,k ′ ∈Z δ δ|k−k ′ |&lt;(1+η)ε ˆ(Q k δ ×Q k ′ δ )∩(δE) 2 |∇u(x) • (x − y)| 2 dxdy + C η ε 2 .</formula><p>Note that for all k, k ′ ∈ Z δ and for all x = δk + z and y = δk ′ + w, with z, w ∈ δQ,</p><formula xml:id="formula_112" coords="22,56.64,255.84,456.00,450.15">|∇u(x) • (x − y)| = |∇u(x) • (δk − δk ′ ) + ∇u(x) • (z − w)| ≤ |∇u(x) • (δk − δk ′ )| + ∇u ∞ δ ≤ |∇u(kδ) • (δk − δk ′ )| + D 2 u ∞ δ + ∇u ∞ δ ≤ |∇u(kδ) • (δk − δk ′ )| + Cδ, so that |∇u(x) • (x − y)| 2 ≤ (1 + η)|∇u(kδ) • (δk − δk ′ )| 2 + C η δ 2 . Therefore we have 1 ε d+2 k,k ′ ∈Z δ δ|k−k ′ |&lt;(1+η)ε ˆ(Q k δ ×Q k ′ δ )∩(δE) 2 |∇u(x) • (x − y)| 2 dxdy ≤ (1 + η) 1 ε d+2 k,k ′ ∈Z δ δ|k−k ′ |&lt;(1+η)ε ˆ(Q k δ ×Q k ′ δ )∩(δE) 2 |∇u(kδ) • (kδ − k ′ δ)| 2 dxdy +C η k,k ′ ∈Z δ δ|k−k ′ |&lt;(1+η)ε 1 ε d+2 δ 2d δ 2 = (1 + η) 1 ε d+2 k,k ′ ∈Z δ δ|k−k ′ |&lt;(1+η)ε ˆ(Q k δ ×Q k ′ δ )∩(δE) 2 |∇u(kδ) • (kδ − k ′ δ)| 2 dxdy +C η k∈Z δ |j|&lt; (1+η)ε δ 1 ε d+2 δ 2d δ 2 ≤ (1 + η) 1 ε d+2 k,k ′ ∈Z δ δ|k−k ′ |&lt;(1+η)ε ˆ(Q k δ ×Q k ′ δ )∩(δE) 2 |∇u(kδ) • (kδ − k ′ δ)| 2 dxdy +C η 1 δ d ε δ d 1 ε d+2 δ 2d δ 2 ≤ (1 + η) 1 ε d+2 k,k ′ ∈Z δ δ|k−k ′ |&lt;(1+η)ε |(Q k δ × Q k ′ δ ) ∩ (δE) 2 ||∇u(kδ) • (kδ − k ′ δ)| 2 + C η δ ε 2 .</formula><p>Finally, by the periodicity of the set E</p><formula xml:id="formula_113" coords="22,88.92,728.40,417.36,31.54">|(Q k δ × Q k ′ δ ) ∩ (δE) 2 | = |Q k δ ∩ δE||Q k ′ δ ∩ δE| = δ 2d |(k + Q) ∩ E||(k ′ + Q) ∩ E| = δ 2d |Q ∩ E| 2 = δ 2d |K| 2 , which implies 1 ε d+2 k,k ′ ∈Z δ δ|k−k ′ |&lt;(1+η)ε |(Q k δ × Q k ′ δ ) ∩ (δE) 2 ||∇u(kδ) • (kδ − k ′ δ)| 2 = 1 ε d+2 k,k ′ ∈Z δ δ|k−k ′ |&lt;(1+η)ε |K| 2 δ 2d |∇u(kδ) • (kδ − k ′ δ)| 2 ≤ |K| 2 k∈Z δ δ d |j|&lt; (1+η)ε δ δ ε d ∇u(kδ) • δ ε j 2 .</formula><p>It follows</p><formula xml:id="formula_114" coords="23,108.60,276.01,378.12,40.58">F ε (u) ≤ (1 + η) 2 |K| 2 k∈Z δ δ d δ ε |j|&lt;1+η δ ε d ∇u(kδ) • δ ε j 2 + C η δ ε 2 + ε 2 ,</formula><p>and, thus,</p><formula xml:id="formula_115" coords="23,56.64,337.62,420.96,117.59">lim sup ε→0 F ε (u) ≤ (1 + η) 2 |K| 2 ˆΩ′ ×B 1+2η |∇u(x) • ξ| 2 dxdξ. Sending η → 0 and Ω ′ ↓ Ω we conclude lim sup ε→0 F ε (u) ≤ |K| 2 ˆΩ×B 1 |∇u(x) • ξ| 2 dxdξ = |K| 2 C(d) ˆΩ |∇u(x)| 2 dx, with C d = 1 d ´B1 |ξ| 2 dξ.</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3">Γ-convergence with general convolution kernel ϕ ε</head><p>We recall that the general form of the functional we consider is</p><formula xml:id="formula_116" coords="23,151.44,519.95,387.22,28.54">F ε (u) = 1 ε d+2 ˆ(Ω∩δE)×(Ω∩δE) ϕ x − y ε (u(x) − u(y)) 2 dxdy<label>(26)</label></formula><p>and our preliminary case considered is ϕ(ξ) = χ (0,1) (|ξ|). In the case of a general ϕ we can proceed by approximation. As stated at the beginning of Section 2, we consider a radial convolution kernel in R d ; that is, a function ϕ : R d → [0, +∞) such that a decreasing function ϕ 0 : [0, +∞) → [0, +∞) exists satisfying ϕ(ξ) = ϕ 0 (|ξ|). We further assume that ˆRd ϕ(ξ)(1 + |ξ| 2 )dx &lt; +∞, and for each ε &gt; 0 we define the scaled kernel ϕ ε by ϕ ε (ξ) = 1 ε d ϕ( ξ ε ). Since ϕ 0 is decreasing, we can write a 'staircase' approximation made of characteristic functions of nested intervals (0, r k ) (where r k are defined below), that is ϕ 0,n (t) = Hence, the lower bound is satisfied. As for the upper bound, we claim that it is enough to consider the function ϕ with compact support. Indeed, for any R &gt; 0 we can split the functional</p><formula xml:id="formula_117" coords="24,114.12,630.11,340.02,94.66">F ε (u) = 1 ε d+2 ˆ(Ω∩δE) 2 ϕ x − y ε (u(x) − u(y)) 2 dxdy = 1 ε d+2 ˆ(Ω∩δE) 2 ϕ x − y ε χ B R x − y ε (u(x) − u(y)) 2 dxdy + 1 ε d+2 ˆ(Ω∩δE) 2 ϕ x − y ε χ R d \B R</formula><p>x − y ε (u(x) − u(y)) 2 dxdy.</p><p>In the second term of the sum we can perform the change of variables y = x + εξ, so that, setting Ω(ξ) = {x ∈ Ω ∩ δE : x + εξ ∈ Ω ∩ δE} ⊂ Ω for each ξ ∈ R d , it holds</p><formula xml:id="formula_118" coords="25,137.16,125.27,294.30,137.92">1 ε d+2 ˆ(Ω∩δE) 2 ϕ x − y ε χ R d \B R x − y ε (u(x) − u(y)) 2 dxdy = ˆRd \B R ϕ(ξ) ˆΩ(ξ) u(x + εξ) − u(x) ε 2 dxdξ ≤ ˆRd \B R ϕ(ξ) ˆΩ ∇u L ∞ (Ω) |ξ| 2 dxdξ = |Ω| ∇u L ∞ (Ω) ˆRd \B R ϕ(ξ)|ξ| 2 dξ = o(1)</formula><p>as R → ∞, uniformly in ε. Thus we are left with the first term where ϕχ B R has compact support, so that the claim holds. For a general ϕ 0 bounded, decreasing and with compact support, we can approximate it from above in the same way of (27), since for ϕ 0,n it holds ϕ 0,n ≤ ϕ 0 ≤ ϕ 0,n + 2 −n for each t ∈ R, so it it enough to take φ0,n (t) = ϕ 0,n (t) + 2 −n for t ∈ supp(ϕ 0 ) = (0, R), and 0 otherwise. Accordingly for each n ∈ N define φn (ξ) = φ0,n (|ξ|) = </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="5,159.12,297.61,276.97,11.97"><head>Figure 1 :</head><label>1</label><figDesc>Figure 1: a simple example of non-connected domain</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="9,188.16,592.33,218.69,11.97"><head>Figure 2 :</head><label>2</label><figDesc>Figure 2: interacting portions of inclusions</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="23,292.56,725.55,13.96,9.15;23,292.08,755.76,15.51,7.97;23,310.44,738.61,7.33,11.96;23,317.76,743.52,21.53,8.70;23,339.84,738.61,13.30,11.97;23,517.80,738.61,20.86,11.97;24,56.64,88.09,145.29,11.97;24,201.96,86.76,5.13,7.97;24,212.88,114.49,5.27,11.96;24,218.16,119.28,4.41,7.97;24,226.68,114.49,60.70,11.97;24,287.40,119.28,4.23,7.97;24,292.20,112.56,82.77,13.90;24,56.64,140.89,27.95,11.97;24,84.60,145.68,4.41,7.97;24,93.12,140.89,265.79,11.97;24,358.92,145.68,3.42,7.97;24,367.08,140.89,171.41,11.97;24,56.64,155.41,21.10,11.97;24,77.76,160.20,4.23,7.97;24,82.44,155.15,286.45,12.23;24,239.04,192.13,7.66,11.96;24,246.72,196.92,5.13,7.97;24,252.36,192.13,27.22,11.97;24,284.28,179.07,13.96,9.15;24,283.80,209.28,15.51,7.97;24,302.16,192.13,7.33,11.96;24,309.48,197.04,21.53,8.70;24,331.56,192.13,24.84,11.97;24,56.64,230.29,59.62,11.97;24,116.28,235.08,5.13,7.97;24,121.92,228.96,136.59,13.30;24,258.96,230.29,279.48,11.97;24,56.64,244.69,7.66,11.96;24,64.32,249.48,5.13,7.97;24,69.96,244.43,235.72,12.23;24,305.64,243.36,4.23,7.97;24,310.44,244.69,13.19,11.97;24,323.64,243.36,4.35,7.97;24,328.44,244.69,210.10,11.97;24,56.64,259.21,269.76,11.97;24,74.28,273.61,75.13,11.97;24,151.08,272.28,5.13,7.97;24,149.40,279.60,3.91,7.97;24,160.32,273.61,162.22,11.97;24,322.56,278.40,5.13,7.97;24,331.80,273.61,206.77,11.97;24,56.64,288.13,47.74,11.97;24,104.40,292.92,5.13,7.97;24,110.04,288.13,97.98,11.97;24,208.08,292.92,3.91,7.97;24,215.76,287.87,106.69,12.23;24,77.04,320.65,31.53,11.97;24,84.96,330.84,16.71,7.97;24,111.48,320.65,7.57,11.96;24,119.04,325.44,3.91,7.97;24,123.48,320.65,11.22,11.97;24,134.76,325.44,3.91,7.97;24,139.08,320.39,52.05,12.23;24,167.40,330.84,16.71,7.97;24,193.92,320.65,7.57,11.96;24,203.16,318.72,5.13,7.97;24,201.48,326.64,3.91,7.97;24,208.80,320.65,11.22,11.97;24,220.08,325.44,3.91,7.97;24,224.40,320.65,51.81,11.97;24,252.60,330.84,16.71,7.97;24,288.00,312.61,5.85,11.97;24,280.32,328.93,5.48,11.96;24,285.84,328.44,15.15,7.97;24,304.68,313.26,35.57,3.14;24,340.20,333.66,3.65,5.98;24,347.04,320.65,7.66,11.96;24,354.72,325.44,5.13,7.97;24,372.24,312.35,27.06,12.22;24,383.28,328.93,5.48,11.96;24,411.72,320.65,11.22,11.97;24,423.00,325.44,3.91,7.97;24,427.32,320.39,37.02,12.23;24,464.40,325.44,3.91,7.97;24,468.72,320.65,19.90,11.97;24,488.64,318.72,4.23,7.97;24,493.32,320.65,24.54,11.96;24,232.32,358.93,43.89,11.97;24,252.60,369.12,16.71,7.97;24,289.68,345.99,13.96,9.03;24,289.20,376.08,15.51,7.97;24,316.32,350.89,5.85,11.97;24,308.76,367.21,5.48,11.96;24,314.28,366.72,15.15,7.97;24,333.12,351.54,42.89,3.14;24,375.96,367.26,3.65,5.98;24,339.72,377.64,35.26,13.59;24,375.00,377.64,12.63,8.70;24,388.08,358.93,11.22,11.97;24,399.36,363.72,3.91,7.97;24,403.68,358.67,37.02,12.23;24,440.76,363.72,3.91,7.97;24,445.20,358.93,19.90,11.97;24,465.12,357.00,4.23,7.97;24,469.68,358.93,24.54,11.96;24,232.32,401.87,9.29,12.22;24,246.36,389.07,13.96,9.15;24,245.88,419.28,15.51,7.97;24,264.24,402.13,31.53,11.97;24,272.04,412.32,16.71,7.97;24,307.44,394.09,5.85,11.97;24,299.76,410.41,5.48,11.96;24,305.28,409.92,15.15,7.97;24,324.12,394.74,43.01,3.14;24,367.08,410.46,3.65,5.98;24,330.72,420.84,35.26,13.59;24,366.00,420.84,12.75,8.70;24,379.20,402.13,11.22,11.97;24,390.48,406.92,3.91,7.97;24,394.80,401.87,37.02,12.23;24,431.88,406.92,3.91,7.97;24,436.20,402.13,19.90,11.97;24,456.12,400.20,4.23,7.97;24,460.80,402.13,24.54,11.96;24,232.32,445.07,9.29,12.22;24,246.36,432.27,13.96,9.03;24,245.88,462.36,15.51,7.97;24,264.24,445.07,17.47,12.22;24,281.76,443.40,4.23,7.97;24,288.36,437.82,31.66,3.14;24,320.04,463.95,3.95,5.56;24,327.72,445.07,53.35,12.22;24,381.12,443.40,4.23,7.97;24,385.80,445.33,36.94,11.97;24,232.32,480.59,29.83,12.23;24,262.20,478.92,4.23,7.97;24,268.92,473.46,31.44,3.14;24,303.36,480.85,7.66,11.96;24,311.04,485.64,5.13,7.97;24,316.68,480.59,68.23,12.23;24,384.96,478.92,4.23,7.97;24,389.52,480.85,27.84,11.96;24,56.64,512.63,481.93,12.23;24,56.64,527.41,32.86,11.97;24,119.52,546.97,31.53,11.97;24,127.44,557.16,16.71,7.97;24,153.84,546.97,7.57,11.96;24,161.40,551.76,3.91,7.97;24,165.84,546.97,11.22,11.97;24,177.12,551.76,3.91,7.97;24,181.56,546.71,37.87,12.23;24,219.48,545.04,4.23,7.97;24,226.20,539.46,31.44,3.14;24,260.64,546.71,75.91,12.22;24,336.60,545.04,4.23,7.97;24,341.16,546.97,48.69,11.97;24,389.88,551.76,8.46,13.59;24,400.80,539.46,12.71,3.14;24,416.04,546.71,39.07,12.22;24,455.16,545.04,4.23,7.97;24,459.84,546.97,15.96,11.96;24,56.64,575.05,35.13,11.97;24,91.80,579.84,8.46,13.59;24,104.04,574.79,29.83,12.23;24,133.92,573.36,10.23,8.33;24,139.80,582.12,4.35,7.97;24,147.36,574.26,15.24,3.14;24,165.60,575.05,34.99,11.96;24,200.64,573.72,4.23,7.97;24,205.08,575.05,15.12,11.96"><head>n2 n k=0 χlim inf ε→0 n2 n k=0 1 ε 1 ε</head><label>k=011</label><figDesc>(0,r k ) (t)(27)   where for each k = 0, . . . , n2 n r k = sup t : ϕ 0 (t) ≥ (k + 1)2 −n and r k = 0 if the set of such t is empty. With this choice, r j is decreasing by the monotonicity of ϕ 0 . Accordingly, for each n ∈ N define the simple functionϕ n (ξ) = n2 n k=0 χ (0,r k ) (|ξ|).Note that ϕ n (ξ) ≤ ϕ(ξ) for every ξ ∈ R d . By standard approximation through simple functions, ϕ n (ξ) → ϕ(ξ) pointwise almost everywhere, in L 1 (R d ) by dominated convergence and, since ϕ is in particular bounded, it converges also uniformly.We define as F n ε the same functional (26) with ϕ n in place of ϕ. Since ϕ is an upper bound for any ϕ n , we have for any u ε ⇀ u and n ∈ N fixedlim inf ε→0 F ε (u ε ) ≥ lim inf ε→0 F n ε (u ε ) = lim inf ε→0 1 ε d+2 ˆ(Ω∩δE) 2 ϕ n x − y ε (u ε (x) − u ε (y)) 2 dxdy = d+2 ˆ(Ω∩δE) 2 {|x−y|&lt;r k ε} (u ε (x) − u ε (y)) d+2 ˆ(Ω∩δE) 2 {|x−y|&lt;r k ε} (u ε (x) − u ε (y)) 2 dxdy ≥ n2 n k=0 |K| 2 ˆΩ ˆBr k |∇u(x) • ξ| 2 dξdx = = |K| 2ˆΩ ˆRd ϕ n (ξ)|∇u(x) • ξ| 2 dξdx, by the result of Section 4.1. We can pass to the limit for n → ∞ by monotone convergence and we get lim inf ε→0 F ε (u ε ) ≥ |K| 2 ˆΩ ˆRd ϕ(ξ)|∇u(x) • ξ| 2 dξdx = C ∞ ˆΩ |∇u(x)| 2 dx, with C ∞ = |K| 2 1 d ´Rd ϕ(ξ)|ξ| 2 dξ.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="25,229.44,384.99,13.96,9.03;25,228.96,415.08,15.51,7.97;25,247.32,398.05,7.33,11.96;25,254.64,402.84,21.53,8.70;25,276.72,396.12,61.21,13.90;25,337.92,402.84,19.49,7.97;25,358.08,398.05,33.82,11.97;25,395.28,415.08,19.60,7.97;25,417.24,398.05,7.33,11.96;25,424.56,402.84,21.65,8.70;25,446.64,398.05,21.58,11.97;25,56.64,435.01,11.06,11.97;25,67.68,439.80,5.13,7.97;25,77.40,434.75,461.09,12.23;25,56.64,449.53,44.44,11.97;25,101.04,448.20,4.23,7.97;25,105.84,449.53,13.19,11.97;25,119.04,448.20,4.35,7.97;25,123.84,449.27,102.69,12.23;25,227.40,448.20,4.23,7.97;25,232.08,449.27,248.12,12.23;25,126.48,480.49,35.77,11.97;25,136.08,492.96,16.71,7.97;25,164.28,480.49,7.57,11.96;25,171.84,485.28,3.91,7.97;25,176.28,480.23,67.45,12.23;25,217.68,492.96,16.71,7.97;25,254.76,472.45,5.85,11.97;25,247.08,488.77,5.48,11.96;25,252.60,488.28,15.15,7.97;25,271.44,473.10,35.57,3.14;25,306.96,493.50,3.65,5.98;25,315.60,480.49,10.89,11.97;25,335.40,472.19,26.94,12.22;25,346.32,488.77,5.48,11.96;25,371.16,480.23,68.14,12.23;25,439.32,478.56,4.23,7.97;25,443.88,480.49,24.54,11.96;25,195.36,514.57,48.25,11.97;25,217.44,527.16,16.71,7.97;25,256.44,531.72,19.60,7.97;25,287.28,506.53,5.85,11.97;25,279.72,522.85,5.48,11.96;25,285.24,522.36,15.15,7.97;25,304.08,507.18,42.89,3.14;25,346.92,522.90,3.65,5.98;25,310.68,533.28,35.26,13.59;25,345.96,533.28,12.63,8.70;25,359.04,514.31,68.26,12.23;25,427.32,512.64,4.23,7.97;25,431.88,514.57,24.54,11.96;25,195.36,552.23,9.29,12.22;25,207.96,569.64,19.60,7.97;25,230.16,552.49,16.22,11.97;25,230.04,562.68,16.71,7.97;25,257.52,544.45,5.85,11.97;25,249.84,560.77,5.48,11.96;25,255.36,560.28,15.15,7.97;25,274.20,545.10,42.89,3.14;25,317.04,560.82,3.65,5.98;25,280.80,571.20,35.26,13.59;25,316.08,571.20,12.63,8.70;25,329.16,552.23,68.26,12.23;25,397.44,550.56,4.23,7.97;25,402.00,552.49,24.54,11.96;25,195.36,590.41,9.10,11.97;25,207.84,607.56,19.60,7.97;25,229.80,590.15,17.47,12.22;25,247.32,588.48,4.23,7.97;25,254.04,583.02,31.66,3.14;25,285.72,609.03,3.95,5.56;25,293.28,590.15,53.47,12.22;25,346.80,588.48,4.23,7.97;25,351.36,590.41,36.94,11.97;25,195.36,626.75,29.95,12.23;25,225.36,625.08,4.23,7.97;25,231.96,619.50,31.56,3.14;25,268.32,626.75,79.63,12.23;25,348.00,625.08,4.23,7.97;25,352.68,627.01,27.84,11.96;25,56.64,657.59,321.61,12.23;25,120.00,688.21,35.77,11.97;25,129.60,700.68,16.71,7.97;25,157.80,688.21,7.57,11.96;25,165.36,693.00,3.91,7.97;25,169.80,687.95,49.15,12.23;25,219.00,686.28,4.23,7.97;25,225.72,680.82,31.44,3.14;25,260.16,687.95,75.91,12.22;25,336.12,686.28,4.23,7.97;25,340.68,688.21,48.69,11.97;25,389.40,693.00,8.46,13.59;25,400.32,680.82,12.71,3.14;25,415.56,687.95,39.07,12.22;25,454.68,686.28,4.23,7.97;25,459.36,688.21,15.96,11.96"><head>n2 n k=0 χ</head><label>k=0</label><figDesc>(0,r k ) (|ξ|) + 2 −n χ (0,R) (|ξ|) = k∈In χ (0,r k ) (|ξ|) (I n is just a finite set of indices for each n) for which φn ≥ ϕ and it converges to ϕ uniformly and in L 1 (R d ). Finally, for u ∈ C 2 (Ω) and n ∈ N fixed, by the result of Section 4x) − u(y)) 2 dxdy = lim sup ε→0 k∈In1 ε d+2 ˆ(Ω∩δE) 2 {|x−y|&lt;r k ε} (u(x) − u(y)) 2 dxdy ≤ k∈In lim ε→0 1 ε d+2 ˆ(Ω∩δE) 2 {|x−y|&lt;r k ε} (u(x) − u(y)) 2 dxdy = k∈In |K| 2 ˆΩ ˆBr k |∇u(x) • ξ| 2 dξdx = = |K| 2 ˆΩ ˆRd φn (ξ)|∇u(x) • ξ| 2 dξdx,and finally pass to the limit as n → ∞ to get the upper bound lim sup ε→0 F ε (u) ≤ |K| 2 ˆΩ ˆRd ϕ(ξ)|∇u(x) • ξ| 2 dξdx = C ∞ ˆΩ |∇u(x)| 2 dx.</figDesc></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Acknowledgements. The research reported in the present contribution was carried out as part of the project "Variational methods for stationary and evolution problems with singularities and interfaces" PRIN 2022J4FYNJ. The authors are members of GNAMPA of INdAM.</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="26,80.76,114.37,457.82,11.97;26,80.76,128.89,457.92,11.97;26,80.76,143.29,89.88,11.97" xml:id="b0">
+	<analytic>
+		<title level="a" type="main">An extension theorem from connected sets, and homogenization in general periodic domains</title>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Acerbi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">V</forename><surname>Chiadò Piat</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Maso</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Percivale</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nonlinear Analysis</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="page" from="481" to="496" />
+			<date type="published" when="1992">1992</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="26,80.76,167.65,457.96,11.97;26,80.76,182.05,291.00,11.97" xml:id="b1">
+	<monogr>
+		<title level="m" type="main">A Variational Theory of Convolution-Type Functionals</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Alicandro</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Ansini</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Braides</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Piatnitski</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Tribuzio</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+			<publisher>Springer Nature</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="26,80.76,206.41,457.92,11.97" xml:id="b2">
+	<monogr>
+		<title level="m" type="main">Variational Convergence for Functions and Operators</title>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Attouch</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1984">1984</date>
+			<publisher>Pitman</publisher>
+			<pubPlace>Boston</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="26,80.76,230.77,457.61,11.97;26,80.76,245.29,458.16,11.97;26,80.76,259.69,26.76,11.97" xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Hyperelasticity as a Γ-limit of peridynamics when the horizon goes to zero</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">C</forename><surname>Bellido</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Mora-Corral</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Pedregal</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Calc. Var. Partial Differential Equations</title>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="1643" to="1670" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="26,80.76,284.05,457.91,11.97;26,80.76,298.45,412.20,11.97" xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Another look at Sobolev spaces</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Bourgain</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Brezis</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Mironescu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Optimal control and partial differential equations</title>
+				<meeting><address><addrLine>IOS, Amsterdam</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2001">2001</date>
+			<biblScope unit="page" from="439" to="455" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="26,80.76,322.81,457.78,11.97;26,80.76,337.33,347.52,11.97" xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Γ-convergence for Beginners</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Braides</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="s">Oxford Lecture Series in Mathematics and its Applications</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<date type="published" when="2002">2002</date>
+			<publisher>Oxford University Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="26,80.76,361.69,457.90,11.97;26,80.76,376.09,457.92,11.97" xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Homogenization of Multiple Integrals</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Braides</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Defranceschi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="s">Oxford Lecture Series in Mathematics and its Applications</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<date type="published" when="1998">1998</date>
+			<publisher>Oxford University Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="26,80.76,400.45,457.90,11.97;26,80.76,414.97,136.20,11.97" xml:id="b7">
+	<monogr>
+		<title level="m" type="main">Homogenization by blow-up. Applicable Anal</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Braides</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Maslennikov</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Sigalotti</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2008">2008</date>
+			<biblScope unit="volume">87</biblScope>
+			<biblScope unit="page" from="1341" to="1356" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="26,80.76,439.21,457.74,11.97;26,80.76,453.73,342.84,11.97" xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Homogenization of quadratic convolution energies in periodically perforated domains</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Braides</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Piatnitski</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Adv. Calc. Var</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="351" to="368" />
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="26,80.76,478.09,385.56,11.97" xml:id="b9">
+	<monogr>
+		<title level="m" type="main">An Introduction to Γ-convergence</title>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Maso</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1993">1993</date>
+			<publisher>Birkhäuser</publisher>
+			<pubPlace>Boston</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="26,80.76,502.45,413.80,11.97;26,494.52,501.12,4.23,7.97;26,499.32,502.45,39.27,11.97;26,80.76,516.85,184.20,11.97" xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Quasiconvex integrands and lower semicontinuity in L 1</title>
+		<author>
+			<persName coords=""><forename type="first">I</forename><surname>Fonseca</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Müller</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">SIAM J. Math. Anal</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="page" from="1081" to="1098" />
+			<date type="published" when="1992">1992</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="26,80.76,541.21,457.90,11.97;26,80.76,555.73,171.36,11.97" xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Some combinatorial lemmas in topology</title>
+		<author>
+			<persName coords=""><forename type="first">H</forename><forename type="middle">W</forename><surname>Kuhn</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IBM Journal of Research and Development</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="518" to="524" />
+			<date type="published" when="1960">1960</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="26,80.76,580.09,457.78,11.97;26,80.76,594.49,368.04,11.97" xml:id="b12">
+	<monogr>
+		<title level="m" type="main">A First Course in Fractional Sobolev Spaces, volume 229 of Graduate Studies in Mathematics</title>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Leoni</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+			<publisher>American Mathematical Society</publisher>
+			<pubPlace>Providence, RI</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="26,80.76,618.85,457.81,11.97;26,80.76,633.25,283.20,11.97" xml:id="b13">
+	<analytic>
+		<title level="a" type="main">On the variational limit of a class of nonlocal functionals related to peridynamics</title>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Mengesha</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Q</forename><surname>Du</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nonlinearity</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="3999" to="4035" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="26,80.76,657.61,457.91,11.97;26,80.76,672.13,290.16,11.97" xml:id="b14">
+	<analytic>
+		<title level="a" type="main">A new approach to Sobolev spaces and connections to Γ-convergence</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">C</forename><surname>Ponce</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Calc. Var. Partial Differential Equations</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="229" to="255" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="26,80.76,696.49,439.20,11.97" xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Nonlocal-interaction vortices</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Solci</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">SIAM J. Math. Anal</title>
+		<imprint>
+			<biblScope unit="volume">56</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="3430" to="3451" />
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="26,80.76,720.85,457.56,11.97;26,80.76,735.25,211.92,11.97" xml:id="b16">
+	<analytic>
+		<author>
+			<persName coords=""><forename type="first">V</forename><forename type="middle">V</forename><surname>Zhikov</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Connectedness and homogenization. Examples of fractal conductivity</title>
+				<imprint>
+			<date type="published" when="1996">1996</date>
+			<biblScope unit="volume">187</biblScope>
+			<biblScope unit="page">1109</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

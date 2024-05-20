@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">AN ALTERNATIVE TO SPHERICAL WITT VECTORS</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2024-05-17">May 17, 2024.</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,221.88,183.47,75.71,7.13"><forename type="first">Thomas</forename><surname>Nikolaus</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,318.84,183.47,71.03,7.13"><forename type="first">Maria</forename><surname>Yakerson</surname></persName>
+						</author>
+						<title level="a" type="main">AN ALTERNATIVE TO SPHERICAL WITT VECTORS</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2024-05-17">May 17, 2024.</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">36B260137F49519D21F499F4A3659DC2</idno>
+					<idno type="arXiv">arXiv:2405.09606v1[math.AT]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2024-05-19T14:16+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>We give a direct construction of the ring spectrum of spherical Witt vectors of a perfect F palgebra R as the completion of the spherical monoid algebra S[R] of the multiplicative monoid (R, •) at the ideal I = fib(S[R] → R). This generalizes a construction of Cuntz and Deninger. We also use this to give a description of the category of p-complete modules over the spherical Witt vectors and a universal property for spherical Witt vectors as an E 1 -ring.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>The ring of Witt vectors 1 associated to a ring R is a classical algebraic object. When R is the finite field F p , its ring of Witt vectores is the ring of p-adic integers Z p . More generally, the construction of the ring of Witt vectors provides a bridge from characteristic p to mixed characteristic (0, p), which makes it an important tool in arithmetic geometry. An element in the ring of Witt vectors W(R) is given by an infinite sequence of elements in R, with addition and multiplication of such sequences being defined not componentwise, but in a non-trivial way, using certain universal polynomials.</p><p>When R is a perfect F p -algebra, a slick construction of the ring W(R) was obtained by Cuntz and Deninger in <ref type="bibr" coords="1,151.32,370.29,28.26,8.91" target="#b3">[CD14]</ref>. They prove in this case that W(R) is isomorphic to a completion of the monoid ring Z[R], with respect to the multiplicative monoid of R. The completion is taken at the ideal given by the kernel of the canonical ring map Z[R] → R. The immediate benefits of this approach are that addition and multiplication are straightforward, and the multiplicative lift 2 becomes simply the composition R → Z[R] → W(R).</p><p>In higher algebra (a.k.a. brave new algebra) one often replaces the ring of integers with the sphere spectrum S, which can be thought of as a deformation of Z = π 0 S. Following this philosophy, Lurie introduced spherical Witt vectors, which are a lift of Witt vectors from the ring of p-adic integers to the p-complete sphere spectrum <ref type="bibr" coords="1,214.44,465.93,29.37,8.91">[Lur18]</ref>. Spherical Witt vectors are an important ingredient, for example, in the recent work on chromatic homotopy theory by Burklund, Schlank and Yuan <ref type="bibr" coords="1,414.24,477.81,33.68,8.91" target="#b2">[BSY22]</ref>. The definition of spherical Witt vectors is by obstruction theory (see e.g. [BSY22, Section 2]) or by the adjoint functor theorem using the universal property (see <ref type="bibr" coords="1,267.36,501.69,29.19,8.91" target="#b0">[Ant23]</ref>). We offer an easy direct construction along the lines of Cuntz and Deninger which morally shows that the spherical Witt vectors are generated by convergent sums of multiplicative lifts: Theorem 1. Let R be an (ordinary) perfect F p -algebra and let S W(R) be its E ∞ -ring spectrum of spherical Witt vectors. Then there is an equivalence of E ∞ -rings</p><formula xml:id="formula_0" coords="1,277.08,568.73,57.12,12.37">S W(R) ≃ S[R] ∧ I</formula><p>where the right-hand side is the completion of the spherical monoid ring S[R] of the multiplicative monoid of R with respect to the ideal</p><formula xml:id="formula_1" coords="1,249.96,598.10,75.45,9.30">I = fib(S[R] → R).</formula><p>Recall that for a map of E ∞ -ring spectra A → B the fibre I is an ideal (in the sense of Smith) and so are I n := I ⊗ A • • • ⊗ A I. Thus the cofibres A/I n are also E ∞ -rings and we write</p><formula xml:id="formula_2" coords="1,274.44,640.44,62.85,15.18">A ∧ I = lim ← − − A/I n .</formula><p>Equivalently [MNN17, Section 2.1], we have that A ∧ I is the limit of the Amitsur complex of A → B A ∧ I = lim</p><p>Note that in such a situation there is also another notion of completion, namely the Bousfield localization at the ideal I. That is the terminal map of ring spectra A → A ′ that is a mod I equivalence (i.e. equivalence after − ⊗ A B). In general the Bousfield-Kan completion A → A ∧ I is not a mod I equivalence and hence doesn't agree with the Bousfield localization. But if A → A ∧ I is a mod I equivalence then the two notions of completion agree. We will show that this is the case in our situation.</p><p>Moreover, all of these completions make sense for arbitrary A-modules M and we will show the following result.</p><p>Theorem 2. The ∞-category of p-complete modules over S W(R) embeds by restriction fully faithfully into the ∞-category of modules over S[R], i.e. the ∞-category of spectra with an action of the multiplicative monoid R.</p><p>For M a bounded below S[R]-module we have</p><formula xml:id="formula_3" coords="2,267.60,261.17,76.08,12.25">S W(R) ⊗ S[R] M = M ∧ I</formula><p>where ⊗ is the p-completed tensor product and</p><formula xml:id="formula_4" coords="2,291.72,277.56,168.81,14.70">M ∧ I = lim ← − − M/I n M with I n M := I n ⊗ S[R] M.</formula><p>Moreover if M is bounded below and p-complete then the following are equivalent:</p><p>(1) M lies in the essential image of the embedding of p-complete S W(R) -modules;</p><p>(2) M is I-complete in the sense that M ≃ − → M ∧ I is an equivalence;</p><p>(3) M is Bousfield local with respect to the mod I equivalences; (4) The induced multiplicative R-action on the F p -homology groups H * (M, F p ) is additive;</p><p>(5) For every r, s ∈ R the map ρ r + ρ s − ρ r+s : M → M is as a map of spectra divisible by p; (6) For every r, s ∈ R the homomorphism</p><formula xml:id="formula_5" coords="2,249.00,411.75,113.74,10.17">ρ r + ρ s − ρ r+s : π * M → π * M</formula><p>is as a homomorphism of graded abelian groups divisible by p; (7) The induced multiplicative R-action on the abelian groups π n (M)/p<ref type="foot" coords="2,404.16,438.67,3.49,6.23" target="#foot_0">3</ref> and π n (M)[p] is additive. (8) The homotopy groups π n (M) of M all lie separately in the essential image of the embedding of p-complete S W(R) -modules<ref type="foot" coords="2,242.28,462.55,3.49,6.23" target="#foot_1">4</ref> ; If M is not bounded below, then (1), ( <ref type="formula" coords="2,249.05,478.73,3.53,8.74">5</ref>), ( <ref type="formula" coords="2,265.73,478.73,3.53,8.74">6</ref>), ( <ref type="formula" coords="2,282.29,478.73,3.53,8.74">7</ref>), (8) are still equivalent and (2) ⇒ (3) ⇒ (1) ⇒ (4).</p><p>As a consequence of this description of the category of modules, we also get a universal property of spherical Witt vectors: Corollary 1. Let A be a p-complete E 1 -ring spectrum. Then we have a pullback square</p><formula xml:id="formula_6" coords="2,185.64,543.51,236.96,57.32">Map Alg E 1 (S W(R) , A) / / Map Ring (R, π 0 A/p) Map MonE 1 (R, •), (Ω ∞ A, •) / / Map Mon (R, •), (π 0 A/p, •)</formula><p>Here π 0 A/p is the ordinary quotient of π 0 A by the ideal (p), which is automatically a two sided ideal, hence π 0 A/p is an ordinary associative ring.</p><p>In other words:</p><formula xml:id="formula_7" coords="2,178.80,638.69,266.61,14.46">Map Alg E 1 (S W(R) , A) is the full subspace of Map MonE 1 (R, •), (Ω ∞ A,</formula><p>•) consisting of those multiplicative maps for whch the composition R → π 0 A/p becomes a ring map. Another reformulation of Corollary 1 is that the spherical Witt vectors S W(R) are the universal E 1 -ring with a multiplicative map from R which becomes additive on π 0 (S W(R) )/p.</p><p>(ordinary) modules over Z[R] and then the condition is that it is derived p-complete and the action of Z[R] extends to a W(R)action. This in turn then is equivalent to the module being I-complete (by condition 2) which again can be expressed in classical terms.</p><p>Remark 2. With the same proof as Corollary 1 one can deduce a similar statement for a p-complete E n -ring spectrum A and E n -maps out of spherical Witt vectors for n 1, namely that we have a pullback:</p><formula xml:id="formula_8" coords="3,99.96,149.31,328.53,54.75">(2.1) Map Alg En (S W(R) , A) / / Map Ring (R, π 0 A/p) Map Mon En (R, •), (Ω ∞ A, •) / / Map Mon (R, •), (π 0 A/p, •) .</formula><p>The reason we did not state this here is that when n &gt; 1 one can prove that both horizontal maps are in fact equivalences (see Proposition 3 below) . For the case n = ∞ this reproves the universal property of spherical Witt vectors given in [Lur18, BSY22] and used in <ref type="bibr" coords="3,355.08,237.57,31.52,8.91" target="#b0">[Ant23]</ref> to construct the spherical Witt vectors.</p><p>For the case n = ∞ it is easy to see that the lower horizontal map in (2.1) is an equivalence: by perfectness of R we may replace (Ω ∞ A, •) by the inverse limit of the p-th power map on Ω ∞ A which respects the multiplicative E ∞ -structure. Using that the p-th power map vanishes on higher homotopy groups, we can see that this inverse limit is equivalent to the inverse limit perfection of (π 0 A/p, •), i.e. the tilt of π 0 (A). Then it follows by the fact that (2.1) is a pullback that the upper horizontal map is also an equivalence. This then gives a new proof of the aforementioned universal property of S W(R) as an E ∞ -ring.</p><p>For the next statement we use the same obstruction theory that was initial by Lurie to prove the E ∞universal property of spherical Witt vectors. While the proof of this statement is logically independent of the results of this paper we include it for completeness. But note that in the case n = ∞ we did sketch a direct proof using the results of this paper in the previous Remark 2. We thank Maxime Ramzi for a discussion of the next Statement and allowing us to include his proof in this paper and especially his example that shows that the condition that π 0 (A) lies in the center of π * (A) is necessary, see Remark 4. Proposition 3. Let A be a p-complete E n -ring spectrum for 1 n ∞. For n = 1 assume additionally that π 0 (A) lies in the center of π * (A). Then we have a natural equivalence</p><formula xml:id="formula_9" coords="3,224.88,455.33,161.96,13.55">Map Alg En (S W(R) , A) ≃ Map CRing (R, π 0 A ♭ )</formula><p>where the tilt π 0 A ♭ is the inverse limit perfection of π 0 (A)/p.</p><p>In particular this implies that every E 1 -map uniquely extends to an E n -map. It also follows that for n &gt; 2 or under the additional assumption for n = 1 both horizontal maps in the square (2.1) of Remark 2 are equivalences. For the upper line this is the statement of Proposition 3 and for the lower one it is the Statement of Proposition 3 for R replaced by</p><formula xml:id="formula_10" coords="3,296.04,530.57,140.25,11.47">F p [R] using that S[R] ∧ p = S W(F p [R]) .</formula><p>Finally we note that all of our constructions and statements have, with exactly the same proofs, analogues for ordinary Witt vectors: for every perfect F p -algebra R we have an equivalence</p><formula xml:id="formula_11" coords="3,262.80,581.64,86.12,15.18">W(R) ≃ lim ← − − (Z[R]/I n )</formula><p>which is a derived version of Cuntz-Deninger's statement. We also have that the full subcategory of p-complete objects in the derived category of W(R) is equivalent to a full subcategory of Z[R]-modules characterized by the analogous conditions to (2) − (6) of Theorem 2, with the difference that we do not have to assume bounded below anywhere since F p is dualisable over Z (but not over S where it is only pseudocoherent). We then have the exact analogues of Corollary 1 and Proposition 3 for W(R).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Proofs of the Results</head><p>First observe that we have a map t : F p [R] → R from the F p -monoid algebra on the multiplicative monoid of R to R. We note that F p [R] is also a perfect F p -algebra and therefore we get an induced map</p><formula xml:id="formula_12" coords="4,263.64,167.57,83.92,10.57">T : S W(F p [R]) → S W(R)</formula><p>using functoriality of the spherical Witt vectors. The E ∞ -ring of spherical Witt vectors</p><formula xml:id="formula_13" coords="4,100.32,184.97,411.78,35.05">S W(F p [R]) is the unique p-complete lift of F p [R] to the sphere. Since S[R] ∧ p is a p-complete E ∞ -ring whose F p -homology is F p [R] we deduce that S W(F p [R]) ≃ S[R] ∧</formula><p>p . Thus we can interpret T as a map T :</p><formula xml:id="formula_14" coords="4,99.84,226.85,344.82,29.95">S[R] ∧ p → S W(R) . We have a factorization S[R] ∧ p → S W(R) → R of the canonical map S[R] ∧ p → R through</formula><p>T which follows by base-changing the first two rings to F p (since R is an F p -algebra). <ref type="foot" coords="4,377.16,257.71,3.49,6.23" target="#foot_2">5</ref>Recall that a map of ring spectra A → B is called p-complete homological epimorphism if the map B ⊗ A B → B is an equivalence, where ⊗ means the p-completed tensor product. We have the following well-known properties: Lemma 1.</p><p>(1) A map of connective ring spectra A → B is a p-complete homological epimorphism precisely if A ⊗ S F p → B ⊗ S F p is a homological epimorphism.</p><p>(2) Any surjective map of ordinary perfect F p -algebras is a homological epimorphism.</p><p>(3) For a p-complete homological epimorphism A → B the restriction functor from p-complete B-modules to A modules is fully faithful. (4) If A → B is a p-complete homological epimorphism and M, N are B-modules, then the canonical map</p><formula xml:id="formula_15" coords="4,270.60,399.45,70.55,9.69">M ⊗ A N → M ⊗ B N</formula><p>is an equivalence.</p><p>Proof. For (1) we simply note that (B ⊗ S F p ) ⊗ A⊗ S F p (B ⊗ S F p ) ≃ (B ⊗ A B) ⊗ S F p and that we can check equivalences between p-complete, connective spectra after base-change to F p . For (2) note that B⊗ L A B is an animated perfect F p -algebra and therefore discrete, but from surjectivity of A → B it easily follows that π 0 is isomorphic to B.</p><p>For (3) we simply note that the restriction functor has a left adjoint B ⊗ A − : Mod(A) ∧ p → Mod(B) ∧ p and thus is fully faithful precisely if for any B-module M the counit B ⊗ A M → M is an equivalence. Since both sides commute with colimits in M it suffices to check this for M = B. For (4) we note that both sides commute with colimits in M and N and thus we can reduce to M = N = B.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Lemma 2. The map T : S[R] ∧</head><p>p → S W(R) is a p-complete homological epimorphism. Proof. By (1) of the previous Lemma it suffices to check that F p [R] → R is a homological epimorphism. But this is a surjective map of perfect F p -algebras, so a homological epimorphism by (2).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Proof of Theorem 1. The completion S[R] ∧</head><p>I which we want to understand is the inverse limit of the corresponding Amitsur complex:</p><formula xml:id="formula_16" coords="4,167.04,632.93,49.03,12.37">S[R] ∧ I = lim</formula><p>The cosimplicial diagram on the right-hand side is the Amitsur complex of the map S W(R) → R. Using that R = F p ⊗ S S W(R) we find that this cosimplicial diagram is also given by the base-change of the Amitsur complex of S → F p along S → S W(R) , i.e.</p><formula xml:id="formula_17" coords="5,145.56,163.85,322.72,11.38">F p ⊗ S S W(R) / / / / F p ⊗ S F p ⊗ S S W(R) / / / / / / F p ⊗ S F p ⊗ S F p ⊗ S S W(R) / / / /</formula><p>/ / / / • • • This is the Adams tower for S W(R) which converges to S W(R) since S W(R) is connective and p-complete, see e.g. <ref type="bibr" coords="5,132.48,197.13,32.37,8.91" target="#b1">[Bou79,</ref><ref type="bibr" coords="5,167.28,197.13,49.59,8.91">Theorem 6.6</ref>]. This completes the proof of the Theorem.</p><p>Proof of Theorem 2. By Lemma 2 and Lemma 1 we find that the restriction Mod(S W(R) ) ∧ p → Mod(S[R]) is fully faithful. The essential image is exactly given by those p-complete modules where the action extends to an S W(R) -action, in which case the extension is unique. Note that the left adjoint to restriction is given by M → S W(R) ⊗ S[R] M . We want to show that for M bounded below this agrees with the Bousfield-Kan completion</p><formula xml:id="formula_18" coords="5,256.32,293.88,99.09,15.18">M → M ∧ I = lim ← − − M/I n M .</formula><p>To see this we compute M ∧ I by the Amitsur complex</p><formula xml:id="formula_19" coords="5,99.96,335.33,120.64,115.57">M ∧ I = lim which converges to S W(R) ⊗ S[R]</formula><p>M by boundedness. Now we let M be arbitrary, that is not necessarily bounded below and show the implications that hold in this generality:</p><p>(1) ⇒ (5): we have a factorization S[R] → S W(R) → map(M, M) as maps of spectra. Taking the mod p-reduction we get a factorization S[R] → S W(R) /p → map(M, M)/p. We have that π 0 (S W(R) /p) = R and the first map identifies on π 0 the elements [r] + [s] and [r + s] so that the claim follows.</p><p>(5) ⇒ (6) ⇒ (7) are clear, the latter since the homotopy groups of the derived mod p reduction π n (M)//p are given by π n (M)/p and π n (M)[p].</p><p>(7) ⇒ (8): by assumption we have that π n (M)/p and π n (M)[p] are in the essential image of the restriction. The image of the restriction functor is closed under limits, extensions and shifts. Thus also the the derived mod p-reduction π n M//p lies in the essential image. Thus by taking iterated extensions also π n M//p k . Since π n M is derived p-complete it is the inverse limit of π n M//p k over k and therefore also in the essential image.</p><p>(8) ⇒ (1): Using the Postnikov tower of M we see that it is a colimit-limit of extensions of π n M and thus the claim follows since the essential image of restriction is closed under (co)limits, extensions and shifts.</p><p>(2) ⇒ (3): By assumpion M is an inverse limit of extensions of R-modules (considered as S[R]modules by restriction). But R-modules are clearly mod I local and therefore so is M.</p><p>(3) ⇒ (1): Since S[R] → S W(R) is a p-complete homological epimorphism we find that the restricted p-complete modules are the local objects for maps of S[R]-modules which are equivalences after basechange to S W(R) . Clearly these maps are still equivalences after base-change to R since we have a factorization S[R] → S W(R) → R. Thus the mod I local objects are also restricted along S[R] → S W(R) .</p><p>(1) ⇒ (4): if M is restricted along S[R] → S W(R) then the base-change to F p becomes a module over S W(R) ⊗ S F p = R, so that on the homology we have an additive R-action.</p><p>Finally assume that M is bounded below, then we show (4) ⇒ (1): note that R-modules are certainly in the essential image and thus also the homology M ⊗ F p by assumption (4) (using also condition (8)) and also iterated homologies, i.e. M ⊗ F p ⊗ ... ⊗ F p . Then by the convergence of the Bousfield Kan tower this implies that M is a limit of restricted modules, hence restricted. We thank Maxime Ramzi for explaining the proof of Proposition 3 which we present here and for explaining the subsequent example to us. In the proof we will use repeatedly the following lemma. Lemma 3. Let A be a p-complete E n -ring spectrum for n 2 and Ã → A a square zero extension by a p-complete symmetric bimodule P. Then any E 1 -ring map S W(R) → A has a unique lift to Ã up to equivalence.</p><p>Proof. A lift to Ã is the same data as a nullhomotopy of the corresponding map of bimodules (a derivation) L S W(R) /S → ΣP where</p><formula xml:id="formula_20" coords="6,230.88,399.05,149.96,10.62">L S W(R) /S = fib(S W(R) ⊗ S W(R) → S W(R) )</formula><p>is the E 1 -cotangent complex. Since P is symmetric, such bimodule map is equivalently a module map from the symmetrization of L S W(R) /S which is the fibre of the canonical map α : S W(R) → THH(S W(R) ). The map α is an F p -equivalence because HH * (R; F p ) ≃ R for a perfect F p -algebra R. Since α is a map between connective spectra, it is then also a p-adic equivalence, i.e., the fibre of α vanishes p-adically. Hence the space of nullhomotopies under consideration is trivial, so the space of lifts in the claim is contractible, and the claim follows.</p><p>Proof of Proposition 3. We may without loss of generality assume that A is connective. We first prove the case n = 1. By perfectness of R we have that Map CRing (R, π 0 A ♭ ) = Map CRing (R, π 0 (A)/p) = Map Alg En (S W(R) , π 0 (A)/p) .</p><p>Thus it suffices to shows that the natural map (2.2) Map Alg En (S W(R) , A) → Map Alg En (S W(R) , π 0 (A)/p) induced by A → π 0 (A)/p is an equivalence. We will decompose it as</p><formula xml:id="formula_21" coords="6,232.68,591.03,146.46,10.23">A → π 0 (A) → π 0 (A)//p → π 0 (A)/p</formula><p>and show that at each step a lift of a map from S W(R) is unique up to equivalence. First, we consider the space of lifts of a map S W(R) → π 0 (A) to A. We write A as the limit of its Postnikov tower A = lim τ m A. It suffices to show that the lift is unique up to equivalence for each τ m A. Note that each τ m+1 A is a square zero extension of τ m A by Σ m+1 (π m+1 A). The assumption that π 0 (A) lies in the center of π * (A) ensures that the bimodule π m+1 A is symmetric, in the sense that it is induced by a left module (using that π 0 A is commutative). Thus we can apply Lemma 3 to deduce the uniqueness of each lift.</p><p>Next, we consider the space of lifts of a map S W(R) → π 0 (A)//p to π 0 (A). Here we argue similarly: we write π 0 (A) = lim π 0 (A)//p m by p-completeness, then observe that each π 0 (A)//p m+1 is a square zero extension of π 0 (A)//p m by π 0 (A)//p and apply Lemma 3.</p><p>Finally, we use that π 0 (A)//p is a square zero extension of π 0 (A)/p by Σπ 0 A[p] and apply Lemma 3 again. This finishes the proof for n = 1.</p><p>For n &gt; 1 we argue inductively: using Dunn additivity the space of E n -maps Map Alg En (S W(R) , A) can be written as the totalization of a cosimplicial diagram [k] → Map Alg E n−1 ((S W(R) ) ⊗S (k+1) , A) .</p><p>We have that (S W(R) ) ⊗S(k+1) = S W R</p><p>⊗ Fp (k+1) so that by the inductive hypothesis this cosimplicial diagram is equivalent to</p><p>[k] → Map Ring (R ⊗ Fp (k+1) , π 0 A ♭ ) which agrees with the space of E n -maps R → π 0 A ♭ , which are the same as commutative ring maps by discreteness. This shows the case of finite n and the case n = ∞ follows since it is the limit of the all the space of E n -maps, hence the limit of a constant diagram.</p><p>Remark 4 (Ramzi). From the proof of Proposition 3 we can see that the assumption on π 0 (A) being in the center is necessary. Otherwise, let A be a square zero extension of S W(R) by the (non-symmetric) bimodule L S W(R) /S . If the claim of Proposition 3 would hold for such A, it would imply that the space of bimodule maps L S W(R) /S → ΣL S W(R) /S is contractible. In particular, its π 1 would be trivial, so ΣL S W(R) /S = 0. By definition of the E 1 -cotangent complex, this would imply that S W(R) is idempotent. Hence R = S W(R) ⊗ S F p would also be idempotent, which is not true unless R = F p .</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="6,100.32,151.13,411.04,9.97;6,100.32,163.13,300.10,10.62;6,401.40,163.41,33.94,10.34;6,438.24,163.13,77.32,9.97;6,100.32,175.29,412.88,8.91;6,100.32,187.29,411.54,8.91;6,100.32,199.29,412.88,8.91;6,100.32,210.63,284.34,9.44;6,384.72,210.63,77.82,10.17;6,462.60,211.17,49.04,9.63;6,100.32,222.63,256.98,9.44;6,357.36,227.45,3.28,4.20;6,361.08,222.63,43.38,9.44;6,404.52,227.45,3.28,4.20;6,408.24,223.17,104.84,8.91;6,100.32,234.51,411.06,10.23;6,100.32,246.51,411.34,10.23;6,100.32,258.77,411.10,9.97;6,100.32,270.39,412.88,10.23;6,100.32,282.93,21.33,8.91"><head></head><label></label><figDesc>Proof of Corollary 1. By [Lur17, Corollary 3.4.1.7] the slice category of E 1 -algebras under S W(R) is equivalent to the ∞-category of E 1 -algebras in the monoidal ∞-category S W(R) Mod S W(R) of S W(R) -bimodules equipped with the bimodule tensor product. Since a bimodule is simply a right module in left modules we deduce from Theorem 2 that this category embeds by restriction (operadically) fully faithfully into the ∞-category of bimodules S[R] Mod S[R] and that the image consists of those p-complete modules M such that the action from both sides induced R-actions on π n M/p as well as π n M[p]. For an algebra A in S[R] Mod S[R] the multiplicative action of R on π * A/p and π * A[p] from both sides factors over Z[R] → π 0 A → π 0 A/p. Thus it lies in the image from both sides precisely if the map Z[R] → π 0 A → π 0 A/p factors over R. In summary we have proven that the category of p-complete E 1 -algebras under S W(R) is equivalent to the category of p-complete E 1 -algebras A under S[R] with the property that the map Z[R] = π 0 S[R] → π 0 A/p factors over R. From this the claim follows immediately.</figDesc></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="3" xml:id="foot_0">This means the actual, non-derived quotient in abelian groups.</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="4" xml:id="foot_1">Note that the homotopy groups of M are considered as S[R]-modules here. But we can equivalently consider them as</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="5" xml:id="foot_2">Note that on π 0 the map T induces a map Z[R] ∧ p → W(R) which corresponds to the usual multiplicative character R → W(R). This follows again by the same obstruction theory:Z[R] ∧ p ≃ W(F p [R]) and there is only one lift of F p [R] → R to a map W(F p [R]) → W(R).</note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Acknowledgments. We would like to thank Ben Antieau, Joachim Cuntz, Christopher Deninger, Felix Gu, Achim Krause, Jonas McCandless, and Maxime Ramzi for useful discussions. We also thank Department of Mathematics at Münster University for hospitality during the visit of Maria Yakerson, when the work on this project was conducted.</p><p>The first author was funded by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) -Project-ID 427320536-SFB 1442, as well as under Germany's Excellence Strategy EXC 2044 390685587, Mathematics Münster: Dynamics-Geometry-Structure.</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="7,136.20,354.58,291.97,7.26" xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Spherical Witt vectors and integral models for spaces</title>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Antieau</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2308.07288</idno>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,136.20,364.54,352.23,7.25" xml:id="b1">
+	<analytic>
+		<title level="a" type="main">The localization of spectra with respect to homology</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">K</forename><surname>Bousfield</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Topology</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="257" to="281" />
+			<date type="published" when="1979">1979</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,136.20,374.50,315.97,7.26" xml:id="b2">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Burklund</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">M</forename><surname>Schlank</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Yuan</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2207.09929</idno>
+		<title level="m">The Chromatic Nullstellensatz</title>
+				<imprint>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,136.20,384.46,313.59,7.25" xml:id="b3">
+	<analytic>
+		<title level="a" type="main">An alternative to Witt vectors</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Cuntz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Deninger</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Münster J. of Math</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page" from="105" to="114" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,136.20,394.55,339.46,8.48;7,100.32,404.51,24.73,7.13;7,161.40,404.51,247.71,7.13" xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Higher Algebra</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Lurie</surname></persName>
+		</author>
+		<ptr target="http://www.math.harvard.edu/˜lurie/papers/HA.pdf" />
+	</analytic>
+	<monogr>
+		<title level="m">Elliptic Cohomology II: Orientations, Lecture course, available online</title>
+				<imprint>
+			<date type="published" when="2017-09">September 2017. Lur18. 2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,136.20,414.34,375.15,7.25;7,135.96,424.43,68.90,7.13" xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Nilpotence and descent in equivariant stable homotopy theory</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Mathew</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Naumann</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Noel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Adv. Math</title>
+		<imprint>
+			<biblScope unit="volume">305</biblScope>
+			<biblScope unit="page" from="994" to="1084" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,112.32,443.15,209.26,7.13;7,112.32,453.18,150.95,6.99;7,112.32,463.14,196.18,6.99;7,112.32,479.99,166.56,7.13;7,112.32,490.02,129.94,6.99;7,112.32,499.98,124.30,6.99" xml:id="b6">
+	<monogr>
+		<title level="m" type="main">Germany Email address: nikolaus@uni-muenster</title>
+		<ptr target="https://www.muramatik.com" />
+		<imprint>
+			<publisher>Andrew Wiles building</publisher>
+		</imprint>
+		<respStmt>
+			<orgName>FB Mathematik und Informatik, Universität Münster</orgName>
+		</respStmt>
+	</monogr>
+	<note>UK Email address: yakerson@imj-prg</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

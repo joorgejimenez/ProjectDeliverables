@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">On the number of P -free set systems for tree posets P</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2024-05-17">May 17, 2024</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,111.12,162.62,84.23,14.36;1,195.36,163.58,1.66,7.13"><forename type="first">József</forename><surname>Balogh</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Mathematics</orgName>
+								<orgName type="institution">University of Illinois at Urbana-Champaign</orgName>
+								<address>
+									<settlement>Urbana</settlement>
+									<region>IL</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,217.68,162.62,103.14,14.36;1,320.88,160.53,1.66,10.18"><forename type="first">Ramon</forename><forename type="middle">I</forename><surname>Garcia</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Mathematics</orgName>
+								<orgName type="institution">University of Illinois at Urbana-Champaign</orgName>
+								<address>
+									<settlement>Urbana</settlement>
+									<region>IL</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author role="corresp">
+							<persName coords="1,371.40,162.62,107.45,14.36;1,478.92,160.53,1.66,10.18"><forename type="first">Michael</forename><forename type="middle">C</forename><surname>Wigal</surname></persName>
+							<email>wigal@illinois.edu</email>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Mathematics</orgName>
+								<orgName type="institution">University of Illinois at Urbana-Champaign</orgName>
+								<address>
+									<settlement>Urbana</settlement>
+									<region>IL</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">On the number of P -free set systems for tree posets P</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2024-05-17">May 17, 2024</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">831003C52BB4646F022A13C1AE8EE833</idno>
+					<idno type="arXiv">arXiv:2405.09635v1[math.CO]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2024-05-19T14:16+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>We say a finite poset P is a tree poset if its Hasse diagram is a tree. Let k be the length of the largest chain contained in P . We show that when P is a fixed tree poset, the number of P -free set systems in 2 [n] is 2</p><p>) . The proof uses a generalization of a theorem by Boris Bukh together with a variation of the multiphase graph container algorithm.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">Introduction</head><p>Given two posets P and Q, a poset homomorphism is a function f : P → Q such that f (A) ≤ f (B) whenever A ≤ B. A poset Q contains a poset P if there is an injective poset homomorphism π : P → Q. If Q does not contain P we say that Q is P -free. All posets considered in this paper are finite.</p><p>Given a poset P and two elements x, z ∈ P , we say that x covers z if x &gt; z and there is no y ∈ P with x &gt; y &gt; z. We define the Hasse diagram of P , denoted H(P ), as a graph with vertex set P drawn in the plane such that we draw an edge from x to y upwards only if y covers x (we allow edges to cross in the drawing). A poset P is a tree poset if H(P ) is a tree. The height of a poset is the length of the longest maximal chain of P .</p><p>For a fixed poset P and positive integer n, define the size of a largest P -free set system in 2 [n] as La(n, P ). The systematic study of La(n, P ), began with the work of Katona and Tarján <ref type="bibr" coords="1,502.56,523.69,17.09,11.97" target="#b12">[13]</ref>. The following conjecture has been central to the study of La(n, P ) which has been formulated in many places with slight variations, see <ref type="bibr" coords="1,217.08,552.61,12.36,11.97" target="#b4">[5,</ref><ref type="bibr" coords="1,233.88,552.61,9.12,11.97" target="#b6">7,</ref><ref type="bibr" coords="1,247.44,552.61,13.68,11.97" target="#b10">11]</ref>. For positive integers n and x &lt; n, we let [n]   x denote the family of all subsets of 2 [n] of size x.</p><p>Conjecture 1.1. Let P be a poset, then La(n, P ) = e(P ) n ⌊n/2⌋</p><p>(1 + o(1)),</p><p>where e(P ) denotes the largest integer ℓ such that for all j and n the family ℓ i=1</p><p>[n] i+j is P -free.</p><p>Conjecture 1.1 can be viewed as a broad generalization of the classical Sperner's Theorem <ref type="bibr" coords="2,45.60,95.05,17.18,11.97" target="#b16">[17]</ref>. The smallest unresolved case for Conjecture 1.1 is the 2-dimensional Boolean lattice (i.e., the diamond poset), which has received significant attention in the literature, see <ref type="bibr" coords="2,446.52,109.57,12.36,11.97" target="#b0">[1,</ref><ref type="bibr" coords="2,462.84,109.57,15.00,11.97" target="#b10">11,</ref><ref type="bibr" coords="2,481.92,109.57,14.88,11.97" target="#b11">12,</ref><ref type="bibr" coords="2,500.88,109.57,13.59,11.97" target="#b13">14]</ref>. Only very recently, Conjecture 1.1 has been disproven in the case when P is the d-dimensional Boolean lattice for d ≥ 4, see <ref type="bibr" coords="2,153.48,138.37,11.70,11.97" target="#b5">[6]</ref>. For a broader overview of the history of Conjecture 1.1, see the survey of Griggs and Li <ref type="bibr" coords="2,121.56,152.89,18.24,11.97" target="#b9">[10]</ref> or the textbook of Gerber and Patkós <ref type="bibr" coords="2,345.84,152.89,12.36,11.97" target="#b7">[8,</ref><ref type="bibr" coords="2,362.76,152.89,54.20,11.97">Chapter 7]</ref>. As e(P ) = k − 1 for all tree posets P of height k, the following theorem of Bukh proves Conjecture 1.1 for all tree posets. Theorem 1.2. [5, <ref type="bibr" coords="2,145.92,187.21,58.07,11.97">Theorem 1]</ref> Let P be a tree poset of height k, then La(n, P ) = (k − 1) n ⌊n/2⌋</p><p>(1 + O(1/n)) .</p><p>Motivated by Conjecture 1.1, Gerbner, Nagy, Patkós, and Vizer <ref type="bibr" coords="2,394.20,243.37,12.36,11.97" target="#b6">[7]</ref> conjectured the following.</p><p>Conjecture 1.3. For every poset P the number of P -free set systems in 2 [n] is 2 (1+o(1))La(n,P )( n ⌊n/2⌋ ) .</p><p>Patkós and Treglown <ref type="bibr" coords="2,177.12,308.53,18.12,11.97" target="#b14">[15]</ref> proved Conjecture 1.3 in the special case when P is a tree poset of height at most five and radius at most 2. Our main result is proving Conjecture 1.3 for all tree posets.</p><p>Theorem 1.4. Let P be a tree poset of height k, then the number of P -free set systems in 2 [n] is</p><formula xml:id="formula_0" coords="2,251.64,376.26,92.04,16.96">2 (1+o(1))(k−1)( n ⌊n/2⌋ ) .</formula><p>Boris Bukh <ref type="bibr" coords="2,126.12,402.49,12.24,11.97" target="#b4">[5]</ref> observed that Theorem 1.2 also extends to a larger class of posets that embed into trees in an ideal way. This same observation extends to our Theorem 1.4 as well. Recall that e(P ) denotes the largest integer ℓ such that for all j and n the family ℓ i=1</p><p>[n] i+j is P -free. Corollary 1.5. Let P be a poset and Q be a tree poset of height k such that e(P ) = k − 1 and Q contains P . Then the number of P -free set systems in 2 [n] is</p><formula xml:id="formula_1" coords="2,251.64,485.82,92.04,17.08">2 (1+o(1))(k−1)( n ⌊n/2⌋ ) .</formula><p>Proof. As e(P ) = k − 1 we have that k−2 i=0</p><p>[n]</p><p>⌊n/2⌋+i and each of its subfamilies is P -free. This implies that the number of P -free set systems in 2 [n] is at least 2 (1+o(1))(k−1)( n ⌊n/2⌋ ) . By Theorem 1.4, the number of Q-free is at most 2 (1+o(1))(k−1)( n ⌊n/2⌋ ) . As Q contains P , the corollary follows.</p><p>One of the smallest nontrivial posets Corollary 1.5 applies to is the butterfly poset B, see Figure <ref type="figure" coords="2,82.68,586.69,4.56,11.97" target="#fig_0">1</ref>. As e(B) = 2 and B is contained in the X poset, see Figure <ref type="figure" coords="2,405.48,586.69,4.56,11.97" target="#fig_0">1</ref>, by Corollary 1.5, we have that Conjecture 1.3 is true for the butterfly poset as well.</p><p>There are two natural potential extensions of our results. One is to extend to P -free posets, where we forbid P as an induced subposet, see the relevant conjecture of Gerbner, Nagy, Patkós, and Vizer <ref type="bibr" coords="2,101.88,644.41,12.36,11.97" target="#b6">[7,</ref><ref type="bibr" coords="2,119.88,644.41,69.96,11.97">Conjecture 9]</ref> or the extensions of <ref type="bibr" coords="2,304.44,644.41,12.36,11.97" target="#b4">[5]</ref> by Boehnlein and Jiang <ref type="bibr" coords="2,452.52,644.41,11.70,11.97" target="#b3">[4]</ref>. The second is to investigate random variants of our results, see for example <ref type="bibr" coords="2,374.16,658.93,17.18,11.97" target="#b14">[15]</ref>, which would require proving stronger supersaturation conditions.</p><p>The rest of the paper is organized as follows. In Section 2, we present some preliminary results. Then, we proceed to prove our supersaturation results Corollaries 2.11 and 2.12. We then prove our main container result, Lemma 2.15. Finally, we prove Theorem 1.4 in Section 3. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">Preliminaries</head><p>We use the following standard upper bound on the sum of binomial coefficients.</p><formula xml:id="formula_2" coords="3,45.60,244.56,300.48,59.33">Proposition 2.1. For every α ∈ [0, 1/2] and n ∈ Z + , i≤αn n i ≤ 2 H(α)n ,</formula><p>where</p><formula xml:id="formula_3" coords="3,78.72,316.91,192.47,14.10">H(p) = −p log 2 p − (1 − p) log 2 (1 − p)</formula><p>, is the binary entropy function.</p><p>The easy fact that a removal of a leaf vertex of a tree results in a tree, implies the following claim.</p><p>Claim 2.2. For every tree poset P of size m and an element x ∈ P , there is a total ordering ≺ of the elements of P , which we write as x = x 1 ≺ . . . ≺ x m and such that for each i ∈ [m], the induced subgraph H(P )[x 1 , . . . , x i ] is a tree such that x i has degree 1. Definition 2.3. For a tree poset P , an element x ∈ P , a total ordering of P beginning at x as described in Claim 2.2, and a positive integer t, define the t-blowup of P centered at x, denoted P (x, t), to be the poset constructed as follows. Replace each x i ∈ P with t d(x i ) copies of x i , where d(x i ) := d(x, x i ) is the distance from x to x i in the Hasse diagram H(P ). Label the copies of x i as x i,1 , . . . , x i,t d(x i ) .</p><p>For each i &gt; 1, there is exactly one edge x i x j in H(p) such that d(x i ) = d(x j ) + 1 and i &gt; j. We split the copies of x i into t d(x i )−1 sets V i,k = {x i,(k−1)t+1 , . . . , x i,kt } for k ∈ [t d(x i )−1 ]. When x i covers x j in P , we set x j,k &gt; P (x,t) v for all v ∈ V i,k . Otherwise, x j covers x i in P , and we set x j,k &lt; P (x,t) v for all v ∈ V i,k .</p><p>Notice that although there are possibly multiple choices for the order as described in Claim 2.2, the poset P (x, t) is unique up to isomorphism. Furthermore, the indexing of the elements of P (x, t) induces a total ordering given by the lexicographic ordering.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1">Supersaturation tools</head><p>Unless otherwise stated, we follow the notation and terminology of West <ref type="bibr" coords="3,417.60,658.93,18.24,11.97" target="#b17">[18]</ref> with regard to partial orders. We say a finite poset is graded if every maximal chain has the same size. Thus our notion of graded poset of height k corresponds to the notion of k-saturated posets of Bukh <ref type="bibr" coords="3,506.88,687.85,11.70,11.97" target="#b4">[5]</ref>. We have changed this terminology to avoid potential conflict with the notion of a k-saturated chain decomposition with respect to the classical Greene-Kleitman Theorem <ref type="bibr" coords="3,414.00,716.65,11.70,11.97" target="#b8">[9]</ref>. Thus in a graded tree poset, every leaf in the Hasse diagram must be a minimal or maximal element. The following lemma shows that every tree poset is contained in a graded tree poset. As observed in <ref type="bibr" coords="4,462.12,229.21,11.70,11.97" target="#b4">[5]</ref>, working with graded posets is simpler.</p><formula xml:id="formula_4" coords="4,94.75,84.98,405.43,73.35">x 1 x 2 x 4 x 3 x 1,1 x 2,1 x 2,2 x 4,1 x 4,2 x 3,1 x 3,2 x 4,3 x 4,4</formula><p>Lemma 2.4. [5, <ref type="bibr" coords="4,136.20,268.09,50.87,11.97">Lemma 5]</ref> Let P be a tree poset of height k. Then there exists a graded tree poset P of height k such that P is an induced subposet of P and | P | ≤ sk, where s denotes the number of maximal chains of P .</p><p>Remark 2.5. The inequality | P | ≤ sk is not in the original statement of [5, <ref type="bibr" coords="4,442.92,321.37,50.99,11.97">Lemma 5]</ref> but can be read out of its proof.</p><p>Lemma 2.6. Let P be a graded tree poset of height k, x ∈ P and a is some positive integer. Then P (x, a) is a graded tree poset of height k.</p><p>Proof. Clearly, P has height k if and only if P (x, a) has height k. Further, every maximal chain of P (x, a) corresponds to a maximal chain of P in the natural way, hence P (x, a) is also graded. Furthermore, by its definition, the Hasse diagram of P (x, a) is also a tree.</p><p>An interval of a poset P is a set of the form {z ∈ P : x ≤ z ≤ y} where x, y ∈ P . It is easy to check that for tree posets, an interval is either the empty set or a chain. Lemma 2.7. [5, <ref type="bibr" coords="4,138.60,490.21,51.59,11.97">Lemma 6]</ref> Let P be a graded tree poset of height k such that P is not a chain. Then there is an element v ∈ P , which is a leaf in H(P ), and an interval I of length |I| ≤ k − 1 containing v such that H(P \ I) is a tree, and the poset P \ I is a graded poset of height k.</p><p>The following lemma is introduced to correct a minor mistake in the induction statement of Bukh's original proof <ref type="bibr" coords="4,157.68,558.01,12.36,11.97" target="#b4">[5,</ref><ref type="bibr" coords="4,174.00,558.01,50.00,11.97">Lemma 7]</ref>.</p><p>Lemma 2.8. Suppose P is a graded tree poset of height k. Then there exists an integer ℓ ≥ 1 and maximal chains C 1 , . . . , C ℓ of P such that</p><formula xml:id="formula_5" coords="4,47.40,618.48,502.21,85.25">(i) For all 1 ≤ j ≤ ℓ, j i=1 C i is a graded poset of height k and ℓ i=1 C i = P . (ii) For all 1 &lt; j ≤ ℓ, I j := C j \ j−1 i=1 C i is a nonempty interval containing a minimal or maximal element of P . (iii) For all 1 &lt; j ≤ ℓ, C j \ I j ⊆ C i for some 1 ≤ i &lt; j.</formula><p>Proof. Let m = |P |. If P is a chain, then the lemma holds trivially. Thus we may suppose P is not a chain and m &gt; 2. We proceed with induction on m.</p><p>As P is not a chain and H(P ) is a tree, by Lemma 2.7, there exists some v ∈ P , such that v is a leaf in H(P ) and there exists an interval I of length |I| ≤ k − 1 containing v such that H(P \ I) is a tree and the poset P \ I is a graded poset of height k. As we may consider the dual of P , without loss of generality, we may suppose v is a minimal element of P . By induction, there exists s ≥ 1 and chains C 1 , . . . , C s of P \ I such that (i), (ii) and (iii) hold.</p><p>As both H(P ) and H(P \ I) are trees, P is graded and of height k, and |I| ≤ k − 1, there is exactly one element of u ∈ P \ I, which covers the maximum element of I. We let I s+1 := I. To complete the proof, we must find a maximal chain C s+1 of P such that I s+1 ⊆ C s+1 and (i), (ii), and (iii) holds for C 1 , . . . , C s , C s+1 .</p><p>Letting I 1 = C 1 , by (i) and (ii), we have</p><formula xml:id="formula_6" coords="5,234.00,263.16,127.32,36.65">s i=1 I i = s i=1 C i = P \ I s+1 .</formula><p>By (ii), there exists a unique j such that u ∈ I j . Define</p><formula xml:id="formula_7" coords="5,215.28,338.15,164.76,13.02">C s+1 := I s+1 ∪ {x ≥ u : x ∈ C j }.</formula><p>As u ∈ I j ⊆ C j , by induction, C j contains a maximal element of P . Then the set {x ≥ u : x ∈ C j } is an interval between u and a maximal element of P . Furthermore, as I s+1 is an interval containing a minimal element of P , and u covers the maximum element of I s+1 , we have that C s+1 is a maximal chain of P . As P is a graded poset of height k and</p><formula xml:id="formula_8" coords="5,270.00,432.72,55.32,36.77">s+1 i=1 C i = P,</formula><p>we have that (i) holds. We have that (ii) holds by construction of I s+1 , and as C s+1 \ I s+1 ⊆ C j , we have that (iii) holds as well. Thus the lemma holds by induction.</p><p>Let P be a graded tree poset, and {C 1 , . . . , C ℓ } be a set of maximal chains satisfying conditions (i), (ii), and (iii) of Lemma 2.8. We say {C 1 , . . . , C ℓ } is a graded chain cover of P . We note that as P is graded,</p><formula xml:id="formula_9" coords="5,112.08,548.15,111.96,13.02">|C i | = k for all i ∈ [ℓ].</formula><p>We define a (k, a)-marked chain as an ordered pair (M, {F 1 , . . . , F k }) such that M is a maximal chain in 2 [n] and</p><formula xml:id="formula_10" coords="5,45.60,577.07,504.10,26.63">F i ∈ M for all i ∈ [k] such that F 1 F 2 F 2 . . . F k and |F i \ F i+1 | ≥ a for all i ∈ [k − 1].</formula><p>We call the F i 's the markers. The following lemma was proved in the special case of (k, 1)-marked chains by Boris Bukh <ref type="bibr" coords="5,231.48,606.13,12.36,11.97" target="#b4">[5,</ref><ref type="bibr" coords="5,247.68,606.13,50.12,11.97">Lemma 4]</ref>. Lemma 2.9. Let k and a be positive integers and let ε &gt; 0.</p><formula xml:id="formula_11" coords="5,220.92,629.28,240.58,54.09">If F ⊆ 2 [n] is of size |F | &gt; ((k − 1)a + ε) n ⌊n/2⌋ ,</formula><p>then there are at least ε k n! (k, a)-marked chains, whose markers are in F .</p><p>Proof. Let D i denote the number of maximal chains that contain exactly i elements from F . By double counting pairs (M, F ) such that M is a maximal chain in 2 [n] and F ∈ M ∩ F , we obtain</p><formula xml:id="formula_12" coords="6,172.20,119.29,258.00,33.04">i iD i = F ∈F n! n |F | ≥ |F | n! n ⌊n/2⌋ ≥ ((k − 1)a + ε)n!.</formula><p>(1)</p><p>Trivially we also have,</p><formula xml:id="formula_13" coords="6,274.08,180.13,275.62,24.76">i D i = n!.<label>(2)</label></formula><p>Using ( <ref type="formula" coords="6,83.71,211.57,4.99,11.97">1</ref>) and ( <ref type="formula" coords="6,124.89,211.57,4.53,11.97" target="#formula_13">2</ref>), we have the following inequality.</p><formula xml:id="formula_14" coords="6,223.56,239.63,326.14,25.14">i iD i − (k − 1)a i D i ≥ εn!.<label>(3)</label></formula><p>The number of binary strings of length i with k ones such that each of the first k − 1 ones is followed by at least a − 1 zeros is i−(k−1)(a−1) k . It follows that the number of (k, a)-marked chains is at least,</p><formula xml:id="formula_15" coords="6,64.20,316.67,468.36,72.54">i≥(k−1)a+1 i − (k − 1)(a − 1) k D i = i≥(k−1)a+1 i − (k − 1)(a − 1) − 1 k − 1 i − (k − 1)(a − 1) k D i ≥ i≥(k−1)a+1 i − (k − 1)(a − 1) k D i ≥ i i k D i − i (k − 1)a k D i ≥ ε k n!,</formula><p>where the last relation follows from (3).</p><p>Let P be a graded tree poset, let {C 1 , . . . , C ℓ } be a graded chain cover of P , let F ⊆ 2 [n] be a set system, and let a &gt; 0 be a positive integer. We are interested in finding an embedding π of P into F . Furthermore, by Lemma 2.9, there exists a large family L of (k, a)-marked chains whose markers belong to F . For induction purposes, we also require that our embedding maps each C i to the set of markers of some (k, a)-marked chain belonging to L.</p><p>The proof of Lemma 2.10 is relatively straightforward, and follows closely the proof of [5, <ref type="bibr" coords="6,45.60,527.77,50.84,11.97">Lemma 7]</ref>. We iteratively embed subsequentially larger subposets of P with respect to a graded chain cover {C 1 , . . . , C ℓ } of P . At each stage, we clean the respective family of (k, a)-marked chains L of the "bad" chains. We have to ensure that we do not delete too many chains, as otherwise our current choice of embedding may fail to extend to all of P . Lemma 2.10. Let α ∈ (0, 1/2), let a and n be positive integers, let c = a!α −a . Let P be a graded tree poset of height k and let {C 1 , . . . , C ℓ } be a graded chain cover of P . Let F ⊆ 2 [n] be a set system such that all sets of F are of size between αn and (1 − α)n and let K ∈ [n] such that no maximal chain of 2 [n] contains more than K ≥ 2k sets from F . Let L be a family of (k, a)-marked chains with markers in F such that</p><formula xml:id="formula_16" coords="6,224.88,662.40,145.44,31.30">|L| ≥ c n a K k 2 |P | + 1 2 n!.</formula><p>Finally, suppose |P | &lt; K −k n a /c. Then there is an embedding π of P into F such that for every i ∈ [ℓ], π(C i ) is the set of markers of some (k, a)-marked chain in L.</p><p>Proof. The proof is by induction on ℓ. If ℓ = 1, then P is a chain of height k with C 1 = P . In this case, as L = ∅, we may choose an arbitrary (k, a)-marked chain M ∈ L. As the markers of M belong to F , there is a natural embedding of P into the markers of M. Suppose ℓ ≥ 2. Let I = C ℓ \ ℓ−1 i=1 C i . By Lemma 2.8, I is a nonempty interval containing a minimal or maximal element of P such that C ℓ \ I ⊆ C j for some 1 ≤ j &lt; ℓ. Without loss of generality, we may assume I contains a minimal element of</p><formula xml:id="formula_17" coords="7,352.68,158.51,124.20,13.02">P . Let s = |C ℓ \ I ℓ | &gt; 0.</formula><p>The chain F 1 Our goal is to find an L ′ ⊆ L such that if we embed P \ I with respect to {C 1 , . . . , C ℓ−1 } with (k, a)-chains belonging to L ′ , then the set of markers corresponding to C ℓ \ I is not a bottleneck. Thus it suffices to construct an L ′ ⊆ L which contains no bad (k, a)-marked chains of L.</p><p>Let R ⊆ [K] such that |R| = s = |C ℓ \ I|. We sample a maximal chain M of 2 [n] uniformly at random. Suppose |M ∩ F | = t &gt; 0, and let</p><formula xml:id="formula_18" coords="7,45.60,353.15,504.00,71.39">F 1 • • • F t such that F i ∈ M ∩ F for every i ∈ [t]. Then we let C R (M) denote the function C R (M) = {F i : i ∈ R} if R ⊆ [t]; ∅ otherwise.</formula><p>That is, for R ⊆ [t], the function C R (M) denotes the subchain of elements of M ∩ F indexed by R.</p><p>We say M is R-bad, if C R (M) is a bottleneck, and there exists a (k, a)-marked chain of L whose s largest markers are C R (M). Note that if C R (M) = ∅, then M is not R-bad, vacuously. Let B R be the event that M is R-bad. Our goal is to estimate the probability of B R for each possible choice of R.</p><p>If C R (M) is not a bottleneck, then B R does not happen. Thus suppose otherwise. Let C R (M) be a bottleneck with witness S := S(C R (M)) and let F ∈ S. As L consists of (k, a)-marked chains, we can assume |F ′ | ≥ |F | + a for every F ∈ S and all F ′ ∈ C R (M). As |F | ≥ αn, it follows that, (recall that M is randomly chosen, and F and S are fixed), For a bottleneck B of size s, let E B be the event that M is R-bad, C R (M) = B, and B is a bottleneck with witness S(B). Let B ⊆ 2 [n] be the set of all bottlenecks of size s such that P(E B ) &gt; 0. Note that if B, B ′ ∈ B such that B = B ′ , then E B and E B ′ are disjoint events. It follows,</p><formula xml:id="formula_19" coords="7,78.72,577.20,437.31,63.10">P(F ∈ M ∩ S| C R (M) is a bottleneck with witness S) ≤ |F | + a |F | −1 ≤ αn + a a −1 ≤ a! (αn) a = cn</formula><formula xml:id="formula_20" coords="8,71.88,120.96,451.56,26.93">P(B R ) = B∈B P(E B )P(B R |E B ) ≤ max B∈B P(B R |E B ) ≤ max B∈B P(M ∩ S(B) = ∅|E B ) ≤ c|P |n −a .</formula><p>Recall that as |R| = s, there are K s ways to select R from [K]. Using K/2 ≥ k &gt; s and |P | &lt; K −k n a /c, we have</p><formula xml:id="formula_21" coords="8,132.96,201.71,329.40,28.54">P(M is bad) ≤ K s c|P |n −a &lt; K k c|P |n −a ≤ c |P | k! K k n −a &lt; 1.</formula><p>Every bad chain M corresponds to at most K s &lt; K k bad (k, a)-marked chains, hence we have the number of bad (k, a)-marked chains is at most</p><formula xml:id="formula_22" coords="8,263.88,283.68,68.64,31.29">c|P | n a K k 2 n!.</formula><p>Let P ′ = P \ I. By Lemma 2.8, {C 1 , . . . , C ℓ−1 } is a graded chain cover of P ′ . Let L ′ denote the set of good chains, then</p><formula xml:id="formula_23" coords="8,87.96,365.88,419.28,31.42">|L ′ | ≥ |L| − c|P | n a K k 2 n! ≥ c n a K k 2 |P | + 1 2 − |P | n! = c n a K k 2 |P | 2 n!.</formula><p>In particular we have</p><formula xml:id="formula_24" coords="8,222.12,421.20,151.08,31.30">|L ′ | ≥ c n a K k 2 |P ′ | + 1 2 n!.</formula><p>Thus by induction, there exists an embedding π ′ : P ′ → F such that for every i ∈ [ℓ − 1], π ′ (C i ) is the set of markers of some (k, a)-chain in L ′ . Let F 1 • • • F s denote the markers corresponding to C ℓ \ I. As {F 1 , . . . , F s } is not a bottleneck and C ℓ \ I ⊆ C j ∈ L ′ for some j ∈ [ℓ − 1], there exists a (k, a)-marked chain L ∈ L such that the first s markers of L correspond to C ℓ \ I and its last k − s markers do not intersect π ′ (P \ I). We can thus extend π ′ to an embedding π : P → F such that I is mapped to the last k − s markers of L. Then π(C ℓ ) is the set of markers of L, completing the proof.</p><p>Let ε &gt; 0, and as lim x→∞ H(x) = 0, there exists an α ∈ (0, 1/2) such that H(α) &lt; ǫ. Let F ⊆ 2 [n] and define</p><formula xml:id="formula_25" coords="8,183.12,598.91,229.08,13.02">F α = {F ∈ F : |F | &lt; αn or (1 − α)n &gt; |F |}.</formula><p>By Proposition 2.1,</p><formula xml:id="formula_26" coords="8,162.36,644.65,258.51,28.17">|F α | ≤ 2 n ≤ αn ≤ 2 H(α)n+1 ≤ 2 εn/2+1 ≤ ε 2 n ⌊n/2⌋</formula><p>, for large enough n with respect to ε.</p><p>Corollary 2.11. Let P be a graded tree poset of height k and size m. Suppose x ∈ P and F ⊆ 2 [n]  is a set system such that</p><formula xml:id="formula_27" coords="9,187.80,117.97,207.63,28.28">|F | &gt; ((k − 1)(2k + 2m + 1) + ε) n ⌊n/2⌋</formula><p>, for some ε &gt; 0. For n sufficiently large (with respect to m, k, and ε), F contains a copy of P (x, n).</p><formula xml:id="formula_28" coords="9,45.60,180.73,348.72,26.49">Proof. Let F ′ = {F ∈ F : αn ≤ |F | ≤ (1 − α)n}.</formula><p>For large enough n with respect to ε, we have</p><formula xml:id="formula_29" coords="9,151.56,238.33,280.11,28.28">|F ′ | = |F \ F α | &gt; ((k − 1)(2k + 2m + 1) + ε/2) n ⌊n/2⌋</formula><p>.</p><p>As P is a graded poset of height k, by Lemma 2.6, P (x, n) is also a graded tree poset of height k. As |P | = m, we have |P (x, n)| ≤ mn m . Let a = 2k + 2m + 1, K = n, and c = a!α −a . Applying Lemma 2.9 with F ′ and a, there exists a family L of (k, a)-marked chains such that |L| ≥ ε 2k n!. We have then</p><formula xml:id="formula_30" coords="9,193.68,340.92,209.16,31.30">c n 2k+2m+1 n k 2 mn m + 1 2 = o(1) &lt; ε 2k ,</formula><p>for sufficiently large n. Furthermore, for sufficiently large n, we have K = n &gt; 2k, and</p><formula xml:id="formula_31" coords="9,198.00,405.96,199.32,13.90">|P (x, n)| ≤ mn m ≤ n a−k /c = K −k n a /c.</formula><p>By Lemma 2.8, P (x, n) has a graded chain cover {C 1 , . . . , C ℓ } for some ℓ. By applying Lemma 2.10 to α, a, P (x, n), F ′ , L, and {C 1 , . . . , C ℓ } as above, for sufficiently large n, we may conclude F contains a copy of P (x, n).</p><p>By an argument similar to the proof of Corollary 2.11, we have the following.</p><p>Corollary 2.12. Let P be a graded tree poset of height k of size m. Suppose x ∈ P and F ⊆ 2 [n]  such that</p><formula xml:id="formula_32" coords="9,225.60,532.21,135.27,28.28">|F | &gt; ((k − 1) + ε) n ⌊n/2⌋</formula><p>for some ε &gt; 0. For n sufficiently large (with respect to m, k, and ε), F contains a copy of P (x, log(n)).</p><formula xml:id="formula_33" coords="9,45.60,604.93,348.72,26.37">Proof. Let F ′ = {F ∈ F : αn ≤ |F | ≤ (1 − α)n}.</formula><p>For large enough n with respect to ε, we have</p><formula xml:id="formula_34" coords="9,187.68,662.53,207.87,28.16">|F ′ | = |F \ F α | &gt; ((k − 1) + ε/2) n ⌊n/2⌋</formula><p>.</p><p>As P is a graded poset of height k, by Lemma 2.6, P (x, log n) is also a graded tree poset of height k. Furthermore, as |P | = m, we have |P (x, log n)| ≤ m(log n) m . We may suppose no maximal chain of 2 [n] contains at least m(log n) m sets from F ′ , as otherwise, F ′ would contain a copy of P (x, log n). Let a = 1, K = m(log n) m and c = a!α −a . Applying Lemma 2.9 with F and a, we conclude that there exists a family L of (k, 1)-marked chains such that |L| ≥ ε 2k n!. Then</p><formula xml:id="formula_35" coords="10,177.60,141.96,241.32,31.42">c n m log(n) m k 2 m log(n) m + 1 2 = o(1) &lt; ε 2k ,</formula><p>for sufficiently large n. By Lemma 2.8, P (x, log n) has a graded chain cover, {C 1 , . . . , C ℓ } for some ℓ. For sufficiently large n, we have K = m log(n) m &gt; 2m ≥ 2k and</p><formula xml:id="formula_36" coords="10,156.84,219.24,281.64,13.90">|P (x, n)| ≤ m log(n) m ≤ (m log(n) m ) −k n/c = K −k n a /c.</formula><p>By applying Lemma 2.10 to α, a, P (x, n), F ′ , L, and {C 1 , . . . , C ℓ } as above, for sufficiently large n, we conclude F contains a copy of P (x, n).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2">Container tools</head><p>We will use a container algorithm based on the one used in <ref type="bibr" coords="10,353.52,315.37,17.18,11.97" target="#b14">[15]</ref>. We will run the algorithm in two phases, similarly to the application of the container algorithm used in <ref type="bibr" coords="10,407.16,329.77,11.70,11.97" target="#b2">[3]</ref>.</p><p>With F provided as an input, the goal of the algorithm is to build a unique pair (H, G) such that H ⊆ F ⊆ H ∪ G, and G is determined by H. The key part of the proof of Theorem 1.4 is that multiple P -free set systems are assigned to the same pair (H, G). To count all possible P -free set systems F , first we count the number of possible pairs (H, G). With a pair (H, G) fixed, the number of subsets of G is an upper bound on the number of P -free set systems that are assigned to (H, G).</p><p>Historically, see <ref type="bibr" coords="10,146.28,416.41,12.36,11.97" target="#b1">[2,</ref><ref type="bibr" coords="10,162.12,416.41,13.68,11.97" target="#b15">16]</ref>, H is called the certificate (or fingerprint) of F and H ∪ G the container. We are now ready to present our container algorithm. Lemma 2.13. For every tree poset P , an element x ∈ P , an integer t, and a set system S ⊆ 2 [n] , there is a collection C of pairs (H, G) with H, G ⊆ S such that: (i) For each P -free set system F ⊆ S, there is a pair (H, G) ∈ C such that H ⊆ F ⊆ H ∪ G.</p><p>(ii) For each (H, G) ∈ C, G is P (x, t)-free and |H| ≤ |P ||S|/t.</p><p>(iii) For each H ⊆ S there is at most one G ⊆ S such that (H, G) ∈ C.</p><p>Proof. Throughout this proof we will use three total orderings, a total ordering ≺ 1 of the elements of P , i.e., x = x 1 ≺ 1 . . . ≺ 1 x |P | given by Claim 2.2, the total ordering ≺ 2 of the elements of P (x, t) given by the lexicographic ordering as discussed in Definition 2.3 and a total ordering ≺ 3 of the copies of P (x, t) in 2 [n] .</p><p>We give a deterministic algorithm that takes as input a P -free set system F ⊆ S and outputs the pair (H, G). We initialize the variables H 0 = ∅ and G 0 = S. The following algorithm runs in possibly multiple iterations.</p><p>We describe iteration i ≥ 0 of the algorithm as follows. If G i is P (x, t)-free, then the algorithm terminates and outputs (H i , G i ). Otherwise G i contains a copy of P (x, t) and we let π : P (x, t) → G i denote a respective embedding. We further suppose π(P (x, t)) ⊆ G i is the first copy of P (x, t) under the ordering ≺ 3 . With the given (H i , G i ) and F we apply the following embedding procedure to obtain a new pair (H i+1 , G i+1 ):</p><p>1. If π(x 1,1 ) / ∈ F then we set H i+1 = H i and G i+1 = G i \ π(x 1,1 ) and we begin iteration i + 1 with (H i+1 , G i+1 ).</p><p>2. If π(x 1,1 ) ∈ F then we let Q 1 := {π(x 1,1 )}.</p><p>3. Let Q j := {π(x 1,r 1 ), . . . , π(x j,r j )} such that Q j is a subposet of P induced by the first j elements of the ordering ≺ 1 . Then x j+1 is the first vertex of ≺ 1 which is not embedded. By Claim 2.2, there is exactly one x k ∈ P such that k ≤ j and it is either the case that x k covers x j+1 or x k covers x j+1 in P . As π(x k,r k ) ∈ Q j , we will try to embed one of its neighbors and thus grow Q j . We break the process into two cases depending on π(V j,r k ) ∩ F .</p><p>3.1. If π(V j,r k ) ∩ F = ∅ then we denote by x j+1,r j+1 the first element under ≺ 2 contained in π(V j,r k ) ∩ F . We let Q j+1 := Q j ∪ {π(x j+1,r j+1 )} and we return to Step 3 with Q j+1 .</p><formula xml:id="formula_37" coords="11,74.88,254.63,474.76,27.42">3.2. If π(V j,r k ) ∩ F = ∅ then we let H i+1 := H i ∪ Q j and G i+1 := G i \ (π(V j,r k ) ∪ Q j ). We begin iteration i + 1 with (H i+1 , G i+1 ).</formula><p>Note, as F is P -free, Step 1 or Step 3.2 must occur once the above embedding procedure begins. Thus the embedding procedure, and consequently the algorithm, will eventually terminate for some pair (H, G) such that G is P (x, t)-free. As H 0 = ∅, and for all i, we only add elements to H i if they belong to F , hence we have H ⊆ F . Furthermore, as F ⊆ G 0 , and for all i, the elements we remove from G i are always disjoint from F or also added to H i , we have H ⊆ F ⊆ H ∪ G. Thus (i) holds.</p><p>For all i, if at least one element was added to H i , i.e., if Step 3.2 occurs, then we also remove at least t elements from G i . In particular, we have |H| ≤ |P ||S|/t and (ii) holds as well.</p><p>Let F and F ′ be two distinct P -free set systems such that the algorithm outputs (H, G) under input F and outputs (H ′ , G ′ ) under input F ′ . Suppose for the sake of a contradiction, that there exists (H, G), (H ′ , G ′ ) ∈ C with H = H ′ and G = G ′ . Then, there are two distinct P -free set systems F and F ′ such that each returns (H, G) and (H ′ , G ′ ) when applying the algorithm. Since the algorithm is deterministic and G = G ′ , the algorithm at some iteration i, removes an element from G i but not from G ′ i . Suppose this happens at Step 1 of the embedding procedure. Without loss of generality, suppose π(x 1,1 ) ∈ F and π(x 1,1 ) ∈ F ′ . This would imply π(x 1,1 ) ∈ H ′ . As H ⊆ F , we have H = H ′ , a contradiction. If this occurs with Step 3.2, by a similar argument, we obtain a contradiction. Thus we may conclude that (iii) holds, and consequently, the lemma holds as well. We will apply our container algorithm in two phases to obtain our main Container Lemma.</p><p>Lemma 2.15. Let P be a graded tree poset of height k. For each fixed ε &gt; 0, there is a collection C of pairs (H, G) with H , G ⊆ 2 [n] and a function Ψ that assigns each P -free set system F ⊆ 2 [n] a pair Ψ(F ) = (H, G) ∈ C with the following properties.</p><formula xml:id="formula_38" coords="11,51.00,691.91,144.59,39.78">(i) H ⊆ F ⊆ H ∪ G. (ii) |G| ≤ (k − 1 + ε) n ⌊n/2⌋ . (iii) |C| = 2 O( log log n log(n) ( n ⌊n/2⌋ )) .</formula><p>Proof. We apply Lemma 2.13 with P , an arbitrary x ∈ P , S = 2 [n] and t = n to obtain a family of containers C 1 . From Remark 2.14, we get</p><formula xml:id="formula_39" coords="12,172.44,136.20,377.26,29.61">|C 1 | ≤ 2 n ≤ |P |2 n /n ≤ 2 H(|P |/n)2 n = 2 O(log(n)2 n /n) ,<label>(4)</label></formula><p>where the last inequality is obtained using Proposition 2.1.</p><p>For each (H 1 , G 1 ) ∈ C 1 , we apply again Lemma 2.13, this time with P , x ∈ P , S = G 1 and t = log(n), to obtain the family C 2 (G 1 ). Finally we set</p><formula xml:id="formula_40" coords="12,85.08,224.15,425.16,13.02">C := {(H, G) : H = H 1 ∪ H 2 and G = G 2 for some (H 1 , G 1 ) ∈ C 1 , (H 2 , G 2 ) ∈ C 2 (G 1 )}.</formula><p>Since for each (H 1 , G 1 ) ∈ C 1 we have G 1 is P (x, n)-free, using Corollary 2.11 we have that |G 1 | ≤ ((k − 1)(2k + 2m + 1) + ε) n ⌊n/2⌋ . Using Remark 2.14, we obtain</p><formula xml:id="formula_41" coords="12,169.68,284.27,380.02,29.34">|C 2 (G 1 )| ≤ |G 1 | ≤ |P ||G 1 |/ log(n) = 2 O( log log n log(n) ( n ⌊n/2⌋ )) .<label>(5)</label></formula><p>Thus, using a union bound for the size of C together with inequalities (4) and ( <ref type="formula" coords="12,452.52,321.37,4.56,11.97" target="#formula_41">5</ref>), we have,</p><formula xml:id="formula_42" coords="12,63.36,343.26,259.41,18.46">|C| = | ∪ (H 1 ,G 1 )∈C 1 C 2 (G 1 )| ≤ |C 1 |2 O( log log n log(n) ( n ⌊n/2⌋ )) = 2</formula><p>O log(n)2 n n + log log n log(n) ( n ⌊n/2⌋ ) = 2 O( log log n log(n) ( n ⌊n/2⌋ )) .</p><p>For each P -free set system F ⊆ 2 [n] there is a pair (H 1 , G 1 ) ∈ C 1 such that H 1 ⊆ F ⊆ H 1 ∪ G 1 . We have that F ∩ G 1 is a P -free subfamily of G 1 and thus, there is a pair ( 3 Proof of Theorem 1.4</p><formula xml:id="formula_43" coords="12,45.60,384.47,503.89,27.42">H 2 , G 2 ) ∈ C 2 (G 1 ) such that H 2 ⊆ F ∩ G 1 ⊆ H 2 ∪ G 2 . Setting H = H</formula><p>Each subfamily of the P -free set system k−2 i=0</p><p>[n] ⌊n/2⌋+i is also P -free, this implies that the number of P -free set systems in 2 [n] is at least 2 (1+o(1))(k−1)( n ⌊n/2⌋ ) . It only remains to show that the number of P -free set systems in 2 [n] is at most 2 (1+o(1))(k−1)( n ⌊n/2⌋ ) . By Lemma 2.4, as P is an induced subposet of a graded tree poset of height k, without loss of generality, we may assume P is graded.</p><p>For fixed ε &gt; 0 we will show that, for large enough n, the number of P -free set systems is less than 2 (k−1+ε)( n ⌊n/2⌋ ) . We apply Lemma 2.15, with ε/2 as ε and obtain our family of containers C. For each P -free set system we obtain a pair Ψ(F ) = (H, G) ∈ C such that H ⊆ F ⊆ H ∪ G and |G| ≤ (k − 1 + ε/2) n ⌊n/2⌋ . Since H ⊆ F ⊆ H ∪ G, the number of P -free set systems such that Ψ(F ) = (H, G) is at most the number of subsets of G. Thus, the number of P -free set systems F ⊆ 2 [n] is at most </p><formula xml:id="formula_44" coords="12,104.40,702.60,31.72,7.97">(H,G)∈C</formula></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="3,94.80,161.17,405.24,11.97"><head>Figure 1 :</head><label>1</label><figDesc>Figure 1: Hasse diagrams for the butterfly poset and the X poset, respectively.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="4,159.84,180.61,275.40,11.97"><head>Figure 2 : 2 -</head><label>22</label><figDesc>Figure 2: 2-blowup of a path poset with four vertices.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="7,430.08,618.24,11.10,7.97;7,441.72,620.17,3.24,11.96;7,45.60,652.09,51.96,11.97;7,97.68,650.76,11.10,7.97;7,109.32,651.83,217.56,12.23;7,131.04,676.91,83.13,12.23;7,214.20,681.96,6.38,7.97;7,221.16,676.91,228.38,12.23;7,449.52,675.24,11.10,7.97;7,460.92,677.17,3.24,11.96"><head></head><label></label><figDesc>−a , as c = a!α −a . As |S| ≤ |P |, we have by a union bound, P(M ∩ S = ∅| C R (M) is a bottleneck with witness S) ≤ c|P |n −a .</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="11,45.60,548.75,504.04,12.23;11,45.60,563.27,63.58,12.23;11,245.76,583.91,26.21,12.22;11,303.36,575.87,14.71,12.22;11,284.16,592.07,53.42,12.22;11,346.20,584.17,3.24,11.96"><head>Remark 2 . 14 .</head><label>214</label><figDesc>Since each choice of H with |H| ≤ |P ||S|/t corresponds to at most one pair (H, G) ∈ C, we obtain |C| ≤ |S| ≤ |P ||S|/t .</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4" coords="12,279.36,403.92,4.23,7.97;12,286.92,398.87,20.77,12.22;12,307.68,403.92,4.23,7.97;12,316.44,398.87,53.90,12.23;12,370.32,403.92,4.23,7.97;12,379.08,398.87,170.50,12.23;12,45.60,413.53,22.69,11.97;12,183.12,427.79,36.13,12.23;12,219.24,432.84,4.23,7.97;12,226.56,427.79,20.77,12.22;12,247.32,432.84,4.23,7.97;12,255.36,427.79,48.49,12.22;12,303.84,432.84,4.23,7.97;12,311.16,427.79,20.77,12.22;12,331.92,432.84,4.23,7.97;12,339.36,427.79,17.66,12.22;12,357.00,432.84,4.23,7.97;12,365.16,427.79,46.92,12.23;12,45.60,446.75,37.70,12.23;12,83.28,451.80,4.23,7.97;12,91.92,446.75,280.34,12.23;12,372.24,451.80,4.23,7.97;12,376.92,446.75,75.34,12.23;12,465.60,444.72,5.13,7.97;12,457.68,454.08,21.04,7.97;12,484.32,447.01,3.24,11.97"><head></head><label></label><figDesc>1 ∪ H 2 and G = G 2 we obtain the desired pair (H, G) with H = H 1 ∪ H 2 ⊆ F ⊆ H 1 ∪ H 2 ∪ G 2 = H ∪ G.Since G 2 is P (x, log(n))-free, by Corollary 2.12 we have|G| = |G 2 | ≤ (k − 1 + ε) n ⌊n/2⌋ .</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5" coords="12,138.60,685.09,5.85,11.97;12,144.48,683.16,10.27,7.97;12,158.52,684.83,32.13,12.22;12,190.68,682.20,45.46,7.97;12,243.36,680.10,4.60,5.98;12,236.16,686.82,18.91,5.98;12,255.12,680.17,4.54,11.97;12,263.52,684.83,18.45,12.23;12,282.00,680.17,56.86,11.97;12,339.96,679.98,26.08,5.98;12,345.24,686.82,15.40,5.98;12,367.20,680.17,13.66,11.97;12,388.08,680.10,4.60,5.98;12,380.88,686.82,18.91,5.98;12,399.84,680.17,4.54,11.97;12,408.24,685.09,18.21,11.97;12,426.48,682.20,37.06,7.97;12,470.76,680.10,4.60,5.98;12,463.56,686.82,18.91,5.98;12,482.52,680.17,4.54,11.97;12,487.56,685.09,3.24,11.96;12,45.60,716.65,154.20,11.97"><head>2</head><label></label><figDesc>|G| ≤ |C|2 (k−1+ε/2)( n ⌊n/2⌋ ) ≤ 2 (k−1+ε/2+O( log log n log n ))( n ⌊n/2⌋ ) &lt; 2 (k−1+ε)( n ⌊n/2⌋ ) ,for large enough n, as desired.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" coords="7,45.60,172.91,504.01,121.02"><head></head><label></label><figDesc>• • • F s is a bottleneck (with respect to F , P , and L) if there exists S ⊆ {X : X ⊆ F s , X ∈ F and |X| ≤ |F s | − a}, such that |S| ≤ |P |, and for every (k, a)-marked chain of L of the form (M, {F 1 , . . . , F k }), such that s &lt; k and F i F i+1 for all i ∈ [k − 1], we have S ∩ {F s+1 , . . . , F k } = ∅. If such an S exists, we say S is a witness of that the chain {F 1 , . . . , F s } is a bottleneck. If {F 1 , . . . , F s } is a bottleneck, then we let S({F 1 , . . . , F s }) be an arbitrary but fixed witness of {F 1 , . . . , F</figDesc><table /><note>s }. We say a (k, a)-marked chain (M, {F 1 , . . . , F k }) is bad if {F 1 , . . . , F s } is a bottleneck, otherwise it is good.</note></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>4 Acknowledgements We thank Douglas West for the insightful conversation regarding terminology. József Balogh was supported in part by NSF grants DMS-1764123 and RTG DMS-1937241, FRG DMS-2152488, and the Arnold O. Beckman Research Award (UIUC Campus Research Board RB 24012). Michael Wigal was supported in part by NSF RTG DMS-1937241.</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="13,69.72,216.49,242.50,11.97;13,312.24,221.28,4.23,7.97;13,316.92,216.49,232.80,11.97;13,69.72,230.89,104.76,11.97" xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Q 2 -free families in the Boolean lattice</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Axenovich</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Manske</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Martin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Order</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="177" to="191" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,69.72,255.37,479.86,11.97;13,69.72,269.77,273.84,11.97" xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Independent sets in hypergraphs</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Balogh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Morris</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Samotij</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the American Mathematical Society</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="669" to="709" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,69.72,294.25,480.11,11.97;13,69.72,308.65,176.04,11.97" xml:id="b2">
+	<analytic>
+		<title level="a" type="main">A random version of Sperner&apos;s theorem</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Balogh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Mycroft</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Treglown</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Combin. Theory Ser. A</title>
+		<imprint>
+			<biblScope unit="volume">128</biblScope>
+			<biblScope unit="page" from="104" to="110" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,69.72,333.01,479.99,11.97;13,69.72,347.53,155.52,11.97" xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Set families with a forbidden induced subposet</title>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Boehnlein</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Jiang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Combin. Probab. Comput</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="496" to="511" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,69.72,371.89,479.86,11.97;13,69.72,386.29,70.32,11.97" xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Set families with a forbidden subposet</title>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Bukh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Electron. J. Combin</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+	<note>Research Paper</note>
+</biblStruct>
+
+<biblStruct coords="13,69.72,410.77,479.99,11.97;13,69.72,425.17,63.84,11.97" xml:id="b5">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Ellis</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M.-R</forename><surname>Ivan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">I</forename><surname>Leader</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2401.16289</idno>
+		<title level="m">Turán densities for daisies and hypercubes</title>
+				<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,69.72,449.65,479.81,11.97;13,69.72,464.05,442.20,11.97" xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Supersaturation, counting, and randomness in forbidden subposet problems</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Gerbner</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">T</forename><surname>Nagy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Patkós</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Vizer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Electron. J. Combin</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">2021</biblScope>
+		</imprint>
+	</monogr>
+	<note>Paper No. 1.40, 20</note>
+</biblStruct>
+
+<biblStruct coords="13,69.72,488.41,442.92,11.97" xml:id="b7">
+	<monogr>
+		<title level="m" type="main">Extremal finite set theory</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Gerbner</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Patkós</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+			<publisher>Chapman and Hall/CRC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,69.72,512.89,480.11,11.97;13,69.72,527.29,187.20,11.97" xml:id="b8">
+	<analytic>
+		<title level="a" type="main">The structure of Sperner k-families</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Greene</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">J</forename><surname>Kleitman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Combinatorial Theory, Series A</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="41" to="68" />
+			<date type="published" when="1976">1976</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,69.72,551.77,479.98,11.97;13,69.72,566.17,155.04,11.97" xml:id="b9">
+	<monogr>
+		<title level="m" type="main">Progress on poset-free families of subsets</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">R</forename><surname>Griggs</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W.-T</forename><surname>Li</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<biblScope unit="page" from="317" to="338" />
+		</imprint>
+	</monogr>
+	<note>Recent trends in combinatorics</note>
+</biblStruct>
+
+<biblStruct coords="13,69.72,590.53,479.99,11.97;13,69.72,605.05,161.28,11.97" xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Diamond-free families</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">R</forename><surname>Griggs</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W.-T</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Lu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Combinatorial Theory, Series A</title>
+		<imprint>
+			<biblScope unit="volume">119</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="310" to="322" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,69.72,629.41,479.86,11.97;13,69.72,643.93,325.56,11.97" xml:id="b11">
+	<analytic>
+		<title level="a" type="main">An improvement of the general bound on the largest family of subsets avoiding a subposet</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Grósz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Methuku</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Tompkins</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Order</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="page" from="113" to="125" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="13,69.72,668.29,479.88,11.97;13,69.72,682.69,480.00,11.97;13,69.72,697.21,145.20,11.97" xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Extremal problems with excluded subgraphs in the n-cube</title>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">O</forename><surname>Katona</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">G</forename><surname>Tarján</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Graph Theory: Proceedings of a Conference</title>
+				<meeting><address><addrLine>Poland</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="1981">February 10-13, 1981. 2006</date>
+			<biblScope unit="page" from="84" to="93" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,69.72,80.65,479.88,11.97;14,69.72,95.05,338.52,11.97" xml:id="b13">
+	<analytic>
+		<title level="a" type="main">On diamond-free subposets of the Boolean lattice</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Kramer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">R</forename><surname>Martin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Young</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Combinatorial Theory, Series A</title>
+		<imprint>
+			<biblScope unit="volume">120</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="545" to="560" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,69.72,119.53,479.76,11.97;14,69.72,133.93,273.00,11.97" xml:id="b14">
+	<analytic>
+		<title level="a" type="main">On some extremal and probabilistic questions for tree posets</title>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Patkós</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Treglown</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Electron. J. Combin</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note>Paper No. 1.19, 23</note>
+</biblStruct>
+
+<biblStruct coords="14,69.72,158.29,480.09,11.97;14,69.72,172.81,51.48,11.97" xml:id="b15">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Saxton</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Thomason</surname></persName>
+		</author>
+		<title level="m">Hypergraph containers. Inventiones Mathematicae</title>
+				<imprint>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="volume">201</biblScope>
+			<biblScope unit="page" from="925" to="992" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,69.72,197.17,480.00,11.97;14,69.72,211.69,104.76,11.97" xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Ein satz über untermengen einer endlichen menge</title>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Sperner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Mathematische Zeitschrift</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="544" to="548" />
+			<date type="published" when="1928">1928</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,69.72,236.05,391.44,11.97" xml:id="b17">
+	<monogr>
+		<title level="m" type="main">Combinatorial mathematics</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">B</forename><surname>West</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+			<publisher>Cambridge University Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

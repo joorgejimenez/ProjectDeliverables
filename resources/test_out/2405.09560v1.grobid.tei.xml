@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Using In-Service Train Vibration for Detecting Railway Maintenance Needs</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2024-05-03">3 May 2024</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName coords="1,255.29,147.01,84.65,10.37"><forename type="first">Irene</forename><surname>Alisjahbana</surname></persName>
+							<email>alisjahbana@stanford.edu</email>
+							<affiliation key="aff0">
+								<orgName type="institution">Stanford University</orgName>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Using In-Service Train Vibration for Detecting Railway Maintenance Needs</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2024-05-03">3 May 2024</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">B12B9A0946FE5EF7664E1D32EAA795F4</idno>
+					<idno type="arXiv">arXiv:2405.09560v1[eess.SP]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2024-05-19T14:17+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>The need for the maintenance of railway track systems have been increasing. Traditional methods that are currently being used are either inaccurate, labor and time intensive, or does not enable continuous monitoring of the system. As a result, in-service train vibrations have been shown to be a cheaper alternative for monitoring of railway track systems. In this paper, a method is proposed to detect different maintenance needs of railway track systems using a single pass of train direction. The DR-Train dataset that is publicly available was used. Results show that by using a simple classifier such as the k-nearest neighbor (k-NN) algorithm, the signal energy features of the acceleration data can achieve 76% accuracy on two types of maintenance needs, tamping and surfacing. The results show that the transverse direction is able to more accurately detect maintenance needs, and triaxial accelerometer can give further information on the maintenance needs. Furthermore, this paper demonstrates the use of multi-label classification to detect multiple types of maintenance needs simultaneously. The results show multi-label classification performs only slightly worse than the simple binary classification (72% accuracy) and that this can be a simple method that can easily be deployed in areas that have a history of many maintenance issues.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>As most of the railway infrastructure in the US is aging and nearing the end of its useful life, the need to monitor the health of the railway system is increasing. In fact, the spending on operation and maintenance have recently surpassed the spending on the infrastructure itself <ref type="bibr" coords="1,241.26,620.83,10.58,8.64" target="#b0">[1]</ref>. Today, most railway infrastructure monitoring system still rely on two methods: manual visual assessment or using a special track geometry car. However, visual inspection is known to be inaccurate in addition to being labor and time intensive. Using the track geometry car on the other hand, though very accurate, usually requires that parts of the railway be closed for maintenance.</p><p>As a result, newer and more cost efficient methods to monitor railway infrastructure health have been developed. Some examples include sensor-based monitoring systems such as optical fiber <ref type="bibr" coords="1,389.17,253.11,16.60,8.64" target="#b9">[10]</ref> and strain gauges and image-based systems such as using SAR images <ref type="bibr" coords="1,456.85,265.07,11.62,8.64" target="#b1">[2]</ref> or employing Unmanned Aerial Vehicles (UAV) <ref type="bibr" coords="1,436.27,277.02,10.58,8.64" target="#b2">[3]</ref>. Nevertheless, there are still many limitations to the aforementioned methods. For example, extremely large amount of optical fibers must be employed on the railway track to accurately monitor the whole railway infrastructure system. Image-based systems, though provides information on an interval basis, cannot provide continuous information on the condition of the railway infrastructure.</p><p>Researchers have found that the health of the railway infrastructure can be indirectly monitored through the dynamic response of a train that is in service itself. In addition to being cheaper and more reliable than visual inspection, the use of sensors that are placed on operational trains enable the continuous monitoring of the railway health. Furthermore, the availability of these sensors on the train have now provided researchers with a lot of data, thus enabling more data-driven approaches. For example, the recently released DR-Train dataset <ref type="bibr" coords="1,407.60,480.61,11.62,8.64" target="#b6">[7]</ref> provides the dynamic response of operational trains through vibration data and includes other corresponding data including GPS position and environmental factors. Nonetheless, past work using train vibration for railway track monitoring have mostly focused on detecting changes of the railway track and not the underlying reasons causing them.</p><p>To that end, this paper aims to study how the different maintenance needs of railway tracks can be detected using a single pass of train vibration. In particular, this paper addresses the following questions: (1) which features and acceleration direction that is best at capturing the characteristics of the different maintenance needs and (2) how to detect multiple maintenance needs simultaneously.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Related Work</head><p>In 2017, Lederman et al. <ref type="bibr" coords="1,425.87,680.60,11.62,8.64" target="#b3">[4]</ref> used uniaxial acceleration data obtained from sensors on board operational trains to detect 2 different changes on the railway track, particularly from track replacement and tamping, two common maintenance procedures of railway track systems. In their study, they found that the two main challenges of using train acceleration data are that the speed of the train varies from pass to pass, and that the position of the train is not known precisely as a result of the uncertainties of the GPS system. As a result, Lederman et al. aligned the raw acceleration spatially to reduce the uncertainty caused by the variability in train speed. Using this spatially aligned acceleration data, they observed that the signal-energy best represents track change which is visible after multiple passes.</p><p>In a subsequent study, Lederman et al. <ref type="bibr" coords="2,226.86,207.69,11.62,8.64" target="#b5">[6]</ref> proposed a novel technique to reduce the errors caused by the uncertainty of the GPS position, a major challenge that was identified in their earlier study. Here, Lederman et al. used the roughness and bumps that are found on the track profile to align the measurements. The inverse problem was solved by modelling the train as a simple damped oscillator and constraining the problem to have a limited number of bumps.</p><p>Lederman et al. <ref type="bibr" coords="2,130.49,304.04,11.62,8.64" target="#b4">[5]</ref> also presented a technique to combine features obtained through multiple sensors in order to achieve better detection accuracy. They used a two-step approach in which the data is first aligned based on the GPS position before using a novel adaptive Kalman filter that weighs the data based on its reliability to fuse the data together. By using this method, their results indicated that fusing data from multiple trains enable the change to be detected earlier.</p><p>Liu et al. <ref type="bibr" coords="2,104.12,412.35,11.62,8.64" target="#b7">[8]</ref> proposed an alternative method to reduce the errors caused by the uncertainty of the GPS position. Given the ground truth track coordinates obtained from the authorities, the raw data were aligned through the iterative closest point (ICP) algorithm to reduce the error of of the GPS positions. Using a variational autoencoder (VAE), they used the aligned data to detect anomalies in the signal energy of slopes of the track geometry.</p><p>Even so, the studies done by Lederman et al. <ref type="bibr" coords="2,239.36,508.70,10.79,8.64" target="#b3">[4,</ref><ref type="bibr" coords="2,252.16,508.70,7.47,8.64" target="#b5">6,</ref><ref type="bibr" coords="2,261.66,508.70,8.30,8.64" target="#b4">5]</ref> and Liu et al. <ref type="bibr" coords="2,88.00,520.65,11.62,8.64" target="#b7">[8]</ref> both focused on detecting the change itself and not the underlying reasons causing it, particularly whether the changes in the signal correspond to a type of damage that occurred or some maintenance need that needs to occur. In addition, only a single type of maintenance work or anomaly can be detected at a single time.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Dataset</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.">Dataset Description</head><p>The DR-Train dataset is a public dataset first released by Liu et al. <ref type="bibr" coords="2,89.99,656.69,10.58,8.64" target="#b6">[7]</ref>. The dataset contains measurements obtained from 2 Light Rail Vehicles in Pittsburgh, Pennsylvania. In addition to vibration data collected by accelerometers, the dataset also includes the GPS positions, corresponding environmental conditions (temperature and weather) as well as ground truth maintenance records provided by the Port Authority of Allegheny County (PAAC).</p><p>As explained in <ref type="bibr" coords="2,385.91,99.43,10.58,8.64" target="#b6">[7]</ref>, the complete data management system consists of the sensing module, data-acquisition module and data-storage module and data-processing module.</p><p>The sensing module that was used to obtain the measurements are as follows:</p><p>• LRV 4306: two uni-axial accelerometers inside the cabin of the train (VibraMetrics 5102) and a tri-axial accelerometer (PCB 354C03) on the central wheel truck</p><p>• LRV 4313: two uni-axial accelerometers (VibraMetrics 5102) and two tri-axial accelerometers (PCB 354C03)</p><p>• Both LRV's were instrumented with a BU 353 GPS antenna Detailed placement of the sensors on the two LRV's can be seen in <ref type="bibr" coords="2,351.19,311.31,10.58,8.64" target="#b6">[7]</ref>.</p><p>For the data-acquisition module, the National Instruments LabView was used. The system samples acceleration signals at 1.6kHz whereas the GPS position was sampled at 1 Hz. The data was downloaded manually to an external hard drive every two weeks. A sample of the raw acceleration data obtained from sensor 1 of LRV 4313 can be seen in Figure <ref type="figure" coords="2,347.61,395.05,3.74,8.64" target="#fig_0">1</ref>. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.">Location of Interest</head><p>One major issue encountered in this study is related to the ground truth maintenance logs. As explained in Section 3.1, the raw acceleration data also contains the corresponding GPS coordinates. The ground truth data however, only contains the descriptive locations and not the exact GPS coordinates (for example, Panhandle Bridge 1A). Furthermore, the location of interest had to be subjected to multiple types of maintenance work. However, the maintenance record shows that only a few locations have multiple type of maintenance work performed.</p><p>As a result, the locations provided in the maintenance record had to be manually matched with Google Maps.</p><p>Taking into account the number of maintenance types performed, the location of interest selected for this project is a location with the description: Denise crossover and Glenbury crossover. This location has a recorded maintenance work of tamping and surfacing. The location of interest with the corresponding Google Maps for reference can be seen in Figure <ref type="figure" coords="3,110.59,147.21,3.74,8.64" target="#fig_1">2</ref>. A 250m track portion near that area was used to extract the sample data. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3.">Maintenance Record Ground Truth</head><p>Figure <ref type="figure" coords="3,92.42,401.29,4.98,8.64" target="#fig_2">3</ref> shows the dates of the specific maintenance work that was performed on both the outbound and inbound track as specified by the maintenance records.</p><p>Surfacing refers to the maintenance of the tracks in order to have the correct surface elevation, such as raising or lowering the track structure. On the other hand, tamping refers to the work that is done to pack the track ballast underneath the track itself.</p><p>Train passes that occurred within a two-month range before the maintenance work occurred were chosen for the data samples. For each sensor, a total of 17 passes were obtained for tamping, 14 passes were obtained for surfacing, 29 passes for both tamping and surfacing, and 27 passes for no maintenance work. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1.">Pre-Processing</head><p>For the data pre-processing, the passes are first aligned with the ground truth tack coordinates using the ICP algorithm according to the method proposed by Liu et al. <ref type="bibr" coords="3,531.01,136.81,10.58,8.64" target="#b7">[8]</ref>. Passes that have incorrect GPS positions are removed. The results of the GPS alignment can be seen in Figure <ref type="figure" coords="3,513.08,160.72,3.74,8.64" target="#fig_3">4</ref>.</p><p>The acceleration data are then aligned spatially to reduce the uncertainties caused by the variability in train speed, similar to what was done in Lederman et al. <ref type="bibr" coords="3,486.45,196.86,10.58,8.64" target="#b3">[4]</ref>.</p><p>For all experiments, the dataset is split into training and validation sets with 80% to 20% ratio. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2.">Feature Extraction</head><p>For the individual sensor directions, the signal-energy that was first proposed in <ref type="bibr" coords="3,419.52,442.41,11.62,8.64" target="#b3">[4]</ref> is used as the features. It has been shown that this feature is more robust to position uncertainty for different types of maintenance works. The feature can be written as follows:</p><formula xml:id="formula_0" coords="3,403.96,501.27,45.05,10.62">f n = ü2 n | xϵ</formula><p>where ü2 n is the raw acceleration data and x ϵ indicates the acceleration of the data given the position of the train (spatially interpolated as opposed to temporally interpolated).</p><p>Following the methods done by Lederman et al, the signal is first averaged using a 25m window of track. Then, only the 50 most discriminative indices are selected. This was done by taking the indices with the greatest difference with the mean signal.</p><p>Given the limited number of data samples in the training and test sets, principal component analysis (PCA) is then performed in order to reduce the dimensionality of the features. The explained variance for the number of components included can be seen in Figure <ref type="figure" coords="3,435.27,668.65,3.74,8.64" target="#fig_4">5</ref>. It can be seen that using only 2 components, over 95% of the data sample variance can be explained, and therefore only the first 2 components are used as features.</p><p>For the tri-axial accelerometer data, two types of features are defined: concatenation and major voting. In concatenation, the 50 most discriminative indices of each direction (x-, y-, and z-axis) are first concatenated in order to obtain samples with 150 features each. PCA is then performed on the concatenated features to obtain the first 2 components. In major voting, PCA is performed for each individual sensor direction (x-, y-, and z-axis). The final classification is obtained through the major voting result of each individual sensor. k-NN: k-NN is a simple classification model in which the data are group according to the notion of distance. A data point is classified into a specific class by taking the "k" nearest neighbours and taking a majority vote based on the class of its neighboring data points. The k-NN model works well for smaller data sets and can produce decision boundaries that are non-linear and complex. It is also a nonparametric model and does not make any assumptions of the underlying sample distribution. Given the limited number of data samples, k-NN is an ideal starting point for the classification of maintenance needs. k-NN does not perform as well in higher dimensions, but given that the features of the acceleration data has been reduced to just two components, k-NN is still applicable.</p><p>Logistic Regression: Logistic regression uses a logistic function to model a binary dependent variable. Unlike k-NN, the logistic regression is only able to produce linear boundary decisions. In this study, the L2 norm is used as the penalization. Furthermore, the value C, or the regularization strength, is used as the hyperparameter.</p><p>SVM: The SVM is another supervised classification algorithm that uses a subset of training points in the decision function. The advantage of SVM is that it is effective even in high dimensional cases, and more robust to outliers. Similar to logistic regression, the regularization strength C is a hyperparameter. In this study, the radial basis function (RBF) kernel is used to produce more non-linear boundaries. The kernel coefficient γ is another hyperparameter that needs to be tuned through cross-validation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3.2">Multi-Label Classification</head><p>In practice, railway tracks can be subjected to multiple maintenance needs simultaneously. As a result, multi-label classification can be implemented to capture this scenario. Unlike regular classification in which each data point has one corresponding outcome label, in multi-label classification, a single data point can have multiple outcome labels (in this case tamping and surfacing). As a result, combinations of the maintenance need can be used to detect no maintenance, tamping, surfacing, or both (Figure <ref type="figure" coords="4,506.60,347.24,3.60,8.64" target="#fig_5">6</ref>). Adaptive algorithm on the other hand does not transfrom the problem, but instead derives regular classification meth-ods for multi-label classification. Using the base model of k-NN, the ML-kNN <ref type="bibr" coords="5,134.05,87.43,15.27,8.64" target="#b10">[11]</ref>, first proposed in 2007, is a classifier that is used to predict multi-label data. The ML-kNN model was implemented using the scikit-multilearn package in Python <ref type="bibr" coords="5,91.08,123.30,10.58,8.64" target="#b8">[9]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Experiments</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1.">Evaluation Metrics</head><p>The evaluation metrics used to reflect the overall performance of the binary classification model is accuracy, which is the ratio of number of correct predictions to the total number of input samples. It can also be written in the following equation:</p><formula xml:id="formula_1" coords="5,89.57,250.69,192.92,22.31">Accuracy = T P + T N T P + T N + F P + F N (<label>1</label></formula><formula xml:id="formula_2" coords="5,282.49,257.75,3.87,8.64">)</formula><p>where TP = True Positives, TN = True Negatives, FP = False Positives, and FN = False Negatives.</p><p>On the other hand, the error metric for the multi-label classification is Exact Matio Ratio (subset accuracy) and Hamming loss. The exact match ratio is the most strict metric and calculates the percentage of samples that have all their labels classified correctly. It ignores partially correct matches. The exact match ratio can be written as follows:</p><formula xml:id="formula_3" coords="5,85.23,380.57,201.13,30.32">ExactM atchRatio = 1 n n i=1 I(Y i = Z i )<label>(2)</label></formula><p>where Y i is the target label and Z i is the predicted label. The Hamming loss measures the fractions of labels that are incorrectly predicted and can be written as follows:</p><formula xml:id="formula_4" coords="5,61.32,470.04,225.04,31.18">HammingLoss = 1 |N |.|L| |N | i=1 |L| j=1 xor(y i,j , z i,j ) (3)</formula><p>where y i,j is the target and z i,j is the prediction. The metrics are calculated for both the training set and testing set.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2.">Binary Classification</head><p>k-NN classifies a data point based on its closest neighbors, therefore, the parameter "k" will highly determine the performance of the model. Thus, the number of neighbour was tuned through using cross-validation. This is done by dividing the training set into k-folds, training it on (k-1) folds and holding 1 fold for the validation set. The accuracy is calculated for all k folds, and the mean is taken to obtain the misclassification error for the chosen hyperparameter. A sample result for the cross validation using 3-folds can be seen in Figure <ref type="figure" coords="5,109.86,680.60,3.74,8.64" target="#fig_6">7</ref>. The number of folds for the cross validation was chosen by taking into account the total number of samples in the training set. The results for the different accelerometer directions can be seen in Table <ref type="table" coords="5,380.17,283.46,3.74,8.64">1</ref>. It can be seen that the transverse direction, the direction pointing perpendicular to the railway actually performs slightly better than the vertical directionthe direction that has always been used in past studies. This however, makes sense as tamping and surfacing are maintenance works that are performed to make a smoother ride. The more unnecessary movements occurring in any other direction indicates that maintenance is needed.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Sensors</head><p>Optimal k Train Acc. Test Acc. z-axis (vertical) 8 0.76 0.73 x-axis (longitudinal) 7 0.84 0.70 y-axis (transverse) 7 0.85 0.74</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Table 1: Accelerometer direction binary classification results</head><p>Table <ref type="table" coords="5,346.93,498.89,4.98,8.64" target="#tab_0">2</ref> shows the classification results for the different accelerometer types, particularly uniaxial and triaxial accelerometers. As described in section 4.2, two methods were implemented for the triaxial accelerometer: concatenation and major voting. It can be seen that either method performs better than the uniaxial accelerometer (only vertical direction), which further proves that the directions other than the vertical can provide more information to the maintenance needs of the railway track.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Sensors</head><p>Optimal  Figure <ref type="figure" coords="6,93.39,404.77,4.98,8.64">8</ref> shows the decision boundary of the k-NN model. It can be seen that the decision boundary is quite linear, with the "no maintenance" sample located on the left side of the plots. As a result, other classification models such as logistic regression and SVM with a radial basis function (RBF) kernel were implemented to improve the accuracy of the models. Similarly to the k-NN model, cross validation with 5 folds was performed to obtain the optimal parameters.</p><p>For logistic regression model, the L2 penalty was used and the hyperparameter that had to be tuned is C, or the regularization strength. Cross validation results show that the optimal C value is 0.62. On the other hand, for the SVM model, the hyperparameters to be tuned is the C and the γ. Cross validation results show that the optimal C value is 10, with a γ value of 0.01.</p><p>Comparison results for the three methods can be seen in Table <ref type="table" coords="6,74.35,608.58,3.74,8.64" target="#tab_1">3</ref>. All the method performs just as well in the test set, though the k-NN classifier had a higher train accuracy. This can be seen through the decision boundaries for the logistic regression (Figure <ref type="figure" coords="6,124.56,644.45,8.85,8.64" target="#fig_0">10</ref>) and SVM (Figure <ref type="figure" coords="6,211.81,644.45,8.85,8.64" target="#fig_0">11</ref>) that are similar to that of the k-NN model (Figure <ref type="figure" coords="6,194.19,656.41,3.74,8.64">8</ref>. The higher training accuracy of the k-NN classifier can just be caused by some overfitting to the training set.</p><p>Given the uncertainty of the location of the maintenance work itself, a sensitivity analysis on the window size or   <ref type="table" coords="6,399.46,545.02,4.98,8.64">4</ref> it can be seen that by increasing the length of track, the accuracy is reduced, and is most likely due to more noise being included. When thinking about how the method would be implemented in real life, the length of track to take into account will greatly determine the detection accuracy. .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.3.">Multi-Label Classification</head><p>Results of the multi-label classification with the Exact Match Ratio error metric can be seen in Table <ref type="table" coords="6,501.44,668.65,3.74,8.64">5</ref>, whereas results using Hamming loss can be seen in Table <ref type="table" coords="6,503.60,680.60,3.74,8.64" target="#tab_2">6</ref>. Though the Exact Matio Ratio is a very strict error metric that does not take into account partial correctness, it can be seen that </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.">Limitations and Future Improvements</head><p>In reality, the methods that have been described in this paper will be easily applicable and trainable to new areas. However, the methods will not be able to perform real-time classification on the track signals. This is partly because of the underlying machine learning method used (kNN), which is a lazy classifier, but also because the features that was used in the model. Though the features can be easily extracted from the raw acceleration and GPS signals, the fea-tures must first be aligned based on the GPS coordinates as well as the speed of the train. This prevents the ability of real-time monitoring.</p><p>In line with real-time monitoring, the methods described would be unable to accurately classify the signals during the transition periods. In other words, there is a grey time period between when the railway track does not need maintenance and when the track does need maintenance. This is because a specific time range (around 2 months) prior to the maintenance work was labeled as "need maintenance" and anything before that was labeled as "no maintenance". However, in reality, the threshold would be more gradual, and no clear distinction would be made. A deeper study on the effects of the time window on the accuracy of the models can be performed. Perhaps one would use passes from multiple days instead of a single day to see whether the model would consistently predict "need maintenance". Thus, the confidence levels of the classification would increase if the track portion is consistently classified as "need maintenance".</p><p>Furthermore, only one location, the Denise Crossover -Glenbury Crossover, was used as a case study in this study. Therefore, the ability for the model to work well on other locations is still unknown. The model will most likely have to be retrained to be implemented in other locations. Finally, only two types of maintenance work, tamping and surfacing was taken into account in this study. In reality, there are many other types of maintenance work that a railway track can be subjected to. Including more locations and types of maintenance needs can be an extension to this study.</p><p>As described in Section 2, one of the main challenges of this study is the unavailability of GPS coordinates corresponding to the maintenance work. Obtaining the corresponding GPS coordinates associated with each location of the maintenance work would be extremely beneficial to generalizing the models. This might mean some additional agreement with the PAAC authorities as exact track damage locations might not be available to the public. However, if this information were available, more location and maintenance need types can be included into the training and testing dataset.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7.">Conclusion</head><p>In this study, we demonstrated how detecting maintenance needs, particularly tamping and surfacing, of railway tracks can be performed using a single pass of in-service train vibration. The results show that the transverse direction was able to provide more information on the maintenance needs of railway tracks as compared to the vertical direction, the direction that has mostly been used in past studies. This was further supported by the highest accuracy obtained by the triaxial accelerometer with an accuracy of 76% using a simple k-NN classifier. The results also show that increasing the length of track taken into consideration will drastically reduce the classification accuracy.</p><p>Finally, this study showed that multiple maintenance needs can be detected simultaneously through multi-label classification while only reducing the overall accuracy by 4%.</p><p>Though this study only demonstrated the method on a single location and only two maintenance needs, it is a step towards an early warning detection system for detecting maintenance needs of railway track systems. The methods presented in this study is easily trainable and applicable to any location that have a history of many maintenance issues.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="2,308.86,509.54,236.25,8.64;2,308.86,521.50,41.54,8.64;2,318.99,415.73,216.00,72.00"><head>Figure 1 :</head><label>1</label><figDesc>Figure 1: Sample raw acceleration data from sensor 1 of LRV 4313</figDesc><graphic coords="2,318.99,415.73,216.00,72.00" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="3,50.11,337.85,236.25,8.64;3,50.11,349.81,98.79,8.64;3,60.24,179.86,216.00,136.19"><head>Figure 2 :</head><label>2</label><figDesc>Figure 2: Portion of track chosen for samples as compared to Google Maps location</figDesc><graphic coords="3,60.24,179.86,216.00,136.19" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="3,50.11,676.97,236.25,8.64;3,50.11,688.93,73.21,8.64;3,60.24,575.48,216.00,79.69"><head>Figure 3 :</head><label>3</label><figDesc>Figure 3: Selection of passes with respect to ground truth maintenance work</figDesc><graphic coords="3,60.24,575.48,216.00,79.69" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="3,308.86,351.88,236.25,8.64;3,308.86,363.84,236.25,8.64;3,308.86,375.79,129.38,8.64;3,318.99,240.19,216.00,89.88"><head>Figure 4 :</head><label>4</label><figDesc>Figure 4: The passes before alignment and after alignment using the iterative closest point (ICP) algorithm. Passes that have bad GPS data are removed.</figDesc><graphic coords="3,318.99,240.19,216.00,89.88" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4" coords="4,50.11,353.10,236.25,8.64;4,50.11,365.05,173.57,8.64;4,78.24,202.64,180.01,128.65"><head>Figure 5 :</head><label>5</label><figDesc>Figure 5: PCA results of the explained variation vs number of components for the signal energy feature</figDesc><graphic coords="4,78.24,202.64,180.01,128.65" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5" coords="4,308.86,465.30,236.25,8.64;4,308.86,477.26,112.35,8.64;4,354.99,366.51,144.00,76.99"><head>Figure 6 :</head><label>6</label><figDesc>Figure 6: Data samples and corresponding outcome labels for multi-label classification</figDesc><graphic coords="4,354.99,366.51,144.00,76.99" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6" coords="5,308.86,238.01,236.25,8.64;5,318.99,72.00,216.00,144.20"><head>Figure 7 :</head><label>7</label><figDesc>Figure 7: Cross validation results to determine number of k</figDesc><graphic coords="5,318.99,72.00,216.00,144.20" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7" coords="6,50.11,196.02,236.25,8.64;6,50.11,207.98,192.01,8.64;6,96.24,230.58,144.01,106.37"><head>Figure 8 :Figure 9 :</head><label>89</label><figDesc>Figure 8: Training and test set with the decision boundaries for the triaxial accelerometer using k-NN model</figDesc><graphic coords="6,96.24,230.58,144.01,106.37" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8" coords="6,308.86,304.05,236.25,8.64;6,308.86,316.01,236.25,8.64;6,308.86,327.96,16.61,8.64;6,318.99,350.82,216.01,102.22"><head>Figure 10 :Figure 11 :</head><label>1011</label><figDesc>Figure 10: Training and test set with the decision boundaries for the triaxial accelerometer using Logistic Regression</figDesc><graphic coords="6,318.99,350.82,216.01,102.22" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" coords="5,314.75,618.43,228.95,79.17"><head>Table 2 :</head><label>2</label><figDesc>Accelerometer type binary classification results</figDesc><table coords="5,314.84,618.43,228.87,46.82"><row><cell></cell><cell></cell><cell cols="2">k Train Acc. Test Acc.</cell></row><row><cell>Uniaxial</cell><cell>3</cell><cell>0.84</cell><cell>0.71</cell></row><row><cell>Triaxial (Concat)</cell><cell>5</cell><cell>0.80</cell><cell>0.76</cell></row><row><cell>Triaxial (Voting)</cell><cell>varies</cell><cell>0.82</cell><cell>0.76</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1" coords="6,308.86,74.28,236.25,91.13"><head>Table 3 :</head><label>3</label><figDesc>Binary classification results using different classification models</figDesc><table coords="6,335.53,74.28,182.91,46.89"><row><cell>Model</cell><cell cols="2">Train Acc. Test Acc.</cell></row><row><cell>k-NN</cell><cell>0.80</cell><cell>0.76</cell></row><row><cell>Logistic Regression</cell><cell>0.72</cell><cell>0.76</cell></row><row><cell>SVM RBF Kernel</cell><cell>0.74</cell><cell>0.76</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2" coords="7,50.11,74.28,236.25,500.44"><head>Table 6 :</head><label>6</label><figDesc>Multi-label classification results using triaxial accelerometer and Hamming Loss error metric</figDesc><table coords="7,50.11,74.28,236.25,456.21"><row><cell cols="3">Train Pass Length Train Acc. Test Acc.</cell></row><row><cell>250m</cell><cell>0.80</cell><cell>0.76</cell></row><row><cell>500m</cell><cell>0.71</cell><cell>0.72</cell></row><row><cell>1000m</cell><cell>0.72</cell><cell>0.72</cell></row><row><cell>1500m</cell><cell>0.76</cell><cell>0.50</cell></row><row><cell cols="3">Table 4: Binary classification results using varying window</cell></row><row><cell cols="2">sizes (length of track portion)</cell><cell></cell></row><row><cell cols="3">the best performing model was able to achieve a 72% ac-</cell></row><row><cell cols="3">curacy, only 4% lower than ordinary binary classification.</cell></row><row><cell cols="3">This shows that the signal-energy feature of the train vi-</cell></row><row><cell cols="3">bration is able to be used for multiple maintenance needs</cell></row><row><cell>detection.</cell><cell></cell><cell></cell></row><row><cell cols="3">Chain classifier performs slightly better overall, as it</cell></row><row><cell cols="3">took into consideration label correlation. This would mean</cell></row><row><cell cols="3">that a higher probability that the signal required tamping,</cell></row><row><cell cols="3">means it also needed surfacing and vice versa. Label Pow-</cell></row><row><cell cols="3">erset and ML-kNN did not perform as well probably due to</cell></row><row><cell cols="2">the limited number of samples.</cell><cell></cell></row><row><cell>Method</cell><cell cols="2">Train Acc. Test Acc.</cell></row><row><cell>Binary Relevance</cell><cell>0.67</cell><cell>0.72</cell></row><row><cell>Chain Classifier</cell><cell>0.70</cell><cell>0.72</cell></row><row><cell>Label Powerset</cell><cell>0.70</cell><cell>0.56</cell></row><row><cell>ML-kNN</cell><cell>0.62</cell><cell>0.62</cell></row><row><cell cols="3">Table 5: Multi-label classification results using triaxial ac-</cell></row><row><cell cols="3">celerometer and Exact Match Ratio error metric</cell></row><row><cell>Method</cell><cell cols="2">Train Loss Test Loss</cell></row><row><cell>Binary Relevance</cell><cell>0.22</cell><cell>0.22</cell></row><row><cell>Chain Classifier</cell><cell>0.21</cell><cell>0.22</cell></row><row><cell>Label Powerset</cell><cell>0.22</cell><cell>0.31</cell></row><row><cell>ML-kNN</cell><cell>0.28</cell><cell>0.31</cell></row></table></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="8.">Acknowledgments</head><p>I would like to acknowledge the Stanford University teaching team of CEE 286 (Structural Health Monitoring) particularly Professor Haeyoung Noh and Mostafa Mirshekari for the constant feedback on the project.</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="8,70.04,327.24,109.80,7.77" xml:id="b0">
+	<monogr>
+		<title level="m" type="main">The state of u.s. infrastructure</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,70.04,338.96,216.32,7.77;8,70.03,349.91,216.33,7.77;8,70.03,360.71,216.33,7.93;8,70.03,371.67,194.26,7.93" xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Nationwide Railway Monitoring Using Satellite SAR Interferometry</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">P</forename><surname>Dollevoet</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">F</forename><surname>Hanssen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="596" to="604" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,70.04,383.55,216.32,7.77;8,70.03,394.35,216.33,7.93;8,70.03,405.31,216.33,7.73;8,70.03,416.27,216.33,7.73;8,70.03,427.23,216.33,7.93;8,70.03,438.35,29.14,7.77" xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Railway infrastructure monitoring by drones</title>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Flammini</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Pragliola</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Smarra</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Electrical Systems for Aircraft, Railway, Ship Propulsion and Road Vehicles and International Transportation Electrification Conference</title>
+				<imprint>
+			<date type="published" when="2016">2016. 2017</date>
+			<biblScope unit="page" from="1" to="6" />
+		</imprint>
+	</monogr>
+	<note>ESARS-ITEC 2016</note>
+</biblStruct>
+
+<biblStruct coords="8,70.04,450.07,216.33,7.77;8,70.03,461.02,216.33,7.77;8,70.03,471.82,216.33,7.93;8,70.03,482.78,84.93,7.93" xml:id="b3">
+	<monogr>
+		<title level="m" type="main">Track-monitoring from the dynamic response of an operational train. Mechanical Systems and Signal Processing</title>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Lederman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Garrett</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><forename type="middle">Y</forename><surname>Kovačević</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Noh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Bielak</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="volume">87</biblScope>
+			<biblScope unit="page" from="1" to="16" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,70.04,494.66,216.33,7.77;8,70.03,505.62,216.33,7.77;8,70.03,516.42,216.33,7.93;8,70.03,527.38,152.27,7.93" xml:id="b4">
+	<analytic>
+		<title level="a" type="main">A data fusion approach for track monitoring from multiple in-service trains</title>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Lederman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">H</forename><surname>Garrett</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Kovačević</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><forename type="middle">Y</forename><surname>Noh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Bielak</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Mechanical Systems and Signal Processing</title>
+				<imprint>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="volume">95</biblScope>
+			<biblScope unit="page" from="363" to="379" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,70.04,539.26,216.32,7.77;8,70.03,550.22,216.33,7.77;8,70.03,561.01,216.33,7.93;8,70.03,571.97,152.27,7.93" xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Track monitoring from the dynamic response of a passing train: a sparse approach</title>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Lederman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">H</forename><surname>Garrett</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Kovačević</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><forename type="middle">Y</forename><surname>Noh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Bielak</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Mechanical Systems and Signal Processing</title>
+		<imprint>
+			<biblScope unit="volume">90</biblScope>
+			<biblScope unit="page" from="141" to="153" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,70.04,583.85,216.32,7.77;8,70.03,594.81,216.33,7.77;8,70.03,605.77,216.33,7.77;8,70.03,616.57,216.33,7.93;8,70.03,627.69,60.02,7.77" xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Dynamic responses, gps positions and environmental conditions of two light rail vehicles in pittsburgh</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Lederman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">B</forename><surname>Kramer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><forename type="middle">Y</forename><surname>Noh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Bielak</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">H</forename><surname>Garrett</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Kovačević</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Bergés</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific data</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="11" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,70.04,639.41,216.33,7.77;8,70.03,650.37,216.33,7.77;8,70.03,661.33,216.33,7.77;8,70.03,672.12,216.33,7.93;8,70.03,683.08,216.33,7.73;8,70.03,694.04,216.33,7.93;8,70.03,705.16,113.57,7.77" xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Detecting anomalies in longitudinal elevation of track geometry using train dynamic responses via a variational autoencoder</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Bergés</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Bielak</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">H</forename><surname>Garrett</surname><genName>Jr</genName></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Noh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Sensors and Smart Structures Technologies for Civil, Mechanical, and Aerospace Systems</title>
+				<imprint>
+			<publisher>International Society for Optics and Photonics</publisher>
+			<date type="published" when="2019">2019. 2019</date>
+			<biblScope unit="volume">10970</biblScope>
+			<biblScope unit="page">109701B</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,328.79,76.12,216.32,7.77;8,328.78,86.92,216.33,7.94;8,328.78,97.88,70.13,7.94" xml:id="b8">
+	<monogr>
+		<title level="m" type="main">A scikit-based Python environment for performing multi-label classification</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Szymański</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Kajdanowicz</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017-02">Feb. 2017</date>
+		</imprint>
+	</monogr>
+	<note>ArXiv e-prints</note>
+</biblStruct>
+
+<biblStruct coords="8,328.79,110.00,216.32,7.77;8,328.78,120.96,216.33,7.77;8,328.78,131.75,216.33,7.93;8,328.78,142.87,42.59,7.77" xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Structural health monitoring of civil infrastructure using optical fiber sensing technology: A comprehensive review</title>
+		<author>
+			<persName coords=""><forename type="first">X</forename><forename type="middle">W</forename><surname>Ye</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><forename type="middle">H</forename><surname>Su</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">P</forename><surname>Han</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific World Journal</title>
+		<imprint>
+			<date type="published" when="2014">2014. 2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,328.79,154.83,216.32,7.77;8,328.78,165.63,216.33,7.93;8,328.78,176.75,86.92,7.77" xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Ml-knn: A lazy learning approach to multi-label learning</title>
+		<author>
+			<persName coords=""><forename type="first">M.-L</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z.-H</forename><surname>Zhou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Pattern recognition</title>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="2038" to="2048" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

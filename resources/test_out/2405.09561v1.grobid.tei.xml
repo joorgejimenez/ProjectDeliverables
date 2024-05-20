@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">GAD: A Real-time Gait Anomaly Detection System with Online Adaptive Learning</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2024-05-05">5th May 2024</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,199.20,185.12,66.96,13.50"><forename type="first">Ming-Chang</forename><surname>Lee'</surname></persName>
+							<email>mingchang1109@gmail.com</email>
+						</author>
+						<author>
+							<persName coords="1,276.24,185.12,48.62,13.50"><forename type="first">Jia-Chun</forename><surname>Lin</surname></persName>
+							<email>7jia-chun.lin@ntnu.no</email>
+						</author>
+						<author>
+							<persName coords="1,351.84,185.12,64.51,13.50"><forename type="first">Sokratis</forename><surname>Katsikas</surname></persName>
+							<email>sokratis.katsikas@ntnu.no</email>
+						</author>
+						<author>
+							<affiliation key="aff0">
+								<orgName type="department">3Department of Information Security and Communication Technology</orgName>
+								<orgName type="institution">Norwegian University of Science and Technology</orgName>
+								<address>
+									<settlement>Gjovik</settlement>
+									<country key="NO">Norway</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Information Security and Communication Technology</orgName>
+								<orgName type="institution">Norwegian University of Science and Technology (NTNU)</orgName>
+								<address>
+									<settlement>Gjovik</settlement>
+									<country key="NO">Norway</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">GAD: A Real-time Gait Anomaly Detection System with Online Adaptive Learning</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2024-05-05">5th May 2024</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">670390BA9A5327A53F829F8ED29C2EC0</idno>
+					<note type="submission">This is the preprint version of the paper accepted by ICT Systems Security and Privacy Protection 39th</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2024-05-19T14:17+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>Gait -Real-time Time Series Anomaly Detection -LSTM -Dimensionality Reduction</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Gait anomaly detection is a task that involves detecting deviations from a person's normal gait pattern. These deviations can indicate health issues and medical conditions in the healthcare domain, or fraudulent impersonation and unauthorized identity access in the security domain. A number of gait anomaly detection approaches have been introduced, but many of them require offline data preprocessing, offine model learning, setting parameters, and so on, which might restrict their effectiveness and applicability in real-world scenarios. To address these issues, this paper introduces GAD, a real-time gait anomaly detection system. GAD focuses on detecting anomalies within an individual's three-dimensional accelerometer readings based on dimensionality reduction and Long Short-Term Memory (LSTM). Upon being launched, GAD begins collecting a gait segment from the user and training an anomaly detector to learn the user's walking pattern on the fly. If the subsequent model verification is successful, which involves validating the trained detector using the user's subsequent steps, the detector is employed to identify abnormalities in the user's subsequent gait readings at the user's request. The anomaly detector will be retained online to adapt to minor pattern changes and will undergo retraining as long as it cannot provide adequate prediction. We explored two methods for capturing users' gait segments: a personalized method tailored to each individual's step length, and a uniform method utilizing a fixed step length. Experimental results using an open-source gait dataset show that GAD achieves a higher detection accuracy ratio when combined with the personalized method.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">Introduction</head><p>Human gait refers to the style of walking of an individual. It encompasses the motion and pattern of limbs and body during locomotion, influenced by many factors such as weight, limb length, footwear, health conditions, and other personal characteristics <ref type="bibr" coords="2,226.56,641.12,6.77,13.50">[9]</ref>. Human gait is recognized as one of biometric measures for identifying individuals due to its distinctive and complex pattern unique to each person. Researchers also analyzed gait for diagnosing, tracking, and evaluating treatments for various diseases and neurodegenerative disorders <ref type="bibr" coords="3,442.08,129.00,9.00,12.15" target="#b0">[1,</ref><ref type="bibr" coords="3,451.08,129.00,9.00,12.15">12]</ref>. Detecting anomalies in gait data is crucial for identifying irregularities that may indicate health conditions, thereby improving overall well-being through timely healthcare interventions. In the security domain, gait anomaly detection also plays an important role as it enhances personal security by enabling biometric verification, thus preventing unauthorized access or impersonation.</p><p>A number of gait anomaly detection approaches have been introduced, and they can generally be classified into wearable methods and non-wearable methods <ref type="bibr" coords="3,153.36,228.36,10.72,12.15">[18]</ref>. The former requires users to wear devices equipped with sensors such as accelerometers or gyroscopes, offering direct and continuous monitoring but potentially intrusive, while the latter relies on external systems like video cameras or floor sensors, providing a more passive form of detection but often requiring specific environments and setups. Due to the fact that wearable sensors can be easily attached to various parts of the body without requiring a specific environment, they are ideal for collecting and monitoring human gait <ref type="bibr" coords="3,409.44,299.88,9.00,12.15">[7,</ref><ref type="bibr" coords="3,418.44,299.88,9.00,12.15">17]</ref>.</p><p>However, approaches based on wearable devices focus on extracting features and engineering optimal features <ref type="bibr" coords="3,283.44,324.80,6.77,13.50">[8]</ref>. For example, the authors in <ref type="bibr" coords="3,426.72,324.80,6.30,13.50" target="#b1">[2]</ref> utilized a Shimmer 2R sensor device to extract 11 acceleration-based features. Similarly, multiple features were extracted and generated in studies <ref type="bibr" coords="3,387.84,348.80,6.12,13.50">[8]</ref> and <ref type="bibr" coords="3,420.72,348.80,10.88,13.50">[16]</ref>. However, as noted in <ref type="bibr" coords="3,184.80,361.80,6.91,12.15">[8]</ref>, estimating these features often requires additional event detection and professional expertise to effectively utilize the collected data. Furthermore, the manual extraction of features for machine learning-based systems is usually susceptible to bias, particularly due to the complex nature of sensor data.</p><p>Several deep learning-based approaches have been introduced to address the issues related to manual feature extraction, as they are capable of learning the pattern of gait directly from raw sensor data. Example solutions include <ref type="bibr" coords="3,455.76,434.24,9.00,13.50">[8,</ref><ref type="bibr" coords="3,464.76,434.24,9.00,13.50" target="#b3">20]</ref>.</p><p>However, many of the existing deep learning-based approaches require offline data preprocessing, offline model learning, and/or setting or tuning parameters. These requirements might lead to delays in anomaly detection and could limit their effectiveness in real-time applications.</p><p>In this paper, we introduce GAD, a real-time gait anomaly detection system based on dimensionality reduction and Long Short-Term Memory (LSTM), which is a type of recurrent neural networks. GAD focuses exclusively on threedimensional accelerometer data, which includes readings along the x, y, and z axes. This type of data is available in various wearable devices, such as smartphones, smartwatches, and specialized sensor bands, thereby enhancing GAD's broad applicability. Unlike other methods that generate or rely on multiple features extracted from accelerometer data, GAD simplifies data processing by converting the three-dimensional accelerometer data into a single-variable series.</p><p>Upon initiation, GAD begins converting each accelerometer instance received from the user into a unified value to form a short gait segment. Concurrently, GAD trains an anomaly detector to learn the user's walking pattern within the gait segment. The detector is designed with two LSTM-based anomaly detection models that are trained in a partially parallel manner. Instead of training the models with the original gait segment, GAD converts the segment into a less complex AARE (Average Absolute Relative Error) series and uses this series to train the first detection model. Simultaneously, the AARE series is further converted into another AARE series (i.e., another dimensionality reduction), and the resulting AARE series is utilized to train the second detection model. Both models feature a simple and lightweight LSTM network structure (1 hidden layer with 10 hidden units), and they are trained and retrained based on their most recent input values in a sliding window manner.</p><p>Once the anomaly detector is generated, the user undergoes a model verification process with their two subsequent steps. If the verification fails, GAD prompts the user to restart the entire process. Conversely, if the verification is successful, the anomaly detector will be utilized to detect anomalies in the user's future gait readings upon the user's request. In this case, the anomaly detector will continue to be retrained when it experiences minor pattern changes or when it cannot provide adequate predictions.</p><p>To evaluate the detection performance of GAD, we studied two methods for capturing users' gait segments. One is a personalized method that is tailored to each individual's step length. The other is a uniform method, which always utilizes a fixed step length for every individual. Our experiment results, using an open-source gait dataset, demonstrate that GAD delivers a satisfactory performance. It achieves a higher anomaly detection ratio when combined with the personalized method than when combined with the uniform method.</p><p>The rest of the paper is organized as follows: Section 2 describes related work. In Section 3, we detail the design of GAD. Section 4 presents and discusses the experiments conducted and their corresponding results. Finally, Section 5 concludes this paper and outlines our future work.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">Related Work</head><p>The advancement in artificial intelligence has significant impact on various domains, including gait anomaly detection. Recent approaches to gait anomaly detection can be broadly classified into two categories: those based on machine learning and those based on deep learning. The machine learning-based approaches typically involve traditional algorithms like decision trees, support vector machines, or k-nearest neighbors, which often require manual feature extraction and selection from gait data. For instances, <ref type="bibr" coords="4,172.32,556.40,82.80,13.50">Nukala et al. in [14]</ref> studied several classification algorithms, including the back propagation artificial neural network, support vector machine, k-nearest neighbors, etc., to classify patients and normal subjects based on features extracted from the raw gait data collected from the gyroscopes and accelerometers. <ref type="bibr" coords="4,158.40,604.40,98.64,13.50">Otamendi et al. in [15]</ref> proposed a personalized, machine learning-based approach to detect significant changes in the functional state of individuals that require the use of Assistive Devices for Walking.</p><p>However, machine-learning based gait anomaly detection has drawbacks and limitations, including potential bias in the training data, the need for large datasets for effective training, the need for manual feature extraction or generation, consequently reducing their practicality in real-world applications <ref type="bibr" coords="5,462.24,128.76,6.77,12.15">[8]</ref>.</p><p>Deep learning-based approaches, on the other hand, utilize neural networks, particularly convolutional and recurrent neural networks, to automatically learn and extract features directly from raw data. These approaches offer enhanced accuracy and the ability to capture more complex patterns in gait. <ref type="bibr" coords="5,438.00,177.72,39.52,12.15;5,135.36,189.96,37.87,12.15">Potluri et al. in [16]</ref> introduced a wearable sensor system designed to detect human gait abnormalities by integrating a plantar pressure measurement unit with Inertial Measurement Units (IMUs) and using a stacked Long Short-Term Memory model. However, the proposed approach has a limitation in wide applications due to the reliance on the plantar pressure measurement unit. Furthermore, it requires offline model training, which makes it less adaptable to dynamic changes in an individual's gait pattern. <ref type="bibr" coords="5,150.24,273.92,128.88,13.50">Sadeghzadehyazdi et al. in [19]</ref> presented an end-to-end deep learning model that utilizes skeleton data from the Kinect to identify gait anomalies. To understand the relationship between various body joints during movement, the model captures spatial and temporal patterns by analyzing the entire skeleton. While the model showed promising results, the accuracy varied across different datasets, which indicates potential challenges in adapting to new gait patterns or populations. In addition, the model's reliance on Kinect for skeleton data might limit its applicability in real-world scenarios. <ref type="bibr" coords="5,150.24,370.64,63.96,13.50">Cola et al. in [2]</ref> introduced a gait anomaly detection approach for continuous monitoring and detection of changes in gait patterns using a single wearable device equipped with a three-dimensional accelerometer. The approach extracts 11 acceleration-based features from 43 features using a greedy heuristic approach. A personalized training set is created with the gait segments recorded during the initial days of use, and this data is to train a binary k-nearest neighbors classifier. The strength of this method lies in its low complexity and computational requirements, allowing the algorithms to run directly on the wearable device for real-time analysis. However, as the authors noted in the paper, the detection performance of the approach relies on two parameters: the number of neighbors (k) and the coverage index (c). Additionally, the approach requires some time to collect training data, but it is unclear how much data would be sufficient. Contrary to the above-mentioned approach, the GAD proposed does not require gait data to be collected for several days or to extract additional features from the original accelerometer data. Furthermore, GAD is parameter-free, which removes the need for users to determine any specific settings.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3">Design of GAD</head><p>As previously stated, GAD focuses on three-dimensional accelerometer data, which is commonly available in various wearable devices and include readings along the x, y, and z axes. In this paper, we refer to each collected/observed accelerometer data point, consisting of three-dimensional readings, as an accelerometer instance. GAD consists of three main components:</p><p>-Base Model Generator (BaseGen): Aims to generate an anomaly detector for the target user. -Model verification: Responsible for validating the created anomaly detector.</p><p>-Online Anomaly Detection (OLAD): Responsible for anomaly detection, as well as online model retraining and adaptation. Set frnin to be true ; } 40:</p><p>Notify the user of the anomaly output from OLAD; }}} Fig. <ref type="figure" coords="6,259.92,495.28,2.24,10.80">1</ref>. The pseudo code of GAD.</p><p>Fig. <ref type="figure" coords="6,170.16,510.32,1.68,13.50">1</ref> illustrates the pseudo code of GAD. Once initiated, GAD starts collecting accelerometer instances from the user. Let A; be the accelerometer instance at index 71, where 7 starts from 1. Unlike other methods that generate or rely on multiple features extracted from accelerometer data, GAD simplifies its process by converting each observed instance into R;, as referred to as the resultant acceleration magnitude (RAM) hereafter, based on Equation 1 used in <ref type="bibr" coords="6,446.88,570.08,6.77,13.50" target="#b2">[4]</ref>.</p><p>Ri = VV Axi? + Ay iz +A,?</p><p>where Az i, Ayi;, and A,,; represent the x-axis, y-axis, and z-axis values of Aj, respectively. To capture the user's walking pattern, GAD collects a short gait segment using lines 11 to 18 of Fig. Once S' is derived, it is immediately input into BaseGen, a component designed to build an anomaly detector for the user. This component will be further introduced in the following subsection. Upon receiving a completion notification from BaseGen, which indicates that an anomaly detector has been generated for the user, GAD proceeds to validate the detector using the user's subsequent F walking steps, where F represents a small integer. This process is referred to as Model verification, and it is done by sending each RAM value of the F' walking steps to OLAD for anomaly detection (see line 24). Note that the details of OLAD will be introduced later. If OLAD returns an anomaly, the verification is considered failed. In this case, the user will be instructed to restart GAD, which involves capturing a new gait segment from the user and training an anomaly detector from scratch. This design provides users with the flexibility to validate their anomaly detectors before employing them for future detection.</p><p>Conversely, if no anomaly is found, the verification is considered successful, and GAD then begins its anomaly detection operation at the user's request (see lines 29 and 40). Similar to line 12 of Fig. <ref type="figure" coords="7,322.80,530.76,2.08,12.15">1</ref>, GAD identifies the first minimum value among the subsequent 46 RAM values because it might signify the beginning of the user's walking step. It then begins sending that minimum value and every subsequent RAM value to OLAD for anomaly detection. It also reports back to the user whenever it receives an anomaly notification from OLAD. The detailed process is as follows: CV1 converts S into an AARE series based on the conversion algorithm of <ref type="bibr" coords="8,275.76,306.32,50.00,13.50">SALAD [11]</ref>. This conversion aims to simplify the gait segment into a less complex AARE series, potentially facilitating more efficient anomaly detection. To illustrate the functioning of CV1, its process is visualized in Fig. <ref type="figure" coords="8,210.96,343.08,2.16,12.15">4</ref>. To simplify the explanation of this process, we renumber the indexes of all the RAM values in the gait segment S$, namely, Tstart,; Tstare +1, ---, Trin, aS 1, 2,..., and Thin -Tstart +1, respectively. A window comprising the first L values of this gait segment is used to train an LSTM-based prediction model, which then predicts the (Z + 1)*® value of the gait segment, denoted by R L+t:</p><p>After the prediction, the window shifts forward by one value. Hence, the window comprising the second value to L + 1 value of the gait segment is then utilized to retrain the prediction model for predicting the (Z + 2)'® value, denoted by Riso, and the same process continues.</p><p>To calculate an AARE value, CV1 requires the Z most recent pairs of actual RAM values and the corresponding predicted values (see Equation <ref type="formula" coords="8,427.44,463.28,2.58,13.50">2</ref>). Hence, it can calculate and output the first AARE value when index 7 reaches 2L, and this value is denoted by AAREg, (as shown in Fig. <ref type="figure" coords="8,342.96,487.04,2.64,13.50">4</ref>). Similarly, the second AARE value can be output at 20+ 1, denoted by AAREg,41, and so forth.</p><p>AARE: = 5° &gt; oat i&gt; <ref type="bibr" coords="8,464.64,521.92,11.34,18.90" target="#b1">(2)</ref> g=i-L+41</p><p>In Equation <ref type="formula" coords="8,191.28,558.36,2.24,12.15">2</ref>, R, represents the observed RAM value at index g in S, and Ry represents the predicted RAM value at the same index where g ranges from i-L+1 to z. Recall that the initial value of 7 is 1. For instance, if L is set to 46, the first AARE value is computed and output at index 92, using the pairs from index 47 to 92. Subsequently, the second AARE value is computed and output at index 93, using the pairs from index 48 to 93, and this pattern continues accordingly.</p><p>In order to maintain the effectiveness of the prediction model in predicting RAM values, CV1 calculates and updates a threshold, denoted by thd, using In Equation <ref type="formula" coords="9,205.68,322.92,2.16,12.15">3</ref>, M 4are represents the average of all previous AARE values, and a is the corresponding standard deviation. If the AARE value falls within thd, the prediction model is considered effective and is retained. However, if the AARE value exceeds thd, indicating that the current model is inadequate, CV1 retrains the model using the latest D values of S. Now, let us talk about how DMGen1 operates. To train the first anomaly detection model for the user, DMGen1 employs an algorithm similar to the one utilized by CV1. The key differences lie in the input, the window size, and the output. For DMGen1, the input is the AARE series output by CV1, its windows size is set to three, and its output is a notification about model completion.</p><p>Similar to the design of RePAD2 [10], DMGen1 always utilizes the three latest input values to train and retrain its anomaly detection model. It calculates the AARE of the current detection model and updates its detection threshold using all previously derived AARE values (similar to Equation <ref type="formula" coords="9,404.88,478.44,2.58,12.15">3</ref>). Whenever the current detection model's AARE exceeds the current threshold, the model is replaced with a new one, trained using the latest three input values from CV1.</p><p>It is important to note that CV2 adopts a design similar to CV1 for LSTM model training, AARE computation, and detection threshold calculation, with the key difference being that CV2's input is the output from CV1. Similarly, DMGen2 adopts a design similar to DMGen1, but it utilizes the output of CV2 as its input to train the second anomaly detection model. Due to page limits, the detailed processes of CV2 and DMGen?2 will not be repeated.</p><p>When both DMGen1l and DMGen2 complete their detection model training with their respective inputs, the anomaly detector generation for the user is considered completed. GAD is immediately informed about the completion, and it notifies the user. Note that all the knowledge acquired by each component of BaseGen will be retained and utilized by OLAD. This includes the latest prediction models, the latest detection models, the latest thresholds, the latest windows of their inputs and outputs, etc.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2">Online Anomaly Detection (OLAD)</head><p>OLAD has the same structure as BaseGen, as shown in Fig. <ref type="figure" coords="10,397.20,130.44,2.16,12.15" target="#fig_1">5</ref>. It comprises four subcomponents arranged in two partially parallel processes, with subcomponent Transformer 1 (TS1) paired with Anomaly Detection 1 (AD1), and Transformer 2 (TS2) paired with Anomaly Detection 2 (AD2). Upon receiving a RAM value, denoted by R;, from GAD, OLAD passes it to TS1, which converts the value into an AARE value. This AARE value is then immediately sent to AD1 for anomaly detection. Simultaneously, the same AARE value is also passed to TS2 for further dimensionality reduction, and the resulting output is forwarded to AD2 for further anomaly detection. The introduction of AD2 is designed to detect those anomalies that AD1 is unable to detect. It is worth mentioning that TS1, TS2, AD1, and AD2 in OLAD function similarly to CV1, CV2, DMGen1, and DMGen?2 in BaseGen, respectively. However, they have the advantage of not starting from scratch because they inherit all the knowledge from BaseGen. As illustrated in Fig. <ref type="figure" coords="10,348.96,342.12,2.24,12.15" target="#fig_2">6</ref>, TS1 inherits the latest prediction model from CV1, enabling it to directly convert R; into an AARE value.</p><p>TS1 only retrains the current prediction model when the model becomes inadequate for predicting RAM values, i.e., when the current AARE value exceeds the current detection threshold.</p><p>Similarly, AD1 inherits the latest anomaly detection model from DMGen1 for anomaly detection. Specifically, AD1 uses the detection model to predict the next input value, calculates the model's AARE, and updates its detection threshold based on all historical AARE values derived by DMGen1 and itself.</p><p>If the current model's AARE exceeds the current threshold, AD1 retrains the model using the latest three input values. If the retrained model's AARE falls within the threshold, indicating a minor change in the user's walking pattern, nothing is reported. Conversely, if the AARE exceeds the threshold, the RAM value (i.e., Rj) is considered anomalous, and it is immediately reported to GAD. Following the same principle, TS2 inherits the latest prediction model from CV2 and functions similarly to convert its input into an AARE value. Likewise, AD2 inherits the latest anomaly detection model from DMGen2 and functions similarly to determine whether R; is anomalous. If R; is found anomalous, it is immediately reported to GAD. Evaluation and Results</p><p>To evaluate the detection performance of GAD, we utilized a dataset provided by the open-source OU-ISIR biometric database <ref type="bibr" coords="11,348.48,148.20,10.88,12.15">[13]</ref>. The dataset was collected manually using a IMU sensor positioned at the center back waist of 495 subjects. Each subject walked a predetermined path, and their walking sequences were collected, referred to as "walk1" in the dataset. The sensor is equipped with both a three-dimensional accelerometer and a three-dimensional gyroscope; however, we utilized the accelerometer data because its use is more common compare to the as mentioned in <ref type="bibr" coords="11,288.00,219.96,6.62,12.15">[7]</ref>. Utilizing this open-source dataset allows GAD to be easily compared with other approaches developed by researchers in the future.</p><p>We evaluated the detection performance of GAD by designing two scenarios: 1) where the step length parameter L is tailored to each subject, i.e., the original design of GAD, and 2) where L is consistently set to a fixed value, for example, 46 in our experiment. The first scenario is referred as Personalized-GAD, and the second scenario is referred as Uniform-GAD hereafter. The purpose is to determine the effectiveness of GAD by assessing whether a customized L for each individual enhances accuracy, or if a uniform LD value offers a generalized and equally effective solution across different subjects.</p><p>It is important to note that existing gait anomaly detection approaches predominantly rely on offline data preprocessing and model training. In these approaches, gait data is collected and processed as a whole, and models undergo pre-training. Once the models are trained, they are deployed for detection without further updates. In contrast, GAD's online operational model stands out by requiring minimal preprocessing of gait data and enabling real-time, online training of anomaly detection models without the need for parameter configuration. Due to this fundamental difference in methodology, a direct comparison between these approaches and GAD is unfair as it would not accurately reflect the strengths and limitations of each. The most relevant approach to GAD is that proposed by Cola et al. <ref type="bibr" coords="11,256.80,471.24,6.77,12.15" target="#b1">[2]</ref>; however, as mentioned earlier in our related work section, this approach requires to extract 11 features, determine 2 parameters in advance, and requires several days to collect training data for each individual. All these requirements are unnecessary for GAD.  <ref type="table" coords="11,179.76,630.36,1.68,12.15" target="#tab_3">1</ref> lists all hyperparameters settings used by GAD in both scenarios, mostly following the configuration used by SALAD <ref type="bibr" coords="11,381.60,641.88,10.88,12.15">[11]</ref>. All LSTM models trained by BaseGen and OLAD for two evaluated scenarios feature a simple network structure, implemented in Deeplearning4j <ref type="bibr" coords="12,362.64,115.76,6.77,13.50">[3]</ref>. Each model consists of one hidden layer with 10 hidden units, aiming to keep each model simple and lightweight. To avoid model overfitting and underfitting, we utilized Early <ref type="bibr" coords="12,457.92,140.76,14.88,12.15;12,135.12,153.00,28.68,12.15">Stopping [5]</ref> to find the optimal epoch count. For models trained by CV1, CV2, TS1, and TS2, Early Stopping selected an epoch range of 1 100. For DMGen1, DMGen2, AD1, and AD2, which use fewer data points for model training, the range was narrowed to 1 to 50, in accordance with those used by SALAD. Note that we fixed all the aforementioned hyperparameter settings across all users without tailoring each one for individual users. While alternative settings might yield better results, conducting an exhaustive search for the optimal hyperparameter configuration for each user in an online manner is not feasible as those hyperparameters are needed to be pre-defined. Furthermore, to achieve a fair comparison, each experiment was separately conducted on a 2.6 GHz 6-Core Intel Core i7 MacBook running MacOS 10.15.4, with 16GB DDR4 SDRAM.</p><p>We replayed each subject's actual walking sequence by streaming it into GAD, which triggers BaseGen to generate an anomaly detector for each individual, followed by the corresponding model verification process. In both experiments, F' was set to 2, implying that the two subsequent steps of each individual were used for verification after their anomaly detectors had been generated. It is important to note that the choice of the value 2 was constrained by the length of the gait dataset utilized. When deploying GAD in a real-world scenario, it is recommended to slightly increase the value of F. As shown in Table <ref type="table" coords="12,436.80,369.24,2.24,12.15" target="#tab_4">2</ref>, 135 out of the 495 subjects passed the model verification in the Personalized-GAD scenario, while 159 out of the 495 subjects passed it in the Uniform-GAD scenario. Nevertheless, the results suggest that tailoring L to each individual's step length (i.e., the Personalized-GAD scenario) resulted in a stricter verification process, which led to a lower success rate compared with the Uniform-GAD scenario. With the previous results, we further evaluated the anomaly detection performance of GAD by concatenating X's gait segment and Y's gait segment, where X and Y are any two different subjects who passed the model verification process. Our purpose is to simulate a scenario where one person's identify is impersonated by another person. For instance, Fig. <ref type="figure" coords="12,376.56,545.40,3.26,12.15">7</ref>(a) shows the concatenation of the gait segment from subject TO_ID013843 followed by that of subject TO_ID310317. Conversely, Fig. <ref type="figure" coords="12,291.12,568.40,13.44,13.50">7(b)</ref> shows the concatenation starting from TO_ID310317's gait segment, followed by TO_ID013843's gait segment. Therefore, in Personalized-GAD, there are 18,090 (= 135? -135) segment combinations because 135 subjects passed their model verification in this scenario. On the other hand, in Uniform-GAD, there are 25,122 (= 159? -159) segment combinations because 159 subjects passed their model verification in this scenario.</p><p>Table <ref type="table" coords="12,177.12,642.12,2.04,12.15" target="#tab_6">3</ref> shows the anomaly detection performance of GAD in both scenarios. We can see that Personalized-GAD successfully identified 15,744 out of 18,090 The above results suggest that when L is tailored to each individual's step length, GAD generates an anomaly detector that is also tailored to each individual. This personalization allows for more effective detection of abnormal patterns. Therefore, it is recommended that GAD adopts the personalized approach to better adapt to individual variations and provide good anomaly detection.  To further understand GAD's efficiency in detecting anomalies, we illustrated the timing and quantity of successfully detected segment combinations in Fig. <ref type="figure" coords="13,135.36,509.36,3.22,13.50" target="#fig_3">8</ref>(a) and <ref type="bibr" coords="13,175.68,509.36,33.92,13.50">Fig. 8(b)</ref>, which show the results for Personalized-GAD and Uniform-GAD, respectively. It is important to note that the term 'timing' in this context refers to the relative accelerometer instance index of subject Y (i.e., impersonating subject). Our aim is to know how promptly GAD can detect when one person is impersonated by another. From both figures, it is evident that both Personalized-GAD and Uniform-GAD are capable of early detection of impersonating subjects' gait segments as soon as these subjects begin walking. Specifically, Personalized-GAD successfully detected 11,102 out of the 15,744 impersonating subjects' gait segments upon analyzing their first 154 accelerometer instances. Similarly, Uniform-GAD successfully identified 13,304 out of the 19,869 impersonating subjects' gait segments upon processing their first 154 accelerometer instances. We can see that Uniform-GAD has higher efficiency than Personalized-GAD. Although Uniform-GAD is more efficient than Personalized-GAD, the latter provides a significantly higher anomaly detection ratio. Hence, it is still recommended that GAD adopts the personalized method.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>5</head><p>Conclusions and Future Works This paper presents GAD, a real-time gait anomaly detection approach that leverages an individual's three-dimensional accelerometer data. GAD stands out by utilizing dimensionality reduction and dual lightweight LSTM-based detection models to learn a user's gait pattern online using only a few steps of gait data. This eliminates the need for offline preprocessing, offline model training, offline model retraining, parameter setting, or threshold pre-determination. The online learning and adaptation features enable GAD to tolerate minor pattern changes and effectively identify significant deviations in a user's gait patterns. Furthermore, our exploration of both personalized and uniform methods for capturing a user's gait segment and our experiments using the open-source gait dataset demonstrate the superiority of the personalized approach in enhancing anomaly detection accuracy. GAD shows great potential in real-world applications, particularly as a crucial security measure in high-security areas. It can be used together with other authentication approaches in locations such as military bases, banks, nuclear facilities, data centers, ensuring that access to restricted areas is limited to authorized personnel.</p><p>In our future work, we plan to further enhance the detection performance of GAD by incorporating additional sensor data, e.g., gyroscope data, for greater accuracy. Furthermore, we intend to deploy GAD on wearable devices, such as smartphones for real-time and lightweight gait anomaly detection, which can be used for user authentication.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="8,239.04,278.32,132.48,10.80"><head>Fig. 3 .</head><label>3</label><figDesc>Fig. 3. The structure of BaseGen.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="10,243.36,291.04,123.48,10.80"><head>Fig. 5 .</head><label>5</label><figDesc>Fig. 5. The structure of OLAD.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="10,135.12,588.16,340.82,10.80;10,135.12,599.20,58.44,10.80"><head>Fig. 6 .</head><label>6</label><figDesc>Fig. 6. Knowledge inheritance from the subcomponents of BaseGen to the subcomponents of OLAD.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="13,155.04,467.20,300.91,10.80"><head>Fig. 8 .</head><label>8</label><figDesc>Fig. 8. Timing and quantity of successfully detected segment combinations.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1" coords="6,135.12,630.12,345.12,35.56"><head></head><label></label><figDesc>1. It searches for the minimum value within the first 46 RAM values (R1, Ro, ..., Rag) and designates the corresponding index as Tstarz-Subsequently, it identifies another minimum value within the 30 to 80 RAM values, and marks the corresponding index as T.4¢. Please refer to Fig.2for a visual illustration. The difference between Tsta7_ and Tena, denoted by L, suggests the user's potential step length. This method is called personalized. Afterward, GAD continues to collect data until another 7* [ RAM values have been generated, which suggests that the user may have taken another 7 steps. Upon locating the minimum value within the last L RAM values and labeling its index as Tin, the sequence of RAM values from Tstart to Tyin, as illustrated in Fig.2, is considered as the user's gait segment, denoted by S. This design ensures that S exhibits a recurrent pattern encompassing 8 gait cycles. The selection of the values 46, 30, and 80 is based on our prior experience with gait analysis.</figDesc><table coords="7,189.36,195.84,232.53,18.16"><row><cell>Tstart Tend Fig. 2. Illustration of how a user's gait segment is derived. Index</cell></row></table><note>next</note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3" coords="11,149.04,527.92,312.48,114.59"><head>Table 1 .</head><label>1</label><figDesc>Hyperparameter settings.</figDesc><table coords="11,149.04,540.48,312.48,102.03"><row><cell>Hyperparameter</cell><cell>Value</cell></row><row><cell>Hidden layer count</cell><cell>1 for all models</cell></row><row><cell>Hidden unit count</cell><cell>10 for all models</cell></row><row><cell>Learning rate</cell><cell>0.0055 for all models trained by CV1, CV2, TS1 and TS2; 0.001 for</cell></row><row><cell></cell><cell>all models trained by DMGen1l, DMGen2, AD1, and AD2.</cell></row><row><cell cols="2">The number of epoch Up to 100 for all models trained by CV1, CV2, TS1, and TS2; up to 50 for all models trained by DMGen1, DMGen2, AD1, and AD2.</cell></row><row><cell>Activation function</cell><cell>tanh for all models</cell></row><row><cell>Random seed</cell><cell>140 for all models</cell></row><row><cell>Table</cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4" coords="12,190.08,448.72,227.07,39.97"><head>Table 2 .</head><label>2</label><figDesc>Summary of Model Verification Results.</figDesc><table coords="12,190.08,461.28,227.07,27.41"><row><cell>Scenario</cell><cell cols="6">[Number Passed|Number Failed| Total subjects</cell></row><row><cell>Personalized-GAD] Uniform-GAD</cell><cell>|</cell><cell>135 159</cell><cell>| |</cell><cell>360 336</cell><cell>| |</cell><cell>495 495</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_6" coords="13,161.52,319.60,280.04,127.52"><head>Table 3 .</head><label>3</label><figDesc>Anomaly Detection Performance of GAD in two scenarios.</figDesc><table coords="13,161.52,335.04,268.59,112.08"><row><cell>Scenario</cell><cell cols="2">| Undetected Anomaly Ratio] Detected Anomaly Ratio</cell></row><row><cell cols="3">Personalized-GAD] 12.97% (= 2,346/18,090) [87.03% (= 15,744/18,090) Uniform-GAD [ | 20.91% (= 5,253/25,122) [79.09% (= 19,869/25,122)</cell></row><row><cell>300</cell><cell></cell><cell>450</cell></row><row><cell>5 250 © 200 150</cell><cell>Number of detected combinations</cell><cell>200 100</cell></row></table></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgement</head><p>The authors want to thank the anonymous reviewers for their reviews and valuable suggestions to this paper. This work has received funding from "the Research Council of Norway through the SFI Norwegian Centre for Cybersecurity in Critical Sectors (NORCICS) project no. 310105".</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="14,142.16,545.20,334.24,10.80;14,151.68,556.00,326.96,10.80;14,151.68,566.04,228.48,12.15" xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Human gait analysis in neurodegenerative diseases: A review</title>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Cicirelli</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Impedovo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">V</forename><surname>Dentamaro</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Marani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Pirlo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">R</forename><surname>D'orazio</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Journal of Biomedical and Health Informatics</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="229" to="242" />
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,141.84,578.08,334.91,10.80;14,151.68,589.36,324.48,10.80;14,152.40,598.92,20.37,12.15" xml:id="b1">
+	<analytic>
+		<title level="a" type="main">An on-node processing approach for anomaly detection in gait</title>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Cola</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Avvenuti</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Vecchio</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">Z</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Lo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Sensors Journal</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="6640" to="6649" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="14,141.68,633.04,334.69,10.80;14,151.68,644.08,325.00,10.80;14,151.68,654.88,327.12,10.80;15,138.28,121.84,6.75,4.16;15,139.68,149.16,2.04,12.15;15,139.92,170.28,2.04,12.15;15,137.52,207.28,8.10,4.16;15,135.84,267.52,7.38,10.80;15,135.84,310.48,7.38,10.80;15,135.84,353.68,7.38,10.80;15,135.84,385.84,7.38,10.80;15,135.84,417.76,7.38,10.80;15,135.84,460.96,7.38,10.80;15,135.84,493.12,7.38,10.80;15,135.84,536.08,7.38,10.80;15,135.84,568.24,7.38,10.80;15,135.84,600.40,7.38,10.80" xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Improved cycle detection for accelerometer based gait authentication</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">O</forename><surname>Derawi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Bours</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Holien</surname></persName>
+		</author>
+		<idno>or 6 7 oo 10. 11. 12. 13. 14. 15. 16. 17. 18. 19</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Sixth International Conference on Intelligent Information Hiding and Multimedia Signal Processing</title>
+				<imprint>
+			<date type="published" when="2010">2010. 2010</date>
+			<biblScope unit="page" from="312" to="317" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,140.52,632.56,2.58,10.80;15,168.00,91.84,60.72,10.80;15,144.72,117.76,329.57,10.80;15,151.92,128.80,308.05,10.80;15,152.40,138.84,146.00,12.15" xml:id="b3">
+	<monogr>
+		<title level="m" type="main">EarlyStopping: What is early stopping?</title>
+		<author>
+			<persName coords=""><forename type="first">M.-C</forename><surname>Lee</surname></persName>
+		</author>
+		<ptr target="https://deeplearning4j.konduit.ai/deeplearning4j/how-to-guides/tuning-and-training/early-stopping" />
+		<imprint>
+			<date type="published" when="2023-05">2023. May-2024</date>
+			<biblScope unit="volume">5</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,151.68,149.92,325.50,10.80;15,151.68,159.96,274.29,12.15;15,144.72,171.04,0.48,10.80" xml:id="b4">
+	<monogr>
+		<title level="m" type="main">Automatic anomaly detection in the cloud via statistical learning</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Hochenbaum</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">O</forename><forename type="middle">S</forename><surname>Vallis</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Kejariwal</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1704.07706</idno>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="15,151.68,171.04,325.30,10.80;15,151.68,182.08,325.20,10.80;15,152.16,189.88,58.32,14.85" xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Review of fall risk assessment in geriatric populations using inertial sensors</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Howcroft</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Kofman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">D</forename><surname>Lemaire</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of neuroengineering and rehabilitation</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="1" to="12" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,151.68,203.20,326.35,10.80;15,151.68,214.48,324.75,10.80;15,151.92,224.04,42.45,12.15" xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Detection of gait abnormalities for fall risk assessment using wrist-worn inertial sensors and deep learning</title>
+		<author>
+			<persName coords=""><forename type="first">I</forename><surname>Kiprijanovska</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Gjoreski</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Gams</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Sensors</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">18</biblScope>
+			<biblScope unit="page">5373</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,151.68,235.36,325.62,10.80;15,151.68,246.40,324.75,10.80;15,151.68,257.20,153.36,10.80" xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Gait analysis for recognition and classification</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><forename type="middle">E L</forename><surname>Grimson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of Fifth IEEE International Conference on Automatic Face Gesture Recognition</title>
+				<meeting>Fifth IEEE International Conference on Automatic Face Gesture Recognition</meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2002">2002</date>
+			<biblScope unit="page" from="155" to="162" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,151.68,267.52,325.20,10.80;15,151.68,278.56,324.61,10.80;15,151.68,289.36,323.84,10.80;15,151.92,299.40,203.01,12.15" xml:id="b8">
+	<analytic>
+		<title level="a" type="main">RePAD2: Real-time, lightweight, and adaptive anomaly detection for open-ended time series</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">C</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">C</forename><surname>Lin</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2303.00409</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 8th International Conference on Internet of Things, Big Data and Security -loTBDS</title>
+				<meeting>the 8th International Conference on Internet of Things, Big Data and Security -loTBDS</meeting>
+		<imprint>
+			<publisher>INSTICC, SciTePress</publisher>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="page" from="208" to="217" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="15,151.68,310.48,325.62,10.80;15,151.68,321.52,324.17,10.80;15,151.92,332.56,324.88,10.80;15,151.68,342.36,128.88,12.15" xml:id="b9">
+	<analytic>
+		<title level="a" type="main">SALAD: Self-adaptive lightweight anomaly detection for real-time recurrent time series</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">C</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">C</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">G</forename><surname>Gran</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2104.09968</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2021 IEEE 45th Annual Computers, Software, and Applications Conference (COMPSAC)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2021">2021</date>
+			<biblScope unit="page" from="344" to="349" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="15,151.68,353.68,325.48,10.80;15,151.68,364.48,325.02,10.80;15,151.68,374.76,233.97,12.15" xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Gait impairments in parkinson&apos;s disease</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Mirelman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Bonato</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Camicioli</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">D</forename><surname>Ellis</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Giladi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">L</forename><surname>Hamilton</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">J</forename><surname>Hass</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">M</forename><surname>Hausdorff</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Pelosin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Q</forename><forename type="middle">J</forename><surname>Almeida</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Lancet Neurology</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="697" to="708" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,151.68,385.84,325.60,10.80;15,151.68,396.88,325.09,10.80;15,151.68,406.68,232.77,12.15" xml:id="b11">
+	<analytic>
+		<title level="a" type="main">The largest inertial sensor-based gait database and performance evaluation of gait-based personal authentication</title>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">T</forename><surname>Ngo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Makihara</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Nagahara</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Mukaigawa</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Yagi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Pattern Recognition</title>
+		<imprint>
+			<biblScope unit="volume">47</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="228" to="237" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,151.68,417.76,325.32,10.80;15,151.68,428.80,325.56,10.80;15,151.68,440.08,324.79,10.80;15,151.92,449.88,59.01,12.15" xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Real-time classification of patients with balance disorders vs. normal subjects using a low-cost small wireless wearable gait sensor</title>
+		<author>
+			<persName coords=""><forename type="first">B</forename><forename type="middle">T</forename><surname>Nukala</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Nakano</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Rodriguez</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Tsay</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Lopez</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">Q</forename><surname>Nguyen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Zupancic</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">Y</forename><surname>Lie</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Biosensors</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">58</biblScope>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,151.92,460.96,324.36,10.80;15,151.68,472.00,324.36,10.80;15,151.68,481.80,130.05,12.15" xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Machine learning-based gait anomaly detection using a sensorized tip: an individualized approach</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Otamendi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Zubizarreta</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Portillo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Neural Computing and Applications</title>
+				<imprint>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="page" from="1" to="17" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,151.68,493.12,324.93,10.80;15,151.68,503.92,325.10,10.80;15,151.92,514.96,323.37,10.80;15,151.68,525.00,109.20,12.15" xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Deep learning based gait abnormality detection using wearable sensor system</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Potluri</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">$</forename><surname>Ravuri</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Diedrich</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Schega</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">41st Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2019">2019. 2019</date>
+			<biblScope unit="page" from="3613" to="3619" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,151.68,536.08,325.35,10.80;15,151.68,547.36,325.27,10.80;15,151.68,557.16,258.93,12.15" xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Optimizing clinical assessments in parkinson&apos;s disease through the use of wearable sensors and data driven modeling</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">A</forename><surname>Ramdhani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Khojandi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">O</forename><surname>Shylo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B-H</forename><surname>Kopell</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in computational neuroscience</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page">72</biblScope>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,151.92,568.24,324.52,10.80;15,151.68,579.28,325.02,10.80;15,151.68,589.08,304.08,12.15" xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Latest research trends in gait analysis using wearable sensors and machine learning: A systematic review</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Saboor</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Kask</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Kuusik</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">M</forename><surname>Alam</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Le Moullec</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">I</forename><forename type="middle">K</forename><surname>Niazi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Zoha</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Ahmad</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Ieee Access</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="167830" to="167864" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,151.92,600.64,325.15,10.80;15,151.68,611.44,324.60,10.80;15,151.68,622.24,147.84,10.80" xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Modeling spatiotemporal patterns of gait anomaly with a CNN-LSTM deep neural network</title>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Sadeghzadehyazdi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Batabyal</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">T</forename><surname>Acton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Expert Systems with Applications</title>
+		<imprint>
+			<biblScope unit="volume">185</biblScope>
+			<biblScope unit="page">115582</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="15,151.68,632.56,325.65,10.80;15,151.68,643.36,324.24,10.80;15,150.96,653.64,279.84,12.15" xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Deep learning for fall risk assessment with inertial sensors: Utilizing domain knowledge in spatio-temporal gait parameters</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Tunca</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Salur</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Ersoy</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE journal of biomedical and health informatics</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1994" to="2005" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

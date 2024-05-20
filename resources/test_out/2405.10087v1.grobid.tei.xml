@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Continuous Transfer Learning for UAV Communication-aware Trajectory Design</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,53.66,144.87,56.20,9.50;1,109.86,142.60,1.41,6.99"><forename type="first">Chenrui</forename><surname>Sun</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Physics Engineering and Technology</orgName>
+								<orgName type="institution">University of York</orgName>
+								<address>
+									<country key="GB">United Kingdom</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,121.16,144.87,85.85,9.50;1,207.01,142.60,1.88,6.99"><forename type="first">Gianluca</forename><surname>Fontanesi</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="laboratory">Interdisciplinary Centre for Security, Reliability, and Trust (SnT)</orgName>
+								<orgName type="institution">Edinbrough Napier University</orgName>
+								<address>
+									<settlement>Edinbrough</settlement>
+									<country>Luxembourg, United Kingdom</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,217.85,144.87,96.45,9.50;1,314.30,142.60,1.41,6.99"><forename type="first">Swarna</forename><forename type="middle">Bindu</forename><surname>Chetty</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Physics Engineering and Technology</orgName>
+								<orgName type="institution">University of York</orgName>
+								<address>
+									<country key="GB">United Kingdom</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,325.61,144.87,63.93,9.50;1,389.54,142.60,1.41,6.99"><forename type="first">Xuanyu</forename><surname>Liang</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Physics Engineering and Technology</orgName>
+								<orgName type="institution">University of York</orgName>
+								<address>
+									<country key="GB">United Kingdom</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,400.85,144.87,62.27,9.50;1,463.12,142.60,1.88,6.99"><forename type="first">Berk</forename><surname>Canberk</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,490.88,144.87,70.79,9.50;1,561.67,142.60,1.41,6.99"><forename type="first">Hamed</forename><surname>Ahmadi</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Physics Engineering and Technology</orgName>
+								<orgName type="institution">University of York</orgName>
+								<address>
+									<country key="GB">United Kingdom</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Continuous Transfer Learning for UAV Communication-aware Trajectory Design</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">769356FD239D18B40E8C3A50D7787CF3</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2024-05-19T14:18+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Unmanned Aerial Vehicle</term>
+					<term>Deep Reinforcement Learning</term>
+					<term>Trajectory Planning</term>
+					<term>Transfer Learning</term>
+					<term>6G</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Deep Reinforcement Learning (DRL) emerges as a prime solution for Unmanned Aerial Vehicle (UAV) trajectory planning, offering proficiency in navigating high-dimensional spaces, adaptability to dynamic environments, and making sequential decisions based on real-time feedback. Despite these advantages, the use of DRL for UAV trajectory planning requires significant retraining when the UAV is confronted with a new environment, resulting in wasted resources and time. Therefore, it is essential to develop techniques that can reduce the overhead of retraining DRL models, enabling them to adapt to constantly changing environments. This paper presents a novel method to reduce the need for extensive retraining using a double deep Q network (DDQN) model as a pre-trained base, which is subsequently adapted to different urban environments through Continuous Transfer Learning (CTL). Our method involves transferring the learned model weights and adapting the learning parameters, including the learning and exploration rates, to suit each new environment's specific characteristics. The effectiveness of our approach is validated in three scenarios, each with different levels of similarity. CTL significantly improves learning speed and success rates compared to DDQN models initiated from scratch. For similar environments, Transfer Learning (TL) improved stability, accelerated convergence by 65%, and facilitated 35% faster adaptation in dissimilar settings.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>I. INTRODUCTION</head><p>Unmanned Aerial Vehicles (UAVs) are increasingly employed in a broad spectrum of applications, including surveillance, agriculture, disaster management, and communication infrastructure maintenance <ref type="bibr" coords="1,163.59,545.89,10.58,8.64" target="#b0">[1]</ref>. Efficient planning and optimization of UAV trajectories is critical, since the success of numerous UAV applications, such as real-time data transmission and remote sensing, heavily relies on a reliable trajectory. One of the key challenges in UAV trajectory is ensuring robust communication between UAVs and ground-based infrastructure, such as Base Stations (BSs). This challenge becomes even more pronounced in complex urban environments with obstacles and interference.</p><p>Beside conventional optimization methods, Reinforcement Learning (RL) methods have emerged as suitable Machine Learning (ML) solutions for UAV trajectory planning due to its proficiency in handling high-dimensional spaces, adaptability to dynamic environments, and capability for sequential decision-making based on real-time interactions and feedback <ref type="bibr" coords="1,48.96,716.01,10.58,8.64" target="#b1">[2]</ref>. The navigation of UAVs from an initial location to a final destination through RL has been extensively explored in various related works <ref type="bibr" coords="1,410.83,231.01,10.58,8.64" target="#b2">[3]</ref>. RL approaches for UAV trajectory and communication scenarios proposed in literature vary from classical RL <ref type="bibr" coords="1,377.20,252.92,10.58,8.64" target="#b3">[4]</ref>, to Deep Reinforcement Learning (DRL) algorithms <ref type="bibr" coords="1,367.52,263.88,10.58,8.64" target="#b4">[5]</ref>, <ref type="bibr" coords="1,387.54,263.88,10.58,8.64" target="#b5">[6]</ref>. Adding communication constraints, as discussed in <ref type="bibr" coords="1,374.87,274.84,10.58,8.64" target="#b6">[7]</ref>, <ref type="bibr" coords="1,393.95,274.84,10.58,8.64" target="#b7">[8]</ref>, these works address the challenge of frequency band allocation in UAV trajectory design using DRL to ensure equitable communication services. These works highlight the importance of frequency management in UAV operations. To further improve performance of trajectory, in <ref type="bibr" coords="1,556.99,318.68,10.58,8.64" target="#b8">[9]</ref>, cellular-connected UAV technology was utilized to enhance 3D communication coverage, employing DRL with a model-based approach for trajectory optimization. The strength of Deep Q Learning (DQL) lies in its ability to learn optimal policies for UAV navigation through interaction with the environment, thus enabling precise trajectory planning and robust communication strategies.</p><p>Nevertheless, the utilization of DQL comes with limitations. Although it performs well in learning tasks within specific environments, these solutions are often tailored to particular locations or maps. Adapting these models to new tasks or different environments often requires extensive retraining, a process that can be both time-consuming and resource-intensive. This limitation is particularly evident in UAV operations that demand rapid adaptation to new contexts. In fact, the challenges and dynamics faced by UAVs during navigation can vary significantly from one environment to another, making the applicability of DQL solutions limited in scope.</p><p>Compared with these prior works, we do not focus on designing a more advanced RL algorithm to improve the performance of the system. Instead, we investigate how to share prior model knowledge to improve the RL training convergence speed when the UAV faces a new environment. Transfer Learning (TL) has emerged as an effective approach among researchers to address this challenge. <ref type="bibr" coords="1,505.66,617.38,16.60,8.64" target="#b9">[10]</ref> applied TL to enhance tracking performance by learning from the tracking errors of UAVs with different dynamics without requiring baseline controller modifications. Furthermore, <ref type="bibr" coords="1,519.57,650.25,16.60,8.64" target="#b10">[11]</ref> utilized the teacher policy trained in a sub-6 GHz domain, which accelerates path learning in a new millimeter Wave (mmWave) domain. The authors also considered outage constraints and used a robust double deep Q network (DDQN) as the base model. In this study, a pre-trained model involves initially training a DDQN, but targeting different domains that facilitate the transfer of knowledge across various environments. In <ref type="bibr" coords="1,552.01,726.97,15.27,8.64" target="#b11">[12]</ref>, author utilizes TL to adapt UAV trajectory design to emergency scenarios where user distribution and terrain change. Mainly simulate the scenario of certain BSs losing their functions in emergency situations. However, this method falls short of addressing the challenge of knowledge transfer across diverse urban settings. Thus, it's crucial to explore the capability for continuous learning across various environments, beyond just adapting to situational and task changes within a single map.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A. Contributions</head><p>This article is dedicated to evolving UAV path planning training models into adaptable frameworks that facilitate faster and repeated retraining in different environments with Continuous Transfer Learning (CTL). We propose a shift from the vanilla approach of one-time model training to a paradigm of continuous adaptation, where UAVs are retrained with new data and conditions as they transition between tasks and environments. While an ad hoc trained RL model can only be applied to a specific environment, this approach is not limited to a specific environment and provides a flexible solution for different scenarios. We propose a CTL framework to enable RL for UAVs trajectory with connectivity constraint to rapidly adapt to different environments. This approach involves first pre-training a model to achieve a specific convergence target, serving as a foundational base to reduce the cost of training the model in the new environments. To this aim, we train a policy for UAV trajectory that tackles ground-to-air link outages and we evaluate both Deep Q-Network (DQN) and DDQN models. Among various models with differing hyperparameters, the higher-performing trained DDQN is chosen as the foundational learning model. A detailed analysis is provided in Section III. Then, our method involves transferring the learned model weights and adjusting the learning parameters, including the learning rate and exploration rates, to the specific characteristics of each new environment. Specifically, we consider the problem space formed by three scenarios, namely: Environment 1 (dense urban landscape with tall buildings), Environment 2 (emergency scenario), Environment 3 (suburban residential area). We evaluate the effectiveness of our CTL approach through various tasks, targeting different destinations, and in emergency conditions involving BSs failures. Simulation results show significant improvements in both convergence times and stability in new environments.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>II. SYSTEM MODEL AND PROBLEM FORMULATION</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A. System Model</head><p>We consider a singular UAV-aided cellular network. The core objectives of UAV are to navigate swiftly and efficiently toward a designated target location while ensuring seamless communication with a terrestrial cellular network. This operational versatility extends to diverse geographical regions, denoted as space of Environments S (X 1 , X 2 , X 3 ), as shown in Fig. <ref type="figure" coords="2,67.54,633.51,3.74,8.64" target="#fig_0">1</ref>, where each region presents unique building distribution and communication needs. Map distinctions between different environments include factors such as urban building type, building density, street width, base station height, and other relevant parameters.</p><p>BSs are deployed at specific locations within the urban area. Let M be the set of BSs. Each BS m ∈ M is characterized by its geographical location (x s , y s ) and height h s with 3 sectors j. The UAV embarks on its mission from a designated initial location, represented as q I ∈ R 3×1 , which can vary for each deployment. The primary goal is to navigate the UAV to a predetermined target point, marked as q F ∈ R 3×1 , while ensuring uninterrupted communication links with the terrestrial network during the mission, with the probability of communication outage maintained below requirement. The UAV moves at constant speed V = V max along a 3D trajectory of duration T that can be divided into K discrete segments with interval δ k = T /K, k = {1, ..., K}. δ k is chosen arbitrarily small so that within each step the large scale signal power received by the UAV remains approximately unchanged. Each segment is thus described by its discrete coordinates q(n) = (x n , y n , h n ).</p><p>The channel model considers various factors, including large-scale path loss, small-scale fading, and environmental elements like terrain and buildings. Large-scale path loss represents the signal attenuation over distance and frequency. The path loss is typically classified into: LoS (Line-of-Sight) Path Loss Model: <ref type="bibr" coords="2,491.08,272.12,15.27,8.64" target="#b12">[13]</ref>. We utilize the three-sector antenna model (downtilted to serve ground User Equipments (UEs) <ref type="bibr" coords="2,400.64,294.04,14.94,8.64" target="#b10">[11]</ref>), as defined by the 3rd Generation Partnership Project (3GPP) specifications <ref type="bibr" coords="2,495.88,305.00,15.27,8.64" target="#b13">[14]</ref>. The antenna gain is a critical component of signal reception from ground BS to a UAV, which can be represented as G m,j (θ, ϕ) = A 3GP P E (θ, ϕ) + AF (θ, ϕ, n). It combines the 3GPP antenna element pattern (A 3GP P E (θ, ϕ)) and array factor (AF (θ, ϕ, n) to represent beamforming effects <ref type="bibr" coords="2,457.19,359.79,15.27,8.64" target="#b14">[15]</ref>.</p><formula xml:id="formula_0" coords="2,319.00,259.27,252.11,22.18">l L (d) = X L × d −α L . And NLoS (Non- Line-of-Sight): l N L (d) = X N L × d −α N L</formula><p>Fading phenomena describe signal variations over time due to environmental changes, particularly UAV movement. Fading coefficients f (t) represent instantaneous fading levels, while small-scale fading powers f 2 0,i for both LoS and NLoS environments follow Nakagami-M fading models <ref type="bibr" coords="2,502.18,420.02,15.27,8.64" target="#b12">[13]</ref>. To compute the Signal-to-Interference-plus-Noise Ratio (SINR) at a UAV from a specific ground BS (m) sector (j), the Signal Power</p><formula xml:id="formula_1" coords="2,319.00,452.58,252.11,22.10">P s = P t,m × G m,j (θ, ϕ) × L path (d) × L f ading , Interference Power P i = i̸ =m P t,i × G i (θ i , ϕ i ) × L path (d i ) × L f adingi ,</formula><p>and Noise Power P n = N 0 × B are considered. P s accounts for the desired signal power. P i aggregates interference from all other BSs, and P n represents noise power. The SINR is computed as SIN R max,m,j = Ps,j Pi+Pn , (j ∈ J = 1, 2, 3). During UAV's path, we consider an outage occurs when the SINR is less than or equal to φ th , leading to an outage events:</p><formula xml:id="formula_2" coords="2,319.00,541.73,252.10,23.41">β(q(n)) = 1 if (SINR(q(n)) ≤ φ th ). The total outage events is denoted by Γ = T n=0 β(q(n)) .</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B. Problem Formulation</head><p>The objective of this research is to improve the adaptability of RL models, specifically DDQN, to novel environments using CTL.</p><p>Our general goal is to ensure that the training time for a policy π s in Environment s ∈ S is significantly less than the time required to train a new model from scratch for each new environment. We can thus formulate</p><formula xml:id="formula_3" coords="2,393.50,677.97,177.60,31.90">P : min T train (π s ) (1a) s.t. π (0) new = π pre-trained ,<label>(1b)</label></formula><p>where denoted by T train (π s ) is the training time of policy π s in the new enviroment s and (1b) specifies that a policy π 1 pre-trained in Environment 1 ∈ S is used as benchmark for the UAV trajectory in the new environment. Policy π 1 is trained using a DDQN model and then utilized for transfer learning across two additional maps or scenarios. This approach necessitates that after the transfer, the model maintains its original trajectory objectives, i.e., minimizing the steps n needed to reach its destination and to keep the frequency of outage events Γ below a certain threshold Γ. Policy π 1 is thus trained to solve problem:</p><formula xml:id="formula_4" coords="3,113.43,333.18,187.64,15.05">min n,q(n) n + K × Γ<label>(2)</label></formula><formula xml:id="formula_5" coords="3,114.18,353.19,186.88,51.85">s.t. q(0) = q I , q(T ) = q F (3) Γ &lt; Γ (4) h(u) &gt; h B (5) n ≤ N.<label>(6)</label></formula><p>The variable q(n) represents the UAV's position at step n, q I and q F signify the initial and final positions of the UAV, while q(T) presents the target position. Constraint (4) ensures that the maximum outage events throughout the flight remain below the specified threshold. Here h(u) denotes the altitude of the UAV, h B represents the highest altitude of the building, and N signifies the maximum permissible movement step of the UAV, considering battery constraints.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>III. RL AND CONTINUOUS LEARNING FOR TRAJECTORY DESIGN</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A. Preliminaries</head><p>DQN and its enhancement, Double DQN, represent significant advancements in integrating reinforcement learning with deep neural networks for autonomous decision-making. DQN facilitates learning from complex sensory inputs, overcoming challenges like instability and convergence issues through techniques such as experience replay and fixed Q-targets. DDQN further refines this by correcting DQN's overestimation of Q-values, ensuring more stable and accurate outcomes. This progression makes DQN and DDQN highly effective for UAV trajectory optimization in diverse urban environments, improving navigation precision in complex scenarios.</p><p>TL further enhances the learning process by utilizing knowledge acquired in one task to expedite learning in related but distinct tasks. It operates on the principle of reusing a pretrained model as a starting point for new tasks, significantly cutting down on the time and data needed for training in new environments or missions. Continuous Learning complements these methodologies by enabling UAVs to continually assimilate new information without discarding previously learned knowledge. This is crucial for operating in dynamic environments where conditions and obstacles may change unpredictably. Continuous learning ensures that UAVs can iteratively update their navigation strategies, maintaining peak performance and adaptability over time.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B. DQN and DDQN for UAV Trajectory Design</head><p>In our considered scenario, the UAV navigation task is modeled in a 3D space, where the UAV must reach a target position, starting at a random position within the set range. Given our UAV trajectory optimization, we can formulate the problem as an Markov Decision Process (MDP), which is defined by a tuple (S, A, P, R, γ). Each state s represents the UAV's current position, communication conditions, and the environment. Formally:</p><formula xml:id="formula_6" coords="3,393.74,429.49,102.62,8.96">s = {q(n), SINR(q(n))},</formula><p>where q(n) and SINR(q(n)) are the UAV's position and signal quality, respectively. The action space comprises potential directions in which the UAV can move at any given time: A = {move f, move b, move l, move r}. Given a state s and an action a, P(s ′ |s, a) represents the probability of transitioning to state s ′ . Since the UAV's movement is deterministic, given its current state and action, it will deterministically arrive at the next state. The reward function captures the objectives of minimizing the completion time and maintaining satisfactory communication. It is presented as</p><formula xml:id="formula_7" coords="3,319.00,565.44,251.61,21.99">R 1 (s, a, s ′ ) = −k1 × d(s, s target ) − k2 × F (q n ) − R n + R arrive (<label>7</label></formula><p>) where k1 and k2 are weighting factors to prioritize moving closer to the destination and penalize outage events during the transition. d(s, s target ) represents the distance between the UAV's current position and the target position. F (q n ) denotes the signal outage penalty function, which increases the loss for navigating through areas with poor signal quality. R n is the step penalty, and R arrive is the reward for reaching the target. The discount factor γ determines the present value of future rewards. Given the MDP framework for the UAV trajectory optimization, our goal is to find a policy π * that maximizing an expected cumulative reward:</p><formula xml:id="formula_8" coords="3,360.22,707.59,210.88,30.20">π * = arg max π E T t=0 γ t R(s t , a t , s t+1 ) ,<label>(8)</label></formula><p>where E denotes the expectation. The DQL agent uses two neural networks: a primary network for action selection and a target network for stable learning. Both DQN and DDQN utilize a similar network structure for action selection and evaluation, but DDQN's critical distinction lies in its action evaluation mechanism, which separates action selection from its value estimation. This separation ensures a more conservative and accurate assessment of the potential of each action, thereby enhancing the performance of trajectory design.</p><p>In addition to this, we have designed MDP that is more compatible with our scenarios to improve performance. This includes adding SINR information to the state to ensures that the models for transfer have sufficient depth of learning and understanding of the environment. The rewards will also be fine-tuned according to the situation when migrating to a new environment.</p><p>C. Continuous Learning for UAV Trajectory Design 1) Environments: We define the first environment that was used to train the DDQN base model as a dense urban area, characterized by a high concentration of tall buildings that demand complex navigational strategies to maintain connectivity and avoid obstacles. Transitioning to the second environment, the UAV encounters a sparse urban landscape with shorter buildings, a stark contrast to the first. This environment is explored under two distinct scenarios which are a standard mission mirroring the parameters of the dense urban environment, and an emergency scenario necessitating a sudden change in mission objectives due to a BS failure. The adaptability of the UAV is further tested in the third environment, a residential area with low housing blocks and a different BS distribution, presenting new navigational challenges and testing the UAV's ability to generalize its learned strategies to markedly different landscapes.  rather than optimizing the total reward, shortening training by 600-800 episodes. This method is chosen because, after reaching success rate convergence, the agent's main improvements involve strategies to avoid outage events, which may vary in effectiveness across different environments. This efficient training strategy reduces overall duration and improves the model's suitability for CTL. Subsequent findings affirm the benefits of this balanced approach, demonstrating its practical success.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Algorithm 1 CTL with DDQN across Environments</head><p>This pre-trained model is then transferred to accommodate sparse urban and residential areas. This process entails transferring the learned model weights and adjusting learning parameters, including the learning rate and exploration rates, to suit each new environment's specific characteristics (algorithm 1). Through this methodical adaptation, the UAV demonstrates not only enhanced learning efficiency but also improved performance and adaptability across diverse operational environments. By leveraging the knowledge gained in each successive environment, CTL enables the UAV to rapidly adjust to new challenges. The objective in the new environment remains aligned with our dual goals. The model, now starting with policy π (0) new , is further trained to adapt to the new conditions. The fine-tuning process involves iterative updates of the policy parameters:</p><formula xml:id="formula_9" coords="4,385.52,519.32,185.58,12.85">π (0) new = π pre-trained ,<label>(9)</label></formula><formula xml:id="formula_10" coords="4,375.89,534.69,191.06,12.85">π (k+1) new = π (k) new − α • ∇ πnew L(π (k) new ) (<label>10</label></formula><formula xml:id="formula_11" coords="4,566.95,537.08,4.15,8.64">)</formula><p>where α is the learning rate, and L represents the loss function tailored to the new environment.</p><p>Then we evaluate the performance of the transferred model in the new environment using metrics such as convergence time T convergence and improvements in stability or accuracy. These metrics will demonstrate the effectiveness of TL in reducing training time and enhancing model performance in diverse urban scenarios.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>IV. RESULTS</head><p>The height of the BS on the horizontal plane ranges from 5 to 25 meters, reflecting typical real-world configurations. The operational area for all maps is set to a size of 2 km × 2 km with a height limit of 100 meters. The maximum number of steps per episode, representing the battery limitation, is set to 200 steps, with each step corresponding to a displacement of 10 meters. A UAV arriving within a 30 meters radius of the target is considered to have successfully reached its destination. The networks consist of 3 hidden layers with 64 units each, using ReLU activation functions. The output layer has linear activation corresponding to action values. The learning rate in <ref type="bibr" coords="5,119.37,239.00,11.62,8.64" target="#b8">(9)</ref> was reduced to 0.0002 for fine-tuning, allowing for more subtle weight adjustments in the later layers, thereby refining the model's policy without drastic deviations from its pre-learned behaviors. Weighting factors for rewards <ref type="bibr" coords="5,48.96,282.83,11.62,8.64" target="#b6">(7)</ref> and more training parameters can be found in Table <ref type="table" coords="5,281.12,282.83,2.90,8.64" target="#tab_1">I</ref>.</p><p>The agent's performance improved over time, as indicated by an increase in total reward and a decrease in the number of steps required to reach the target. The learning progress was captured through two plots: total rewards, success rate over episodes, and average level of communication. To demonstrate this, we compared how well DQN and DDQN adapted to our scenarios, choosing the one that performed better as our base model for continuous learning.</p><p>In Fig. <ref type="figure" coords="5,96.96,392.95,4.98,8.64" target="#fig_1">2</ref> we illustrate the comparative performance between the DQN and DDQN models within the initial environment. The DQN model exhibits greater volatility throughout the training phase, with a 10-15% lower peak in average rewards for the optimum policy compared to the DDQN. Additionally, the DQN demonstrates less stable convergence by the 2000 episode, accompanied by increased variability. Thus, the DDQN model emerges as a more suitable foundational model for TL.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A. CTL in environment 2 with multi scenarios</head><p>This section shows the outcomes of TL in the second environment, encompassing two scenarios. Scenario one, illustrated in Fig. <ref type="figure" coords="5,105.62,534.92,3.74,8.64" target="#fig_2">3</ref>, involves utilizing the DDQN model from the first environment as the foundational model and has the same mission destinations as DDQN. The result in Fig. <ref type="figure" coords="5,259.23,556.84,4.15,8.64">4</ref> shows a more challenging scenario, which has different target positions and one of the BS is not working. Fig. <ref type="figure" coords="5,80.15,595.46,8.40,8.64" target="#fig_2">3a</ref> demonstrates the role of TL by showing the average rewards of the training, showcasing an earlier and more stable convergence compared to the DDQN model trained from scratch. The duration to achieve stable optimal rewards is shortened by 600-700 episodes, underscoring the efficiency of TL in accelerating performance and stability. The success rate of reaching the destination during training also notably underscores the efficiency of TL. As shown in Fig. <ref type="figure" coords="5,271.74,672.17,8.07,8.64" target="#fig_2">3b</ref>, the success rate stabilizes at least 99% over 250 episodes sooner than the scratch-trained model, which means that the model prioritizes finding the policy that reaches the destination and then adapts the relevant policy for the communication much faster, and this process for DDQN is much slower.  In navigating the challenges of training in a environment where a base station BS was no longer functional and the target position was further away, the UAV demonstrated commendable adaptability. Fig. <ref type="figure" coords="5,432.26,356.62,8.40,8.64">4a</ref> illustrates the average rewards of TL, and Fig. <ref type="figure" coords="5,386.41,367.58,8.58,8.64">4b</ref> shows the success rate in Environment 2 where, despite facing significant challenges, TL demonstrates its effectiveness by converging 300 episodes earlier in terms of average reward and 200 episodes earlier in reaching the target than the model trained from scratch. This scenario limited the CTL approach from fully exploiting all initial strategies as compared to a model beginning from scratch. It shows slight fluctuations during the training phase, these did not hinder the overall process convergence, which showcases the robustness of the UAV's learning capabilities. The observed variations, partly due to the task's target location moving further away, marginally slowed the learning speed but did not detract from the UAV's ability to readjust and progress. Therefore, the performance of CTL is expected and acceptable when faced with more challenging scenarios and altered tasks. The CTL efficiently navigated these complexities, underlining the effectiveness of its adaptive learning framework in dynamic environments.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B. CTL in environment 3 more differences</head><p>In the third environment (Fig. <ref type="figure" coords="5,461.52,589.54,3.74,8.64">5</ref>), the role is to test the potential for CTL. We designed the third environment to be very different from the environment used for the base model. This includes the distribution of buildings, height, size, number of BS locations, and changes in the target destination. The CTL still demonstrates strong capabilities; the convergence was 200 episodes faster and reached a stable success rate 150 episodes earlier. However, more fluctuations were encountered later on, which is predictable for reasons similar to those discussed in Environment 2, as not all environments were explored completely. This serves as an effective illustration of the capabilities of continuous learning to expedite model training outcomes, even when faced with environments that present significant disparities. </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="3,48.96,165.32,522.14,7.77;3,48.96,175.29,522.14,7.77;3,48.96,185.25,522.14,7.77;3,48.96,195.21,410.93,7.77;3,48.96,54.00,167.08,79.90"><head>Fig. 1 :</head><label>1</label><figDesc>Fig. 1: Comparative Visualization of UAV Operational Environments: This figure illustrates the UAV's navigation challenges and strategies across three environments. Graph a depicts a dense urban landscape with tall buildings; Graph b shows a sparse urban area with two scenarios: a standard mission and an emergency scenario, emphasizing the UAV's adaptability to sudden environmental changes; Graph c shows a third, more differentiated scenario, modelling a suburban residential area and varying the distribution of base stations</figDesc><graphic coords="3,48.96,54.00,167.08,79.90" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="5,48.96,152.30,252.11,7.77"><head>Fig. 2 :</head><label>2</label><figDesc>Fig. 2: Compare of DQN with DDQN for Trajectory Design in Env1</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="5,319.00,283.13,252.11,7.77"><head>Fig. 3 :</head><label>3</label><figDesc>Fig. 3: TL from ENV1 to ENV2 against retraining DDQN in ENV2</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" coords="4,48.96,459.11,252.10,276.49"><head>1 :</head><label>1</label><figDesc>Initialize DDQN in Environment 1: learning rate α 1 , exploration ϵ 1 , and exploration decay ϵ decay,1 . 2: Train the model with a replay buffer and a periodically updated target network to stabilize updates. 3: Save the model weights ξ Env1 and policy π Env1 4: Transfer to Env2: 5: Initialize Env2 with DDQN model weights ξ Env2 ← ξ Env1 and policy π Env2 ← π Env1 6: Adjust learning parameters for Env2: set new learning rate α 2 , ϵ 2 , and ϵ decay,2 7: Apply the new reward function R 2 (optional). The TL process begins with training a DDQN model in a dense urban setting, streamlining the training approach to enhance efficiency without requiring full model convergence. A targeted termination criterion focuses on achieving a high success rate at the destination</figDesc><table coords="4,50.73,579.98,250.33,111.56"><row><cell>8: Retrain transferred model in Env2 using the fixed param-</cell></row><row><cell>eters, maintaining the strategy of experience replay and</cell></row><row><cell>target network updates.</cell></row><row><cell>9: Save the updated model weights ξ Env2 and policy π Env2</cell></row><row><cell>10: Transfer to Env3 with process above</cell></row><row><cell>11: Continue this process for any subsequent environments,</cell></row><row><cell>transferring weights and policy while adjusting learning</cell></row><row><cell>parameters as needed</cell></row><row><cell>2) Training in different Domain:</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1" coords="4,347.23,63.40,193.19,160.42"><head>TABLE I :</head><label>I</label><figDesc>Summary of Model Parameters</figDesc><table coords="4,347.23,85.05,193.19,138.77"><row><cell>Parameter Name</cell><cell>Symbol</cell><cell>Value</cell></row><row><cell>Learning Rate(DDQN)</cell><cell>α</cell><cell>0.001</cell></row><row><cell>Initial Exploration Rate(DDQN)</cell><cell>ϵ</cell><cell>1.0</cell></row><row><cell>Exploration Decay Rate(DDQN)</cell><cell>ϵdecay</cell><cell>0.998</cell></row><row><cell>Learning Rate (Transfer)</cell><cell>αtransfer</cell><cell>0.0002</cell></row><row><cell>Initial Exploration Rate (Transfer)</cell><cell>ϵtransfer</cell><cell>0.5</cell></row><row><cell>Exploration Decay Rate (Transfer)</cell><cell>ϵdecay, transfer</cell><cell>0.995</cell></row><row><cell>Arrive Target for Env1</cell><cell>q F 1</cell><cell>1000,900</cell></row><row><cell>Arrive Target for Env2</cell><cell>q F 2</cell><cell>1250,1300</cell></row><row><cell>Discount Factor</cell><cell>γ</cell><cell>0.95</cell></row><row><cell>Weighting Factor for Distance length</cell><cell>k1</cell><cell>0.8</cell></row><row><cell>Weighting Factor for Outage Penalty</cell><cell>k2</cell><cell>1</cell></row><row><cell>Step Penalty</cell><cell>Rn</cell><cell>1</cell></row><row><cell>Reward for Reaching Target</cell><cell>Rarrive</cell><cell>2000</cell></row><row><cell>Max steps per eposode</cell><cell>steps</cell><cell>200</cell></row><row><cell>SINR Threshold for outage</cell><cell>φth</cell><cell>0 dB</cell></row><row><cell>UAV Height</cell><cell>h(u)</cell><cell>90 m</cell></row></table></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>ACKNOWLEDGMENT</head><p>This work was supported by Engineering and Physical Sciences Research Council United Kingdom (EPSRC), Impact Acceleration Accounts (IAA), Green Secure and Privacy Aware Wireless Networks for Sustainable Future Connected and Autonomous Systems, under Grant EP/X525856/1.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>V. CONCLUSION</p><p>In conclusion, the performance of CTL across two distinct environments demonstrated its effectiveness in accelerating learning and achieving higher success rates compared to training DDQN models from scratch. For transfer to similar environments, TL showcased a notable advantage in terms of stability and early convergence, with the second case highlighting its capacity to adapt to more complex tasks and scenarios, albeit with reduced efficiency and some late-stage fluctuations. The third environment, significantly divergent from the initial training context, further tested the limits of CTL, where, despite faster convergence and commendable performance, the model faced increased fluctuations due to incomplete exploration of the new environment. These findings underscore the potential of TL to enhance model adaptability and efficiency, particularly in dynamically changing or progressively complex scenarios, while also pointing to the need for strategies to mitigate late-stage performance variability. In our future works we plan to investigate this issue and work on strategies that deal with this performance variability, and more in-depth study of energy conservation strategies.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="6,340.25,208.11,230.85,6.91;6,340.25,217.08,230.85,6.91;6,340.25,225.90,230.86,7.05;6,340.25,235.01,17.93,6.91" xml:id="b0">
+	<monogr>
+		<title level="m" type="main">A survey on UAV placement and trajectory optimization in communication networks: From the perspective of air-to-ground channel models</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Won</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D.-Y</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y.-I</forename><surname>Park</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J.-W</forename><surname>Lee</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+			<publisher>ICT Express</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,340.25,246.47,230.85,6.91;6,340.25,255.43,230.85,6.91;6,340.25,264.25,190.44,7.05" xml:id="b1">
+	<analytic>
+		<title level="a" type="main">A survey on machine-learning techniques for UAV-based communications</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">S</forename><surname>Bithas</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">T</forename><surname>Michailidis</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Nomikos</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Vouyioukas</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">G</forename><surname>Kanatas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Sensors</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">23</biblScope>
+			<biblScope unit="page">5170</biblScope>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,340.25,275.85,230.85,6.91;6,340.25,284.82,230.85,6.91;6,340.25,293.64,230.86,7.05;6,340.25,302.61,182.21,7.05" xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Advancing uav communications: A comprehensive survey of cutting-edge machine learning techniques</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Fontanesi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Canberk</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Mohajerzadeh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Chatzinotas</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Graces</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Ahmadi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Open Journal of Vehicular Technology</title>
+		<imprint>
+			<biblScope unit="page" from="1" to="31" />
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,340.25,314.21,230.85,6.91;6,340.25,323.03,230.86,7.05;6,340.25,332.00,230.86,7.05;6,340.25,341.11,17.93,6.91" xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Intelligent trajectory design in UAV-aided communications with reinforcement learning</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Yin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><forename type="middle">R</forename><surname>Yu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Vehicular Technology</title>
+		<imprint>
+			<biblScope unit="volume">68</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="8227" to="8231" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,340.25,352.57,230.85,6.91;6,340.25,361.53,230.85,6.91;6,340.25,370.36,230.85,7.05;6,340.25,379.47,17.93,6.91" xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Deep reinforcement learning multi-UAV trajectory control for target tracking</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Moon</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Papaioannou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Laoudias</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Kolios</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Kim</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Internet of Things Journal</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">20</biblScope>
+			<biblScope unit="page">455</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,340.25,390.92,230.85,6.91;6,340.25,399.89,230.85,6.91;6,340.25,408.71,230.86,7.05;6,340.25,417.68,194.79,7.05" xml:id="b5">
+	<analytic>
+		<title level="a" type="main">UAV trajectory planning in wireless sensor networks for energy consumption minimization by deep reinforcement learning</title>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Bedeer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><forename type="middle">H</forename><surname>Nguyen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Barton</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Henry</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Vehicular Technology</title>
+		<imprint>
+			<biblScope unit="volume">70</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="9540" to="9554" />
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,340.25,429.28,230.85,6.91;6,340.25,438.25,230.85,6.91;6,340.25,447.07,230.85,7.05;6,340.25,456.04,183.20,7.05" xml:id="b6">
+	<analytic>
+		<title level="a" type="main">3D UAV trajectory design and frequency band allocation for energy-efficient and fair communication: A deep reinforcement learning approach</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Ding</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><forename type="middle">S</forename><surname>Shen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Wireless Communications</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="7796" to="7809" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,340.25,467.64,230.85,6.91;6,340.25,476.46,230.85,7.05;6,340.25,485.43,215.03,7.05" xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Deep reinforcement learning for dynamic band switch in cellular-connected uav</title>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Fontanesi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Ahmadi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2021 IEEE 94th Vehicular Technology Conference (VTC2021-Fall)</title>
+				<imprint>
+			<date type="published" when="2021">2021</date>
+			<biblScope unit="page" from="1" to="5" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,340.25,497.03,230.85,6.91;6,340.25,505.85,230.86,7.05;6,340.25,514.82,230.85,7.05;6,340.25,523.92,26.70,6.91" xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Connectivity-aware uav path planning with aerial coverage maps</title>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">B</forename><surname>Lataief</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2019 IEEE Wireless Communications and Networking Conference (WCNC)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="page" from="1" to="6" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,340.25,535.38,230.85,6.91;6,340.25,544.20,230.86,7.05;6,340.25,553.17,143.27,7.05" xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Knowledge transfer between different UAVs for trajectory tracking</title>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Zheng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Robotics and Automation Letters</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="4939" to="4946" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,340.25,564.77,230.85,6.91;6,340.25,573.74,230.85,6.91;6,340.25,582.56,230.86,7.05" xml:id="b10">
+	<analytic>
+		<title level="a" type="main">A transfer learning approach for UAV path design with connectivity outage constraint</title>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Fontanesi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Arvaneh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Ahmadi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Internet of Things Journal</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="4998" to="5012" />
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,340.25,594.16,230.85,6.91;6,340.25,603.13,230.85,6.91;6,340.25,611.95,230.86,6.87;6,340.25,621.06,69.47,6.91" xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Trajectory design for UAVassisted emergency communications: A transfer learning approach</title>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Lambotharan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">GLOBECOM 2020-2020 IEEE Global Communications Conference</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="page" from="1" to="6" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,340.25,632.52,230.85,6.91;6,340.25,641.34,230.86,7.05;6,340.25,650.45,113.50,6.91" xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Outage analysis for millimeterwave fronthaul link of UAV-aided wireless networks</title>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Fontanesi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Ahmadi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Access</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="111" to="693" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,340.25,661.91,230.85,6.91;6,340.25,670.73,230.86,7.05;6,340.25,679.70,230.85,7.05;6,340.25,688.81,17.93,6.91" xml:id="b13">
+	<analytic>
+		<title level="a" type="main">3D channel model in 3GPP</title>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Mondal</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">A</forename><surname>Thomas</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Visotsky</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><forename type="middle">W</forename><surname>Vook</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Ghosh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y.-H</forename><surname>Nam</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Q</forename><surname>Luo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Communications Magazine</title>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="16" to="23" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,340.25,700.26,230.85,6.91;6,340.25,709.09,230.86,7.05;6,340.25,718.05,199.10,6.87" xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Study of realistic antenna patterns in 5G mmwave cellular scenarios</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Rebato</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Resteghini</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Mazzucco</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Zorzi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2018 IEEE International Conference on Communications (ICC)</title>
+				<imprint/>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

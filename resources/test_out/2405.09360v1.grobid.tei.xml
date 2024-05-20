@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">The Unfairness of ε-Fairness</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,200.83,123.80,82.65,10.75"><forename type="first">Tolulope</forename><surname>Fadina</surname></persName>
+							<email>tfadina@illinois.edu</email>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Mathematics</orgName>
+								<orgName type="institution">University of Illinois Urbana -Champaign Urbana Illnois</orgName>
+								<address>
+									<postCode>61801</postCode>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,313.20,123.80,92.00,10.75"><forename type="first">Thorsten</forename><surname>Schmidt</surname></persName>
+							<email>thorsten.schmidt@stochastik.uni-freiburg.de.</email>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Mathematical Stochastics</orgName>
+								<orgName type="institution">University of Freiburg</orgName>
+								<address>
+									<addrLine>Ermst-Zermelo Str. 2</addrLine>
+									<postCode>79104</postCode>
+									<settlement>Freiburg</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">The Unfairness of ε-Fairness</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">8A0444A955F93A3C3BF198BA71E34111</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2024-05-19T14:15+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Fairness in decision-making processes is often quantified using probabilistic metrics. However, these metrics may not fully capture the real-world consequences of unfairness. In this article, we adopt a utility-based approach to more accurately measure the real-world impacts of decision-making process. In particular, we show that if the concept of εfairness is employed, it can possibly lead to outcomes that are maximally unfair in the real-world context. Additionally, we address the common issue of unavailable data on false negatives by proposing a reduced setting that still captures essential fairness considerations. We illustrate our findings with two real-world examples: college admissions and credit risk assessment. Our analysis reveals that while traditional probability-based evaluations might suggest fairness, a utility-based approach uncovers the necessary actions to truly achieve equality. For instance, in the college admission case, we find that enhancing completion rates is crucial for ensuring fairness. Summarizing, this paper highlights the importance of considering the real-world context when evaluating fairness.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>With the immense success of machine-learning algorithms, also the aim at more fair decisions, particularly in fields where decisions have profound implications on individuals' lives, such as finance, healthcare, and employment, has become in close reach. Although numerous measures aimed at parity across different groups have been proposed, these often focus narrowly on statistical metrics. We argue that solely focusing on narrow probabilistic metrics can not capture the full picture of the question at hand, in particular the real-world consequences of the decision are overlooked, see also <ref type="bibr" coords="1,72.54,581.18,74.72,8.64" target="#b16">(Selbst et al. 2019;</ref><ref type="bibr" coords="1,149.75,581.18,75.67,8.64" target="#b9">Heidari et al. 2021)</ref>.</p><p>This article introduces a tractable utility-based approach that incorporates the real-world context of the question at hand and therefore provides a more holistic understanding of fairness. This becomes most prominent when ε-fairness, introduced in <ref type="bibr" coords="1,110.94,636.14,79.46,8.64" target="#b11">(Kearns et al. 2018)</ref>, is considered: this concept has been proposed when exact parity is unattainable but close probability seems to be sufficient. We show that this hope for sufficiency may break down when embedded in a real-world context. It even may happen that an ε-fair approach for a very small ε &gt; 0 is heavily unfair in terms of the associated utilities and we provide several examples which point this out. In addition, we provide sufficient conditions which -even when the context is only known approximately, or when uncertainty needs to be taken into account -can be applied to ensure absence of disadvantages (in utility).</p><p>Since monetary measures are a special case of utilitybased measures, our approach also allows us to conclude the absence of material inequality. We proceed by introducing a simple setup, which we call the standard setting which includes the typically considered cases with four cases. Since in many practically relevant cases information on true and false negatives is not available, we also introduce a reduced setting, where these two cases are merged into one case. To give an outlook on the full power of the utility-based approach, we also touch upon a general setting where hidden random variables determine the cases and correlation between default probability and utility is possible, paving the way for more complex treatments. Proofs are relegated to the appendix.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Related literature</head><p>The famous concept of describing human decisions via utilities is well-established in economic contexts. The application in the context of fairness dates at least back to <ref type="bibr" coords="1,541.06,508.87,12.71,8.64;1,319.50,519.83,39.99,8.64" target="#b0">(Arrow 1973)</ref>. Just recently, the treatment in the fairness context intensified, see <ref type="bibr" coords="1,401.15,530.79,82.68,8.64" target="#b15">(Mitchell et al. 2021</ref>) for an overview. The works which are most related to our approach are <ref type="bibr" coords="1,536.98,541.75,16.82,8.64;1,319.50,552.71,63.62,8.64" target="#b10">(Heidari et al. 2019)</ref>, <ref type="bibr" coords="1,390.68,552.71,100.98,8.64" target="#b1">(Blandin and Kash 2023)</ref>, <ref type="bibr" coords="1,499.22,552.71,54.36,8.64;1,319.50,563.67,106.16,8.64" target="#b4">(Dwork, Reingold, and Rothblum 2023)</ref>, (Ben-Porat, Sandomirskiy, and Tennenholtz 2021), and <ref type="bibr" coords="1,420.85,574.63,132.87,8.64" target="#b20">(Wen, Bastani, and Topcu 2021)</ref>. Credit modeling has of course been considered intensively, and we refer to <ref type="bibr" coords="1,383.45,596.54,147.84,8.64" target="#b14">(McNeil, Frey, and Embrechts 2015)</ref> for an overview. We mention that <ref type="bibr" coords="1,428.73,607.50,60.30,8.64" target="#b13">(Liu et al. 2019</ref>) already pointed out that standard measures of fairness show difficulties in promoting the long-term being of the protected group in a feedback model. We highlight these difficulties from a different viewpoint; a feedback model is beyond the scope of this paper and left for future research.</p><p>Since we also take uncertainty into account, we shortly refer to <ref type="bibr" coords="1,351.21,684.56,120.63,8.64" target="#b8">(Gilboa and Schmeidler 1993;</ref><ref type="bibr" coords="1,474.42,684.56,83.59,8.64;1,319.50,695.51,60.63,8.64" target="#b5">Fadina, Neufeld, and Schmidt 2019)</ref> for a detailed treatment and further refer-ences. For a work that is intrinsically linked to fairness and uncertainty, see <ref type="bibr" coords="2,118.37,68.44,158.05,8.64" target="#b4">(Dwork, Reingold, and Rothblum 2023)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>The standard setting</head><p>The fairness question we focus on considers n individuals which face a binary classification by an algorithm. The underlying state Y i of individual i is a random variable, i.e.</p><formula xml:id="formula_0" coords="2,116.39,141.67,113.71,9.65">Y i ∈ {0, 1}, 1 ≤ i ≤ n.</formula><p>According to the usual convention in the machine learning literature we associate with 1 the "good" state, for example successfully completing studies or paying back a credit. Each individual i is characterised by covariates, which we often do not observe. We therefore consider the covariates as fixed in the current context which means we concentrate on individuals with similar covariates. A detailed treatment taking covariables into account is quite complex and therefore beyond the scope of this work.</p><p>The fairness question arises through a sensitive attribute. More precisely, each individual carries a legally protected or ethically sensitive attribute</p><formula xml:id="formula_1" coords="2,137.98,293.51,70.54,9.65">S i ∈ {0, . . . , N }.</formula><p>Of course, Y is typically not known -it is only available in test data sets. The considered algorithm gives a prediction Ŷi to each individual, which estimates this outcome. We assume that</p><p>Ŷi ∈ {0, 1}</p><p>Hence, we do not include any sort of randomization, as done, for example, in <ref type="bibr" coords="2,116.93,379.46,72.39,8.64" target="#b3">(Dwork et al. 2012</ref>).</p><p>In the following, we will simply write Y instead of Y i and Ŷ instead of Ŷi if there is no focus on a particular individual.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>The associated utilities</head><p>The decision of the algorithm impacts each individual differently, contingent on the actual outcome Y -in the college admission setting the two possible decisions are: admitted, Ŷ = 1, (predicting the completion of the studies) or not admitted, Ŷ = 0. In the first case the utility will depend on whether the studies can successfully be completed (in this case Y = 1) or not (then Y = 0), which we reflect by specific utilities assigned to each outcome. In the case where the applicant is not admitted, the utilities might also depend on Y : on the one side, if the applicant is highly capable, she or he might also perform very well in another professional area. On the other side, it turns out preferable to not have a high burden from student loans. It seems important to point out that typically there is no data available on these cases where no admission occurs -which motivates the reduced setting introduced later.</p><p>To capture the context of all these distinguished cases in an appropriate manner, we introduce the associated utilities. Utilities are a well established tool to describe the decisions of rational persons 1 . Hence, to each possible state Y i = k and Ŷi = j, we associate the utility U kj .</p><p>1 See fore example Section 2.5 in <ref type="bibr" coords="2,186.30,696.16,94.76,7.77" target="#b6">(Föllmer and Schied 2011)</ref>. This means that for given outcome of the decision, say Ŷi = 1 one receives utility U 11 if Y i turns out to be equal to 1, and U 01 if Y i turns out to be equal to 0. Note that the utility does not depend on i, hence is the same for each individual, see Figure <ref type="figure" coords="2,348.00,324.05,3.74,8.64" target="#fig_0">1</ref>.</p><p>Example 1 (University admission). Admission to the university ( Ŷ = 1) offers a high utility if the study is completed. Failing to complete one's studies often results in significant financial loss, encompassing both direct costs and the foregone opportunities of alternative paths. Therefore,</p><formula xml:id="formula_2" coords="2,415.76,403.41,142.24,9.65">U 11 ≫ U 01 (1)</formula><p>indicating that the utility derived from successfully completing studies (the case 11) is substantially greater (indicated by ≫) than that from not completing them (the case 01). For the case of no admission, we could neglect the utility difference, but it seems also plausible that in the case where Y = 1 (indicating the capability to successfully complete the studies) the performance in other professional areas is higher in comparison to Y = 0.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Fairness and inequality</head><p>It is common in the fairness literature to rely on a number of well-known statistical measures. We will refrain from a detailed discussion but only show a simple example here.</p><p>A more detailed discussion is developed in <ref type="bibr" coords="2,492.09,570.88,65.91,8.64;2,319.50,581.84,74.03,8.64">(Fadina, Hinsch, and Schmidt 2024)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Disadvantages in terms of utilities</head><p>The central aim of our work is to measure inequalities by the means of utilities. In contrast to manifold other approaches we therefore do not rely on narrow statistical measures. Note that if the utility function is chosen to be the identity, we are considering monetary outcomes directly, and thus the detection of material inequality is contained as a special case. However, working with utilities allows a more general viewpoint, which we adopt here.</p><p>To ease the exposition we concentrate on two groups, i.e. N = 1, while the arguments extend also to the general case. It is typically considered unfair if the algorithm produces unjustified disadvantages. Disadvantage will be measured in terms of utility difference between the groups. We do not aim at a distance, but a directed quantitiy. To this end, define s = 0 as the standard group and s = 1 as the protected group. We denote by P s the probability conditional on s ∈ {0, 1} and by E s the associated expectation.</p><p>A disadvantage (for the protected group) is a positive utility difference UD where</p><formula xml:id="formula_3" coords="3,124.96,181.67,96.57,9.65">UD := E 0 [U ] − E 1 [U ].</formula><p>(2) If the utility difference is negative, the outcome for the protected group is better in comparison to the standard group, such that there is no disadvantage. Small disadvantages might be acceptable, and we fix a size τ ≥ 0 as a level of acceptable differences (in terms of utilities). A utility difference above τ is classified as a not negligible disadvantage of the protected group, which leads to the following definition<ref type="foot" coords="3,286.02,260.99,3.49,6.05" target="#foot_0">2</ref> . Definition 2. A decision rule induces a (not negligible) disadvantage, if UD &gt; τ.</p><p>(3) In the following, by fairness we refer to the case where there is no disadvantage (at level τ = 0). Sometimes we also use the term fairness in utility to emphasize the difference to other fairness metrics.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Expected utility</head><p>Our first result computes the expected utility in our setting. It turns out that this expression can be simplified in the case with two groups only, while an analogous expression can obtained in a similar manner for arbitrarily many groups. Proposition 3. Assume that there are only two groups, i.e. N = 1. Then, the expected utility for group s is given by</p><formula xml:id="formula_4" coords="3,86.78,454.98,172.94,45.59">E s [U ] = P s (Y = 1, Ŷ = 1) • (U 11 − U 01 ) + P s (Y = 0, Ŷ = 0) • (U 00 − U 10 ) + P s ( Ŷ = 1) • (U 01 − U 10 ) + U 10 .</formula><p>(4) To provide an easy access to this formula we introduce the following notation:</p><formula xml:id="formula_5" coords="3,54.00,530.83,234.37,67.58">U := U 11 − U 01 U 00 − U 10 U 01 − U 10 , P s :=   P s (Y = 1, Ŷ = 1) P s (Y = 0, Ŷ = 0) P s ( Ŷ = 1),   such that E s [U ] = U • P s + U 10 .</formula><p>(5) The following proposition draws the connection to probabilities: if the joint probabilities of both groups coincide, then fairness holds. This also implies that all partial statistics (conditional use accuracy, positive predictive value, etc.) do not guarantee fairness without further assumptions.</p><p>Proposition 4 (Equal joint probabilities imply fairness). Consider the case with two groups, i.e. N = 1. If</p><formula xml:id="formula_6" coords="3,353.69,84.60,170.11,12.17">P 0 ( Ŷ = i , Y = j) = P 1 ( Ŷ = i , Y = j),</formula><p>for at least three pairs (i, j) ∈ {0, 1} × {0, 1}, then the decision rule does not induce a disadvantage.</p><p>Since probabilities sum up to one, we do not need all four pairs (i, j), and can reduce to three in the above results.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Computing the utility difference</head><p>We now introduce the appropriate tools to compute the utility difference UD easily in our setting with two groups, i.e. N = 1. Then we have the associated probability measures P 0 and P 1 and introduce the difference</p><formula xml:id="formula_7" coords="3,383.74,226.32,174.26,9.65">PD(A) := P 0 (A) − P 1 (A)<label>(6)</label></formula><p>for all sets A. From equation ( <ref type="formula" coords="3,440.70,244.11,3.87,8.64">5</ref>) we obtain that</p><formula xml:id="formula_8" coords="3,408.25,261.23,149.75,8.99">UD = U • PD (7)</formula><p>where the vector PD = P 0 − P 1 can also be computed through the probability differences</p><formula xml:id="formula_9" coords="3,371.94,306.28,133.62,36.71">PD :=   PD(Y = 1, Ŷ = 1) PD(Y = 0, Ŷ = 0) PD( Ŷ = 1)   .</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>The unfairness of ε-fairness</head><p>A general notion of fairness relies on a measure which describes the fairness of a certain decision rule Ŷ . From the above discussion we see that the question of fairness depends on the full joint distribution between groups. As a consequence, fairness can be related to a certain distance of these measures. Let us denote this distance by d. We say that the estimator Ŷ achieves d-fairness if</p><formula xml:id="formula_10" coords="3,405.01,456.00,152.99,9.65">d(P s1 , P s2 ) = 0.<label>(8)</label></formula><p>In reality, it will typically not be possible to achieve a vanishing distance. In particular, since the probabilities need to be estimated, even if the distance vanishes on the estimated probabilities, this of course does not guarantee (maybe even not with a high probability) that the distance of the true underlying probability measures vanishes. Therefore it is natural to relax this notion in the following way: Ŷ achieves (d, ε)-fairness if</p><formula xml:id="formula_11" coords="3,405.18,569.29,152.82,9.65">d(P s1 , P s2 ) ≤ ε. (9)</formula><p>If the metric is clear from the context, we simply talk about ε-fairness.</p><p>The main goal of this section is to show that under certain assumptions (d, 0)-fairness ensures utility-fairness, while this is not the case for (d, ε)-fairness. In fact, we provide an example which is (d, ε)fair for an ε &gt; 0 arbitrary close to zero but is unfair in utility (even more, it is unfair on an arbitrarily large scale).</p><p>For all usual metrics d, a positive distance</p><formula xml:id="formula_12" coords="3,410.07,691.91,147.93,9.65">d(P 0 , P 1 ) &gt; 0 (10) implies that at least one of the distances | PD(Y = 0, Ŷ = 0)|, or | PD(Y = 1, Ŷ = 1)| is positive, hence | PD(Y = 0, Ŷ = 0)| + | PD(Y = 1, Ŷ = 1)| &gt; 0. (11)</formula><p>The following results shows that ε-fairness can be maximally unfair. In particular, if the distance of the probability measures is not zero (but very small), the utility difference can be arbitrarily large. Proposition 5. Assume that d(P 0 , P 1 ) &gt; 0 such that (11) holds. Then, there exist for any K &gt; 0 parameters U 00 , . . . , U 11 such that UD ≥ K.</p><p>We may point to the simple proof of this proposition in the appendix which illustrates that for each possible scenario the utilities can be chosen in such an inconvenient way implying an arbitrarily large utility difference. In practice, however, there should be natural bounds on the utilities available. For this case we develop a number of tools in the following.</p><p>Without further assumptions we can at most hope for the following upper bound. Having Equation ( <ref type="formula" coords="4,230.84,285.85,3.87,8.64">7</ref>) in mind, we say that utility differences are bounded by K if the vector</p><formula xml:id="formula_13" coords="4,54.00,305.87,173.66,28.09">U = (U 1 , U 2 , U 3 ) ⊤ satisfies max{|U 1 |, |U 2 |, |U 3 |} ≤ K</formula><p>and the probability differences are bounded by ε, if the vec-</p><formula xml:id="formula_14" coords="4,54.00,350.56,189.85,28.09">tor PD = (PD 1 , PD 2 , PD 3 ) ⊤ satisfies max{| PD 1 |, | PD 2 |, | PD 3 |} ≤ ε.</formula><p>Proposition 6. Assume that utility differences are bounded by K &gt; 0 and probability differences by ε &gt; 0. Then, there is no disadvantage larger than 3εK.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Demographic parity and equalized odds</head><p>There is an intensive discussion of which metrics should be used to study fairness of an algorithm<ref type="foot" coords="4,203.36,468.72,3.49,6.05" target="#foot_1">3</ref> . One metric which is of interest in the fairness discussion is demographic parity. In our context demographic parity arises naturally, compare Equation (7). Indeed, demographic parity holds if P 0 ( Ŷ = 1) = P 1 ( Ŷ = 1), and hence PD( Ŷ = 1) = 0. We say that statistical parity holds when P 0 (Y = 1) = P 1 (Y = 1). A further metric which is often discussed, is equalized odds. This measure requires equal true positive and false positive rates, i.e.</p><formula xml:id="formula_15" coords="4,68.35,614.39,224.15,12.17">P 0 ( Ŷ = i|Y = i) = P 1 ( Ŷ = i|Y = i), i = 0, 1. (12)</formula><p>The following proposition shows that equalized odds together with statistical parity implies fairness. However, since statistical parity can not be controlled and will often not hold, this should rather rarely be applicable in practice.</p><p>Proposition 7. Assume that statistical parity and equalized odds hold and that U 01 = U 10 . Then, there is no disadvantage.</p><p>We note that demographic parity together with equalized odds is not sufficient to conclude fairness.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>College admission</head><p>As an example of our framework, we study college admission in further detail, extending Example 1. The study in <ref type="bibr" coords="4,319.50,174.91,59.95,8.64" target="#b19">(Webber 2016)</ref> shows that besides, age, education, race and gender also cognitive and non-cognitive abilities play an important role. For the first case we consider two groups which have median abilities but otherwise only differ in the protected attribute. For this case, the above study reports expected life-time earnings in the case with high college expenses of approximately 1,420,000 (high school) and 1,590,000 (some college). Thus, the utility of successfully completing the studies equals (in monetary terms)</p><formula xml:id="formula_16" coords="4,406.78,282.82,63.95,9.65">U 11 = 170,000.</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A first, rough estimate</head><p>Proposition 6 gives us a first rough estimate on possible disadvantages. With ( <ref type="formula" coords="4,397.82,337.17,8.30,8.64" target="#formula_22">14</ref>) we obtain K = 230.000 as minimal bound on the utilities in this case. If a small ε could be achieved this would already lead to a good bound. However, we will motivate in the following paragraph that the protected group typically has substantial disadvantages in completing their studies (say 20%) such that probability differences are bounded by q 0 • 0.2 = 0.16 in the later example. This implies UD ≤ 0.16 • 230,000 = 36,800 which is substantial. Despite the fact that demographic parity holds in this case as we detail in the following.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>The simplest case</head><p>Additionally, we assume U 01 = 0, since we see this as our reference case here. Also let us assume for this case that U 10 = U 00 = 0. It is clear that university admission is highly attractive and everybody should have equal opportunities to participate.</p><p>We again assume that group 0 is admitted with probability q 0 ∈ [0, 1] and the protected group 1 with probability q 1 ∈ [0, 1]. The algorithm has some forecasting abilities, and hence Y is not independent from Ŷ . However failure rates are still reported to be high<ref type="foot" coords="4,426.21,609.27,3.49,6.05" target="#foot_2">4</ref> and we assume that the forecast is little worse in the protected group, possibly due to lack of data or other factors. We introduce δ &gt; 0 as follows:</p><formula xml:id="formula_17" coords="4,329.94,650.58,217.61,28.88">P 0 (Y = 1 | Ŷ = 1) = P 1 (Y = 1 | Ŷ = 1) + δ &gt; P 1 (Y = 1 | Ŷ = 1) =: q 1 (1, 1);</formula><p>where we denote q s (i, j) = P s (Y = i | Ŷ = j). Then,</p><formula xml:id="formula_18" coords="5,54.00,73.98,234.35,62.28">UD = U • PD = U 11 0 0 • q 0 • (q 1 (1, 1) + δ) − q 1 • q 1 (1, 1) (1 − q 0 ) • q 0 (0, 0) − (1 − q 1 ) • q 1 (0, 0) q 0 − q 1 = U 11 • q 1 (1, 1) • (q 0 − q 1 ) + q 0 • δ . (<label>13</label></formula><formula xml:id="formula_19" coords="5,288.35,126.93,4.15,8.64">)</formula><p>The simplicity of this formula stems from our assumptions, since only U 11 was assumed to be non-vanishing, while all other utilities vanish. At this moment two things become clear: demographic parity (i.e. q 0 = q 1 ) only implies no disadvantages if δ = 0. In this case,</p><formula xml:id="formula_20" coords="5,116.03,215.12,114.45,9.65">UD q0=q1 = U 11 • q 0 • δ = 0.</formula><p>If the standard group is admitted with, say q 0 = 80%, and the prediction difference δ is substantial, say δ = 20%, then the utility difference computes to 27,200.</p><p>We compute the smallest level of admission probabilities for the protected group which implies no disadvantages. We assume that q 1 (1, 1) = 70%, i.e. 30% failure rate. Then,</p><formula xml:id="formula_21" coords="5,57.76,303.62,230.98,23.23">q * 1 = q 1 (1, 1) • q 0 + q 0 • δ q 1 (1, 1) = q 0 • 1 + δ q 1 (1, 1) &gt; 1.00.</formula><p>Summarizing, from our viewpoint an admission rate of over 100% is the minimal admission rate to ensure no disadvantage. The advantage of university admission in this case is so high that almost everyone from the protected group should be admitted to correct for the disadvantage arising through the more insecure prediction through δ. With an admission rate of 100% still a disadvantage of 500 remains. It turns out that more needs to be done to achieve fairness: the failure rates of the protected group need to be reduced, a surprisingly strong result from our simple framework. We illustrate the situation in Figure <ref type="figure" coords="5,213.67,443.28,3.74,8.64" target="#fig_1">2</ref>. On the left hand side we modify the setup slightly, by considering a fixed number of possible admissions, which improves the situation a bit (we do not detail the simple calculations).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Incorporating student loans</head><p>Now we may revisit that case, incorporating remaining student loans when studies are not completed successfully. According to <ref type="bibr" coords="5,98.30,532.54,55.70,8.64" target="#b19">(Webber 2016</ref>) high college costs were on average leading to a loan of size 60,000, i.e.</p><formula xml:id="formula_22" coords="5,139.89,560.03,152.61,9.65">U 01 = −60,000.<label>(14)</label></formula><p>In this case, we obtain</p><formula xml:id="formula_23" coords="5,54.00,593.71,243.13,77.43">UD = U • PD = U 11 − U 01 0 U 01 • q 0 • (q 1 (1, 1) + δ) − q 1 • q 1 (1, 1) (1 − q 0 ) • q 0 (0, 0) − (1 − q 1 ) • q 1 (0, 0) q 0 − q 1 = (U 11 − U 01 ) • q 1 (1, 1) • (q 0 − q 1 ) + q 0 • δ + U 01 • (q 0 − q 1 ).<label>(15)</label></formula><p>We first observe that now U 11 is replaced by Left:The utility difference as function of q 1 . Even if the admission rate of the protected group equals q 1 = 100%, there remains a disadvantage of ca. 500. Right: The case with a fixed number of admitted persons. We admit 1000 persons out of 1250, where 250 belong to the protected group. Starting from an equal admission rate of 80% we allow additional persons from the protected group, meanwhile diminishing the number of admissions from the other group. In this case one is able to achieve equal utilities by admitting 95% of the protected group.</p><formula xml:id="formula_24" coords="5,127.57,695.20,91.37,9.65">U 11 − U 01 = 230,000,</formula><p>such that the previously discussed effect is increased by more than one fourth. Demographic parity (q 0 = q 1 ) in this case eliminates the second component of the utility difference (see Equation ( <ref type="formula" coords="5,400.97,321.64,7.47,8.64" target="#formula_23">15</ref>)).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Taking wealth into account</head><p>Up to now we presented fairly general results and concentrated on monetary inequality. However, the utility-based framework offers much more, for example different wealth between the groups or even on an individual level can be taken into account through a utility function. In this case, the utilities will depend on the group. This can be incorporated into our framework, but is beyond the scope of this paper and therefore left for future research.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Sufficient conditions</head><p>The preceding results showed that one has to be extremely careful when considering fairness, in particular when the context is left aside. In the following we will show how to come up with useful estimates which allow to conclude a suitable level of fairness even when the utilities are not known precisely. In the case when some utilities vanish, we may reduce our requirements even further and can conclude fairness on the basis of some well-known requirements.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conditional use accuracy</head><p>While many conditional quantities like true positive rate or equalized odds typically do not imply equality of the unconditional probabilities they are difficult to connect to Equation ( <ref type="formula" coords="5,323.03,610.48,3.53,8.64">5</ref>). This is simpler with the conditional use accuracy, which we will exploit now. In principle this can also be applied to equalized odds, but not without a few additional steps, such that we do not consider this quantity here.</p><p>According to (Caton and Haas 2024) Section 3.2.2, equality in the conditional use accuracy (CUA) holds, if</p><formula xml:id="formula_25" coords="5,390.79,689.39,95.92,11.26">PD(Y = i | Ŷ = i) = 0 for i = 0, 1.</formula><p>Recall that by no disadvantage in the sense of Definition 2 we mean a vanishing (or negative) utility difference, i.e. UD ≤ 0. For the following proposition we denote by Γ ∈ [0, 1] the number</p><formula xml:id="formula_26" coords="6,60.12,115.98,232.38,12.17">Γ = max{P 0 (Y = 1 | Ŷ = 1); P 0 (Y = 0 | Ŷ = 0)}. (16)</formula><p>Note that under CUA, P 0 can be replaced by P 1 for the computation of Γ. Proposition 8. Assume that equality of the conditional use accuracy holds.</p><p>(i) If P 0 ( Ŷ = 1) = P 1 ( Ŷ = 1), then there is no disadvantage. (ii) If the utility differences are bounded by K &gt; 0 and |P 0 ( Ŷ = 1) = P 1 ( Ŷ = 1)| ≤ ε, then there is no disadvantage larger than</p><formula xml:id="formula_27" coords="6,150.77,246.63,66.54,8.74">(1 + 2Γ) • ε • K.</formula><p>In comparison to Proposition (6), CUA allows to reduce the general bound further, in particular if Γ is small. The second result shows that if (1 + 2Γ)εK ≤ τ for the level τ in Definition 2, there are only negligible disadvantages. In our examples K turns out to be quite small, such that this seems to be a result highly relevant for practical cases.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Independence</head><p>An abstract criterion for fairness (on the probability level only) which immediately makes sense is independence, see <ref type="bibr" coords="6,54.00,376.20,95.58,8.64" target="#b2">(Caton and Haas 2024)</ref> Section 3.1, for example. We will show that independence also implies absence of disadvantages and, hence, fairness in the sense we consider here -but is not necessary. In essence, it is to strict. It also turns out that independence of the estimator Ŷ and the group alone is not sufficient.</p><p>To consider independence, assume that the group S is a random variable. Our probability measures P s are then obtained by conditioning on S = s. Proposition 9. Independence of (Y, Ŷ ) and S implies absence of a disadvantage.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>The reduced setting</head><p>In many situations there is not enough information about the probability of the cases {Y = 0, Ŷ = 0} and {Y = 1, Ŷ = 0}: in the college admission this would refer to the probability of successfully completing the studies while not being admitted to the university, a probability which is clearly difficult to estimate.</p><p>To additionally capture these important situations within our framework, we introduce the reduced setting: here, both cases (00 and 01) are collapsed into the case 0 (referring to Ŷ = 0) and hence only the probability p s 0 := P s ( Ŷ = 0) is needed, see Figure <ref type="figure" coords="6,140.05,662.64,4.98,8.64" target="#fig_2">3</ref> for an illustration.</p><p>Note that the results for the reduced setting can be obtained as a special case of the standard case by letting U 10 = U 00 = U 0 . Lemma 10. The expected utility in the reduced setting is</p><formula xml:id="formula_28" coords="6,392.43,273.97,161.42,12.20">E s [ Ũ ] = Ũ • Ps + U 0 . (<label>17</label></formula><formula xml:id="formula_29" coords="6,553.85,276.84,4.15,8.64">)</formula><p>with</p><formula xml:id="formula_30" coords="6,327.48,309.51,217.12,24.89">Ũ := U 11 − U 01 U 01 − U 0 , Ps := P s (Y = 1, Ŷ = 1) P s ( Ŷ = 1).</formula><p>In the college example we were already working in a reduced setting since we assumed U 00 = U 10 = 0.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Sufficient conditions in the reduced setting</head><p>We adopt the conditional use accuracy to this setting. Since {Y = 0| Ŷ = 0} is not available, we replace this by the unconditional Ŷ = 0 and call it the (conditional) use accuracy, (C)UA. It holds if</p><formula xml:id="formula_31" coords="6,387.86,441.74,165.99,27.96">PD(Y = 1 | Ŷ = 1) = 0, PD( Ŷ = 0) = 0. (<label>18</label></formula><formula xml:id="formula_32" coords="6,553.85,452.35,4.15,8.64">)</formula><p>We immediately obtain the following result from Proposition 8 Proposition 11. Assume that equality of the (conditional) use accuracy holds, i.e. (18). Then there is no disadvantage.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A mortgage example</head><p>As an example where it is important to consider the context for an in-depth analysis of fairness, we consider credit ratings used in the context of mortgages. It also illustrates the importance of the reduced setting -since there is no data on people who were rejected on a mortgage application. In contrast to smaller credits, the mortgage case is much more involved. We take some time to show how a fundamental model can be developed and what are the conclusions drawn.</p><p>We start with a simplified setting and then illustrate the full power of the utility-based approach.</p><p>For the mortgage, we look at the evolution over time, starting at time t = 0 and ending with the payback time T &gt; 0. Consider a mortgage of size M 0 for a house of price P 0 and assume that the individual has liquid capital x 0 . For First, if X T ≥ M T there is no default. Second, if X T &lt; M T , there is default and the house has to be sold<ref type="foot" coords="7,247.45,270.41,3.49,6.05" target="#foot_3">5</ref> . This typically can only be sold at a lower price, which we denote by</p><formula xml:id="formula_33" coords="7,54.00,293.68,146.10,20.61">P T • (1 − λ) with λ ≥ 0. Now, if P T • (1 − λ) + X T ≥ M T</formula><p>, the bank has no lossthe full mortgage can be covered. However, the creditor ends up with a possibly small fraction</p><formula xml:id="formula_34" coords="7,54.00,342.97,238.50,45.34">P T • (1 − λ) + X T − M T . If P T • (1 − λ) + X T &lt; M T , the bank receives what is left, P T • (1 − λ) + X T + ,</formula><p>and faces a (typically small) financial loss. This already gives the impression that the risk for the bank is quite small, but the risk for the creditor is substantial. In particular in the case of default, the situation for the creditor is difficult and associated with a highly negative utility.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Reduced setting</head><p>We first simplify the setting and view the approach from a purely data-based point of view, as it is often done in this case. In this case we end up in the reduced setting introduced above.</p><p>We note that in the reduced setting we have to specify utilities for the cases U 11 , U 01 and the case U 0 together with associated probabilities. We think of a house costing P 0 = 300,000 and the creditor has capital of 30%, such that the needed mortgage equals M 0 = 210,000. Assume that with a probability of 95% no default happens. The associated utility is U 11 = 400,000 − 90,000 = 310,000 through the rise in the value of the house minus the initial capital. On the other side, in case of default the house can be sold at 300,000 in the good case and 200,000 in the bad case and we consider the average. Hence, U 01 = 250,000 − 90,000 = 160,000.</p><p>In the case of no mortgage, the living cost C = 100,000 is computed by using T = 10 and approx. 3% of the house value as yearly rent. Thus, U 0 = 200,000 + 90,000 − 100,000 = 190,000, where we assumed that only little less than M 0 is earned on average over the 10 years. In contrast to the college admission, U 0 does not vanish and is even larger than U 10 . It is therefore better not to get the mortgage when the likelihood of default is substantial.</p><p>We consider an equal acceptance rate between both groups, P 0 ( Ŷ = 1) = P 1 ( Ŷ = 1) = 0.8. Conditionally on acceptance we assume that 95% of the standard group does not default while 90% of the protected group does not default. In this case the setting will clearly be unfair -and our question will be how to remedy this. First we compute the utility difference according to Equation ( <ref type="formula" coords="7,497.38,229.15,7.64,8.64" target="#formula_28">17</ref>), ŨD = 150,000 −30,000 • 0.76 − 0.72 0.8 − 0.8 = 6,000.</p><p>First, we observe that Ũ2 is negative (in contrast to being zero as in the college admission). Second, the small change in the default probability results in a difference which is 4% of 150.000. Since default probabilities can not be changed in this situation (although this is of course an important aspect of fairness) we aim at changing the acceptance rate for the protected group to obtain a situation where both groups have equal utilities. Quite surprising, decreasing the acceptance rate improves the utility for the protected group: we need to solve −30,000 • (0.8 − p) = −60,000, and we find p = 0.6. Thus, with a reduced acceptance rate for the protected group of 0.6 the setting turns out to be fair in the sense that there is no disadvantage for the protected group. The reason for this is that in the case of default the situation is disadvantageous. Thus, simply aiming at equal acceptance rates actually turns out to lead to a disadvantage in utility for the protected group -clearly an unwanted effect.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Accounting for uncertainty</head><p>Up to now we assumed that the probability measures where given and exactly known. This is of course not true in practice where probabilities have to be estimated. While the estimator carries significant uncertainty, this can be reduced by considering confidence intervals. In this section, we extend our previous setting by working on uncertainty sets, which could be obtained from confidence intervals or, in the spirit of Knightian uncertainty, by a combination with expert opinions or other data sources.</p><p>To simplify the approach we remain in the reduced setting from Equation (17), while the standard setting can be treated in the same manner.</p><p>To this end we denote the estimated probabilities by πthe uncertainty interval will be represented by <ref type="bibr" coords="7,505.38,641.45,20.95,8.74">[π, π]</ref>. In this spirit, the uncertainty interval for Ps is denoted by the two intervals</p><formula xml:id="formula_35" coords="7,357.11,675.98,200.89,31.56">[π s (Y = 1, Ŷ = 1) , π s (Y = 1, Ŷ = 1)] [π s ( Ŷ = 1) , π s ( Ŷ = 1)]<label>(19)</label></formula><p>Proposition 12. Assume that Ũ ≥ 0. Then, the upper bound of the utility difference is given by</p><formula xml:id="formula_36" coords="8,54.00,83.82,238.50,59.48">UD = Ũ • Π * (20) with Π * = π 0 (Y = 1, Ŷ = 1) − π 1 (Y = 1, Ŷ = 1) π 0 ( Ŷ = 1) − π 1 ( Ŷ = 1) . (21)</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Confidence intervals</head><p>Depending on the chosen approach, estimating confidence intervals could be challenging. While for logistic regression, a common statistical approach to categorial classification, this is well-known, it might be less known that also for MLalgorithms like random forests, there are known approaches to estimate confidence intervals. For example, one may rely on the jackknife estimator, see <ref type="bibr" coords="8,184.61,233.07,107.89,8.64;8,54.00,244.03,21.44,8.64" target="#b18">(Wager, Hastie, and Efron 2014)</ref>.</p><p>Beyond this we would like to remark that some subtleties should be taken into account: first, recall that we considered no covariables (up to now), i.e. the individuals which we consider should have the same or at least similar levels of the covariables. This could be the same credit rating, the same post code, a similar gpa, etc. Moreover, the data should be i.i.d. -which might not be the case if many years are considered, which also needs to be taken into account. Since smaller sample sizes increase the confidence intervals, we expect that this is important for many cases.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Outlook on a general setting</head><p>In the general setting we introduce a probabilistic model of the default along the line of the famous Merton model, <ref type="bibr" coords="8,269.47,401.07,18.43,8.64;8,54.00,412.03,36.84,8.64">(Merton 1974)</ref>, with an adaptation to the mortgage case. A more detailed modelling would require treating imperfect information as in <ref type="bibr" coords="8,109.83,433.95,104.85,8.64" target="#b17">(Stiglitz and Weiss 1981;</ref><ref type="bibr" coords="8,218.71,433.95,73.79,8.64;8,54.00,444.90,23.24,8.64" target="#b7">Frey and Schmidt 2009)</ref> and will be treated in future work. The following steps also serve as a guideline on how explicit biases in existing data could be modelled or how the approach could be applied in more complex questions which can not be treated by the standard setting in Equation ( <ref type="formula" coords="8,198.66,488.74,3.53,8.64">5</ref>).</p><p>Let us assume that the future wealth X T is normally distributed with mean µ and standard deviation σ. Denote the difference in income by ∆X T = X T − x 0 . At time T we have that the utility of the creditor is given by</p><formula xml:id="formula_37" coords="8,72.54,549.61,200.22,36.96">U =    P T + ∆X T − M T X T &gt; M T , P T • (1 − λ) + ∆X T − M T D 1 , −x 0 D 2 ,</formula><p>where D 1 denotes the default case where P T •(1−λ)+X T &gt; M T and D 2 denotes the default case where P</p><formula xml:id="formula_38" coords="8,54.00,606.28,238.50,20.61">T • (1 − λ) + X T ≤ M T .</formula><p>As a first result we compute the distribution of U together with its expected utility. Note that the case 11 corresponds to no default, while 01 corresponds to the default case (which in our case contains D 1 and D 2 ). Thus P (Y = 1, Ŷ = 1) = P (X T &gt; M T ) while P (Y = 0, Ŷ = 1) = 1 − P (X T &gt; M T ) = P (D 1 ) + P (D 2 ). Utilities in the case where the mortgage is not admitted is easily computed For an illustration, we compute the related values in correspondence to our previous mortgage example. We then have M T = M 0 = 200,000, P T = 400,000, x 0 = 90,000 and C = 100,000. For illustration we expect that the average income is higher than the mortgage, such that µ = M T + 20,000 (not too high to see a significant default probability) and σ = 30,000 together with a λ = 0.2, see Changing the mean to µ = M T + 50,000 allows to adjust the default probability, which then computes to 5% together with E[U 11 ] = 345,000, E[U 01 ] = 10,000 and E[U 0 ] = 250,000, even more showing that the utility in the default case is far away from the utility in the non-default case or from the case where the credit is not offered. Computation of utility differences under several model assumptions is now straightforward. A detailed discussion, however, is beyond the scope of this short paper.</p><p>Summarizing, this small illustration of a general utilitybased approach confirms the findings in our reduced-setting: fairness measured only on statistical measures is out of context and may be highly unfair if measured in utilities. To mitigate unfairness in the mortgage example not only acceptance rates have to be adjusted but also precautionary measures have to be taken into account to lower the highly unwanted effects when default occurs.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusion</head><p>This paper introduces a simple and tractable framework for measuring fairness in terms of utilities. We show that previously considered measures do not necessarily guarantee fair outcomes from this more holistic viewpoint, in particular the concept of ε-fairness might lead to wrong assessments. We also provide illustrating examples and mathematical tools which may serve as a useful basis for further applications.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="2,319.50,211.86,238.50,8.64;2,319.50,221.61,238.50,12.17;2,319.50,235.09,52.52,8.96;2,372.02,233.52,3.76,6.12;2,372.02,239.73,6.12,6.12;2,379.04,235.09,168.03,8.96;2,547.07,233.52,3.76,6.12;2,547.07,239.60,7.94,6.12;2,555.51,235.41,2.49,8.64;2,319.50,246.05,174.29,8.96;2,367.88,54.00,141.73,141.73"><head>Figure 1 :</head><label>1</label><figDesc>Figure 1: Confusion matrix in our setting -for each group s we associate to Y = i and Ŷ = j the utility U ij and the probability p s ij . The true positives are represented by p s 11 , since Y = 1 is considered the positive case.</figDesc><graphic coords="2,367.88,54.00,141.73,141.73" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="5,319.50,148.86,238.50,8.64;5,319.50,159.50,238.50,9.65;5,319.50,170.45,238.50,9.65;5,319.50,181.73,238.50,8.64;5,319.50,192.69,238.50,8.64;5,319.50,203.65,238.50,8.64;5,319.50,214.61,238.50,8.64;5,319.50,225.57,238.50,8.64;5,319.50,236.53,238.50,8.64;5,319.50,247.49,238.50,8.64;5,319.50,258.44,65.29,8.64;5,326.95,58.02,110.55,74.71"><head>Figure 2 :</head><label>2</label><figDesc>Figure 2: Utility differences for the college admission.Left:The utility difference as function of q 1 . Even if the admission rate of the protected group equals q 1 = 100%, there remains a disadvantage of ca. 500. Right: The case with a fixed number of admitted persons. We admit 1000 persons out of 1250, where 250 belong to the protected group. Starting from an equal admission rate of 80% we allow additional persons from the protected group, meanwhile diminishing the number of admissions from the other group. In this case one is able to achieve equal utilities by admitting 95% of the protected group.</figDesc><graphic coords="5,326.95,58.02,110.55,74.71" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="6,319.50,211.86,238.50,8.64;6,319.50,221.61,230.19,11.48;6,367.88,54.00,141.73,141.73"><head>Figure 3 :</head><label>3</label><figDesc>Figure 3: Confusion matrix in the reduced setting. The cases 00 and 10 are now collapsed to the case 0 (where Ŷ = 0).</figDesc><graphic coords="6,367.88,54.00,141.73,141.73" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="7,81.21,196.28,184.09,8.64;7,88.21,54.00,170.08,131.13"><head>Figure 4 :</head><label>4</label><figDesc>Figure 4: Illustration of the mortgage example</figDesc><graphic coords="7,88.21,54.00,170.08,131.13" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4" coords="8,319.50,198.22,236.93,9.65;8,319.50,209.50,238.50,8.64;8,319.50,220.14,238.50,9.65;8,319.50,231.10,36.68,8.96;8,325.36,54.00,226.77,133.39"><head>Figure 5 :</head><label>5</label><figDesc>Figure 5: Illustration of the general setting -the income X T is normally distributed and we plot the density, together with the two utility barriers -D 1 is between a and b -and the utility U .</figDesc><graphic coords="8,325.36,54.00,226.77,133.39" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5" coords="8,541.39,607.69,16.61,8.64;8,319.50,618.65,238.50,8.64;8,319.50,629.29,238.50,9.65;8,319.50,640.56,238.50,8.64;8,319.50,651.52,60.17,8.64"><head></head><label></label><figDesc>Figure 5. The default probability then computes to 25% and E[U 11 ] = 256,000, E[U 01 ] = 54,000 and E[U 0 ] = 220,000 showing a similar relation between the utilities as in the previous example.</figDesc></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="2" xml:id="foot_0">A similar notion with a threshold was already introduced in (Blandin and Kash 2023), however with less focus on utility comparison as we do here. Quite similar in spirit one could replace UD by its absolute value, | UD | and provide analogous results.</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="3" xml:id="foot_1">See for example<ref type="bibr" coords="4,129.25,686.20,70.31,7.77" target="#b12">(Kusner et al. 2017)</ref> for related definitions and further literature.</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="4" xml:id="foot_2"><ref type="bibr" coords="4,335.64,696.16,49.62,7.77" target="#b19">(Webber 2016</ref>) reports up to 40%.</note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="5" xml:id="foot_3">Here we focus on the case in Germany, where the house owner always is obliged to pay back the credit. This differs in other states, like in the U.S. for example.</note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgments</head><p>We want to thank Alaa Awad, Daniel Feuerstack, Wilfried Hinsch, Lars Niemann and Jake Robertson for their discussions and support on the subject.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Proofs</head><p>Proposition 3. Assume that there are only two groups, i.e. N = 1. Then, the expected utility is given by Proof. The overall utility is given by summing over all possible states, i.e.</p><p>Hence, the expected utility equals</p><p>Now let us concentrate on j = 1. We obtain that</p><p>Hence, inserting this into Equation ( <ref type="formula" coords="9,198.95,653.11,7.64,8.64">22</ref>),</p><p>and the conclusion follows by summing ( <ref type="formula" coords="9,490.14,125.57,8.30,8.64">23</ref>) and ( <ref type="formula" coords="9,527.82,125.57,8.30,8.64">24</ref>) and using that P ( Ŷ = 0) = 1 − P ( Ŷ = 1).</p><p>Proposition 5. Assume that d(P 0 , P 1 ) &gt; 0 such that (11) holds. Then, there exist for any K ≥ 0 parameters U 00 , . . . , U 11 such that</p><p>Proof. The core of the argument is representation (7), which we repeat for convenience,</p><p>We set U 01 = U 10 , such that UD 3 = 0. Equation ( <ref type="formula" coords="9,528.68,285.86,8.30,8.64">11</ref>) implies a number of cases which we can treat similarly. Consider for example PD(Y = 1, Ŷ = 1) &gt; 0. We choose U 00 = U 10 to obtain UD 2 = 0. Then, we choose U 10 = 0 and</p><p>The other results follow in a similar way.</p><p>Proposition 7. Assume statistical parity and equalized odds hold and that U 01 = U 10 . Then, there is no disadvantage.</p><p>Proof. We begin by noting that Bayes' formula implies that</p><p>Thus, statistical parity together with equalized odds imply equal joint distributions on the diagonal. Since U 01 = U 10 , we obtain that U 3 = 0 and the claim follows from Equation (7).</p><p>Proposition 8. Assume that equality of the conditional use accuracy holds.</p><p>(i) If P 0 ( Ŷ = 1) = P 1 ( Ŷ = 1), then there is no disadvantage. (ii) If the utility differences are bounded by K &gt; 0 and |P 0 ( Ŷ = 1) = P 1 ( Ŷ = 1)| ≤ ε, then there is no disadvantage larger than</p><p>Proof. For the first claim, observe that</p><p>Note that by Bayes' theorem,</p><p>for s = 0, 1. Since CUA implies that the conditional probabilities P s (Y = 1| Ŷ = 1), s = 0, 1 are equal it remains to consider the probabilities P s ( Ŷ = 1). This is exactly our assumption in (i) and it follows that the probability difference vanishes, i.e. PD(Y = 1, Ŷ = 1) = 0.</p><p>For the probability difference PD(Y = 0, Ŷ = 0) observe that the assumption in (i) also implies P 0 ( Ŷ = 0) = P 1 ( Ŷ = 0) and we obtain in a similar manner PD(Y = 0, Ŷ = 0) = 0.</p><p>Since we also have PD( Ŷ = 1) = 0, Proposition 4 implies absence of any disadvantage.</p><p>For the second claim we estimate the utility difference using Equation ( <ref type="formula" coords="10,111.56,204.47,3.87,8.64">4</ref>) by</p><p>where ∥ PD ∥ ∞ denotes the maximum of the absolute values of the rows of the vector PD. We examine the rows of PD separately. For the first row we argue as above, using Bayes' theorem, and obtain that (again using CUA)</p><p>In an analogous manner we obtain a similar estimate for the second row and ε • K as a bound for the third row and the proof is finished.</p><p>Proposition 9. Independence of (Y, Ŷ ) and S implies absence of a disadvantage.</p><p>Proof. Note that independence implies for all i, j that</p><p>Now, Proposition 4 yields the result.</p><p>Lemma 10. The expected utility in the reduced setting computes to</p><p>Proof. As in Proposition 3,</p><p>Since P ( Ŷ = 0) = 1 − P ( Ŷ = 1) and</p><p>Putting this into the representation of the lemma, the result is proven.</p><p>Lemma 11. Under the above assumptions, we have</p><p>Proof. Since X T is normally distributed, X T = M T + σξ with mean M T and standard deviation σ. This already gives the first result. Next, P (D 1 ) = P (M T −P T (1−λ) &lt; X T ≤ M T ) which implies the second and the third equation.</p><p>The utility in the case Y = 1, Ŷ = 1 is given by</p><p>Noting that </p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="11,54.00,71.11,238.50,8.64;11,54.00,82.07,101.13,8.64;11,54.00,95.20,238.50,8.64;11,54.00,106.16,238.50,8.64;11,54.00,116.94,238.50,8.82;11,54.00,127.90,86.78,8.82" xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Some ordinalist-utilitarian notes on Rawls&apos;s theory of justice</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">J</forename><surname>Arrow</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">O</forename><surname>Ben-Porat</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Sandomirskiy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Tennenholtz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the AAAI Conference on Artificial Intelligence</title>
+				<meeting>the AAAI Conference on Artificial Intelligence</meeting>
+		<imprint>
+			<date type="published" when="1973">1973. 2021</date>
+			<biblScope unit="page">35</biblScope>
+		</imprint>
+	</monogr>
+	<note>Protecting the Protected Group: Circumventing Harmful Fairness</note>
+</biblStruct>
+
+<biblStruct coords="11,54.00,141.21,238.50,8.64;11,54.00,151.99,238.50,8.82;11,54.00,162.95,143.54,8.82" xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Generalizing Group Fairness in Machine Learning via Utilities</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Blandin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">I</forename><forename type="middle">A</forename><surname>Kash</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Artificial Intelligence Research</title>
+		<imprint>
+			<biblScope unit="volume">78</biblScope>
+			<biblScope unit="page" from="747" to="780" />
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,54.00,176.26,238.50,8.64;11,54.00,187.04,196.29,8.82" xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Fairness in machine learning: A survey</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Caton</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Haas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACM Computing Surveys</title>
+		<imprint>
+			<biblScope unit="volume">56</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1" to="38" />
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,54.00,200.36,238.50,8.64;11,54.00,211.14,238.50,8.82;11,54.00,222.10,238.50,8.59;11,54.00,233.23,37.36,8.64" xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Fairness through awareness</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Dwork</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Hardt</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Pitassi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">O</forename><surname>Reingold</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Zemel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 3rd innovations in theoretical computer science conference</title>
+				<meeting>the 3rd innovations in theoretical computer science conference</meeting>
+		<imprint>
+			<date type="published" when="2012">2012</date>
+			<biblScope unit="page" from="214" to="226" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,54.00,246.37,238.50,8.64;11,54.00,257.33,238.50,8.64;11,54.00,268.11,238.50,8.59;11,54.00,279.07,238.49,8.82;11,54.00,290.20,229.67,8.64;11,54.00,303.34,238.50,8.64;11,54.00,314.12,110.29,8.82" xml:id="b4">
+	<analytic>
+		<title level="a" type="main">From the real towards the ideal: risk prediction in a better world</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Dwork</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">O</forename><surname>Reingold</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">N</forename><surname>Rothblum</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Schloss Dagstuhl-Leibniz-Zentrum für Informatik, Schloss Dagstuhl-Leibniz-Zentrum für Informatik. Fadina</title>
+				<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note>4th Symposium on Foundations of Responsible Computing (FORC 2023). and Schmidt, T. 2024. Fundamentals of Fairness. In preparation</note>
+</biblStruct>
+
+<biblStruct coords="11,54.00,327.43,238.50,8.64;11,54.00,338.21,238.50,8.82;11,54.00,349.17,121.20,8.82" xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Affine processes under parameter uncertainty</title>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Fadina</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Neufeld</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Schmidt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Probability, Uncertainty and Quantitative Risk</title>
+				<imprint>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page">1</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,54.00,362.30,238.50,8.82;11,54.00,373.44,87.86,8.64" xml:id="b6">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Föllmer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Schied</surname></persName>
+		</author>
+		<title level="m">Stochastic Finance. Walter de Gruyter</title>
+				<meeting><address><addrLine>Berlin</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,54.00,386.57,238.50,8.64;11,54.00,397.35,238.50,8.82;11,54.00,408.31,238.50,8.59;11,54.00,419.27,130.33,8.82" xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Pricing corporate securities under noisy asset information</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Frey</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Schmidt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Mathematical Finance: An International Journal of Mathematics, Statistics and Financial Economics</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="403" to="421" />
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,54.00,432.58,238.50,8.64;11,54.00,443.36,201.45,8.82" xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Updating ambiguous beliefs</title>
+		<author>
+			<persName coords=""><forename type="first">I</forename><surname>Gilboa</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Schmeidler</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of economic theory</title>
+		<imprint>
+			<biblScope unit="volume">59</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="33" to="49" />
+			<date type="published" when="1993">1993</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,54.00,456.68,238.50,8.64;11,54.00,467.64,238.50,8.64;11,54.00,478.42,238.50,8.82;11,54.00,489.38,201.91,8.82" xml:id="b9">
+	<analytic>
+		<title level="a" type="main">On modeling human perceptions of allocation policies with uncertain outcomes</title>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Heidari</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Barocas</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Kleinberg</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Levy</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 22nd ACM Conference on Economics and Computation</title>
+				<meeting>the 22nd ACM Conference on Economics and Computation</meeting>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+			<biblScope unit="page" from="589" to="609" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,54.00,502.69,238.50,8.64;11,54.00,513.65,238.50,8.64;11,54.00,524.43,238.50,8.82;11,54.00,535.39,238.50,8.59;11,54.00,546.34,74.06,8.82" xml:id="b10">
+	<analytic>
+		<title level="a" type="main">A moral framework for understanding fair ml through economic models of equality of opportunity</title>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Heidari</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Loi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">P</forename><surname>Gummadi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Krause</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the conference on fairness, accountability, and transparency</title>
+				<meeting>the conference on fairness, accountability, and transparency</meeting>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="page" from="181" to="190" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,54.00,559.66,238.50,8.64;11,54.00,570.62,238.50,8.64;11,54.00,581.40,238.50,8.82;11,54.00,592.36,118.18,8.82" xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Preventing fairness gerrymandering: Auditing and learning for subgroup fairness</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Kearns</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Neel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Roth</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><forename type="middle">S</forename><surname>Wu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International conference on machine learning</title>
+				<imprint>
+			<publisher>PMLR</publisher>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="page" from="2564" to="2572" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,54.00,605.67,238.50,8.64;11,54.00,616.45,238.50,8.82;11,54.00,627.41,93.08,8.82" xml:id="b12">
+	<monogr>
+		<title level="m" type="main">Counterfactual fairness. Advances in neural information processing systems</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">J</forename><surname>Kusner</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Loftus</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Russell</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Silva</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="page">30</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,54.00,640.72,238.50,8.64;11,54.00,651.68,238.50,8.64;11,54.00,662.46,238.50,8.59;11,54.00,673.42,238.50,8.82;11,54.00,684.56,238.50,8.64;11,54.00,695.51,43.94,8.64" xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Delayed Impact of Fair Machine Learning</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">T</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Dean</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Rolf</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Simchowitz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Hardt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Twenty-Eighth International Joint Conference on Artificial Intelligence, IJCAI-19, 6196-6200. International Joint Conferences on Artificial Intelligence Organization</title>
+				<meeting>the Twenty-Eighth International Joint Conference on Artificial Intelligence, IJCAI-19, 6196-6200. International Joint Conferences on Artificial Intelligence Organization</meeting>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,319.50,57.30,238.50,8.82;11,319.50,68.26,238.50,8.59;11,319.50,79.22,170.08,8.82;11,319.50,92.84,238.50,8.64;11,319.50,103.62,238.50,8.82;11,319.50,114.76,37.36,8.64" xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Quantitative risk management: concepts, techniques and toolsrevised edition</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">J</forename><surname>Mcneil</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Frey</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Embrechts</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of finance</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="449" to="470" />
+			<date type="published" when="1974">2015. 1974</date>
+			<publisher>Princeton university press</publisher>
+		</imprint>
+	</monogr>
+	<note>On the pricing of corporate debt: The risk structure of interest rates</note>
+</biblStruct>
+
+<biblStruct coords="11,319.50,128.21,238.50,8.64;11,319.50,139.17,238.50,8.64;11,319.50,149.95,238.50,8.82;11,319.50,160.91,168.90,8.82" xml:id="b15">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Mitchell</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Potash</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Barocas</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>D'amour</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Lum</surname></persName>
+		</author>
+		<title level="m">Algorithmic Fairness: Choices, Assumptions, and Definitions. Annual Review of Statistics and Its Application</title>
+				<imprint>
+			<date type="published" when="2021">2021. 2021</date>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="141" to="163" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,319.50,174.54,238.50,8.64;11,319.50,185.50,238.50,8.64;11,319.50,196.28,238.50,8.82;11,319.50,207.24,199.84,8.82" xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Fairness and abstraction in sociotechnical systems</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">D</forename><surname>Selbst</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Boyd</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">A</forename><surname>Friedler</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Venkatasubramanian</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Vertesi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the conference on fairness, accountability, and transparency</title>
+				<meeting>the conference on fairness, accountability, and transparency</meeting>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="page" from="59" to="68" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,319.50,220.86,238.50,8.64;11,319.50,231.64,238.50,8.82;11,319.50,242.60,95.07,8.82" xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Credit rationing in markets with imperfect information</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">E</forename><surname>Stiglitz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Weiss</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The American economic review</title>
+		<imprint>
+			<biblScope unit="volume">71</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="393" to="410" />
+			<date type="published" when="1981">1981</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,319.50,256.23,238.50,8.64;11,319.50,267.19,238.50,8.64;11,319.50,277.97,238.50,8.82;11,319.50,289.11,47.32,8.64" xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Confidence intervals for random forests: The jackknife and the infinitesimal jackknife</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Wager</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Hastie</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Efron</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The journal of machine learning research</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1625" to="1651" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,319.50,302.56,238.50,8.64;11,319.50,313.34,238.50,8.82;11,319.50,324.30,139.72,8.82" xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Are college costs worth it? How ability, major, and debt affect the returns to schooling</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">A</forename><surname>Webber</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Economics of Education Review</title>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="page" from="296" to="310" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,319.50,337.93,238.50,8.64;11,319.50,348.71,238.50,8.82;11,319.50,359.66,201.54,8.59" xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Algorithms for Fairness in Sequential Decision Making</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Wen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">O</forename><surname>Bastani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">U</forename><surname>Topcu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Artifcial Intelligence and Statistics</title>
+				<imprint>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

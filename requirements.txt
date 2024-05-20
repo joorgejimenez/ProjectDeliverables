@@ -6,3 +6,4 @@ scikit-learn
 beautifulsoup4
 torch
 nltk
+SPARQLWrapper

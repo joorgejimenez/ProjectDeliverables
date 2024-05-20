@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">INTRODUCING LEARNING RATE ADAPTATION CMA-ES INTO RIGID 2D/3D REGISTRATION FOR ROBOTIC NAVIGATION IN SPINE SURGERY</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,217.35,140.73,66.10,10.29;1,283.45,138.93,1.88,6.99"><forename type="first">Zhirun</forename><surname>Zhang</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Computer Science and Engineering</orgName>
+								<orgName type="institution">Southeast University</orgName>
+								<address>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,314.61,140.73,70.73,10.29;1,388.32,138.93,1.88,6.99"><forename type="first">Minheng</forename><surname>Chen</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Computer Science and Engineering</orgName>
+								<orgName type="institution">Southeast University</orgName>
+								<address>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">INTRODUCING LEARNING RATE ADAPTATION CMA-ES INTO RIGID 2D/3D REGISTRATION FOR ROBOTIC NAVIGATION IN SPINE SURGERY</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">9D6FEF4C90F67C2D606B5BC44BA55510</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2024-05-19T14:18+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>2D/3D registration</term>
+					<term>CMA-ES</term>
+					<term>Imageguided interventions</term>
+					<term>Evolutionary computing</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>The covariance matrix adaptive evolution strategy (CMA-ES) has been widely used in the field of 2D/3D registration in recent years. This optimization method exhibits exceptional robustness and usability for complex surgical scenarios. However, due to the inherent ill-posed nature of the 2D/3D registration task and the presence of numerous local minima in the landscape of similarity measures. Evolution strategies often require a larger population size in each generation in each generation to ensure the stability of registration and the globality and effectiveness of search, which makes the entire process computationally expensive. In this paper, we build a 2D/3D registration framework based on a learning rate adaptation CMA-ES manner. The framework employs a fixed and small population size, leading to minimized runtime and optimal utilization of computing resources. We conduct experimental comparisons between the proposed framework and other intensity-based baselines using a substantial volume of synthetic data. The results suggests that our method demonstrates superiority in both registration accuracy and running time. Code is available at github.com/m1nhengChen/CMAESreg.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">INTRODUCTION</head><p>Intraoperative 2D/3D registration is a process aimed at aligning intraoperative 2D images, such as X-ray images, with corresponding preoperative CT scans. It is a crucial step in providing surgical planning guidance and navigation positioning for spine surgeries like percutaneous vertebroplasty and pedicle screw internal fixation. By registering the patient's anatomy with previously acquired high-resolution 3D images, surgeons can visualize the patient's anatomy in real-time during surgery, including the position and orientation of structures such as bones, nerves, blood vessels, implants and surgical instruments during spinal surgeries, aiding them in performing precise operations and improving surgical accuracy and safety.</p><p>The two authors contribute equally to this work.</p><p>In the existing literature, intensity-based 2D/3D registration methods <ref type="bibr" coords="1,384.77,221.24,10.79,8.64" target="#b0">[1,</ref><ref type="bibr" coords="1,400.45,221.24,8.30,8.64" target="#b1">2]</ref> have received significant attention, and some benchmark methods for pose estimation of bone anatomies and surgical devices have been tested to meet clinical requirements in various orthopedic applications. And in these conventional intensity-based registration methods <ref type="bibr" coords="1,544.88,269.06,10.58,8.64" target="#b2">[3]</ref>, diverse ray-tracing techniques are employed to produce simulated two-dimensional X-ray images, commonly referred to as digitally reconstructed radiographs (DRRs), from the 3D CT volume. These techniques simulate the attenuation of X-rays within the human body, providing a vital component for accurate registration. The similarity between DRRs and X-rays is then evaluated by using some statisticalbased similarity measures, ie., normalized cross-correlation (NCC) and mutual information (MI) or local feature representations. Gradient-free optimization techniques, such as Powell-Brent <ref type="bibr" coords="1,370.29,400.57,11.62,8.64" target="#b3">[4]</ref> and CMA-ES <ref type="bibr" coords="1,440.50,400.57,10.58,8.64" target="#b4">[5]</ref>, are adopted to explore the similarity function and identify both the minimum value and the corresponding patient pose within the solution space.</p><p>CMA-ES is widely regarded as one of the most prominent optimization strategies in 2D/3D registration. However, existing CMA-ES method still has several shortcomings. Specifically, in order to ensure the stability of the evolutionary path and exhaustion of the search, the original CMA-ES algorithm requires a larger population size in each generation. This makes the entire optimization process computationally expensive and time-consuming. Population size adaptation mechanism <ref type="bibr" coords="1,336.63,533.70,11.62,8.64" target="#b5">[6]</ref> has been proposed to alleviate this drawback, but this strategy can lead to complex scheduling problems and difficulty in fully utilizing available resources. In addition, it is worth noting that although many learning-based 2D/3D methods <ref type="bibr" coords="1,332.66,581.52,11.62,8.64" target="#b6">[7]</ref> have become mainstream in recent years, intensitybased approaches have not been entirely disregarded. They are still used to refine the prediction results of learning-based methods in many recent articles <ref type="bibr" coords="1,445.13,617.38,10.79,8.64" target="#b7">[8,</ref><ref type="bibr" coords="1,458.57,617.38,7.19,8.64" target="#b8">9]</ref>. This also implies that robust and efficient intensity-based 2D/3D registration methods are still indispensable for automatic image-guided surgical navigation.</p><p>In this paper, we build a 2D/3D registration framework based on a learning rate adaptation CMA-ES manner. The framework has a fixed and small population size, which results in short running time and is well suited to achieve maximum utilization of computing resources. We conduct exper-arXiv:2405.10186v1 [eess.IV] 16 May 2024 imental comparisons between the proposed framework and other intensity-based baselines using a substantial volume of synthetic data. The results suggests that our method demonstrates superiority in both registration accuracy and running time.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">METHOD</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.">Preliminaries</head><p>Covariance matrix adaptive evolution strategy (CMA-ES). CMA-ES uses multivariate normal distribution to generate candidate solutions to minimize the objective function f : R d → R, and this distribution N is parameterized by three elements: the mean vector m ∈ R d , the step-size σ ∈ R, and the covariance matrix π ∈ R d×d . In the iteration t + 1, first independently sample λ times according to the current distribution N (m (t) , σ (t)2 π (t) ) to obtain the candidate solution x (t) i and its corresponding value y</p><formula xml:id="formula_0" coords="2,231.23,285.69,52.64,14.07">(t) i = f (x (t)</formula><p>i )on the objective function. Next, the evolutionary path of the distribution is calculated based on the candidate solutions of the current generation obtained through sampling, and finally the distribution parameters are updated to obtain the evolved distribution N (m (t+1) , σ (t+1)2 π (t+1) ) . This complex update process can be simplified as follows:</p><formula xml:id="formula_1" coords="2,131.04,378.59,167.16,12.69">m (t+1) = m (t) + ∆ (t) m (1)</formula><formula xml:id="formula_2" coords="2,132.59,395.42,165.61,14.22">Σ (t+1) = Σ (t) + ∆ (t) Σ (2)</formula><p>where Σ (t) is the verctorized representation of σ (t)2 π (t) . Problem formulation. The problem of rigid 2D/3d registration can be viewed as optimizing the following formula:</p><formula xml:id="formula_3" coords="2,121.20,456.79,177.01,16.45">θ = arg min θ S(I , P ( θ; V))<label>(3)</label></formula><p>where I is the 2D fixed image, S(•, •) is the similarity function which is also the target object function f and V is the 3D volume. The pose θ that needs to be estimated is a vector with six degrees of freedom (6DoF), θ = (r x , r y , r z , t x , t y , t z ). P (•; •) is the projection operator which use V and pose θ to generate DRR. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.">Learning</head><formula xml:id="formula_4" coords="2,54.43,697.64,243.78,27.78">(t+1) = m (t) +δ (t) m ∆ (t) m and Σ (t+1) = Σ (t) + δ (t) Σ ∆ (t) Σ respectively.</formula><p>The core step of the learning rate adaptation mechanism is to adjust δ so that the signal-to-noise ratio η = αδ, where α is a hyperparameter. We first use the parameter update strategy of CMA-ES to obtain ∆ </p><formula xml:id="formula_5" coords="2,315.21,149.34,65.02,12.46">δ (t) ↔ δ (t) m /δ (t)</formula><p>Σ accordingly to compute the updated parameters m (t+1) , σ (t+1) and π (t+1) . The update process of the learning rate is:</p><formula xml:id="formula_6" coords="2,322.23,196.03,236.77,24.06">δ (t+1) = δ (t) • exp min(γδ (t) , β)Π [−1,1] ( η (t) αδ (t) − 1)<label>(4)</label></formula><p>where α, β and γ ∈ R are hyperparameters. In addition, in order to ensure that the optimal σ is maintained after η m changes, a step-size correction strategy is adopted as shown in Eq. 5.</p><formula xml:id="formula_7" coords="2,391.08,274.78,167.91,28.51">σ (t+1) = δ (t) m δ (t+1) m σ (t+1)<label>(5)</label></formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3.">Application to 2D/3D Registration</head><p>In CMA-ES-based 2D/3D method, the similarity function is regarded as the optimization objective function f . m is the 6DoF initial patient pose θ 0 . In iteration t, we first sampled n times in the solution space, i.e. θt 0 , θt 1 , θt 2 ...... θt n , and the corresponding similarity scores f ( θt 0 ), f ( θt 1 ), f ( θt 2 )......f ( θt n ) are calculated, and then the evolutionary estimated pose θ t is obtained through the LRA-CMA optimizer. Normalized crosscorrelation (NCC) is the most common metric used to evaluate the similarity of two images I 1 and I 2 in mono-modality registration:</p><formula xml:id="formula_8" coords="2,322.19,456.22,236.81,30.32">N CC(I 1 , I 2 ) = m i=0 n j=0 (I 1 (i, j) − Ī1 )(I 2 (i, j) − Ī2 ) σ I1 σ I2<label>(6)</label></formula><p>where Ī and σ I is the pixel-wise mean and standard deviation of an m × n image. This method of calculating NCC directly on the entire image is also called global NCC. In comparison, the method called local NCC (LNCC), which calculates the NCC on the local image region has a sharper similarity curve and is more difficult to converge, but it can achieve higher registration accuracy. We use multi-scale normalized cross-correlation (mNCC) <ref type="bibr" coords="2,476.49,583.14,16.60,8.64" target="#b10">[11]</ref> as the similarity function, which is an integration of global NCC and patch-based NCC, and its landscape is smoother than gradient correlation <ref type="bibr" coords="2,387.02,619.01,10.58,8.64" target="#b1">[2]</ref>. Calculating the mNCC between the fixed image I and the projected image I m = P ( θt i ; V) can be expressed as: mN CC(I, I m ) = (1 − µ)N CC(I, I m ) + µ (pi,pj )∈Ω K LN CC(I, I m , p i , p j , r), where NCC is the normalized cross-correlation, LNCC is the patch-based NCC and µ is a hyperparameter from (0, 1). The patches we use are squares with radius r and center point (p i , p j ). In the experiment, we set r to 6 and spilt the entire image evenly into k non-overlapping patches.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">EXPERIMENT</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.">Experiment Settings</head><p>Dataset. The dataset consists of 52 CT scans from VerSe <ref type="bibr" coords="3,279.37,116.42,15.27,8.64" target="#b11">[12]</ref>. We resample the CT images to isotropic spacing of 1.0 mm and crop or pad evenly along each dimension to obtain 256 × 256 × 256 volumes with the spine ROI approximately in the center. We select 5 scans for hyperparameters tuning and 47 scans are used for testing. We define the intrinsic parameter of the X-ray simulation environment as a Perlove PLX118F C-Arm, which has image dimensions of 1024 × 1024, isotropic pixel spacing of 0.199 mm/pixel, and a source-to-detector distance of 1012 mm. The images are downsampled to have dimensions of 256 × 256 with a pixel spacing of 0.798 mm/pixel.</p><p>For testing, we use 1000 simulated X-ray images with angles of U (-20, 20) degrees in three directions, with translation in mm of U (-30, 30) for in-plane (X and Y) direction and U (-50, 50) for depth (Z) direction. The volume V we use is segmented through the mask provided by the dataset to reduce the impact of soft tissue on image quality of DRRs. Evaluation metrics. Following the standard in 2D/3D registration, we report mean target registration error (mTRE) and the error between estimated pose θ and ground truth θ in rotation and translation respectively for our experiments. Mean target registration error metric computes the average distance between corresponding landmarks under the estimated and ground truth poses. Suppose we have a three-dimensional point set Φ consisting of L anatomical landmarks, mTRE can be represented as:</p><formula xml:id="formula_9" coords="3,91.71,446.49,206.49,30.47">mT RE(θ, θ) = 1 L L vi∈Φ ∥θ • v i − θ • v i ∥ 2<label>(7)</label></formula><p>Besides, running time of the registration is also reported. Implementation details. The LRA-CMA optimizer is implemented through an open-source library <ref type="bibr" coords="3,225.54,511.41,15.27,8.64" target="#b12">[13]</ref>. After hyperparameter tuning based on grid search, we set the number of generations of the evolutionary strategy to 50 and the step size σ to 10. Our experiments were all conducted on a PC with a NVIDIA GeForce RTX 3090 GPU and a 2.3-GHz quad-core Intel Core i7 processor. Baseline methods. We compare the proposed framework with our initial work <ref type="bibr" coords="3,140.44,595.10,11.62,8.64" target="#b0">[1]</ref> (CMA-ES), a well-tuned CMA-ESbased 2D/3D registration method. To ensure fairness, the entire experiment was conducted in a single-resolution scenario and the projection renderers of all baselines were the same as the implementation in <ref type="bibr" coords="3,160.35,642.92,10.58,8.64" target="#b7">[8]</ref>. In addition, a fully differentiable optimization-based method <ref type="bibr" coords="3,190.85,654.87,16.60,8.64" target="#b10">[11]</ref> (GD) is also used as a benchmark. Different from the original paper, we use a SGD optimizer with the momentum of 0.60 and dampening of 0.45 in PyTorch. The learning rate of the rotation components is set to 5e-2, and the learning rate for translation components is 1e-2, and a weight decay with a value of 1e-8 is adopted. To ensure fast convergence of the optimization, a StepLR scheduler with a step size of 25 and a gamma value of 0.9 is integrated in the framework. We set the termination condition of the optimization as: The optimizer has searched for 200 iterations or the minimum value of the similarity function searched within the last 100 iterations has not been updated.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.">Results</head><p>During experiment, we randomly sample poses with rotations from a normal distribution N (0, 10) in degrees for all three axes, and translations t x , t y , t z from normal distributions N (0, 15) in millimeters as the initial value. As shown in Table <ref type="table" coords="3,350.02,654.87,3.74,8.64" target="#tab_1">1</ref>, We compare our method with two intensity-based baselines. And we also compared the performance of different similarity functions in 2D/3D registration, specifically GC vs. mNCC. Because the experiment is a single-view and lowresolution registration scene, and considering the impact of image noise and the intensity-based method inherently only has a smaller capture range. So there is a visible error between the results of all our experiments and the ground truth.</p><p>The GD method holds significant potential, but its current challenge lies in the exhaustive resource demand for pre-grid search of hyperparameters , along with its limited generalization capability. The LRA-CMA method that uses mNCC as the similarity function performs better than the baseline using GC, which reflects that this metric is more effective in registration scenarios with larger offsets. Compared with the CMA-ES method, although the proposed method does not have a significant improvement in accuracy, the LRA-CMA method runs over twice faster than the CMA-ES benchmark. This shows that the use of an evolutionary strategy with a learning rate adaptive mechanism and a default population size can indeed solve the complex 6DoF rigid 2D/3D registration problem. Moreover, we provide several qualitative examples of the proposed method in Fig. <ref type="figure" coords="4,219.75,266.76,3.74,8.64" target="#fig_1">1</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">CONCLUSION</head><p>In this work, we introduce the learning rate adaptation covariance matrix adaptive evolution strategy into the field of rigid 2D/3D registration. By comparing with other existing intensity-based benchmarks, the registration method using LRA-CMA as the optimizer has less running time and higher registration accuracy. We also note the potential of this algorithm in resource utilization. Future work will focus on parallel GPU acceleration of this algorithm to maximize the use of computing resources and reduce the running time of the framework, as well as adjusting the current hyperparameter settings and parameter selection strategies to further improve the registration performance of the framework.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">ACKNOWLEDGEMENT</head><p>This work was supported in part by Jiangsu provincial joint international research laboratory of medical information processing.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="2,448.67,109.49,9.24,6.12;2,448.67,112.63,38.49,9.32;2,487.17,109.49,9.24,6.12;2,487.17,117.60,5.69,6.12;2,496.90,112.95,62.09,8.64;2,315.21,124.90,243.78,8.64;2,315.21,138.14,52.51,8.96;2,368.08,135.01,9.24,6.12;2,367.73,138.14,33.82,9.32;2,401.91,135.01,9.24,6.12;2,401.55,143.11,5.69,6.12;2,411.64,138.46,147.35,8.64"><head></head><label></label><figDesc>use them to calculate the new evolutionary path and current signal-tonoise ratios η (t) m and η (t) Σ , and finally adjust the learning factor</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="3,315.21,509.30,243.78,9.03;3,315.21,521.64,243.77,8.64;3,315.21,533.60,243.77,8.64;3,315.21,545.55,243.77,8.64;3,315.21,557.51,243.77,8.64;3,315.21,569.46,114.31,8.64;3,310.99,313.29,256.55,195.26"><head>Fig. 1 .</head><label>1</label><figDesc>Fig. 1. Quantitative results of the proposed framework and the baselines. In column 1 is the preprocessed target images; in column 2 and 3 are the DRRs corresponding to the initial pose and the registration pose of our method respectively; the difference maps between the estimated poses and the ground truth are shown in column 4.</figDesc><graphic coords="3,310.99,313.29,256.55,195.26" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" coords="2,54.43,570.45,243.78,139.28"><head></head><label></label><figDesc>Rate Adaptation CMA-ES</figDesc><table coords="2,54.43,589.52,243.78,106.25"><row><cell cols="3">Learning Rate Adaptation CMA-ES (LRA-CMA) [10] is a</cell></row><row><cell cols="3">recently proposed variation of classic CMA-ES algorithm. It</cell></row><row><cell cols="3">maintains a constant signal-to-noise ratio by adopting a learn-</cell></row><row><cell cols="3">ing rate adaptation mechanism. It is worth noting that the pop-</cell></row><row><cell cols="3">ulation number of each generation of this method is a constant</cell></row><row><cell cols="3">default value λ = 4 + ⌊ln(d)⌋, thus greatly saving comput-</cell></row><row><cell cols="3">ing resources. In simple terms, it first follows the existing</cell></row><row><cell cols="3">CMA-ES parameter update strategy, and then calculates the</cell></row><row><cell>learning rate factors δ</cell><cell>(t) m and δ</cell><cell>(t)</cell></row></table><note>Σ , thereby modifying the update strategies in Eq. 1 and 2 to m</note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1" coords="3,315.21,154.09,243.78,142.84"><head>Table 1</head><label>1</label><figDesc></figDesc><table coords="3,315.21,154.09,243.78,142.84"><row><cell cols="4">. 2D/3D registration performance comparing with</cell></row><row><cell cols="4">the baseline methods.The evaluation includes measuring the</cell></row><row><cell cols="4">mean, standard deviation and median of the mean target regis-</cell></row><row><cell cols="4">tration error (mTRE), as well as the pose error and registration</cell></row><row><cell>time.</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Method</cell><cell cols="3">mTRE(mm)↓ mean(std) median Rot.( • ) Trans.(mm) time Pose error↓ Reg.</cell></row><row><cell>Initial</cell><cell>259.2(116.8) 250.5 33.3</cell><cell>60.1</cell><cell>N/A</cell></row><row><cell>CMA-ES</cell><cell>171.8(87.4) 168.0 24.1</cell><cell>72.7</cell><cell>50.6</cell></row><row><cell>GD</cell><cell>202.5(134.4) 175.0 26.9</cell><cell>49.3</cell><cell>28.3</cell></row><row><cell cols="2">LRA-CMA(gc) 186.8(105.7) 171.5 25.9</cell><cell>54.9</cell><cell>20.7</cell></row><row><cell cols="2">LRA-CMA 169.4(92.6) 158.6 24.4</cell><cell>55.9</cell><cell>20.5</cell></row></table></figure>
+		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="4,76.00,580.15,222.20,8.64;4,76.00,592.11,222.20,8.64;4,76.00,604.06,222.20,8.64;4,76.00,615.85,159.58,8.81" xml:id="b0">
+	<monogr>
+		<title level="m" type="main">An optimization-based baseline for rigid 2d/3d registration applied to spine surgical navigation using cma-es</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Kong</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2402.05642</idno>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="4,76.00,629.47,222.21,8.64;4,76.00,641.42,222.20,8.64;4,76.00,653.21,222.21,8.81;4,76.00,665.16,222.20,8.58;4,76.00,677.12,222.20,8.58;4,76.00,689.07,219.12,8.81" xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Patchbased image similarity for intraoperative 2d/3d pelvis registration during periacetabular osteotomy</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">B</forename><surname>Grupp</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Armand</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">H</forename><surname>Taylor</surname></persName>
+		</author>
+		<idno>OR 2.0</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Clinical Image-Based Procedures, and Skin Image Analysis</title>
+				<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="page" from="153" to="163" />
+		</imprint>
+	</monogr>
+	<note>Context-Aware Operating Theaters</note>
+</biblStruct>
+
+<biblStruct coords="4,76.00,702.69,222.20,8.64;4,76.00,714.65,222.20,8.64;4,336.79,75.31,222.20,8.81;4,336.79,87.43,77.21,8.64" xml:id="b2">
+	<analytic>
+		<title level="a" type="main">A review of 3d/2d registration methods for image-guided interventions</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Markelj</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Tomaževič</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Likar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Pernuš</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Medical image analysis</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="642" to="661" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,336.79,100.88,222.20,8.64;4,336.79,112.84,222.20,8.64;4,336.79,124.62,222.20,8.81;4,336.79,136.75,77.21,8.64" xml:id="b3">
+	<analytic>
+		<title level="a" type="main">An efficient method for finding the minimum of a function of several variables without calculating derivatives</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">J</forename><surname>Powell</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The computer journal</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="155" to="162" />
+			<date type="published" when="1964">1964</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,336.79,150.20,222.20,8.64;4,336.79,161.98,222.20,8.81;4,336.79,173.94,200.16,8.81" xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Completely derandomized self-adaptation in evolution strategies</title>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Hansen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Ostermeier</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Evolutionary computation</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="159" to="195" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,336.79,187.56,222.20,8.64;4,336.79,199.34,222.20,8.81;4,336.79,211.30,222.20,8.58;4,336.79,223.42,77.21,8.64" xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Psa-cma-es: Cma-es with population size adaptation</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Nishida</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Akimoto</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Genetic and Evolutionary Computation Conference</title>
+				<meeting>the Genetic and Evolutionary Computation Conference</meeting>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="page" from="865" to="872" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,336.79,236.87,222.20,8.64;4,336.79,248.83,222.20,8.64;4,336.79,260.78,222.20,8.64;4,336.79,272.57,222.20,8.81;4,336.79,284.52,222.20,8.58;4,336.79,296.65,113.73,8.64" xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Embedded feature similarity optimization with specific parameter initialization for 2d/3d medical image registration</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Gu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Kong</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ICASSP 2024-2024 IEEE International Conference on Acoustics, Speech and Signal Processing</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2024">2024</date>
+			<biblScope unit="page" from="1521" to="1525" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,336.79,310.10,222.20,8.64;4,336.79,322.05,222.20,8.64;4,336.79,334.01,222.20,8.64;4,336.79,345.79,206.31,8.81" xml:id="b7">
+	<analytic>
+		<title level="a" type="main">A fully differentiable framework for 2d/3d registration and the projective spatial transformers</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Feng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">H</forename><surname>Taylor</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Armand</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Unberath</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Medical Imaging</title>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,336.79,359.41,222.20,8.64;4,336.79,371.37,222.19,8.64;4,336.79,383.15,222.20,8.81;4,336.79,395.11,100.17,8.81" xml:id="b8">
+	<monogr>
+		<title level="m" type="main">Fully differentiable correlation-driven 2d/3d registration for x-ray to ct image fusion</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Gu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Ge</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Kong</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2402.02498</idno>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="4,336.79,408.73,222.20,8.64;4,336.79,420.68,222.20,8.64;4,336.79,432.64,222.20,8.64;4,336.79,444.42,222.20,8.58;4,336.79,456.38,145.74,8.81" xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Cma-es with learning rate adaptation: Can cma-es with default population size solve multimodal and noisy problems?</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Nomura</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Akimoto</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">I</forename><surname>Ono</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Genetic and Evolutionary Computation Conference</title>
+				<meeting>the Genetic and Evolutionary Computation Conference</meeting>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="page" from="839" to="847" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,336.79,470.00,222.20,8.64;4,336.79,481.95,222.20,8.64;4,336.79,493.91,222.20,8.64;4,336.79,505.86,222.20,8.64;4,336.79,517.65,222.20,8.81;4,336.79,529.77,110.77,8.64" xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Machine learning for automated and real-time twodimensional to three-dimensional registration of the spine using a single radiograph</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Abumoussa</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">V</forename><surname>Gopalakrishnan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Succop</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Galgano</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Jaikumar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><forename type="middle">Z</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">A</forename><surname>Bhowmick</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Neurosurgical Focus</title>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page">E16</biblScope>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,336.79,543.22,222.20,8.64;4,336.79,555.18,222.20,8.64;4,336.79,564.82,222.20,10.95;4,336.79,579.09,222.20,8.64;4,336.79,590.88,199.12,8.81" xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Verse: A vertebrae labelling and segmentation benchmark for multi-detector ct images</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Sekuboyina</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">E</forename><surname>Husseini</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Bayat</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Löffler</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Liebl</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Tetteh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Kukačka</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Payer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Štern</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Medical image analysis</title>
+		<imprint>
+			<biblScope unit="volume">73</biblScope>
+			<biblScope unit="page">102166</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,336.79,604.49,222.20,8.64;4,336.79,616.28,222.20,8.81;4,336.79,628.24,100.17,8.81" xml:id="b12">
+	<monogr>
+		<title level="m" type="main">cmaes: A simple yet practical python library for cma-es</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Nomura</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Shibata</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2402.01373</idno>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

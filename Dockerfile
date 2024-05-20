@@ -31,7 +31,7 @@ WORKDIR /grobid_client_python
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copiar archivos adicionales si son necesarios
-COPY Grobid.py input_pdfs /grobid_client_python/
+COPY Grobid.py input_pdfs Assignment2.py /grobid_client_python/
 
 # Hacer el script ejecutable
 RUN chmod +x /grobid_client_python/Grobid.py
@@ -40,4 +40,11 @@ RUN chmod +x /grobid_client_python/Grobid.py
 WORKDIR /grobid_client_python
 
 # Comando para ejecutar el script de Python cuando el contenedor inicie
-ENTRYPOINT ["python", "Grobid.py"]
+ENTRYPOINT ["python", "Assignment2.py"]
+
+# Comando para ejecutar los scripts en secuencia
+# ENTRYPOINT ["/bin/bash", "-c", "\
+#     python /grobid_client_python/Grobid.py && \
+#     echo 'Grobid processing completed' && \
+#     python /grobid_client_python/Assignment2.py \
+# "]

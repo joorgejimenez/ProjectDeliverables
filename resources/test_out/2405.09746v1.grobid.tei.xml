@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Algebraic Geometric Rook Codes for Coded Distributed Computing</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2024-05-16">16 May 2024</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,223.08,128.67,100.26,9.80"><forename type="first">Gretchen</forename><forename type="middle">L</forename><surname>Matthews</surname></persName>
+							<email>gmatthews@vt.edu</email>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Mathematics Virginia Tech Blacksburg</orgName>
+								<address>
+									<postCode>24061</postCode>
+									<region>Virginia</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,339.48,128.67,49.52,9.80"><forename type="first">Pedro</forename><surname>Soto</surname></persName>
+							<email>pedrosoto@vt.edu</email>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Mathematics Virginia Tech Blacksburg</orgName>
+								<address>
+									<postCode>24061</postCode>
+									<region>Virginia</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Algebraic Geometric Rook Codes for Coded Distributed Computing</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2024-05-16">16 May 2024</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">7E52E261117424A896FBEF719B52D254</idno>
+					<idno type="arXiv">arXiv:2405.09746v1[cs.IT]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2024-05-19T14:18+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>We extend coded distributed computing over finite fields to allow the number of workers to be larger than the field size. We give codes that work for fully general matrix multiplication and show that in this case we serendipitously have that all functions can be computed in a distributed fault-tolerant fashion over finite fields. This generalizes previous results on the topic. We prove that the associated codes achieve a recovery threshold similar to the ones for characteristic zero fields but now with a factor that is proportional to the genus of the underlying function field. In particular, we have that the recovery threshold of these codes is proportional to the classical complexity of matrix multiplication by a factor of at most the genus.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>I. INTRODUCTION</head><p>In this paper we consider the problem of coded distributed computation over a finite field. Coded distributed computing and, in particular, coded distributed matrix multiplication has attracted a large surge of research interest as of late <ref type="bibr" coords="1,253.08,394.31,10.60,8.91" target="#b0">[1]</ref>, <ref type="bibr" coords="1,269.52,394.31,10.60,8.91" target="#b1">[2]</ref>, <ref type="bibr" coords="1,285.96,394.31,10.60,8.91" target="#b2">[3]</ref>, <ref type="bibr" coords="1,48.24,406.19,10.60,8.91" target="#b3">[4]</ref>, <ref type="bibr" coords="1,65.04,406.19,10.69,8.91" target="#b4">[5]</ref>, <ref type="bibr" coords="1,81.96,406.19,10.60,8.91" target="#b5">[6]</ref>, <ref type="bibr" coords="1,98.88,406.19,10.60,8.91" target="#b6">[7]</ref>, <ref type="bibr" coords="1,115.80,406.19,10.60,8.91" target="#b7">[8]</ref>, <ref type="bibr" coords="1,132.72,406.19,10.60,8.91" target="#b8">[9]</ref>, <ref type="bibr" coords="1,149.64,406.19,15.24,8.91" target="#b9">[10]</ref>, <ref type="bibr" coords="1,171.48,406.19,15.34,8.91" target="#b10">[11]</ref>, <ref type="bibr" coords="1,193.44,406.19,15.24,8.91" target="#b11">[12]</ref>, <ref type="bibr" coords="1,215.28,406.19,15.34,8.91" target="#b12">[13]</ref>, <ref type="bibr" coords="1,237.12,406.19,15.34,8.91" target="#b13">[14]</ref>, <ref type="bibr" coords="1,259.08,406.19,15.24,8.91" target="#b14">[15]</ref>, <ref type="bibr" coords="1,280.92,406.19,15.34,8.91" target="#b15">[16]</ref>. In this paper we will extend the batch matrix multiplication problem in <ref type="bibr" coords="1,94.92,430.19,15.24,8.91" target="#b9">[10]</ref>, <ref type="bibr" coords="1,116.88,430.19,15.24,8.91" target="#b10">[11]</ref>, <ref type="bibr" coords="1,138.84,430.19,10.60,8.91" target="#b7">[8]</ref>, <ref type="bibr" coords="1,155.76,430.19,10.60,8.91" target="#b8">[9]</ref>, <ref type="bibr" coords="1,172.68,430.19,16.64,8.91" target="#b16">[17]</ref> to the case where there are more workers than there are elements in the field. We show that over finite fields, our rook codes can encode all functions. We use codes constructed from algebraic function fields. Prior works that use algebraic geometry codes include <ref type="bibr" coords="1,257.52,477.95,15.24,8.91" target="#b17">[18]</ref>, <ref type="bibr" coords="1,280.92,477.95,15.34,8.91" target="#b18">[19]</ref>, <ref type="bibr" coords="1,48.24,489.95,15.24,8.91" target="#b19">[20]</ref>, and evaluation codes <ref type="bibr" coords="1,159.36,489.95,15.24,8.91" target="#b20">[21]</ref>.</p><p>This paper is organized as follows. Section II gives an implicit construction that solves the general coded distributed matrix-matrix multiplication problem that is optimal to a factor of 2(g + 1) where g is the genus of a particular function field, Section III gives an explicit construction that is good for small values, and Section IV gives a construction that computes any function which is optimal up to a factor of ℓ(g + 1) where ℓ is the degree of the function and g is also the genus of a yet unspecified function field.</p><p>Background and Notation: Consider a function field F of genus g over a finite field F. The set of places of F is denoted by P F . The divisor of a nonzero rational function f ∈ F is (f ) = (f ) 0 − (f ) ∞ where (f ) 0 := P ∈PF ,vP (f )&gt;0 v P (f )P and (f ) ∞ := P ∈PF ,vP (f )&gt;0 v P (f )P denote the zero and pole divisors of f and v P (f ) denotes the discrete valuation of f at the place P .</p><p>Consider a divisor G = P ∈PF a P P of F . Its degree is deg(G) := P ∈PF a P deg(P ), and its support is supp(G) := {P ∈ P F :</p><formula xml:id="formula_0" coords="1,312.00,212.49,251.86,21.84">a P = 0}. The Riemann-Roch space of G is L(G) := {f : (f ) ≥ −G} ∪ {0}, meaning f ∈ L(G)</formula><p>if and only if f has a zero of order at least −a P for each P ∈ supp(G) with a P &lt; 0 and the only poles of f are at P ∈ supp(G) with a P &gt; 0 and of pole order at most a P . The dimension of the divisor</p><formula xml:id="formula_1" coords="1,312.00,272.03,252.06,34.06">G is ℓ(G) := dim F L(G). If deg(G) &gt; 2g − 2, then according to the Riemann-Roch Theorem, ℓ(G) = deg G + 1 − g.</formula><p>Given divisors G and D := P 1 + • • • + P n on F with disjoint support where each P i is a rational place, the associated algebraic geometry code is</p><formula xml:id="formula_2" coords="1,312.00,332.37,251.94,57.72">C(D, G) := {(f (P 1 ), . . . , f (P n )) : f ∈ L(G)}. It is well known that C(D, G) is an [n, k, d] code over F, with length n, dimension k = ℓ(G) − ℓ(G − D) and minimum distance d ≥ n − deg G. Hence, if 2g − 2 &lt; deg(G) &lt; n, then k = deg(G) + 1 − g.</formula><p>For additional details, see <ref type="bibr" coords="1,420.72,392.87,15.24,8.91" target="#b21">[22]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>II. DIAGONAL ALGEBRAIC GEOMETRIC ROOK PRODUCT</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A. Batch Matrix Multiplication</head><p>We will consider the following problem: given k pairs of matrices</p><formula xml:id="formula_3" coords="1,396.60,471.57,82.56,10.66">A 1 , B 1 , . . . , A k , B k ,</formula><p>where A i ∈ F t1×t2 and B i ∈ F t2×t3 for i ∈ [k] and a field F, compute the products</p><formula xml:id="formula_4" coords="1,402.48,523.53,70.23,10.65">A 1 B 1 , . . . , A k B k</formula><p>in the distributed master worker topology in which the master node gives n worker nodes coded matrices of the form</p><formula xml:id="formula_5" coords="1,323.76,573.17,229.95,24.17">Ãw = i∈[k] α (w) i A i ∈ F t1×t2 , Bw = i∈[k] β (w) i B i ∈ F t2×t3</formula><p>where α (w) i ∈ F and w ∈ [n] indexes over the worker nodes. We are concerned with the minimum number of worker nodes that need to return their values so that the master can recover the desired products. This will be formalized in Definition 1. Before we move on to constructing the actual codes, we will show that this batch matrix problem is actually the most general form of the distributed matrix multiplication problem since it implicitly solves the general matrix-matrix multiplication problem.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B. General Matrix-Matrix Multiplication</head><p>Given two matrices</p><formula xml:id="formula_6" coords="2,59.64,85.88,228.84,42.43">A =    A 1,1 . . . A 1,ζ . . . . . . . . . A χ,1 . . . A χ,ζ    , B =    B 1,1 . . . B 1,υ . . . . . . . . . B ζ,1 . . . B ζ,υ    ,</formula><p>with A i,j ∈ F t1×t2 and B i,j ∈ F t2×t3 , we can take an optimal (χ, υ, ζ) fast matrix multiplication tensor of rank r, i.e., for t ∈ [r], take</p><formula xml:id="formula_7" coords="2,73.44,174.53,204.00,24.17">Ât = i,j∈[χ]×[ζ] γ (t) i,j A i,j , Bt = i,j∈[ζ]×[υ] δ (t) i,j B i,j ,</formula><p>and then A i , B i := Âi , Bi as in <ref type="bibr" coords="2,187.92,208.79,15.24,8.91" target="#b22">[23]</ref>, which shows that the general matrix-matrix multiplication problem reduces exactly to the batch matrix multiplication. It seems that computing the linear functions defined by γ, δ is an undesirable overhead, but one must compute the functions given by α, β anyways; in particular, one may compose the α, β and the γ, δ so that there is no overhead. The number r above is often called the tensor-rank or the bilinear complexity. The primary goal of this paper is to generalize the main result of <ref type="bibr" coords="2,87.00,316.19,16.64,8.91" target="#b22">[23]</ref> (which only holds in true generality generally for characteristic zero) to more general cases over finite fields. This paper overcomes the major obstacle when the field is finite, namely the number of evaluation points (meaning the number of workers) or more generally, the length of the code.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>C. Implicit Construction</head><p>Let F/F q be a function field of transcendence degree 1.</p><p>Definition 1. Given a divisor G on F , we say that L(G) is R-recoverable for a positive integer R if there exist functions x 1 , . . . , x k ∈ L(G 1 ), y 1 , . . . , y k ∈ L(G 2 ) for some divisors G 1 and G 2 of F with G = G 1 + G 2 so that the values of A i B i (i.e., the diagonal elements) can be recovered from any R columns of the product</p><formula xml:id="formula_8" coords="2,77.16,489.92,222.92,126.10">C                  x 1 y 1 (P 1 ) x 1 y 1 (P 2 ) . . . x 1 y 1 (P n ) . . . . . . . . . x 1 y k (P 1 ) x 1 y k (P 2 ) . . . x 1 y k (P n ) x 2 y 1 (P 1 ) x 2 y 1 (P 2 ) . . . x 2 y 1 (P n ) . . . . . . . . . x 2 y k (P 1 ) x 2 y k (P 2 ) . . . x 2 y k (P n ) x k y 1 (P 1 ) x k y 1 (P 2 ) . . . x k y 1 (P n ) . . . . . . . . . x k y k (P 1 ) x k y k (P 2 ) . . . x k y k (P n )                 <label>(1)</label></formula><p>for some matrix</p><formula xml:id="formula_9" coords="2,48.24,639.47,251.84,34.55">C = (A 1 B 1 • • • A 1 B k A 2 B 1 • • • A 2 B k • • • A k B 1 • • • A k B k ) (2) where A i B j ∈ F t1×t3 for all i, j ∈ [k].</formula><p>In this case, we may say that G is R-recoverable.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Definition 2. Let G and D</head><formula xml:id="formula_10" coords="2,48.24,56.87,515.72,658.79">= P 1 + • • • + P n be divisors with disjoint supports on F/F q (x). We call C(G, D) a (diagonal) [n, k] q −rook code if there exist bases {x 1 , . . . , x k } for L(G 1 ) and {y 1 , . . . , y k } for L(G 2 ) satisfying for all i, j ∈ [k] and l ∈ [n] P l ∈ supp(x i y j ) ⇐⇒ i = j = l (3)</formula><p>where G 1 and G 2 are divisors on</p><formula xml:id="formula_11" coords="2,312.00,113.73,251.82,22.53">F/F q (x) such that G = G 1 + G 2 .</formula><p>Lemma 1. An [n, k] q rook code given by bases {x 1 , . . . , x k } and {y 1 , . . . , y k } satisfies the following generalization of the decodability condition of <ref type="bibr" coords="2,417.12,168.55,17.68,8.74" target="#b16">[17]</ref> for all i, j, k</p><formula xml:id="formula_12" coords="2,340.20,187.19,195.36,10.55">(x k ) + (y k ) = (x i ) + (y j ) ⇐⇒ k = i ∧ k = j.</formula><p>Proof. The proof is immediate from the fact that (x i y j ) = (x i ) + (y j ). Thus, the two expressions have the same supports.</p><p>Remark 1. The term rook code is inspired by the name given to the codes in <ref type="bibr" coords="2,377.52,263.83,16.10,8.74" target="#b16">[17]</ref>, since Lemma 1 shows that Definition 2 is a generalization of the decodability condition presented in <ref type="bibr" coords="2,312.00,287.70,16.10,8.74" target="#b16">[17]</ref>. They are equivalent up to code equivalance.</p><formula xml:id="formula_13" coords="2,312.00,304.79,251.78,10.87">Lemma 2. If x 1 , . . . , x k ∈ L(G 1 ) and y 1 , . . . , y k ∈ L(G 2 )</formula><p>satisfy Equation <ref type="formula" coords="2,381.84,317.83,4.98,8.74">3</ref>and supp(G</p><formula xml:id="formula_14" coords="2,312.00,316.79,251.82,22.87">1 + G 2 ) ∩ supp(D) = ∅, then G 1 + G 2 is R-recoverable for some R ≤ d(G).</formula><p>Proof. Worker w will receive the values</p><formula xml:id="formula_15" coords="2,332.64,364.89,213.12,23.78">Ã(P w ) = i∈[k] A i x i (P w ), B(P w ) = i∈[k] B i x i (P w ).</formula><p>The matrix consisting of their products will be exactly the matrix given by Equation <ref type="formula" coords="2,416.64,409.78,3.71,8.91" target="#formula_8">1</ref>. In particular, worker w will return</p><formula xml:id="formula_16" coords="2,390.96,426.21,96.15,12.86">C(P w ) = Ã(P w ) B(P w )</formula><p>to the master node. The proof now follows from the fact that n − deg(G) ≤ d, where d denotes the minimum distance of C(D, G), is the maximum number of rational places needed to recover the k blocks of data A i B i which is a subset of the indices in Equation <ref type="formula" coords="2,394.44,497.02,3.71,8.91">2</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>D. Existence of Codes for All Fields and Numbers of Rational Places</head><p>Next, we demonstrate that diagonal rook codes exist over every field.</p><p>Theorem 1. Given a function field F/F q with at least n rational places, there exists an [n, k] q -rook code for any k ∈ [n].</p><p>Proof. Fix an element x ∈ F that is transcendental over F q and rational places P 1 , . . . , P k of F . By repeated application of the Approximation Theorem (see <ref type="bibr" coords="2,465.24,641.63,15.81,8.91" target="#b21">[22,</ref><ref type="bibr" coords="2,485.04,641.63,51.70,8.91">Theorem 1.3</ref>.1] for instance), there exists some a 1 , . . . , a k ∈ F such that</p><formula xml:id="formula_17" coords="2,312.00,672.35,159.18,43.31">v Pi (x − a i ) = 0 and v Pj (x − a i ) = 1</formula><p>for i = j. Then the functions</p><formula xml:id="formula_18" coords="3,120.24,75.47,107.76,21.47">x i = y i = j∈[k]\{i} x − a i .</formula><p>satisfy Equation 3 by construction.</p><p>Remark 2. The proof of Theorem 1 suggests another possible generalization of the decodability condition of <ref type="bibr" coords="3,240.96,134.35,16.20,8.74" target="#b16">[17]</ref>, namely,</p><formula xml:id="formula_19" coords="3,48.24,151.43,251.76,11.23">v P k (x k ) + v P k (y k ) = v P k (x i ) + v P k (y j ) ⇐⇒ k = i ∧ k = j.</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>E. A More Efficient Construction</head><p>For i ∈ [k], let r i := min {α ∈ H(P i ) : α &gt; 0} where H(P ) = {α ∈ N : ℓ(αP ) = ℓ((α − 1)P )} is the Weierstrass semigroup of a rational place P . Then there exist functions z i such that 1, z i = L(r i P i ).</p><p>Then we define</p><formula xml:id="formula_20" coords="3,135.00,260.57,165.08,23.33">x i := j∈[k]\{i} z −1 j .<label>(4)</label></formula><p>Our coding scheme will send matrices</p><formula xml:id="formula_21" coords="3,48.24,307.05,232.35,70.10">Ã(P w ) = i∈[k] A i x i (P w ), B(P w ) = i∈[k] B i x i (P w ) to worker w. Let b = i∈[k] r i deg(P i ).</formula><p>Then we have that</p><formula xml:id="formula_22" coords="3,102.12,401.87,147.84,10.87">1, x 1 , . . . , x k ⊂ L(Q 1 + • • • + Q k ),</formula><p>where</p><formula xml:id="formula_23" coords="3,76.80,418.25,155.37,13.85">Q i = (z −1 i ) ∞ and deg( i Q i ) ≤ b.</formula><p>Assume further that there exist rational places P k+1 , . . . , P n+k of F so that</p><formula xml:id="formula_24" coords="3,48.24,450.11,251.94,40.30">supp(D) ∩ supp(G) = ∅ where G = Q 1 + • • • + Q b and D = P k+1 + • • • + P n+k . Then consider the code C(D, G).</formula><p>Before proving that the previous construction is indeed a rook code we introduce the following measure of complexity which will turn out to (upper) bound the recovery threshold. Definition 3. Given a place P of F/F q , the min pole number of P , denoted µ(P ) as the smallest integer r such that there exists a non-constant z ∈ F such that</p><formula xml:id="formula_25" coords="3,145.20,575.87,61.44,10.18">1, z = L(rP );</formula><p>that is, the min pole number of P is the multiplicity of the Weierstrass semigroup of the place P . We define the (k th ) min pole sum as</p><formula xml:id="formula_26" coords="3,56.28,633.44,86.25,45.31">σ k (F ) := min    i∈[k]</formula><p>µ(P i ) :</p><formula xml:id="formula_27" coords="3,181.08,633.44,110.88,45.31">P i ∈ P F , deg(P i ) = 1, P i = P j ∀i, j ∈ [k], with i = j    .</formula><p>Theorem 2. The functions x i given in ( <ref type="formula" coords="3,212.91,676.02,3.87,8.74" target="#formula_20">4</ref>) satisfy Equation <ref type="formula" coords="3,292.56,676.02,3.71,8.74">3</ref>.</p><p>The associated construction has recovery threshold given by</p><formula xml:id="formula_28" coords="3,146.76,705.33,153.32,10.33">R = 2σ k (F ).<label>(5)</label></formula><p>Proof. Since the P i were chosen to be distinct and supp(z</p><formula xml:id="formula_29" coords="3,321.96,67.01,231.37,42.77">−1 i ) 0 = supp(z i ) ∞ = {P i }, we have that j∈[k]\{i} supp(z j ) ∞ = j∈[k]\{i} supp(z −1 j ) 0 = supp(x i ) 0</formula><p>We have that</p><formula xml:id="formula_30" coords="3,402.84,128.39,70.20,10.87">P i / ∈ supp(z j ) ∞ ,</formula><p>for i = j by construction. Therefore,</p><formula xml:id="formula_31" coords="3,357.96,165.47,159.96,21.47">P i / ∈ j∈[k]\{i} supp(z j ) ∞ = supp(x i ) 0 .</formula><p>Similarly, we have that P ℓ ∈ supp(z j ) ∞ for ℓ = j by construction; therefore,</p><formula xml:id="formula_32" coords="3,358.56,224.51,158.76,21.47">P ℓ ∈ j∈[k]\{i} supp(z j ) ∞ = supp(x i ) 0 ,</formula><p>for any ℓ ∈ [k] such that ℓ = i, by construction. Therefore, Equation 3 is satisfied. We then have that</p><formula xml:id="formula_33" coords="3,378.48,284.37,118.80,21.26">b = i∈[k] r i deg(P i ) = σ k (F ),</formula><p>for an optimal choice of P 1 , . . . , P k .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>F. Analysis: Upper Bounds on the Recovery Threshold</head><p>The bound in Theorem 2 can be given a coarse upper bound as stated in the next result.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Theorem 3. The codes defined by Equation 4 have the following upper bound:</head><p>R(n, k, q) ≤ (g n,q + 1) k where g n,q is the smallest genus of a function field over F q with at least (g n,k + 1)k + n rational places.</p><p>Proof. According to the Weierstrass Gap Theorem, for any rational place P of a function field F of genus g, N \ H(P ) ⊆ [1, . . . , 2g − 1] and | N \ H(P ) |= g. Hence, µ(P ) ≤ g + 1 and σ k (F ) ≤ (g + 1)k provided F has at least k rational places. The result then follows from the fact that the scheme requires n reserved rational places.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Corollary 1. The recovery threshold R of a scheme that computes the corresponding general matrix-matrix coded distributed version satisfies the bound</head><formula xml:id="formula_34" coords="3,366.72,584.87,142.32,10.87">T ≤ R ≤ 2σ T (F ) ≤ (g n,q + 1) T .</formula><p>In particular, if we take χ = ζ = υ = τ , then we have that the recovery threshold asymptotically bounded as</p><formula xml:id="formula_35" coords="3,374.28,631.93,127.20,11.85">R = O(σ τ ω (F )) = O(g n,q τ ω ),</formula><p>where ω is the matrix multiplication exponent.</p><p>Proof. Repeating the arguements in <ref type="bibr" coords="3,459.72,670.19,16.64,8.91" target="#b22">[23]</ref> and Section II-B, the recovery threshold for batch matrix multiplication bounds the complexity of general matrix multiplication by a factor of two. Remark 3. It is possible that the recovery threshold is far smaller than the genus. In particular, for hyperelliptic function fields we have that σ k (F ) = 2k. Future research would involve finding other families of curves where we can replace the genus bound on recovery threshold with the gonality.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>III. ENTANGLED ALGEBRAIC GEOMETRIC ROOK PRODUCT</head><p>In order to separate the different constructions, we will call the rook codes from the previous section diagonal rook codes (diagonal codes for short) and the code from this section entangled rook codes (entangled codes for short). However, we will see in Section IV that diagonal rook codes can code the most general functions in a straightforward way when the field is finite. We will see that the difference between the two is that the diagonal codes implicitly encode matrix multiplication while the entangled codes attempt to do two things at once: 1) code the matrices and 2) be a fast matrix multiplication tensor. Diagonal codes, in contrast, simply take an already optimal fast matrix multiplication tensor and encode that as a batch matrix multiplication.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A. Entangled Codes Do Matrix-Matrix Multiplication Well for Small Cases</head><p>In the classic characteristic zero case, codes of this form achieve the naive cubic recovery threshold at best and thus it is unlikely they perform as well as the diagonal ones. However, for small values of k they do better. For example, using the entangled polynomial codes construction from <ref type="bibr" coords="4,247.56,429.47,15.34,8.91" target="#b22">[23]</ref>, we get that for A a 2 × 2 matrix and B a 2 × 2 matrix, that the entangled polynomial codes have a recovery threshold of 9 = 2 * 2 * 2+2−1 while the LCC <ref type="bibr" coords="4,169.08,465.23,16.64,8.91" target="#b9">[10]</ref> and CSA <ref type="bibr" coords="4,227.64,465.23,16.52,8.91" target="#b10">[11]</ref> constructions achieves a recovery threshold of 13 = 2 * 7 − 1. For more explanation, please see <ref type="bibr" coords="4,145.08,489.23,15.34,8.91" target="#b22">[23]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B. Entangled Codes as an Explicit Construction</head><p>In the entangled rook code case, instead of implicitly giving the general matrix multiplication as a batch of k = T matrix multiplications, one directly looks for code that also performs fast matrix multiplication simultaneously. Since the implicit batch multiplication can already bring the recovery threshold to within a factor of σ K (F ) ≤ 2(g + 1) (or just a factor of 2 in the case where F is an infinite field, since one can use MDS-codes without running out of rational place), this entails trying to get the factor down beneath the diagonal rook codes.</p><p>For the entangled codes, we need to redefine what recovery and rook codes means.</p><formula xml:id="formula_36" coords="4,48.24,681.23,251.79,34.06">Definition 4. Given x 1,1 , . . . , x χ,ζ ∈ L(G 1 ), y 1,1 , . . . , y ζ,υ ∈ L(G 2 ), and x i,j y k,ℓ ∈ L(G 1 + G 2 ), we say that L(G 1 + G 2 ) is R-recoverable if</formula><p>the values of j∈ζ A i,j B j,k (i.e., the dot products) can be recovered from any R columns of the result of</p><formula xml:id="formula_37" coords="4,318.12,86.72,235.12,54.31">C      x 1,1 y 1,1 (P 1 ) x 1,1 y 1,1 (P 2 ) . . . x 1,1 y 1,1 (P n ) x 1,1 y 1,2 (P 1 ) x 1,1 y 1,2 (P 2 ) . . . x 1,1 y 1,2 (P n ) . . . . . . . . . . . . x χ,ζ y ζ,υ (P 1 ) x χ,ζ y ζ,υ (P 2 ) . . . x χ,ζ y ζ,υ (P n )     </formula><p>, where</p><formula xml:id="formula_38" coords="4,312.00,168.70,251.85,41.53">C = A 1,1 B 1,1 A 1,1 B 1,2 . . . A χ,ζ B 1,1 . . . A χ,ζ B ζ,υ . Definition 5. Let G = G 1 + G 2 and D = P 1 + • • • + P n . We call C(G, D) a [n, k] q −entangled</formula><p>rook code, if there are bases x i,j for L(G 1 ) and y k,ℓ for L(G 2 ) such that,</p><formula xml:id="formula_39" coords="4,338.64,229.73,221.41,12.29">(x i,j y k,ℓ ) = (x i ′ ,j ′ y k ′ ,ℓ ′ ) ⇐⇒ j = k = j ′ = k ′ . (<label>6</label></formula><formula xml:id="formula_40" coords="4,560.05,232.43,3.91,8.91">)</formula><p>is satisfied.</p><p>Assume there is some r such that 1, z = L(rP ) for some rational places P . Then we define</p><formula xml:id="formula_41" coords="4,352.08,299.57,171.13,12.17">x i,j := (z υζi+j ) −1 , y k,ℓ := (z ζℓ+ζ−k ) −1</formula><p>then we have that</p><formula xml:id="formula_42" coords="4,349.20,340.91,177.36,10.87">(x i,j y k,ℓ ) 0 = r((υζi + j + ζℓ + ζ − k)P 0 ).</formula><p>It should be clear that only when j = k do we have</p><formula xml:id="formula_43" coords="4,368.16,380.73,139.44,10.65">(x i,j y k,ℓ ) 0 = r 0 (υζi + ζℓ + ζ)P 0 ,</formula><p>and thus (after normalizing the x i,j and y k,ℓ ) we have that the coefficient of x i,k y k,ℓ in the product ( i,j A i,j x i,j )( k,ℓ B k,ℓ y k,ℓ ) is equal to k A i,k B k,ℓ . Thus we have an alternate coding scheme that achieves a cubic recovery threshold.</p><p>Remark 4. We postpone the analysis of the previous construction since it would asymptotically give a cubic recovery threshold (i.e., the complexity of naive matrix multiplication) up to a factor proportional to the genus. It is likely that one can extend the impossibility results from <ref type="bibr" coords="4,476.28,515.23,17.68,8.74" target="#b16">[17]</ref> that were proven using additive combinatorics to the case of the semigroup of only one point. The main intuition behind the diagonal design is to consider semigroups of many points, allowing for more elbow room in the construction so that such impossibility results do not hinder us.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>IV. DIAGONAL ROOK CODES FOR TENSORS</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A. Multi-linear Functions</head><p>By a tensor, T , we mean a function T : V 1 , . . . , V ℓ → F T (v 1 , . . . , αv i + βw, . . . , v ℓ ) = αT (v 1 , . . . , v i , . . . , v ℓ ) + βT (v 1 , . . . , w, . . . , v ℓ ) for all i; we call ℓ the order of the tensor. Given bases B i for the V i we can represent a tensor by the values T . Definition 6. Given linear functions w i : V i → F, we define the rank-1 tensor associated to (w 1 , . . . , w ℓ ) as</p><formula xml:id="formula_44" coords="5,48.24,80.97,209.52,61.78">w 1 w 2 . . . w ℓ (v 1 , . . . , v ℓ ) := i∈[ℓ] w i (v i ) = [v 1 ⊗ • • • ⊗ v ℓ ](v 1 , . . . , v ℓ ). If V 1 = • • • = V ℓ ,</formula><p>then we can further define the ℓ th power of a linear form as the rank-1 tensor</p><formula xml:id="formula_45" coords="5,148.92,161.77,50.40,11.60">v ℓ = v • • • v.</formula><p>Remark 5. For simplicity, we consider the case where </p><formula xml:id="formula_46" coords="5,48.24,182.73,251.82,83.42">V 1 = • • • = V ℓ . B. Implicit Construction Definition 7. Given x (i) 1 , . . . , x (i) k ∈ L(G i ), and i∈[ℓ] x (i) ji ∈ L(G 1 +• • •+G ℓ ) for all (j 1 , . . . , j ℓ ) ∈ [k] ℓ , we say that L(G 1 + • • • + G ℓ ) is R-recoverable if</formula><formula xml:id="formula_47" coords="5,48.24,328.02,120.12,63.96">with       x<label>(1) 1 . . . x (ℓ) 1 (P 1 ) x (1) 1 . . . x (ℓ)</label></formula><p>1 (P 2 ) . . . x</p><formula xml:id="formula_48" coords="5,59.76,342.20,214.97,49.08">. . . x (ℓ) 2 (P 1 ) x (1) 1 . . . x (ℓ) 2 (P 2 ) . . . x (1) 1 . . . x (ℓ) 2 (Pn) . . . . . . . . . . . . x<label>(1) 1 . . . x (ℓ) 1 (Pn) x (1) 1</label></formula><formula xml:id="formula_49" coords="5,64.56,382.52,67.53,11.63">. . . x (ℓ) k (P 1 ) x<label>(1) k</label></formula><formula xml:id="formula_50" coords="5,132.12,382.52,88.77,11.63">. . . x (ℓ) k (P 2 ) . . . x<label>(1) k</label></formula><formula xml:id="formula_51" coords="5,220.92,344.16,73.15,49.99">. . . x (ℓ) k (Pn)       .<label>(1) k</label></formula><p>Here, C is the result of applying all of the possible products w i1 . . . w i ℓ to (v 1 , . . . , v ℓ ).</p><formula xml:id="formula_52" coords="5,48.24,430.55,251.73,10.87">Definition 8. Let G = G 1 + • • • + G ℓ and D = P 1 + • • • + P n .</formula><p>We call C(G, D) a [n, k] q −tensor rook code, if there are bases</p><formula xml:id="formula_53" coords="5,48.24,453.05,131.17,34.01">x (i) 1 , . . . , x (i) k ∈ L(G i ) such that P k ∈ supp(x<label>(1)</label></formula><formula xml:id="formula_54" coords="5,48.24,473.81,227.40,31.67">i1 . . . x (ℓ) i ℓ ) ⇐⇒ i 1 = • • • = i ℓ = k. is satisfied.</formula><p>Remark 6. Definition 8 seems to only encode the "symmetric" tensors. This is true for infinite fields but as we will see, over finite fields this models all possible functions, so that we don't have to bother encoding more general tensors; thus, for simplicity, we only consider the symmetric case. However, it is straightforward to generalize the construction implied by Definition 8 for non-symmetric tensors.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>C. True Generality Over Finite Fields</head><formula xml:id="formula_55" coords="5,48.24,620.17,249.03,30.89">Definition 9. A tensor T : V ℓ → F is symmetric if T (v 1 , . . . , v i , . . . , v j , . . . , v ℓ ) = T (v 1 , . . . , v j , . . . , v i , . . . , v ℓ )</formula><p>for all i, j ∈ [l], and we call the symmetric rank the smallest number r such that there exists some w 1 , . . . , w r ∈ V * such that</p><formula xml:id="formula_56" coords="5,99.84,694.69,148.44,22.77">T (v 1 , . . . , v ℓ ) = i∈[r] w ℓ i (v 1 , . . . , v ℓ ).</formula><p>The space of all symmetric tensors on V of order ℓ is commonly denoted as S ℓ (V ).</p><p>Section 7.1 of <ref type="bibr" coords="5,388.92,87.34,16.52,8.91" target="#b23">[24]</ref> gives that the symmetric rank of a symmetric tensor bounds its algebraic complexity in the arithmetic circuits model; in particular, it bounds the complexity in the diagonal depth-3 circuits or depth-3 powering circuits sometimes denoted as ΣΠ ℓ Σ circuits.</p><p>We now proceed to show that any function f : F t q → F u q has its complexity bounded by the symmetric rank, and thus, our model gives a scheme to perform coded distributed computing of any function over a finite field.</p><p>Folk Lemma 1. Every function f : F t q → F q over a finite field is given by a multivariate polynomial p f ∈ F q [x 1 , . . . , x t ]. In particular, any multivariate function (f 1 , . . . , f b ) : F t q → F u q is given by a polynomial map p f where p f,i ∈ F q [x 1 , . . . , x t ].</p><p>Folk Lemma 2. Every degree ℓ polynomial f on t variables is the specialization of a symmetric tensor on T f ∈ S ℓ (F t+1 q ); i.e., f (x 1 , . . . , x t ) = T f (x 1 , . . . , x t , 1).</p><p>Corollary 2. Every function f : F t q → F u q is given by some symmetric tensor T f ∈ S ℓ (F t q ) u .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>D. Explicit Construction</head><p>We define</p><formula xml:id="formula_57" coords="5,398.76,349.37,78.24,23.33">x i := j∈[k]\{i} z −1 i .</formula><p>just as before, but now define the code by sending the ℓ coded vectors Theorem 4. The construction of the z i satisfies Equation <ref type="formula" coords="5,545.04,469.86,4.12,8.74">3</ref>; in particular, the construction given by Equation <ref type="formula" coords="5,503.76,481.86,4.98,8.74" target="#formula_20">4</ref>has recovery threshold given by R = ℓσ k (F ).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>E. Analysis: Upper bounds on the Recovery Threshold for Tensors</head><p>The bound in Theorem 4 can be given a coarse upper bound as follows:</p><p>Theorem 5. The codes defined by Equation <ref type="formula" coords="5,525.60,567.30,4.98,8.74" target="#formula_20">4</ref>satisfy R(n, k, q) ≤ g n,q ℓk where g n,q is the smallest genus of a function field over Fq with at least g n,k k + n rational places. Corollary 3. Let T (f ) be the ℓ-linear complexity of computing the polynomial function f of degree ℓ, then the recovery threshold of a scheme that computes the corresponding function is bounded as follows T ≤ R ≤ ℓσ T (F ) ≤ ℓg n,q T .</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="5,359.28,408.45,18.28,9.96;5,377.52,412.45,4.71,6.33;5,382.80,408.45,17.22,9.96;5,402.84,423.37,17.01,6.33;5,421.56,408.45,7.12,9.96;5,428.64,412.45,2.82,6.33;5,432.00,408.45,40.10,10.66;5,472.08,412.45,3.33,6.33;5,475.92,408.45,9.53,9.96;5,485.40,405.53,9.83,6.97;5,485.40,413.77,2.82,6.33;5,495.96,408.45,10.24,9.96;5,506.16,412.45,4.71,6.33;5,511.44,408.45,6.60,9.96;5,312.00,439.41,87.77,9.96;5,399.72,436.49,10.19,6.97;5,399.72,444.85,2.82,6.33;5,413.28,439.41,37.85,9.96;5,451.08,436.49,9.59,6.97;5,451.08,444.85,2.82,6.33;5,463.92,439.41,16.13,9.96;5,480.00,439.41,83.82,10.33;5,314.04,451.41,162.04,9.96;5,476.04,455.41,4.71,6.33;5,481.32,451.41,6.33,9.96"><head></head><label></label><figDesc>wj (P u ) := i∈[k] w i (v 1 , . . . , v ℓ )x (j) i (P u ),to worker u, where x (1) i = ... = x (ℓ) i = x i , so that w1 = ... = wℓ =: w. The workers then return wℓ (P u ).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" coords="5,48.24,254.77,251.92,65.33"><head></head><label></label><figDesc>the values of w ℓ i (v 1 , . . . , v ℓ ), i.e., the diagonal elements, can be recovered from any R columns of the result of the product of C = w 1 . . . w 1 w 1 . . . w 2 . . . w k . . . w 1 . . . w k . . . w k (v 1 , . . . , v ℓ )</figDesc><table /></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>ACKNOWLEDGMENT</head><p>The first author is partially supported by NSF DMS-2201075 and the Commonwealth Cyber Initiative.</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="6,66.48,79.33,233.23,7.13;6,66.48,88.21,233.59,7.13;6,66.48,97.21,113.11,7.13" xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Speeding Up Distributed Machine Learning Using Codes</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Lam</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Pedarsani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Papailiopoulos</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Ramchandran</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Inf. Theory</title>
+		<imprint>
+			<biblScope unit="page" from="1514" to="1529" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,66.48,106.69,233.34,7.13;6,66.48,115.69,233.54,7.13;6,66.48,124.57,233.30,7.13;6,66.48,133.57,161.11,7.13" xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Polynomial codes: An optimal design for high-dimensional coded matrix multiplication</title>
+		<author>
+			<persName coords=""><forename type="first">Q</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">A</forename><surname>Maddah-Ali</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">S</forename><surname>Avestimehr</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 31st International Conference on Neural Information Processing Systems (NIPS)</title>
+				<meeting>the 31st International Conference on Neural Information Processing Systems (NIPS)</meeting>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="page" from="4406" to="4416" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,66.48,143.05,233.42,7.13;6,66.48,152.05,233.53,7.13;6,66.48,160.93,187.87,7.13" xml:id="b2">
+	<analytic>
+		<title level="a" type="main">On the optimal recovery threshold of coded matrix multiplication</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Dutta</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Fahim</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Haddadpour</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Jeong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">V</forename><surname>Cadambe</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Grover</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Inf. Theory</title>
+		<imprint>
+			<biblScope unit="page" from="278" to="301" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,66.48,170.41,233.18,7.13;6,66.48,179.41,233.33,7.13;6,66.48,188.41,233.47,7.13;6,66.48,197.29,58.39,7.13" xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Straggler mitigation in distributed matrix multiplication: Fundamental limits and optimal coding</title>
+		<author>
+			<persName coords=""><forename type="first">Q</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">A</forename><surname>Maddah-Ali</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">S</forename><surname>Avestimehr</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Information Theory</title>
+		<imprint>
+			<biblScope unit="volume">66</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="1920" to="1933" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,66.48,206.77,233.51,7.13;6,66.48,215.77,233.54,7.13;6,66.48,224.77,233.10,7.13;6,66.48,233.65,136.22,7.13" xml:id="b4">
+	<monogr>
+		<title level="m" type="main">A unified coded deep neural network training strategy based on generalized polydot codes</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Dutra</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Bai</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Jeong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">M</forename><surname>Low</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Grover</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/ISIT.2018.8437852</idno>
+		<ptr target="https://doi.org/10.1109/ISIT.2018.8437852" />
+		<imprint>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="page" from="1585" to="1589" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,66.48,243.13,233.21,7.13;6,66.48,252.13,233.47,7.13;6,66.48,261.13,37.63,7.13" xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Gradient coding: Avoiding stragglers in distributed learning</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Tandon</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Q</forename><surname>Lei</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">G</forename><surname>Dimakis</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Karampatziakis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ICML</title>
+				<imprint>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="page" from="3368" to="3376" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,66.48,270.61,233.10,7.13;6,66.48,279.49,233.54,7.13;6,66.48,288.49,234.31,7.13;6,66.48,297.49,233.23,7.13;6,66.48,306.37,233.47,7.13" xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Lightweight projective derivative codes for compressed asynchronous gradient descent</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">J</forename><surname>Soto</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">I</forename><surname>Ilmer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Guan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 39th International Conference on Machine Learning , ser. Proceedings of Machine Learning</title>
+				<editor>
+			<persName><forename type="first">K</forename><surname>Research</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">S</forename><surname>Chaudhuri</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">L</forename><surname>Jegelka</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">C</forename><surname>Song</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">G</forename><surname>Szepesvari</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">S</forename><surname>Niu</surname></persName>
+		</editor>
+		<editor>
+			<persName><surname>Sabato</surname></persName>
+		</editor>
+		<meeting>the 39th International Conference on Machine Learning , ser. Machine Learning</meeting>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,66.48,333.85,233.29,7.13;6,66.48,342.85,233.43,7.13;6,66.48,351.73,87.91,7.13" xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Straggler-free coding for concurrent matrix multiplications</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Soto</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2020 IEEE International Symposium on Information Theory (ISIT)</title>
+				<imprint>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="page" from="233" to="238" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,66.48,361.21,233.42,7.13;6,66.48,370.21,233.11,7.13" xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Rook coding for batch matrix multiplication</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Soto</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Saldivia</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Communications</title>
+		<imprint>
+			<biblScope unit="page" from="1" to="1" />
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,66.48,379.69,233.43,7.13;6,66.48,388.57,233.53,7.13;6,66.48,397.57,233.22,7.13;6,66.48,406.57,233.53,7.13;6,66.48,415.57,233.35,7.13;6,66.48,424.45,207.41,7.13" xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Lagrange coded computing: Optimal design for resiliency, security, and privacy</title>
+		<author>
+			<persName coords=""><forename type="first">Q</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Raviv</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">M M</forename><surname>Kalan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Soltanolkotabi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">S</forename><surname>Avestimehr</surname></persName>
+		</author>
+		<ptr target="http://proceedings.mlr.press/v89/yu19b.html" />
+	</analytic>
+	<monogr>
+		<title level="m">The 22nd International Conference on Artificial Intelligence and Statistics (AISTATS), ser. Proceedings of Machine Learning Research</title>
+				<imprint>
+			<publisher>PMLR</publisher>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="volume">89</biblScope>
+			<biblScope unit="page" from="1215" to="1225" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,66.48,433.93,233.53,7.13;6,66.48,442.93,234.07,7.13;6,66.48,451.93,120.31,7.13" xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Cross subspace alignment codes for coded distributed batch computation</title>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Jia</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">A</forename><surname>Jafar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Information Theory</title>
+		<imprint>
+			<biblScope unit="volume">67</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="2821" to="2846" />
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,66.48,461.29,233.42,7.13;6,66.48,470.29,233.47,7.13;6,66.48,479.29,71.23,7.13" xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Numerically stable polynomially coded computing</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Fahim</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">V</forename><forename type="middle">R</forename><surname>Cadambe</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Information Theory</title>
+		<imprint>
+			<biblScope unit="volume">67</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="2758" to="2785" />
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,66.48,488.77,233.34,7.13;6,66.48,497.65,233.31,7.13;6,66.48,506.65,136.15,7.13" xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Analog lagrange coded computing</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Soleymani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Mahdavifar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">S</forename><surname>Avestimehr</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Journal on Selected Areas in Information Theory</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="283" to="295" />
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,66.48,516.13,233.48,7.13;6,66.48,525.13,233.43,7.13;6,66.48,534.01,122.11,7.13" xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Private polynomial computation from lagrange encoding</title>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Raviv</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">A</forename><surname>Karpuk</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Information Forensics and Security</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="page" from="553" to="563" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,66.48,543.49,233.46,7.13;6,66.48,552.49,232.98,7.13;6,66.48,561.49,233.47,7.13;6,66.48,570.37,63.19,7.13" xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Gcsa codes with noise alignment for secure coded multi-party batch matrix multiplication</title>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Jia</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">A</forename><surname>Jafar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Journal on Selected Areas in Information Theory</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="306" to="316" />
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,66.48,579.85,233.42,7.13;6,66.48,588.85,233.47,7.13;6,66.48,597.85,96.67,7.13" xml:id="b15">
+	<analytic>
+		<title level="a" type="main">On the capacity of secure distributed batch matrix multiplication</title>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Jia</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">A</forename><surname>Jafar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Information Theory</title>
+		<imprint>
+			<biblScope unit="volume">67</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="7420" to="7437" />
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,66.48,607.33,233.22,7.13;6,66.48,616.21,233.14,7.13;6,66.48,625.21,38.35,7.13" xml:id="b16">
+	<monogr>
+		<title level="m" type="main">Near-optimal fault tolerance for efficient batch matrix multiplication via an additive combinatorics lens</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Censor-Hillel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Machino</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Soto</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,66.48,634.69,233.17,7.13;6,66.48,643.69,219.07,7.13" xml:id="b17">
+	<monogr>
+		<title level="m" type="main">Distributed matrix multiplication with straggler tolerance using algebraic function fields</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Fidalgo-Díaz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">U</forename><surname>Martínez-Peñas</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,66.48,653.17,233.53,7.13;6,66.48,662.05,233.26,7.13;6,66.48,671.05,126.67,7.13" xml:id="b18">
+	<analytic>
+		<title level="a" type="main">General framework for linear secure distributed matrix multiplication with byzantine servers</title>
+		<author>
+			<persName coords=""><forename type="first">O</forename><surname>Makkonen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Hollanti</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Information Theory</title>
+		<imprint>
+			<biblScope unit="page" from="1" to="1" />
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,66.48,680.53,233.34,7.13;6,66.48,689.53,233.59,7.13;6,66.48,698.41,233.42,7.13;6,66.48,707.41,17.83,7.13" xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Hera scheme: Secure distributed matrix multiplication via hermitian codes</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">A</forename><surname>Machado</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">L</forename><surname>Matthews</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Santos</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2023 IEEE International Symposium on Information Theory (ISIT)</title>
+				<imprint>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="page" from="1729" to="1734" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,330.24,59.17,233.46,7.13;6,330.24,68.05,233.71,7.13;6,330.24,77.05,190.39,7.13" xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Secure matdot codes: a secure, distributed matrix multiplication scheme</title>
+		<author>
+			<persName coords=""><forename type="first">H</forename><forename type="middle">H</forename><surname>López</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">L</forename><surname>Matthews</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Valvo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2022 IEEE Information Theory Workshop (ITW)</title>
+				<imprint>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="page" from="149" to="154" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,330.24,86.05,233.41,7.13;6,330.24,95.05,135.31,7.13" xml:id="b21">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Stichtenoth</surname></persName>
+		</author>
+		<title level="m">Algebraic Function Fields and Codes</title>
+				<imprint>
+			<publisher>Springer Publishing Company</publisher>
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+	<note>2nd ed. Incorporated</note>
+</biblStruct>
+
+<biblStruct coords="6,330.24,103.93,233.31,7.13;6,330.24,112.93,233.33,7.13;6,330.24,121.93,233.47,7.13;6,330.24,130.81,58.51,7.13" xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Straggler mitigation in distributed matrix multiplication: Fundamental limits and optimal coding</title>
+		<author>
+			<persName coords=""><forename type="first">Q</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">A</forename><surname>Maddah-Ali</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">S</forename><surname>Avestimehr</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Information Theory</title>
+		<imprint>
+			<biblScope unit="volume">66</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="1920" to="1933" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,330.24,139.81,233.38,7.13;6,330.24,148.81,233.35,7.13;6,330.24,157.81,208.78,7.13" xml:id="b23">
+	<monogr>
+		<title level="m" type="main">Geometry and Complexity Theory, ser. Cambridge Studies in Advanced Mathematics</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Landsberg</surname></persName>
+		</author>
+		<ptr target="https://books.google.com/books?id=210yDwAAQBAJ" />
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<publisher>Cambridge University Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

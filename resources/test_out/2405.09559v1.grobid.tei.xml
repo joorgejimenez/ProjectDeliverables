@@ -1,0 +1,1018 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">KID-PPG: Knowledge Informed Deep Learning for Extracting Heart Rate from a Smartwatch</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2024-05-02">2 May 2024</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName coords="1,98.57,135.07,104.45,10.14"><forename type="first">Christodoulos</forename><surname>Kechris</surname></persName>
+							<email>christodoulos.kechris@epfl.ch</email>
+							<affiliation key="aff0">
+								<orgName type="laboratory">Embedded Systems Laboratory</orgName>
+								<orgName type="institution">EPFL</orgName>
+								<address>
+									<country key="CH">Switzerland</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,210.96,135.07,65.49,10.14"><forename type="first">Jonathan</forename><surname>Dan</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="laboratory">Embedded Systems Laboratory</orgName>
+								<orgName type="institution">EPFL</orgName>
+								<address>
+									<country key="CH">Switzerland</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,285.29,135.07,63.40,10.14"><forename type="first">Jose</forename><surname>Miranda</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="laboratory">Embedded Systems Laboratory</orgName>
+								<orgName type="institution">EPFL</orgName>
+								<address>
+									<country key="CH">Switzerland</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,378.37,135.07,135.05,10.14"><roleName>Fellow, IEEE</roleName><forename type="first">David</forename><surname>Atienza</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="laboratory">Embedded Systems Laboratory</orgName>
+								<orgName type="institution">EPFL</orgName>
+								<address>
+									<country key="CH">Switzerland</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">KID-PPG: Knowledge Informed Deep Learning for Extracting Heart Rate from a Smartwatch</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2024-05-02">2 May 2024</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">DA01D053FFDCCE61ACC964D8999D189B</idno>
+					<idno type="arXiv">arXiv:2405.09559v1[eess.SP]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.7.2" ident="GROBID" when="2024-05-19T14:16+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Photoplethysmograhy</term>
+					<term>Heart Rate</term>
+					<term>Motion Artifacts</term>
+					<term>Acceleration</term>
+					<term>Source Separation</term>
+					<term>Deep Learning</term>
+					<term>Knowledge Informed AI</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Accurate extraction of heart rate from photoplethysmography (PPG) signals remains challenging due to motion artifacts and signal degradation. Although deep learning methods trained as a data-driven inference problem offer promising solutions, they often underutilize existing knowledge from the medical and signal processing community. In this paper, we address three shortcomings of deep learning models: motion artifact removal, degradation assessment, and physiologically plausible analysis of the PPG signal. We propose KID-PPG, a knowledgeinformed deep learning model that integrates expert knowledge through adaptive linear filtering, deep probabilistic inference, and data augmentation. We evaluate KID-PPG on the PPGDalia dataset, achieving an average mean absolute error of 2.85 beats per minute, surpassing existing reproducible methods. Our results demonstrate a significant performance improvement in heart rate tracking through the incorporation of prior knowledge into deep learning models. This approach shows promise in enhancing various biomedical applications by incorporating existing expert knowledge in deep learning models.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>I. INTRODUCTION</head><p>Photoplethysmography (PPG) is a non-invasive technique used to optically acquire the Blood Volume Pulse (BVP) <ref type="bibr" coords="1,285.91,498.75,10.58,8.64" target="#b0">[1]</ref>. Its widespread adoption and ease of integration into wearable devices, especially smartwatches, have made PPG a popular choice for continuous and unobtrusive heart rate monitoring compared to electrocardiography (ECG). However, movement can introduce significant artifacts into PPG signals, complicating signal interpretation. These motion artifacts (MA) can overlap the actual BVP signal, further complicating their removal <ref type="bibr" coords="1,86.41,594.39,10.58,8.64" target="#b1">[2]</ref>. To address this challenge, numerous methods have been proposed to estimate the heart rate (HR) of PPG corrupted by MA. These methods generally fall into two categories: Signal Processing (SP) and Deep Learning (DL) approaches.</p><p>SP methods focus mainly on isolating the BVP component and minimizing the impact of MA <ref type="bibr" coords="1,196.24,666.42,10.58,8.64" target="#b1">[2]</ref>. These methods often use a motion reference signal acquired from sensors such as accelerometers or gyroscopes to aid in MA removal <ref type="bibr" coords="1,283.42,690.33,12.45,8.64" target="#b2">[3]</ref>- <ref type="bibr" coords="1,48.96,702.28,10.58,8.64" target="#b6">[7]</ref>. Acceleration and angular velocity are generally agreed to be effective references for periodic motion but offer limited correlation with PPG signals during random movements <ref type="bibr" coords="1,548.92,214.95,10.58,8.64" target="#b2">[3]</ref>. Once the motion components are filtered out, HR is typically extracted from the filtered PPG signal by identifying its principal frequency component <ref type="bibr" coords="1,426.40,250.82,11.90,8.64" target="#b2">[3]</ref>- <ref type="bibr" coords="1,442.26,250.82,15.86,8.64" target="#b10">[11]</ref>, which is then attributed to the heart activity.</p><p>DL offers an alternative approach by combining filtering and HR estimation within a single model. Similarly to SP methods, DL methods have used acceleration as a reference signal for motion. In these models, both PPG and acceleration are given directly as inputs to the network and are fused by the model to produce a point estimate of HR <ref type="bibr" coords="1,500.24,334.19,16.97,8.64" target="#b11">[12]</ref>- <ref type="bibr" coords="1,521.45,334.19,16.97,8.64" target="#b13">[14]</ref> or an HR distribution <ref type="bibr" coords="1,377.86,346.14,15.27,8.64" target="#b14">[15]</ref>, <ref type="bibr" coords="1,400.09,346.14,15.27,8.64" target="#b15">[16]</ref>. The network is typically trained in a supervised manner using synchronized ECG-derived HR as ground truth labels. Several advanced DL techniques, including attention <ref type="bibr" coords="1,365.58,382.01,16.60,8.64" target="#b12">[13]</ref> and data augmentation <ref type="bibr" coords="1,479.40,382.01,15.27,8.64" target="#b16">[17]</ref>, have been used for PPG-based HR extraction.</p><p>Existing DL methods typically approach PPG-based HR estimation as a purely data-driven inference task, overlooking valuable prior knowledge from the medical and signal processing fields regarding BVP and PPG. Integrating task-specific prior knowledge into machine learning models has emerged as a promising strategy to improve explainability, robustness, and generalizability, particularly in scenarios with limited available data <ref type="bibr" coords="1,332.06,489.28,15.27,8.64" target="#b17">[18]</ref>.</p><p>In this work, we explore the integration of prior knowledge into DL models for PPG-based HR inference. We identify failure cases of current DL models and propose three mechanisms to integrate prior knowledge into DL models effectively addressing these shortcomings. The resulting approach, which we term KID-PPG, represents a knowledge-informed DLbased HR inference model. To conduct our analysis, we take advantage of the publicly available PPGDalia dataset <ref type="bibr" coords="1,543.94,584.60,15.27,8.64" target="#b11">[12]</ref>. Our code for the experiments is available here: https: //github.com/esl-epfl/KID-PPG-Paper. Through this investigation, we shed new light on the efficacy of DL models in processing PPG signals affected by MA and provide valuable insights into the recoverability of the BVP under challenging MA conditions. Our contributions include:</p><p>• We identify three key factors contributing to erroneous HR estimations: DL models fail to separate MA from BVP, infer out-of-distribution HR samples, and estimate HR in sample affected by catastrophic MA. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>II. METHODOLOGY</head><p>We have identified the following three key points underutilized in existing DL models for HR extraction:</p><p>1) Robust HR tracking requires MA removal.</p><p>2) In some cases, BVP can be degraded by MA to the extent that it is unrecoverable.</p><p>3) The BVP has specific morphology and characteristics. These are incorporated into our DL models through three mechanisms: Explicit Source Separation, Guided Probabilistic Inference and Data Augmentation. An overview of our methodology is presented in Fig. <ref type="figure" coords="2,187.33,340.29,3.74,8.64">1</ref>. Fig. <ref type="figure" coords="2,67.88,483.17,4.16,9.22">1</ref>: Knowledge-Informed deep-learning (DL) for heart-rate extraction (KID-PPG) incorporates prior knowledge on motion artifacts (MA), unrecoverable blood volume pulse (BVP) samples, and BVP morphology into DL models through three mechanisms: linear filtering, probabilistic inference, and data augmentation. The input of KID-PPG consists of a PPG signal along with an accelerometer signal. The linear filter ( fmix ) separates the BVP from MA to produce a filtered PPG signal, which serves as an input to the DL model (h). The model uses probabilistic inference to assess the degradation of the PPG signal and uses data augmentation to better characterize the BVP morphology.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>BVP -MA Source Separation</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Unrecoverable</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A. Motion Artifact Removal</head><p>An inherent challenge in HR inference based on PPG is the mixing of MA components (x M A (t)) with heart-related BVP (x bvp (t)) through a mixing process denoted as f mix :</p><formula xml:id="formula_0" coords="2,102.28,710.56,197.74,9.65">x ppg (t) = f mix (x bvp (t), x M A (t), t)<label>(1)</label></formula><p>As is common practice, HR is inferred on 8-second windows with a 2-second overlap <ref type="bibr" coords="2,149.59,740.98,10.58,8.64" target="#b3">[4]</ref>, <ref type="bibr" coords="2,166.93,740.98,10.58,8.64" target="#b4">[5]</ref>, <ref type="bibr" coords="2,184.27,740.98,16.27,8.64" target="#b11">[12]</ref>- <ref type="bibr" coords="2,204.60,740.98,16.27,8.64" target="#b15">[16]</ref>, <ref type="bibr" coords="2,228.18,740.98,16.27,8.64" target="#b18">[19]</ref>- <ref type="bibr" coords="2,248.51,740.98,16.27,8.64" target="#b20">[21]</ref>. Hence, the i-th 8-second PPG sample is denoted as the (N × 1) vector x ppgi = [x ppg (t i ), x ppg (t i + ∆t), ..., x ppg (t i + 8)],</p><p>where ∆t = 1 fs , f s is the sensor's sampling frequency, and N = 8sec • f s samples. Similarly, the corresponding BVP is denoted as x bvpi . The 3-axis ACC samples form the (N × 3) matrix X acci = [x accx i , x accy i , x accz i ]. Robust HR inference depends on the heartbeat-related x bvp <ref type="bibr" coords="2,507.70,131.27,10.58,8.64" target="#b3">[4]</ref>. However, MA can significantly distort the morphology of BVP in the PPG observation (Eq. 1) <ref type="bibr" coords="2,426.43,155.18,10.58,8.64" target="#b4">[5]</ref>. Many SP methods employ source separation to approximate the unmixing process f −1 mix , allowing the HR inference module to rely on an approximation xbvp (t) ≈ x bvp (t) [3]- <ref type="bibr" coords="2,404.79,191.04,11.51,8.64" target="#b4">[5]</ref>, <ref type="bibr" coords="2,424.04,191.04,15.27,8.64" target="#b18">[19]</ref>, thus mitigating the effect of MA.</p><p>In contrast, training a deep end-to-end HR estimator, g(•), with inputs [x ppgi , X acci ], for the HR inference task, <ref type="bibr" coords="2,541.45,227.22,17.26,8.64" target="#b11">[12]</ref>- <ref type="bibr" coords="2,311.97,239.17,15.27,8.64" target="#b15">[16]</ref>, <ref type="bibr" coords="2,334.15,239.17,15.27,8.64" target="#b19">[20]</ref>, <ref type="bibr" coords="2,356.32,239.17,15.27,8.64" target="#b20">[21]</ref>, does not guarantee modeling of the unmixing process, namely:</p><formula xml:id="formula_1" coords="2,410.84,261.51,152.19,13.56">g = f −1 mix • h<label>(2)</label></formula><p>where h(•) is an estimator of HR after component unmixing. Instead, the network may employ various fusion strategies g = f f usion • h ′ , where h ′ is an HR estimator after the two modalities have been fused by f f usion . The convergence criterion for f f usion is the minimization of the HR loss, e.g. the MAE. Thus, this approach does not ensure BVP-based HR inference and may allow the network to learn spurious relations with the motion signals <ref type="bibr" coords="2,449.52,368.20,15.27,8.64" target="#b21">[22]</ref>. Therefore, we propose the inclusion of an explicitly defined source separation task to disentangle the BVP component from MA. Without loss of generality, we model the motion artifact mixing f mix as a linear process <ref type="bibr" coords="2,458.09,416.32,10.58,8.64" target="#b6">[7]</ref>, <ref type="bibr" coords="2,477.67,416.32,15.27,8.64" target="#b22">[23]</ref>, although other approaches are available <ref type="bibr" coords="2,416.10,428.28,15.27,8.64" target="#b23">[24]</ref>, <ref type="bibr" coords="2,439.07,428.28,15.27,8.64" target="#b24">[25]</ref>. Furthermore, we assume that f mix is a stationary process and that hand acceleration is a suitable reference signal for x M A (t) <ref type="bibr" coords="2,473.87,452.19,10.58,8.64" target="#b2">[3]</ref>. Hence, Eq. 1 can be written as:</p><formula xml:id="formula_2" coords="2,321.94,486.87,241.10,24.60">x ppg (t) = x bvp (t) + A mix * [x accx (t), x accy (t), x accz (t)] + noise(t) (3)</formula><p>where A mix is a spatio-temporal mixing filter, x accx , x accy , x accz are the accelerations of the hand on the corresponding axis, and * is the convolution operation. Separating the motion artifacts involves estimating the approximation Âmix ≈ A mix .</p><p>To estimate Âmix we use a linear two-layer convolutional network denoted as fmix (Fig. <ref type="figure" coords="2,450.63,582.27,3.60,8.64">2</ref>). The first convolutional layer applies linear spatio-temporal filtering on the 3-channel accelerometer signals, while the second layer merges the three channels into one MA estimation.</p><p>Similarly to <ref type="bibr" coords="2,374.08,630.40,10.58,8.64" target="#b6">[7]</ref>, we train fmix in an unsupervised manner on pairs (X acci , x ppgi ) using an adaptive filter loss function, denoted as L adapt :</p><formula xml:id="formula_3" coords="2,321.94,689.29,241.10,27.68">L adapt = M SE F F T { fmix (X acci )}, F F T {x ppgi }<label>(4)</label></formula><p>Here, M SE represents the Mean Squared Error, defined as E[Error 2 ], and F F T {•} denotes the Fast Fourier Transform.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conv Conv</head><p>Fig. <ref type="figure" coords="3,68.14,149.45,4.16,9.22">2</ref>: Linear model for separating the motion artifacts (MA) from the blood volume pulse (BVP) components in the PPG signal. A linear two-layer convolutional network takes the three axis of the accelerometer signal as an input (x acc along with the PPG (x ppg ) to produce a filtered PPG signal (x bvp ).</p><p>Once the training converges, we use the resulting fmix to estimate xbvp ≈ x bvp :</p><formula xml:id="formula_4" coords="3,120.32,267.32,179.70,12.28">xbvp = x ppg − fmix (X acc )<label>(5)</label></formula><p>The estimated xbvp is then inputted into a DL model, denoted as h (Eq. 2).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B. Temporal Attention Model</head><p>A convolutional neural network based on <ref type="bibr" coords="3,237.31,345.07,16.60,8.64" target="#b12">[13]</ref> is used to extract an embedding W i for each sample xbvpi .</p><p>HR temporal relationships are usually modeled as a smoothing filter during post-processing, reducing temporal granularity, or with LSTMs, increasing the model's complexity. We propose to model the temporal relationship between two consecutive samples as an attention operation. This approach allows us to consider the progression of the PPG signal embeddings while maintaining temporal granularity and computational simplicity. Let E i−1 , E i denote the embeddings of two consecutive PPG frames. The multi-head temporal attention operation can be defined as <ref type="bibr" coords="3,203.24,476.66,15.27,8.64" target="#b12">[13]</ref>, <ref type="bibr" coords="3,225.82,476.66,15.49,8.64" target="#b25">[26]</ref>:</p><formula xml:id="formula_5" coords="3,58.04,492.39,238.11,34.10">Attention T emp (E i , E i−1 ) = sof tmax E i E T i−1 √ d E i−1<label>(6</label></formula><p>) where d is the dimensionality of the embedding. Additionally, we incorporate a residual connection <ref type="bibr" coords="3,230.63,541.76,15.27,8.64" target="#b25">[26]</ref>, <ref type="bibr" coords="3,254.42,541.76,15.49,8.64" target="#b26">[27]</ref>:</p><formula xml:id="formula_6" coords="3,48.96,541.44,251.06,21.61">E i + Attention T emp (E i , E i−1 ).</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>C. Guided Probabilistic Heart Rate Extraction</head><p>The DL models discussed in <ref type="bibr" coords="3,186.78,597.44,16.97,8.64" target="#b11">[12]</ref>- <ref type="bibr" coords="3,207.99,597.44,16.97,8.64" target="#b13">[14]</ref> and Sub-sections II-A and II-B produce a point estimate of HR, implying that each sensor readout value contains a BVP component which can be isolated. However, in real-world conditions, the BVP component might be degraded beyond the point of reconstruction, leaving the MA component as the sole source of information in the PPG sample, Eq. 1. If x bvp (t) is not observed, the model performs HR extraction on irrelevant information, Eq. 1. This is illustrated in Fig. <ref type="figure" coords="3,248.27,693.08,4.98,8.64" target="#fig_1">3</ref> where the BVP component is severely degraded, yet a point-estimate DL model continues to infer HR (Q-PPG <ref type="bibr" coords="3,205.47,716.99,15.93,8.64" target="#b13">[14]</ref>) .</p><p>To address this issue, we propose to design the model as a probability estimator of HR. Specifically, we choose the normal distribution parameterized as HR ∼ N (µ hr , σ 2 hr ). Inspired by <ref type="bibr" coords="3,366.79,71.49,16.60,8.64" target="#b15">[16]</ref> and <ref type="bibr" coords="3,409.98,71.49,15.27,8.64" target="#b27">[28]</ref>, we model the heteroscedastic aleatoric uncertainty using a two-unit fully connected output to represent both µ hr and σ hr . If no heart-related information is available in the PPG sample, then any physiologically valid heart rate is possible, therefore, the HR estimator should produce a large uncertainty, as depicted in Fig. <ref type="figure" coords="3,508.37,131.27,3.74,8.64" target="#fig_1">3</ref>.</p><p>The estimated HR distribution can also be used as an error classifier. We define the error classification probability as p error (T hr | x ppg , µ hr , σ hr ) = P (µ hr − T hr &lt; HR &lt; µ hr + T hr | µ hr , σ hr ) = F µ hr ,σ hr (µ hr + T hr) − F µ hr ,σ hr (µ hr − T hr) <ref type="bibr" coords="3,551.42,207.16,11.62,8.64" target="#b6">(7)</ref> where F µ hr ,σ hr (x) is the cumulative distribution of the Gaussian distribution N (µ hr , σ 2 hr ): F µ hr ,σ hr (x) = Φ( x−µ hr σ hr ). This error classifier predicts a high probability of the HR estimation being untrustworthy (error ≥ T hr) when p error ≤ 0.5. To improve the robustness of our error classifier, we guide the network to base its HR inference on the BVP component, as relying on HR-inference loss only can lead to spurious behavior. Fig. <ref type="figure" coords="3,375.62,657.30,4.98,8.64" target="#fig_2">4</ref> illustrates this through an example taken from PPGDalia (S6), where both the probabilistic and the Q-PPG models continue to infer HR even after filtering the BVP component out of the original PPG signal (MAE 4.11 BPM and 3.33 BPM accordingly). The probabilistic model is overconfident, with the p error (T hr = 10BP M ) classifier dropping only 7.44% of the samples. We tackle this limitation by generating realistic samples in which the BVP component is extremely degraded. It has been empirically observed that in PPG recordings, BVP information is mainly located at the HR frequency, and it second and third harmonics <ref type="bibr" coords="4,257.92,83.45,15.27,8.64" target="#b18">[19]</ref>, <ref type="bibr" coords="4,280.93,83.45,15.27,8.64" target="#b28">[29]</ref>. Therefore, for each sample (x ppgi , hr i ) in the original training dataset, we filter x ppgi by band-stopping (Finite Input Response with 81 taps) the frequencies around hr i , 2hr i , 3hr i (cutoff from i • hr − 2.5BP M to i • hr + 2.5BP M ), forming a new signal x noisei (Fig. <ref type="figure" coords="4,157.51,143.22,22.67,8.64" target="#fig_2">4 b, c</ref>). Using the original x ppgi as the seed for x noisei helps maintain realism. Since we need a ground truth label for the supervised training task, we create a random HR label: hr noisei ∼ U nif orm(40, 300). The lowest HR value is set to account for slower HR <ref type="bibr" coords="4,264.40,191.04,16.60,8.64" target="#b29">[30]</ref> and the highest reflects the theoretical maximum human HR <ref type="bibr" coords="4,280.93,203.00,15.27,8.64" target="#b30">[31]</ref>. The pair (x noisei , hr noisei ) is then added to the set of auxiliary adversarial examples. 50% of the adversarial examples set is randomly sampled to form the adversarial-examples-subset. In summary, by adopting a probabilistic approach to HR estimation and guiding the network to focus on the BVP component, we aim to improve the reliability of HR inference from PPG signals. The full KID-PPG network configuration is presented Fig. <ref type="figure" coords="4,120.02,620.58,3.74,8.64" target="#fig_3">5</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>D. Data Augmentation</head><p>We propose a data augmentation scheme to address the limited number of high HR samples in the available datasets, similarly to <ref type="bibr" coords="4,104.70,690.58,15.27,8.64" target="#b16">[17]</ref>. We generate synthetic PPG waveforms corresponding to higher heart rate frequencies, forming the high-heart-rate training subset. The following procedure is followed:</p><p>1) Locate the 8-sec. samples designated as clean PPG for  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>III. EXPERIMENTAL SETUP</head><p>For our experiments we use the publicly available PPGDalia data <ref type="bibr" coords="4,334.60,453.98,15.27,8.64" target="#b11">[12]</ref>. This dataset comprises synchronized ECG and wristworn PPG and acceleration recordings from 15 subjects, with approximately two-hour recording sessions per subject. A systematic temporal shift between PPG and ACC was identified and manually corrected. The ECG-based HR provided in the dataset serves as the ground truth. We adopt the leave-onesubject-out cross-validation procedure proposed in <ref type="bibr" coords="4,518.83,525.71,16.60,8.64" target="#b11">[12]</ref> for all experiments.</p><p>For the MA removal step, we train an adaptive model separately for each subject and activity given that converging fmix using L adapt , Eq. 4, requires stationarity of the f mix process. We employ The MAE loss function and the stochastic gradient descent (SGD) to converge the model (lr = 1e − 7, momentum = 1e − 2).</p><p>To evaluate the MA removal step, we employ the Q-PPG <ref type="bibr" coords="4,311.97,633.36,15.27,8.64" target="#b13">[14]</ref>, Attention Model <ref type="bibr" coords="4,410.46,633.36,16.60,8.64" target="#b12">[13]</ref> and Temporal Attention model (Sub-section II-B) as HR inference models, h Eq. 2. For the Q-PPG and Attention models we used the hyperparameters reported in <ref type="bibr" coords="4,357.74,669.23,16.60,8.64" target="#b13">[14]</ref> and <ref type="bibr" coords="4,393.55,669.23,15.27,8.64" target="#b12">[13]</ref>, respectively. The Temporal Attention model was trained using Adam optimizer (lr = 0.0005, β 1 = 0.9, β 2 = 0.999, ϵ = 1e − 08).</p><p>The probabilistic models where trained using the negative log-likelihood (NLL) loss and the same training strategy used for the non-probabilistic ones. NLL is also used to evaluate their performance. Furthermore, we use the True Positive Rate (TPR) and the F1 score to evaluate the classifier p error for its ability to correctly identify untrustworthy samples. We consider a positive classification when the error classifier predicts a high probability of error, p error (T hr) ≤ 0.5. A summary of all experiments is presented in Table <ref type="table" coords="5,275.85,343.61,2.90,8.64">I</ref>. TABLE I: Summary of evaluated models.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>IV. RESULTS</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A. Results on Motion Artifact Removal</head><p>The adaptive linear filter effectively removes MA that are linearly coupled with acceleration signals. An illustrative example is provided in Fig. <ref type="figure" coords="5,160.25,621.71,4.98,8.64" target="#fig_4">6</ref> for subjects S6 during an episode where the subject is walking up and down stairs. The DL model alone fails to decouple motion information, resulting in significant errors (activity MAE 13.66 BPM). In contrast, the Adaptive + DL Model combination substantially reduces the error (activity MAE 2.74 BPM). In particular, during periods when Q-PPG loses track of the HR, the BVP signal, located at hr and 2 • hr, remains discernible. The loss of HR tracking is not attributed to severe degradation of BVP due to MA.</p><p>Similarly, for S5 (Fig. <ref type="figure" coords="5,155.14,729.03,3.60,8.64" target="#fig_6">7</ref>), the BVP component is visually identifiable, yet the DL model fails to disentangle it from MA (activity MAE 69.96 BPM). Our filtering approach effectively isolates the BVP, resulting in lower HR inference error (activity MAE 24.96 BPM). However, during certain periods, 20-40sec. and 80-100sec., the DL model loses track of the HR. We discuss this further in Sub-section IV-B.</p><p>For S9 (Fig. <ref type="figure" coords="5,377.65,693.16,4.15,8.64" target="#fig_6">7</ref>) the situation differs slightly. MA removal still outperforms the DL model, with Q-PPG stairs activity MAE 16.91 BPM vs. MAE 10.37 BPM for the Adaptive + Q-PPG. However, in this case, MA degradation is more severe, and the MA component is not linearly coupled with ACC.</p><p>Consequently, the DL model sometimes loses track of the HR even after the MA removal step. This limitation is addressed by the error classifier.</p><p>The overall per-subject results are presented in Table <ref type="table" coords="6,290.89,95.37,6.08,8.64" target="#tab_3">II</ref>. Both Q-PPG and the Attention models perform better when data are preprocessed by the adaptive step, with MAE 4.81 BPM (Q-PPG) vs. 3.98 (Q-PPG with adaptive step) and MAE 4.44 vs. 3.70 for the Attention model. Notably, adding a preprocessing step to Q-PPG outperforms the original Attention model. For all but one subject, S9, the best performing model is obtained by employing the adaptive preprocessing step (Table <ref type="table" coords="6,97.19,191.01,6.22,8.64" target="#tab_3">II</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B. High-HR Augmentation</head><p>Training with High-HR augmentation results in a higher MAE (3.79 BPM) compared to not augmenting (3.70 BPM). Subjects S1, S5, S8 and 13 benefited from the augmentation (Table <ref type="table" coords="6,77.81,269.02,6.22,8.64" target="#tab_3">II</ref>). High-HR augmentation teaches the model to infer HR in a broader range than that of the original dataset (Fig. <ref type="figure" coords="6,73.66,292.93,3.60,8.64" target="#fig_7">8</ref>). In Fig. <ref type="figure" coords="6,125.30,292.93,4.98,8.64" target="#fig_7">8</ref> the HR inference error for S5 during Stairs activity decreases MAE from 25.33BPM to 6.73BPM. Consequently, for the augmented model, there is a wider range of MA components that can be mistakenly inferred as HR. Additionally, the expected HR is now artificially inflated, leading to higher errors in considerably degraded samples in which HR inference reflects the HR distribution encoded in the model weights . As a result, the model's overall MAE is increased. This limitation is addressed by the probabilistic mechanism (Sub-section IV-C). </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>C. Guided Probabilistic Inference</head><p>The NLL losses for the probabilistic models are summarized in Table <ref type="table" coords="6,87.89,693.20,9.33,8.64" target="#tab_4">III</ref>. Our proposed methodology, KID-PPG, significantly outperforms BeliefPPG <ref type="bibr" coords="6,177.72,705.15,16.60,8.64" target="#b14">[15]</ref> (NLL 4.78) and reduces NLL by approximately 40%.</p><p>Although the non-augmented and augmented probabilistic temporal attention models achieve similar mean NLL, they S9 Fig. <ref type="figure" coords="6,330.93,187.46,4.15,9.22">9</ref>: Example of probabilistic output of augmented (orange) vs non-augmented model (blue) for subject S9 and ground truth HR (green circle). For the example, its frequency domain representation verifies that the PPG signal is considerably corrupted.  The overall performance of the error classifiers for KID-PPG and the unguided probabilistic models, TPR and F1-Score, is depicted in Fig. <ref type="figure" coords="6,430.64,604.63,8.30,8.64" target="#fig_9">10</ref>. Selecting a high threshold (T hr = 10BP M ), KID-PPG achieves an average MAE of 2.85 BPM.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>V. DISCUSSION</head><p>Our analysis provides novel insights into the challenges of PPG-based HR inference, particularly within the PPG-Dalia dataset. The difficulties encountered by DL model to accurately estimate HR have often been attributed to outof-distribution high HR samples <ref type="bibr" coords="6,451.54,717.07,15.27,8.64" target="#b11">[12]</ref>, <ref type="bibr" coords="6,475.26,717.07,15.27,8.64" target="#b20">[21]</ref>. Specifically, S5 has been highlighted as a particularly challenging subject <ref type="bibr" coords="6,311.97,740.98,15.27,8.64" target="#b11">[12]</ref>, <ref type="bibr" coords="6,336.45,740.98,15.27,8.64" target="#b16">[17]</ref>, <ref type="bibr" coords="6,360.92,740.98,15.27,8.64" target="#b20">[21]</ref>. Our findings emphasize three key factors   DL models encounter difficulties in separating linear MA. The introduction of an explicit linear MA separation filter notably improved model performance, enabling HR inference in cases where the DL model alone had failed. This finding suggests a possible physics-based explanation, as hinted at by Lee et al. <ref type="bibr" coords="7,89.99,489.43,10.58,8.64" target="#b2">[3]</ref>, who empirically linked wrist-worn PPG motion artifact components to the physical forces acting on the hand during physical activities.</p><p>Out-of-distribution HR samples have posed challenges, particularly exemplified by subject S5, frequently cited in the literature for its higher HR samples. Previous studies have reported improvement through data augmentation, particularly in S5 and S6 <ref type="bibr" coords="7,108.82,573.36,16.60,8.64" target="#b16">[17]</ref> . In our experiments, mainly subjects S1 and S5 benefited from increased HR. A comparison between S5 and S6 reveals differing underlying causes of high errors, with S6 primarily affected by the PPG -MA coupling, and S5 impacted by both MA and out-of-distribution samples.</p><p>Catastrophic MA remains a significant challenge, particularly evident in subjects S8 and S9, which consistently exhibit high MAE. Despite various proposed solutions, no one has achieved a low MAE for these two subjects. Furthermore, the rejection of a significant portion of their samples by KID-PPG (27.48% and 53.16% of their samples respectively (T hr = 10BP M )) indicates severe BVP corruption. This underscores the need for a probabilistic HR estimator and a robust error classifier based on the morphology of the BVP components.</p><p>While our work has demonstrated the efficacy of explicitly defining the source-separation task, real-world deployment scenarios, which further explore the assumption of stationarity of f mix , Eq. 5 are required. Deploying this solution requires identifying when fmix needs to be updated, potentially through an activity/context recognition module. In addition, other implementations of the source-separation task warrant investigation.</p><p>In integrating BVP-morphology-related prior knowledge into KID-PPG, we have proposed a method for creating realistic PPG signals with extreme BVP degradation. Exploring alternative approaches to generate synthetic MA-affected PPG samples and expanding the understanding of MA dynamics with the BVP could inform the design of more realistic augmentation techniques. Evaluating MA degradation presents an additional challenge, as HR-inference accuracy may not fully reflect the level of degradation. Addressing these challenges will be crucial to advancing the robustness and reliability of PPG-based HR inference systems.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>VI. CONCLUSION</head><p>In this study, we have introduced a novel method, called KID-PPG, to enhance DL models with expert knowledge integration for HR inference from PPG inputs (combined with a motion reference signal). In particular, we have proposed three main knowledge integration mechanisms: Adaptive Linear Filtering, Guided Probabilistic Inference, and Data Augmentation. Adaptive Filtering removes linear MA, enabling the DL model to infer HR accurately even in segments with high MA, thus strongly reducing MAE compared to existing DL models. Probabilistic inference allows the model to assess the BVP degradation in input signals due to artifacts. Using the proposed error classifier, the model can selectively retain samples with a high probability of maintaining BVP information, improving overall inference accuracy. Our guided probabilistic training strategy, tailored to the morphology of BVP, substantially improved the robustness of the error classifier. Data Augmentation extended the range of HR that can be reliably inferred by the model, further enhancing its performance. This work highlights the important benefits of integrating expert knowledge into DL models. All in all, KID-PPG achieves an overall MAE of 2.85 BPM (T hr = 10BP M ) on PPGDalia, outperforming all reproducible methods. Our findings demonstrated the efficacy of our approach in advancing HR inference from PPG signals, paving the way for improved healthcare monitoring and diagnostics.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="3,311.97,475.72,251.06,9.25;3,311.97,488.29,251.06,8.64;3,311.97,500.24,251.06,8.64;3,311.97,512.20,251.06,8.64;3,311.97,524.15,251.06,8.64;3,311.97,535.79,176.84,9.65;3,489.17,534.21,3.97,6.12;3,488.81,540.65,8.36,6.12;3,497.89,535.79,65.14,8.96;3,311.97,548.06,251.06,8.64;3,311.97,559.70,251.06,9.65;3,311.97,571.97,251.06,8.64;3,311.97,583.93,251.06,8.64;3,311.97,595.88,89.55,8.64"><head>Fig. 3 :</head><label>3</label><figDesc>Fig. 3: Probabilistic HR inference example on a clean (left) vs MA degraded PPG sample (right). The top row shows the raw PPG data. The bottom row shows the FFT of the PPG. The example is taken from S6 of PPGDalia. The green circles indicate the true ECG HR for the two samples. The probability density functions of N (µ hr , σ 2 hr ) are overlayed on the frequency representations of the corresponding PPG sample. The error classification probability, p error is also illustrated. In the right sample the non-probabilistic point estimate HR inference of DL model is represented as a black vertical line (Q-PPG).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="4,48.96,450.42,251.05,9.25;4,48.96,462.60,251.06,9.03;4,48.96,474.94,251.06,8.64;4,48.96,486.90,251.06,8.64;4,48.96,498.46,251.06,9.03;4,48.96,510.81,251.06,8.64;4,48.96,522.37,251.06,9.03;4,48.96,534.72,251.06,8.64;4,48.96,546.67,170.41,8.64"><head>Fig. 4 :</head><label>4</label><figDesc>Fig. 4: Inference after filtering the BVP component out of the PPG. Example taken from S6 of PPGDalia. (a) Inferences across the entire session from Q-PPG (red), probabilistic (blue) and guided probabilistic (orange). For the probabilistic models, the range of one standard deviation is also presented. (b) Sample example with initially clean PPG (grey) and synthetically degraded (black). (c) Frequency domain representation of the example sample and HR inferences from the three models. True HR is presented with a green circle.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="4,311.97,266.95,174.69,9.25;4,488.05,265.66,4.08,6.12;4,496.56,267.56,66.47,8.64;4,311.97,278.84,251.06,9.31;4,311.97,290.79,70.65,9.31"><head>Fig. 5 :</head><label>5</label><figDesc>Fig. 5: KID-PPG network architecture. W * indicates weight sharing between the convolution blocks for the xbvpi and xbvpi−1 branches.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4" coords="5,48.96,235.68,514.07,9.25;5,48.96,248.25,514.07,8.64;5,48.96,257.26,37.49,11.59;5,85.50,257.26,168.82,11.59;5,215.71,135.84,81.82,81.82"><head>Fig. 6 :</head><label>6</label><figDesc>Fig. 6: Estimating HR on stairs activity of S6 with Q-PPG (top row -blue) and with Adaptive filtering and Q-PPG (bottomorange). The original Q-PPG (blue) takes the PPG and accelerometer (ACC) as input. Adaptive + Q-PPG (orange) takes the output ( b vp) of the adaptive filter ( fmix ) as input.</figDesc><graphic coords="5,215.71,135.84,81.82,81.82" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5" coords="5,54.94,363.90,42.84,7.17;5,54.94,373.18,28.60,6.91;5,140.98,373.18,120.55,6.91;5,54.94,382.15,35.69,6.91;5,140.98,382.15,120.11,6.91;5,54.94,391.20,30.84,7.17;5,54.94,400.48,67.58,6.91;5,140.98,400.48,54.14,6.91;5,54.94,409.44,73.69,6.91;5,54.94,418.50,66.30,7.17;5,54.94,427.78,73.69,6.91;5,54.94,436.74,36.86,6.91;5,140.98,427.78,54.14,6.91;5,54.94,445.80,43.25,7.17;5,54.94,455.07,68.59,6.91;5,140.98,455.07,153.06,6.91;5,140.98,464.04,121.47,6.91;5,54.94,478.21,73.69,6.91;5,54.94,487.18,64.02,6.91;5,140.98,478.21,153.06,6.91;5,140.98,487.18,61.00,6.91;5,54.94,501.35,37.01,6.91;5,140.98,501.35,153.06,6.91;5,140.98,510.32,153.06,6.91;5,140.98,519.29,95.67,6.91"><head></head><label></label><figDesc>Introduced in A. Burrello et al. [14]. • Attention Introduced in P. Kasnesis et al. [13]. Adaptive • Adaptive + Q-PPG Sub-section II-A • Adaptive + Attention Data augmentation • Adaptive + Attention + HR Aug. Sub-section II-D Probabilistic • Probabilistic model Adaptive + Attention model adapted for probabilistic inference (Sub-section II-C). • Probabilistic Temporal Attention model Probabilistic model with temporal attention (Sub-section II-B). • KID-PPG Probabilistic model with temporal attention, guided probabilistic training and High-HR augmentation (Sub-section II-C).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6" coords="5,311.97,551.55,251.06,9.25;5,311.97,564.11,251.06,8.64;5,311.97,576.07,251.06,8.64;5,311.97,588.03,35.85,8.64;5,332.32,415.97,112.32,111.60"><head>Fig. 7 :</head><label>7</label><figDesc>Fig. 7: Effect of the MA Removal for the stairs activity of subjects S5 (top), and S9 (bottom) with Q-PPG (blue) and Adaptive + Q-PPG (orange). Ground truth HR is represented in green.</figDesc><graphic coords="5,332.32,415.97,112.32,111.60" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7" coords="6,48.96,541.18,251.06,9.25;6,48.96,553.36,251.06,9.03;6,48.96,565.70,251.06,8.64;6,48.96,577.66,251.06,8.64;6,48.96,589.22,251.06,9.03;6,48.96,601.57,251.06,8.64;6,48.96,613.52,251.06,8.64;6,48.96,625.48,241.21,8.64;6,74.03,420.67,102.45,101.39"><head>Fig. 8 :</head><label>8</label><figDesc>Fig. 8: Effect of out-of-distribution samples on the model inference. (a) HR inference of the model with (orange) and without (blue) High-HR augmentation. The maximum HR value in the training set is presented with a red dashed line. (b) Example sample in the frequency domain along with model prediction and ground truth HR (green circle). The HR distributions of the non-augmented and High-HR augmented training sets are also analyzed in the corresponding colors.</figDesc><graphic coords="6,74.03,420.67,102.45,101.39" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8" coords="6,311.97,271.79,251.06,8.64;6,311.97,283.43,251.06,8.96;6,311.97,295.70,251.06,8.64;6,311.97,307.66,251.06,8.64;6,311.97,319.62,251.06,8.64;6,311.97,331.57,251.06,8.64;6,311.97,343.53,251.06,8.64;6,311.97,355.48,251.06,8.64;6,311.97,367.44,246.24,8.64"><head></head><label></label><figDesc>differ in their ability to infer untrustworthy samples. The guided probabilistic model dropped 98.58% of the samples in the example in Fig.4. A real data example is presented in Fig.9. The non-augmented NLL presents "spikes" or outliers corresponding to overconfident but wrong HR estimations, with the highlighted sample showing a 46.30 BPM Absolute Error with 9.72 BPM STD. Adversarial augmentation acts as a probabilistic regularization, reducing the networks' overconfidence (12.98 BPM Absolute Error with 46.92 BPM STD).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_9" coords="6,311.97,518.48,251.06,9.25;6,311.97,531.04,251.06,8.64;6,311.97,543.00,251.06,8.64;6,311.97,554.95,123.75,8.64"><head>Fig. 10 :</head><label>10</label><figDesc>Fig. 10: TPR and F1-score for KID-PPG (Guided Probabilistic training and High-HR augmentation), orange, vs Unguided probabilistic model (Unguided probabilistic training and no High-HR augmentation), blue.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" coords="1,321.94,717.07,241.09,32.55"><head></head><label></label><figDesc>We design KID-PPG, a DL model for HR inference, achieving a mean absolute error (MAE) of 2.96 beats per minute (BPM) on PPGDalia. KID-PPG also provides estimates of uncertainty as a proxy for the assessment of the severity of the BVP artifact along with HR inference.• We provide an open-source package to estimate HR from PPG and acceleration signals to the research community, which allows to repeat all our experiments and move forward the field of PPG analysis on embedded devices and wearables. The package is available here: https: //github.com/esl-epfl/KID-PPG.</figDesc><table /><note>• We address these limitations by incorporating prior knowledge into the DL workflow: explicitly defined MA separation task, guided probabilistic inference, and data augmentation.•</note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3" coords="7,48.96,246.23,514.07,90.01"><head>TABLE II :</head><label>II</label><figDesc>Mean Absolute Error performance of point-estimate HR and probabilistic (after retention) models on the PPGDalia dataset. All values are in Beats-per-Minute.</figDesc><table coords="7,60.72,289.96,227.55,46.27"><row><cell>Method</cell><cell>Mean Negative Log-Likelihood</cell></row><row><cell>BeliefPPG [15]</cell><cell>4.78</cell></row><row><cell>Adapt + Attention + Prob</cell><cell>3.25</cell></row><row><cell>Adapt + Temp. Attention + Prob</cell><cell>3.08</cell></row><row><cell>KID-PPG</cell><cell>2.99</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4" coords="7,48.96,344.46,251.06,81.63"><head>TABLE III :</head><label>III</label><figDesc>Summarized NLL results for the proposed probabilistic models.</figDesc><table coords="7,48.96,393.54,251.06,32.55"><row><cell>contributing to erroneous HR estimations: DL models fail to</cell></row><row><cell>separate MA from BVP, out-of-distribution HR samples and</cell></row><row><cell>catastrophic MA.</cell></row></table></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>ACKNOWLEDGMENT This research was partially supported by the PEDESITE Swiss NSF Sinergia project (GA CRSII5 193813 / 1), the RESoRT project (GA No. REG-19-019) from the Botnar Foundation, and by the Wyss Center for Bio and Neuro Engineering through funding for ESL-EPFL in the Noninvasive Neuromodulation of Subcortical Structures project of the Ligthhouse Partnership Agreement with EPFL.</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="8,67.22,309.10,232.80,6.91;8,67.22,317.92,232.80,7.05;8,67.22,327.03,17.93,6.91" xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Photoplethysmography and its application in clinical physiological measurement</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Allen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Physiological measurement</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">R1</biblScope>
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,67.22,336.23,232.80,6.91;8,67.22,345.20,232.80,6.91;8,67.22,354.02,223.87,7.05" xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Heart rate estimation from wrist-worn photoplethysmography: A review</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Biswas</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Simões-Capela</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Van Hoof</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Van Helleputte</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Sensors Journal</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">16</biblScope>
+			<biblScope unit="page" from="6560" to="6570" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,67.22,363.36,232.80,6.91;8,67.22,372.33,232.80,6.91;8,67.22,381.15,232.80,7.05;8,67.22,390.12,174.66,7.05" xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Adaptive scheduling of acceleration and gyroscope for motion artifact cancelation in photoplethysmography</title>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Chung</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Ko</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Parisi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Busacca</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Faes</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Pernice</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Lee</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Computer Methods and Programs in Biomedicine</title>
+		<imprint>
+			<biblScope unit="volume">226</biblScope>
+			<biblScope unit="page">107126</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,67.22,399.46,232.80,6.91;8,67.22,408.28,232.80,7.05;8,67.22,417.25,232.80,6.87" xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Heart rate monitoring from wrist-type photoplethysmographic (ppg) signals during intensive physical exercise</title>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2014 IEEE global conference on signal and information processing</title>
+				<imprint>
+			<publisher>GlobalSIP</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,67.22,435.56,232.80,6.91;8,67.22,444.53,232.80,6.91;8,67.22,453.35,232.80,7.05;8,67.22,462.32,127.41,7.05" xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Troika: A general framework for heart rate monitoring using wrist-type photoplethysmographic signals during intensive physical exercise</title>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Pi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Liu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on biomedical engineering</title>
+		<imprint>
+			<biblScope unit="volume">62</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="522" to="531" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,67.22,471.66,232.80,6.91;8,67.22,480.62,232.80,6.91;8,67.22,489.45,232.80,7.05;8,67.22,498.56,92.85,6.91" xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Photoplethysmography motion artifacts removal based on signal-noise interaction modeling utilizing envelope filtering and time-delay neural network</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>Chen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Sensors Journal</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="3732" to="3744" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,67.22,507.76,232.80,6.91;8,67.22,516.72,232.80,6.91;8,67.22,525.55,232.80,7.05;8,67.22,534.66,38.66,6.91" xml:id="b6">
+	<analytic>
+		<title level="a" type="main">A novel adaptive spectrum noise cancellation approach for enhancing heartbeat rate monitoring in a wearable device</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Xue</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Abt</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Ye</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Peng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Access</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page" from="8364" to="8375" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,67.22,543.85,232.80,6.91;8,67.22,552.82,232.80,6.91;8,67.22,561.64,232.80,7.05;8,67.22,570.61,141.85,7.05" xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Computationally efficient heart rate estimation during physical exercise using photoplethysmographic signals</title>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Schäck</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Muma</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">M</forename><surname>Zoubir</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2017 25th European Signal Processing Conference (EUSIPCO)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="page" from="2478" to="2481" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,67.22,579.95,232.80,6.91;8,67.22,588.92,232.80,6.91;8,67.22,597.89,232.80,6.91;8,67.22,606.85,232.80,6.91;8,67.22,615.68,118.03,7.05" xml:id="b8">
+	<analytic>
+		<title level="a" type="main">A novel time-varying spectral filtering algorithm for reconstruction of motion artifact corrupted heart rate signals during intense physical activities using a wearable photoplethysmogram sensor</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">M</forename><surname>Salehizadeh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Dao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Bolkhovsky</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Cho</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Mendelson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">H</forename><surname>Chon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Sensors</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">10</biblScope>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,67.22,625.02,232.80,6.91;8,67.22,633.84,232.80,7.05;8,67.22,642.81,232.80,7.05;8,67.22,651.92,71.33,6.91" xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Robust ppg-based ambulatory heart rate tracking algorithm</title>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Selvaraj</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2020 42nd Annual International Conference of the IEEE Engineering in Medicine &amp; Biology Society (EMBC)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="page" from="5929" to="5934" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,67.22,661.12,232.80,6.91;8,67.22,669.94,232.80,7.05;8,67.22,678.91,232.80,7.05;8,67.22,688.01,71.33,6.91" xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Heart rate monitoring using sparse spectral curve tracing</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Selvaraj</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2020 42nd Annual International Conference of the IEEE Engineering in Medicine &amp; Biology Society (EMBC)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="page" from="5347" to="5352" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,67.22,697.21,232.80,6.91;8,67.22,706.18,232.80,6.91;8,67.22,715.00,129.98,7.05" xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Deep ppg: Large-scale heart rate estimation with convolutional neural networks</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Reiss</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">I</forename><surname>Indlekofer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Schmidt</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Van Laerhoven</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Sensors</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">14</biblScope>
+			<biblScope unit="page">3079</biblScope>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,67.22,724.35,232.80,6.91;8,67.22,733.31,232.80,6.91;8,67.22,742.14,216.57,7.05" xml:id="b12">
+	<monogr>
+		<title level="m" type="main">Multi-head cross-attentional ppg and motion signal fusion for heart rate estimation</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Kasnesis</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Toumanidis</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Burrello</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Chatzigeorgiou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">Z</forename><surname>Patrikakis</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2210.11415</idno>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="8,330.23,60.83,232.80,6.91;8,330.23,69.80,232.80,6.91;8,330.23,78.62,232.80,7.05;8,330.23,87.59,150.43,7.05" xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Q-ppg: Energy-efficient ppg-based heart rate monitoring on wearable devices</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Burrello</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">J</forename><surname>Pagliari</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Risso</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Benatti</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Macii</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Benini</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Poncino</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Biomedical Circuits and Systems</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1196" to="1209" />
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,330.23,96.70,232.80,6.91;8,330.23,105.67,232.80,6.91;8,330.23,114.49,130.05,7.05" xml:id="b14">
+	<monogr>
+		<title level="m" type="main">Beliefppg: Uncertaintyaware heart rate estimation from ppg signals via belief propagation</title>
+		<author>
+			<persName coords=""><forename type="first">V</forename><surname>Bieri</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Streli</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><forename type="middle">U</forename><surname>Demirel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Holz</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2306.07730</idno>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="8,330.23,123.60,232.80,6.91;8,330.23,132.56,232.80,6.91;8,330.23,141.39,232.80,7.05;8,330.23,150.35,232.80,7.05;8,330.23,159.46,71.33,6.91" xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Deeppulse: An uncertaintyaware deep neural network for heart rate estimations from wrist-worn photoplethysmography</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Ray</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Collins</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">V</forename><surname>Ponnapalli</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2022 44th Annual International Conference of the IEEE Engineering in Medicine &amp; Biology Society (EMBC)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="page" from="1651" to="1654" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,330.23,168.43,232.80,6.91;8,330.23,177.40,232.80,6.91;8,330.23,186.22,232.80,7.05;8,330.23,195.19,193.18,7.05" xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Improving ppg-based heart-rate monitoring with synthetically generated data</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Burrello</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">J</forename><surname>Pagliari</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Bianco</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Macii</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Benini</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Poncino</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Benatti</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2022 IEEE Biomedical Circuits and Systems Conference (BioCAS)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="page" from="153" to="157" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,330.23,204.30,232.80,6.91;8,330.23,213.12,232.80,7.05;8,330.23,222.23,232.80,6.91;8,330.23,231.05,232.80,7.05;8,330.23,240.02,175.36,7.05" xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Informed machine learning-a taxonomy and survey of integrating prior knowledge into learning systems</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Von Rueden</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Mayer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Beckh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Georgiev</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Giesselbach</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Heese</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Kirsch</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Pfrommer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Pick</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Ramamurthy</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Knowledge and Data Engineering</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="614" to="633" />
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,330.23,249.13,232.80,6.91;8,330.23,258.09,232.80,6.91;8,330.23,266.92,232.80,7.05;8,330.23,276.03,17.93,6.91" xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Spare: A spectral peak recovery algorithm for ppg signals pulsewave reconstruction in multimodal wearable devices</title>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Masinelli</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Dell'agnola</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">A</forename><surname>Valdés</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Atienza</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Sensors</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page">2725</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,330.23,284.99,232.80,6.91;8,330.23,293.82,232.80,7.05;8,330.23,302.93,135.02,6.91" xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Nas-ppg: Ppg-based heart rate estimation using neural architecture search</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">B</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">W</forename><surname>Nam</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">H</forename><surname>Kim</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Sensors Journal</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">13</biblScope>
+			<biblScope unit="page" from="14" to="941" />
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,330.23,311.89,232.80,6.91;8,330.23,320.86,232.80,6.91;8,330.23,329.68,232.80,7.05;8,330.23,338.65,133.57,7.05" xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Robust and energy-efficient ppg-based heart-rate monitoring</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Risso</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Burrello</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">J</forename><surname>Pagliari</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Benatti</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Macii</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Benini</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Pontino</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2021 IEEE International Symposium on Circuits and Systems (ISCAS)</title>
+				<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2021">2021</date>
+			<biblScope unit="page" from="1" to="5" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,330.23,347.76,232.80,6.91;8,330.23,356.72,232.80,6.91;8,330.23,365.55,130.06,7.05" xml:id="b21">
+	<monogr>
+		<title level="m" type="main">Which shortcut cues will dnns choose? a study from the parameter-space perspective</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Scimeca</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">J</forename><surname>Oh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Chun</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Poli</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Yun</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2110.03095</idno>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="8,330.23,374.66,232.80,6.91;8,330.23,383.62,232.80,6.91;8,330.23,392.45,232.80,7.05;8,330.23,401.56,90.92,6.91" xml:id="b22">
+	<analytic>
+		<title level="a" type="main">A computational system to optimise noise rejection in photoplethysmography signals during motion or poor perfusion states</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">Y A</forename><surname>Foo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">J</forename><surname>Wilson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Medical and Biological Engineering and Computing</title>
+		<imprint>
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="page" from="140" to="145" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,330.23,410.52,232.80,6.91;8,330.23,419.49,232.80,6.91;8,330.23,428.31,232.80,7.05;8,330.23,437.42,71.33,6.91" xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Combining nonlinear adaptive filtering and signal decomposition for motion artifact removal in wearable photoplethysmography</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Ye</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">W</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Hou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Sensors Journal</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">19</biblScope>
+			<biblScope unit="page" from="7133" to="7141" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,330.23,446.39,232.80,6.91;8,330.23,455.35,232.80,6.91;8,330.23,464.18,213.71,7.05" xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Characterization of quadratic nonlinearity between motion artifact and acceleration data and its application to heartbeat rate estimation</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Im</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Park</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Sensors</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page">1872</biblScope>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,330.23,473.29,232.80,6.91;8,330.23,482.11,232.80,7.05;8,330.23,491.08,175.50,7.05" xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Attention is all you need</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Vaswani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Shazeer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Parmar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Uszkoreit</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Jones</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">N</forename><surname>Gomez</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ł</forename><surname>Kaiser</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">I</forename><surname>Polosukhin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in neural information processing systems</title>
+				<imprint>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="volume">30</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,330.23,500.19,232.80,6.91;8,330.23,509.01,232.80,7.05;8,330.23,517.98,145.08,7.05" xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Deep residual learning for image recognition</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Ren</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Sun</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE conference on computer vision and pattern recognition</title>
+				<meeting>the IEEE conference on computer vision and pattern recognition</meeting>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<biblScope unit="page" from="770" to="778" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,330.23,527.09,232.80,6.91;8,330.23,535.91,232.80,7.05;8,330.23,544.87,111.59,7.05" xml:id="b27">
+	<analytic>
+		<title level="a" type="main">What uncertainties do we need in bayesian deep learning for computer vision?</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Kendall</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Gal</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in neural information processing systems</title>
+				<imprint>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="volume">30</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,330.23,553.98,232.80,6.91;8,330.23,562.95,232.80,6.91;8,330.23,571.77,232.80,7.05;8,330.23,580.74,221.63,7.05" xml:id="b28">
+	<analytic>
+		<title level="a" type="main">A preliminary study on photoplethysmogram (ppg) signal analysis for reduction of motion artifact in frequency domain</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Cho</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Sung</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Shin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Jung</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Kim</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Biomedical Engineering and Sciences</title>
+		<imprint>
+			<biblScope unit="page" from="28" to="33" />
+			<date type="published" when="2012">2012. 2012</date>
+			<publisher>IEEE</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,330.23,589.85,232.80,6.91;8,330.23,598.82,232.80,6.91;8,330.23,607.64,232.80,7.05;8,330.23,616.61,209.53,7.05" xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Normal values of the electrocardiogram for ages 16-90 years</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">R</forename><surname>Rijnbeek</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Van Herpen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">L</forename><surname>Bots</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Man</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Verweij</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Hofman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Hillege</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">E</forename><surname>Numans</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">A</forename><surname>Swenne</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">C</forename><surname>Witteman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of electrocardiology</title>
+		<imprint>
+			<biblScope unit="volume">47</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="914" to="921" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,330.23,625.72,232.80,6.91;8,330.23,634.68,232.80,6.91;8,330.23,643.50,232.80,7.05;8,330.23,652.61,76.91,6.91" xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Mouse heart rate in a human: diagnostic mystery of an extreme tachyarrhythmia</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Chhabra</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Goel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Prajapat</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">H</forename><surname>Spodick</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Goyal</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Indian pacing and electrophysiology journal</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="32" to="35" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>
