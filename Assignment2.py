@@ -161,13 +161,6 @@ def enrich_graph_with_external_data(g, authors, organizations):
             time.sleep(1)  # Esperar 1 segundo entre solicitudes
 
 
-            wikidata_id = fetch_wikidata_info(org)
-        if wikidata_id:
-            wikidata_uri = URIRef(f"https://www.wikidata.org/entity/{wikidata_id}")
-            g.add((org_uri, EX.wikidata, wikidata_uri))
-            g.add((wikidata_uri, RDF.type, FOAF.Organization))
-            g.add((wikidata_uri, FOAF.name, Literal(org)))
-
     for author in authors:
         wikidata_id = fetch_wikidata_info(author)
         if wikidata_id:
@@ -198,37 +191,33 @@ def create_kg(titles, abstracts, acknowledgements, authors, similarities, topics
             g.add((author_uri, RDF.type, FOAF.Person))
             g.add((author_uri, FOAF.name, Literal(author)))
 
-        entities = ner(abstract)
-        logging.debug(f"Extracted entities from abstract {idx}: {entities}")
-        for entity in entities:
-            if entity['entity_group'] == 'ORG':
-                org_uri = EX[entity['word'].replace(' ', '_')]
-                g.add((paper_uri, DC.creator, org_uri))
-                g.add((org_uri, RDF.type, FOAF.Organization))
-                g.add((org_uri, FOAF.name, Literal(entity['word'])))
-            elif entity['entity_group'] == 'PER':
-                person_uri = EX[entity['word'].replace(' ', '_')]
-                g.add((paper_uri, DC.creator, person_uri))
-                g.add((person_uri, RDF.type, FOAF.Person))
-                g.add((person_uri, FOAF.name, Literal(entity['word'])))
+        # entities = ner(abstract)
+        # logging.debug(f"Extracted entities from abstract {idx}: {entities}")
+        # for entity in entities:
+        #     if entity['entity_group'] == 'ORG':
+        #         org_uri = EX[entity['word'].replace(' ', '_')]
+        #         g.add((paper_uri, DC.creator, org_uri))
+        #         g.add((org_uri, RDF.type, FOAF.Organization))
+        #         g.add((org_uri, FOAF.name, Literal(entity['word'])))
+        #     elif entity['entity_group'] == 'PER':
+        #         person_uri = EX[entity['word'].replace(' ', '_')]
+        #         g.add((paper_uri, DC.creator, person_uri))
+        #         g.add((person_uri, RDF.type, FOAF.Person))
+        #         g.add((person_uri, FOAF.name, Literal(entity['word'])))
 
-    # Añadir acknowledgements como nodos de Acknowledgements
-    for i, ack_text in enumerate(acknowledgements):
-        ack_uri = EX[f"ack{i}"]
-        g.add((ack_uri, RDF.type, EX.Acknowledgement))
-        g.add((ack_uri, DC.description, Literal(ack_text)))
-
+    # Añadir acknowledgements a los nodos de Papers
+    for idx, (paper_uri, ack_text) in enumerate(zip(g.subjects(RDF.type, EX.Paper), acknowledgements)):
         entities = ner(ack_text)
-        logging.info(f"Extracted entities from acknowledgement {i}: {entities}")
+        logging.info(f"Extracted entities from acknowledgement {idx}: {entities}")
         for entity in entities:
             if entity['entity_group'] == 'ORG':
                 org_uri = EX[entity['word'].replace(' ', '_')]
-                g.add((ack_uri, EX.acknowledges, org_uri))
+                g.add((paper_uri, EX.acknowledges, org_uri))
                 g.add((org_uri, RDF.type, FOAF.Organization))
                 g.add((org_uri, FOAF.name, Literal(entity['word'])))
             elif entity['entity_group'] == 'PER':
                 person_uri = EX[entity['word'].replace(' ', '_')]
-                g.add((ack_uri, EX.acknowledges, person_uri))
+                g.add((paper_uri, EX.acknowledges, person_uri))
                 g.add((person_uri, RDF.type, FOAF.Person))
                 g.add((person_uri, FOAF.name, Literal(entity['word'])))
 
@@ -259,6 +248,7 @@ def create_kg(titles, abstracts, acknowledgements, authors, similarities, topics
                 g.add((paper_uri, EX.similar_to, other_paper_uri))
 
     return g
+
 
 # Incorporar la extracción de autores en el proceso general
 def process_tei_documents(input_dir, output_dir):
