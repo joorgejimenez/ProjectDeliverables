@@ -1017,12 +1017,11 @@ ex:_Harvard_Global_Institute a foaf:Organization ;
         "Harvard Global Health Institute" .
 
 ex:_Health_Monitoring a foaf:Organization ;
-    ex:acronym "UMC" ;
-    ex:ror "https://ror.org/057rhqk62" ;
-    ex:type "Other" ;
-    foaf:homepage "http://www.who-umc.org/" ;
+    ex:ror "https://ror.org/046e9gn41" ;
+    ex:type "Company" ;
+    foaf:homepage "http://www.offshoremonitoring.com/" ;
     foaf:name " Health Monitoring",
-        "Uppsala Monitoring Centre" .
+        "Offshore Monitoring (Cyprus)" .
 
 ex:_I-SITE_MUSE a foaf:Organization ;
     ex:acronym "MUSE" ;
@@ -1385,25 +1384,33 @@ ex:prise a foaf:Organization ;
         "prise" .
 
 ex:security a foaf:Organization ;
-    ex:ror "https://ror.org/033wpmv83" ;
-    ex:type "Government" ;
-    foaf:homepage "https://www.wsask.ca/" ;
-    foaf:name "Water Security Agency",
+    ex:ror "https://ror.org/057f18p10" ;
+    ex:type "Company" ;
+    foaf:homepage "https://www.encapsecurity.com/" ;
+    foaf:name "Encap Security (Norway)",
         "security" .
 
 <https://www.wikidata.org/entity/Q100572070> a foaf:Person ;
+    ex:birthDate "+2005-01-01T00:00:00Z" ;
+    ex:country "People's Republic of China" ;
+    ex:occupation "gymnast" ;
     foaf:name "Yangyu Zhang" .
 
 <https://www.wikidata.org/entity/Q101413225> a foaf:Person ;
+    ex:birthDate "+1973-01-01T00:00:00Z" ;
+    ex:country "United States of America" ;
+    ex:occupation "mathematician" ;
     foaf:name "Gretchen Matthews" .
 
 <https://www.wikidata.org/entity/Q102289065> a foaf:Person ;
     foaf:name "Gunter Fuchs" .
 
 <https://www.wikidata.org/entity/Q102382848> a foaf:Person ;
+    ex:occupation "researcher" ;
     foaf:name "Thomas Nikolaus" .
 
 <https://www.wikidata.org/entity/Q103049976> a foaf:Person ;
+    ex:occupation "researcher" ;
     foaf:name "Bernardo Villarreal" .
 
 <https://www.wikidata.org/entity/Q103069591> a foaf:Person ;
@@ -1413,144 +1420,222 @@ ex:security a foaf:Organization ;
     foaf:name "Maria Yakerson" .
 
 <https://www.wikidata.org/entity/Q104013> a foaf:Person ;
+    ex:birthDate "+1965-01-19T00:00:00Z" ;
+    ex:country "Germany" ;
+    ex:occupation "sociologist" ;
     foaf:name "Dirk Helbing" .
 
 <https://www.wikidata.org/entity/Q105305920> a foaf:Person ;
+    ex:occupation "researcher" ;
     foaf:name "Cheng Li" .
 
 <https://www.wikidata.org/entity/Q105712027> a foaf:Person ;
+    ex:birthDate "+2002-03-06T00:00:00Z" ;
+    ex:country "Argentina" ;
+    ex:occupation "basketball player" ;
     foaf:name "Mateo Díaz" .
 
 <https://www.wikidata.org/entity/Q107582977> a foaf:Person ;
+    ex:birthDate "+1987-01-01T00:00:00Z" ;
     foaf:name "Dmitriy Drusvyatskiy" .
 
 <https://www.wikidata.org/entity/Q15783274> a foaf:Person ;
+    ex:birthDate "+1961-04-12T00:00:00Z" ;
+    ex:country "Italy" ;
+    ex:occupation "mathematician" ;
     foaf:name "Andrea Braides" .
 
 <https://www.wikidata.org/entity/Q21393249> a foaf:Person ;
+    ex:occupation "entomologist" ;
     foaf:name "Qiao Wang" .
 
 <https://www.wikidata.org/entity/Q21514138> a foaf:Person ;
+    ex:birthDate "+1943-01-01T00:00:00Z" ;
+    ex:occupation "botanist" ;
     foaf:name "Gordon Mills" .
 
 <https://www.wikidata.org/entity/Q29265866> a foaf:Person ;
+    ex:birthDate "+1978-01-01T00:00:00Z" ;
+    ex:country "Switzerland" ;
+    ex:occupation "researcher" ;
     foaf:name "David Atienza" .
 
 <https://www.wikidata.org/entity/Q30541324> a foaf:Person ;
+    ex:birthDate "+1971-12-00T00:00:00Z" ;
+    ex:country "Hungary" ;
+    ex:occupation "mathematician" ;
     foaf:name "József Balogh" .
 
 <https://www.wikidata.org/entity/Q37376018> a foaf:Person ;
+    ex:occupation "researcher" ;
     foaf:name "Cécile Ané" .
 
 <https://www.wikidata.org/entity/Q41576595> a foaf:Person ;
+    ex:occupation "directeur de recherche" ;
     foaf:name "Birgitta Dresp-Langley" .
 
 <https://www.wikidata.org/entity/Q42182979> a foaf:Person ;
+    ex:occupation "biostatistician" ;
     foaf:name "Shannon Mcweeney" .
 
 <https://www.wikidata.org/entity/Q42289927> a foaf:Person ;
+    ex:birthDate "+1968-00-00T00:00:00Z" ;
+    ex:occupation "biologist" ;
     foaf:name "Ramon Garcia" .
 
 <https://www.wikidata.org/entity/Q42371282> a foaf:Person ;
+    ex:birthDate "+2000-00-00T00:00:00Z" ;
+    ex:occupation "researcher" ;
     foaf:name "Lei Tian" .
 
 <https://www.wikidata.org/entity/Q43174767> a foaf:Person ;
+    ex:birthDate "+1965-01-01T00:00:00Z" ;
+    ex:occupation "researcher" ;
     foaf:name "Laurent Goffart" .
 
 <https://www.wikidata.org/entity/Q45966292> a foaf:Person ;
+    ex:occupation "researcher" ;
     foaf:name "Thorsten Schmidt" .
 
 <https://www.wikidata.org/entity/Q47503718> a foaf:Person ;
+    ex:occupation "researcher" ;
     foaf:name "David Goldberg" .
 
 <https://www.wikidata.org/entity/Q4802143> a foaf:Person ;
+    ex:birthDate "+1971-01-01T00:00:00Z" ;
+    ex:country "India" ;
+    ex:occupation "economist" ;
     foaf:name "Arun Sundararajan" .
 
 <https://www.wikidata.org/entity/Q52319875> a foaf:Person ;
+    ex:birthDate "+2000-03-20T00:00:00Z" ;
+    ex:country "People's Republic of China" ;
+    ex:occupation "association football player" ;
     foaf:name "Shaocong Wu" .
 
 <https://www.wikidata.org/entity/Q55608413> a foaf:Person ;
+    ex:occupation "researcher" ;
     foaf:name "Nathaniel Evans" .
 
 <https://www.wikidata.org/entity/Q56027767> a foaf:Person ;
+    ex:occupation "researcher" ;
     foaf:name "Jianhua Zhang" .
 
 <https://www.wikidata.org/entity/Q56528851> a foaf:Person ;
+    ex:occupation "researcher" ;
     foaf:name "Hamed Ahmadi" .
 
 <https://www.wikidata.org/entity/Q57020919> a foaf:Person ;
+    ex:occupation "researcher" ;
     foaf:name "Joshua Yang" .
 
 <https://www.wikidata.org/entity/Q57618235> a foaf:Person ;
+    ex:occupation "researcher" ;
     foaf:name "Yifei Lou" .
 
 <https://www.wikidata.org/entity/Q57759171> a foaf:Person ;
+    ex:occupation "researcher" ;
     foaf:name "Tianguang Lu" .
 
 <https://www.wikidata.org/entity/Q58416717> a foaf:Person ;
+    ex:occupation "researcher" ;
     foaf:name "Yilun Chen" .
 
 <https://www.wikidata.org/entity/Q59670528> a foaf:Person ;
+    ex:occupation "researcher" ;
     foaf:name "Emily Dolson" .
 
 <https://www.wikidata.org/entity/Q59678563> a foaf:Person ;
+    ex:occupation "researcher" ;
     foaf:name "Jose Miranda" .
 
 <https://www.wikidata.org/entity/Q59721408> a foaf:Person ;
+    ex:occupation "researcher" ;
     foaf:name "Guanming Wu" .
 
 <https://www.wikidata.org/entity/Q60177418> a foaf:Person ;
+    ex:birthDate "+1984-00-00T00:00:00Z" ;
+    ex:occupation "university teacher" ;
     foaf:name "Aaron Roth" .
 
 <https://www.wikidata.org/entity/Q65010142> a foaf:Person ;
+    ex:birthDate "+1952-00-00T00:00:00Z" ;
+    ex:country "Greece" ;
+    ex:occupation "lawyer" ;
     foaf:name "Theodoros Zafeiriou" .
 
 <https://www.wikidata.org/entity/Q7149258> a foaf:Person ;
+    ex:birthDate "+1879-04-06T00:00:00Z" ;
+    ex:country "France" ;
+    ex:occupation "conductor" ;
     foaf:name "Paul Bastide" .
 
 <https://www.wikidata.org/entity/Q7267592> a foaf:Person ;
+    ex:birthDate "+1984-10-26T00:00:00Z" ;
+    ex:country "People's Republic of China" ;
+    ex:occupation "singer" ;
     foaf:name "Qi Wei" .
 
 <https://www.wikidata.org/entity/Q73389579> a foaf:Person ;
+    ex:birthDate "+1960-01-01T00:00:00Z" ;
+    ex:occupation "researcher" ;
     foaf:name "Sokratis Katsikas" .
 
 <https://www.wikidata.org/entity/Q7381688> a foaf:Person ;
+    ex:birthDate "+1938-06-17T00:00:00Z" ;
+    ex:country "United Kingdom" ;
+    ex:occupation "author" ;
     foaf:name "Russell Miller" .
 
 <https://www.wikidata.org/entity/Q7511> a foaf:Person ;
+    ex:birthDate "+2000-00-00T00:00:00Z" ;
+    ex:occupation "chemist" ;
     foaf:name "Jing Li" .
 
 <https://www.wikidata.org/entity/Q79421769> a foaf:Person ;
+    ex:occupation "researcher" ;
     foaf:name "Susmita Das" .
 
 <https://www.wikidata.org/entity/Q83146157> a foaf:Person ;
+    ex:occupation "researcher" ;
     foaf:name "Jing Qin" .
 
 <https://www.wikidata.org/entity/Q88926499> a foaf:Person ;
+    ex:occupation "researcher" ;
     foaf:name "Joshua Cutler" .
 
 <https://www.wikidata.org/entity/Q89367530> a foaf:Person ;
+    ex:occupation "researcher" ;
     foaf:name "Jonathan Dan" .
 
 <https://www.wikidata.org/entity/Q89550804> a foaf:Person ;
+    ex:occupation "researcher" ;
     foaf:name "Dimitris Kalles" .
 
 <https://www.wikidata.org/entity/Q89977985> a foaf:Person ;
+    ex:occupation "researcher" ;
     foaf:name "Weihong Guo" .
 
 <https://www.wikidata.org/entity/Q90414155> a foaf:Person ;
+    ex:occupation "researcher" ;
     foaf:name "Damian Dailisan" .
 
 <https://www.wikidata.org/entity/Q9057316> a foaf:Person ;
+    ex:birthDate "+1941-12-21T00:00:00Z" ;
+    ex:country "Venezuela" ;
+    ex:occupation "comedian" ;
     foaf:name "Pedro Soto" .
 
 <https://www.wikidata.org/entity/Q91389913> a foaf:Person ;
+    ex:occupation "researcher" ;
     foaf:name "Rubing Li" .
 
 <https://www.wikidata.org/entity/Q96094433> a foaf:Person ;
+    ex:occupation "researcher" ;
     foaf:name "Shipra Agrawal" .
 
 <https://www.wikidata.org/entity/Q97929058> a foaf:Person ;
+    ex:occupation "researcher" ;
     foaf:name "Ming Yan" .
 
 <http://example.org/.> a foaf:Person ;

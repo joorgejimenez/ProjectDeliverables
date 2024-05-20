@@ -108,7 +108,6 @@ def perform_topic_modeling(abstracts, n_topics=3):
         topics.append((topic_id, topic_keywords))
     return topics
 
-
 def fetch_ror_organization_info(org_name):
     url = f"https://api.ror.org/organizations?query={org_name}"
     logging.debug(f"Fetching ROR info for organization: {org_name} with URL: {url}")
@@ -135,7 +134,11 @@ def fetch_wikidata_info(entity_name):
         results = response.json().get('search', [])
         if results:
             entity_id = results[0].get('id')
-            return entity_id
+            entity_info_url = f"https://www.wikidata.org/wiki/Special:EntityData/{entity_id}.json"
+            entity_response = requests.get(entity_info_url)
+            entity_response.raise_for_status()
+            entity_data = entity_response.json()
+            return entity_data['entities'][entity_id]
         else:
             logging.warning(f"No results found for {entity_name} in Wikidata")
             return None
@@ -160,16 +163,44 @@ def enrich_graph_with_external_data(g, authors, organizations):
                 g.add((org_uri, EX.type, Literal(org_data['types'][0])))
             time.sleep(1)  # Esperar 1 segundo entre solicitudes
 
-
     for author in authors:
-        wikidata_id = fetch_wikidata_info(author)
-        if wikidata_id:
+        wikidata_entity = fetch_wikidata_info(author)
+        if wikidata_entity:
             author_uri = EX[author.replace(' ', '_')]
-            wikidata_uri = URIRef(f"https://www.wikidata.org/entity/{wikidata_id}")
+            wikidata_uri = URIRef(f"https://www.wikidata.org/entity/{wikidata_entity['id']}")
             g.add((author_uri, EX.wikidata, wikidata_uri))
             g.add((wikidata_uri, RDF.type, FOAF.Person))
             g.add((wikidata_uri, FOAF.name, Literal(author)))
+
+            claims = wikidata_entity.get('claims', {})
+
+            if 'P569' in claims:  # Date of birth
+                birth_date = claims['P569'][0]['mainsnak']['datavalue']['value']['time']
+                g.add((wikidata_uri, EX.birthDate, Literal(birth_date)))
+
+            if 'P27' in claims:  # Country of citizenship
+                country_id = claims['P27'][0]['mainsnak']['datavalue']['value']['id']
+                country_name = fetch_wikidata_label(country_id)
+                g.add((wikidata_uri, EX.country, Literal(country_name)))
+
+            if 'P106' in claims:  # Occupation
+                occupation_id = claims['P106'][0]['mainsnak']['datavalue']['value']['id']
+                occupation_name = fetch_wikidata_label(occupation_id)
+                g.add((wikidata_uri, EX.occupation, Literal(occupation_name)))
+
             time.sleep(1)  # Esperar 1 segundo entre solicitudes
+
+def fetch_wikidata_label(entity_id):
+    url = f"https://www.wikidata.org/wiki/Special:EntityData/{entity_id}.json"
+    try:
+        response = requests.get(url)
+        response.raise_for_status()
+        entity_data = response.json()
+        entity_label = entity_data['entities'][entity_id]['labels']['en']['value']
+        return entity_label
+    except requests.exceptions.RequestException as e:
+        logging.error(f"Error fetching label for Wikidata entity {entity_id}: {e}")
+        return None
 
 def create_kg(titles, abstracts, acknowledgements, authors, similarities, topics):
     g = Graph()
@@ -190,20 +221,6 @@ def create_kg(titles, abstracts, acknowledgements, authors, similarities, topics
             g.add((paper_uri, DC.creator, author_uri))
             g.add((author_uri, RDF.type, FOAF.Person))
             g.add((author_uri, FOAF.name, Literal(author)))
-
-        # entities = ner(abstract)
-        # logging.debug(f"Extracted entities from abstract {idx}: {entities}")
-        # for entity in entities:
-        #     if entity['entity_group'] == 'ORG':
-        #         org_uri = EX[entity['word'].replace(' ', '_')]
-        #         g.add((paper_uri, DC.creator, org_uri))
-        #         g.add((org_uri, RDF.type, FOAF.Organization))
-        #         g.add((org_uri, FOAF.name, Literal(entity['word'])))
-        #     elif entity['entity_group'] == 'PER':
-        #         person_uri = EX[entity['word'].replace(' ', '_')]
-        #         g.add((paper_uri, DC.creator, person_uri))
-        #         g.add((person_uri, RDF.type, FOAF.Person))
-        #         g.add((person_uri, FOAF.name, Literal(entity['word'])))
 
     # Añadir acknowledgements a los nodos de Papers
     for idx, (paper_uri, ack_text) in enumerate(zip(g.subjects(RDF.type, EX.Paper), acknowledgements)):
@@ -248,7 +265,6 @@ def create_kg(titles, abstracts, acknowledgements, authors, similarities, topics
                 g.add((paper_uri, EX.similar_to, other_paper_uri))
 
     return g
-
 
 # Incorporar la extracción de autores en el proceso general
 def process_tei_documents(input_dir, output_dir):
