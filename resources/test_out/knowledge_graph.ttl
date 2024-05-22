@@ -832,11 +832,11 @@ ex:_CNRS_France a foaf:Organization ;
         "Canadian Nautical Research Society" .
 
 ex:_Centre a foaf:Organization ;
-    ex:ror "https://ror.org/05mhhk279" ;
-    ex:type "Education" ;
-    foaf:homepage "http://www.inflibnet.ac.in/" ;
+    ex:ror "https://ror.org/03pmbkw20" ;
+    ex:type "Healthcare" ;
+    foaf:homepage "http://www.sophumelela.org/" ;
     foaf:name " Centre",
-        "Information and Library Network" .
+        "Sophumelela Centre" .
 
 ex:_Chris_Rogers a foaf:Person ;
     foaf:name " Chris Rogers" .
@@ -1017,11 +1017,12 @@ ex:_Harvard_Global_Institute a foaf:Organization ;
         "Harvard Global Health Institute" .
 
 ex:_Health_Monitoring a foaf:Organization ;
-    ex:ror "https://ror.org/046e9gn41" ;
-    ex:type "Company" ;
-    foaf:homepage "http://www.offshoremonitoring.com/" ;
+    ex:acronym "UMC" ;
+    ex:ror "https://ror.org/057rhqk62" ;
+    ex:type "Other" ;
+    foaf:homepage "http://www.who-umc.org/" ;
     foaf:name " Health Monitoring",
-        "Offshore Monitoring (Cyprus)" .
+        "Uppsala Monitoring Centre" .
 
 ex:_I-SITE_MUSE a foaf:Organization ;
     ex:acronym "MUSE" ;
@@ -1234,11 +1235,11 @@ ex:_Rice_University a foaf:Organization ;
 
 ex:_SFI a foaf:Organization ;
     ex:acronym "SFI" ;
-    ex:ror "https://ror.org/017j8hh08" ;
+    ex:ror "https://ror.org/004anj868" ;
     ex:type "Facility" ;
-    foaf:homepage "http://sfi-davos.ch/" ;
+    foaf:homepage "http://www.sfi.dk" ;
     foaf:name " SFI",
-        "Schweizerisches Forschungsinstitut für Hochgebirgsklima und Medizin" .
+        "Danish National Centre for Social Research" .
 
 ex:_Saul_Jacka a foaf:Person ;
     foaf:name " Saul Jacka" .
@@ -1357,11 +1358,11 @@ ex:_Yoon a foaf:Person ;
     foaf:name " Yoon" .
 
 ex:_Young_Scholars a foaf:Organization ;
-    ex:ror "https://ror.org/014geb094" ;
-    ex:type "Government" ;
-    foaf:homepage "https://eca.state.gov/fulbright" ;
+    ex:ror "https://ror.org/05s501w59" ;
+    ex:type "Nonprofit" ;
+    foaf:homepage "https://scholars.westpac.com.au" ;
     foaf:name " Young Scholars",
-        "Fulbright Program" .
+        "Westpac Scholars Trust" .
 
 ex:_Zaid_Harchaoui a foaf:Person ;
     foaf:name " Zaid Harchaoui" .

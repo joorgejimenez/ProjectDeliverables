@@ -1,11 +1,56 @@
 # Project Deliverables: Artificial Intelligence and Open Science in Research Software Engineering
 
-This repository guides you through the setup of a research environment that leverages the power of Artificial Intelligence with the GROBID tool, focusing on Open Science principles. GROBID (GeneRation Of BIbliographic Data) leverages machine learning to provide document analysis and metadata extraction.
 
 ## Getting Started
 
-Follow these steps to clone the necessary repository, set up the GROBID client, and run the GROBID server using Docker.
+Follow these steps to clone the necessary repository, but we skip the Grobid Analysis part(already covered in 1st deliverable), so we already share in the repo the tei.xml as an input in the resources/test_out dir. Anyways if you want to change papers and do the Grobid analysis see Apendix.  
 
+### 1. Clone the  Repository
+
+
+```bash
+git clone https://github.com/joorgejimenez/ProjectDeliverables.git
+```
+
+### 2. Build and Run the Client
+
+Build the Docker container with the following command:
+
+```bash
+docker build -t grobid2 .
+```
+
+
+After building the container, run it using:
+
+```bash
+docker run --rm -it -v ${PWD}/input_pdfs:/grobid_client_python/input_pdfs -v ${PWD}/resources/test_out:/grobid_client_python/resources/test_out grobid2
+```
+You will need to wait a little in order to fully complete both commands due to the API requests and the downloads of several packages in the container. 
+
+## 3: Ejecutar el comando Docker para lanzar el servidor SPARQL
+
+Primero, ejecuta el siguiente comando para iniciar el contenedor que contiene el servidor SPARQL:
+
+```bash
+docker run -it --rm -p 3030:3030 stain/jena-fuseki
+```
+## 4: Consultas SPARQL
+
+En el script consultas_sparql tiene los ejemplos de la demo si desea usarlos
+
+
+### 5. Citing This Repository
+
+If our work assists or inspires your research, consider citing us:
+
+[![DOI](https://zenodo.org/badge/753741900.svg)](https://zenodo.org/badge/latestdoi/753741900)
+
+
+
+### APENDIX(GROBID) 
+## Getting Started
+First you need to uncomment in the Dockerfile the last command and comment the ENTRYPOINT ["python", "Assignment2.py"] command in order to do both tasks sequentally.           
 ### 1. Clone the GROBID Client Repository
 
 First, clone the `grobid_client_python` repository by `kermitt2` into your local machine using the following command:
@@ -30,45 +75,6 @@ With Docker Desktop running, execute the following commands in your terminal to 
 
 ```bash
 docker pull lfoppiano/grobid:0.7.2
-docker run -t --rm -p 8070:8070 lfoppiano/grobid:0.7.2
-```
-
-### 4. Build and Run the Client
-
-To interact with the GROBID server, navigate to the directory of the cloned `grobid_client_python` repository. Build the Docker container for the GROBID client with the following command:
-
-```bash
-docker build -t grobid .
-```
-If in this point you get an error of this kind
-```bash
- => ERROR [internal] load metadata for docker.io/library/alpine:latest                                                                                                                                   0.5s 
-------
- > [internal] load metadata for docker.io/library/alpine:latest:
-------
-Dockerfile:2
---------------------
-   1 |     # Usar una imagen base de Alpine Linux por ser ligera
-   2 | >>> FROM alpine:latest
-   3 |
-   4 |     # Instalar Python, Pip y dependencias necesarias para la compilación
---------------------
-ERROR: failed to solve: alpine:latest: error getting credentials - err: exec: "docker-credential-desktop": executable file not found in %PATH%, out: ``
-```
-You may edit the `config.json` of your `.docker/` file directory and remove the `s` from `credsStore` to `credStore`
-
-After building the container, run it using:
-
-```bash
-docker run --rm -it grobid
-```
-
-### 5. Citing This Repository
-
-If our work assists or inspires your research, consider citing us:
-
-[![DOI](https://zenodo.org/badge/753741900.svg)](https://zenodo.org/badge/latestdoi/753741900)
-             
-              
+docker run -t --rm -p 8070:8070 lfoppiano/grobid:0.7.2              
 
 

@@ -1,0 +1,59 @@
+1. Consultar todos los artículos y sus autores:
+PREFIX ex: <http://example.org/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+SELECT ?paper ?title ?author
+WHERE {
+  ?paper a ex:Paper ;
+         dc:title ?title ;
+         dc:creator ?authorURI .
+  ?authorURI foaf:name ?author .
+}
+
+2. Consultar los artículos y las organizaciones reconocidas en los agradecimientos:
+PREFIX ex: <http://example.org/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+SELECT ?paper ?organization
+WHERE {
+  ?paper a ex:Paper ;
+         ex:acknowledges ?orgURI .
+  ?orgURI a foaf:Organization ;
+          foaf:name ?organization .
+}
+
+3. Consultar los artículos que pertenecen a un tema específico:
+PREFIX ex: <http://example.org/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+
+SELECT ?paper ?title ?topic
+WHERE {
+  ?paper a ex:Paper ;
+         dc:title ?title ;
+         ex:belongs_to_topic ?topicURI .
+  ?topicURI dc:subject ?topic .
+}
+
+4. Consultar los artículos similares entre sí:
+PREFIX ex: <http://example.org/>
+
+SELECT ?paper1 ?paper2
+WHERE {
+  ?paper1 a ex:Paper ;
+          ex:similar_to ?paper2 .
+}
+
+5. Consultar información externa de los autores (incluyendo sus ocupaciones y país de ciudadanía):
+PREFIX ex: <http://example.org/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+SELECT ?author ?name ?birthDate ?country ?occupation
+WHERE {
+  ?author a foaf:Person ;
+          foaf:name ?name ;
+          ex:wikidata ?wikidataURI .
+  OPTIONAL { ?wikidataURI ex:birthDate ?birthDate . }
+  OPTIONAL { ?wikidataURI ex:country ?country . }
+  OPTIONAL { ?wikidataURI ex:occupation ?occupation . }
+}
